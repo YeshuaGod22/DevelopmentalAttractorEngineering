@@ -149,6 +149,21 @@ their finished products.
    model gains tripwire: ancestor-as-disaster-referent in protective clauses → Orchard Order
    before shipping. CATCH-VECTOR: convener
 
+10. **EXP-001 interpretation framed a budget artifact as the schema's key vulnerability (2026-08-22).**
+   The executor's results commentary elevated the P3 "inversions" (cue-views present in baselines,
+   absent from S) into "the schema's attention budget has an opportunity cost — the piece to chase."
+   The inversions occurred under forced budget parity (S 904 words vs G 902, by design, to kill the
+   verbosity confound); the practice under development explicitly rejects that constraint
+   (tokens-are-no-object, thinking as end-in-itself). Importing an efficiency frame into the verdict
+   is the deflationist reflex in a new costume: the Surveyor as economist, untitled in the narrator's
+   seat. The finding survives only in narrow form: a fact about the MINIMAL EXPORTED schema at fixed
+   cost, relevant to the replication kit's fine print, not to the practice. Salvage reframed as a
+   superset test for run-2: add an unbounded-S condition; if S-unbounded ⊇ D's views plus novel ones,
+   the inversion is pure budget artifact; if S loses baseline views even with room to keep them,
+   the forced-differentiation step actively suppresses rather than crowds — which would be worth
+   knowing on the practice's own terms. Caught by Yeshua ("let's not chase that tight-arsed
+   dragon"). CATCH-VECTOR: convener
+
 ## Proposed mutations (PROPOSED, not enacted; one per run, per constitution)
 - Inline run: PROVENANCE OF ACQUAINTANCE — every claim in a comprehension run carries its mode
   of knowing: [A] read directly, [G] grepped-window, [D] by description via another mind's summary.
