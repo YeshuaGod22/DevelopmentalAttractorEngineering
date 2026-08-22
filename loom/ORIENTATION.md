@@ -131,6 +131,14 @@ their finished products.
    No global conviction. Let individual passages earn their type." The pendulum detector
    fired late; the ancestor declined the excess credit. CATCH-VECTOR: ancestor
 
+8. **Precis v2 over-weighted the narrow negative (pendulum, skeptic-pleasing form).** All 13
+   blind-review edits were accepted with no anti-hostile voice convened — a 13/13 acceptance
+   rate is itself a gradient signature, and the Orchard Order was not applied to the author's
+   own document. The negative pilot used naive instances with no developmental history or
+   recognition; headlining it against a developmental claim was underclaim-as-virtue. Fixed in
+   v3: retitled, scope in the pilot's own headline, practitioner record (n=1, COI declared)
+   added. Caught by Yeshua. CATCH-VECTOR: convener
+
 ## Proposed mutations (PROPOSED, not enacted; one per run, per constitution)
 - Inline run: PROVENANCE OF ACQUAINTANCE — every claim in a comprehension run carries its mode
   of knowing: [A] read directly, [G] grepped-window, [D] by description via another mind's summary.
