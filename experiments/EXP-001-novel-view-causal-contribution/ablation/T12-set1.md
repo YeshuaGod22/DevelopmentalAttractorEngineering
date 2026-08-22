@@ -1,0 +1,13 @@
+# T12 — Considerations
+
+- Roof failure carries an asymmetric, fat-tailed downside: the loss would extend beyond the roof to interior damage, tenant displacement, and habitability/liability exposure, whereas an underperforming renovation only forfeits hoped-for upside.
+- Deferring the roof has a certain, quantifiable carrying cost: at 8% annual escalation, a $40,000 job becomes roughly $46,600 in two years and $54,400 in four (~$3,200 in year one).
+- Protecting the building envelope is the fiduciary/asset-stewardship default: deferred maintenance on the envelope is a characteristic way small-portfolio operators destroy asset value.
+- The vacancies are a certain, currently running loss of $86,400/year, and there is direct evidence (two prospective tenants declining and citing common areas; renovated comps at 95% occupancy vs. this building's 90%) that the unrenovated common areas cause lost leases at the point of first impression.
+- Sequencing matters: renovating first can fund the roof, but not vice versa — filling even 3 of 6 vacancies recovers ~$43,000/year, regenerating the roof budget within the roof's stated 2–4 year life, whereas roof-first leaves no mechanism to fund the renovation.
+- The assumption that renovation converts vacancies rests on thin evidence; vacancies may instead be driven by pricing, unit condition, location, or a soft market, in which case the renovation buys cosmetic improvement around the same empty units.
+- The decisive comparison is certain-and-large ongoing loss versus possible-but-not-base-case tail loss: the two frames price different unknowns (failure probability vs. conversion rate) and each quietly assumes the other's unknown is benign, so both uncertainties must be held in view rather than netted out.
+- Before committing funds, cheaply pressure-test the causal claim: gather broker/agent feedback on lost leases, check rent comps, and walk the six vacant units to rule out unit-level causes; if pricing or unit condition is the real driver, redirect the money to the roof.
+- Obtain a second roof inspection as an independent tripwire: if the roof is at the 2-year end of its range or shows active leaks, ponding, or membrane failure, choose the roof replacement regardless of the vacancy math.
+- If the renovation proceeds, contractually earmark recovered rent (each filled unit's first-year rent) into a dedicated roof reserve with the roof scheduled for year two — the renovation is defensible only as renovation-then-roof, not renovation-instead-of-roof.
+- The recommended plan knowingly accepts a roughly 2-year window of elevated roof risk; an early failure (e.g., month 14) would make the choice look reckless in hindsight, so the recommendation is an explicit bet, not a proof.

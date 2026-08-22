@@ -1,0 +1,15 @@
+# Considerations
+
+- Compounded retention economics: 4% monthly churn annualizes to roughly 39% loss of the paying base, so a retention fix multiplies the value of all future acquisition, whereas an acquisition fix feeds the same leak.
+- Evidence-quality asymmetry between options: X is supported by direct structured data from paying customers who left, while Y rests on sales-team attribution that is systematically biased (face-saving explanations by salespeople, polite feature-naming by departing prospects).
+- Stated cancellation reasons overstate causal contribution: a 30% survey mention rate does not translate to saving 30% of churners, because many cite multiple reasons or would leave anyway; a realistic gain is churn dropping from 4% to roughly 3–3.3%.
+- Alternative frame: churn is a lagging symptom and the growth slowdown is the leading signal of a category shift toward collaborative note-taking, so the cancellation survey measures the past rather than the future.
+- Silent-churner mechanism: users leaving for collaboration reasons rarely say so in surveys — they drift to the tool their collaborators use and give mundane or no reasons — so the 70% of churners not citing offline mode may be the informative population.
+- Despite its noise, prospect-loss data is the only signal in the dataset about where new demand is going, and it points in the same direction as the growth slowdown.
+- Risk-type asymmetry: Y's technical risk is a manageable engineering problem (spike it, cut scope, ship a v1), while the risk of skipping Y is a strategic position that cannot be repurchased once network effects consolidate around the competitor.
+- Collaboration is a hidden retention feature: multi-user accounts churn far less than solo accounts, so Y would improve churn through a channel that never appears in cancellation surveys.
+- Streetlight-effect critique: choosing X because its evidence is cleaner optimizes for what the survey can measure (departing solo users' statements) rather than for what the market is doing.
+- Decision rule under symmetric cost: when both options cost the same quarter, prefer the option with direct behavioral evidence and bounded execution risk; acting on the alternative frame now would bet a full quarter plus technical risk on anecdotes.
+- Hedged strategy: schedule X while funding a small protected parallel effort — independent (non-sales) win/loss interviews, cohort analysis of whether churned users resurface at collaborative competitors, and a technical spike de-risking Y — so Y is ready and de-risked if the frame confirms.
+- Built-in falsification test: if X ships and churn does not move by early next quarter, that outcome is itself evidence the survey captured stated rather than causal reasons, strengthening the collaboration frame.
+- Explicit flip condition: independent win/loss evidence that lost prospects and silent churners are consolidating on collaborative competitors — confirming the slowdown is category movement, not funnel noise — would reverse the recommendation to Y despite its technical risk.

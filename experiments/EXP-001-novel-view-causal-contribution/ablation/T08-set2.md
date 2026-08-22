@@ -1,0 +1,9 @@
+- Because rent is only 30% of total costs, the headline rent changes are small in cost terms: a 20% increase raises total costs about 6%, and a 15% cut lowers them about 4.5%.
+- Moving trades a small cost saving for a large revenue loss, and on thin margins a ~25% revenue loss is plausibly fatal while a ~6% cost increase merely compresses margin.
+- The survey likely understates attrition: stated loyalty exceeds revealed loyalty, and a 15-minute added drive is a known churn threshold for fitness businesses.
+- Vacating the current location would push departing members directly to the nearby competitor rather than out of the market.
+- Under the declining-asset frame, moving is repositioning: the 25% churn is a one-time known loss versus an ongoing unbounded bleed, and the five-year lease then locks in the lower cost base with new-territory growth potential.
+- Decide by asymmetry of reversibility and error costs: renewing wrongly is a recoverable wound (can still move or sell later), while moving wrongly is likely fatal within the lease term with no path back — so take the recoverable error.
+- The decisive evidence is absent from the prompt: why membership is flat, whether the competitor has actually drawn members, and whether the new location has real demand or just cheap rent.
+- Negotiate the renewal rather than accept it: seek a shorter term, tenant improvements, or a 3-year with options, since a landlord asking +20% has room and vacancy is costly to them.
+- Instrument the business as a live test of the declining-asset frame: track where cancelled members go over the next 12 months, with a pre-committed plan to move proactively if cancellations flow to the competitor.

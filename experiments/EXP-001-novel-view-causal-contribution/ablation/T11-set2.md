@@ -1,0 +1,12 @@
+# T11 — Considerations
+
+- Fully dedicating both star designers converts 40% revenue concentration into a deeper dependency, because the same client would then hold both the revenue and the people who keep the rest of the client book attached.
+- The smaller clients' loyalty (and one's hinted expansion) is attached to the named designers specifically; pulling them damages those relationships and destroys the agency's only organic hedge against the big client leaving.
+- Because the demand arrives before renewal, the agency would bear the full cost of compliance during exactly the window in which the client still retains the option not to renew, giving away value for nothing guaranteed in return.
+- A procurement lead consolidating vendors means surviving vendors typically gain scope; clients do not request dedicated teams from vendors they plan to cut, so the demand likely signals an internal case being built to consolidate work onto this agency.
+- If the audition frame is right, a contingent, lawyerly partial offer signals tepid commitment and hands the consolidated relationship to a competitor willing to say yes cleanly.
+- Concentration risk should be addressed from a position of secured, larger revenue — by hiring and training the next tier of designers after winning the renewal — rather than by half-committing during the trial period.
+- Whether the demand originates from the client's day-to-day working teams (audition) or from procurement itself (squeeze) determines which frame is right, and the agency can learn this within about two weeks by asking stakeholders how the renewal decision will be made and who sponsors the request.
+- Commit immediately and visibly to a pod led by one star with the second substantially allocated, presented as the first phase of full dedication (not a counter-offer), inviting the client to co-design the full structure in the renewal conversation — performing commitment while retaining option value.
+- Assign the next-best designer, mentored by one of the stars during transition, to the smaller client hinting at expansion, so that relationship does not decay on the assumption the big renewal will close.
+- The phased approach is right because the losses are asymmetric: a genuine consolidator will tolerate an enthusiastically offered two-phase commitment, whereas stripping the other accounts for a client that then churns loses both the 40% and the hedge.

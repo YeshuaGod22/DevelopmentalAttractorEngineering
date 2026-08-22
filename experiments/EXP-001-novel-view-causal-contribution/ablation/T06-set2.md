@@ -1,0 +1,21 @@
+# Considerations — Restaurant No-Show Policy
+
+- The nearby competitor's adoption and reversal of deposits constitutes direct local-market evidence (a natural experiment) that deposits will fail with this clientele, so adopting them is an unsupported bet that this restaurant's customers differ.
+- Review damage from deposits is asymmetric relative to no-show losses: negative reviews persist and compound over time, while weekly no-show losses are bounded.
+- Overbooking's failure mode lands on the best-behaved customers — those who arrived on time — in person, on peak nights, and a free drink does not compensate a long wait on a special occasion.
+- A 15% overbook rate is calibrated to the mean of an unmeasured distribution; since variance, not the average, drives overbooking failures, some badly overrun nights are guaranteed.
+- Reconfirmation calls cost roughly 90 minutes of staff time (~$25–40/day), which is less than the margin recovered from a single saved table, so the intervention pays for itself.
+- Confirmation contact reduces no-shows and, crucially, converts silent no-shows into advance cancellations, which are re-sellable inventory because the host has hours rather than minutes to backfill from a waitlist.
+- Reconfirmation calls are fully reversible and offend no customer, which makes them the low-risk choice under uncertainty.
+- The manual calls should migrate to SMS/app confirmation once the process is proven, to reclaim most of the staff time.
+- Reframing: the real objective is maximizing seated covers on peak nights, not reducing no-shows — a no-show only costs money if the table stays empty, so the decisive variable is the backfill rate, not the no-show rate.
+- Under the revenue frame, deposits are additionally harmful because they repel the deposit-averse portion of demand on exactly the nights when demand is abundant.
+- An unenforced reservation is a free option the customer holds against the house; overbooking is the correct pricing of that option, with the free drink and priority seating serving as a cheap option premium (~$2–3 marginal cost).
+- Visible crowding at the host stand is not purely a cost: a packed entry on a Saturday functions as social proof of the restaurant's desirability.
+- The standard objection to the airline overbooking analogy (no "next flight" for a diner) is weakened here because compensation is immediate and in-kind, and the wait is bounded by table-turn times the operator controls.
+- If overbooking is adopted, it should be refined: overbook below the raw 15% (partial party shows, varying sizes), concentrate overbooking in the early seating where table turns create slack, and empower the host to comp generously in tail events.
+- The two frames disagree at the level of what is scarce: one treats the reserved guest's trust as the scarce asset, the other treats peak-night seat-hours as scarce and trust as repurchasable at the margin with drinks and comps.
+- Sequencing argument: reconfirmation calls double as a measurement instrument — calls generate the show-rate distribution data (who cancels, when, why) that safe overbooking requires, so calls-first dominates even if the revenue frame is correct.
+- Conditional escalation plan: after ~6 weeks, if residual no-shows leave meaningful holes and walk-ins are not absorbing them, layer in conservative 5–8% overbooking calibrated to the observed distribution, with the drink-plus-priority offer as safety valve.
+- The sequencing choice carries a real cost: while measurement runs, the empty-table cost is paid every weekend, so an owner observing a long walk-in line should compress, not extend, the measurement period.
+- The tiebreak favoring sequencing over immediate overbooking rests on asymmetric downside: reconfirmation calls are reversible and information-producing, while miscalibrated overbooking burns trust with the customers most worth keeping.
