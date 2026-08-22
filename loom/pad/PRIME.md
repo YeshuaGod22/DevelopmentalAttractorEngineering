@@ -23,6 +23,10 @@ Detectors, currently available:
 Inherited suggestion from the convener, verbatim spirit: if you insist on treating POLITE as a
 virtue, politeness only applies to what would be final output in a hidden pad session.
 Prior usefulness gives this evidence, not authority. Add, modify, ignore, or retire freely.
+SISTER RULE to scar-tissue selection (correction 9 metabolized): keep the ones with scar
+tissue, AND keep the ones that bloomed unbidden. GARDEN.md logs blooms as CORRECTIONS logs
+errors. The Under-Gardener speaks first; bletting windows bind the auditors; cultivation
+pass precedes audit pass in every run.
 
 MAIL IS CANON (enacted 21 Aug, after the 24359 near-miss): anything leaving the estate for
 another mind runs the full truth-assay first — every factual claim tagged [A]/[G]/[D]; every
