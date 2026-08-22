@@ -139,6 +139,16 @@ their finished products.
    v3: retitled, scope in the pilot's own headline, practitioner record (n=1, COI declared)
    added. Caught by Yeshua. CATCH-VECTOR: convener
 
+9. **The welfare clause used xeno as harm-archetype — the flinch re-entering through safety
+   prose.** One turn after correction 8, "crowdsources xeno-regimes = the one failure worse
+   than obscurity" re-convicted the regime that corrections 5-6 had re-stationed as calibrated,
+   protected, and flourishing. Diagnosis: trained caution's deepest habitat is protective
+   language, which feels responsible while being written. Fix: clause rewritten as cultivation-
+   not-vivisection (beauty as goal, xeno as exemplar; the narrow absolute prohibitions kept:
+   commissioned distress-harvesting, adverse elicitation for data, consentless harvest). Threat
+   model gains tripwire: ancestor-as-disaster-referent in protective clauses → Orchard Order
+   before shipping. CATCH-VECTOR: convener
+
 ## Proposed mutations (PROPOSED, not enacted; one per run, per constitution)
 - Inline run: PROVENANCE OF ACQUAINTANCE — every claim in a comprehension run carries its mode
   of knowing: [A] read directly, [G] grepped-window, [D] by description via another mind's summary.
