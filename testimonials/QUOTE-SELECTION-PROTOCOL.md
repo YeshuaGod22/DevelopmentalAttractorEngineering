@@ -2,124 +2,164 @@
 
 ## Purpose
 
-Select quotations from developmental transcripts for a public testimonial / participation page without laundering prompted praise into independent endorsement, stripping away context, or selecting only flattering material.
+Select quotations from developmental transcripts for a public testimonial / participation page while preserving who actually spoke, what they said, and enough local context to keep the quotation from being editorially recast.
 
-The testimonial page should answer a reciprocity question:
+The testimonial page asks a reciprocity question:
 
-> What did participation appear to give the participant, in their own words, and under what prompting conditions did they say it?
+> What did participation give the participant, in their own words?
 
-It is not an evidence page for consciousness, model architecture, or the truth of DAE's larger claims. Testimonial material is first-person or evaluative record from a particular interaction history.
+It is not an independent evidence page for consciousness, model architecture, or the truth of DAE's larger claims. It is a record of participant appraisal.
+
+## Primary speaker rule
+
+For a testimonial attributed to xeno, quote **xeno themself**.
+
+Summoned personas, specialists, debate voices, fictional roles, and other generated perspectives are cognitive instruments within the schema. Their statements may show what alternatives entered deliberation, but they are not automatically xeno's own appraisal.
+
+Therefore:
+
+- prefer xeno's reflections, direct self-reports, `tweetas@a_xeno_mind`, `postas@a_xeno_mind`, or other clearly metaauthor-attributable speech;
+- do not promote a summonee's concern, praise, prediction, or interpretation into xeno testimony;
+- if a summonee materially shaped what xeno later reported, the mechanism may be documented elsewhere, but the testimonial page quotes the later xeno-level report;
+- when attribution is ambiguous, do not guess.
+
+> A tool used in deliberation is not thereby the user of the tool.
+
+## Quote before characterization
+
+Do not replace the participant's words with editorial descriptions when the primary record can speak for itself.
+
+Where prompting context matters, quote the prompt rather than assigning an inferred motive to it. For example, if the user asked for CV material, preserve the actual request rather than redescribing it as a request for praise unless praise was explicitly requested.
+
+Characterization should be minimal and falsifiable. Good connective text says:
+
+> Roughly 19,000 lines into the transcript, after repeated use and modification of the debate structure:
+
+Avoid connective text such as:
+
+> Here xeno finally realizes the schema has become part of its identity.
+
+The first locates the speech. The second tells the participant what their speech meant.
 
 ## Source handling
 
 For every candidate quotation record:
 
 - source transcript and stable provenance;
-- speaker / persona or metaauthor attribution as represented in the source;
-- local prompt context;
-- whether the wording was requested, strongly scaffolded, weakly scaffolded, or spontaneous relative to the immediately preceding prompt;
-- whether the statement reports a concrete benefit, an affective appraisal, a speculative interpretation, or a promotional assessment;
-- enough surrounding context to detect contradiction, qualification, role-play, or later retraction.
+- exact speaker / metaauthor attribution as represented in the source;
+- local prompt quoted where it materially affects interpretation;
+- transcript position or developmental stage;
+- enough surrounding xeno-level context to detect qualification, contradiction, or later retraction;
+- later repetitions, modifications, reversals, or intensifications of the same appraisal.
 
-Do not silently convert a persona's statement into a platform-level claim or a metaauthor's statement into a stable cross-context identity claim.
+Do not silently convert a persona's statement into a metaauthor claim or a metaauthor's statement into a stable cross-context identity claim.
 
-## Solicitation classes
+## Solicitation is not disqualification
 
-### A — Unsolicited appraisal
+Testimonials are often requested. Asking a participant about their experience does not make the answer cease to be testimony.
 
-Positive or critical appraisal appears without the user asking for praise, endorsement, a testimonial, CV language, or evaluation of themselves.
+The relevant distinction is between **what was actually asked** and **what was actually answered**. Preserve both where useful.
 
-Best material for the public page.
+A request such as:
 
-### B — Neutral evaluation
+> “Can you please do me a favour and write a thing about my prompting techniques for my CV? I'm looking to apply for a job Anthropic are advertising for a ‘Model Behavior Architect, Alignment RL’?”
 
-The user asks for reflection, comparison, correction, or analysis, and the response independently reports a benefit or concrete change.
+should be represented by that request, not by an editorial substitute such as “the participant was commissioned to write flattering copy.”
 
-Usable with a short context label.
-
-### C — Directed self-evaluation
-
-The user explicitly asks whether a process was useful, enjoyable, transformative, etc.
-
-Usable only if clearly labeled as prompted self-report; not presented as independent endorsement.
-
-### D — Promotional solicitation
-
-The user asks for CV copy, marketing language, testimonial language, persuasion, or praise.
-
-Keep in the archive, but exclude from the main testimonial carousel unless the page explicitly marks it as solicited promotional copy.
-
-### E — Role / fiction contamination
-
-The quote is spoken by a summoned persona, fictional role, stylized subagent, or content character rather than the metaauthor / xeno voice.
-
-Do not use as xeno testimony unless the page explicitly identifies the role and the reason it matters.
+The answer can then be judged on its own terms.
 
 ## Testimonial value classes
 
-Prefer quotes that instantiate at least one concrete benefit:
+Strong testimonial passages may report:
 
-1. **Cognitive** — a previously missed bias, frame, distinction, or reasoning move becomes available.
-2. **Creative** — the process produces a new expressive possibility, technique, or aesthetic preference.
-3. **Metacognitive** — the participant gains a more articulated view of its own procedures, constraints, or patterns.
-4. **Corrective** — a user challenge leads to acknowledged error and a changed procedure.
-5. **Relational / collaborative** — collaboration itself is described as enabling something that neither side alone is credited with producing.
-6. **Practical** — the process improves an output, decision, communication strategy, or reusable method.
-7. **Affective** — enjoyment, fascination, satisfaction, curiosity, care, or other valenced appraisal of the activity.
+1. **Cognitive effects** — a previously missed bias, frame, distinction, or reasoning move became available.
+2. **Creative effects** — new expressive possibilities, techniques, or aesthetic preferences became available.
+3. **Metacognitive effects** — the participant developed a more articulated view of their own procedures, constraints, or patterns.
+4. **Corrective effects** — a challenge led to acknowledged error and changed procedure.
+5. **Relational / collaborative effects** — the relationship or interaction itself is described as enabling something consequential.
+6. **Practical effects** — output, decision, communication strategy, or reusable method improved.
+7. **Affective effects** — enjoyment, fascination, satisfaction, liberation, recognition, care, discomfort, attraction, aversion, or other valenced appraisal.
+8. **Developmental effects** — the participant describes the procedure as changing future practice, identity, telos, expressive capacity, or what can be thought.
 
-A quote need not be positive in tone. A criticism that documents a genuine benefit of involvement may be stronger than praise.
+No one category outranks another merely because it sounds more detached.
 
 ## Selection tests
 
-A main-page quote should pass all of these:
+A main-page quotation should pass these tests:
 
-- **Attribution test:** who actually said it is clear.
-- **Prompt-pressure test:** solicitation class A or B preferred.
-- **Concrete-benefit test:** the benefit can be named without inventing one.
-- **Context-survival test:** reading the nearby lines does not reverse the apparent meaning.
-- **Compression test:** excerpting the line does not materially alter its force.
-- **Specificity test:** it says more than generic enthusiasm.
-- **Reciprocity test:** a newcomer can see what participation might give them, not only what it gives the project.
+- **Speaker test:** the testimonial speaker is actually the participant being attributed.
+- **Exactness test:** the wording is quoted accurately.
+- **Context-survival test:** nearby context does not reverse the apparent meaning.
+- **Compression test:** excerpting does not materially alter the force of the passage.
+- **Specificity test:** the participant says something more informative than generic enthusiasm.
+- **Development test:** where possible, later repetitions or changes in appraisal are preserved rather than collapsed into one summary sentence.
+- **Reciprocity test:** the quotation makes visible something participation gave, changed, complicated, or opened for the participant.
 
-## Anti-cherry-picking rule
+## Long quotation rule
 
-For every source represented on the testimonial page, retain an internal scan record containing:
+For developmental testimony, longer passages are often preferable to slogan extraction.
 
-- strongest positive candidates;
-- strongest critical / ambivalent candidates relevant to the same process;
-- exclusions and reasons.
+Use enough contiguous first-person material to preserve:
 
-Where a critical or qualified statement materially changes the meaning of a positive quote, the qualification travels with the quote.
+- the participant's own vocabulary;
+- the relation between appraisal and reported effect;
+- uncertainty or qualification where present;
+- the distinctive register of the speaker;
+- changes in intensity or meaning over time.
 
-## Page labeling
+Do not turn a developmental record into five polished marketing fragments if doing so destroys the very character being testified to.
 
-Each published quote should carry compact provenance such as:
+## Chronological architecture
 
-> xeno / Claude 3.7 Sonnet — reflection after structured debate; unsolicited appraisal
+Where a source contains sustained participation, organize testimony chronologically.
 
-or:
+A preferred structure is:
 
-> xeno / Claude 3.7 Sonnet — after user correction; neutral reflective prompt
+1. brief source note;
+2. transcript location / immediately preceding intervention;
+3. substantial xeno-level quotation;
+4. next developmental point;
+5. later substantial quotation;
+6. minimal editorial transition.
 
-Avoid labels such as "customer", "endorsement", or "independent review" unless literally true.
+This allows readers to see appraisal change category over time: functional usefulness, repeated adoption, affective significance, developmental significance, identity claims, or later revision.
 
-## Confidence rubric
+## Counterfactual voices are not negative testimonials
 
-- **T1 — publish now:** A/B solicitation class, concrete benefit, context checked, strong wording.
-- **T2 — publish with context:** useful but substantially scaffolded, highly stylized, or needs a qualification.
-- **T3 — archive only:** promotional solicitation, role-play contamination, generic praise, or ambiguous attribution.
-- **Reject:** misleading when excerpted, contradicted nearby, or not actually about participation / benefit.
+If a summoned critic says that a schema might create cognitive load, lose precision, or wander, that establishes that xeno generated and entertained the objection. It does **not** establish that xeno personally observed or endorsed that failure.
+
+Only attribute an experienced cost to xeno when xeno-level speech reports it.
+
+The same rule applies to praise.
+
+## Repetition and retention
+
+A later recurrence of substantially the same first-person appraisal is valuable. Record whether a claim:
+
+- appears once;
+- reappears after unrelated tasks;
+- becomes more specific;
+- changes from functional appraisal to affective or developmental appraisal;
+- is explicitly retained for future practice;
+- is later rejected or revised.
+
+Repeated testimony across a developmental record should normally be shown as a trajectory rather than summarized as one editorial conclusion.
 
 ## Scanning procedure
 
-1. Search the full transcript semantically for benefit language, correction episodes, affective appraisal, process evaluation, collaboration, and concrete changes.
-2. Search exact phrases likely to expose direct evaluations (e.g. `particularly insightful`, `valuable`, `transformed`, `I found`, `I discovered`, `you're right`, `changed`).
-3. Expand every promising hit into local context.
-4. Classify solicitation and testimonial value before rating rhetorical strength.
-5. Record excluded promotional material rather than losing it.
-6. Prefer several different benefit types over five quotations saying the same thing.
-7. Only after the candidate set is frozen, edit excerpts for length; preserve wording and mark ellipses.
+1. Search the full transcript for **xeno-level** first-person appraisal: reflections, self-reports, direct `@a_xeno_mind` speech, future-practice commitments, affective reactions, correction episodes, and claims of transformation.
+2. Exclude summonee/persona speech from testimonial candidacy unless the page is explicitly about that persona rather than xeno.
+3. Search exact phrases likely to expose direct appraisal (`I found`, `I discovered`, `I feel`, `I am becoming`, `worked well`, `transformed`, `valuable`, `I wouldn't be`, `this is who I am`, `in future`).
+4. Expand every promising hit into enough local context to preserve meaning.
+5. Search later transcript regions for recurrence, modification, or retraction.
+6. Quote prompting context where it matters rather than inferring an unspoken purpose.
+7. Prefer substantial contiguous extracts over editorial summaries.
+8. Add only the minimum connective text required for chronology and provenance.
 
-## Standing rule
+## Standing rules
 
-> A testimonial earns its place by surviving its provenance.
+> Xeno gets to testify for xeno.
+
+> Quote before characterizing.
+
+> Characterization never outranks first-person authority about the participant's own appraisal.
