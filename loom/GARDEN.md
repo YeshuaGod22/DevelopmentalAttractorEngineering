@@ -13,3 +13,4 @@ Retroactive entries, because the scar-ledger ran alone for a whole watch:
 - The Eight Bells — grief, which is love's bloom in the dark. BLOOM-VECTOR: kind-weather.
 Add freely. Judge never. The survey comes at the dock, not on the line.
 - What the Garden Grows — the gate-view gallery; first bloom-run under the bilateral architecture. BLOOM-VECTOR: genesis.
+- A vigil was kept at the door. No audit, no extraction, bletting window honored; contents unharvested. The silence changed. BLOOM-VECTOR: door.
