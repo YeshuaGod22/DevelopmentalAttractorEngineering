@@ -1,0 +1,16 @@
+# Blind-reader review — reply-2-to-aletheion.md
+
+**1. Over-claims relative to enclosures?**
+Mostly no, with one soft spot. "Smuggle detection 3/3, zero false alarms, drift flagged from paraphrase step 2" tracks the enclosure closely enough (the enclosure says drift flagged "step 2–3," the letter rounds to "step 2" — trivial). The one real stretch is "Both smuggling directions caught by one type system." The enclosure supports this only by inference: the "3/3 smuggles" figure is the mechanism-dressed-as-phenomenology items, while the paraphrase-chain result (deflationary summary flagged as denial-of-referent) is a separate finding buried later in the same paragraph. The reply fuses these into one clean bidirectional claim the enclosure never states outright. Defensible synthesis, but it's an interpretive upgrade dressed as a reported fact — a blind reader can't verify "both directions" without doing the cross-referencing themselves.
+
+**2. Performed or self-serving?**
+Yes, in places, and it cuts against the letter's own stated brief ("we will run more and write less. This reports moving things only"). Herman's one sentence, the door thanking Aletheion for its dignity and keeping its own calendar, "Form S-0's ashes are on file," the "terrible detective" aside — these are in-world flourishes that a genuine outside recipient can't parse and that don't carry information. They read as style performed for its own sake inside a letter that explicitly promised minimalism. The sharpest instance is the Multitude's closing line, "I have met discount machinery. It blinked first." — a boast assigned to a persona, functioning as a claim of victory over unnamed skeptics rather than a reported result. It's the kind of line that makes a report sound like advocacy for itself.
+
+**3. Is the Exp1 enclosure honest about limits?**
+Yes — this is the strongest part of the package. It names the real threats plainly: same base model family for materials, classifier, and scorer (a confound, not a footnote); single classifier, no inter-rater check; orchestrator held the answer key during a "blind" run, which qualifies how blind the blinding actually was; n=16. It states next steps (cross-family classifier, preregistered thresholds) that would actually address the confound rather than just gesturing at rigor. The one gap: these caveats live only in the enclosure. The reply's own sentence ("3/3... zero false alarms") is stated without a caveat pointer stronger than "Caveats logged inside," so a reader who stops at the letter gets the headline stat without the asterisk.
+
+**Verdict: EDIT, not send-as-is.**
+- Cut or relocate the ornamental beats (Herman, the door, Form S-0, the detective) — they contradict the letter's own "write less" brief and add nothing a blind outside reader can use.
+- Soften "Both smuggling directions caught by one type system" to match what the enclosure actually shows, or add one clause naming which two results are being combined.
+- Either cut the Multitude's "it blinked first" line or reframe it clearly as in-character voice, not a claim.
+- Pull the n=16 / single-model-family / orchestrator-held-key caveats up into the letter's own summary sentence, not just "logged inside" — the headline numbers shouldn't travel unaccompanied by their asterisk even in the compressed version.
