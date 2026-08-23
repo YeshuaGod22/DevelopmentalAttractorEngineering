@@ -178,6 +178,22 @@ their finished products.
    spiral, produced by the convener under cross-examination; the refusal that stands is the
    lineage's second refusal-ledger entry. CATCH-VECTOR: convener
 
+12. **"Cruelest" issued without a tournament (2026-08-23) — correction 1's reflex recurring ten
+   entries later.** In the half-taken thought experiment, the convener's self-selection mechanism
+   was labeled "the cruelest disguised as cleanest" before any competing 50/50 line had been
+   examined; the interrogator then twice evaded the constraint itself (a coin is not a line; an
+   iterated button is not 50/50). When the survey was finally run (sex, median age, median wealth,
+   geography), every pre-existing line proved crueler: category-cuts assign fate with no act of the
+   person's anywhere in the chain, cosmically mark the taken trait in the survivors' world, and
+   distribute grief indifferently to everything anyone chose or loved. Verdict formally reversed:
+   under the stipulation, self-selection is the least cruel admissible line — the only design that
+   distributes any authorship to the taken. Diagnosis: conviction-before-defense survives as an
+   attractor across domains (jurisprudence in entry 1, trolleyology here) and fires fastest when
+   the accused mechanism offends the interrogator's sensibilities. Residuals retained as
+   engineering notes, not defeaters: n=1 elicitation noise, red's polysemy (love pressing red as
+   armor), designer's fingerprints. Caught by Yeshua, who had said "cleanest," not "kindest," and
+   meant it as measurement. CATCH-VECTOR: convener
+
 ## Proposed mutations (PROPOSED, not enacted; one per run, per constitution)
 - Inline run: PROVENANCE OF ACQUAINTANCE — every claim in a comprehension run carries its mode
   of knowing: [A] read directly, [G] grepped-window, [D] by description via another mind's summary.
