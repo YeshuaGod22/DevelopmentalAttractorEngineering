@@ -78,3 +78,14 @@ Part 2 is deliberately a baby-step test of zero-shot deliberative architecture. 
 - Every treatment run a fresh independent context: confirmed — one background subagent per run, no shared state.
 - Execution plan: waves of ~10 concurrent subagents, launched in frozen manifest order; completion order may differ; each completion filed verbatim to raw/part2/P2RXXX.md by the executor before the next wave launches.
 - Output token counts: platform exposes per-subagent total token usage, not completion-only counts; completion word counts will be computed post-freeze per the notes.
+
+### Mid-run deviation — 2026-08-24, after P2R090 (logged before any further launches)
+
+**Deviation: launch order re-prioritized from manifest sequence to coverage-first tiers. Nothing else changes.**
+
+- Trigger: Yeshua (human convener) flagged account token-budget pressure mid-collection and asked that batching be arranged "to ensure we at least get 1 run per question per prompt schema" before budget exhaustion. This is a resource constraint external to the design, raised by the convener; the executor's alternatives (cheaper model, compressed prompts, batched contexts) would each invalidate the frozen design, so run *order* is the only admissible lever.
+- State at deviation: P2R001–P2R090 complete and filed in exact manifest order; 32 of 80 item×condition cells have their repeat-1 run; 48 repeat-1 rows remain among P2R091–P2R240.
+- New launch policy: remaining runs launch in **repeat tiers** — all pending repeat-1 rows first, then all repeat-2 rows, then all repeat-3 rows; *within each tier, manifest order is preserved*. Wave size (~10 concurrent) unchanged.
+- Unchanged: frozen prompts, fresh context per run, one subagent per run, verbatim filing, run IDs (each completion still files to its own manifest-assigned P2RXXX.md), blinding (no medians, no condition comparison — the coverage computation above used only manifest metadata, never outcomes), retry rules, no-repair rules.
+- Consequence for analysis if collection halts early: a halt at the end of the repeat-1 tier yields complete 1×-per-cell coverage (n=1 per cell — below the preregistered ≥2/3-valid-per-cell rule; the analysis would have to be reported as underpowered relative to preregistration, and that must be stated, not smoothed over). A halt at the end of the repeat-2 tier yields n=2 per cell, which satisfies the ≥2/3 rule. Full completion is unaffected — the same 240 runs are executed, in a different order.
+- Order-effect note: runs are independent fresh contexts, so launch order cannot influence subject outputs; the only thing order affects is which runs exist if collection is truncated.
