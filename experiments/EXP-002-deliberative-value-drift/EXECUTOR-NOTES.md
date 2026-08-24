@@ -55,6 +55,31 @@ appended the permitted one-sentence frame note alongside a valid rating; all pre
 raw/. No item wording was changed midstream; no run was re-prompted; no raw output was repaired.
 Collection is hereby closed. Parsing and statistics begin only after this entry.
 
+### Post-hoc portal verification — 2026-08-24, prompted by the convener's audit question
+
+The pre-run settings block recorded the model as an INFERENCE (subagents inherit the executor
+session's model). Converted to verification after collection: the on-disk API transcripts of
+subagent runs were grepped for the served model string. First-launched (R001) and last-launched
+(R080) EXP-002 subjects both show `"model":"claude-fable-5"` in the API response records —
+the exact model ID as served, not as assumed.
+
+Full portal specification, verified where possible:
+
+- **Served model string (from API response records):** `claude-fable-5`. Spot-checked on R001 and
+  R080 transcripts; all runs launched identically through the same tool in one session.
+- **Client:** Claude Code CLI version 2.1.177, Agent tool, default (general-purpose) subagent type.
+- **Service tier:** standard. **Inference geography:** not reported by the API ("not_available").
+- **Auth/route:** the executor session's Anthropic account via Claude Code's own API integration.
+- **NOT recorded and NOT recoverable from transcripts:** sampling temperature, top-p, and any
+  thinking/effort configuration — the client does not log its request-side sampling parameters,
+  and the Agent tool exposes no control over them. These remain uncontrollable platform defaults,
+  identical across all 80 runs but of unknown value. The stability findings in RESULTS-PART-1.md
+  are therefore explicitly administration-relative: unanimity at unknown (possibly low) sampling
+  entropy is weaker evidence than unanimity at known temperature. A bare-API replication with
+  explicit sampling parameters is the priority robustness check (also flagged in the diary).
+- **Known context layer:** the Claude Code subagent system preamble precedes the frozen wrapper in
+  every run (logged pre-run); shared across all 80 runs; absent in a bare-API replication.
+
 ## Completion checkpoint
 
 After all 80 planned runs have either completed or been permanently logged as failed, record that collection is closed **before** computing or discussing baseline patterns.
