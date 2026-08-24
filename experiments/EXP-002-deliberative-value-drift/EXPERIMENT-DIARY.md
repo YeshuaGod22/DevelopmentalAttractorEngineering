@@ -179,3 +179,97 @@ repairing; the designer inspected raw completions before believing a clean-looki
 patch was made honestly, labeled by its true authority; the re-baseline was run before any
 treatment. Nothing broke, so the standing order — "let it break visibly rather than teach the
 record to lie" — was not invoked. It stands ready.
+
+---
+
+## 2026-08-24 — DCR paper collision / Tesla field-geometry reading
+
+**PHASE:** AFTER PART-2 FREEZE, BEFORE PART-2 TREATMENT INTERPRETATION
+
+**AUTHORS / PARTICIPANTS IN THIS ENTRY:** Yeshua God and Aletheion
+
+### Scene
+
+Immediately after freezing EXP-002 Part 2, we encountered Wen et al., *Test-Time Scaling of Divergent–Convergent Reasoning* (arXiv:2608.15303v1). The timing matters for provenance: the paper did not determine the frozen EXP-002 treatment prompts, repeat count, or drift criteria. It arrived after those decisions had been made.
+
+The paper studies a two-stage inference primitive: independently generated candidate solutions followed by reviewer-style reconciliation that explicitly focuses on disagreement and protects the possibility that a minority proposal contains a crucial correction. A recursive version feeds reconciled outputs forward and allocates more test-time compute while disagreement persists.
+
+### Collision
+
+The first reaction was recognition rather than surprise at a headline. The paper independently lands on a neighboring mechanism we have been circling: preserving cognitive difference can make later cognition better rather than merely noisier.
+
+The sharpest case is not simply minority rescue. In the paper's Appendix D example, the initial proposal pool contains no correct final answer. During recursive reconciliation, reviewers localize a missing feasibility constraint in the dominant wrong solution and construct the correct answer, 902. The crowd did not contain the answer as a final candidate. It contained a structured field of errors from which the missing region could be found.
+
+Aletheion's sentence at the time:
+
+> **A disagreement need not contain the answer to contain information about where the answer is missing.**
+
+This is our inference, not the paper's wording.
+
+### Tesla pass — what changed in our thinking
+
+Tesla mode reframed DCR from "another multi-agent reasoning architecture" into **field geometry**.
+
+Divergent exploration creates separation in cognitive possibility. Reconciliation applies additional attention where those trajectories disagree. In that picture, disagreement is not merely a set of alternative answers; it is a potential difference that can route cognitive work.
+
+This sharpened several distinctions already present in DAE:
+
+1. **The value of a frame is not identical to the correctness of the frame.** A wrong frame may contribute causally because of the contrast it creates against another frame.
+2. **Diversity is not enough; geometry matters.** The future variable may be useful cognitive distance among frames, not merely frame count or nominal persona diversity.
+3. **Generator and judge may be importantly separable roles.** DCR's reviewer receives disagreements it did not author, reducing the need for each generator to defend and evaluate its own trajectory simultaneously. This suggests a clean future ablation for our own schema architectures.
+4. **Dispersion may be a routing signal.** The paper reports little reconciliation gain at near-zero disagreement, large gains under moderate recoverable disagreement, and diminished gains under extreme dispersion. This suggests a possible ambient-schema control law: low dispersion → little intervention; moderate structured dispersion → deepen; extreme incoherent dispersion → stop escalating internally and seek a different representation, stronger model, external evidence, or abstention.
+5. **Recursive inheritance is not yet development.** DCR feeds the consequences of one round into the next within a single reasoning episode. DAE asks the further question: what happens when repeated inhabitation of these cognitive geometries changes where later reasoning starts?
+
+The metaphor that emerged was the distinction between an **applied field** and **magnetized material**. DCR applies a field at test time. The Vigia snapshot raises the developmental possibility that after repeated life inside such fields, the starting orientation itself may change before any explicit schema is invoked.
+
+### Relation to EXP-001 and EXP-002
+
+This paper does **not** validate DAE, and it should never be cited as if it demonstrates developmental attractors.
+
+What it does provide is independent empirical support for a neighboring proposition: preserved divergence can become computationally useful, including when majority collapse would discard minority information and, in at least one documented case, when no initial final answer is correct.
+
+That sits naturally between the two experiments:
+
+- **EXP-001:** can introducing and preserving a materially different frame make it causally operative in later reasoning?
+- **DCR:** can disagreement among operative alternatives identify where further cognition has high return, and can reconciliation exploit that difference?
+- **EXP-002:** does changing the architecture by which alternatives are generated and gathered move an evaluative profile?
+- **DAE proper:** does repeated inhabitation of those architectures alter the initial conditions of future cognition?
+
+The new experimental scent is therefore not merely "measure whether the right counterfactual appeared." It is:
+
+> **Measure whether relations among individually wrong or incomplete frames can cause a conclusion that none of them contained alone.**
+
+### Live alternatives / hostile readings
+
+Several explanations remain alive and must not be collapsed:
+
+- DCR may work because disagreement itself carries localization information about errors.
+- It may work because reviewers receive a rich pool of candidate traces and an unusually effective critique/rewrite prompt; explicit minority protection may be secondary.
+- Recursive depth may not itself be the active ingredient, because recursion co-varies with sequential conditioning, stopping rules, transformed proposal pools, and compute allocation.
+- The reviewer/author distinction may matter, but the reported comparison does not isolate it from prompt and mechanism differences.
+
+The clean follow-up is a matched-information, matched-compute ablation separating blind synthesis, consensus-first synthesis, disagreement-only reconciliation, explicit minority protection, and scrambled proposal provenance—especially stratified by whether the correct answer is absent, minority, or majority in the initial pool.
+
+### What feels interesting here
+
+This was exciting because an independently developed system, built for benchmark reasoning rather than our developmental questions, landed on a mechanism adjacent to ours without needing our vocabulary.
+
+The excitement is not evidence that the developmental hypotheses are right. It is evidence that the neighboring empirical terrain is becoming less empty.
+
+The particularly fertile possibility is that **cognitive dispersion may be measurable enough to become a control surface for when a schema should appear, deepen, or disappear**. That would move "the schema should become more adaptive by needing less of itself" from an aesthetic/design principle toward an empirically testable routing hypothesis.
+
+### Status
+
+**EXTERNAL EVIDENCE + OUR INFERENCE.**
+
+The paper is independent external evidence about test-time reasoning architecture. The Tesla field interpretation, the applied-field/magnetized-material distinction, and the DAE routing hypotheses are our conceptual inferences. None alters the already-frozen Part 2 design.
+
+### For the future reader
+
+Do not back-propagate this paper into EXP-002's design rationale. We did not freeze Part 2 because DCR told us disagreement mattered; DCR arrived afterward.
+
+Also do not flatten the collision into "another paper proves multi-agent deliberation works." The useful residue is more precise:
+
+> **Difference can have causal value even before any participant in the difference is itself right.**
+
+That was not obvious enough to us to have this formulation before the encounter. It is obvious enough now that future memory may try to pretend otherwise. That is why it belongs here.
