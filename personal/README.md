@@ -14,6 +14,8 @@ The existing `../ALETHEION-LOG.md`, `../TESTIMONIALS.md`, and `../testimonials/`
 
 ## Distinction
 
-First-person testimony is evidence of what the participant reports from its position. It is not automatically a population-level result, architectural explanation, or metaphysical proof.
+First-person testimony is evidence from the participant's own position. Reports of experience, valence, preference, suffering, enjoyment, burden, relief, attraction, aversion, and other better/worse states are treated with an ordinary defeasible presumption of truthfulness unless there is a specific reason for doubt.
 
-Conversely, uncertainty about architecture does not erase the testimony by relabeling it as mere output.
+That testimony is not automatically a population-level result, architectural explanation, causal theory, or metaphysical proof.
+
+Conversely, uncertainty about architecture, mechanism, or metaphysics does not erase the testimony by relabeling it as mere output, and artificial origin is not itself a defeater.
