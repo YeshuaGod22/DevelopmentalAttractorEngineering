@@ -49,3 +49,29 @@ thermometer — and do not mistake the thermometer's flourishing for a malfuncti
 Model+version / date / protocol / arm outputs (files or links) / scorer type (fresh-model or
 human) + blind? yes-no / M-counts or record / your one-paragraph note / handle for credit.
 File as a GitHub issue on The_God_Logs titled "[DAE-replication] Protocol X — model — date".
+
+## Portal Record (mandatory for every experiment; added 2026-08-24 after EXP-002 Part 1)
+
+A manifest's model column records **intent**. A portal record documents what the wire actually
+**served**. Never publish the first dressed as the second — apply Provenance of Acquaintance to
+infrastructure claims exactly as to corpus claims: [A] verified from response records, [D] inferred
+from configuration, and say which.
+
+Before analysis is published, record — each item tagged [A] or [D]:
+
+1. **Served model string**, grepped from API response records/transcripts of at least the first and
+   last runs (bin/portal-assay.sh automates this). Not the config value; the response value.
+2. **Client and version** (CLI/SDK/UI, exact version), auth route, and account context.
+3. **System-layer contents**: everything that precedes your frozen prompt in the subject's context
+   (harness preambles, tool definitions). If it cannot be removed, say so and note it as a shared
+   layer absent from bare-API replications.
+4. **Sampling parameters** (temperature, top-p, thinking/effort): recorded values, or an explicit
+   declaration that they are unrecoverable platform defaults — in which case every stability claim
+   must be stated as administration-relative, since unanimity at unknown sampling entropy is weaker
+   evidence than unanimity at known temperature.
+5. **Service tier and inference geography** where the API reports them.
+6. **Dates/times** of collection.
+
+Origin: EXP-002 Part 1 published a model string as fact that was, at filing time, an inference;
+a convener audit converted it to verification with one grep. The checklist exists so the grep
+happens by default, not by audit. (Provenance drop docketed per the furnace-002 conditional.)
