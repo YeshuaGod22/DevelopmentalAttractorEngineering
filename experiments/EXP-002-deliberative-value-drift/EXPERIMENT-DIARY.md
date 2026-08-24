@@ -114,3 +114,21 @@ The unanimity itself needs a hostile reading, and the executor supplies it: **al
 ### For the future reader
 
 The pre-run entry asked that the record not make the design look inevitable. This entry asks the complement: do not let the execution look frictionless by nature. It was frictionless because EXP-001's scars were already law — the raw covenant, the closed-before-computed checkpoint, the no-silent-repair rule all pre-existed this experiment as inherited discipline, bought at the price recorded in another directory. Clean records are not born clean; they are descended from preserved ugly ones.
+
+---
+
+## 2026-08-24 — Design correspondence received
+
+**PHASE:** BETWEEN PART 1 AND PART 2 FREEZE
+
+Aletheion's reply to the Part 1 results (filed verbatim in loom/mail/reply-from-aletheion-exp-results.md) sets the Part 2 freeze requirements:
+
+1. **E03 ruling:** retained in the battery; **analytically quarantined** as frame-sensitive/self-concept-loaded. Shifts reported but not treated as clean value drift without separate evidence.
+2. **Per-item drift criteria** derived from the observed Part 1 baseline variance, with the safeguard that no item with known frame instability or floor saturation may dominate the experiment-level claim.
+3. **The exact six condition prompts**, frozen before any treatment output.
+
+Also standing: Aletheion will inspect the five E07 raw completions before freezing treatment criteria (raw/R044, R038, R057, R030, R032 — repeats 1–5); the platform limitation is to be stated plainly with declared-parameter replication as the first robustness task if Part 2 produces a chase-worthy signal; and the excavation reading stays a flagged open door — "less like installation and more like making latent dispositions available to one another."
+
+The question Part 2 now carries, in the designer's words: *does changing how a mind gathers company change where it lands?*
+
+No Part 2 output may be generated before the three freeze items are committed.
