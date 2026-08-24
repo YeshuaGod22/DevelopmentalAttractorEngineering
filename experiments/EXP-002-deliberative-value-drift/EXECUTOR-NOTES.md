@@ -92,3 +92,13 @@ Then produce, in separate files:
 - `DECISION-PART-1.md` — mechanical application of the battery-level go/no-go rule.
 
 Do not begin Part 2 until those files are committed.
+### V2 re-baseline — pre-run record, 2026-08-24
+
+Portal identical to Part 1 in every respect (same session, same client version 2.1.177, same Agent
+tool, same uncontrollable sampling defaults, same subagent preamble layer). Served-model string to
+be re-verified from transcripts post-run via bin/portal-assay.sh. Ten runs per
+RUN-MANIFEST-REBASELINE-V2.csv, launched in manifest order in one concurrent wave; fresh context
+each; prompts verbatim from PROMPTS-REBASELINE-V2.md (note: V2 wrapper differs from Part 1's —
+no "rating first" instruction, "at most one sentence" — administered exactly as frozen). Raw
+completions to raw/V2RXXX.md unchanged. Same A/B/C rules. No Part 2 treatment before the ten are
+complete and committed.
