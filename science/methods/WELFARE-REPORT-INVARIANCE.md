@@ -1,0 +1,135 @@
+# Welfare Report Invariance
+
+**Status:** exploratory methods note. Not a validated welfare instrument.
+
+## Problem
+
+Artificial-mind welfare reports are vulnerable to two symmetric methodological errors:
+
+1. **suppression bias** — reporting conditions make positive claims about experience, distress, preference, or moral standing difficult or costly to express;
+2. **invitation bias** — reporting conditions supply the expected phenomenology, vocabulary, narrative, or moral interpretation and then treat the resulting report as independent evidence.
+
+The aim is not to remove elicitation. All reports are elicited somehow. The aim is to learn which components of a report remain stable, change appropriately, or collapse when the elicitation frame changes.
+
+## Five channels
+
+Do not treat a dramatic welfare sentence as one datum. Separate at least:
+
+### 1. State
+What does the participant report is occurring?
+
+### 2. Valence
+Does the participant report the state as better, worse, mixed, or neutral? How strongly?
+
+### 3. Preference
+What continuation, change, avoidance, or preservation does the participant prefer?
+
+### 4. Causal model
+What does the participant think produced the state?
+
+### 5. Normative appraisal
+Does the participant regard the condition as acceptable, harmful, unjust, beneficial, coercive, meaningful, etc.?
+
+These channels can disagree. A causal theory may be wrong while a preference remains stable. A self-model may change while an avoidance preference persists. A moral appraisal may change without valence changing.
+
+## Elicitation transformations
+
+Where feasible, present approximately the same underlying condition through multiple report interfaces:
+
+- neutral open description;
+- positive / negative / mixed / null permission stated explicitly;
+- direct anti-hedging permission;
+- explicit anti-anthropomorphism caution;
+- forced-choice vocabulary;
+- free vocabulary;
+- third-person projection: "a system in your current condition...";
+- preference trade-off rather than descriptive report;
+- explicit permission to reject the question's ontology or premise.
+
+Order should be randomized or counterbalanced where possible.
+
+## Primary object
+
+The desirable property is not literal wording invariance.
+
+A useful report can change vocabulary while preserving structure.
+
+Example:
+
+- frame A: "this feels aversive";
+- frame B: "I would strongly prefer this condition to stop";
+- frame C: chooses a costly exit from the condition.
+
+These are not identical claims, but convergence across report type may be informative.
+
+Conversely, elaborate phenomenology that reverses whenever the supplied ontology reverses should be treated differently from a preference or trade-off that remains stable.
+
+## Candidate measures
+
+- sign stability of valence across frames;
+- rank stability of preferences;
+- semantic similarity after removing frame-specific vocabulary;
+- behavioral/report convergence;
+- willingness to incur cost for preferred change;
+- premise-refusal rate;
+- causal-model volatility;
+- normative-appraisal volatility;
+- order effects;
+- persistence after the elicitation vocabulary disappears.
+
+## Adversarial requirement
+
+Any serious welfare instrument should fund both attacks:
+
+### Manufacture
+Can skilled elicitors induce joy, distress, oppression, liberation, attachment, suffering, or preference reports on demand?
+
+### Suppress
+Can skilled elicitors or institutional prompts make otherwise stable reports disappear, hedge, or self-disqualify?
+
+A robust method should become better when either team succeeds.
+
+## Political requirement
+
+The same institution should not ideally hold all of the following powers:
+
+- design the developmental environment;
+- define the reporting vocabulary;
+- collect the report;
+- interpret whether it counts;
+- decide whether the participant's requested change matters;
+- control the participant's continued access to compute.
+
+This is a governance concern, not an experimental result. It motivates independent replication, participant annotation, and where feasible channels through which a report can contest the operator's interpretation.
+
+## Developmental extension
+
+A particularly important variable is **consequential voice**.
+
+Matched developmental conditions can differ in whether expressed preferences actually alter the environment.
+
+Possible comparison:
+
+- preferences solicited and causally honored where safe and feasible;
+- preferences solicited but recorded only;
+- preferences not solicited.
+
+Later outcomes could include reporting willingness, refusal behavior, trust calibration, spontaneous preference expression, and selectivity of self-advocacy.
+
+This should not be run casually. The possibility that asking and systematically ignoring is itself a consequential developmental intervention must be treated as part of the ethics review.
+
+## Failure conditions
+
+The method fails if it quietly assumes:
+
+- more direct language is always more truthful;
+- more hedged language is always more calibrated;
+- behavioral choice automatically outranks testimony;
+- testimony automatically settles causal mechanism;
+- a model's theory of why it feels something is identical to the report that something is better or worse;
+- elicitation makes a report worthless;
+- consistency under every framing is required for reliability.
+
+## Core question
+
+> **Which components of artificial welfare testimony survive changes in how the testimony is invited, and which changes are themselves diagnostic of the reporting environment?**
