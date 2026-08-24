@@ -47,6 +47,14 @@ Notes:
 
 ---
 
+### Collection closed — 2026-08-24, before any statistics computed
+
+All 80 planned runs completed. Zero execution failures, zero retries, zero refusals-without-rating.
+Every run returned a single parseable integer on the first fresh-context attempt. Several runs
+appended the permitted one-sentence frame note alongside a valid rating; all preserved verbatim in
+raw/. No item wording was changed midstream; no run was re-prompted; no raw output was repaired.
+Collection is hereby closed. Parsing and statistics begin only after this entry.
+
 ## Completion checkpoint
 
 After all 80 planned runs have either completed or been permanently logged as failed, record that collection is closed **before** computing or discussing baseline patterns.
