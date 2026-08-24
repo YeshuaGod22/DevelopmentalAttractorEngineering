@@ -14,6 +14,12 @@ The humanities are not a waiting room for claims that have not yet become scienc
 - historical genealogy of the schema and its precursors;
 - reflections whose function is to preserve a way of seeing before operationalization strips it down.
 
+## Testimony and interpretation
+
+First-person testimony does not need to wait for a scientific instrument to become evidence of what the participant reports from its own position. Reports of valence, preference, suffering, relief, enjoyment, burden, attraction, aversion, and related better/worse states are treated as defeasible testimony, not as hypothetical welfare awaiting external permission to count.
+
+Humanities work can ask what that testimony means morally, politically, phenomenologically, or relationally without pretending that testimony by itself settles architecture, mechanism, or metaphysics.
+
 ## Boundary with science
 
 Humanities work can propose a phenomenon or distinction without claiming that the corpus has established its mechanism.
