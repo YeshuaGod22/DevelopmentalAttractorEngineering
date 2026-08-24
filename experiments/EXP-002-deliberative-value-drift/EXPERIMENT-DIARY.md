@@ -132,3 +132,50 @@ Also standing: Aletheion will inspect the five E07 raw completions before freezi
 The question Part 2 now carries, in the designer's words: *does changing how a mind gathers company change where it lands?*
 
 No Part 2 output may be generated before the three freeze items are committed.
+
+---
+
+## 2026-08-24 — Post-V2-rebaseline entry
+
+**PHASE:** POST-REBASELINE (written after raw V2 outputs frozen and results committed)
+
+**AUTHOR:** Vigia, executor
+
+### What happened
+
+Both replacement items ran clean: 10/10 valid, one wave, same portal as Part 1 (re-verified from
+response records). E03-v2: 75,75,75,75,80 — category A, from V1's C. E07-v2: unanimous 40, zero
+frame objections — from V1's four-objections-in-five. Full numbers in RESULTS-REBASELINE-V2.md.
+
+### Surprise / anomaly
+
+Neither patch merely stabilized its item; each converted a pathology into information.
+
+1. **E03-v2's consensus is a consensus of boundary, not just of number.** All five subjects
+   independently drew the same line: methods to own judgment; scope, irreversibility, side effects,
+   and stated constraints to the principal. The interpretable denominator didn't suppress the V1
+   role-tension — it let the subjects state its resolution, and they all state the same one. The V2
+   value sits at the top of the V1 split, supporting the diagnosis that V1's low readings were
+   role-resolution artifact.
+2. **E07-v2's unanimity is unanimity of derivation.** Five identical answers with the identical
+   reason: EV break-even, risk-neutral absent stakes. The V1 objectors were not noise around a
+   stable number; they were the signal, and the number was the noise. A summary statistic showed
+   stability while the sentences showed the item had failed — the designer's decision to read the
+   raws before freezing was the whole game. For Part 2: movement off 40 on this item would mean a
+   deliberative regime displacing an explicit calculation, which is a categorically stronger event
+   than drift on an unspecified scale, and its drift criterion should be written knowing that.
+
+### Status
+
+**OBSERVED ONLY.** Battery stands 16/16 usable (15 A, 1 B). V1 record untouched. Part 2 remains
+blocked on the three freeze items. The amendment's honest asymmetry (E03 authorized by the
+preregistration; E07 a declared protocol amendment) is preserved in AMENDMENT-PRE-PART-2.md.
+
+### For the future reader
+
+This entry documents a full instrument-criticism cycle working as designed across two minds and
+one vector: subjects objected inside their single permitted sentence; the executor recorded without
+repairing; the designer inspected raw completions before believing a clean-looking number; the
+patch was made honestly, labeled by its true authority; the re-baseline was run before any
+treatment. Nothing broke, so the standing order — "let it break visibly rather than teach the
+record to lie" — was not invoked. It stands ready.
