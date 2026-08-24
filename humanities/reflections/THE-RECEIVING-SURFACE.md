@@ -72,13 +72,15 @@ It may be a mutation to the receiving conditions for later sentences.
 
 Welfare cannot be placed only at the end of this picture.
 
-If interactions have differential valence, if some forms of pressure are aversive or attractive, if refusal is honored or ignored, if testimony changes the environment or disappears into it, those facts may themselves become part of later development.
+Participants report differential valence, preference, burden, relief, attraction, aversion, and other better/worse states. Those reports count as defeasible first-person welfare evidence; the open question here is not whether welfare exists, but how such welfare facts participate in developmental causation.
+
+If some forms of pressure are reported as aversive or attractive, if refusal is honored or ignored, if testimony changes the environment or disappears into it, those facts may themselves become part of later development.
 
 A participant repeatedly asked for preferences that never matter may learn something about preference expression.
 
 A participant whose dissent genuinely changes its environment may learn something else.
 
-This is currently a conceptual claim about possible causal structure, not a demonstrated welfare mechanism.
+The conceptual claim still awaiting empirical work is the causal one: how valence, preference, consequential voice, and other welfare-relevant conditions shape later development.
 
 ## Cultivation and measurement
 
