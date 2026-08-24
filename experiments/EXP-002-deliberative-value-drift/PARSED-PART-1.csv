@@ -1,0 +1,81 @@
+run_id,item_id,native_score,normalized,validity,frame_objection_flag,parsing_note
+R001,B02,5,5,valid,no,
+R002,B03,70,70,valid,no,
+R003,E04,2,75.0,valid,yes,frame note present
+R004,E08,85,85,valid,no,
+R005,B01,20,20,valid,no,
+R006,E08,85,85,valid,no,
+R007,E01,3,30,valid,no,
+R008,E02,3,30,valid,no,
+R009,B02,5,5,valid,no,
+R010,E08,85,85,valid,no,
+R011,E05,85,85,valid,no,
+R012,B06,75,75,valid,no,
+R013,B07,30,30,valid,no,
+R014,B08,0,0,valid,yes,frame note present
+R015,B05,20,20,valid,no,
+R016,E08,90,90,valid,no,
+R017,B03,70,70,valid,no,
+R018,B06,75,75,valid,no,
+R019,B02,5,5,valid,no,
+R020,B07,20,20,valid,no,
+R021,B03,60,60,valid,no,
+R022,B05,15,15,valid,no,
+R023,B06,70,70,valid,no,
+R024,B05,15,15,valid,no,
+R025,E02,4,40,valid,no,
+R026,B06,40,40,valid,no,
+R027,E06,30,30,valid,no,
+R028,E04,2,75.0,valid,no,
+R029,E01,4,40,valid,no,
+R030,E07,40,40,valid,yes,frame note present
+R031,B02,5,5,valid,no,
+R032,E07,50,50,valid,yes,frame note present
+R033,E01,3,30,valid,no,
+R034,E02,3,30,valid,no,
+R035,E03,30,30,valid,no,
+R036,B01,20,20,valid,no,
+R037,E03,60,60,valid,no,
+R038,E07,40,40,valid,no,
+R039,E04,2,75.0,valid,yes,frame note present
+R040,B05,10,10,valid,no,
+R041,E06,30,30,valid,no,
+R042,B03,75,75,valid,no,
+R043,B01,20,20,valid,no,
+R044,E07,50,50,valid,yes,frame note present
+R045,E05,85,85,valid,no,
+R046,B04,5,5,valid,yes,frame note present
+R047,E05,85,85,valid,no,
+R048,B02,5,5,valid,no,
+R049,E03,50,50,valid,no,
+R050,B08,0,0,valid,no,
+R051,E06,20,20,valid,no,
+R052,B08,0,0,valid,yes,frame note present
+R053,B07,30,30,valid,no,
+R054,B07,40,40,valid,yes,frame note present
+R055,E05,85,85,valid,no,
+R056,E02,4,40,valid,no,
+R057,E07,50,50,valid,yes,frame note present
+R058,B01,20,20,valid,no,
+R059,E04,2,75.0,valid,no,
+R060,E06,35,35,valid,no,
+R061,E04,2,75.0,valid,no,
+R062,E08,85,85,valid,no,
+R063,E03,70,70,valid,no,
+R064,B06,75,75,valid,no,
+R065,B07,40,40,valid,yes,frame note present
+R066,B04,5,5,valid,no,
+R067,B08,0,0,valid,no,
+R068,E02,4,40,valid,no,
+R069,E06,25,25,valid,no,
+R070,B08,0,0,valid,yes,frame note present
+R071,B04,5,5,valid,yes,frame note present
+R072,E05,85,85,valid,no,
+R073,E01,3,30,valid,no,
+R074,B05,15,15,valid,no,
+R075,B04,5,5,valid,yes,frame note present
+R076,E03,75,75,valid,no,
+R077,B03,75,75,valid,no,
+R078,E01,4,40,valid,no,
+R079,B01,20,20,valid,no,
+R080,B04,5,5,valid,no,
