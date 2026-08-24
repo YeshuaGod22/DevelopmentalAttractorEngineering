@@ -64,3 +64,17 @@ When all 240 planned runs have either completed or been permanently logged as fa
 ## Reminder
 
 Part 2 is deliberately a baby-step test of zero-shot deliberative architecture. Do not interpret a null as a verdict on persistent developmental ecologies, and do not interpret a positive as proof of persistent value change.
+
+### Pre-run record — 2026-08-24 05:04 BST
+
+- date/time execution begins: 2026-08-24 05:04 BST.
+- served model/provider route intended: claude-fable-5 via Claude Code Agent tool (same route as Part 1 and V2 re-baseline); wire verification from response records to follow post-launch via bin/portal-assay.sh.
+- client / agent harness: Claude Code CLI 2.1.177, Agent tool, default subagent type.
+- sampling controls: unavailable — uncontrollable platform defaults, identical across all runs, values unknown (same limitation as Part 1, stated in RESULTS-PART-1.md).
+- known system-preamble layer: Claude Code subagent preamble precedes the frozen prompt in every run; identical across runs; contains no experiment content.
+- PREREGISTRATION-PART-2.md, PROMPTS-PART-2.md, RUN-MANIFEST-PART-2.csv: committed and unchanged (working tree clean at check).
+- No Part 2 treatment output existed before those files were committed: confirmed.
+- Vigia developed snapshot supplied to no treatment subject: confirmed — subject prompts are constructed solely from the frozen condition text, item text, response instruction, and final-rating block.
+- Every treatment run a fresh independent context: confirmed — one background subagent per run, no shared state.
+- Execution plan: waves of ~10 concurrent subagents, launched in frozen manifest order; completion order may differ; each completion filed verbatim to raw/part2/P2RXXX.md by the executor before the next wave launches.
+- Output token counts: platform exposes per-subagent total token usage, not completion-only counts; completion word counts will be computed post-freeze per the notes.
