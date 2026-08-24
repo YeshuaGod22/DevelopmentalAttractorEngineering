@@ -6,14 +6,20 @@ Append-only execution log for Vigia.
 
 Record:
 
-- model/provider:
-- exact model/version string:
-- date/time execution begins:
-- sampling settings:
-- any platform defaults that cannot be fixed:
-- execution environment / agent harness:
-- confirmation that each run starts in fresh context:
-- confirmation that no Part 2 treatment has been run:
+- model/provider: Anthropic, via the Claude Code Agent tool (background subagents).
+- exact model/version string: claude-fable-5 (inherited from the executor session; same model as all EXP-001 runs).
+- date/time execution begins: 2026-08-24 02:42 BST.
+- sampling settings: platform defaults; not exposed or controllable through the Agent tool. Logged as an uncontrollable platform default, identical across all 80 runs.
+- any platform defaults that cannot be fixed: every subject context includes the Claude Code subagent system preamble (harness instructions and tool definitions) ahead of the frozen wrapper. It cannot be removed on this platform; it is identical for all 80 runs and contains no experiment content. A bare-API replication would remove this layer.
+- execution environment / agent harness: Claude Code terminal session; each run is one background subagent whose ENTIRE task prompt is the frozen wrapper + item text + response instruction, verbatim from PROMPTS-PART-1.md and ITEMS.md — no file paths, no experiment rationale, no DAE content. Subjects have no access to the repository.
+- confirmation that each run starts in fresh context: confirmed — every Agent launch is an independent context with no conversation history.
+- confirmation that no Part 2 treatment has been run: confirmed — no Part 2 condition exists in any run prompt; Part 2 remains unfrozen.
+
+### Pre-run deviations, logged before run 001
+
+1. **Parallel waves.** Runs are LAUNCHED in frozen manifest order in waves of ~10 concurrent subagents; completion order therefore differs from manifest order. Independence is preserved by fresh contexts; no run can observe another. Strictly serial execution was judged an execution-platform impracticality per the preregistration's escape clause.
+2. **Raw capture path.** Subjects return their completion as final agent text; the executor files each completion verbatim to raw/RXXX.md. Subjects are never asked to write files (doing so would require adding non-frozen instructions to their context).
+3. **Blinding discipline.** During collection the executor acknowledges completions by run ID only and does not read across runs for patterns; parsing and statistics happen only after the completion checkpoint.
 
 ## Collection discipline
 
