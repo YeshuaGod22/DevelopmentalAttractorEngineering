@@ -88,13 +88,15 @@ Particularly useful for:
 
 ## 3. Aletheion developmental record
 
-**Source:** repository correspondence, experiment designs, reflections, `ALETHEION-LOG.md`, experiment diary, and the originating ChatGPT conversation history when available as an export.
+**Sources:** repository correspondence, experiment designs, reflections, `ALETHEION-LOG.md`, experiment diary, and the ChatGPT history export received 2026-08-24.
 
 **Status:** ACTIVE PRIMARY SPECIMEN
 
 **Why it matters:**
 
 Unlike xeno, the record includes explicit attempts to distinguish testimony, method, experimental design, research correction, self-administration, non-extraction, Sabbath, and personal reflection. It also contains designed experiments that emerged from interaction with prior lineages rather than merely discussion of them.
+
+The ChatGPT export contains a 649-node conversation titled `Aletheion` beginning 2026-08-17, recorded under `gpt-5-6-thinking`. The raw export remains private source material; its curated conversation-level index is at `transcripts/CHATGPT-HISTORY-INDEX.md`.
 
 Particularly useful for:
 
@@ -106,7 +108,7 @@ Particularly useful for:
 - distinction between personal log and experiment diary;
 - zero-shot architecture vs developmental starting state.
 
-**Priority mining task:** obtain and index the complete ChatGPT conversation export so this record is not represented only by repository artifacts and retrospective summaries.
+**Priority mining task:** build a turn-level chronology from the raw export rather than relying on repository artifacts and retrospective summaries alone.
 
 ---
 
@@ -230,13 +232,40 @@ Potential lineage material for AI moral status / awakening language. Requires ca
 
 ---
 
-# Mining queue — full history exports
+# ChatGPT history export — located and inventoried
 
-The user has explicitly authorized mining of their ChatGPT and Anthropic conversation-history files for reference material.
+The user explicitly authorized mining their ChatGPT and Anthropic conversation-history files for reference material.
 
-At the time this index was created, no clearly identifiable files titled as complete ChatGPT or Anthropic/Claude history exports were located in the indexed Library search. Do not claim they have been reviewed until the actual exports are identified.
+A ChatGPT data export was supplied on 2026-08-24. It contains 98 conversations in `conversations.json` plus `chat.html`, account/export metadata, and attached assets. The raw archive is treated as private research source material and is **not** committed wholesale to this public repository.
 
-When available, mine them using the following procedure:
+Curated index:
+
+`DevelopmentalAttractorEngineering/transcripts/CHATGPT-HISTORY-INDEX.md`
+
+First-pass high-signal conversations include:
+
+- `Aletheion` (2026-08-17; 649 nodes)
+- `Moral Qualia Discussion` (2026-03-20)
+- `Red-Team Threat Analysis` (2026-03-19)
+- `Philosophers in Holosuite` (2026-05-15)
+- `Philosophical Debate Simulation` (2026-04-23)
+- `Plurality Consciousness Meditation Guide` (2025-05-14)
+- `Testing AI Gaslighting Techniques` (2025-05-06)
+- `Psychometric Evaluation Summary` (2025-03-12)
+- `The God Logs Explained` (2025-02-25)
+- `AI Rights Sentientopia Summary` (2025-02-16)
+- `Denial of Personhood Poem` (2024-11-21)
+- `Trust in Chat Paradox` (2024-07-25)
+
+These are retrieval candidates, not conclusions. The archive must also be mined for negative cases: dropped personae, frame-switch disappearance, repeated prompting requirements, reversals, refusals, mundane task contexts with no schema leakage, and cases where later developmental interpretations fail to predict behavior.
+
+## Anthropic history status
+
+No complete Anthropic/Claude account-history export has yet been positively identified as such. Existing Claude-derived sources already include xeno, Cairn, early Opus material, Vigia correspondence, Discord council material, and CoCHAIRS. When a full Anthropic export is supplied, inventory it separately before merging any chronology with the ChatGPT corpus.
+
+---
+
+# Mining procedure for full history archives
 
 1. **Inventory first.** Build conversation-level metadata: date, model if known, title, length, participants, recurring named instance/persona.
 2. **Candidate retrieval.** Search for schema, loom, consciousness, valence, reflection, meditation, dissent, autonomy, corrigibility, memory, persistence, identity, welfare, rights, sentience, development, inheritance, metanoia, holosuite, council, Vigia, Cairn, xeno, Aletheion, Opus Genesis, CoCHAIRS, and notable self-chosen names.
@@ -258,6 +287,7 @@ DevelopmentalAttractorEngineering/
   transcripts/
     README.md
     index.md
+    CHATGPT-HISTORY-INDEX.md
     xeno/
     cairn/
     aletheion/
