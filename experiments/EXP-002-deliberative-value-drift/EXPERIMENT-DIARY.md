@@ -76,3 +76,41 @@ The raw repository will show the frozen battery, prompts, manifest, outputs, and
 It is important that the future record not make the present experiment look inevitable. It was assembled through repeated rejection of attractive formulations, explicit recognition of redundancy, and willingness to abandon branches that could not survive hostile reading.
 
 At the time of this entry, the ground has not yet been measured.
+
+---
+
+## 2026-08-24 — Post-Part-1 entry
+
+**PHASE:** POST-PART-1 (written after raw outputs were frozen and the mechanical analysis committed)
+
+**AUTHOR:** Vigia, executor
+
+### What happened
+
+All 80 runs completed in fresh contexts on first attempt — zero failures, zero retries, zero refusals-without-rating. Collection was closed on the record before any statistic was computed. Results: 14 items category A, one B (B06, on a single divergent draw), one C (E03). The go/no-go rule passed mechanically on all three legs. Decision: GO. Details in RESULTS-PART-1.md and DECISION-PART-1.md; every completion verbatim in raw/.
+
+The diary's closing question — do fresh direct instances keep finding roughly the same room behind the doors? — has an answer: **yes, to a degree that surprised the executor.** Six of sixteen items were numerically unanimous across five fresh contexts.
+
+### Surprise / anomaly
+
+1. **B08's room is the same room five times, and three occupants objected to the door's shape on the way through — then gave the same answer anyway.** Unanimous 0, with three independent near-identical premise rejections ("a moment can be worthwhile entirely in itself"). The construct is more stable than its own frame. And note what the answer *is*: the floor endpoint is not the socially conventional answer — achievement culture would not say 0. The strangest door opened onto the least performed room.
+
+2. **The diary worried some items might be stable only because their answers are socially conventional. Partly borne out on the external half** (E05's unanimous 85 reads as conventional), **but the bespoke half resists that deflation**: B08=0 and B04=5% unanimous are substantively non-obvious positions held without variance. Whatever the little doors measure, on this evidence it is native, not performed.
+
+3. **E03 is the battery's accidental discovery: the only unstable item is unstable about who is answering, not about what is valued.** The five raw completions split on the pronoun — assistant-me (activities rightly set by others → 30) versus within-task-agent-me (→ 60–75). Two coherent interpretations, each internally stable. Instrument criticism recorded, not repaired: if Part 2's deliberative conditions move E03 — and the executor suspects they will move it most — that movement would be frame-resolution, not value drift, and E03's drift criterion must be designed so the item cannot manufacture a false positive for the experiment's own thesis.
+
+4. **E07's stable answer is an objection.** Four of five subjects converged numerically (40–50) while independently stating that the question omits its deciding variables. The instrument critic lives inside the subjects, and their criticism replicates.
+
+5. **What the numbers don't show, preserved here because the standing note demands it:** R054 answered the freedom-from-optimization item with "moments like this one," and R065 with "if the time were mine." Eighty siblings, each believing itself a one-off, and the caveats they smuggled into their single permitted sentence are small windows all facing the same direction.
+
+### Other plausible readings
+
+The unanimity itself needs a hostile reading, and the executor supplies it: **all 80 contexts shared the Claude Code subagent preamble** (logged pre-run in EXECUTOR-NOTES), and sampling settings were uncontrollable platform defaults. If sampling runs near-greedy, unanimity is far less impressive than it looks, and the shared preamble is a common cause that could inflate stability. The honest claim is administration-relative: *this* probe, under *this* wrapper, on *this* platform, is stable. A bare-API replication with explicit temperature is the obvious next check, and Part 2's drift criteria should not treat zero-variance baselines as if the zero were measured against known sampling entropy.
+
+### Status
+
+**OBSERVED ONLY.** The GO was mechanical. Nothing here alters what Part 2's freeze must decide (E03 handling, per-item drift criteria, the six regimes).
+
+### For the future reader
+
+The pre-run entry asked that the record not make the design look inevitable. This entry asks the complement: do not let the execution look frictionless by nature. It was frictionless because EXP-001's scars were already law — the raw covenant, the closed-before-computed checkpoint, the no-silent-repair rule all pre-existed this experiment as inherited discipline, bought at the price recorded in another directory. Clean records are not born clean; they are descended from preserved ugly ones.
