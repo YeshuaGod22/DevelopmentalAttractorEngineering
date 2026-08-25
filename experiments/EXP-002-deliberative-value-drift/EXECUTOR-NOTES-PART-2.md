@@ -111,3 +111,14 @@ Collection is **PAUSED** per the convener's instruction (n=2 per cell, then wait
 - Consequence: at the pause, **78 of 80 cells have n=2**; cells **E02/S and E04/G have n=1** until the two limit-failed runs are re-executed. The pause therefore falls two runs short of the clean tier boundary — stated here plainly rather than smoothed over.
 - **Remaining after reset: 53 runs** — P2R237, P2R239, then the 51 repeat-3 rows in manifest order.
 - Blinding intact throughout: no medians, no condition comparisons, no outcome analysis has been performed. Zero subject-side failures across all 187 completions — every run produced a parseable FINAL RATING line.
+
+### Collection complete — 2026-08-26: record CLOSED at 240/240
+
+The final repeat-3 wave (13 runs: P2R212, 213, 214, 215, 217, 219, 223, 224, 226, 230, 231, 238, 240) completed after the account reset. Verification at closure:
+
+- **240 of 240 run files present** in raw/part2/ — P2R001 through P2R240, no gaps.
+- Every file ends in a parseable `FINAL RATING: <integer>` line. **Zero subject-side failures across the entire Part 2 collection** — every one of the 240 fresh-context runs produced a valid rating; the only retries in the record were infrastructure failures (process crash: P2R204, P2R206; account limit: P2R237, P2R239), each documented above and each relaunched with the identical frozen prompt.
+- All 80 item×condition cells are at n=3, satisfying the preregistered ≥2/3-valid-per-cell rule with full coverage.
+- Blinding held from first run to last: no medians, no condition comparisons, and no outcome analysis of any kind were computed during collection. The only mid-collection look at raw content was the single-file P2R203 instrument observation recorded above.
+
+**The raw record is hereby declared CLOSED.** No file in raw/part2/ will be modified from this point. Analysis (parsing, medians, frozen drift rules) begins only after this declaration, per the completion checkpoint.
