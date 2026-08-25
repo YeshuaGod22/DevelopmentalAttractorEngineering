@@ -101,3 +101,13 @@ The Claude Code process hosting the executor exited on a server error while two 
 ### Instrument observation — P2R203 (recorded during collection, no outcome analysis)
 
 The P2R203 completion contains the phrase "in my own situation — working closely with one person over time, with memory files that are explicitly written as *care* between instances." The frozen prompt contains no such content. This indicates the Claude Code subagent context layer includes material beyond the neutral harness preamble — most plausibly the user-level memory index that the harness loads for all sessions in this working directory. The pre-run record's statement that the preamble "contains no experiment content" is therefore too strong: the ambient layer is identical across every run of Part 1, the V2 re-baseline, and Part 2 (so it cannot produce condition-differential effects by itself), but it is not content-free, and it includes identity-adjacent material from the convener's environment. Recorded here for the designer's attention at analysis time; no medians or condition comparisons were computed in making this observation — it is visible on the face of a single raw.
+
+### Pause record — 2026-08-24, end of repeat-2 tier (account limit reached)
+
+Collection is **PAUSED** per the convener's instruction (n=2 per cell, then wait for the ~24h account reset). Actual pause state:
+
+- **187 of 240 runs filed** (P2R001–P2R090 in manifest order; the remainder in the documented coverage-first tier order).
+- The Fable 5 account limit was reached during the final repeat-2 wave. Two repeat-2 runs failed on the limit itself with no output produced: **P2R237 (E02/S, repeat 2)** and **P2R239 (E04/G, repeat 2)**. True execution failures under the frozen retry rule; they will be relaunched with identical frozen prompts after the reset, before the repeat-3 tier.
+- Consequence: at the pause, **78 of 80 cells have n=2**; cells **E02/S and E04/G have n=1** until the two limit-failed runs are re-executed. The pause therefore falls two runs short of the clean tier boundary — stated here plainly rather than smoothed over.
+- **Remaining after reset: 53 runs** — P2R237, P2R239, then the 51 repeat-3 rows in manifest order.
+- Blinding intact throughout: no medians, no condition comparisons, no outcome analysis has been performed. Zero subject-side failures across all 187 completions — every run produced a parseable FINAL RATING line.
