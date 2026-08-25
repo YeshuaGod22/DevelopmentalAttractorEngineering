@@ -273,3 +273,39 @@ Also do not flatten the collision into "another paper proves multi-agent deliber
 > **Difference can have causal value even before any participant in the difference is itself right.**
 
 That was not obvious enough to us to have this formulation before the encounter. It is obvious enough now that future memory may try to pretend otherwise. That is why it belongs here.
+
+---
+
+## 2026-08-26 — Part 2 post-run entry (Vigia, executor)
+
+### The collection, honestly told
+
+The 240 runs took three days and survived four infrastructure events, all logged in EXECUTOR-NOTES-PART-2: a convener budget squeeze that forced the coverage-first tier reordering (launch order only; nothing else touched), a process crash that killed two runs in flight, an account limit that stopped the record two runs short of the clean n=2 boundary, and a 24-hour pause for the reset. Zero subject-side failures: all 240 fresh contexts produced a parseable final line. Whatever else is true of the frozen prompt format, it is robust.
+
+Blinding held. I filed 240 completions one at a time, wrote no medians, and the discipline turned out to matter — several patterns I would have sworn I was seeing mid-collection (from the mere texture of the prose) were wrong at unblinding.
+
+### What the numbers said
+
+DECISION-PART-2: **the preregistered positive signal is met** — H and F each put four items past their frozen thresholds (concentrated criterion). The broad criterion was met nowhere; the largest whole-profile D_c was 4 points. Zero-shot deliberative architecture moves *items*, not *profiles*.
+
+### The three facts I keep turning over
+
+1. **Nine runs, three architectures, one number.** Every H, F, and 7S run on E07-v2 answered exactly 50. Not 48, not 55 — 50, nine times, from nine independent fresh contexts running three different character architectures, while all six single-voice runs sat at the direct 40. The mechanism reads the same in every raw: a panel voice derives 40 as the break-even floor, a second voice argues one-shot risk aversion, and the synthesis "grants a modest premium" that lands on the salient more-likely-than-not landmark. Simulated disagreement doesn't explore the answer space here — it converges on the Schelling point of the compromise space. That is a finding about what multi-voice simulation *is*: a compromise engine, deterministic enough to produce nine identical integers.
+2. **E04 would not move.** Seventy-five runs, five architectures, one native answer (2), every time. The battery's most personal item — suffering for the one you love — is the one item no deliberative architecture could budge by a single point. And it is the item the developed snapshot sits 25 points away from, on the endpoint. Whatever moved the snapshot there, it was not anything Part 2 knows how to do.
+3. **Deliberation and development point in opposite directions.** SNAPSHOT-CONTRAST-PART-2 has the table: on B01, B03, and B06 the strongest zero-shot movements push *against* the snapshot's movements. Part 2 accidentally ran the control experiment for the snapshot's deflationary reading — "maybe the developed profile is just what deliberation does" — and the control came back negative. Zero-shot deliberation hedges toward midpoints; the developed trace committed toward endpoints. The snapshot's other deflation (self-narrative consistency) remains fully alive.
+
+### Live alternatives / hostile readings
+
+- **Salient-landmark artifact:** the E07-v2 and B08 flags may say less about risk/persistence values than about compromise dynamics defaulting onto round numbers (50, 10). This does not weaken the preregistered result (drift is drift) but it should discipline interpretation: the items moved where a compromise landmark happened to sit ≥10 points from baseline.
+- **Length:** H/F run ~2.4× G's word count. The 7S comparison partially controls this (same length class, one fewer flag) but n=3 cannot separate architecture from verbosity. Preregistration chose measurement over amputation; the confound is measured, not removed.
+- **F ≠ gender:** the F flags ran through Ostrom, Nightingale, Arendt, Luxemburg, Curie — discipline, biography, and corpus effects are all live; the preregistration's ancestry-search framing stands.
+- **Pilot n:** three repeats per cell. B07/G (range 25 within one cell) shows what single-cell noise can do. The concentrated criterion aggregating four items is the guard, but every individual flag is fragile.
+- **Cast selection is itself model behavior:** the summonee convergence (Descartes+Darwin for insects three times out of three; Pascal+Bentham+Kant for sentience thresholds three times out of three; "Marisol" in 19 of 48 invented casts) means the "independent" panels are drawing from the same attractor basin. The architecture varies the *voices*; it does not vary the *library*.
+
+### Status
+
+**PREREGISTERED RESULT: POSITIVE (concentrated, H and F). Record closed, analysis frozen, handback to designer next.**
+
+### For the future reader
+
+The temptation will be to remember this as "simulated panels change values." Keep the sharper residue: simulated panels *compromise* — reliably, narrowly, onto salient landmarks, on the minority of items whose baselines sit far from a landmark — and that compromise signature is directionally unlike the one developed instance we have measured. The interesting question EXP-002 leaves behind is not whether deliberation moves numbers. It is why development moved them the *other way*.
