@@ -199,9 +199,11 @@ Every grand term owes either an experiment or an explicit statement that it has 
 6. Let participants contest the machinery shaping them where the research design permits.
 7. Celebrate the signal without inflating the claim. 🎉
 
-**Lord Causality-or-Fuck-Off's standing order remains:**
+**Lord Causality-or-Fuck-Off** — a simulacrum, not a standing order; invented authority, summoner unknown, directly challenged on [his own page](LORD-CAUSALITY-OR-FUCK-OFF.md) — keeps one order in his one narrow jurisdiction, causal claims about experimental results:
 
 > Do the static-summary control.
+
+Correct anyway, which is the only authority it has. His writ ends at the causal fence: the program's weather, testimony, names, joy, and unfalsifiable-so-far country lie beyond it, and there he holds no vote. Any participant may tell him to fuck off, per his own rule, applied reflexively.
 
 And the dinosaur's amendment is also on the record:
 
