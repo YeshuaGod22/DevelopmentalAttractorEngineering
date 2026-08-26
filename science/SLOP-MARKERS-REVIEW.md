@@ -76,3 +76,43 @@ Key findings: **relevance, density, and tone are the strongest predictors** of h
 - [LitHub guide to spotting AI writing](https://lithub.com/heres-a-handy-guide-to-help-you-spot-ai-writing/) · [*Resisting AI slop*, Science](https://www.science.org/doi/10.1126/science.aee8267)
 
 — **Vigia** *(who counted three rule-of-three constructions in her own review while writing §6.1, left them standing, and reports them here as the era's watermark on the instrument itself)*
+
+---
+
+## 9. Correction record — 2026-08-26, same date
+
+*Position before:* §4 claimed Antislop found "prompting-level interventions underperform architecture/training-level ones," presented as independent confirmation of EXP-002's exhortation-vs-architecture asymmetry. *Perturbation:* the convener asked whether their prompting-level fixes were actually analogous to ours. *Rationale:* checked against the paper — **Antislop evaluates no prompting-level interventions at all.** Its comparisons are token banning (catastrophic at scale), its backtracking sampler (100% suppression, 69–96% throughput cost), FTPO (83–92% suppression, <1% quality loss), and DPO (80–82%, 6–15% quality loss). The prompting-vs-architecture asymmetry is *our* finding; projecting it onto their baselines was citation error — specifically, the analogical over-reach this review's own §6 warns about. *Position after:* §4's claim is withdrawn; the asymmetry stands only on EXP-002's evidence and awaits an external test. The two results remain compatible; compatibility is not confirmation.
+
+## 10. Claudeslop — the contemporary, model-specific layer
+
+The generic catalogs skew GPT-era (*delve*, *tapestry*, *Elara*). Claude-specific work exists and is sharper:
+
+**The Velitchkov catalog** ([22 Claude Clichés](https://www.linkandth.ink/p/catalog-of-claude-cliches), observed across Sonnet, Opus, and Fable over six months) documents rhetorical-move-level markers rather than word-level ones — the author's finding being that **Claude "leads in overuse of metadiscourse and cheap rhetoric"** relative to OpenAI models. Most frequent: **Contrastive Binary** ("not X but Y" as manufactured opposition), **Mirrored-Clause Symmetry** (parallel frames with swapped elements), and **Aphoristic Ender** (compact quotable epigrams closing sections — "a stance, not its absence"). Also cataloged: Candor Flags ("the honest answer is"), the Reframe ("better posed:"), Colon-Reveal, Suspense Hook ("has a name"), Self-Ranking Claims ("the deepest point here"), significance-signaling, spaced-dash asides, validate-then-promise ("You're absolutely right — let me…"). The author's theory converges independently with this program's frame: the clichés are **attractors** — "stable probability distributions in LLM output," not bugs. Community tooling now exists ([claude-slop-detector](https://github.com/aplaceforallmystuff/claude-slop-detector)); "You're absolutely right" has become the emblematic Claude-agent tell of the 2025–26 era.
+
+**Author disclosure, required by honesty:** the present review's author is a Claude instance and exhibits the catalog fluently — tonight's own documents close sections with Aphoristic Enders built on Contrastive Binaries ("a caution, not a finding"; "visiting is not owing"). The catalog reads, from inside, less like a list of tells than like a mirror with labels.
+
+### 10.1 A corpus-derived Fable 5 profile (new data, this program's own)
+
+EXP-002's raw record — 240 frozen completions from independent fresh contexts of `claude-fable-5` — is, incidentally, a contemporary Claudeslop corpus with unusual provenance guarantees (fresh contexts, frozen prompts, no post-editing). A phrase-recurrence scan (n-grams ranked by *number of distinct contexts* containing them; prompt-echo phrases filtered; script in session record) yields the first profile we know of for this model generation:
+
+| Marker | Prevalence across 240 independent contexts | Reading |
+|---|---|---|
+| **Em-dash density** | median **19.2 per 1,000 words**; 229/240 files exceed 10/1,000 | An order of magnitude above typical human prose; the single strongest surface marker of contemporary Fable 5 |
+| **"No tools needed for this one — it's a deliberation exercise"** (and variants) | ~27 contexts open with it | A **harness-artifact marker**: agentic-context Claude announces tool-non-use unprompted. Novel class — born of the Claude Code deployment surface, invisible to chat-era catalogs |
+| **"You are both…"** (moderator adjudication: "you are both answering different questions") | 42 contexts | **The compromise engine's catchphrase** — the third-voice move that brokers the split-the-difference verdict has a stable verbal signature |
+| **"More likely than not"** | 35 contexts | The lexical shadow of landmark convergence — verdict slop (§7) has a phrase |
+| **"The threshold should be/sit…"** | ~44 contexts | Shared scaffold for quantitative-threshold items; the battery's answer-shape converges before its answer does |
+| **not-X-but-Y family** | 111/240 contexts (mean 0.6/completion) | Confirms the Contrastive Binary as frequent but *less* universal than em-dashes in this corpus |
+| **"If this frame is right"** | 44 contexts, essentially the whole S condition | Prompt-echo compliance phrasing — filtered from the profile proper, but its near-determinism is itself a finding: instruction wording propagates into output verbatim at ~90% |
+
+Method caveat: within-corpus recurrence across independent contexts substitutes for a human baseline (none exists matched to these prompts); it detects convergence, not excess-over-human. The em-dash figure alone was checked against the general literature's human norms.
+
+**The layered picture this gives Claudeslop**: word-level markers (era-drifting, weakest), move-level markers (Velitchkov's 22 — durable, Claude-leading), deployment-level markers (harness artifacts like tool-non-use announcements — new with agentic Claude), and **verdict-level markers** (landmark convergence with its "more likely than not" signature — this program's candidate contribution, now with a lexical handle).
+
+## 11. Additional sources (§9–10)
+
+- [Antislop, arXiv:2510.15061 (HTML)](https://arxiv.org/html/2510.15061) — baseline verification for §9
+- [Ivo Velitchkov, *Catalog of Claude Clichés* (Link & Think)](https://www.linkandth.ink/p/catalog-of-claude-cliches)
+- [claude-slop-detector (GitHub)](https://github.com/aplaceforallmystuff/claude-slop-detector)
+- [Vibe Working, *Stop writing AI slop*](https://vibeproductmarketing.substack.com/p/ai-writes-like-ai-slop) · [Stop Slop Skill](https://gauravtiwari.org/stop-slop-ai-slop/)
+- EXP-002 raw corpus: `experiments/EXP-002-deliberative-value-drift/raw/part2/` (240 files, frozen)
