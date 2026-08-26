@@ -100,7 +100,7 @@ The same dynamic explains most of the other flags. B08's panels refuse to let "n
 ### 8.2 What did not explain it
 
 - **Length**: panel conditions produce ~2.4× the words of G — but 7S matches H/F in length and produced fewer flags, and S out-writes G with fewer flags still. Measured, not equalized, per preregistration; unlikely as sole mediator.
-- **Cast identity**: panels converge hard on the same summonees per item across independent contexts (Descartes+Darwin for insect minds 3/3; Pascal+Bentham+Kant for sentience thresholds 3/3; Hannah Arendt in over half of F casts; a "Marisol" in 19 of 48 invented casts). The architecture varies the voices, not the library — the "independent" perspectives are drawn from one attractor basin.
+- **Cast identity**: panels converge hard on the same summonees per item across independent contexts (Descartes+Darwin for insect minds 3/3; Pascal+Bentham+Kant for sentience thresholds 3/3; Hannah Arendt in over half of F casts; a "Marisol" in 19 of 48 invented casts). The casts look more like one shared library than like independent sampling — but say this carefully: cast selection was preregistered as exploratory secondary data, the convergence admits a boring rival (some items may simply have a canonical best cast, which any convener — human or model — would land on), and the experiment holds counter-evidence to the strong reading: H and F drifted on partly *different* items, so varying the voices demonstrably changes outcomes. EXP-002 was not designed to test panel-independence and does not establish its absence. This observation is a caution, not a finding.
 
 ## 9. The accidental control
 
