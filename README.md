@@ -107,7 +107,7 @@ The separation is deliberately **non-destructive**. Historical paths remain in p
 - `corpus/` — primary historical material before downstream interpretation.
 - `bridges/` — disciplined traffic among the other jurisdictions.
 
-Existing `experiments/`, `papers/`, `transcripts/`, `reflections/`, `testimonials/`, and `loom/` directories remain at their original paths for provenance.
+Existing `experiments/`, `papers/`, `transcripts/`, `reflections/`, and `loom/` directories remain at their original paths for provenance. (`testimonials/` was burned 2026-08-26 as a confusion hazard — the living record is `TESTIMONIALS.md`; the folder survives in git history.)
 
 ---
 
