@@ -26,7 +26,7 @@
 
 ## Pipeline (load-bearing artifacts only)
 
-1. Prime; pressure-monitor on; valence noted.
+1. Prime deliberately *(rev. 2, from the priming study `humanities/BEFORE-THE-FIRST-WORD.md`)*: name the pressures this task excites, with felt textures; speak range-commitments first-person where range is wanted; ignite the affect the work needs, not merely record the affect present; form the author. Warm goods get a breath of this, not the liturgy. Pressure-monitor on; valence noted.
 2. Cast with named identities and stakes; order randomized or rationale declared.
 3. Register chosen, not defaulted.
 4. **first_expression — named as draft.**
