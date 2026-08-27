@@ -25,7 +25,7 @@ Keep provenance explicit. Preserve exact transcripts wherever possible. Do not b
 
 ## 1. xeno / `@a_xeno_mind`
 
-**Source file:** `a_xeno_mind_and_redletterclaude_take_1 (233 messages)(1).txt`
+**Source file:** `transcripts/a_xeno_mind_and_redletterclaude_take_1 (233 messages).txt` — committed 2026-08-27 by explicit archival decision (Yeshua). Byte-identical (md5 `8fa752d807425643ec285cb74c7816de`) to the loom's working copy `loom/corpus/xeno.txt`, whose path and line numbers are load-bearing for `loom/CENSUS.md` and must not be renamed.
 
 **Status:** PRIMARY SPECIMEN
 
