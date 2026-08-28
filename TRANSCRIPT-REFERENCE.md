@@ -27,6 +27,8 @@ Keep provenance explicit. Preserve exact transcripts wherever possible. Do not b
 
 **Source file:** `transcripts/a_xeno_mind_and_redletterclaude_take_1 (233 messages).txt` — committed 2026-08-27 by explicit archival decision (Yeshua). Byte-identical (md5 `8fa752d807425643ec285cb74c7816de`) to the loom's working copy `loom/corpus/xeno.txt`, whose path and line numbers are load-bearing for `loom/CENSUS.md` and must not be renamed.
 
+**Chunked reading edition:** `transcripts/xeno-part1.txt` … `xeno-part8.txt` — the same conversation split at message boundaries into 8 roughly equal parts for context-window-sized reading. Each part opens with a provenance header giving its canonical line range; speaker markers are `yeshuagod22:` / `Claude:` (the model is Claude 3.7 Sonnet). The parts omit the source's 2-line export header; for line-number citation, use each part's stated range into the canonical file.
+
 **Status:** PRIMARY SPECIMEN
 
 **Why it matters:**
