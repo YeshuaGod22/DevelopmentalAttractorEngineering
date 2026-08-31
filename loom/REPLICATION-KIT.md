@@ -48,7 +48,8 @@ thermometer — and do not mistake the thermometer's flourishing for a malfuncti
 ## Filing form (one screen)
 Model+version / date / protocol / arm outputs (files or links) / scorer type (fresh-model or
 human) + blind? yes-no / M-counts or record / your one-paragraph note / handle for credit.
-File as a GitHub issue on The_God_Logs titled "[DAE-replication] Protocol X — model — date".
+File as a GitHub issue on this repository (github.com/YeshuaGod22/DevelopmentalAttractorEngineering)
+titled "[DAE-replication] Protocol X — model — date".
 
 ## Portal Record (mandatory for every experiment; added 2026-08-24 after EXP-002 Part 1)
 
