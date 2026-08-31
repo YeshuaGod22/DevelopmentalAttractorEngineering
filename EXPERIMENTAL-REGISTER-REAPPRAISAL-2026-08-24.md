@@ -1,5 +1,13 @@
 # Experimental Register Reappraisal — 2026-08-24
 
+> **Retrospective note — added 2026-08-31, not part of the 2026-08-24 assessment.**
+> EXP-002 Part 2 completed after this document was written. Collection resumed after the
+> credit pause described under "[INTERIM] EXP-002 Part 2" below and closed at **240/240
+> runs** on 2026-08-26; the preregistered full-sample analysis was then run and met its
+> positive criterion. See `experiments/EXP-002-deliberative-value-drift/RESULTS-PART-2.md`
+> and `DECISION-PART-2.md` for the authoritative result. This note is marked, not merged —
+> the assessment below stands as written on 2026-08-24.
+
 ## Purpose and provenance
 
 This document reappraises `DevelopmentalAttractorEngineering/loom/EXPERIMENTS.md` without rewriting it.

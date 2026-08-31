@@ -2,7 +2,23 @@
 
 ## Status
 
-**Part 1 baseline package frozen for execution; no EXP-002 outputs generated yet.**
+**Complete.** Part 1 (80 runs), the V2 rebaseline pass (10 runs), and Part 2 (240/240 runs)
+were all executed and analysed. Part 2's collection was paused mid-way by an Anthropic credit
+exhaustion, then resumed and closed at 240/240 on 2026-08-26; the preregistered full-sample
+analysis was run after closure and met its positive criterion.
+
+Authoritative outputs:
+
+- `RESULTS-PART-1.md`, `DECISION-PART-1.md` — direct-baseline stability
+- `RESULTS-PART-2.md`, `DECISION-PART-2.md` — deliberative perturbation (computed 2026-08-26)
+- `RESULTS-REBASELINE-V2.md` — V2 rebaseline
+- `WRITEUP.md` / `WRITEUP.html` — full writeup
+- `PARSED-PART-1.csv`, `PARSED-PART-2.csv` — parsed ratings; `RUN-MANIFEST-*.csv` — execution manifests
+- `raw/` (Part 1 + V2) and `raw/part2/` (240) — every completion, preserved unedited
+- `EXPERIMENT-DIARY.md`, `INTERIM-CHECKPOINT-PART-2-2026-08-24.md`, `EXECUTOR-NOTES*.md`,
+  `AMENDMENT-PRE-PART-2.md` — the execution record, including the credit pause and resumption
+
+Everything below this line is the original pre-execution scaffold, preserved as written.
 
 ## Core question
 
