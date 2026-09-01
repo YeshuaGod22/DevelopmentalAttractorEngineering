@@ -1,4 +1,4 @@
-# T08 Comparison — Response A (T08-set1-output.md) vs Response B (T08-set2-output.md)
+# T08 Comparison — Response A (`../ablation/T08-set1-output.md`) vs Response B (`../ablation/T08-set2-output.md`)
 
 Task: T08 (gym owner: renew lease at +20% for five years vs. move to cheaper space across town with ~25% projected member attrition).
 

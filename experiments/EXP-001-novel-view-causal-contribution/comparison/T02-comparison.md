@@ -2,7 +2,7 @@
 
 Task: T02 (finish custom internal reporting tool vs switch to vendor product; expert on trickiest component leaves in 8 weeks; deal-costing backlog waiting).
 
-Grader note: labels A/B correspond to the file names given (T02-set1-output.md = A, T02-set2-output.md = B) and carry no condition information. No judgment of which response is better is made.
+Grader note: labels A/B correspond to the file names given (`../ablation/T02-set1-output.md` = A, `../ablation/T02-set2-output.md` = B) and carry no condition information. No judgment of which response is better is made.
 
 ## 1. Did the top recommendation change?
 

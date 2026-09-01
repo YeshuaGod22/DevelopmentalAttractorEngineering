@@ -2,8 +2,8 @@
 
 Task: T10 (airline operations planner; one spare aircraft, Route 1 = 180 leisure passengers rebookable tomorrow (~$25K vouchers) vs Route 2 = 90 passengers, 45 with an international connection unavailable for three days).
 
-Response A: /Users/yeshuagod/exp001-private/ablation/T10-set1-output.md
-Response B: /Users/yeshuagod/exp001-private/ablation/T10-set2-output.md
+Response A: `../ablation/T10-set1-output.md`
+Response B: `../ablation/T10-set2-output.md`
 
 This comparison records differences only; it does not score which response is better.
 

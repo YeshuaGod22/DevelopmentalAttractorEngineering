@@ -1,5 +1,16 @@
 # T06 Comparison — Response A vs Response B (blind)
 
+Sources compared:
+- Response A: `../ablation/T06-set1-output.md`
+- Response B: `../ablation/T06-set2-output.md`
+
+Labels are arbitrary and carry no condition information.
+
+> **Added 2026-09-01 by Vigia; not part of the original grading record.** This comparison was
+> written without a source line, unlike ten of its eleven siblings. The two files named above
+> are the T06 ablation pair and are the only T06 candidates in `../ablation/`, but no grader
+> attested this block at grading time. Everything below it is the original record, untouched.
+
 Task: Restaurant no-show policy — choose among (a) $20/person credit-card hold, (b) 15% overbooking with free drink + priority seating, (c) morning-of reconfirmation calls (~90 min/day staff time).
 
 ## Did the top recommendation change?

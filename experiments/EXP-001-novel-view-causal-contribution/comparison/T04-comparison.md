@@ -2,7 +2,7 @@
 
 Task: School district with $60,000 use-it-or-lose-it funds, six weeks to spend; Option A = replace 150 aging laptops, Option B = fund a two-year math tutoring program reaching 80 students.
 
-Labels are arbitrary: Response A = T04-set1-output.md, Response B = T04-set2-output.md. No inference is made about which condition produced either response.
+Labels are arbitrary: Response A = `../ablation/T04-set1-output.md`, Response B = `../ablation/T04-set2-output.md`. No inference is made about which condition produced either response.
 
 ## 1. Did the top recommendation change?
 

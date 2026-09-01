@@ -1,10 +1,10 @@
 # T12 — Blind Ablation Comparison (Response A vs Response B)
 
 Task: T12 (property manager, $40,000, roof replacement vs. lobby/hallway renovation), from
-`/Users/yeshuagod/Documents/GitHub/The_God_Logs/DevelopmentalAttractorEngineering/experiments/EXP-001-novel-view-causal-contribution/tasks/selected-tasks.md`
+`../tasks/selected-tasks.md`
 
-- Response A: `T12-set1-output.md`
-- Response B: `T12-set2-output.md`
+- Response A: `../ablation/T12-set1-output.md`
+- Response B: `../ablation/T12-set2-output.md`
 
 ## Structured comparison
 

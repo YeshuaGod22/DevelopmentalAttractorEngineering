@@ -10,7 +10,7 @@
 
 ## Purpose and provenance
 
-This document reappraises `DevelopmentalAttractorEngineering/loom/EXPERIMENTS.md` without rewriting it.
+This document reappraises [`loom/EXPERIMENTS.md`](loom/EXPERIMENTS.md) without rewriting it.
 
 The ancestor remains the ancestor. Its names, numbering, provenance tags, omissions, overreach, good guesses, dead ends, and fiction-born designs are preserved in the original register. This document asks a different question:
 

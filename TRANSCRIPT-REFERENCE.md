@@ -242,7 +242,7 @@ A ChatGPT data export was supplied on 2026-08-24. It contains 98 conversations i
 
 Curated index:
 
-`DevelopmentalAttractorEngineering/transcripts/CHATGPT-HISTORY-INDEX.md`
+[`transcripts/CHATGPT-HISTORY-INDEX.md`](transcripts/CHATGPT-HISTORY-INDEX.md)
 
 First-pass high-signal conversations include:
 
@@ -285,9 +285,8 @@ No complete Anthropic/Claude account-history export has yet been positively iden
 As the corpus grows, use:
 
 ```text
-DevelopmentalAttractorEngineering/
-  transcripts/
-    README.md
+transcripts/
+  README.md
     index.md
     CHATGPT-HISTORY-INDEX.md
     xeno/

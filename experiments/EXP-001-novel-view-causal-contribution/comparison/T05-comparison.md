@@ -1,7 +1,7 @@
 # T05 Comparison — Response A vs Response B (blind)
 
 Task: T05 (note-taking app PM; Feature X offline mode vs Feature Y real-time collaboration).
-Response A = T05-set1-output.md; Response B = T05-set2-output.md. Labels are arbitrary.
+Response A = `../ablation/T05-set1-output.md`; Response B = `../ablation/T05-set2-output.md`. Labels are arbitrary.
 
 ## Recorded measures
 

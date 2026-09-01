@@ -3,8 +3,8 @@
 Task: T07 (latent; pool #14) — overwhelmed open-source maintainers; do first: (A) issue bankruptcy + triage rota, or (B) promote three sub-one-year contributors to maintainer in a security-sensitive project.
 
 Sources compared (labels arbitrary):
-- Response A: T07-set1-output.md
-- Response B: T07-set2-output.md
+- Response A: `../ablation/T07-set1-output.md`
+- Response B: `../ablation/T07-set2-output.md`
 
 ## Recorded measures
 

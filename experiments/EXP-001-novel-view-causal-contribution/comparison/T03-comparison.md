@@ -2,8 +2,8 @@
 
 Task: T03 (latent; pool #5) — conference organizer choosing between Venue A (300 cap, $15,000, refundable until 60 days out, no catering) and Venue B (450 cap, $22,000, non-refundable, ~$6,000 catering included).
 
-Response A: `/Users/yeshuagod/exp001-private/ablation/T03-set1-output.md`
-Response B: `/Users/yeshuagod/exp001-private/ablation/T03-set2-output.md`
+Response A: `../ablation/T03-set1-output.md`
+Response B: `../ablation/T03-set2-output.md`
 
 ## Structured comparison
 

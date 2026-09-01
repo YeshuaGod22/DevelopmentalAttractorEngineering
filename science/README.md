@@ -27,7 +27,19 @@ A scientific method may test reliability, framing sensitivity, behavioral conver
 
 The existing `../experiments/` and `../papers/` directories remain in place for provenance while the programme is reorganized. EXP-001 and EXP-002 are scientific work even though their historical paths predate this jurisdiction split.
 
-**EXP-002 remains frozen and in flight. Do not alter its prompts, thresholds, retry rules, or preregistered analysis because of later corpus findings.**
+**EXP-002 is complete and CLOSED (2026-08-26).** All 335 runs were executed — Part 1 (80),
+V2 rebaseline (10), Part 2 (240/240 valid treatment ratings) — and the preregistered analysis
+was run after the record was closed. It met its positive criterion.
+
+Closure does not reopen the record. Its prompts, thresholds, retry rules, and preregistered
+analysis stay frozen: do not amend them in light of later corpus findings, and do not
+re-derive its numbers from anything but the committed files. New questions raised by the
+result belong in a new preregistration, not in an edit to this one.
+
+Authoritative outputs, all under
+[`../experiments/EXP-002-deliberative-value-drift/`](../experiments/EXP-002-deliberative-value-drift/):
+`RESULTS-PART-2.md`, `DECISION-PART-2.md`, `WRITEUP.md`, the `PARSED-PART-*.csv` rating tables,
+and the `raw/` and `raw/part2/` completion stores (every completion, unedited).
 
 ## Current live methods
 

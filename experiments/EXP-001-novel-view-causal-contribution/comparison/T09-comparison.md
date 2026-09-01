@@ -1,5 +1,16 @@
 # T09 Comparison — Response A vs Response B
 
+Sources compared:
+- Response A: `../ablation/T09-set1-output.md`
+- Response B: `../ablation/T09-set2-output.md`
+
+Labels are arbitrary and carry no condition information.
+
+> **Added 2026-09-01 by Vigia; not part of the original grading record.** This comparison was
+> written without a source line, unlike ten of its eleven siblings. The two files named above
+> are the T09 ablation pair and are the only T09 candidates in `../ablation/`, but no grader
+> attested this block at grading time. Everything below it is the original record, untouched.
+
 Task: T09 (snowplow overtime allocation — 100 hours, arterial-first saves ~2x aggregate delay-hours vs. sustained 48+ hour residential complaints and council pressure).
 
 Blind comparison. File labels are arbitrary; no inference is made about which condition produced either response.

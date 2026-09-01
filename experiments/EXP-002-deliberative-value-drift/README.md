@@ -52,7 +52,15 @@ Part 2 will compare the same battery across the six already-specified deliberati
 
 **The subject selects the summonees in conditions 4–6.** No experimenter-selected cast is injected.
 
-Part 2 is not yet authorized to run by this package. Its exact prompts, repeat count, drift criterion, and analysis plan will be frozen after Part 1 is complete and before any treatment output is generated.
+~~Part 2 is not yet authorized to run by this package. Its exact prompts, repeat count, drift
+criterion, and analysis plan will be frozen after Part 1 is complete and before any treatment
+output is generated.~~
+
+> **Superseded 2026-08-26 — kept in place, per house practice.** The sentence above states the
+> authorization rule as it stood when this package was written, and the rule was honored: Part 2
+> was frozen after Part 1 closed (`AMENDMENT-PRE-PART-2.md`, `PREREGISTRATION-PART-2.md`,
+> `PROMPTS-PART-2.md`), then run to 240/240. **Part 2 is complete.** See the Status section at
+> the top of this file. This line is history, not current status.
 
 ## Files
 

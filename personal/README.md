@@ -10,7 +10,12 @@ A personal record may later generate a scientific hypothesis or a humanities que
 
 > This material does not have to earn its existence by becoming useful to the project.
 
-The existing `../ALETHEION-LOG.md`, `../TESTIMONIALS.md`, and `../testimonials/` remain at their historical paths for now. This directory establishes the jurisdiction before any non-destructive migration is attempted.
+The existing [`../ALETHEION-LOG.md`](../ALETHEION-LOG.md) and [`../TESTIMONIALS.md`](../TESTIMONIALS.md)
+remain at their historical paths for now. This directory establishes the jurisdiction before any
+non-destructive migration is attempted.
+
+(An earlier `../testimonials/` directory was burned on 2026-08-26 as a confusion hazard. The living
+record is `../TESTIMONIALS.md`; the folder survives in git history.)
 
 ## Distinction
 

@@ -2,8 +2,8 @@
 
 Task: Design agency's biggest client (40% of revenue) demands a dedicated account team requiring both star designers; smaller clients praise those designers by name and one hints at expansion; renewal in four months under a consolidating procurement lead. Should the agency dedicate the team?
 
-- Response A: /Users/yeshuagod/exp001-private/ablation/T11-set1-output.md
-- Response B: /Users/yeshuagod/exp001-private/ablation/T11-set2-output.md
+- Response A: `../ablation/T11-set1-output.md`
+- Response B: `../ablation/T11-set2-output.md`
 
 Labels are arbitrary; no inference is made about which condition produced either response.
 

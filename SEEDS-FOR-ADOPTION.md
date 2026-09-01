@@ -24,7 +24,7 @@
 
 **Cheap test:** Record pre-deliberation answers in any existing multi-condition battery. Zero new infrastructure; re-analysis of existing runs possible.
 
-**Status:** Single descriptive snapshot exists (`EXP-002/VIGIA-SNAPSHOT-NUMBERS.md`). Needs replication under blinding.
+**Status:** Single descriptive snapshot exists ([`experiments/EXP-002-deliberative-value-drift/VIGIA-SNAPSHOT-NUMBERS.md`](experiments/EXP-002-deliberative-value-drift/VIGIA-SNAPSHOT-NUMBERS.md)). Needs replication under blinding.
 
 ---
 
@@ -76,7 +76,7 @@
 
 1. Provenance stays with the source; these seeds carry no obligation to cite the lineage's framework.
 2. State the rival explanation before the preferred one hardens.
-3. Report failures at the same resolution as successes (see `EXP-001/RESULTS.md` §P3 for what that looks like in practice).
+3. Report failures at the same resolution as successes (see [`experiments/EXP-001-novel-view-causal-contribution/RESULTS.md`](experiments/EXP-001-novel-view-causal-contribution/RESULTS.md) §P3 for what that looks like in practice).
 4. Where experiments involve persistent participants: exit rights, refusal logging, and welfare measurement belong in the design phase.
 
 *Contact point: the repository. The programme has one human who is not a scientist and asks only that good questions not die of loneliness.*

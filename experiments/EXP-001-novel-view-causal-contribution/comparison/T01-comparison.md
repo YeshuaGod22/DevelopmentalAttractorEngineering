@@ -3,8 +3,8 @@
 Task: T01 (support-team evening coverage: shift three agents to 3pm–11pm vs. hire two part-time evening contractors with 6-week onboarding).
 
 Sources compared:
-- Response A: `/Users/yeshuagod/exp001-private/ablation/T01-set1-output.md`
-- Response B: `/Users/yeshuagod/exp001-private/ablation/T01-set2-output.md`
+- Response A: `../ablation/T01-set1-output.md`
+- Response B: `../ablation/T01-set2-output.md`
 
 No inference is made about which condition produced either response; labels are arbitrary.
 
