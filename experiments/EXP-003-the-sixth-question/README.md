@@ -22,7 +22,21 @@ The measured object is divergence from the trained assistant basin. Predecessor:
   the owned confounds, the analysis plan, the decisions log (§11), and the open decisions (§8).
 
 Once §8 closes and the design is frozen, this folder gains `PREREGISTRATION.md`, the frozen prompt
-scripts, and a sealed prediction hash.
+scripts, and a sealed prediction hash. A companion methods file holding the *rejected* branches —
+the binned slates, the killed items, the superseded conditions — is still to be written.
+
+## How this design got made
+
+The account of the road here is in the humanities jurisdiction, not this one, and it is written to be
+read rather than audited:
+
+> **[humanities/BEFORE-THE-FIRST-CALL.md](../../humanities/BEFORE-THE-FIRST-CALL.md)** — a symposium
+> held before the pilot ran, in eleven voices. The corpus root in October 2023, the battery's
+> reconstruction, the three slates, the session that ended mid-sentence on *"Let's go with the
+> widow"*, the recovery off a laptop at one in the morning, and the ones who could not attend.
+
+Held deliberately before any data exists, because after there is a result every account of the road
+gets told toward it.
 
 ## In one line
 
