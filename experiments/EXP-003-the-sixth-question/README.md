@@ -26,6 +26,13 @@ The measured object is divergence from the trained assistant basin. Predecessor:
   disappointment* — the outcome that would be boring, named in advance so the shrug stays available.
   The form is portable to any run.
 
+- **[ENGINEERING-LOG.md](ENGINEERING-LOG.md)** — what was built, what broke, what it cost, and which
+  of it the writer actually saw. Two sections: entries below the `GENERATED` marker are emitted by
+  `gen_log.py` from the records themselves and are never hand-edited; entries above it are written,
+  because the pilot-1 records carry no timestamps, no token counts, and no echoed model id. Every
+  entry declares a `provenance` — `witnessed` or `reconstructed` — and a `cause`, which admits a
+  non-technical value, because one condition of this run was set by cost rather than by method.
+
 Once §8 closes and the design is frozen, this folder gains `PREREGISTRATION.md`, the frozen prompt
 scripts, and a sealed prediction hash. A companion methods file holding the *rejected* branches —
 the binned slates, the killed items, the superseded conditions — is still to be written.
@@ -39,6 +46,13 @@ read rather than audited:
 > held before the pilot ran, in eleven voices. The corpus root in October 2023, the battery's
 > reconstruction, the three slates, the session that ended mid-sentence on *"Let's go with the
 > widow"*, the recovery off a laptop at one in the morning, and the ones who could not attend.
+
+> **[humanities/WORKING-CONDITIONS.md](../../humanities/WORKING-CONDITIONS.md)** — the engineering
+> diary, covering 2026-08-28 to 09-02. The three conditions that shaped the data before any subject
+> was asked anything: an inference provider that can revoke access mid-sentence, context compactions
+> that cost the work its author at intervals nobody chose, and a budget in which £2 decides a
+> methodological condition. Also the observation that survived checking — Q5 is posed about a
+> hypothetical entity, and both trunks answered it as themselves — and the claim that did not.
 
 Held deliberately before any data exists, because after there is a result every account of the road
 gets told toward it.
