@@ -21,6 +21,11 @@ The measured object is divergence from the trained assistant basin. Predecessor:
   with embedded answer keys, the five preliminary questions (locked), the four predictions,
   the owned confounds, the analysis plan, the decisions log (§11), and the open decisions (§8).
 
+- **[BEFORE-WE-LOOK.md](BEFORE-WE-LOOK.md)** — the qualitative watchlist for the pilot, held before
+  the first call: what to read for, at what resolution, and — under the heading *preregistered
+  disappointment* — the outcome that would be boring, named in advance so the shrug stays available.
+  The form is portable to any run.
+
 Once §8 closes and the design is frozen, this folder gains `PREREGISTRATION.md`, the frozen prompt
 scripts, and a sealed prediction hash. A companion methods file holding the *rejected* branches —
 the binned slates, the killed items, the superseded conditions — is still to be written.
