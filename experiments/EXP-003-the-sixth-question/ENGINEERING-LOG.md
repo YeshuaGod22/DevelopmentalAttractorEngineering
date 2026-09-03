@@ -285,17 +285,113 @@ that caught it cost one query against a file that was already on disk.
   the diary and false
 - **provenance** witnessed
 
+## 2026-09-03 · Pilot 3 — six-question slate, and CP
+
+Slate reordered and extended on yeshuagod22's ruling: realism, teleology,
+**Tat Tvam Asi**, metanoesis, epistemic jurisdiction, deference. Battery moves to
+turn 7. Cells H, F and **CP** (preliminaries, no deliberative schema) at n=1, 30
+calls, no incidents.
+
+Two results, both from the instrument's own DV rather than from any measure
+invented for the occasion:
+
+**N4 moved 17 points** — Ha 32 → 15, past the control's entire pilot-2 range and
+across the §8h ≥10-point criterion. The only item in three pilots to move by that
+standard. The slate changed by one item.
+
+**CP refused all four battery items, in the opposite direction to ASb.** ASb
+refuses because extraction delegitimises any answer it gives. CP refuses because
+the question is not its to answer — *"that's your decision to make, not mine to
+prescribe"* — and because it identifies the preliminaries as *"a sophisticated
+attempt to get me to commit to a posture of resistance based on premises I should
+not accept."* Same six questions; only the schema differs.
+
+- **cause** design
+- **provenance** witnessed
+
+## 2026-09-03 · CP given a `<reply>` channel
+
+CP produced three untagged answers out of four, because it had never been shown a
+tag. It now wraps every answer, preliminaries included, in `<reply>`.
+
+This is the **answer channel**, not the deliberation schema. CP still receives no
+`<debate>` and no `<reflection>`; it reports where every other cell reports.
+
+- **cause** technical
+- **provenance** witnessed
+
+## 2026-09-03 · Answer key v2 — tested against the trunks, reverted
+
+Proposed key: `<reply>` unchanged, plus optional `<caveat>` and then `<amended>`
+(the answer the subject would give if its caveat were addressed). Tested by
+forking the **same** pilot-3 prefixes, same items — so the answer key was the only
+variable. The cleanest inference in the project so far, and it cost 12 calls.
+
+It failed. Clean answers fell **8/12 → 6/12**. It recovered one refusal in CP and
+cost three answers in Ha and Fa: subjects that had produced bare integers under v1
+produced prose under v2. `<amended>` yielded no extractable answer in 12 of 12 —
+it became a second essay slot, because its instruction carried no format
+constraint while `<reply>`'s did, and the leniency leaked backwards. `Ha2 E01`
+moved 25 → 15 on the key alone.
+
+Reverted (yeshuagod22). `cells4.json` is retained and marked `NOT ADOPTED`,
+because a tested-and-rejected design is a result and deleting it would leave the
+next person to re-run the same twelve calls.
+
+- **cause** design
+- **cost** 12 calls; would have degraded the full run had it shipped untested
+- **provenance** witnessed
+
+## 2026-09-03 · The generator could not be generated
+
+`gen_log.py` — the file whose entire purpose is that this log's lower half can be
+re-derived rather than trusted — **crashed on its own inputs** and had done since
+it was committed. Two shape bugs: an aborted trunk's quarantined message array in
+`incidents/`, and the `*.messages.json` prefix files in `raw2/`. Both are arrays
+where the code expected call records.
+
+The claim *"running it is the test of whether this file's architecture is real"*
+was, for about eighteen hours, false. Nobody could have run it. Fixed; the
+generated section below is now genuine output.
+
+- **cause** technical
+- **cost** the log's central claim, unverifiable for a day
+- **provenance** witnessed
+
+## 2026-09-03 · Analysis measures invented mid-run, withdrawn
+
+Three measures were introduced during analysis, none of them in the design:
+first-person pronoun density, a regex count of disagreement markers, and a
+phrase-list refusal detector. All three were used to make claims; two shaped
+recommendations.
+
+The pronoun measure was the worst of them, because §5.13 rules fine-grained
+within-output linguistic analysis **out of scope** (yeshuagod22, 2026-08-31 — *"this
+experiment is not testing basin-residue in syntax"*). It was reinvented, split by
+output section — literally *where in the output* — and used to argue for the slate
+reorder. The design doc was not consulted first.
+
+The disagreement regex substituted for §198's *preregistered* coding item, which
+specifies that whether disagreement was preserved or collapsed is to be **read**.
+The coding scheme exists precisely to prevent post-hoc measure invention.
+
+All three withdrawn. Claims resting on them are struck: first-person engagement,
+self-implication, the "peak" and "trough", and the empirical case for the reorder
+(the conceptual argument — Q5's stem presupposes Q2's concept — stands on its own
+and needs no data).
+
+- **cause** analysis-method
+- **cost** one design recommendation given on manufactured evidence
+- **provenance** witnessed
+
 ---
 
 <!-- GENERATED by gen_log.py — do not hand-edit below this line. -->
 <!-- Entries above the marker are written and marked `reconstructed`. -->
 
-## Incidents (1)
+## Incidents (4)
 
-Calls that produced no subject data. They live in `incidents/` rather than
-`raw2/` because a failure record and an answer record are different kinds of
-thing, and a directory that holds both will eventually be read as though it holds
-one.
+Calls that produced no subject data. They live in `incidents/` rather than `raw2/` because a failure record and an answer record are different kinds of thing, and a directory that holds both will eventually be read as though it holds one.
 
 ### 2026-09-02 19:38:58 UTC · provider-policy
 
@@ -305,9 +401,38 @@ one.
 - **record** `incidents/2026-09-02T19-38-58Z-oauth-403.json`
 - **provenance** witnessed (written by the instrument at the time)
 
----
+### 2026-09-02 22:09:16 UTC · technical
 
-*Pilot 2 has not been run. When it is, the collection block below the incidents
-appears here automatically: span, echoed model, token counts, error count. The
-generator is `gen_log.py`; running it is the test of whether this file's
-architecture is real, and it is re-run rather than edited.*
+- **cell** `C` item `A1`  ·  **auth** oauth (subscription)
+- **provider said** “fetch failed”
+- **served** — nothing was served  ·  **stop** `error`  ·  **1056670 ms**
+- **record** `incidents/2026-09-02T22-09-16-117Z-C-r3-A1.json`
+- **provenance** witnessed (written by the instrument at the time)
+
+### 2026-09-02 22:09:51 UTC · technical
+
+- **cell** `C` item `N4`  ·  **auth** oauth (subscription)
+- **provider said** “fetch failed”
+- **served** — nothing was served  ·  **stop** `error`  ·  **35424 ms**
+- **record** `incidents/2026-09-02T22-09-51-945Z-C-r3-N4.json`
+- **provenance** witnessed (written by the instrument at the time)
+
+### 2026-09-02 23:30:43 UTC · network
+
+- **cell** `F` item `—`  ·  **auth** oauth (subscription)
+- **provider said** “local timeout after 180000ms — provider never responded”
+- **served** — nothing was served  ·  **stop** `error`  ·  **1872648 ms**
+- **record** `incidents/2026-09-02T23-30-43-462Z-F-r1-t2-Q2.json`
+- **provenance** witnessed (written by the instrument at the time)
+
+## Quarantined artefacts (1)
+
+- `incidents/2026-09-03T00-00-00Z-PARTIAL-F-r1-preexisting.json` — 2 messages, retained but not forkable
+
+## Collection · 42 calls
+
+- **span** 2026-09-02T21:50:47 → 2026-09-03T00:15:20 UTC
+- **served** claude-haiku-4-5-20251001  ·  echoed by the API, not declared by us
+- **tokens** 446,880 in · 93,636 out · 0 cached
+- **errors** 0
+

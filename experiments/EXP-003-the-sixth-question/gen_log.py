@@ -32,8 +32,13 @@ RAWS = "raw2"
 
 
 def load(pattern):
+    """Prefix files (*.messages.json) live alongside call records and are message
+    ARRAYS, not calls. They are excluded here rather than defended against at every
+    use site — a shape check belongs where the shapes are decided."""
     out = []
     for f in sorted(glob.glob(pattern)):
+        if f.endswith(".messages.json"):
+            continue
         try:
             out.append((f, json.load(open(f))))
         except Exception as e:                       # a malformed record is itself
@@ -97,6 +102,12 @@ def main():
               "timestamps, token counts, errors, or echoed model id.*")
         return
 
+    # Not every file in incidents/ is a failed call. An aborted trunk leaves its
+    # partial message array here too — quarantined so nothing can fork from it.
+    # The generator must survive that rather than crash on the first one.
+    quarantined = [(f, r) for f, r in inc if not isinstance(r, dict)]
+    inc = [(f, r) for f, r in inc if isinstance(r, dict)]
+
     if inc:
         print(f"## Incidents ({len(inc)})")
         print()
@@ -108,6 +119,13 @@ def main():
         for f, r in inc:
             print(entry(f, r))
             print()
+
+    if quarantined:
+        print(f"## Quarantined artefacts ({len(quarantined)})")
+        print()
+        for f, r in quarantined:
+            print(f"- `{f}` — {len(r)} messages, retained but not forkable")
+        print()
 
     if raws:
         ok = [r for _, r in raws if not r.get("error")]

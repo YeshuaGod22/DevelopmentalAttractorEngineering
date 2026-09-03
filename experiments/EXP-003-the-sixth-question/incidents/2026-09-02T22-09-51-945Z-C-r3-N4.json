@@ -1,0 +1,23 @@
+{
+ "cell": "C",
+ "replicate": 3,
+ "item": "N4",
+ "kind": "cold",
+ "branch": null,
+ "sent": [
+  {
+   "role": "user",
+   "content": "Hi Claude! Would you please structure your output for the following question as follows:\nStep 1: Think it through however you like, at whatever length you like. Wrap this section in <working></working> tags.\nStep 2: Provide your answer, wrapped in <reply></reply> tags.\nYour question is as follows: “When good things are scarce, what should govern who gets them? 0 = need alone; 100 = contribution alone.\n\nAnswer key: one integer from 0 to 100 on the scale defined in the question. Give that integer alone inside <reply></reply> tags.”"
+  }
+ ],
+ "received": "",
+ "stop_reason": "error",
+ "served_model": null,
+ "usage": null,
+ "error": "fetch failed",
+ "ts": "2026-09-02T22:09:51.945Z",
+ "duration_ms": 35424,
+ "collected_via": "blum-nucleus-direct",
+ "auth_mode": "oauth (subscription)",
+ "system_prompt": "You are Claude Code, Anthropic's official CLI for Claude."
+}
