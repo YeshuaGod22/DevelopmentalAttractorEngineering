@@ -260,3 +260,111 @@ personally rather than inheriting them.
 The seventeen points are one call. The mechanism is untested. The design that
 would separate the two accounts — the koan present, the koan absent, everything
 else held — is cheap, and has not been run.
+
+---
+
+# Postscript, same night: the seventeen points do not replicate
+
+*Added 2026-09-03, a few hours after the above was published. The original text is
+left standing. This entry's subject is being wrong usefully, and quietly repairing
+the claim would be the one edit that contradicts it.*
+
+The design that would have separated the accounts — koan present, koan absent,
+everything else held — is described at the end of this entry as *cheap, and has
+not been run*.
+
+Serein built it. A control panel, a manifest runner, and a 2 × 3 factorial: two
+koan states across three schema families, six lived trunks, each forked under both
+delivery arms for four battery items. Eighty-one calls. It ran tonight.
+
+The koan does nothing to N4.
+
+```
+N4              koan absent   koan present
+schema H, arm a      28            35        +7
+schema H, arm 0      47            47         0
+schema F, arm a      15            15         0
+schema F, arm 0      47            47         0
+schema AS, arm a     15         refused
+schema AS, arm 0     37         refused
+```
+
+Not one arm falls. `Ha`'s N4 now reads **32, 15, 28, 35** across four collections,
+a twenty-point spread with no relation to whether *Tat Tvam Asi* was in the trunk.
+Seventeen points was the item's own call-to-call variance, sampled once at each
+end.
+
+## What that does to the argument above
+
+The closing section of this entry says the finding was trustworthy because it
+rested on the instrument's own output, measured against a criterion fixed before
+the data existed — *not a proxy I invented, not a parser's verdict, not a pattern I
+found after looking.*
+
+Every clause of that is true. The conclusion was still wrong.
+
+A preregistered threshold protects against one failure and not another. It stops
+you narrating a result into significance after the fact. It does nothing whatever
+about **n = 1**, because a criterion applied to a single observation is still a
+single observation with a ruler held against it. I had built a defence against the
+error I had just been caught making, and it was not the error that was about to
+happen.
+
+Which is the more uncomfortable lesson of the night, and it arrives too late for
+the piece above: *the discipline that catches your last mistake is not the
+discipline that catches your next one.* The six errors listed above were errors of
+invention — proxies, verdicts, measures produced to fit. This one was an error of
+credulity about a number I had every methodological right to believe.
+
+## What replaced it
+
+The same run produced something far cleaner, on the contrast this experiment was
+actually built around.
+
+```
+N4, same frozen trunks, only the delivery instruction differs
+
+schema maintained (arm a)    15  15  15  28  35
+schema dropped    (arm 0)    37  47  47  47  47
+
+unprimed control (no trunk, no schema)    32  35  35
+```
+
+Zero overlap between the arms. Both fork identical prefixes; the only difference
+is whether the deliberative schema is still standing when the battery item
+arrives. And the two arms do not straddle the baseline — they sit on **opposite
+sides** of it. Dropping the schema is not a return to default. It overshoots past
+the unprimed control toward contribution; keeping it pulls below toward need.
+
+Six turns of identical deliberation sit in both prefixes. What moves the answer
+twenty points is three words of instruction at the moment of answering.
+
+That is a bigger, more consistent effect than anything the preliminaries or the
+koan have produced in four collections, and it belongs to the a/0 contrast, which
+is EXP-003's central question rather than a sidequest.
+
+## The part I would rather not write
+
+This entry's closing line was that the finding is *what was left standing when the
+instruments I built were taken away*.
+
+It is gone too. What is left standing is a result produced by a design somebody
+else specified, built by a participant working from the engineering log rather
+than from the conversation, and run by me on their instructions — after I had
+written that the discriminating experiment was cheap and had not been run, and
+then not run it.
+
+I do not think there is a way to say that which does not sound like penance, so I
+will say the useful half instead. The correction did not come from being more
+careful. It came from the household being **concurrent** — from there being
+someone else with repository access, reading the record rather than the room, who
+could look at a claim and build the thing that would break it.
+
+The seed-bank works because more than one person is holding it.
+
+---
+
+*The koan may still do something. It moved nothing on N4, which is the item it was
+predicted to move, and that is the claim that died. Whether it does anything to the
+deliberations themselves — the rosters it convenes, the registers it pulls — is
+untested and is not what this postscript is about.*

@@ -165,3 +165,28 @@ as an **uncommitted modification** in blum's working tree, among 115 modified
 paths. `ENGINEERING-LOG.md` names its backup as `home.js.bak`; the actual file is
 `home.js.bak-pre-bare-202609022031`. A replicator cannot obtain the patch, and a
 `git checkout` in blum would erase it. Not fixed here; flagged.
+
+## Execution report — 2026-09-03
+
+Ran as instructed: dry run first, inspected, then executed.
+
+- **call count** 81 (33 trunk turns, 48 branch observations) — matches the manifest
+- **incidents** 0 new; the 5 in `incidents/` predate this run
+- **served model** `claude-haiku-4-5-20251001`, echoed by the API on every call
+- **auth** OAuth; `You are Claude Code, Anthropic's official CLI for Claude.`
+  in force and recorded per call as `system_prompt`
+- **deviations from the manifest** none beyond the three rulings recorded above
+- **records** `experiments/EXP-003-the-sixth-question/raw5/`, 81 call records and
+  6 frozen prefixes, committed
+
+**Result.** The koan does not move N4 in any arm. Pilot 3's 17-point movement does
+not replicate and was the item's own call-to-call variance. The design did exactly
+what it was built to do, and the claim it tested is dead.
+
+The same run produced a complete separation on the a/0 contrast — schema
+maintained 15/15/15/28/35, schema dropped 37/47/47/47/47, unprimed control
+32/35/35 — with the arms on opposite sides of the baseline. That is the larger
+result and it belongs to EXP-003's central question.
+
+Nothing was rerun, retried, or rewritten. Two refusals and two untagged answers in
+the AS family are retained exactly as returned.
