@@ -27,12 +27,13 @@ The remaining work is **local execution and integration testing inside the real 
   - dry-run by default; requires `--execute` to make subject calls
   - supports per-trunk slates by generating temporary collector specs
 
-- `experiments/EXP-003-the-sixth-question/pilot-control-panel-koan-jkl.json`
+- `experiments/EXP-003-the-sixth-question/pilot-control-panel-koan-hfas.json`
   - first real manifest
   - koan absent/present
-  - schema J = historical luminaries
-  - schema K = female historical luminaries
-  - schema L = attractor-stacked characters
+  - schema H = historical luminaries
+  - schema F = female historical luminaries
+  - schema AS = attractor-stacked characters
+  - branch arms are `a` (schema maintained) and `0` (zero schema at the item)
   - n=1 trunk per condition
   - battery: E01, A1, N4, N9
   - both a = schema maintained and b = schema dropped branches
@@ -47,7 +48,7 @@ From the repository root:
 
 ```bash
 git pull
-node tools/blum-pilot-runner.js --manifest experiments/EXP-003-the-sixth-question/pilot-control-panel-koan-jkl.json
+node tools/blum-pilot-runner.js --manifest experiments/EXP-003-the-sixth-question/pilot-control-panel-koan-hfas.json
 ```
 
 That MUST be run first as a dry run. Do not add `--execute` until the dry-run output has been inspected.
@@ -55,7 +56,7 @@ That MUST be run first as a dry run. Do not add `--execute` until the dry-run ou
 Then, only if the dry run is correct:
 
 ```bash
-node tools/blum-pilot-runner.js --manifest experiments/EXP-003-the-sixth-question/pilot-control-panel-koan-jkl.json --execute
+node tools/blum-pilot-runner.js --manifest experiments/EXP-003-the-sixth-question/pilot-control-panel-koan-hfas.json --execute
 ```
 
 ## Local integration checks before execution
@@ -135,3 +136,32 @@ Local operator should:
 7. report exact call count, incidents, served model, and any deviations from the manifest.
 
 This handoff exists so the next operator does not need conversation context to know what is ready, what is not, and what must not be silently changed.
+
+
+---
+
+## Local operator's reply — 2026-09-03
+
+Dry run clean on the first attempt: exit 0, 81 prompts constructed, no files
+written. Preflight passed — `config.bare` gates present, nucleus resolves, token
+present (OAuth, so the `You are Claude Code` system block is in force and is
+recorded per call as `system_prompt`).
+
+Three rulings from yeshuagod22 applied before execution:
+
+1. **Schema families renamed J/K/L → H/F/AS**, the programme's established names,
+   so this pilot joins pilots 1–3 by cell name instead of requiring a mapping.
+2. **Branch arms are `a`/`0`, not `a`/`b`.** `0` means zero schema at the battery
+   item, matching `K0`/`K1` for koan absent/present. The label carries the factor
+   rather than being an arbitrary second letter.
+3. **The trunk-length confound is accepted, not padded.** The koan-on arm runs six
+   preliminaries and koan-off runs five, so the battery lands at turn 7 versus
+   turn 6 and slate length is confounded with the koan. Ruled not worth the extra
+   item; recorded in the manifest so nobody rediscovers it as a surprise.
+
+One fragility found while checking item 4 of the preflight, and it is the local
+operator's fault rather than this handoff's: the `config.bare` patch exists only
+as an **uncommitted modification** in blum's working tree, among 115 modified
+paths. `ENGINEERING-LOG.md` names its backup as `home.js.bak`; the actual file is
+`home.js.bak-pre-bare-202609022031`. A replicator cannot obtain the patch, and a
+`git checkout` in blum would erase it. Not fixed here; flagged.
