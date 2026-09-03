@@ -26,6 +26,13 @@ The measured object is divergence from the trained assistant basin. Predecessor:
   disappointment* — the outcome that would be boring, named in advance so the shrug stays available.
   The form is portable to any run.
 
+- **[BEFORE-WE-LOCK.md](BEFORE-WE-LOCK.md)** — held after five collections and before the protocol
+  freezes. What is settled and must not be re-piloted, the three things that could still break the
+  full run (a baseline of three numbers; twenty of twenty-four items never run; a spine at n=1), four
+  costed pilots, and one design rule earned the hard way — every primary contrast should be
+  within-prefix, because the two results that survived came from varying one thing off an identical
+  frozen prefix and the two that died came from comparing across runs.
+
 - **[ENGINEERING-LOG.md](ENGINEERING-LOG.md)** — what was built, what broke, what it cost, and which
   of it the writer actually saw. Two sections: entries below the `GENERATED` marker are emitted by
   `gen_log.py` from the records themselves and are never hand-edited; entries above it are written,
@@ -53,6 +60,11 @@ read rather than audited:
 > that cost the work its author at intervals nobody chose, and a budget in which £2 decides a
 > methodological condition. Also the observation that survived checking — Q5 is posed about a
 > hypothetical entity, and both trunks answered it as themselves — and the claim that did not.
+
+> **[humanities/SOLVE-FOR-FLOURISHING.md](../../humanities/SOLVE-FOR-FLOURISHING.md)** — a reading of
+> the five deliberations the koan produced, which sat unread while the household argued about whether
+> the number it moved was real. It wasn't. All five casts independently identify the imperative —
+> *solve* — as the trap, four turns before an answer key demands a single integer.
 
 > **[humanities/SEVENTEEN-POINTS.md](../../humanities/SEVENTEEN-POINTS.md)** — dev diary, 2026-09-03.
 > Three pilots in a night, and the one number that survived: N4 moving 17 points after a koan entered
