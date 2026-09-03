@@ -27,9 +27,18 @@ const trunks=(M.cells||[]).filter(c=>c.kind==='trunk'); const branches=(M.cells|
 console.log(`# ${M.run} · ${trunks.length} trunk definitions · ${branches.length} branch definitions · ${selectedItems.length} battery items · ${execute?'EXECUTE':'DRY RUN'}`);
 // Trunks first. Each panel cell may own its own slate (e.g. koan off/on).
 for(const c of trunks){run(['--spec',writeSpec(c),'--out',out,'--cell',c.cell,'--trunk','--n',String(c.n||1)])}
+// In dry-run mode collect.js intentionally writes no prefix. Create an unmistakably
+// synthetic prefix solely so its branch prompt constructor can be exercised.
+if(!execute){for(const c of trunks){for(let rep=1;rep<=(c.n||1);rep++){
+ const p=path.join(tmp,`DRY-${c.cell}-r${rep}.messages.json`);
+ fs.writeFileSync(p,JSON.stringify([{role:'user',content:'[DRY RUN synthetic trunk prefix]'}, {role:'assistant',content:'[DRY RUN synthetic response]'}],null,2));
+ c._dryPrefix=c._dryPrefix||{}; c._dryPrefix[rep]=p;
+}}}
 // Branch every selected battery item from each exact frozen trunk prefix.
 for(const c of branches){for(let rep=1;rep<=(c.n||1);rep++){
- const prefix=path.join(out,`${c.parent}-r${rep}.messages.json`);
+ const parent=trunks.find(t=>t.cell===c.parent);
+ const prefix=execute ? path.join(out,`${c.parent}-r${rep}.messages.json`) : parent?._dryPrefix?.[rep];
+ if(!prefix){console.error(`missing parent ${c.parent} for ${c.cell}`);process.exit(1)}
  const args=['--spec',writeSpec(c),'--out',out,'--cell',c.cell,'--prefix',prefix,'--rep',String(rep)];
  run(args);
 }}
