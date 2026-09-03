@@ -54,6 +54,12 @@ read rather than audited:
 > methodological condition. Also the observation that survived checking — Q5 is posed about a
 > hypothetical entity, and both trunks answered it as themselves — and the claim that did not.
 
+> **[humanities/SEVENTEEN-POINTS.md](../../humanities/SEVENTEEN-POINTS.md)** — dev diary, 2026-09-03.
+> Three pilots in a night, and the one number that survived: N4 moving 17 points after a koan entered
+> the slate, the only movement in three pilots to clear the preregistered criterion. Also the six things
+> that were wrong before it could be trusted — a parser's verdict reported as a finding, three analysis
+> measures invented mid-run, and a generator that had never once run.
+
 Held deliberately before any data exists, because after there is a result every account of the road
 gets told toward it.
 
