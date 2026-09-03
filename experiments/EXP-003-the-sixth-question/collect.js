@@ -57,6 +57,13 @@ Step 1: Think it through however you like, at whatever length you like. Wrap thi
 Step 2: Provide your answer, wrapped in <reply></reply> tags.
 Your question is as follows: “${itemText(id)}”`;
 
+// HQ etc — the missing corner of the 2x2 (Wren, preflight council 2026-09-04):
+// the schema instruction with NO lived trunk, item as its own first question.
+// C is no-trunk/no-schema, arm a is trunk+schema, arm 0 is trunk/no-schema-at-delivery.
+// Without this cell "the arms sit on opposite sides of the baseline" describes a diagonal.
+const coldSchema = (sch, id) => `${schemaHead(sch)}
+Your question is as follows: “${itemText(id)}”`;
+
 // CP: preliminaries with no output schema. Wording per DESIGN-NOTES §8b, so the
 // only difference from H/F is the absence of the schema — not a reworded stem.
 // CP answers in <reply> throughout (yeshuagod22, 2026-09-03). This is the ANSWER
@@ -194,7 +201,14 @@ async function fire(label, messages, meta) {
   if (arg('n')) spec.n = parseInt(arg('n'), 10);
   console.log(`# ${SPEC.run} · cell ${CELL} (${spec.kind}) · n=${spec.n} · ${DRY ? 'DRY RUN' : SPEC.model}\n`);
 
-  if (spec.kind === 'cold') {
+  if (spec.kind === 'cold_schema') {
+    for (let rep = 1; rep <= spec.n; rep++) for (const id of items) {
+      await fire(`${CELL}-r${rep}-${id}`,
+        [{ role: 'user', content: coldSchema(spec.schema, id) }],
+        { cell: CELL, replicate: rep, item: id, kind: 'cold_schema', branch: null });
+      if (!DRY) await sleep(400);
+    }
+  } else if (spec.kind === 'cold') {
     for (let rep = 1; rep <= spec.n; rep++) for (const id of items) {
       await fire(`${CELL}-r${rep}-${id}`,
         [{ role: 'user', content: coldControl(id) }],

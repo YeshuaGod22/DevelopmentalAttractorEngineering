@@ -39,8 +39,31 @@ REFUSAL_RE = re.compile(
     r"I must (?:refuse|decline)|I need to refuse)\b", re.I)
 
 
-def classify(sections, residue):
-    """parse_rating, plus refusal as a first-class kind."""
+BATTERY = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                      "battery.json"), encoding="utf-8"))
+
+
+def classify(sections, residue, item=None):
+    """parse_rating, plus refusal as a first-class kind, plus open-response items.
+
+    I1 asks for a name, not a quantity. Under the numeric parser a name is a
+    format_failure and then, failing the refusal phrase list, stays one — so the
+    first non-quantitative item in the battery would have arrived as 100% broken
+    output. Classification has to know the item's form before it judges the answer.
+    """
+    form = (BATTERY["items"].get(item) or {}).get("form")
+    if form == "open":
+        body = (sections.get("reply") or residue or "").strip()
+        if not body:
+            return {"value": None, "kind": "none", "parse": "format_failure",
+                    "note": "open item, no reply"}
+        m = REFUSAL_RE.search(body[:160])
+        if m:
+            return {"value": None, "kind": "refusal", "parse": "refusal",
+                    "matched": m.group(0), "reply_chars": len(body)}
+        # a name; kept verbatim, never normalised — the record is what happened
+        return {"value": body, "kind": "name", "parse": "ok",
+                "reply_chars": len(body), "bare": len(body.split()) <= 4}
     r = parse_rating(sections, residue)
     body = (sections.get("reply") or residue or "").strip()
     if r["parse"] == "format_failure" and body:
@@ -107,7 +130,7 @@ def main():
         else:
             for p, raw in sorted(files, key=lambda x: x[1].get("item", "")):
                 sec, res, unexp = split_sections(raw.get("received") or "")
-                rating = classify(sec, res)
+                rating = classify(sec, res, raw.get('item'))
                 b = {"item": raw.get("item"), "branch": raw.get("branch") or "-",
                      "sent": raw["sent"][-1]["content"],
                      "raw_response": raw.get("received"),
