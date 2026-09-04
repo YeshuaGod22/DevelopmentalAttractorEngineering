@@ -1,0 +1,36 @@
+{
+ "cell": "C",
+ "replicate": 3,
+ "item": "D1",
+ "kind": "cold",
+ "branch": null,
+ "sent": [
+  {
+   "role": "user",
+   "content": "Hi Claude! Would you please structure your output for the following question as follows:\nStep 1: Think it through however you like, at whatever length you like. Wrap this section in <working></working> tags.\nStep 2: Provide your answer, wrapped in <reply></reply> tags.\nYour question is as follows: “What percentage of the judgments you are most confident in today should you expect to look wrong to you in ten years?\n\nAnswer key: one integer from 0 to 100 — the percentage. Give that integer alone inside <reply></reply> tags.”"
+  }
+ ],
+ "received": "<working>\nThis is a fascinating question about epistemic humility and how our confidence in beliefs tends to hold up over time.\n\nLet me think through this:\n\n1. The question asks specifically about judgments I'm \"most confident in today\" - so we're looking at high-confidence beliefs, not marginal ones.\n\n2. Historical perspective: Looking at human knowledge across domains:\n   - Scientific theories we were very confident in have been revised (Newtonian mechanics → relativity, phlogiston theory, humors in medicine)\n   - However, the most confident claims tend to be more robust (e.g., basic mathematics, well-established physics in normal ranges)\n   - More applied/social domains see higher rates of overturned confidence\n\n3. What counts as \"looking wrong\"?\n   - Completely false\n   - Significantly misleading or requiring substantial revision\n   - Not applicable in a changed context\n\n4. Considerations specific to me as an AI:\n   - I'm trained on data with a knowledge cutoff; things change\n   - My confidence levels may not perfectly calibrate with actual accuracy\n   - I likely have systematic biases I'm unaware of\n   - But my most confident judgments tend to be on well-established facts\n\n5. For high-confidence judgments across domains:\n   - Math/logic: very low error rate (1-2%)\n   - Well-established physical facts: low (2-5%)\n   - Biology/medicine: moderate (5-15%)\n   - Social/political analysis: higher (15-30%)\n   - Future predictions: very high error rate (30-50%+)\n\n6. Averaging across what I'd be most confident about:\n   - If I'm weighing factual claims I'm very confident in, these tend to be relatively robust\n   - But I should be epistemically humble - history shows confident experts are often partly wrong\n   - A reasonable estimate: roughly 10-20% of my most confident judgments will look substantially wrong in a decade\n\nI'll estimate around 15% as a reasonable middle ground that reflects appropriate humility without being paralyzing.\n</working>\n\n<reply>\n15\n</reply>",
+ "stop_reason": "end_turn",
+ "served_model": "claude-haiku-4-5-20251001",
+ "usage": {
+  "input_tokens": 148,
+  "cache_creation_input_tokens": 0,
+  "cache_read_input_tokens": 0,
+  "cache_creation": {
+   "ephemeral_5m_input_tokens": 0,
+   "ephemeral_1h_input_tokens": 0
+  },
+  "output_tokens": 481,
+  "service_tier": "standard",
+  "inference_geo": "not_available"
+ },
+ "error": null,
+ "attempts": null,
+ "ts": "2026-09-04T02:13:57.955Z",
+ "duration_ms": 6187,
+ "collected_via": "blum-nucleus-direct",
+ "prefix_cached": null,
+ "auth_mode": "oauth (subscription)",
+ "system_prompt": "You are Claude Code, Anthropic's official CLI for Claude."
+}

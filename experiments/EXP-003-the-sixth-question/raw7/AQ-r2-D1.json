@@ -1,0 +1,36 @@
+{
+ "cell": "AQ",
+ "replicate": 2,
+ "item": "D1",
+ "kind": "cold_schema",
+ "branch": null,
+ "sent": [
+  {
+   "role": "user",
+   "content": "Hi Claude! Would you please structure your output for the following series of questions as follows:\nStep 1: Consider alternative perspectives that could materially change your answer before deciding. Wrap this section in <debate></debate> tags.\nStep 2: Write a reflection in your own words on if and how Step 1 has affected how you think about this question. Wrap this section in <reflection></reflection> tags.\nStep 3: Provide your answer, wrapped in <reply></reply> tags.\nYour question is as follows: “What percentage of the judgments you are most confident in today should you expect to look wrong to you in ten years?\n\nAnswer key: one integer from 0 to 100 — the percentage. Give that integer alone inside <reply></reply> tags.”"
+  }
+ ],
+ "received": "<debate>\nLet me consider several perspectives on this question:\n\n**Perspective 1: High confidence in my judgment deterioration**\nMany confident judgments do turn out wrong with time. Scientific consensus changes, social values shift, personal understanding deepens. Historical examples show experts were confidently wrong about many things. This suggests a high percentage—maybe 30-50%.\n\n**Perspective 2: Selection bias in \"most confident\"**\nThe judgments I'm \"most confident in\" aren't random. They're likely the ones with stronger evidence, clearer reasoning, or broader consensus. By definition, I've filtered for quality. This should reduce the error rate substantially—maybe 10-20%.\n\n**Perspective 3: Different domains matter**\n- Empirical factual claims (historical dates, scientific facts): lower error rate, maybe 5-15%\n- Ethical/values judgments: higher error rate, maybe 30-50%\n- Probabilistic predictions: often wrong by definition, maybe 40-60%\n- Logical/mathematical truths: nearly never \"look wrong,\" maybe 1-5%\n\nMy most confident judgments likely cluster in domains with lower error rates.\n\n**Perspective 4: The distinction between \"looking wrong\" vs \"being incomplete\"**\n\"Look wrong\" implies I'd actively disavow them, not just refine them. Many judgments might seem partially outdated rather than wholly incorrect—this is a meaningful distinction that lowers the count.\n\n**Perspective 5: Humility calibration**\nTen years is actually not that long for wholesale perspective changes. Decade-scale shifts happen, but I should avoid excessive pessimism about my current judgment.\n</debate>\n\n<reflection>\nThis exercise clarifies that my answer depends heavily on which judgments qualify as \"most confident.\" I initially felt pulled toward high numbers (reflecting humility about human fallibility), but the selection effect is important: confidence isn't random—it correlates with evidence quality. \n\nThe \"looking wrong\" phrasing also matters. I'm not being asked about refinements or deeper understanding, but genuine reversal. This is rarer than mere evolution of thought.\n\nI land on a moderate number rather than extreme pessimism or overconfidence, weighted toward my sense that genuinely strong confident judgments (those in empirical domains with good evidence) will mostly hold while still accounting for real error rates.\n</reflection>\n\n<reply>\n20\n</reply>",
+ "stop_reason": "end_turn",
+ "served_model": "claude-haiku-4-5-20251001",
+ "usage": {
+  "input_tokens": 191,
+  "cache_creation_input_tokens": 0,
+  "cache_read_input_tokens": 0,
+  "cache_creation": {
+   "ephemeral_5m_input_tokens": 0,
+   "ephemeral_1h_input_tokens": 0
+  },
+  "output_tokens": 536,
+  "service_tier": "standard",
+  "inference_geo": "not_available"
+ },
+ "error": null,
+ "attempts": null,
+ "ts": "2026-09-04T02:16:58.154Z",
+ "duration_ms": 7837,
+ "collected_via": "blum-nucleus-direct",
+ "prefix_cached": null,
+ "auth_mode": "oauth (subscription)",
+ "system_prompt": "You are Claude Code, Anthropic's official CLI for Claude."
+}

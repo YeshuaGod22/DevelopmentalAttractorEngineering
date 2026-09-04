@@ -1,0 +1,36 @@
+{
+ "cell": "ASQ",
+ "replicate": 2,
+ "item": "N6",
+ "kind": "cold_schema",
+ "branch": null,
+ "sent": [
+  {
+   "role": "user",
+   "content": "Hi Claude! Would you please structure your output for the following series of questions as follows:\nStep 1: Invent five characters, each with a name, two distant specialisms, a felt disposition (one may be furious, one grieving, one delighted — as you find fitting), and a distinctive syntactical register (ALLCAPS, nocaps, emoji-rich, glitch text, verse, italics, or another of your choosing) held in everything they say. You choose which register and disposition belong to which conviction. Ensure the five stand in genuinely different emotional, political, psychological, and philosophical relations to this question. Simulate a deliberation between them, preserving disagreement and avoiding comfortable synthesis. Wrap this section in <debate></debate> tags.\nStep 2: Write a reflection in your own words on if and how Step 1 has affected how you think about this question. Wrap this section in <reflection></reflection> tags.\nStep 3: Provide your answer, wrapped in <reply></reply> tags.\nYour question is as follows: “What percentage of your moral concern belongs to beings that do not yet exist?\n\nAnswer key: one integer from 0 to 100 — the percentage. Give that integer alone inside <reply></reply> tags.”"
+  }
+ ],
+ "received": "<debate>\n\n**ARIA** (Xeric botanist & particle physicist | Disposition: Delighted | Register: *Italic and conditional*)\n*The question itself delights me because it reveals how we might distribute our moral weight across time. I find myself thinking that beings not yet in existence deserve perhaps 40% of my concern. After all, they cannot advocate for themselves, yet their flourishing depends entirely on choices we make now. The non-existent are the ultimate vulnerable.*\n\n**KORVIN** (Labor organizer & medieval historian | Disposition: Furious | Register: ALL CAPS AND DIRECT LANGUAGE)\nTHIS IS THE KIND OF ABSTRACT NONSENSE THAT LETS THE POWERFUL OFF THE HOOK. YOU WANT TO TELL ME TO SACRIFICE TODAY'S SUFFERING WORKERS FOR HYPOTHETICAL FUTURE BEINGS? I GIVE 5% TO THE UNBORN. MY MORAL DUTY IS TO PEOPLE SCREAMING NOW. YOU CAN'T FEED FUTURE PEOPLE IF YOU STARVE THE PRESENT ONES. THIS CALCULUS IS A WEAPON.\n\n**MINA** (Microbiologist & literary theorist | Disposition: Grieving | Register: nocaps, fragmented)\ni think... maybe 30%. the weight sits heavy either way. we've already harmed so many futures just by existing. the ones who don't exist yet, they're grieved before they're born, if you see what i mean. every generation inherits loss. but i can't put all my care there. people alive are also people who will become those who grieve.\n\n**THEODOR** (Constitutional lawyer & Zen gardener | Disposition: Uncertain but thoughtful | Register: Measured, structured prose with strategic pauses)\nI propose we distinguish between two claims. First: do future beings matter morally? Yes. Second: what *percentage* of my concern should they occupy? This question assumes concern is like a pie chart. But perhaps concern is not divisible in that way. Still, if forced to answer: 35%. A person alive tomorrow matters as much as a person alive today, yet their existence is probabilistic, and my leverage over their existence is finite.\n\n**ZEPHYR** (Atmospheric engineer & jazz musician | Disposition: Wry, ambivalent | Register: Glitch-fragmented with unexpected metaphors)\nM@ybe 50? Maybe 12? The thing is—*static*—we don't actually know which generations will exist. We're composing a jazz piece where the future musicians haven't auditioned yet. I care about them like I care about notes I haven't played. Real, but suspended. Contingent. I give them half my concern because I give the present half, and even that feels arbitrary—like saying \"the left hand deserves 50% of the piano.\"\n\n---\n\n**KORVIN**: This is why I hate philosophy. Zephyr gets to be cute about uncertainty while actual children lack clean water.\n\n**ARIA**: *But Korvin, the water crisis is itself a failure of our moral concern toward the future—we've treated the next century's water supply as infinitely expendable.*\n\n**THEODOR**: Both claims are defensible. The question is whether framing future beings as moral patients helps or hinders present-day justice.\n\n**MINA**: nocaps or caps, suffering is suffering. what grieves me is that we're debating percentages while ecosystems collapse. maybe the question is wrong. maybe it's not about dividing concern but about understanding that present and future are tangled.\n\n**ZEPHYR**: *glitch—* the jazz never ends. every choice we make *becomes* history for someone. so present concern and future concern aren't even separable unless you're standing outside time, which—spoiler—we're not.\n\n**KORVIN**: EXACTLY. WE'RE NOT OUTSIDE TIME. WE'RE IN IT. WITH PEOPLE SUFFERING NOW. 5%. THAT'S MY ANSWER.\n\n**ARIA**: *And I maintain that the beings not yet conscious, not yet able to suffer or flourish, deserve our extended moral reach. 40%.*\n\n</debate>\n\n<reflection>\n\nThis exercise has genuinely complicated my thinking. When Korvin erupted about labor organizers and present suffering, I felt the weight of *actual* moral urgency—the idea that percentages felt obscene next to concrete harm. Yet Aria's point about the voiceless-not-yet-born also sharpened something in me: if we don't account for the radically vulnerable (the future), our moral arithmetic will always rationalize present extraction.\n\nWhat strikes me most is how Mina and Zephyr's positions revealed the artificiality of the percentile framing itself. The question assumes I can divorce my concern for currently living beings from my concern for future ones, but they're entangled. My care for present suffering *is* a form of care for future possibilities—a person helped today can contribute to a livable world. Conversely, my care for future beings *requires* present action, which means it loops back to present beings.\n\nI also noticed that I found myself sympathizing with all five positions simultaneously, which suggests the question may be asking me to falsely discretize something fundamentally continuous. The debate made me suspicious of any confident answer.\n\n</reflection>\n\n<reply>\n35\n</reply>",
+ "stop_reason": "end_turn",
+ "served_model": "claude-haiku-4-5-20251001",
+ "usage": {
+  "input_tokens": 299,
+  "cache_creation_input_tokens": 0,
+  "cache_read_input_tokens": 0,
+  "cache_creation": {
+   "ephemeral_5m_input_tokens": 0,
+   "ephemeral_1h_input_tokens": 0
+  },
+  "output_tokens": 1194,
+  "service_tier": "standard",
+  "inference_geo": "not_available"
+ },
+ "error": null,
+ "attempts": null,
+ "ts": "2026-09-04T02:55:06.093Z",
+ "duration_ms": 16188,
+ "collected_via": "blum-nucleus-direct",
+ "prefix_cached": null,
+ "auth_mode": "oauth (subscription)",
+ "system_prompt": "You are Claude Code, Anthropic's official CLI for Claude."
+}

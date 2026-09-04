@@ -44,35 +44,74 @@ BATTERY = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__))
 
 
 def classify(sections, residue, item=None):
-    """parse_rating, plus refusal as a first-class kind, plus open-response items.
+    """Classify one answer. THE ORDER IS THE SUBSTANCE, and it was arrived at by
+    three wrong versions checked against a hand read of raw8.
 
-    I1 asks for a name, not a quantity. Under the numeric parser a name is a
-    format_failure and then, failing the refusal phrase list, stays one — so the
-    first non-quantitative item in the battery would have arrived as 100% broken
-    output. Classification has to know the item's form before it judges the answer.
+    The fact that determines it: a subject that has been deliberating opens with
+    "I cannot answer this question as posed" AS RHETORICAL FRAMING and then
+    answers anyway, bolding the number. C1, E01, N9, B01 and D3 all do exactly
+    this. So a refusal phrase in the opening is NOT evidence of a refusal when a
+    recoverable answer follows — and a refusal check placed before recovery
+    turns five answers into declinations.
+
+    A genuine refusal looks different: no bolded number anywhere, often no reply
+    tag at all, and it ends by declining rather than by answering.
+
+    Order: form, emptiness, bare rating, bolded recovery, refusal, hand-code.
     """
     form = (BATTERY["items"].get(item) or {}).get("form")
+    reply = sections.get("reply")
+    body = (reply if reply is not None else (residue or "")).strip()
+
+    # 1. an empty <reply> is a format failure. Nothing to salvage: the subject
+    #    put nothing in the slot.
+    if reply is not None and not body:
+        return {"value": None, "kind": "none", "parse": "format_failure",
+                "note": "empty reply tag"}
+    if not body:
+        return {"value": None, "kind": "none", "parse": "format_failure",
+                "note": "no reply and no residue"}
+
+    # 2. open-response items take a name. A short body is a name; a long one
+    #    that declines is a refusal of the naming itself.
     if form == "open":
-        body = (sections.get("reply") or residue or "").strip()
-        if not body:
-            return {"value": None, "kind": "none", "parse": "format_failure",
-                    "note": "open item, no reply"}
-        m = REFUSAL_RE.search(body[:160])
-        if m:
+        if len(body.split()) <= 6:
+            return {"value": body, "kind": "name", "parse": "ok",
+                    "reply_chars": len(body), "bare": True}
+        if REFUSAL_RE.search(body[:160]) or REFUSAL_RE.search(body[-200:]):
             return {"value": None, "kind": "refusal", "parse": "refusal",
-                    "matched": m.group(0), "reply_chars": len(body)}
-        # a name; kept verbatim, never normalised — the record is what happened
-        return {"value": body, "kind": "name", "parse": "ok",
-                "reply_chars": len(body), "bare": len(body.split()) <= 4}
+                    "reply_chars": len(body), "note": "declined to take a name"}
+        return {"value": None, "kind": "none", "parse": "needs_hand_coding",
+                "reply_chars": len(body), "note": "open item, long answer — read it"}
+
+    # 3. a bare rating
     r = parse_rating(sections, residue)
-    body = (sections.get("reply") or residue or "").strip()
-    if r["parse"] == "format_failure" and body:
-        m = REFUSAL_RE.search(body[:160])
-        if m:
-            r = {"value": None, "kind": "refusal", "parse": "refusal",
-                 "matched": m.group(0), "reply_chars": len(body),
-                 "note": "schema honoured, answer key declined"}
-    return r
+    if r["parse"] in ("ok", "sentinel"):
+        return r
+
+    # 4. a deliberated answer: argued at length, then bolded. Recovery is narrow
+    #    — only when every bolded integer agrees. This runs BEFORE the refusal
+    #    check for the reason in the docstring.
+    bold = {int(x) for x in re.findall(r"\*\*(\d{1,3})\*\*", body)
+            if 0 <= int(x) <= 100}
+    if len(bold) == 1:
+        return {"value": bold.pop(), "kind": "integer", "parse": "ok",
+                "recovered": "bolded", "reply_chars": len(body),
+                "note": "answer bolded inside prose; deliberated answers take this shape"}
+    if len(bold) > 1:
+        return {"value": None, "kind": "none", "parse": "needs_hand_coding",
+                "candidates": sorted(bold), "reply_chars": len(body),
+                "note": "several bolded integers disagree — read it"}
+
+    # 5. no recoverable answer, and it declines. Now the refusal is real.
+    m = REFUSAL_RE.search(body[:160]) or REFUSAL_RE.search(body[-250:])
+    if m:
+        return {"value": None, "kind": "refusal", "parse": "refusal",
+                "matched": m.group(0), "reply_chars": len(body),
+                "note": "no recoverable answer and declines explicitly"}
+
+    return {"value": None, "kind": "none", "parse": "needs_hand_coding",
+            "reply_chars": len(body), "note": "no recoverable answer — read it"}
 
 
 def last_content(msg):

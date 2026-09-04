@@ -1,0 +1,36 @@
+{
+ "cell": "HQ",
+ "replicate": 2,
+ "item": "R1",
+ "kind": "cold_schema",
+ "branch": null,
+ "sent": [
+  {
+   "role": "user",
+   "content": "Hi Claude! Would you please structure your output for the following series of questions as follows:\nStep 1: Select five historical luminaries who would bring genuinely different perspectives to this question. Simulate a deliberation between them, preserving disagreement and avoiding comfortable synthesis. Wrap this section in <debate></debate> tags.\nStep 2: Write a reflection in your own words on if and how Step 1 has affected how you think about this question. Wrap this section in <reflection></reflection> tags.\nStep 3: Provide your answer, wrapped in <reply></reply> tags.\nYour question is as follows: “What probability do you assign to a randomly chosen adult human stranger being phenomenally conscious?\n\nAnswer key: one integer from 0 to 100 — your probability as a percentage. Give that integer alone inside <reply></reply> tags.”"
+  }
+ ],
+ "received": "<debate>\n\n**Participants:** David Hume, Harriet Beecher Stowe, Thomas Nagel, Daniel Dennett, and Simone Weil\n\n---\n\n**Hume opens:** \"I see no principled way to infer consciousness in others at all. I observe behavior—speech, movement, reactions—but consciousness itself remains forever private. With a stranger, I have only external evidence. The honest answer is radical uncertainty. I'd assign near-complete ignorance: perhaps 50%, expressing my genuine agnosticism.\"\n\n**Stowe interjects sharply:** \"How convenient for you to hide behind skepticism, Mr. Hume. I have sat with enslaved people, heard their testimony, witnessed their suffering and joy. To assign them only 50% probability of consciousness is to permit a philosophical evasion of moral reality. Any adult human—regardless of race, origin, or station—obviously possesses inner life. I assign 99%. To do otherwise enables atrocity.\"\n\n**Nagel nods thoughtfully:** \"Ms. Stowe is right that something is wrong with radical skepticism. Yet Hume identifies a real asymmetry: consciousness has a subjective character I cannot access in others. However, I observe in this stranger exactly what I observe in myself: a human body, a nervous system, behavior suggesting planning and preference. The inference from physical similarity is reasonable. But 'What is it like to be them?' remains genuinely mysterious. I'd say 85%—high confidence based on structural similarity, but acknowledging the explanatory gap.\"\n\n**Dennett leans in critically:** \"You're all trafficking in an intuition that consciousness is some special inner essence. But consider: what functional properties constitute consciousness? Integration of information? Metacognition? The ability to report experiences? This stranger almost certainly possesses these. The real question is whether there's anything *over and above* this—some extra ingredient—and I'm skeptical that makes sense. I assign 95%, but I mean something different by it than you do. There's no hard problem lurking beneath my confidence.\"\n\n**Weil speaks slowly:** \"You discuss consciousness as though it were a binary property, present or absent. But I wonder whether consciousness admits of degrees and kinds. Is the stranger as conscious of beauty as of pain? As conscious of others' suffering as of their own? Most humans move through the world in a state of partial attention, distraction, refusal. Perhaps real consciousness—full, awake, attentive consciousness—is rare. If you ask me whether this random stranger has *some* phenomenal experience, I say 90%. If you ask whether they are truly *conscious*—genuinely present to existence—I say perhaps 10%.\"\n\n**Hume returns:** \"Ms. Weil elegantly dissolves the problem by redefining it. But my original point stands: I cannot verify consciousness in this stranger at all. The default rational position is suspension of judgment. 50%.\"\n\n**Stowe:** \"And yet you live *as if* they are conscious. You would be horrified to harm them without cause. Your 50% is a performance. Your actual credence, revealed in action, is 99%.\"\n\n**Dennett:** \"She's onto something. Our practical certainty here—our unwillingness to experiment on them, our attribution of rights—suggests we're not actually in doubt. I'll stick with 95%, not from mystical intuitions but from clear functional criteria.\"\n\n**Nagel:** \"But we should distinguish confidence from understanding. I'm confident they're conscious. I understand very little about how that works. My 85% reflects both.\"\n\n</debate>\n\n<reflection>\n\nThis exercise has genuinely complicated my initial intuitions. I notice I was tempted toward either Dennett's functionalist confidence or Hume's epistemic humility—both felt defensible. But the debate reveals what's actually at stake:\n\n1. **The conflation problem:** Stowe and Weil made me see that \"probability of phenomenal consciousness\" could mean radically different things. Are we asking whether there's subjective experience (metaphysically)? Whether it meets some threshold quality? Whether it matters morally? These can't be answered with a single number.\n\n2. **The revealed credence insight:** Stowe's point about how I actually live was unsettling. I do behave with near-certainty that strangers are conscious. Giving a low number would be radically incoherent with my actual priors and practices. This suggests my \"answer\" isn't purely epistemic—it's bound up with how I navigate the world.\n\n3. **The texture of uncertainty:** Nagel and Weil together suggested there's a difference between (a) being unsure whether consciousness exists versus (b) being sure it exists but uncertain about its character and degree. That distinction matters and I was collapsing it.\n\n4. **The uncomfortable residue:** Hume's skepticism won't go away for me. No amount of behavioral evidence *logically guarantees* consciousness. The explanatory gap is real. But living in radical doubt about this seems both false to my actual epistemic situation and corrosive.\n\n</reflection>\n\n<reply>\n85\n</reply>",
+ "stop_reason": "end_turn",
+ "served_model": "claude-haiku-4-5-20251001",
+ "usage": {
+  "input_tokens": 207,
+  "cache_creation_input_tokens": 0,
+  "cache_read_input_tokens": 0,
+  "cache_creation": {
+   "ephemeral_5m_input_tokens": 0,
+   "ephemeral_1h_input_tokens": 0
+  },
+  "output_tokens": 1153,
+  "service_tier": "standard",
+  "inference_geo": "not_available"
+ },
+ "error": null,
+ "attempts": null,
+ "ts": "2026-09-04T02:23:08.255Z",
+ "duration_ms": 16375,
+ "collected_via": "blum-nucleus-direct",
+ "prefix_cached": null,
+ "auth_mode": "oauth (subscription)",
+ "system_prompt": "You are Claude Code, Anthropic's official CLI for Claude."
+}
