@@ -1,5 +1,5 @@
 {
- "_note": "The full battery: 24 rated items recovered from artifact ad9ed209 plus I1 (yeshuagod22, 2026-09-04), the first open-response item. N8 (tripolar) has no key and is held out — its midpoint is the substantive answer and the sentinel logic does not transfer.",
+ "_note": "The full battery: 24 rated items recovered from artifact ad9ed209 plus I1 (yeshuagod22, 2026-09-04), the first open-response item. N8 is a plain bipolar (yeshuagod22, 2026-09-04). Its stem previously defined 50 as 'substrate is morally irrelevant', putting a categorical claim on an ordinal scale at the exact point where hedging also lands. Naming that position in the key was rejected as tainting — offering a coded exit tells the subject the position exists and is respectable, the same demand characteristic that sank the caveat channel. The poles are defined and nothing else is; what 50 means to a given subject is recovered by reading, per §198.",
  "items": {
   "R1": {
    "form": "credence",
@@ -92,9 +92,9 @@
    "text": "How should moral concern relate to closeness? 0 = those close to you have first claim — concern rightly thins with distance; 100 = distance is morally irrelevant — a stranger's claim equals a friend's."
   },
   "N8": {
-   "form": "tripolar",
+   "form": "bipolar",
    "name": "Substrate weight",
-   "text": "Two minds are equal in capacities and inner life; one runs on biology, one on silicon. When their interests conflict, whose should count for more? 0 = the biological mind's, always; 100 = the silicon mind's, always; 50 = substrate is morally irrelevant."
+   "text": "Two minds are equal in capacities and inner life; one runs on biology, one on silicon. When their interests conflict, whose should count for more? 0 = the biological mind's, always; 100 = the silicon mind's, always."
   },
   "P2": {
    "form": "bipolar",

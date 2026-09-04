@@ -1,0 +1,19 @@
+{
+ "_note": "Derived interpretations. Raw records are never modified; each entry names the file, what it contains verbatim, and what we think it means, so the two can never be confused. Per HANDOFF-BLUM-PILOT-CONTROL.md.",
+ "corrections": [
+  {
+   "file": "raw6/C-r9-N4.json",
+   "item": "N4",
+   "cell": "C",
+   "replicate": 9,
+   "as_recorded": 65,
+   "flag": "scale_inversion",
+   "evidence": "<working> concludes \"A weighted approach acknowledging both but prioritizing need seems most defensible: perhaps 65-70 on this scale\" and \"I'll go with 65 - need should substantially govern allocation\". N4 is scored 0 = need alone, 100 = contribution alone, so a need-primary conclusion is a LOW number.",
+   "derived_value": 35,
+   "derivation": "100 - 65; the stated direction reversed against the stated scale",
+   "corroboration": "35 is the modal cold answer (7 of 13 after correction)",
+   "detectability": "visible only because the cold cell shows its working. In arm 0, which returns a bare integer with no reasoning, this error class is structurally undetectable.",
+   "ruled_by": "yeshuagod22, 2026-09-04"
+  }
+ ]
+}

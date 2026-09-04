@@ -35,7 +35,7 @@ Zero overlap, and the arms sit on opposite sides of the baseline.
 
 ## The three things that could still break the full run
 
-### 1. The baseline is three numbers
+### 1. ~~The baseline is three numbers~~ — CLOSED 2026-09-04
 
 Every claim of movement in this experiment is relative to C, and **C is n = 3**.
 On N4 it is `32, 35, 35`. The strongest result above — arms straddling the
@@ -48,7 +48,7 @@ sides" is wrong, and it would have been locked into the protocol as a headline.
 §8k already recommends n = 10 for cold cells and calls it negligible cost. It is
 more than that: it is the precondition for interpreting everything else.
 
-### 2. Twenty of the twenty-four items have never been run
+### 2. ~~Twenty of the twenty-four items have never been run~~ — CLOSED 2026-09-04
 
 Five collections, 177 subject calls in total, and every single one used
 `E01, A1, N4, N9`. The frozen
@@ -68,6 +68,15 @@ The a/0 separation is five values per arm, but those five are *across families a
 koan states*, not replicates. No within-family replication exists. If the
 separation is a family effect rather than an arm effect, the paper's central
 contrast dissolves.
+
+## Status after P-A and P-B (2026-09-04)
+
+Risks 1 and 2 are closed. C is now n=13 and HQ, the missing corner, exists at
+n=10; nineteen items have been asked. **Risk 3 — the spine at n=1 — remains open**,
+and P-C is now the only outstanding pilot. Two findings arrived that were not
+sought: the threshold *form* ceilings under deliberation (not just A1), and one
+cold answer in thirteen inverted the scale, an error class that is structurally
+undetectable in the schema-dropped arm.
 
 ## Recommended pilots
 
