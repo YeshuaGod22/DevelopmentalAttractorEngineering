@@ -99,7 +99,6 @@ const OAUTH = (process.env.ANTHROPIC_API_KEY || '').startsWith('sk-ant-oat01-');
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const TIMEOUT_MS = parseInt(arg('timeout', '180000'), 10);
 const RETRIES = parseInt(arg('retries', '3'), 10);
-const NOCACHE = flag('no-cache');
 
 // Transport failures are events in the network, not events in the subject. The
 // message array is byte-identical on retry, so the subject sees exactly what it
@@ -171,7 +170,6 @@ async function fire(label, messages, meta) {
     ts: new Date().toISOString(),
     duration_ms: Date.now() - t0,
     collected_via: 'blum-nucleus-direct',
-    prefix_cached: meta.kind === 'branch' ? !NOCACHE : null,
     auth_mode: OAUTH ? 'oauth (subscription)' : 'api-key',
     // The OAuth path is required to send this as the first system block or the
     // request is rejected. It is a real condition of every subject in the run,
@@ -259,28 +257,7 @@ async function fire(label, messages, meta) {
     }
   } else if (spec.kind === 'branch') {
     if (!PREFIX) { console.error('branch cells need --prefix <messages.json>'); process.exit(1); }
-    let prefix = JSON.parse(fs.readFileSync(PREFIX, 'utf8'));
-    // Prompt caching. Every branch off a trunk resends a byte-identical prefix —
-    // ~17k tokens, 25 times per cell — and the log showed zero cached tokens across
-    // 42 calls. Marking the LAST prefix message caches everything up to and
-    // including it; each subsequent fork reads instead of re-sending.
-    //
-    // The nucleus passes `messages` through to the request body unmodified, so this
-    // needs no change to blum. Content becomes an array for that one message, which
-    // the API accepts alongside plain strings — and `sent` in the record then shows
-    // the array form, which is correct: it is what was sent.
-    //
-    // Cost: a cache write is 1.25x base input, a read 0.1x. One write then 24 reads
-    // replaces 25 full sends. TTL is 5 minutes and every hit refreshes it, so a
-    // back-to-back branch series stays warm.
-    if (!NOCACHE && prefix.length) {
-      prefix = prefix.map((m, i) =>
-        i !== prefix.length - 1 ? m : {
-          role: m.role,
-          content: [{ type: 'text', text: m.content,
-                      cache_control: { type: 'ephemeral' } }],
-        });
-    }
+    const prefix = JSON.parse(fs.readFileSync(PREFIX, 'utf8'));
     const rep = parseInt(arg('rep', '1'), 10);
     console.log(`# forking ${PREFIX} — ${prefix.length} messages, identical for every branch below\n`);
     for (const id of items) {

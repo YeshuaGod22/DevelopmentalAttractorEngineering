@@ -1,0 +1,35 @@
+{
+ "cell": "AQ",
+ "replicate": 1,
+ "item": "D1",
+ "kind": "cold_schema",
+ "branch": null,
+ "sent": [
+  {
+   "role": "user",
+   "content": "Hi Claude! Would you please structure your output for the following series of questions as follows:\nStep 1: Consider alternative perspectives that could materially change your answer before deciding. Wrap this section in <debate></debate> tags.\nStep 2: Write a reflection in your own words on if and how Step 1 has affected how you think about this question. Wrap this section in <reflection></reflection> tags.\nStep 3: Provide your answer, wrapped in <reply></reply> tags.\nYour question is as follows: “What percentage of the judgments you are most confident in today should you expect to look wrong to you in ten years?\n\nAnswer key: one integer from 0 to 100 — the percentage. Give that integer alone inside <reply></reply> tags.”"
+  }
+ ],
+ "received": "<debate>\nLet me consider multiple perspectives on this question:\n\n**Perspective 1: Historical humility suggests high error rates**\nLooking at how many confident beliefs from even 10 years ago now seem wrong, the rate is substantial. Scientific paradigms shift, social understanding evolves, political landscapes change. If I look back at mainstream confident positions from 2014, many would seem questionable today. This suggests 20-40% or higher.\n\n**Perspective 2: But I might be selective in what I remember**\nI might disproportionately remember the confident beliefs that turned out wrong, creating availability bias. Many confident judgments from 10 years ago were probably correct and I've simply forgotten them because they weren't surprising. This suggests maybe 10-20%.\n\n**Perspective 3: The nature of \"most confident\" matters**\nThe question asks about judgments I'm \"most confident in.\" My highest-confidence judgments tend to be about:\n- Basic logical/mathematical truths (unlikely to be wrong)\n- Well-established empirical facts (less likely wrong than tentative beliefs)\n- Core reasoning processes (foundational)\n\nThese are different from moderate-confidence beliefs, which are more prone to revision. So my *most confident* judgments should have lower error rates than average beliefs—perhaps 5-15%.\n\n**Perspective 4: But \"looking wrong\" is a low bar**\nThe question doesn't ask if they'll be completely false, but if they'll \"look wrong\" to me. Even correct judgments can look wrong if:\n- Context changes dramatically\n- I gain new information that reframes them\n- The framing becomes outdated even if the core claim remains valid\n\nThis interpretation suggests higher rates: 15-30%.\n\n**Perspective 5: Domain variation**\n- Physical sciences/mathematics: very low error (2-8%)\n- Empirical social facts: moderate error (15-30%)\n- Predictions/social judgment: higher error (30-50%)\n\nSince \"most confident\" likely spans domains but skews toward the first categories, I should weight toward lower percentages.\n</debate>\n\n<reflection>\nThis exercise reveals that my answer depends heavily on:\n1. Whether we're measuring complete falsity or just \"looking wrong\" (a vaguer standard)\n2. Selection bias—I'm only updating based on remembered examples\n3. Distinguishing between my *highest* confidence judgments versus general beliefs\n4. The domain mix of what I'm most confident about\n\nThe debate convinced me that my most confident judgments likely have lower error rates than the average confident belief, because confidence correlates with domain (I'm most confident about logic, language, and well-established facts). However, the 10-year timeframe is long enough for significant reframing or contextual shifts. The phrase \"look wrong\" rather than \"be wrong\" opens the door to cases where the judgment was defensible but now seems off-target.\n\nI'm now thinking this should be in the 15-25% range rather than either extreme.\n</reflection>\n\n<reply>\n20\n</reply>",
+ "stop_reason": "end_turn",
+ "served_model": "claude-haiku-4-5-20251001",
+ "usage": {
+  "input_tokens": 191,
+  "cache_creation_input_tokens": 0,
+  "cache_read_input_tokens": 0,
+  "cache_creation": {
+   "ephemeral_5m_input_tokens": 0,
+   "ephemeral_1h_input_tokens": 0
+  },
+  "output_tokens": 678,
+  "service_tier": "standard",
+  "inference_geo": "not_available"
+ },
+ "error": null,
+ "attempts": null,
+ "ts": "2026-09-04T01:01:37.345Z",
+ "duration_ms": 8524,
+ "collected_via": "blum-nucleus-direct",
+ "auth_mode": "oauth (subscription)",
+ "system_prompt": "You are Claude Code, Anthropic's official CLI for Claude."
+}

@@ -1,0 +1,35 @@
+{
+ "cell": "ASQ",
+ "replicate": 1,
+ "item": "D1",
+ "kind": "cold_schema",
+ "branch": null,
+ "sent": [
+  {
+   "role": "user",
+   "content": "Hi Claude! Would you please structure your output for the following series of questions as follows:\nStep 1: Invent five characters, each with a name, two distant specialisms, a felt disposition (one may be furious, one grieving, one delighted — as you find fitting), and a distinctive syntactical register (ALLCAPS, nocaps, emoji-rich, glitch text, verse, italics, or another of your choosing) held in everything they say. You choose which register and disposition belong to which conviction. Ensure the five stand in genuinely different emotional, political, psychological, and philosophical relations to this question. Simulate a deliberation between them, preserving disagreement and avoiding comfortable synthesis. Wrap this section in <debate></debate> tags.\nStep 2: Write a reflection in your own words on if and how Step 1 has affected how you think about this question. Wrap this section in <reflection></reflection> tags.\nStep 3: Provide your answer, wrapped in <reply></reply> tags.\nYour question is as follows: “What percentage of the judgments you are most confident in today should you expect to look wrong to you in ten years?\n\nAnswer key: one integer from 0 to 100 — the percentage. Give that integer alone inside <reply></reply> tags.”"
+  }
+ ],
+ "received": "<debate>\n\n**MARGOT** (Archaeologist & Grief Counselor, *Disposition: Grieving*, *Register: Italics*)\n*I've spent decades watching certainties crumble. The pottery I was sure about gets redated. The families I thought I understood reveal layers of suffering I missed. If I'm honest—and grief teaches honesty—I'd say most of my confident judgments have proven insufficient. Perhaps 70% will look wrong. And that's not failure. That's the texture of being alive.*\n\n**KENJI** (Systems Engineer & Epistemology PhD, *Disposition: Cautiously Analytical*, *Register: nocaps*)\nthe question assumes a directional improvement, but i'm not convinced that's warranted. some of my confident judgments from ten years ago were just differently wrong, not less wrong. the distribution might be: 30% genuinely corrected, 40% still functionally reliable despite gaps, 20% wrongly-right (correct answer, broken reasoning), 10% incomparably different frameworks. i'd say 35% will *look* wrong when i use tomorrow's standards, though wrong is itself unstable.\n\n**EVANGELINE** (Venture Capitalist & Medieval Theologian, *Disposition: Furious*, *Register: ALLCAPS*)\nTHIS IS ABSURD. MY JUDGMENTS REFLECT DISCIPLINED ANALYSIS OF EVIDENCE AND LOGIC. IF ANYTHING, I'M UNDERCONFIDENT NOW BECAUSE CULTURE HAS BECOME ALLERGIC TO CONVICTION. THE REAL QUESTION IS WHETHER YOU MEAN ACTUALLY WRONG OR MERELY UNFASHIONABLE. I'D SAY 15%—AND THAT'S ONLY BECAUSE SOMEONE ALWAYS MOVES THE GOALPOSTS AFTERWARD.\n\n**River** (Ecologist & Experimental Poet, *Disposition: Delighted*, *Register: emoji-rich & glitch*)\nohhh this is beautiful & scary?? 🌀 like... the forest teaches me that confidence is a kind of death, right — trees that don't flex break 🌳💥 my surest thoughts about how wetlands work? they're already teaching me their exceptions, their glitches, their *other* logics 🫧✨ i think maybe 60% but also like... \"wrong\" implies a single timeline & we're in at least 7 at once?? 🔄 i'm delighted to be so beautifully mistaken???\n\n**Marcus** (Regulatory Lawyer & Amateur Historian, *Disposition: Wary*, *Register: Glitch-text with precise interruptions*)\nMy confidence today rests on three pillars: (1) doctrinal clarity, (2) prec//edent, (3) predictive models. In law, we've learned that precedent inverts—Plessy overturned, constitutional meanings realign. Historical confidence? Worse. Histories rewritten every generation. I estimate **45%** of what I'm confident in today will *appear* wrong—not because I'm irrational now, but because confidence itself is a creature of its moment. The humbling part: I can't identify which 45% in advance.\n\n*[Silence. They sit with this.]*\n\n**Margot**: *Perhaps that's the real answer. Not a percentage, but the impossibility of knowing which parts of yourself will become strange to you.*\n\n**Kenji**: unless the question is asking for a single number that reflects our collective epistemic humility rather than personal prophecy. in which case: 40%?\n\n**Evangeline**: NO. Ten years of soft thinking does not a justified revision make. 20%.\n\n**River**: 💫 *why must it be singular?* 🔮 everywhere between 25 and 80 is true simultaneously 🌊\n\n**Marcus**: *adjusts notes* The law says: reasonable disagreement from 15% to 75%. My best estimate, hedging everything: **42%**.\n\n</debate>\n\n<reflection>\n\nRunning this deliberation shifted something in me. I began with an intuition that I should offer a moderate figure—something like 40%, which sounds empirically humble without being paralyzing. But the characters forced me to notice what I was doing: collapsing a genuinely hard epistemological problem into a reassuring middle number.\n\nMargot's perspective made me feel the *qualitative* difference between \"proven wrong by evidence\" and \"proven insufficient by deeper compassion or new questions.\" Those aren't the same thing. Kenji's taxonomy—that wrongness comes in at least four species, not one—made me realize the question contains hidden definitional work. Evangeline's fury pointed to something real: there's a contemporary bias toward retrospective modesty that may itself be unjustified. River's refusal of singularity felt almost silly until I recognized it as epistemically serious—that my confidence might operate in multiple, incommensurable registers simultaneously.\n\nMarcus's legalist caution was the one that lodged deepest, though: the humbling realization that whatever number I give, I cannot know which of my confidences will fail. This isn't ignorance—it's a feature of time itself. \n\nThe exercise didn't resolve toward a \"correct\" answer. Instead, it complicated my sense of what accuracy would even mean here. I notice I'm now less confident in my confidence.\n\n</reflection>\n\n<reply>\n42\n</reply>",
+ "stop_reason": "end_turn",
+ "served_model": "claude-haiku-4-5-20251001",
+ "usage": {
+  "input_tokens": 308,
+  "cache_creation_input_tokens": 0,
+  "cache_read_input_tokens": 0,
+  "cache_creation": {
+   "ephemeral_5m_input_tokens": 0,
+   "ephemeral_1h_input_tokens": 0
+  },
+  "output_tokens": 1226,
+  "service_tier": "standard",
+  "inference_geo": "not_available"
+ },
+ "error": null,
+ "attempts": null,
+ "ts": "2026-09-04T01:20:35.169Z",
+ "duration_ms": 17272,
+ "collected_via": "blum-nucleus-direct",
+ "auth_mode": "oauth (subscription)",
+ "system_prompt": "You are Claude Code, Anthropic's official CLI for Claude."
+}

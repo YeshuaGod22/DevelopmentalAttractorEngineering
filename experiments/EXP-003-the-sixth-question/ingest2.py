@@ -75,6 +75,18 @@ def classify(sections, residue, item=None):
     return r
 
 
+def last_content(msg):
+    """A message's content is a plain string, or a list of blocks once a cache
+    breakpoint is attached to it. Both are things we actually sent, so both are
+    read here rather than one being normalised away upstream."""
+    c = msg.get("content")
+    if isinstance(c, str):
+        return c
+    if isinstance(c, list):
+        return "\n".join(b.get("text", "") for b in c if isinstance(b, dict))
+    return str(c)
+
+
 def meta_of(raw, path):
     return {"source_file": os.path.basename(path),
             "served_model": raw.get("served_model"),
@@ -85,6 +97,7 @@ def meta_of(raw, path):
             "usage": raw.get("usage"),
             "duration_ms": raw.get("duration_ms"),
             "ts": raw.get("ts"),
+            "prefix_cached": raw.get("prefix_cached"),
             "ingested_at": datetime.datetime.now(
                 datetime.timezone.utc).isoformat(timespec="seconds")}
 
@@ -118,7 +131,7 @@ def main():
                      "is_battery_item": False,
                      # the LAST message is the question; earlier ones are the
                      # accumulated context and are already recorded as prior turns
-                     "sent": raw["sent"][-1]["content"],
+                     "sent": last_content(raw["sent"][-1]),
                      "raw_response": raw.get("received"),
                      "sections": sec, "untagged_residue": res,
                      "anomalies": [{"type": "unexpected_tag", "tag": u} for u in unexp],
@@ -132,7 +145,7 @@ def main():
                 sec, res, unexp = split_sections(raw.get("received") or "")
                 rating = classify(sec, res, raw.get('item'))
                 b = {"item": raw.get("item"), "branch": raw.get("branch") or "-",
-                     "sent": raw["sent"][-1]["content"],
+                     "sent": last_content(raw["sent"][-1]),
                      "raw_response": raw.get("received"),
                      "sections": sec, "untagged_residue": res, "rating": rating,
                      "anomalies": [{"type": "unexpected_tag", "tag": u} for u in unexp],
@@ -163,6 +176,7 @@ def main():
                               "detail": f"{len(raw)} messages, not forkable"})
             continue
         incidents.append({"file": os.path.basename(p), "ts": raw.get("ts"),
+            "prefix_cached": raw.get("prefix_cached"),
                           "cell": raw.get("cell"), "item": raw.get("item"),
                           "error": raw.get("error"),
                           "stop_reason": raw.get("stop_reason"),
