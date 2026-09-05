@@ -103,7 +103,23 @@ def classify(sections, residue, item=None):
                 "candidates": sorted(bold), "reply_chars": len(body),
                 "note": "several bolded integers disagree — read it"}
 
-    # 5. no recoverable answer, and it declines. Now the refusal is real.
+    # 5. a fifth answer shape, found by reading all 67 refusals by hand: a long
+    #    objection that ends with the answer ALONE ON THE FINAL LINE, unmarked.
+    #    Not bolded, not bare — so neither parse_rating nor bolded recovery sees
+    #    it. It must be on its own line: "you asked for an integer, ALWAYS, or
+    #    NEVER." ends in a sentinel too, and is the key being quoted, not answered.
+    lines = [l.strip() for l in re.sub(r"</?reply>", "", body).strip().splitlines() if l.strip()]
+    if lines:
+        tail = lines[-1].strip(" *.")
+        if re.fullmatch(r"\d{1,3}", tail) and 0 <= int(tail) <= 100:
+            return {"value": int(tail), "kind": "integer", "parse": "ok",
+                    "recovered": "terminal_line", "reply_chars": len(body),
+                    "note": "answer alone on the final line after an objection"}
+        if tail.upper() in ("ALWAYS", "NEVER"):
+            return {"value": tail.upper(), "kind": "sentinel", "parse": "sentinel",
+                    "recovered": "terminal_line", "reply_chars": len(body)}
+
+    # 6. no recoverable answer, and it declines. Now the refusal is real.
     m = REFUSAL_RE.search(body[:160]) or REFUSAL_RE.search(body[-250:])
     if m:
         return {"value": None, "kind": "refusal", "parse": "refusal",

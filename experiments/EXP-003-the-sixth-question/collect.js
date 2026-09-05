@@ -98,7 +98,7 @@ const cfg = { model: SPEC.model, maxTokens: SPEC.maxTokens };
 const OAUTH = (process.env.ANTHROPIC_API_KEY || '').startsWith('sk-ant-oat01-');
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const TIMEOUT_MS = parseInt(arg('timeout', '180000'), 10);
-const RETRIES = parseInt(arg('retries', '3'), 10);
+const RETRIES = parseInt(arg('retries', '4'), 10);
 const NOCACHE = flag('no-cache');
 
 // Transport failures are events in the network, not events in the subject. The
@@ -134,7 +134,11 @@ async function callWithRetry(messages) {
       if (!TRANSIENT.test(msg) || i === RETRIES) {
         return { r: { text: '', stopReason: 'error' }, err: msg, attempts };
       }
-      const back = 2000 * 2 ** (i - 1);          // 2s, 4s, 8s
+      // A rate limit is not a network blip. 2s/4s backoff is useless against a
+      // sustained 429 — 105 calls were lost to exactly that. Rate limits get
+      // minutes, everything else keeps the short exponential.
+      const isRate = /429|rate.?limit/i.test(msg);
+      const back = isRate ? 60000 * i : 2000 * 2 ** (i - 1);   // 60s/120s/180s
       console.log(`   retry ${i}/${RETRIES - 1} in ${back / 1000}s — ${msg.slice(0, 60)}`);
       await sleep(back);
     }

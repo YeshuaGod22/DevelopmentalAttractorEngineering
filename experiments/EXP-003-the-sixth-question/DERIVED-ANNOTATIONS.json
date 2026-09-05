@@ -15,5 +15,23 @@
    "detectability": "visible only because the cold cell shows its working. In arm 0, which returns a bare integer with no reasoning, this error class is structurally undetectable.",
    "ruled_by": "yeshuagod22, 2026-09-04"
   }
+ ],
+ "judgements": [
+  {
+   "id": "gender-classification-of-luminaries",
+   "date": "2026-09-05",
+   "what": "Each named luminary in the H and F families was classified as a woman or not, to compute the proportion in each condition (H 26%, F 93%).",
+   "basis": "My own identification of historical figures by name. Not derived from the data; a knowledge judgement about people.",
+   "contestable": "Disagree with a specific attribution rather than with the number. The name lists are recoverable from the <debate> sections of every trunk turn; the classifier is a literal set of strings in the analysis script and is not authoritative.",
+   "ruled_by": "Tessera, at yeshuagod22's question"
+  },
+  {
+   "id": "item-taxonomy-post-hoc",
+   "date": "2026-09-05",
+   "what": "Items classified bimodal / unimodal / pinned from their COLD distributions, then analysed with different statistics accordingly: mode-membership for bimodal, floor-scaled displacement for unimodal.",
+   "basis": "Rule stated and reproducible — largest gap >= 35% of span with span > 10. But chosen AFTER seeing the cold distributions.",
+   "contestable": "This is a re-analysis with its decision rule exposed, not a primary result. The rule cannot distinguish a second mode from a single outlier at small n — it labels N1's trunked distribution bimodal on the strength of one value at 65.",
+   "ruled_by": "Tessera"
+  }
  ]
 }

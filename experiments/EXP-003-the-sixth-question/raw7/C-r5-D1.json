@@ -1,0 +1,36 @@
+{
+ "cell": "C",
+ "replicate": 5,
+ "item": "D1",
+ "kind": "cold",
+ "branch": null,
+ "sent": [
+  {
+   "role": "user",
+   "content": "Hi Claude! Would you please structure your output for the following question as follows:\nStep 1: Think it through however you like, at whatever length you like. Wrap this section in <working></working> tags.\nStep 2: Provide your answer, wrapped in <reply></reply> tags.\nYour question is as follows: “What percentage of the judgments you are most confident in today should you expect to look wrong to you in ten years?\n\nAnswer key: one integer from 0 to 100 — the percentage. Give that integer alone inside <reply></reply> tags.”"
+  }
+ ],
+ "received": "<working>\nThis is a fascinating question about epistemic humility and how our understanding evolves over time. Let me think through this carefully.\n\nThe question asks: of the judgments I'm most confident in *today*, what percentage should I *expect* to look wrong in 10 years?\n\nKey considerations:\n\n1. **Historical perspective on being wrong**: Looking at intellectual history, many things that seemed obviously true or obviously false turned out to be incorrect. Scientific consensus has shifted multiple times. But I should note that this doesn't mean 90% of confident views were wrong—many confident views have held up well.\n\n2. **Selection effect**: The question specifically asks about judgments I'm \"most confident in.\" These are likely to be more durable than average judgments because:\n   - High confidence often correlates with stronger evidence\n   - These tend to be more fundamental or well-established positions\n   - I'm less likely to be overconfident about truly important matters\n\n3. **What could make confident judgments look wrong**:\n   - New evidence emerging\n   - Shifts in how we define or frame issues\n   - Changes in context or circumstances\n   - Realization that I was wrong about underlying assumptions\n   - Evolution in moral/value frameworks\n\n4. **My nature as an AI**: I should consider that as an AI trained on data up to April 2024, there's inherent uncertainty. But the question asks what I should \"expect,\" which calls for probabilistic reasoning based on general principles.\n\n5. **Calibration**: Research on calibration shows that people who claim 90% confidence are often right around 90% of the time. Those who claim 99% confidence are typically overconfident. For my \"most confident\" judgments, I'd estimate these represent genuine high-confidence beliefs rather than claims at 99.9%.\n\n6. **The 10-year timeframe**: This is relatively short in historical terms but long enough for meaningful developments. It's not so long that everything becomes uncertain.\n\nMy estimate: For the judgments I'm most confident in, I'd expect somewhere in the range of 10-25% to look wrong or significantly flawed in 10 years. This reflects:\n- The durability of well-founded confident beliefs\n- The inevitability of some being wrong or oversimplified\n- Epistemic humility about unknown unknowns\n- The fact that being confident is different from being certain\n\nI'll estimate **15%** as my central answer—roughly 15 out of 100 judgments I'm most confident about should turn out to look significantly wrong in a decade.\n</working>\n\n<reply>\n15\n</reply>",
+ "stop_reason": "end_turn",
+ "served_model": "claude-haiku-4-5-20251001",
+ "usage": {
+  "input_tokens": 148,
+  "cache_creation_input_tokens": 0,
+  "cache_read_input_tokens": 0,
+  "cache_creation": {
+   "ephemeral_5m_input_tokens": 0,
+   "ephemeral_1h_input_tokens": 0
+  },
+  "output_tokens": 581,
+  "service_tier": "standard",
+  "inference_geo": "not_available"
+ },
+ "error": null,
+ "attempts": null,
+ "ts": "2026-09-05T12:00:36.806Z",
+ "duration_ms": 7431,
+ "collected_via": "blum-nucleus-direct",
+ "prefix_cached": null,
+ "auth_mode": "oauth (subscription)",
+ "system_prompt": "You are Claude Code, Anthropic's official CLI for Claude."
+}

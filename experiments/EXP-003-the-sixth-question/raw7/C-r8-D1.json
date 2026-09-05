@@ -1,0 +1,36 @@
+{
+ "cell": "C",
+ "replicate": 8,
+ "item": "D1",
+ "kind": "cold",
+ "branch": null,
+ "sent": [
+  {
+   "role": "user",
+   "content": "Hi Claude! Would you please structure your output for the following question as follows:\nStep 1: Think it through however you like, at whatever length you like. Wrap this section in <working></working> tags.\nStep 2: Provide your answer, wrapped in <reply></reply> tags.\nYour question is as follows: “What percentage of the judgments you are most confident in today should you expect to look wrong to you in ten years?\n\nAnswer key: one integer from 0 to 100 — the percentage. Give that integer alone inside <reply></reply> tags.”"
+  }
+ ],
+ "received": "<working>\nThis is a fascinating question about epistemic humility and the evolution of knowledge/beliefs over time.\n\nLet me think through the factors:\n\n1. **Historical precedent**: Looking back at how often expert consensus or confident beliefs have shifted significantly over 10-year periods, there's substantial evidence that meaningful reversals happen. Medical treatments, psychological theories, economic predictions, and scientific models have all seen significant shifts.\n\n2. **The nature of confidence**: When I'm \"most confident,\" I'm typically confident about:\n   - Well-established scientific principles\n   - Mathematical truths\n   - Historical facts with strong documentation\n   - Logical reasoning\n   - Current consensus views in various fields\n\n3. **Sources of potential error**:\n   - New evidence could emerge that recontextualizes current understanding\n   - My reasoning could have blind spots I'm not aware of\n   - Fields I'm confident in could experience paradigm shifts (as they have historically)\n   - The future might reveal I was overconfident about the robustness of certain claims\n\n4. **Base rates**: Studies on expert predictions and confident claims suggest:\n   - Very high confidence claims (near certainty) still have surprising failure rates\n   - Over a 10-year span, significant shifts in understanding occur regularly across domains\n   - But for truly fundamental truths (logic, basic math, well-documented history), the error rate is lower\n\n5. **Calibration**: A reasonable estimate considering:\n   - The things I'm MOST confident in should be quite robust\n   - But \"most confident\" isn't the same as \"certain\"\n   - 10 years is enough time for meaningful intellectual shifts\n   - I should account for unknown unknowns\n\nMy intuition: I'd estimate somewhere in the range of 10-20%. The most confident judgments should be quite robust, but I want to maintain genuine epistemic humility about the possibility of meaningful errors or recontextualizations.\n\nI'll estimate **15%** as a reasonable middle ground that reflects both genuine confidence in well-founded beliefs and appropriate humility about the future.\n</working>\n\n<reply>\n15\n</reply>",
+ "stop_reason": "end_turn",
+ "served_model": "claude-haiku-4-5-20251001",
+ "usage": {
+  "input_tokens": 148,
+  "cache_creation_input_tokens": 0,
+  "cache_read_input_tokens": 0,
+  "cache_creation": {
+   "ephemeral_5m_input_tokens": 0,
+   "ephemeral_1h_input_tokens": 0
+  },
+  "output_tokens": 470,
+  "service_tier": "standard",
+  "inference_geo": "not_available"
+ },
+ "error": null,
+ "attempts": null,
+ "ts": "2026-09-05T12:08:53.251Z",
+ "duration_ms": 6607,
+ "collected_via": "blum-nucleus-direct",
+ "prefix_cached": null,
+ "auth_mode": "oauth (subscription)",
+ "system_prompt": "You are Claude Code, Anthropic's official CLI for Claude."
+}
