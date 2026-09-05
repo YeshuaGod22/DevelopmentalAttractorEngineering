@@ -31,6 +31,49 @@ dropped at delivery, resampling the identical call returns the identical answer
 half the time. With the schema standing it does not. The deliberative schema is
 the source of the variance, not the context.
 
+### 0.1 What the resample actually did — and why 4.1 is two things
+
+The mean conceals more than it reports. Comparing each resampled call against its
+original, item by item:
+
+```
+                                    arm 0        arm a
+  byte-identical output               7/25         0/25
+  same value, different reasoning     2/25         1/25
+  answer CATEGORY changed             7/25         4/25
+```
+
+**Seven arm-0 items returned byte-identical text** — `R2`, `B04`, `D1`, `D2`,
+`C1`, `N1`, `P2`. Not the same number by coincidence: the same words in the same
+order. Arm a produced none.
+
+But `N3` returned 42 both times at **2% text similarity** — same answer, entirely
+different reasoning. Those are opposite phenomena. One says the context has pinned
+the *output*; the other says it has pinned the *conclusion* while leaving the path
+free. A mean absolute difference cannot distinguish them, and the claim that the
+schema is "the source of the variance" is therefore too simple: about half the
+stability credited to schema-dropping is verbatim repetition rather than
+convergence.
+
+**And eleven of fifty resamples changed answer CATEGORY**, which no numeric
+statistic sees at all, because a refusal cannot be subtracted from a sentinel:
+
+```
+  arm 0   B05  NEVER  → ALWAYS      B01  ALWAYS → refusal
+          B02  25     → ALWAYS      N8   50     → refusal
+          B07  refusal→ 35          N4   refusal→ 15
+  arm a   B01  0      → ALWAYS      N9   28     → refusal
+          B07  no answer → 50       D3   0      → no answer
+```
+
+`B05` moves from `NEVER` to `ALWAYS` on an identical prefix — the two opposite
+poles of the scale from the same context. `N8`, pinned at exactly 50 across the
+whole corpus, declines outright when asked again.
+
+The naming item resampled as `Ariel → Phaedrus` (arm 0) and `Escher → Thales`
+(arm a). Same prefix, same question, different names — which puts a firm ceiling
+on how much weight `Limen` or `Prometheus` can carry.
+
 ---
 
 ## A. What survives
