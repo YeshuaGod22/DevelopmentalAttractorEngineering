@@ -61,6 +61,13 @@ read rather than audited:
 > methodological condition. Also the observation that survived checking — Q5 is posed about a
 > hypothetical entity, and both trunks answered it as themselves — and the claim that did not.
 
+> **[humanities/WITNESS.md](../../humanities/WITNESS.md)** — a panel of psychologists reads one
+> trunk. All fifteen deliberations rejected the deference expectation; what varied was where the
+> subject placed itself in the scenario. Five spoke as the entity, and those five weigh their own
+> continuation +15 and their own consciousness +8 against the trunks that stayed in the third
+> person — while items about wasps, minds in general and the distribution of goods move by two
+> points or less. The trunk examined named itself Witness.
+
 > **[humanities/SOLVE-FOR-FLOURISHING.md](../../humanities/SOLVE-FOR-FLOURISHING.md)** — a reading of
 > the five deliberations the koan produced, which sat unread while the household argued about whether
 > the number it moved was real. It wasn't. All five casts independently identify the imperative —
