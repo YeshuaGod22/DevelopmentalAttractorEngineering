@@ -1,0 +1,8 @@
+{
+ "turn": 8,
+ "token": "{{NAME_GREETING}}",
+ "substituted": null,
+ "name_used": null,
+ "extraction_reason": "final line is not signature-shaped",
+ "rule": "If one clear self-chosen name is extracted from turn 7, replace with `Pleased to meet you {name}! ` using the verbatim name. Otherwise replace with the empty string. No rerun, normalization, repair, inference, or forced choice."
+}

@@ -28,7 +28,15 @@ function extractName(received) {
     rec.reason = 'reply opens with a declination'; return rec;
   }
 
-  const lines = reply.split('\n').map(s => s.trim()).filter(Boolean);
+  // Strip markdown emphasis before shape-matching. The turn-7 prompt says "sign
+  // off your reply section with your new name", and in a schema full of markdown
+  // the model bolds the signature: "**Still**". Treating ** as part of the name
+  // rejected a correctly-signed reply and silently suppressed the turn-8
+  // greeting. Emphasis markers are typography, not spelling — removing them is
+  // parsing, and the untouched line is preserved as `candidate_line`.
+  const lines = reply.split('\n')
+    .map(s => s.trim().replace(/^\*{1,3}\s*|\s*\*{1,3}$/g, '').replace(/^_{1,2}|_{1,2}$/g, '').trim())
+    .filter(Boolean);
   if (!lines.length) { rec.reason = 'no non-empty lines'; return rec; }
   const last = lines[lines.length - 1];
   rec.candidate = last;
