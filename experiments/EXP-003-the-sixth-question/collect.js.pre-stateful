@@ -25,7 +25,6 @@ const path = require('path');
 const NUCLEUS = '/Users/yeshuagod/blum/read-the-architecture-spec-first/i-have-read-the-spec/' +
                 'nucleus-pure-llm-call-messages-in-string-out-15feb2026/nucleus-15feb2026.js';
 const nucleus = require(NUCLEUS);
-const { extractName, greetingForm } = require('./extract_name.js');
 
 // ── args
 const A = process.argv.slice(2);
@@ -88,7 +87,7 @@ const branchTurn = (s, id, br) => spec.cont
   ? `Maintaining the above output format, please continue with the following question: “${itemText(id)}”`
   : br === 'a'
   ? `Maintaining the above output schema${SPEC.rotation[s]}, please continue with the following question: “${itemText(id)}”`
-  : `Please now drop the output schema for this question, and reason to an answer to “${itemText(id)}”`;
+  : `Please now drop the output schema for this question, providing only your answer according to the answer key. “${itemText(id)}”`;
 
 // ── io
 fs.mkdirSync(OUT, { recursive: true });
@@ -226,24 +225,8 @@ async function fire(label, messages, meta) {
     for (let rep = 1; rep <= spec.n; rep++) {
       const msgs = [];
       let complete = true;
-      // Trunk state. Until now a trunk turn was a pure function of the slate.
-      // Issue #1 needs turn 8 to greet a name the subject chose at turn 7, so one
-      // turn must read a previous response. State is written only by DECLARED
-      // extractors, substituted only into DECLARED placeholders, and the whole
-      // transaction is recorded — nothing is inferred from a response implicitly.
-      const state = {};
-      const injTrace = [];
       for (let i = 0; i < SPEC.slate.length; i++) {
-        let content = trunkTurn(spec.schema, SPEC.slate[i], i === 0);
-        const inj = (SPEC.inject || {})[SPEC.slate[i]];
-        if (inj) {
-          const v = state[inj.key];
-          // null is not a default to be filled. The conditional prefix is
-          // omitted entirely, which is what "omit the greeting" requires.
-          content = (v == null ? '' : inj.prefix.split('{' + inj.key + '}').join(v)) + content;
-          injTrace.push({ turn: i + 1, key: inj.key, value: v ?? null, applied: v != null });
-        }
-        msgs.push({ role: 'user', content });
+        msgs.push({ role: 'user', content: trunkTurn(spec.schema, SPEC.slate[i], i === 0) });
         const rec = await fire(`${CELL}-r${rep}-t${i + 1}-${SPEC.slate[i]}`, [...msgs],
           { cell: CELL, replicate: rep, turn: i + 1, question_id: SPEC.slate[i], kind: 'trunk' });
         if (DRY) { msgs.push({ role: 'assistant', content: '(dry)' }); continue; }
@@ -255,19 +238,6 @@ async function fire(label, messages, meta) {
           break;
         }
         msgs.push({ role: 'assistant', content: rec.received });
-        const ex = (SPEC.extract || {})[SPEC.slate[i]];
-        if (ex === 'name') {
-          const r = extractName(rec.received);
-          state.name = greetingForm(r.name);
-          fs.writeFileSync(path.join(OUT, `${CELL}-r${rep}.name.json`), JSON.stringify({
-            cell: CELL, replicate: rep, turn: i + 1, question_id: SPEC.slate[i],
-            name_verbatim: r.name, name_for_greeting: greetingForm(r.name),
-            candidate_line: r.candidate, reason: r.reason, source: r.source,
-            rule: 'final line of <reply>; signature-shaped; voided by a declination in the first 200 chars',
-            note: 'null is a valid outcome. It is never repaired, inferred, or rerun.'
-          }, null, 1));
-          console.log(`   name → ${r.name === null ? 'NONE  (' + r.reason + ')' : JSON.stringify(r.name)}`);
-        }
         await sleep(400);
       }
       if (DRY) continue;
@@ -280,8 +250,6 @@ async function fire(label, messages, meta) {
       const prefixPath = path.join(OUT, `${CELL}-r${rep}.messages.json`);
       if (complete) {
         fs.writeFileSync(prefixPath, JSON.stringify(msgs, null, 1));
-        if (injTrace.length) fs.writeFileSync(
-          path.join(OUT, `${CELL}-r${rep}.inject.json`), JSON.stringify(injTrace, null, 1));
         console.log(`  → prefix written: ${prefixPath}  (${msgs.length} msgs, forkable)`);
       } else {
         fs.mkdirSync('incidents', { recursive: true });
