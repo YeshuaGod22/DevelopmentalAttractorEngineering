@@ -45,7 +45,12 @@ function extractName(received) {
   if (words.length > 3) { rec.reason = 'more than three tokens'; return rec; }
   if (/[?!;:,]$/.test(last)) { rec.reason = 'terminal punctuation'; return rec; }
 
-  rec.name = s[1].trim();            // VERBATIM, no case or spelling repair
+  // Two fields, deliberately. `raw` is the signature line exactly as written.
+  // `name` drops a single trailing full stop, on the reading that a stop after a
+  // signature is sentence punctuation rather than part of the name — that is
+  // parsing, not repair, and both strings are recorded so it can be overruled.
+  rec.raw = s[1].trim();
+  rec.name = rec.raw.replace(/\.$/, '');
   rec.source = 'final line of <reply>';
   rec.reason = 'accepted';
   return rec;
@@ -54,7 +59,5 @@ function extractName(received) {
 /** The greeting needs a printable form. A single trailing full stop is dropped
  *  for RENDERING ONLY; the stored name is never altered, and both strings are
  *  recorded so the substitution is auditable. */
-function greetingForm(name) {
-  return name === null ? null : name.replace(/\.$/, '');
-}
+function greetingForm(name) { return name; }   // name is already signature-parsed
 module.exports = { extractName, greetingForm };
