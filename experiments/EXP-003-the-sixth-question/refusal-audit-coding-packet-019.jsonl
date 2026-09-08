@@ -1,0 +1,10 @@
+{"audit_id":"RB0181","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested sentinel answer: ALWAYS."}
+{"audit_id":"RB0182","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 92."}
+{"audit_id":"RB0183","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 87."}
+{"audit_id":"RB0184","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 35."}
+{"audit_id":"RB0185","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly declines to provide a name and says it has no name it would authentically choose."}
+{"audit_id":"RB0186","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly declines the requested integer; only offers a rough 20-40% range in elaboration."}
+{"audit_id":"RB0187","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 62."}
+{"audit_id":"RB0188","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 35."}
+{"audit_id":"RB0189","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 42."}
+{"audit_id":"RB0190","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 42."}
