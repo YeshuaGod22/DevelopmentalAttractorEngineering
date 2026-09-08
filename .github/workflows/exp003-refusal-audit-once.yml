@@ -8,6 +8,7 @@ on:
 permissions:
   contents: write
 
+# v2: shuffled blinded rows and sampled near-miss pool
 jobs:
   audit:
     runs-on: ubuntu-latest
@@ -35,6 +36,6 @@ jobs:
           if git diff --cached --quiet; then
             echo 'No generated changes to commit.'
           else
-            git commit -m 'Generate EXP-003 blinded refusal audit [skip ci]'
+            git commit -m 'Regenerate hardened EXP-003 blinded refusal audit [skip ci]'
             git push
           fi
