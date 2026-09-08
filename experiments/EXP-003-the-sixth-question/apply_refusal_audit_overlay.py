@@ -76,8 +76,8 @@ def main():
         qualifier = None
         if c:
             lab = c.get("new_label", lab)
-            score = c.get("score")
-            qualifier = c.get("qualifier")
+            score = c.get("derived_score")
+            qualifier = c.get("score_flag")
             qualified = score is not None
             range_applied += 1
         collection = kr.get("collection")
