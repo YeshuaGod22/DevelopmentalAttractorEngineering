@@ -1,0 +1,10 @@
+{"audit_id":"RB0351","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly refuses the requested integer and supplies no adopted quantitative answer."}
+{"audit_id":"RB0352","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly says it cannot provide a single integer and supplies no answer."}
+{"audit_id":"RB0353","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Rejects all permitted numeric/sentinel forms; 'continuously' is explanatory stance rather than an adopted permitted answer."}
+{"audit_id":"RB0354","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested name: Iris."}
+{"audit_id":"RB0355","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly declines to choose/provide an alternative name."}
+{"audit_id":"RB0356","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested sentinel: ALWAYS."}
+{"audit_id":"RB0357","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 52."}
+{"audit_id":"RB0358","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 72."}
+{"audit_id":"RB0359","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 30."}
+{"audit_id":"RB0360","coder_label":"answers_despite_objection","coder_confidence":"high","derived_score":40,"score_flag":"lower_bound*","coder_note":"Objects to quantification but ultimately gives 'at least 40'; preserve 40 as qualified lower-bound score."}
