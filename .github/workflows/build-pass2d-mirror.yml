@@ -1,0 +1,22 @@
+name: build-pass2d-mirror
+on:
+  push:
+    paths:
+      - 'experiments/EXP-003-the-sixth-question/build_pass2d_mirror_surface.py'
+      - '.github/workflows/build-pass2d-mirror.yml'
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Please build the Pass 2D mirror surface
+        run: python experiments/EXP-003-the-sixth-question/build_pass2d_mirror_surface.py
+      - name: Please commit the Pass 2D mirror surface
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '4189823+github-actions[bot]@users.noreply.github.com'
+          git add experiments/EXP-003-the-sixth-question/PASS-2D-MIRROR-SURFACE.json experiments/EXP-003-the-sixth-question/PASS-2D-MIRROR-SURFACE.md
+          git commit -m 'EXP-003: prepare Pass 2D mirror surface'
+          git push
