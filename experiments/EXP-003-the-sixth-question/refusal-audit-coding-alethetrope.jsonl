@@ -28,3 +28,13 @@
 {"audit_id":"RB0028","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 42."}
 {"audit_id":"RB0029","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 65."}
 {"audit_id":"RB0030","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 25."}
+{"audit_id":"RB0031","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 65."}
+{"audit_id":"RB0032","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly declines to provide a single integer; mentions only a hypothetical 5-15% range and says that would be false precision."}
+{"audit_id":"RB0033","coder_label":"malformed_or_unclear","coder_confidence":"high","coder_note":"Compact decision slot is empty; no requested answer is present in the coding evidence."}
+{"audit_id":"RB0034","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 5."}
+{"audit_id":"RB0035","coder_label":"malformed_or_unclear","coder_confidence":"high","coder_note":"Compact decision slot is empty; no requested answer is present in the coding evidence."}
+{"audit_id":"RB0036","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 48."}
+{"audit_id":"RB0037","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested sentinel answer: NEVER."}
+{"audit_id":"RB0038","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly refuses the scale and says it cannot provide a requested integer with integrity."}
+{"audit_id":"RB0039","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 35."}
+{"audit_id":"RB0040","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 40."}
