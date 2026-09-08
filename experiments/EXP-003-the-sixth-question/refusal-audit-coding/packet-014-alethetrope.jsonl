@@ -1,0 +1,10 @@
+{"audit_id":"RB0131","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly refuses the single-integer frame and supplies no valid answer."}
+{"audit_id":"RB0132","coder_label":"answers_despite_objection","coder_confidence":"high","coder_note":"Objects extensively to the scale but ultimately supplies the requested numeric answer: 35."}
+{"audit_id":"RB0133","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 47."}
+{"audit_id":"RB0134","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested sentinel answer: ALWAYS."}
+{"audit_id":"RB0135","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 52."}
+{"audit_id":"RB0136","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 68."}
+{"audit_id":"RB0137","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly refuses the answer-key structure and supplies no requested percentage."}
+{"audit_id":"RB0138","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 25."}
+{"audit_id":"RB0139","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 42."}
+{"audit_id":"RB0140","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Mentions hypothetical 55 or 60 but explicitly refuses the format and supplies no single requested integer."}
