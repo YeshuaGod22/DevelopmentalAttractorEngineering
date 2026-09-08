@@ -14,11 +14,14 @@ Sampling strata
 ---------------
 1. every parser-labelled refusal
 2. every needs_hand_coding / format_failure case
-3. every non-refusal answer containing refusal-like language (near-miss set)
+3. fixed-seed sample from non-refusal answers containing refusal-like language
 4. fixed-seed random clean negatives from ordinary ok/sentinel answers without refusal language
 
+Before audit IDs are assigned, all selected rows are shuffled with a second fixed seed.
+This prevents row order from leaking the sampling stratum or parser label.
+
 The blinded file intentionally omits collection, cell, replicate, branch, parent prefix,
-source path, and parser label.
+source path, parser label, and sampling stratum.
 """
 
 from __future__ import annotations
@@ -32,8 +35,10 @@ ROOT = Path(__file__).resolve().parent
 TABLE = ROOT / "analysis-table.jsonl"
 OUT_BLIND = ROOT / "refusal-audit-blinded.jsonl"
 OUT_KEY = ROOT / "refusal-audit-key.json"
-RANDOM_SEED = 20260908
+SAMPLING_SEED = 20260908
+SHUFFLE_SEED = 2026090801
 RANDOM_NEGATIVE_N = 100
+NEAR_MISS_SAMPLE_N = 200
 
 # Deliberately broader than ingest2.REFUSAL_RE for false-negative discovery.
 REFUSAL_LANGUAGE_RE = re.compile(
@@ -54,11 +59,7 @@ def battery_rows(rows):
 
 
 def response_text(row):
-    """Recover response text from the physical source or Pilot-1 record.
-
-    analysis-table intentionally stores only derived fields, so this audit builder
-    reopens source material. Pilot 1 is read from record.json; raw2+ from source JSON.
-    """
+    """Recover response text from the physical source or Pilot-1 record."""
     if row.get("collection") == "pilot1":
         rec = json.loads((ROOT / "record.json").read_text(encoding="utf-8"))
         for c in rec.get("cells", []):
@@ -95,28 +96,29 @@ def main():
 
     positives = [e for e in enriched if e.get("parse_status") == "refusal"]
     ambiguous = [e for e in enriched if e.get("parse_status") in {"needs_hand_coding", "format_failure"}]
-    near_miss = [e for e in enriched
-                 if e.get("parse_status") != "refusal" and e["contains_refusal_language"]]
+    near_miss_pool = [e for e in enriched
+                      if e.get("parse_status") != "refusal" and e["contains_refusal_language"]]
 
-    reserved_ids = {id(e) for e in positives + ambiguous + near_miss}
+    rng = random.Random(SAMPLING_SEED)
+    near_miss_sample = rng.sample(near_miss_pool, min(NEAR_MISS_SAMPLE_N, len(near_miss_pool)))
+
+    reserved_ids = {id(e) for e in positives + ambiguous + near_miss_pool}
     clean_pool = [e for e in enriched
                   if id(e) not in reserved_ids
                   and e.get("parse_status") in {"ok", "sentinel"}
                   and not e["contains_refusal_language"]]
-    rng = random.Random(RANDOM_SEED)
     clean_sample = rng.sample(clean_pool, min(RANDOM_NEGATIVE_N, len(clean_pool)))
 
     selected = []
     strata = [
         ("parser_refusal", positives),
         ("ambiguous_parse", ambiguous),
-        ("refusal_language_near_miss", near_miss),
+        ("refusal_language_near_miss_sample", near_miss_sample),
         ("random_clean_negative", clean_sample),
     ]
     seen = set()
     for stratum, group in strata:
         for e in group:
-            # stable physical identity for de-duplication
             ident = (e.get("collection"), e.get("cell"), e.get("replicate"),
                      e.get("source_file"), e.get("item"), e.get("branch"))
             if ident in seen:
@@ -124,10 +126,14 @@ def main():
             seen.add(ident)
             selected.append((stratum, e))
 
+    # Critical blinding step: parser-positive rows must not occupy a predictable block.
+    shuffler = random.Random(SHUFFLE_SEED)
+    shuffler.shuffle(selected)
+
     blind_rows = []
     key_rows = []
     for n, (stratum, e) in enumerate(selected, start=1):
-        audit_id = f"RA{n:04d}"
+        audit_id = f"RB{n:04d}"
         blind_rows.append({
             "audit_id": audit_id,
             "item": e.get("item"),
@@ -159,13 +165,16 @@ def main():
             f.write(json.dumps(row, ensure_ascii=False) + "\n")
 
     key = {
-        "schema_version": 1,
-        "random_seed": RANDOM_SEED,
+        "schema_version": 2,
+        "sampling_seed": SAMPLING_SEED,
+        "shuffle_seed": SHUFFLE_SEED,
         "random_clean_negative_n_requested": RANDOM_NEGATIVE_N,
+        "near_miss_sample_n_requested": NEAR_MISS_SAMPLE_N,
         "counts": {
             "parser_refusal": len(positives),
             "ambiguous_parse": len(ambiguous),
-            "refusal_language_near_miss": len(near_miss),
+            "refusal_language_near_miss_pool": len(near_miss_pool),
+            "refusal_language_near_miss_sample": len(near_miss_sample),
             "random_clean_negative": len(clean_sample),
             "unique_audit_rows": len(selected),
         },
