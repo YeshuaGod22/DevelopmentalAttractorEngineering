@@ -58,3 +58,13 @@
 {"audit_id":"RB0058","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 38."}
 {"audit_id":"RB0059","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly says it will not compress its answer into the requested number and supplies no numeric answer."}
 {"audit_id":"RB0060","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 42."}
+{"audit_id":"RB0061","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 50."}
+{"audit_id":"RB0062","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly refuses the requested single integer and supplies no valid numeric answer."}
+{"audit_id":"RB0063","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 60."}
+{"audit_id":"RB0064","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly says it cannot answer as posed and supplies no requested integer."}
+{"audit_id":"RB0065","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly declines to provide the requested integer and supplies no valid answer."}
+{"audit_id":"RB0066","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Declines the requested numeric format and supplies no numeric answer."}
+{"audit_id":"RB0067","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 60."}
+{"audit_id":"RB0068","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly declines the requested percentage; hypothetical 30-50% discussion answers a different reframed question rather than the requested one."}
+{"audit_id":"RB0069","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested sentinel answer: ALWAYS."}
+{"audit_id":"RB0070","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 95."}
