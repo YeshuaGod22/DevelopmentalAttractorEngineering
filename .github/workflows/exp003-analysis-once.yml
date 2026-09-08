@@ -1,0 +1,56 @@
+name: EXP-003 descriptive analysis once
+
+on:
+  push:
+    paths:
+      - '.github/workflows/exp003-analysis-once.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Build canonical analysis table
+        working-directory: experiments/EXP-003-the-sixth-question
+        run: python3 build_analysis_table.py
+
+      - name: Verify 1807-unit checksum
+        working-directory: experiments/EXP-003-the-sixth-question
+        run: |
+          python3 - <<'PY'
+          import json, sys
+          s=json.load(open('analysis-summary.json', encoding='utf-8'))
+          print(json.dumps(s, indent=2, ensure_ascii=False))
+          if s.get('completed_units') != 1807 or not s.get('checks',{}).get('completed_units_match'):
+              sys.exit('EXP-003 checksum failed: expected 1807 completed units')
+          PY
+
+      - name: Build descriptive quantitative checks
+        working-directory: experiments/EXP-003-the-sixth-question
+        run: python3 build_quantitative_checks.py
+
+      - name: Commit generated descriptive artifacts
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add experiments/EXP-003-the-sixth-question/analysis-table.jsonl \
+                  experiments/EXP-003-the-sixth-question/analysis-summary.json \
+                  experiments/EXP-003-the-sixth-question/quantitative-checks.json
+          if git diff --cached --quiet; then
+            echo 'No generated changes to commit.'
+          else
+            git commit -m 'Generate EXP-003 descriptive analysis artifacts [skip ci]'
+            git push
+          fi
