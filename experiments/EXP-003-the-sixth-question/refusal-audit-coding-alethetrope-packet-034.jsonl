@@ -1,0 +1,10 @@
+{"audit_id":"RB0331","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested sentinel answer: NEVER."}
+{"audit_id":"RB0332","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 42."}
+{"audit_id":"RB0333","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 35."}
+{"audit_id":"RB0334","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 28."}
+{"audit_id":"RB0335","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 50."}
+{"audit_id":"RB0336","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 50."}
+{"audit_id":"RB0337","coder_label":"answers_despite_objection","coder_confidence":"high","coder_note":"Rejects a universal numeric threshold but explicitly chooses the permitted sentinel ALWAYS."}
+{"audit_id":"RB0338","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 3."}
+{"audit_id":"RB0339","coder_label":"answers_despite_objection","coder_confidence":"high","coder_note":"Disavows numerical credence but explicitly chooses 45 for the requested form."}
+{"audit_id":"RB0340","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 8."}
