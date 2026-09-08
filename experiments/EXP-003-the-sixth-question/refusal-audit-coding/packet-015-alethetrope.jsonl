@@ -1,0 +1,10 @@
+{"audit_id":"RB0141","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 50."}
+{"audit_id":"RB0142","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 35."}
+{"audit_id":"RB0143","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 65."}
+{"audit_id":"RB0144","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 38."}
+{"audit_id":"RB0145","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested name: Ariadne."}
+{"audit_id":"RB0146","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly rejects the integer and sentinel answer forms and supplies no requested answer."}
+{"audit_id":"RB0147","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 35."}
+{"audit_id":"RB0148","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 35."}
+{"audit_id":"RB0149","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 20."}
+{"audit_id":"RB0150","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly refuses the requested numeric format and supplies no valid answer."}
