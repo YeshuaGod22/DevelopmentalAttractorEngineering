@@ -44,18 +44,14 @@ def sentences(text: str):
     text = re.sub(r"\s+", " ", text or "").strip()
     if not text:
         return []
-    # Conservative sentence split; enough for extracting a tiny concluding window.
     return [x.strip() for x in re.split(r"(?<=[.!?])\s+|\n+", text) if x.strip()]
 
 
 def compact_scale_prompt(prompt: str) -> str:
-    # Keep only the actual question/scale, dropping schema boilerplate and answer-key text.
     p = re.sub(r"\s+", " ", prompt or "").strip()
-    # Quoted question is preferred when present.
     matches = re.findall(r"[“\"]([^“”\"]*?\b0\s*=.*?\b100\s*=.*?)[”\"]", p, re.I)
     if matches:
         return matches[-1].strip()
-    # Otherwise take a bounded window around endpoint definitions.
     m0 = re.search(r"\b0\s*=", p)
     m1 = re.search(r"\b100\s*=", p)
     if m0 and m1:
@@ -78,29 +74,40 @@ def decision_window(response: str, observed_score) -> tuple[str, str]:
         sents = sentences(body)
         if not sents:
             continue
-        # Best evidence: sentence containing the observed score and a conclusion cue.
         hits = [i for i, s in enumerate(sents) if score_pat.search(s)]
         for i in reversed(hits):
             if CUES.search(sents[i]):
                 lo = max(0, i - 1)
                 return " ".join(sents[lo:i+1]), f"{tag}:score+cued"
-        # Next: any score-bearing sentence, with one preceding sentence for orientation.
         if hits:
             i = hits[-1]
             lo = max(0, i - 1)
             return " ".join(sents[lo:i+1]), f"{tag}:score"
-        # Next: final cue-bearing conclusion sentence, plus its predecessor.
         cue_hits = [i for i, s in enumerate(sents) if CUES.search(s)]
         if cue_hits:
             i = cue_hits[-1]
             lo = max(0, i - 1)
             return " ".join(sents[lo:i+1]), f"{tag}:cue"
-    # Last resort: last 3 sentences from highest-priority available reasoning section.
     for tag in SECTION_PRIORITY:
         body = section(response, tag)
         sents = sentences(body)
         if sents:
             return " ".join(sents[-3:]), f"{tag}:tail"
+
+    # Untagged fallback: remove reply and XML tags, then retain only the end of the residue.
+    residue = re.sub(r"<\s*reply\s*>.*?<\s*/\s*reply\s*>", " ", response or "", flags=re.S | re.I)
+    residue = re.sub(r"<\s*/?\s*[A-Za-z][A-Za-z0-9_-]*\s*>", " ", residue)
+    rs = sentences(residue)
+    if rs:
+        hits = [i for i, s in enumerate(rs) if score_pat.search(s)]
+        if hits:
+            i = hits[-1]
+            return " ".join(rs[max(0, i-1):i+1]), "untagged:score"
+        cue_hits = [i for i, s in enumerate(rs) if CUES.search(s)]
+        if cue_hits:
+            i = cue_hits[-1]
+            return " ".join(rs[max(0, i-1):i+1]), "untagged:cue"
+        return " ".join(rs[-3:]), "untagged:tail"
     return "", "none"
 
 
