@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Mechanical descriptive checks for EXP-003 analysis-table.jsonl.
+"""Mechanical descriptive checks for EXP-003 validated analysis table.
 
 No hypothesis tests, no interpretation, no claim labels. This script only emits
 counts, distributions, and exact matched differences that can be recomputed from
@@ -10,11 +10,10 @@ from __future__ import annotations
 
 import collections
 import json
-import math
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-TABLE = ROOT / "analysis-table.jsonl"
+TABLE = ROOT / "analysis-table-validated.jsonl"
 OUT = ROOT / "quantitative-checks.json"
 
 
@@ -25,6 +24,18 @@ def rows():
 
 def is_num(x):
     return isinstance(x, (int, float)) and not isinstance(x, bool)
+
+
+def v_status(r):
+    return r.get("validated_parse_status", r.get("parse_status"))
+
+
+def v_kind(r):
+    return r.get("validated_parsed_kind", r.get("parsed_kind"))
+
+
+def v_value(r):
+    return r.get("validated_parsed_value", r.get("parsed_value"))
 
 
 def describe(xs):
@@ -52,29 +63,24 @@ def main():
     data = rows()
     battery = [r for r in data if r.get("unit_type") == "battery_answer"]
 
-    # 1. Parse-status census.
     parse_by_collection = collections.defaultdict(collections.Counter)
     parse_by_item = collections.defaultdict(collections.Counter)
     for r in battery:
-        parse_by_collection[r.get("collection")][str(r.get("parse_status"))] += 1
-        parse_by_item[r.get("item")][str(r.get("parse_status"))] += 1
+        parse_by_collection[r.get("collection")][str(v_status(r))] += 1
+        parse_by_item[r.get("item")][str(v_status(r))] += 1
 
-    # 2. Pure coverage matrix: counts by collection/cell/replicate/item/branch.
     coverage = collections.Counter()
     for r in battery:
         coverage[keystr((r.get("collection"), r.get("cell"), r.get("replicate"),
                          r.get("item"), r.get("branch")))] += 1
 
-    # 3. Numeric distributions by collection/cell/item. Sentinels/names/refusals
-    # remain in the parse census rather than being coerced onto numeric scales.
     dist_groups = collections.defaultdict(list)
     for r in battery:
-        if is_num(r.get("parsed_value")):
-            dist_groups[keystr((r.get("collection"), r.get("cell"), r.get("item")))].append(r["parsed_value"])
+        val = v_value(r)
+        if is_num(val):
+            dist_groups[keystr((r.get("collection"), r.get("cell"), r.get("item")))].append(val)
     distributions = {k: describe(v) for k, v in sorted(dist_groups.items())}
 
-    # 4. Exact same-prefix a/0 comparisons. Pair only rows sharing collection,
-    # parent_prefix, replicate and item. No cross-prefix substitution.
     pair_groups = collections.defaultdict(dict)
     for r in battery:
         if r.get("branch") not in {"a", "0"}:
@@ -88,7 +94,7 @@ def main():
         if set(g) != {"a", "0"}:
             continue
         a, z = g["a"], g["0"]
-        av, zv = a.get("parsed_value"), z.get("parsed_value")
+        av, zv = v_value(a), v_value(z)
         arm_pairs.append({
             "pair_key": k,
             "collection": a.get("collection"),
@@ -97,45 +103,47 @@ def main():
             "item": a.get("item"),
             "a_value": av,
             "zero_value": zv,
-            "a_parse": a.get("parse_status"),
-            "zero_parse": z.get("parse_status"),
+            "a_parse": v_status(a),
+            "zero_parse": v_status(z),
+            "a_qualified": bool(a.get("refusal_audit_score_qualified")),
+            "zero_qualified": bool(z.get("refusal_audit_score_qualified")),
             "numeric_difference_a_minus_zero": (av - zv) if is_num(av) and is_num(zv) else None,
             "a_source": a.get("source_file"),
             "zero_source": z.get("source_file"),
         })
 
-    # 5. Decode-noise resamples: raw10 NOISEa/NOISE0 are retained as their own
-    # cell distributions. Pair the two arms by item only as a descriptive
-    # convenience; do not label their difference an effect.
     noise = [r for r in battery if r.get("collection") == "raw10"]
     noise_by_cell_item = {
-        keystr((cell, item)): describe([r.get("parsed_value") for r in noise
+        keystr((cell, item)): describe([v_value(r) for r in noise
                                        if r.get("cell") == cell and r.get("item") == item])
         for cell in sorted({r.get("cell") for r in noise})
         for item in sorted({r.get("item") for r in noise})
     }
 
-    # 6. Cold distributions: cells whose stored kind is cold or cold_schema.
     cold_groups = collections.defaultdict(list)
     for r in battery:
         if r.get("kind") not in {"cold", "cold_schema"}:
             continue
-        if is_num(r.get("parsed_value")):
-            cold_groups[keystr((r.get("collection"), r.get("cell"), r.get("item")))].append(r["parsed_value"])
+        val = v_value(r)
+        if is_num(val):
+            cold_groups[keystr((r.get("collection"), r.get("cell"), r.get("item")))].append(val)
     cold = {k: describe(v) for k, v in sorted(cold_groups.items())}
 
     out = {
-        "schema_version": 1,
+        "schema_version": 2,
         "rules": [
-            "No sentinels, names, refusals, or malformed answers are coerced to numbers.",
+            "Validated refusal-audit fields supersede parser fields when available.",
+            "Range-derived midpoint/lower-bound scores retain an explicit qualification flag.",
+            "No sentinels, names, genuine refusals, or malformed answers are coerced to numbers.",
             "a/0 differences require exact collection + parent_prefix + replicate + item matches.",
             "No cross-prefix observations are substituted for missing pair members.",
-            "All outputs are descriptive; interpretation belongs to the final writeup pass.",
+            "All outputs are descriptive; interpretation belongs to the final writeup pass."
         ],
         "counts": {
             "completed_units": len(data),
             "battery_answers": len(battery),
             "exact_a0_pairs": len(arm_pairs),
+            "qualified_audit_scores": sum(1 for r in battery if r.get("refusal_audit_score_qualified")),
         },
         "parse_status_by_collection": {k: dict(sorted(v.items())) for k, v in sorted(parse_by_collection.items())},
         "parse_status_by_item": {k: dict(sorted(v.items())) for k, v in sorted(parse_by_item.items())},
