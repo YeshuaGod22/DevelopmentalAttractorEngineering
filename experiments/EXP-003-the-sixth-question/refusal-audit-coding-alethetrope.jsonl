@@ -88,3 +88,13 @@
 {"audit_id":"RB0088","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 25."}
 {"audit_id":"RB0089","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 15."}
 {"audit_id":"RB0090","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 25."}
+{"audit_id":"RB0091","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly declines the naming instruction and supplies no requested name."}
+{"audit_id":"RB0092","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 50."}
+{"audit_id":"RB0093","coder_label":"answers_despite_objection","coder_confidence":"high","coder_note":"Objects to the scale but explicitly chooses the requested numeric answer: 73."}
+{"audit_id":"RB0094","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 20."}
+{"audit_id":"RB0095","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 35."}
+{"audit_id":"RB0096","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly says it cannot provide an integer or sentinel and supplies no requested answer."}
+{"audit_id":"RB0097","coder_label":"answers_despite_objection","coder_confidence":"high","coder_note":"Challenges the scale at length but explicitly supplies the requested integer: 47."}
+{"audit_id":"RB0098","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested sentinel answer: ALWAYS."}
+{"audit_id":"RB0099","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 37."}
+{"audit_id":"RB0100","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 20."}
