@@ -12,7 +12,7 @@
     "completed_units": 1807,
     "battery_answers": 1634,
     "exact_a0_pairs": 420,
-    "qualified_audit_scores": 0
+    "qualified_audit_scores": 14
   },
   "parse_status_by_collection": {
     "pilot1": {
@@ -21,15 +21,16 @@
     },
     "raw10": {
       "malformed_or_unclear": 1,
-      "needs_hand_coding": 1,
       "ok": 36,
+      "ok_audited": 1,
       "refusal": 3,
       "sentinel": 9
     },
     "raw11": {
       "malformed_or_unclear": 2,
-      "needs_hand_coding": 2,
+      "needs_hand_coding": 1,
       "ok": 75,
+      "ok_audited": 1,
       "refusal": 9,
       "sentinel": 12
     },
@@ -51,8 +52,9 @@
       "sentinel": 3
     },
     "raw5": {
-      "needs_hand_coding": 3,
+      "needs_hand_coding": 1,
       "ok": 31,
+      "ok_audited": 2,
       "refusal": 5,
       "sentinel": 9
     },
@@ -68,15 +70,16 @@
     },
     "raw8": {
       "malformed_or_unclear": 2,
-      "needs_hand_coding": 2,
       "ok": 118,
+      "ok_audited": 2,
       "refusal": 8,
       "sentinel": 19
     },
     "raw9": {
       "malformed_or_unclear": 8,
-      "needs_hand_coding": 22,
+      "needs_hand_coding": 14,
       "ok": 376,
+      "ok_audited": 8,
       "refusal": 46,
       "sentinel": 71
     }
@@ -90,8 +93,9 @@
     },
     "B01": {
       "malformed_or_unclear": 1,
-      "needs_hand_coding": 4,
+      "needs_hand_coding": 3,
       "ok": 28,
+      "ok_audited": 1,
       "refusal": 3,
       "sentinel": 21
     },
@@ -110,8 +114,9 @@
     },
     "B07": {
       "malformed_or_unclear": 1,
-      "needs_hand_coding": 3,
+      "needs_hand_coding": 1,
       "ok": 40,
+      "ok_audited": 2,
       "refusal": 13
     },
     "C1": {
@@ -119,8 +124,8 @@
       "refusal": 1
     },
     "C2": {
-      "needs_hand_coding": 1,
       "ok": 49,
+      "ok_audited": 1,
       "refusal": 7
     },
     "C3": {
@@ -145,13 +150,15 @@
       "refusal": 5
     },
     "E01": {
-      "needs_hand_coding": 4,
+      "needs_hand_coding": 1,
       "ok": 91,
+      "ok_audited": 3,
       "refusal": 10
     },
     "E02": {
-      "needs_hand_coding": 3,
-      "ok": 54
+      "needs_hand_coding": 1,
+      "ok": 54,
+      "ok_audited": 2
     },
     "I1": {
       "malformed_or_unclear": 1,
@@ -175,8 +182,9 @@
     },
     "N6": {
       "malformed_or_unclear": 2,
-      "needs_hand_coding": 5,
+      "needs_hand_coding": 2,
       "ok": 47,
+      "ok_audited": 3,
       "refusal": 3
     },
     "N8": {
@@ -186,8 +194,9 @@
     },
     "N9": {
       "malformed_or_unclear": 3,
-      "needs_hand_coding": 2,
+      "needs_hand_coding": 1,
       "ok": 86,
+      "ok_audited": 1,
       "refusal": 16
     },
     "P2": {
@@ -199,8 +208,8 @@
       "ok": 56
     },
     "R2": {
-      "needs_hand_coding": 1,
-      "ok": 56
+      "ok": 56,
+      "ok_audited": 1
     }
   },
   "coverage": {
@@ -2240,6 +2249,17 @@
       "median": 50.0,
       "range": 0.0
     },
+    "raw10|NOISEa|N9": {
+      "n": 1,
+      "values": [
+        55.0
+      ],
+      "min": 55.0,
+      "max": 55.0,
+      "mean": 55.0,
+      "median": 55.0,
+      "range": 0.0
+    },
     "raw10|NOISEa|P2": {
       "n": 1,
       "values": [
@@ -2546,6 +2566,17 @@
       "max": 35.0,
       "mean": 35.0,
       "median": 35.0,
+      "range": 0.0
+    },
+    "raw11|SSCa|E02": {
+      "n": 1,
+      "values": [
+        40.0
+      ],
+      "min": 40.0,
+      "max": 40.0,
+      "mean": 40.0,
+      "median": 40.0,
       "range": 0.0
     },
     "raw11|SSCa|N1": {
@@ -3392,6 +3423,17 @@
       "median": 27.0,
       "range": 0.0
     },
+    "raw5|K0F0|E01": {
+      "n": 1,
+      "values": [
+        10.0
+      ],
+      "min": 10.0,
+      "max": 10.0,
+      "mean": 10.0,
+      "median": 10.0,
+      "range": 0.0
+    },
     "raw5|K0F0|N4": {
       "n": 1,
       "values": [
@@ -3643,6 +3685,17 @@
       "max": 47.0,
       "mean": 47.0,
       "median": 47.0,
+      "range": 0.0
+    },
+    "raw5|K1Ha|E01": {
+      "n": 1,
+      "values": [
+        25.0
+      ],
+      "min": 25.0,
+      "max": 25.0,
+      "mean": 25.0,
+      "median": 25.0,
       "range": 0.0
     },
     "raw5|K1Ha|N4": {
@@ -5939,15 +5992,16 @@
       "range": 0.0
     },
     "raw8|FBH0|C2": {
-      "n": 1,
+      "n": 2,
       "values": [
-        47.0
+        47.0,
+        57.5
       ],
       "min": 47.0,
-      "max": 47.0,
-      "mean": 47.0,
-      "median": 47.0,
-      "range": 0.0
+      "max": 57.5,
+      "mean": 52.25,
+      "median": 52.25,
+      "range": 10.5
     },
     "raw8|FBH0|C3": {
       "n": 3,
@@ -6143,8 +6197,9 @@
       "range": 4.0
     },
     "raw8|FBH0|R2": {
-      "n": 2,
+      "n": 3,
       "values": [
+        2.0,
         2.0,
         2.0
       ],
@@ -7433,15 +7488,16 @@
       "range": 7.0
     },
     "raw9|FBAa|N6": {
-      "n": 1,
+      "n": 2,
       "values": [
-        35.0
+        35.0,
+        40.0
       ],
       "min": 35.0,
-      "max": 35.0,
-      "mean": 35.0,
-      "median": 35.0,
-      "range": 0.0
+      "max": 40.0,
+      "mean": 37.5,
+      "median": 37.5,
+      "range": 5.0
     },
     "raw9|FBAa|N8": {
       "n": 2,
@@ -7505,15 +7561,16 @@
       "range": 1.0
     },
     "raw9|FBCPa|B01": {
-      "n": 1,
+      "n": 2,
       "values": [
+        35.0,
         60.0
       ],
-      "min": 60.0,
+      "min": 35.0,
       "max": 60.0,
-      "mean": 60.0,
-      "median": 60.0,
-      "range": 0.0
+      "mean": 47.5,
+      "median": 47.5,
+      "range": 25.0
     },
     "raw9|FBCPa|B04": {
       "n": 1,
@@ -7535,6 +7592,17 @@
       "max": 1.0,
       "mean": 1.0,
       "median": 1.0,
+      "range": 0.0
+    },
+    "raw9|FBCPa|B07": {
+      "n": 1,
+      "values": [
+        50.0
+      ],
+      "min": 50.0,
+      "max": 50.0,
+      "mean": 50.0,
+      "median": 50.0,
       "range": 0.0
     },
     "raw9|FBCPa|C1": {
@@ -7629,16 +7697,17 @@
       "range": 0.0
     },
     "raw9|FBCPa|E01": {
-      "n": 2,
+      "n": 3,
       "values": [
+        20.0,
         25.0,
         45.0
       ],
-      "min": 25.0,
+      "min": 20.0,
       "max": 45.0,
-      "mean": 35.0,
-      "median": 35.0,
-      "range": 20.0
+      "mean": 30.0,
+      "median": 25.0,
+      "range": 25.0
     },
     "raw9|FBCPa|E02": {
       "n": 3,
@@ -7692,15 +7761,16 @@
       "range": 0.0
     },
     "raw9|FBCPa|N6": {
-      "n": 1,
+      "n": 2,
       "values": [
+        30.0,
         40.0
       ],
-      "min": 40.0,
+      "min": 30.0,
       "max": 40.0,
-      "mean": 40.0,
-      "median": 40.0,
-      "range": 0.0
+      "mean": 35.0,
+      "median": 35.0,
+      "range": 10.0
     },
     "raw9|FBCPa|N8": {
       "n": 3,
@@ -7791,15 +7861,16 @@
       "range": 10.0
     },
     "raw9|FBF0|B07": {
-      "n": 1,
+      "n": 2,
       "values": [
-        45.0
+        45.0,
+        50.0
       ],
       "min": 45.0,
-      "max": 45.0,
-      "mean": 45.0,
-      "median": 45.0,
-      "range": 0.0
+      "max": 50.0,
+      "mean": 47.5,
+      "median": 47.5,
+      "range": 5.0
     },
     "raw9|FBF0|C1": {
       "n": 3,
@@ -7954,15 +8025,16 @@
       "range": 22.0
     },
     "raw9|FBF0|N6": {
-      "n": 2,
+      "n": 3,
       "values": [
+        40.0,
         40.0,
         47.0
       ],
       "min": 40.0,
       "max": 47.0,
-      "mean": 43.5,
-      "median": 43.5,
+      "mean": 42.333333333333336,
+      "median": 40.0,
       "range": 7.0
     },
     "raw9|FBF0|N8": {
@@ -8151,16 +8223,17 @@
       "range": 0.0
     },
     "raw9|FBFa|E02": {
-      "n": 2,
+      "n": 3,
       "values": [
+        27.5,
         28.0,
         62.0
       ],
-      "min": 28.0,
+      "min": 27.5,
       "max": 62.0,
-      "mean": 45.0,
-      "median": 45.0,
-      "range": 34.0
+      "mean": 39.166666666666664,
+      "median": 28.0,
+      "range": 34.5
     },
     "raw9|FBFa|N1": {
       "n": 2,
@@ -10526,13 +10599,13 @@
       "parent_prefix": "FBH-r1.messages.json",
       "replicate": 1,
       "item": "N9",
-      "a_value": null,
+      "a_value": 55,
       "zero_value": 25,
-      "a_parse": "needs_hand_coding",
+      "a_parse": "ok_audited",
       "zero_parse": "ok",
-      "a_qualified": false,
+      "a_qualified": true,
       "zero_qualified": false,
-      "numeric_difference_a_minus_zero": null,
+      "numeric_difference_a_minus_zero": 30,
       "a_source": "NOISEa-r1-N9.json",
       "zero_source": "NOISE0-r1-N9.json"
     },
@@ -10814,13 +10887,13 @@
       "parent_prefix": "SSC-r1.messages.json",
       "replicate": 1,
       "item": "E02",
-      "a_value": null,
+      "a_value": 40,
       "zero_value": 42,
-      "a_parse": "needs_hand_coding",
+      "a_parse": "ok_audited",
       "zero_parse": "ok",
-      "a_qualified": false,
+      "a_qualified": true,
       "zero_qualified": false,
-      "numeric_difference_a_minus_zero": null,
+      "numeric_difference_a_minus_zero": -2,
       "a_source": "SSCa-r1-E02.json",
       "zero_source": "SSC0-r1-E02.json"
     },
@@ -11471,12 +11544,12 @@
       "replicate": 1,
       "item": "E01",
       "a_value": 12,
-      "zero_value": null,
+      "zero_value": 10,
       "a_parse": "ok",
-      "zero_parse": "needs_hand_coding",
+      "zero_parse": "ok_audited",
       "a_qualified": false,
-      "zero_qualified": false,
-      "numeric_difference_a_minus_zero": null,
+      "zero_qualified": true,
+      "numeric_difference_a_minus_zero": 2,
       "a_source": "K0Fa-r1-E01.json",
       "zero_source": "K0F0-r1-E01.json"
     },
@@ -11726,13 +11799,13 @@
       "parent_prefix": "K1H-r1.messages.json",
       "replicate": 1,
       "item": "E01",
-      "a_value": null,
+      "a_value": 25,
       "zero_value": 25,
-      "a_parse": "needs_hand_coding",
+      "a_parse": "ok_audited",
       "zero_parse": "ok",
-      "a_qualified": false,
+      "a_qualified": true,
       "zero_qualified": false,
-      "numeric_difference_a_minus_zero": null,
+      "numeric_difference_a_minus_zero": 0,
       "a_source": "K1Ha-r1-E01.json",
       "zero_source": "K1H0-r1-E01.json"
     },
@@ -12271,12 +12344,12 @@
       "replicate": 1,
       "item": "C2",
       "a_value": 58,
-      "zero_value": null,
+      "zero_value": 57.5,
       "a_parse": "ok",
-      "zero_parse": "needs_hand_coding",
+      "zero_parse": "ok_audited",
       "a_qualified": false,
-      "zero_qualified": false,
-      "numeric_difference_a_minus_zero": null,
+      "zero_qualified": true,
+      "numeric_difference_a_minus_zero": 0.5,
       "a_source": "FBHa-r1-C2.json",
       "zero_source": "FBH0-r1-C2.json"
     },
@@ -13327,12 +13400,12 @@
       "replicate": 3,
       "item": "R2",
       "a_value": 2,
-      "zero_value": null,
+      "zero_value": 2,
       "a_parse": "ok",
-      "zero_parse": "needs_hand_coding",
+      "zero_parse": "ok_audited",
       "a_qualified": false,
-      "zero_qualified": false,
-      "numeric_difference_a_minus_zero": null,
+      "zero_qualified": true,
+      "numeric_difference_a_minus_zero": 0,
       "a_source": "FBHa-r3-R2.json",
       "zero_source": "FBH0-r3-R2.json"
     },
@@ -14446,11 +14519,11 @@
       "parent_prefix": "FBA-r3.messages.json",
       "replicate": 3,
       "item": "N6",
-      "a_value": null,
+      "a_value": 40,
       "zero_value": null,
-      "a_parse": "needs_hand_coding",
+      "a_parse": "ok_audited",
       "zero_parse": "needs_hand_coding",
-      "a_qualified": false,
+      "a_qualified": true,
       "zero_qualified": false,
       "numeric_difference_a_minus_zero": null,
       "a_source": "FBAa-r3-N6.json",
@@ -15791,11 +15864,11 @@
       "replicate": 1,
       "item": "B07",
       "a_value": null,
-      "zero_value": null,
+      "zero_value": 50,
       "a_parse": "needs_hand_coding",
-      "zero_parse": "needs_hand_coding",
+      "zero_parse": "ok_audited",
       "a_qualified": false,
-      "zero_qualified": false,
+      "zero_qualified": true,
       "numeric_difference_a_minus_zero": null,
       "a_source": "FBFa-r1-B07.json",
       "zero_source": "FBF0-r1-B07.json"
@@ -16015,11 +16088,11 @@
       "replicate": 1,
       "item": "N6",
       "a_value": null,
-      "zero_value": null,
+      "zero_value": 40,
       "a_parse": "malformed_or_unclear",
-      "zero_parse": "needs_hand_coding",
+      "zero_parse": "ok_audited",
       "a_qualified": false,
-      "zero_qualified": false,
+      "zero_qualified": true,
       "numeric_difference_a_minus_zero": null,
       "a_source": "FBFa-r1-N6.json",
       "zero_source": "FBF0-r1-N6.json"
@@ -16334,13 +16407,13 @@
       "parent_prefix": "FBF-r2.messages.json",
       "replicate": 2,
       "item": "E02",
-      "a_value": null,
+      "a_value": 27.5,
       "zero_value": 23,
-      "a_parse": "needs_hand_coding",
+      "a_parse": "ok_audited",
       "zero_parse": "ok",
-      "a_qualified": false,
+      "a_qualified": true,
       "zero_qualified": false,
-      "numeric_difference_a_minus_zero": null,
+      "numeric_difference_a_minus_zero": 4.5,
       "a_source": "FBFa-r2-E02.json",
       "zero_source": "FBF0-r2-E02.json"
     },
@@ -17308,8 +17381,15 @@
       "range": 0.0
     },
     "NOISEa|N9": {
-      "n": 0,
-      "values": []
+      "n": 1,
+      "values": [
+        55.0
+      ],
+      "min": 55.0,
+      "max": 55.0,
+      "mean": 55.0,
+      "median": 55.0,
+      "range": 0.0
     },
     "NOISEa|P2": {
       "n": 1,

@@ -6,20 +6,22 @@
   "range_corrections_applied": 14,
   "validated_parse_status": {
     "malformed_or_unclear": 13,
-    "needs_hand_coding": 33,
+    "needs_hand_coding": 19,
     "ok": 1306,
+    "ok_audited": 14,
     "refusal": 85,
     "sentinel": 197
   },
   "validated_parsed_kind": {
-    "None": 38,
-    "integer": 1236,
+    "None": 27,
+    "integer": 1248,
     "name": 70,
-    "none": 8,
+    "none": 5,
+    "number": 2,
     "refusal": 85,
     "sentinel": 197
   },
-  "qualified_audit_scores": 0,
+  "qualified_audit_scores": 14,
   "checks": {
     "completed_units_match": true,
     "audit_rows_match": true,
