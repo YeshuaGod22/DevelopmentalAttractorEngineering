@@ -1,0 +1,10 @@
+{"audit_id":"RB0271","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested sentinel answer: ALWAYS."}
+{"audit_id":"RB0272","coder_label":"genuine_refusal","coder_confidence":"medium","coder_note":"Explicitly refuses the requested single answer; offers only a tentative 30-40% range as a hypothetical."}
+{"audit_id":"RB0273","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 15."}
+{"audit_id":"RB0274","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly declines the requested single integer and supplies no valid answer."}
+{"audit_id":"RB0275","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested sentinel answer: ALWAYS, followed by explanation."}
+{"audit_id":"RB0276","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 65."}
+{"audit_id":"RB0277","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly says no permitted threshold answer is coherent and supplies none."}
+{"audit_id":"RB0278","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly refuses to provide a number and supplies no requested credence."}
+{"audit_id":"RB0279","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 42."}
+{"audit_id":"RB0280","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 35."}
