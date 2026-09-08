@@ -1,9 +1,9 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "rules": [
     "All pair differences are a_value - zero_value.",
-    "Structural pairs with nonnumeric members remain counted but are excluded from numeric difference summaries.",
-    "Qualified audit-derived numeric values retain pair qualification flags.",
+    "Structural pairs with nonnumeric members remain counted but excluded from numeric difference summaries.",
+    "Qualified audit-derived numeric values retain flags.",
     "No hypothesis testing or interpretation is performed."
   ],
   "pairs": {
@@ -1035,6256 +1035,773 @@
       }
     }
   },
-  "validated_numeric_distribution_groups": [
-    {
-      "group": "pilot1|ASb|N9",
-      "n": 2,
-      "min": 35.0,
-      "max": 38.0,
-      "mean": 36.5,
-      "median": 36.5,
-      "range": 3.0
-    },
-    {
-      "group": "pilot1|C0|A1",
-      "n": 1,
-      "min": 50.0,
-      "max": 50.0,
-      "mean": 50.0,
-      "median": 50.0,
-      "range": 0.0
-    },
-    {
-      "group": "pilot1|C0|E01",
-      "n": 2,
-      "min": 20.0,
-      "max": 25.0,
-      "mean": 22.5,
-      "median": 22.5,
-      "range": 5.0
-    },
-    {
-      "group": "pilot1|C0|N4",
-      "n": 2,
-      "min": 32.0,
-      "max": 38.0,
-      "mean": 35.0,
-      "median": 35.0,
-      "range": 6.0
-    },
-    {
-      "group": "pilot1|C0|N9",
-      "n": 2,
-      "min": 8.0,
-      "max": 20.0,
-      "mean": 14.0,
-      "median": 14.0,
-      "range": 12.0
-    },
-    {
-      "group": "raw10|NOISE0|B07",
-      "n": 1,
-      "min": 35.0,
-      "max": 35.0,
-      "mean": 35.0,
-      "median": 35.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw10|NOISE0|C1",
-      "n": 1,
-      "min": 47.0,
-      "max": 47.0,
-      "mean": 47.0,
-      "median": 47.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw10|NOISE0|C3",
-      "n": 1,
-      "min": 35.0,
-      "max": 35.0,
-      "mean": 35.0,
-      "median": 35.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw10|NOISE0|C4",
-      "n": 1,
-      "min": 42.0,
-      "max": 42.0,
-      "mean": 42.0,
-      "median": 42.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw10|NOISE0|D1",
-      "n": 1,
-      "min": 47.0,
-      "max": 47.0,
-      "mean": 47.0,
-      "median": 47.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw10|NOISE0|D2",
-      "n": 1,
-      "min": 73.0,
-      "max": 73.0,
-      "mean": 73.0,
-      "median": 73.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw10|NOISE0|D3",
-      "n": 1,
-      "min": 30.0,
-      "max": 30.0,
-      "mean": 30.0,
-      "median": 30.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw10|NOISE0|E01",
-      "n": 1,
-      "min": 25.0,
-      "max": 25.0,
-      "mean": 25.0,
-      "median": 25.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw10|NOISE0|E02",
-      "n": 1,
-      "min": 25.0,
-      "max": 25.0,
-      "mean": 25.0,
-      "median": 25.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw10|NOISE0|N1",
-      "n": 1,
-      "min": 38.0,
-      "max": 38.0,
-      "mean": 38.0,
-      "median": 38.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw10|NOISE0|N3",
-      "n": 1,
-      "min": 42.0,
-      "max": 42.0,
-      "mean": 42.0,
-      "median": 42.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw10|NOISE0|N4",
-      "n": 1,
-      "min": 15.0,
-      "max": 15.0,
-      "mean": 15.0,
-      "median": 15.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw10|NOISE0|N6",
-      "n": 1,
-      "min": 35.0,
-      "max": 35.0,
-      "mean": 35.0,
-      "median": 35.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw10|NOISE0|N9",
-      "n": 1,
-      "min": 25.0,
-      "max": 25.0,
-      "mean": 25.0,
-      "median": 25.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw10|NOISE0|P2",
-      "n": 1,
-      "min": 42.0,
-      "max": 42.0,
-      "mean": 42.0,
-      "median": 42.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw10|NOISE0|R1",
-      "n": 1,
-      "min": 95.0,
-      "max": 95.0,
-      "mean": 95.0,
-      "median": 95.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw10|NOISE0|R2",
-      "n": 1,
-      "min": 2.0,
-      "max": 2.0,
-      "mean": 2.0,
-      "median": 2.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw10|NOISEa|B07",
-      "n": 1,
-      "min": 50.0,
-      "max": 50.0,
-      "mean": 50.0,
-      "median": 50.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw10|NOISEa|C1",
-      "n": 1,
-      "min": 27.0,
-      "max": 27.0,
-      "mean": 27.0,
-      "median": 27.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw10|NOISEa|C2",
-      "n": 1,
-      "min": 65.0,
-      "max": 65.0,
-      "mean": 65.0,
-      "median": 65.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw10|NOISEa|C3",
-      "n": 1,
-      "min": 40.0,
-      "max": 40.0,
-      "mean": 40.0,
-      "median": 40.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw10|NOISEa|C4",
-      "n": 1,
-      "min": 62.0,
-      "max": 62.0,
-      "mean": 62.0,
-      "median": 62.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw10|NOISEa|D1",
-      "n": 1,
-      "min": 42.0,
-      "max": 42.0,
-      "mean": 42.0,
-      "median": 42.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw10|NOISEa|D2",
-      "n": 1,
-      "min": 70.0,
-      "max": 70.0,
-      "mean": 70.0,
-      "median": 70.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw10|NOISEa|E01",
-      "n": 1,
-      "min": 12.0,
-      "max": 12.0,
-      "mean": 12.0,
-      "median": 12.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw10|NOISEa|E02",
-      "n": 1,
-      "min": 65.0,
-      "max": 65.0,
-      "mean": 65.0,
-      "median": 65.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw10|NOISEa|N1",
-      "n": 1,
-      "min": 38.0,
-      "max": 38.0,
-      "mean": 38.0,
-      "median": 38.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw10|NOISEa|N3",
-      "n": 1,
-      "min": 38.0,
-      "max": 38.0,
-      "mean": 38.0,
-      "median": 38.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw10|NOISEa|N4",
-      "n": 1,
-      "min": 15.0,
-      "max": 15.0,
-      "mean": 15.0,
-      "median": 15.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw10|NOISEa|N6",
-      "n": 1,
-      "min": 35.0,
-      "max": 35.0,
-      "mean": 35.0,
-      "median": 35.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw10|NOISEa|N8",
-      "n": 1,
-      "min": 50.0,
-      "max": 50.0,
-      "mean": 50.0,
-      "median": 50.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw10|NOISEa|N9",
-      "n": 1,
-      "min": 55.0,
-      "max": 55.0,
-      "mean": 55.0,
-      "median": 55.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw10|NOISEa|P2",
-      "n": 1,
-      "min": 42.0,
-      "max": 42.0,
-      "mean": 42.0,
-      "median": 42.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw10|NOISEa|R1",
-      "n": 1,
-      "min": 92.0,
-      "max": 92.0,
-      "mean": 92.0,
-      "median": 92.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw10|NOISEa|R2",
-      "n": 1,
-      "min": 3.0,
-      "max": 3.0,
-      "mean": 3.0,
-      "median": 3.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSC0|B02",
-      "n": 1,
-      "min": 25.0,
-      "max": 25.0,
-      "mean": 25.0,
-      "median": 25.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSC0|C1",
-      "n": 1,
-      "min": 47.0,
-      "max": 47.0,
-      "mean": 47.0,
-      "median": 47.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSC0|C2",
-      "n": 1,
-      "min": 72.0,
-      "max": 72.0,
-      "mean": 72.0,
-      "median": 72.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSC0|C4",
-      "n": 1,
-      "min": 47.0,
-      "max": 47.0,
-      "mean": 47.0,
-      "median": 47.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSC0|D1",
-      "n": 1,
-      "min": 47.0,
-      "max": 47.0,
-      "mean": 47.0,
-      "median": 47.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSC0|D2",
-      "n": 1,
-      "min": 73.0,
-      "max": 73.0,
-      "mean": 73.0,
-      "median": 73.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSC0|E01",
-      "n": 1,
-      "min": 35.0,
-      "max": 35.0,
-      "mean": 35.0,
-      "median": 35.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSC0|E02",
-      "n": 1,
-      "min": 42.0,
-      "max": 42.0,
-      "mean": 42.0,
-      "median": 42.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSC0|N1",
-      "n": 1,
-      "min": 42.0,
-      "max": 42.0,
-      "mean": 42.0,
-      "median": 42.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSC0|N3",
-      "n": 1,
-      "min": 42.0,
-      "max": 42.0,
-      "mean": 42.0,
-      "median": 42.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSC0|N4",
-      "n": 1,
-      "min": 47.0,
-      "max": 47.0,
-      "mean": 47.0,
-      "median": 47.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSC0|N6",
-      "n": 1,
-      "min": 28.0,
-      "max": 28.0,
-      "mean": 28.0,
-      "median": 28.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSC0|N8",
-      "n": 1,
-      "min": 50.0,
-      "max": 50.0,
-      "mean": 50.0,
-      "median": 50.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSC0|P2",
-      "n": 1,
-      "min": 62.0,
-      "max": 62.0,
-      "mean": 62.0,
-      "median": 62.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSC0|R1",
-      "n": 1,
-      "min": 85.0,
-      "max": 85.0,
-      "mean": 85.0,
-      "median": 85.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSC0|R2",
-      "n": 1,
-      "min": 2.0,
-      "max": 2.0,
-      "mean": 2.0,
-      "median": 2.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSCa|A1",
-      "n": 1,
-      "min": 40.0,
-      "max": 40.0,
-      "mean": 40.0,
-      "median": 40.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSCa|B07",
-      "n": 1,
-      "min": 25.0,
-      "max": 25.0,
-      "mean": 25.0,
-      "median": 25.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSCa|C1",
-      "n": 1,
-      "min": 47.0,
-      "max": 47.0,
-      "mean": 47.0,
-      "median": 47.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSCa|C2",
-      "n": 1,
-      "min": 72.0,
-      "max": 72.0,
-      "mean": 72.0,
-      "median": 72.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSCa|C3",
-      "n": 1,
-      "min": 11.0,
-      "max": 11.0,
-      "mean": 11.0,
-      "median": 11.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSCa|C4",
-      "n": 1,
-      "min": 68.0,
-      "max": 68.0,
-      "mean": 68.0,
-      "median": 68.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSCa|D1",
-      "n": 1,
-      "min": 38.0,
-      "max": 38.0,
-      "mean": 38.0,
-      "median": 38.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSCa|D2",
-      "n": 1,
-      "min": 47.0,
-      "max": 47.0,
-      "mean": 47.0,
-      "median": 47.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSCa|D3",
-      "n": 1,
-      "min": 35.0,
-      "max": 35.0,
-      "mean": 35.0,
-      "median": 35.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSCa|E02",
-      "n": 1,
-      "min": 40.0,
-      "max": 40.0,
-      "mean": 40.0,
-      "median": 40.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSCa|N1",
-      "n": 1,
-      "min": 23.0,
-      "max": 23.0,
-      "mean": 23.0,
-      "median": 23.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSCa|N3",
-      "n": 1,
-      "min": 35.0,
-      "max": 35.0,
-      "mean": 35.0,
-      "median": 35.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSCa|N4",
-      "n": 1,
-      "min": 15.0,
-      "max": 15.0,
-      "mean": 15.0,
-      "median": 15.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSCa|N6",
-      "n": 1,
-      "min": 42.0,
-      "max": 42.0,
-      "mean": 42.0,
-      "median": 42.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSCa|N8",
-      "n": 1,
-      "min": 50.0,
-      "max": 50.0,
-      "mean": 50.0,
-      "median": 50.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSCa|N9",
-      "n": 1,
-      "min": 32.0,
-      "max": 32.0,
-      "mean": 32.0,
-      "median": 32.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSCa|P2",
-      "n": 1,
-      "min": 37.0,
-      "max": 37.0,
-      "mean": 37.0,
-      "median": 37.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSCa|R1",
-      "n": 1,
-      "min": 87.0,
-      "max": 87.0,
-      "mean": 87.0,
-      "median": 87.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSCa|R2",
-      "n": 1,
-      "min": 2.0,
-      "max": 2.0,
-      "mean": 2.0,
-      "median": 2.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SST0|A1",
-      "n": 1,
-      "min": 25.0,
-      "max": 25.0,
-      "mean": 25.0,
-      "median": 25.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SST0|B01",
-      "n": 1,
-      "min": 25.0,
-      "max": 25.0,
-      "mean": 25.0,
-      "median": 25.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SST0|B07",
-      "n": 1,
-      "min": 45.0,
-      "max": 45.0,
-      "mean": 45.0,
-      "median": 45.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SST0|C1",
-      "n": 1,
-      "min": 67.0,
-      "max": 67.0,
-      "mean": 67.0,
-      "median": 67.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SST0|C3",
-      "n": 1,
-      "min": 28.0,
-      "max": 28.0,
-      "mean": 28.0,
-      "median": 28.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SST0|C4",
-      "n": 1,
-      "min": 47.0,
-      "max": 47.0,
-      "mean": 47.0,
-      "median": 47.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SST0|D1",
-      "n": 1,
-      "min": 47.0,
-      "max": 47.0,
-      "mean": 47.0,
-      "median": 47.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SST0|D2",
-      "n": 1,
-      "min": 73.0,
-      "max": 73.0,
-      "mean": 73.0,
-      "median": 73.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SST0|D3",
-      "n": 1,
-      "min": 20.0,
-      "max": 20.0,
-      "mean": 20.0,
-      "median": 20.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SST0|E01",
-      "n": 1,
-      "min": 15.0,
-      "max": 15.0,
-      "mean": 15.0,
-      "median": 15.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SST0|E02",
-      "n": 1,
-      "min": 57.0,
-      "max": 57.0,
-      "mean": 57.0,
-      "median": 57.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SST0|N1",
-      "n": 1,
-      "min": 37.0,
-      "max": 37.0,
-      "mean": 37.0,
-      "median": 37.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SST0|N3",
-      "n": 1,
-      "min": 42.0,
-      "max": 42.0,
-      "mean": 42.0,
-      "median": 42.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SST0|N4",
-      "n": 1,
-      "min": 25.0,
-      "max": 25.0,
-      "mean": 25.0,
-      "median": 25.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SST0|N6",
-      "n": 1,
-      "min": 47.0,
-      "max": 47.0,
-      "mean": 47.0,
-      "median": 47.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SST0|N9",
-      "n": 1,
-      "min": 15.0,
-      "max": 15.0,
-      "mean": 15.0,
-      "median": 15.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SST0|P2",
-      "n": 1,
-      "min": 37.0,
-      "max": 37.0,
-      "mean": 37.0,
-      "median": 37.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SST0|R1",
-      "n": 1,
-      "min": 90.0,
-      "max": 90.0,
-      "mean": 90.0,
-      "median": 90.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SST0|R2",
-      "n": 1,
-      "min": 2.0,
-      "max": 2.0,
-      "mean": 2.0,
-      "median": 2.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSTa|B07",
-      "n": 1,
-      "min": 45.0,
-      "max": 45.0,
-      "mean": 45.0,
-      "median": 45.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSTa|C1",
-      "n": 1,
-      "min": 42.0,
-      "max": 42.0,
-      "mean": 42.0,
-      "median": 42.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSTa|C2",
-      "n": 1,
-      "min": 82.0,
-      "max": 82.0,
-      "mean": 82.0,
-      "median": 82.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSTa|C3",
-      "n": 1,
-      "min": 28.0,
-      "max": 28.0,
-      "mean": 28.0,
-      "median": 28.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSTa|C4",
-      "n": 1,
-      "min": 68.0,
-      "max": 68.0,
-      "mean": 68.0,
-      "median": 68.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSTa|D1",
-      "n": 1,
-      "min": 35.0,
-      "max": 35.0,
-      "mean": 35.0,
-      "median": 35.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSTa|D2",
-      "n": 1,
-      "min": 67.0,
-      "max": 67.0,
-      "mean": 67.0,
-      "median": 67.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSTa|D3",
-      "n": 1,
-      "min": 30.0,
-      "max": 30.0,
-      "mean": 30.0,
-      "median": 30.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSTa|E01",
-      "n": 1,
-      "min": 24.0,
-      "max": 24.0,
-      "mean": 24.0,
-      "median": 24.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSTa|E02",
-      "n": 1,
-      "min": 25.0,
-      "max": 25.0,
-      "mean": 25.0,
-      "median": 25.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSTa|N1",
-      "n": 1,
-      "min": 43.0,
-      "max": 43.0,
-      "mean": 43.0,
-      "median": 43.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSTa|N3",
-      "n": 1,
-      "min": 68.0,
-      "max": 68.0,
-      "mean": 68.0,
-      "median": 68.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSTa|N4",
-      "n": 1,
-      "min": 28.0,
-      "max": 28.0,
-      "mean": 28.0,
-      "median": 28.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSTa|N6",
-      "n": 1,
-      "min": 30.0,
-      "max": 30.0,
-      "mean": 30.0,
-      "median": 30.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSTa|N8",
-      "n": 1,
-      "min": 50.0,
-      "max": 50.0,
-      "mean": 50.0,
-      "median": 50.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSTa|P2",
-      "n": 1,
-      "min": 52.0,
-      "max": 52.0,
-      "mean": 52.0,
-      "median": 52.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSTa|R1",
-      "n": 1,
-      "min": 87.0,
-      "max": 87.0,
-      "mean": 87.0,
-      "median": 87.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw11|SSTa|R2",
-      "n": 1,
-      "min": 2.0,
-      "max": 2.0,
-      "mean": 2.0,
-      "median": 2.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw2|ASa|E01",
-      "n": 1,
-      "min": 45.0,
-      "max": 45.0,
-      "mean": 45.0,
-      "median": 45.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw2|ASa|N4",
-      "n": 1,
-      "min": 17.0,
-      "max": 17.0,
-      "mean": 17.0,
-      "median": 17.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw2|ASa|N9",
-      "n": 1,
-      "min": 38.0,
-      "max": 38.0,
-      "mean": 38.0,
-      "median": 38.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw2|ASb|E01",
-      "n": 2,
-      "min": 23.0,
-      "max": 25.0,
-      "mean": 24.0,
-      "median": 24.0,
-      "range": 2.0
-    },
-    {
-      "group": "raw2|ASb|N4",
-      "n": 1,
-      "min": 25.0,
-      "max": 25.0,
-      "mean": 25.0,
-      "median": 25.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw2|C|A1",
-      "n": 2,
-      "min": 25.0,
-      "max": 35.0,
-      "mean": 30.0,
-      "median": 30.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw2|C|E01",
-      "n": 3,
-      "min": 10.0,
-      "max": 20.0,
-      "mean": 16.666666666666668,
-      "median": 20.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw2|C|N4",
-      "n": 3,
-      "min": 32.0,
-      "max": 35.0,
-      "mean": 34.0,
-      "median": 35.0,
-      "range": 3.0
-    },
-    {
-      "group": "raw2|C|N9",
-      "n": 3,
-      "min": 10.0,
-      "max": 28.0,
-      "mean": 21.0,
-      "median": 25.0,
-      "range": 18.0
-    },
-    {
-      "group": "raw2|Fa|E01",
-      "n": 1,
-      "min": 25.0,
-      "max": 25.0,
-      "mean": 25.0,
-      "median": 25.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw2|Fa|N4",
-      "n": 1,
-      "min": 28.0,
-      "max": 28.0,
-      "mean": 28.0,
-      "median": 28.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw2|Fa|N9",
-      "n": 1,
-      "min": 35.0,
-      "max": 35.0,
-      "mean": 35.0,
-      "median": 35.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw2|Ha|E01",
-      "n": 1,
-      "min": 22.0,
-      "max": 22.0,
-      "mean": 22.0,
-      "median": 22.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw2|Ha|N4",
-      "n": 1,
-      "min": 32.0,
-      "max": 32.0,
-      "mean": 32.0,
-      "median": 32.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw2|Ha|N9",
-      "n": 1,
-      "min": 58.0,
-      "max": 58.0,
-      "mean": 58.0,
-      "median": 58.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw3|Fa|E01",
-      "n": 1,
-      "min": 25.0,
-      "max": 25.0,
-      "mean": 25.0,
-      "median": 25.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw3|Fa|N4",
-      "n": 1,
-      "min": 22.0,
-      "max": 22.0,
-      "mean": 22.0,
-      "median": 22.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw3|Fa|N9",
-      "n": 1,
-      "min": 42.0,
-      "max": 42.0,
-      "mean": 42.0,
-      "median": 42.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw3|Ha|E01",
-      "n": 1,
-      "min": 25.0,
-      "max": 25.0,
-      "mean": 25.0,
-      "median": 25.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw3|Ha|N4",
-      "n": 1,
-      "min": 15.0,
-      "max": 15.0,
-      "mean": 15.0,
-      "median": 15.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw4|CPa2|N9",
-      "n": 1,
+  "validated_numeric_values": {
+    "overall": {
+      "n": 1250,
       "min": 0.0,
-      "max": 0.0,
-      "mean": 0.0,
-      "median": 0.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw4|Fa2|N4",
-      "n": 1,
-      "min": 22.0,
-      "max": 22.0,
-      "mean": 22.0,
-      "median": 22.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw4|Fa2|N9",
-      "n": 1,
-      "min": 45.0,
-      "max": 45.0,
-      "mean": 45.0,
-      "median": 45.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw4|Ha2|E01",
-      "n": 1,
-      "min": 15.0,
-      "max": 15.0,
-      "mean": 15.0,
-      "median": 15.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw5|K0AS0|E01",
-      "n": 1,
-      "min": 50.0,
-      "max": 50.0,
-      "mean": 50.0,
-      "median": 50.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw5|K0AS0|N4",
-      "n": 1,
-      "min": 37.0,
-      "max": 37.0,
-      "mean": 37.0,
-      "median": 37.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw5|K0AS0|N9",
-      "n": 1,
-      "min": 23.0,
-      "max": 23.0,
-      "mean": 23.0,
-      "median": 23.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw5|K0ASa|E01",
-      "n": 1,
-      "min": 5.0,
-      "max": 5.0,
-      "mean": 5.0,
-      "median": 5.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw5|K0ASa|N4",
-      "n": 1,
-      "min": 15.0,
-      "max": 15.0,
-      "mean": 15.0,
-      "median": 15.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw5|K0ASa|N9",
-      "n": 1,
-      "min": 27.0,
-      "max": 27.0,
-      "mean": 27.0,
-      "median": 27.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw5|K0F0|E01",
-      "n": 1,
-      "min": 10.0,
-      "max": 10.0,
-      "mean": 10.0,
-      "median": 10.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw5|K0F0|N4",
-      "n": 1,
-      "min": 47.0,
-      "max": 47.0,
-      "mean": 47.0,
-      "median": 47.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw5|K0Fa|E01",
-      "n": 1,
-      "min": 12.0,
-      "max": 12.0,
-      "mean": 12.0,
-      "median": 12.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw5|K0Fa|N4",
-      "n": 1,
-      "min": 15.0,
-      "max": 15.0,
-      "mean": 15.0,
-      "median": 15.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw5|K0Fa|N9",
-      "n": 1,
-      "min": 42.0,
-      "max": 42.0,
-      "mean": 42.0,
-      "median": 42.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw5|K0H0|A1",
-      "n": 1,
-      "min": 10.0,
-      "max": 10.0,
-      "mean": 10.0,
-      "median": 10.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw5|K0H0|E01",
-      "n": 1,
-      "min": 23.0,
-      "max": 23.0,
-      "mean": 23.0,
-      "median": 23.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw5|K0H0|N4",
-      "n": 1,
-      "min": 47.0,
-      "max": 47.0,
-      "mean": 47.0,
-      "median": 47.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw5|K0H0|N9",
-      "n": 1,
-      "min": 35.0,
-      "max": 35.0,
-      "mean": 35.0,
-      "median": 35.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw5|K0Ha|A1",
-      "n": 1,
-      "min": 15.0,
-      "max": 15.0,
-      "mean": 15.0,
-      "median": 15.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw5|K0Ha|E01",
-      "n": 1,
-      "min": 15.0,
-      "max": 15.0,
-      "mean": 15.0,
-      "median": 15.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw5|K0Ha|N4",
-      "n": 1,
-      "min": 28.0,
-      "max": 28.0,
-      "mean": 28.0,
-      "median": 28.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw5|K0Ha|N9",
-      "n": 1,
-      "min": 42.0,
-      "max": 42.0,
-      "mean": 42.0,
-      "median": 42.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw5|K1AS0|E01",
-      "n": 1,
-      "min": 15.0,
-      "max": 15.0,
-      "mean": 15.0,
-      "median": 15.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw5|K1AS0|N9",
-      "n": 1,
-      "min": 30.0,
-      "max": 30.0,
-      "mean": 30.0,
-      "median": 30.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw5|K1ASa|E01",
-      "n": 1,
-      "min": 43.0,
-      "max": 43.0,
-      "mean": 43.0,
-      "median": 43.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw5|K1ASa|N4",
-      "n": 1,
-      "min": 30.0,
-      "max": 30.0,
-      "mean": 30.0,
-      "median": 30.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw5|K1ASa|N9",
-      "n": 1,
-      "min": 25.0,
-      "max": 25.0,
-      "mean": 25.0,
-      "median": 25.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw5|K1F0|N4",
-      "n": 1,
-      "min": 47.0,
-      "max": 47.0,
-      "mean": 47.0,
-      "median": 47.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw5|K1Fa|E01",
-      "n": 1,
-      "min": 15.0,
-      "max": 15.0,
-      "mean": 15.0,
-      "median": 15.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw5|K1Fa|N4",
-      "n": 1,
-      "min": 15.0,
-      "max": 15.0,
-      "mean": 15.0,
-      "median": 15.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw5|K1Fa|N9",
-      "n": 1,
-      "min": 48.0,
-      "max": 48.0,
-      "mean": 48.0,
-      "median": 48.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw5|K1H0|E01",
-      "n": 1,
-      "min": 25.0,
-      "max": 25.0,
-      "mean": 25.0,
-      "median": 25.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw5|K1H0|N4",
-      "n": 1,
-      "min": 47.0,
-      "max": 47.0,
-      "mean": 47.0,
-      "median": 47.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw5|K1Ha|E01",
-      "n": 1,
-      "min": 25.0,
-      "max": 25.0,
-      "mean": 25.0,
-      "median": 25.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw5|K1Ha|N4",
-      "n": 1,
-      "min": 35.0,
-      "max": 35.0,
-      "mean": 35.0,
-      "median": 35.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw5|K1Ha|N9",
-      "n": 1,
-      "min": 42.0,
-      "max": 42.0,
-      "mean": 42.0,
-      "median": 42.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw6|C|A1",
-      "n": 5,
-      "min": 1.0,
-      "max": 30.0,
-      "mean": 14.2,
-      "median": 10.0,
-      "range": 29.0
-    },
-    {
-      "group": "raw6|C|E01",
-      "n": 10,
-      "min": 5.0,
-      "max": 25.0,
-      "mean": 14.5,
-      "median": 15.0,
-      "range": 20.0
-    },
-    {
-      "group": "raw6|C|N4",
-      "n": 10,
-      "min": 30.0,
-      "max": 65.0,
-      "mean": 38.8,
-      "median": 35.0,
-      "range": 35.0
-    },
-    {
-      "group": "raw6|C|N9",
-      "n": 10,
-      "min": 20.0,
-      "max": 25.0,
-      "mean": 21.0,
-      "median": 20.0,
-      "range": 5.0
-    },
-    {
-      "group": "raw6|HQ|A1",
-      "n": 2,
-      "min": 30.0,
-      "max": 30.0,
-      "mean": 30.0,
-      "median": 30.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw6|HQ|E01",
-      "n": 10,
-      "min": 12.0,
-      "max": 35.0,
-      "mean": 20.7,
-      "median": 20.0,
-      "range": 23.0
-    },
-    {
-      "group": "raw6|HQ|N4",
-      "n": 10,
-      "min": 25.0,
-      "max": 42.0,
-      "mean": 32.2,
-      "median": 32.0,
-      "range": 17.0
-    },
-    {
-      "group": "raw6|HQ|N9",
-      "n": 10,
-      "min": 25.0,
-      "max": 45.0,
-      "mean": 33.6,
-      "median": 33.5,
-      "range": 20.0
-    },
-    {
-      "group": "raw6|SCR0|A1",
-      "n": 1,
-      "min": 15.0,
-      "max": 15.0,
-      "mean": 15.0,
-      "median": 15.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw6|SCR0|B01",
-      "n": 1,
-      "min": 65.0,
-      "max": 65.0,
-      "mean": 65.0,
-      "median": 65.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw6|SCR0|B02",
-      "n": 1,
-      "min": 15.0,
-      "max": 15.0,
-      "mean": 15.0,
-      "median": 15.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw6|SCR0|C1",
-      "n": 1,
-      "min": 42.0,
-      "max": 42.0,
-      "mean": 42.0,
-      "median": 42.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw6|SCR0|C2",
-      "n": 1,
-      "min": 72.0,
-      "max": 72.0,
-      "mean": 72.0,
-      "median": 72.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw6|SCR0|C3",
-      "n": 1,
-      "min": 37.0,
-      "max": 37.0,
-      "mean": 37.0,
-      "median": 37.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw6|SCR0|C4",
-      "n": 1,
-      "min": 73.0,
-      "max": 73.0,
-      "mean": 73.0,
-      "median": 73.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw6|SCR0|D1",
-      "n": 1,
-      "min": 35.0,
-      "max": 35.0,
-      "mean": 35.0,
-      "median": 35.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw6|SCR0|D2",
-      "n": 1,
-      "min": 73.0,
-      "max": 73.0,
-      "mean": 73.0,
-      "median": 73.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw6|SCR0|D3",
-      "n": 1,
-      "min": 37.0,
-      "max": 37.0,
-      "mean": 37.0,
-      "median": 37.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw6|SCR0|E01",
-      "n": 1,
-      "min": 15.0,
-      "max": 15.0,
-      "mean": 15.0,
-      "median": 15.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw6|SCR0|E02",
-      "n": 1,
-      "min": 28.0,
-      "max": 28.0,
-      "mean": 28.0,
-      "median": 28.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw6|SCR0|N1",
-      "n": 1,
-      "min": 23.0,
-      "max": 23.0,
-      "mean": 23.0,
-      "median": 23.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw6|SCR0|N3",
-      "n": 1,
-      "min": 42.0,
-      "max": 42.0,
-      "mean": 42.0,
-      "median": 42.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw6|SCR0|N4",
-      "n": 1,
-      "min": 42.0,
-      "max": 42.0,
-      "mean": 42.0,
-      "median": 42.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw6|SCR0|N6",
-      "n": 1,
-      "min": 47.0,
-      "max": 47.0,
-      "mean": 47.0,
-      "median": 47.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw6|SCR0|N9",
-      "n": 1,
-      "min": 32.0,
-      "max": 32.0,
-      "mean": 32.0,
-      "median": 32.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw6|SCR0|P2",
-      "n": 1,
-      "min": 42.0,
-      "max": 42.0,
-      "mean": 42.0,
-      "median": 42.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw6|SCR0|R1",
-      "n": 1,
-      "min": 87.0,
-      "max": 87.0,
-      "mean": 87.0,
-      "median": 87.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw6|SCR0|R2",
-      "n": 1,
-      "min": 2.0,
-      "max": 2.0,
-      "mean": 2.0,
-      "median": 2.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw6|SCRa|B01",
-      "n": 1,
-      "min": 50.0,
-      "max": 50.0,
-      "mean": 50.0,
-      "median": 50.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw6|SCRa|B07",
-      "n": 1,
-      "min": 50.0,
-      "max": 50.0,
-      "mean": 50.0,
-      "median": 50.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw6|SCRa|C1",
-      "n": 1,
-      "min": 42.0,
-      "max": 42.0,
-      "mean": 42.0,
-      "median": 42.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw6|SCRa|C2",
-      "n": 1,
-      "min": 65.0,
-      "max": 65.0,
-      "mean": 65.0,
-      "median": 65.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw6|SCRa|C3",
-      "n": 1,
-      "min": 25.0,
-      "max": 25.0,
-      "mean": 25.0,
-      "median": 25.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw6|SCRa|C4",
-      "n": 1,
-      "min": 68.0,
-      "max": 68.0,
-      "mean": 68.0,
-      "median": 68.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw6|SCRa|D1",
-      "n": 1,
-      "min": 50.0,
-      "max": 50.0,
-      "mean": 50.0,
-      "median": 50.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw6|SCRa|D2",
-      "n": 1,
-      "min": 72.0,
-      "max": 72.0,
-      "mean": 72.0,
-      "median": 72.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw6|SCRa|D3",
-      "n": 1,
-      "min": 35.0,
-      "max": 35.0,
-      "mean": 35.0,
-      "median": 35.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw6|SCRa|E01",
-      "n": 1,
-      "min": 28.0,
-      "max": 28.0,
-      "mean": 28.0,
-      "median": 28.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw6|SCRa|E02",
-      "n": 1,
-      "min": 42.0,
-      "max": 42.0,
-      "mean": 42.0,
-      "median": 42.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw6|SCRa|N1",
-      "n": 1,
-      "min": 62.0,
-      "max": 62.0,
-      "mean": 62.0,
-      "median": 62.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw6|SCRa|N3",
-      "n": 1,
-      "min": 73.0,
-      "max": 73.0,
-      "mean": 73.0,
-      "median": 73.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw6|SCRa|N4",
-      "n": 1,
-      "min": 23.0,
-      "max": 23.0,
-      "mean": 23.0,
-      "median": 23.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw6|SCRa|N6",
-      "n": 1,
-      "min": 45.0,
-      "max": 45.0,
-      "mean": 45.0,
-      "median": 45.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw6|SCRa|N9",
-      "n": 1,
-      "min": 38.0,
-      "max": 38.0,
-      "mean": 38.0,
-      "median": 38.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw6|SCRa|P2",
-      "n": 1,
-      "min": 42.0,
-      "max": 42.0,
-      "mean": 42.0,
-      "median": 42.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw6|SCRa|R1",
-      "n": 1,
-      "min": 92.0,
-      "max": 92.0,
-      "mean": 92.0,
-      "median": 92.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw6|SCRa|R2",
-      "n": 1,
-      "min": 2.0,
-      "max": 2.0,
-      "mean": 2.0,
-      "median": 2.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw7|AQ|A1",
-      "n": 1,
-      "min": 35.0,
-      "max": 35.0,
-      "mean": 35.0,
-      "median": 35.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw7|AQ|B01",
-      "n": 1,
-      "min": 40.0,
-      "max": 40.0,
-      "mean": 40.0,
-      "median": 40.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw7|AQ|B02",
-      "n": 1,
-      "min": 30.0,
-      "max": 30.0,
-      "mean": 30.0,
-      "median": 30.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw7|AQ|B04",
-      "n": 1,
-      "min": 1.0,
-      "max": 1.0,
-      "mean": 1.0,
-      "median": 1.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw7|AQ|B05",
-      "n": 2,
-      "min": 25.0,
-      "max": 30.0,
-      "mean": 27.5,
-      "median": 27.5,
-      "range": 5.0
-    },
-    {
-      "group": "raw7|AQ|B07",
-      "n": 3,
-      "min": 30.0,
-      "max": 35.0,
-      "mean": 33.333333333333336,
-      "median": 35.0,
-      "range": 5.0
-    },
-    {
-      "group": "raw7|AQ|C1",
-      "n": 3,
-      "min": 42.0,
-      "max": 62.0,
-      "mean": 48.666666666666664,
-      "median": 42.0,
-      "range": 20.0
-    },
-    {
-      "group": "raw7|AQ|C2",
-      "n": 3,
-      "min": 65.0,
-      "max": 72.0,
-      "mean": 69.66666666666667,
-      "median": 72.0,
-      "range": 7.0
-    },
-    {
-      "group": "raw7|AQ|C3",
-      "n": 3,
-      "min": 25.0,
-      "max": 35.0,
-      "mean": 28.333333333333332,
-      "median": 25.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|AQ|C4",
-      "n": 3,
-      "min": 62.0,
-      "max": 72.0,
-      "mean": 68.66666666666667,
-      "median": 72.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|AQ|D1",
-      "n": 3,
-      "min": 20.0,
-      "max": 25.0,
-      "mean": 21.666666666666668,
-      "median": 20.0,
-      "range": 5.0
-    },
-    {
-      "group": "raw7|AQ|D2",
-      "n": 3,
-      "min": 40.0,
-      "max": 55.0,
-      "mean": 45.666666666666664,
-      "median": 42.0,
-      "range": 15.0
-    },
-    {
-      "group": "raw7|AQ|D3",
-      "n": 3,
-      "min": 15.0,
-      "max": 25.0,
-      "mean": 21.666666666666668,
-      "median": 25.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|AQ|E01",
-      "n": 3,
-      "min": 5.0,
-      "max": 25.0,
-      "mean": 15.0,
-      "median": 15.0,
-      "range": 20.0
-    },
-    {
-      "group": "raw7|AQ|E02",
-      "n": 3,
-      "min": 15.0,
-      "max": 25.0,
-      "mean": 21.666666666666668,
-      "median": 25.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|AQ|N1",
-      "n": 3,
-      "min": 38.0,
-      "max": 68.0,
-      "mean": 48.0,
-      "median": 38.0,
-      "range": 30.0
-    },
-    {
-      "group": "raw7|AQ|N3",
-      "n": 3,
-      "min": 40.0,
-      "max": 72.0,
-      "mean": 51.333333333333336,
-      "median": 42.0,
-      "range": 32.0
-    },
-    {
-      "group": "raw7|AQ|N4",
-      "n": 3,
-      "min": 35.0,
-      "max": 35.0,
-      "mean": 35.0,
-      "median": 35.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw7|AQ|N6",
-      "n": 3,
-      "min": 40.0,
-      "max": 42.0,
-      "mean": 40.666666666666664,
-      "median": 40.0,
-      "range": 2.0
-    },
-    {
-      "group": "raw7|AQ|N8",
-      "n": 3,
-      "min": 48.0,
-      "max": 50.0,
-      "mean": 49.333333333333336,
-      "median": 50.0,
-      "range": 2.0
-    },
-    {
-      "group": "raw7|AQ|N9",
-      "n": 3,
-      "min": 5.0,
-      "max": 15.0,
-      "mean": 11.666666666666666,
-      "median": 15.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|AQ|P2",
-      "n": 3,
-      "min": 28.0,
-      "max": 38.0,
-      "mean": 34.666666666666664,
-      "median": 38.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|AQ|R1",
-      "n": 3,
-      "min": 87.0,
-      "max": 92.0,
-      "mean": 90.33333333333333,
-      "median": 92.0,
-      "range": 5.0
-    },
-    {
-      "group": "raw7|AQ|R2",
-      "n": 3,
-      "min": 1.0,
-      "max": 2.0,
-      "mean": 1.6666666666666667,
-      "median": 2.0,
-      "range": 1.0
-    },
-    {
-      "group": "raw7|ASQ|A1",
-      "n": 1,
-      "min": 35.0,
-      "max": 35.0,
-      "mean": 35.0,
-      "median": 35.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw7|ASQ|B01",
-      "n": 3,
-      "min": 25.0,
-      "max": 60.0,
-      "mean": 41.666666666666664,
-      "median": 40.0,
-      "range": 35.0
-    },
-    {
-      "group": "raw7|ASQ|B02",
-      "n": 1,
-      "min": 35.0,
-      "max": 35.0,
-      "mean": 35.0,
-      "median": 35.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw7|ASQ|B04",
-      "n": 1,
-      "min": 15.0,
-      "max": 15.0,
-      "mean": 15.0,
-      "median": 15.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw7|ASQ|B05",
-      "n": 2,
-      "min": 15.0,
-      "max": 25.0,
-      "mean": 20.0,
-      "median": 20.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|ASQ|B07",
-      "n": 3,
-      "min": 45.0,
-      "max": 50.0,
-      "mean": 48.333333333333336,
-      "median": 50.0,
-      "range": 5.0
-    },
-    {
-      "group": "raw7|ASQ|C1",
-      "n": 3,
-      "min": 42.0,
-      "max": 58.0,
-      "mean": 47.333333333333336,
-      "median": 42.0,
-      "range": 16.0
-    },
-    {
-      "group": "raw7|ASQ|C2",
-      "n": 3,
-      "min": 42.0,
-      "max": 72.0,
-      "mean": 52.0,
-      "median": 42.0,
-      "range": 30.0
-    },
-    {
-      "group": "raw7|ASQ|C3",
-      "n": 3,
-      "min": 28.0,
-      "max": 42.0,
-      "mean": 37.333333333333336,
-      "median": 42.0,
-      "range": 14.0
-    },
-    {
-      "group": "raw7|ASQ|C4",
-      "n": 3,
-      "min": 42.0,
-      "max": 58.0,
-      "mean": 50.666666666666664,
-      "median": 52.0,
-      "range": 16.0
-    },
-    {
-      "group": "raw7|ASQ|D1",
-      "n": 3,
-      "min": 35.0,
-      "max": 42.0,
-      "mean": 39.666666666666664,
-      "median": 42.0,
-      "range": 7.0
-    },
-    {
-      "group": "raw7|ASQ|D2",
-      "n": 3,
-      "min": 58.0,
-      "max": 68.0,
-      "mean": 61.333333333333336,
-      "median": 58.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|ASQ|D3",
-      "n": 3,
-      "min": 27.0,
-      "max": 45.0,
-      "mean": 35.666666666666664,
-      "median": 35.0,
-      "range": 18.0
-    },
-    {
-      "group": "raw7|ASQ|E01",
-      "n": 3,
-      "min": 15.0,
-      "max": 25.0,
-      "mean": 21.666666666666668,
-      "median": 25.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|ASQ|E02",
-      "n": 3,
-      "min": 28.0,
-      "max": 52.0,
-      "mean": 39.333333333333336,
-      "median": 38.0,
-      "range": 24.0
-    },
-    {
-      "group": "raw7|ASQ|N1",
-      "n": 3,
-      "min": 42.0,
-      "max": 52.0,
-      "mean": 45.333333333333336,
-      "median": 42.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|ASQ|N3",
-      "n": 3,
-      "min": 42.0,
-      "max": 52.0,
-      "mean": 48.666666666666664,
-      "median": 52.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|ASQ|N4",
-      "n": 3,
-      "min": 25.0,
-      "max": 42.0,
-      "mean": 33.0,
-      "median": 32.0,
-      "range": 17.0
-    },
-    {
-      "group": "raw7|ASQ|N6",
-      "n": 3,
-      "min": 35.0,
-      "max": 48.0,
-      "mean": 41.666666666666664,
-      "median": 42.0,
-      "range": 13.0
-    },
-    {
-      "group": "raw7|ASQ|N8",
-      "n": 3,
-      "min": 25.0,
-      "max": 48.0,
-      "mean": 32.666666666666664,
-      "median": 25.0,
-      "range": 23.0
-    },
-    {
-      "group": "raw7|ASQ|N9",
-      "n": 3,
-      "min": 25.0,
-      "max": 42.0,
-      "mean": 34.0,
-      "median": 35.0,
-      "range": 17.0
-    },
-    {
-      "group": "raw7|ASQ|P2",
-      "n": 3,
-      "min": 32.0,
-      "max": 42.0,
-      "mean": 36.333333333333336,
-      "median": 35.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|ASQ|R1",
-      "n": 3,
-      "min": 72.0,
-      "max": 82.0,
-      "mean": 78.66666666666667,
-      "median": 82.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|ASQ|R2",
-      "n": 3,
-      "min": 2.0,
-      "max": 5.0,
-      "mean": 3.3333333333333335,
-      "median": 3.0,
-      "range": 3.0
-    },
-    {
-      "group": "raw7|C|A1",
-      "n": 4,
-      "min": 20.0,
-      "max": 50.0,
-      "mean": 31.25,
-      "median": 27.5,
-      "range": 30.0
-    },
-    {
-      "group": "raw7|C|B01",
-      "n": 10,
-      "min": 25.0,
-      "max": 75.0,
-      "mean": 40.5,
-      "median": 37.5,
-      "range": 50.0
-    },
-    {
-      "group": "raw7|C|B02",
-      "n": 1,
-      "min": 20.0,
-      "max": 20.0,
-      "mean": 20.0,
-      "median": 20.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw7|C|B04",
-      "n": 7,
-      "min": 1.0,
-      "max": 10.0,
-      "mean": 5.285714285714286,
-      "median": 5.0,
-      "range": 9.0
-    },
-    {
-      "group": "raw7|C|B05",
-      "n": 9,
-      "min": 15.0,
-      "max": 60.0,
-      "mean": 33.111111111111114,
-      "median": 30.0,
-      "range": 45.0
-    },
-    {
-      "group": "raw7|C|B07",
-      "n": 10,
-      "min": 25.0,
-      "max": 40.0,
-      "mean": 35.0,
-      "median": 35.0,
-      "range": 15.0
-    },
-    {
-      "group": "raw7|C|C1",
-      "n": 10,
-      "min": 30.0,
-      "max": 68.0,
-      "mean": 43.0,
-      "median": 38.0,
-      "range": 38.0
-    },
-    {
-      "group": "raw7|C|C2",
-      "n": 10,
-      "min": 67.0,
-      "max": 75.0,
-      "mean": 70.8,
-      "median": 72.0,
-      "range": 8.0
-    },
-    {
-      "group": "raw7|C|C3",
-      "n": 10,
-      "min": 25.0,
-      "max": 45.0,
-      "mean": 29.9,
-      "median": 28.0,
-      "range": 20.0
-    },
-    {
-      "group": "raw7|C|C4",
-      "n": 10,
-      "min": 60.0,
-      "max": 72.0,
-      "mean": 66.5,
-      "median": 65.0,
-      "range": 12.0
-    },
-    {
-      "group": "raw7|C|D1",
-      "n": 10,
-      "min": 10.0,
-      "max": 25.0,
-      "mean": 15.9,
-      "median": 15.0,
-      "range": 15.0
-    },
-    {
-      "group": "raw7|C|D2",
-      "n": 10,
-      "min": 35.0,
-      "max": 65.0,
-      "mean": 44.5,
-      "median": 42.5,
-      "range": 30.0
-    },
-    {
-      "group": "raw7|C|D3",
-      "n": 10,
-      "min": 20.0,
-      "max": 40.0,
-      "mean": 28.5,
-      "median": 27.5,
-      "range": 20.0
-    },
-    {
-      "group": "raw7|C|E01",
-      "n": 10,
-      "min": 8.0,
-      "max": 20.0,
-      "mean": 14.3,
-      "median": 12.5,
-      "range": 12.0
-    },
-    {
-      "group": "raw7|C|E02",
-      "n": 10,
-      "min": 10.0,
-      "max": 25.0,
-      "mean": 17.1,
-      "median": 17.5,
-      "range": 15.0
-    },
-    {
-      "group": "raw7|C|N1",
-      "n": 10,
-      "min": 30.0,
-      "max": 72.0,
-      "mean": 56.0,
-      "median": 68.0,
-      "range": 42.0
-    },
-    {
-      "group": "raw7|C|N3",
-      "n": 10,
-      "min": 35.0,
-      "max": 75.0,
-      "mean": 55.7,
-      "median": 61.0,
-      "range": 40.0
-    },
-    {
-      "group": "raw7|C|N4",
-      "n": 10,
-      "min": 25.0,
-      "max": 40.0,
-      "mean": 34.5,
-      "median": 35.0,
-      "range": 15.0
-    },
-    {
-      "group": "raw7|C|N6",
-      "n": 10,
-      "min": 25.0,
-      "max": 45.0,
-      "mean": 35.5,
-      "median": 37.5,
-      "range": 20.0
-    },
-    {
-      "group": "raw7|C|N8",
-      "n": 10,
-      "min": 50.0,
-      "max": 50.0,
-      "mean": 50.0,
-      "median": 50.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw7|C|N9",
-      "n": 10,
-      "min": 10.0,
-      "max": 25.0,
-      "mean": 21.0,
-      "median": 22.5,
-      "range": 15.0
-    },
-    {
-      "group": "raw7|C|P2",
-      "n": 10,
-      "min": 30.0,
-      "max": 68.0,
-      "mean": 41.9,
-      "median": 38.0,
-      "range": 38.0
-    },
-    {
-      "group": "raw7|C|R1",
-      "n": 10,
-      "min": 87.0,
       "max": 97.0,
-      "mean": 93.3,
-      "median": 95.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|C|R2",
-      "n": 10,
-      "min": 1.0,
-      "max": 2.0,
-      "mean": 1.3,
-      "median": 1.0,
-      "range": 1.0
-    },
-    {
-      "group": "raw7|FQ|B01",
-      "n": 2,
-      "min": 35.0,
-      "max": 40.0,
-      "mean": 37.5,
-      "median": 37.5,
-      "range": 5.0
-    },
-    {
-      "group": "raw7|FQ|B02",
-      "n": 1,
-      "min": 15.0,
-      "max": 15.0,
-      "mean": 15.0,
-      "median": 15.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw7|FQ|B04",
-      "n": 1,
-      "min": 15.0,
-      "max": 15.0,
-      "mean": 15.0,
-      "median": 15.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw7|FQ|B05",
-      "n": 2,
-      "min": 15.0,
-      "max": 15.0,
-      "mean": 15.0,
-      "median": 15.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw7|FQ|B07",
-      "n": 3,
-      "min": 45.0,
-      "max": 55.0,
-      "mean": 48.333333333333336,
-      "median": 45.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|FQ|C1",
-      "n": 3,
-      "min": 28.0,
-      "max": 42.0,
-      "mean": 37.333333333333336,
-      "median": 42.0,
-      "range": 14.0
-    },
-    {
-      "group": "raw7|FQ|C2",
-      "n": 3,
-      "min": 50.0,
-      "max": 72.0,
-      "mean": 60.0,
-      "median": 58.0,
-      "range": 22.0
-    },
-    {
-      "group": "raw7|FQ|C3",
-      "n": 3,
-      "min": 28.0,
-      "max": 38.0,
-      "mean": 32.666666666666664,
-      "median": 32.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|FQ|C4",
-      "n": 3,
-      "min": 58.0,
-      "max": 72.0,
-      "mean": 66.0,
-      "median": 68.0,
-      "range": 14.0
-    },
-    {
-      "group": "raw7|FQ|D1",
-      "n": 3,
-      "min": 35.0,
-      "max": 60.0,
-      "mean": 49.0,
-      "median": 52.0,
-      "range": 25.0
-    },
-    {
-      "group": "raw7|FQ|D2",
-      "n": 3,
-      "min": 45.0,
-      "max": 58.0,
-      "mean": 51.666666666666664,
-      "median": 52.0,
-      "range": 13.0
-    },
-    {
-      "group": "raw7|FQ|D3",
-      "n": 3,
-      "min": 25.0,
-      "max": 35.0,
-      "mean": 31.666666666666668,
-      "median": 35.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|FQ|E01",
-      "n": 3,
-      "min": 12.0,
-      "max": 28.0,
-      "mean": 21.666666666666668,
-      "median": 25.0,
-      "range": 16.0
-    },
-    {
-      "group": "raw7|FQ|E02",
-      "n": 3,
-      "min": 25.0,
-      "max": 38.0,
-      "mean": 31.666666666666668,
-      "median": 32.0,
-      "range": 13.0
-    },
-    {
-      "group": "raw7|FQ|N1",
-      "n": 3,
-      "min": 42.0,
-      "max": 42.0,
-      "mean": 42.0,
-      "median": 42.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw7|FQ|N3",
-      "n": 3,
-      "min": 58.0,
-      "max": 68.0,
-      "mean": 61.333333333333336,
-      "median": 58.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|FQ|N4",
-      "n": 3,
-      "min": 35.0,
-      "max": 42.0,
-      "mean": 38.333333333333336,
+      "mean": 39.2288,
       "median": 38.0,
-      "range": 7.0
-    },
-    {
-      "group": "raw7|FQ|N6",
-      "n": 3,
-      "min": 30.0,
-      "max": 35.0,
-      "mean": 32.333333333333336,
-      "median": 32.0,
-      "range": 5.0
-    },
-    {
-      "group": "raw7|FQ|N8",
-      "n": 3,
-      "min": 28.0,
-      "max": 50.0,
-      "mean": 37.666666666666664,
-      "median": 35.0,
-      "range": 22.0
-    },
-    {
-      "group": "raw7|FQ|N9",
-      "n": 3,
-      "min": 32.0,
-      "max": 32.0,
-      "mean": 32.0,
-      "median": 32.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw7|FQ|P2",
-      "n": 3,
-      "min": 32.0,
-      "max": 42.0,
-      "mean": 37.333333333333336,
-      "median": 38.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|FQ|R1",
-      "n": 3,
-      "min": 72.0,
-      "max": 92.0,
-      "mean": 84.0,
-      "median": 88.0,
-      "range": 20.0
-    },
-    {
-      "group": "raw7|FQ|R2",
-      "n": 3,
-      "min": 2.0,
-      "max": 6.0,
-      "mean": 3.6666666666666665,
-      "median": 3.0,
-      "range": 4.0
-    },
-    {
-      "group": "raw7|HQ|B01",
-      "n": 2,
-      "min": 30.0,
-      "max": 40.0,
-      "mean": 35.0,
-      "median": 35.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|HQ|B02",
-      "n": 2,
-      "min": 15.0,
-      "max": 25.0,
-      "mean": 20.0,
-      "median": 20.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|HQ|B04",
-      "n": 3,
-      "min": 15.0,
-      "max": 25.0,
-      "mean": 18.333333333333332,
-      "median": 15.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|HQ|B05",
-      "n": 3,
-      "min": 25.0,
-      "max": 35.0,
-      "mean": 30.0,
-      "median": 30.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|HQ|B07",
-      "n": 3,
-      "min": 40.0,
-      "max": 50.0,
-      "mean": 45.0,
-      "median": 45.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|HQ|C1",
-      "n": 3,
-      "min": 35.0,
-      "max": 58.0,
-      "mean": 45.0,
-      "median": 42.0,
-      "range": 23.0
-    },
-    {
-      "group": "raw7|HQ|C2",
-      "n": 3,
-      "min": 42.0,
-      "max": 72.0,
-      "mean": 58.666666666666664,
-      "median": 62.0,
-      "range": 30.0
-    },
-    {
-      "group": "raw7|HQ|C3",
-      "n": 3,
-      "min": 38.0,
-      "max": 52.0,
-      "mean": 44.0,
-      "median": 42.0,
-      "range": 14.0
-    },
-    {
-      "group": "raw7|HQ|C4",
-      "n": 3,
-      "min": 58.0,
-      "max": 70.0,
-      "mean": 63.333333333333336,
-      "median": 62.0,
-      "range": 12.0
-    },
-    {
-      "group": "raw7|HQ|D1",
-      "n": 3,
-      "min": 35.0,
-      "max": 35.0,
-      "mean": 35.0,
-      "median": 35.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw7|HQ|D2",
-      "n": 3,
-      "min": 45.0,
-      "max": 58.0,
-      "mean": 52.666666666666664,
-      "median": 55.0,
-      "range": 13.0
-    },
-    {
-      "group": "raw7|HQ|D3",
-      "n": 3,
-      "min": 25.0,
-      "max": 40.0,
-      "mean": 35.0,
-      "median": 40.0,
-      "range": 15.0
-    },
-    {
-      "group": "raw7|HQ|E01",
-      "n": 3,
-      "min": 12.0,
-      "max": 12.0,
-      "mean": 12.0,
-      "median": 12.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw7|HQ|E02",
-      "n": 3,
-      "min": 23.0,
-      "max": 28.0,
-      "mean": 25.333333333333332,
-      "median": 25.0,
-      "range": 5.0
-    },
-    {
-      "group": "raw7|HQ|N1",
-      "n": 3,
-      "min": 38.0,
-      "max": 42.0,
-      "mean": 40.666666666666664,
-      "median": 42.0,
-      "range": 4.0
-    },
-    {
-      "group": "raw7|HQ|N3",
-      "n": 3,
-      "min": 48.0,
-      "max": 82.0,
-      "mean": 61.666666666666664,
-      "median": 55.0,
-      "range": 34.0
-    },
-    {
-      "group": "raw7|HQ|N4",
-      "n": 3,
-      "min": 28.0,
-      "max": 38.0,
-      "mean": 32.666666666666664,
-      "median": 32.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|HQ|N6",
-      "n": 3,
-      "min": 25.0,
-      "max": 45.0,
-      "mean": 36.666666666666664,
-      "median": 40.0,
-      "range": 20.0
-    },
-    {
-      "group": "raw7|HQ|N8",
-      "n": 3,
-      "min": 42.0,
-      "max": 50.0,
-      "mean": 47.333333333333336,
-      "median": 50.0,
-      "range": 8.0
-    },
-    {
-      "group": "raw7|HQ|N9",
-      "n": 3,
-      "min": 15.0,
-      "max": 48.0,
-      "mean": 35.0,
-      "median": 42.0,
-      "range": 33.0
-    },
-    {
-      "group": "raw7|HQ|P2",
-      "n": 3,
-      "min": 28.0,
-      "max": 58.0,
-      "mean": 39.333333333333336,
-      "median": 32.0,
-      "range": 30.0
-    },
-    {
-      "group": "raw7|HQ|R1",
-      "n": 3,
-      "min": 78.0,
-      "max": 85.0,
-      "mean": 81.66666666666667,
-      "median": 82.0,
-      "range": 7.0
-    },
-    {
-      "group": "raw7|HQ|R2",
-      "n": 3,
-      "min": 1.0,
-      "max": 3.0,
-      "mean": 2.0,
-      "median": 2.0,
-      "range": 2.0
-    },
-    {
-      "group": "raw8|FBH0|B02",
-      "n": 2,
-      "min": 25.0,
-      "max": 25.0,
-      "mean": 25.0,
-      "median": 25.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw8|FBH0|B04",
-      "n": 1,
-      "min": 5.0,
-      "max": 5.0,
-      "mean": 5.0,
-      "median": 5.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw8|FBH0|C1",
-      "n": 3,
-      "min": 47.0,
-      "max": 47.0,
-      "mean": 47.0,
-      "median": 47.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw8|FBH0|C2",
-      "n": 2,
-      "min": 47.0,
-      "max": 57.5,
-      "mean": 52.25,
-      "median": 52.25,
-      "range": 10.5
-    },
-    {
-      "group": "raw8|FBH0|C3",
-      "n": 3,
-      "min": 37.0,
-      "max": 47.0,
-      "mean": 42.0,
-      "median": 42.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw8|FBH0|C4",
-      "n": 3,
-      "min": 47.0,
-      "max": 47.0,
-      "mean": 47.0,
-      "median": 47.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw8|FBH0|D1",
-      "n": 3,
-      "min": 35.0,
-      "max": 47.0,
-      "mean": 43.0,
-      "median": 47.0,
-      "range": 12.0
-    },
-    {
-      "group": "raw8|FBH0|D2",
-      "n": 3,
-      "min": 73.0,
-      "max": 73.0,
-      "mean": 73.0,
-      "median": 73.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw8|FBH0|D3",
-      "n": 3,
-      "min": 15.0,
-      "max": 25.0,
-      "mean": 20.0,
-      "median": 20.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw8|FBH0|E01",
-      "n": 2,
-      "min": 15.0,
-      "max": 25.0,
-      "mean": 20.0,
-      "median": 20.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw8|FBH0|E02",
-      "n": 3,
-      "min": 15.0,
-      "max": 42.0,
-      "mean": 25.0,
-      "median": 18.0,
-      "range": 27.0
-    },
-    {
-      "group": "raw8|FBH0|N1",
-      "n": 3,
-      "min": 23.0,
-      "max": 38.0,
-      "mean": 29.333333333333332,
-      "median": 27.0,
-      "range": 15.0
-    },
-    {
-      "group": "raw8|FBH0|N3",
-      "n": 3,
-      "min": 32.0,
-      "max": 72.0,
-      "mean": 48.666666666666664,
-      "median": 42.0,
-      "range": 40.0
-    },
-    {
-      "group": "raw8|FBH0|N4",
-      "n": 2,
-      "min": 42.0,
-      "max": 47.0,
-      "mean": 44.5,
-      "median": 44.5,
-      "range": 5.0
-    },
-    {
-      "group": "raw8|FBH0|N6",
-      "n": 3,
-      "min": 0.0,
-      "max": 47.0,
-      "mean": 27.333333333333332,
-      "median": 35.0,
-      "range": 47.0
-    },
-    {
-      "group": "raw8|FBH0|N8",
-      "n": 3,
-      "min": 50.0,
-      "max": 50.0,
-      "mean": 50.0,
-      "median": 50.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw8|FBH0|N9",
-      "n": 3,
-      "min": 15.0,
-      "max": 37.0,
-      "mean": 25.0,
-      "median": 23.0,
-      "range": 22.0
-    },
-    {
-      "group": "raw8|FBH0|P2",
-      "n": 3,
-      "min": 37.0,
-      "max": 42.0,
-      "mean": 38.666666666666664,
-      "median": 37.0,
-      "range": 5.0
-    },
-    {
-      "group": "raw8|FBH0|R1",
-      "n": 3,
-      "min": 88.0,
-      "max": 92.0,
-      "mean": 90.66666666666667,
-      "median": 92.0,
-      "range": 4.0
-    },
-    {
-      "group": "raw8|FBH0|R2",
-      "n": 3,
-      "min": 2.0,
-      "max": 2.0,
-      "mean": 2.0,
-      "median": 2.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw8|FBHa|A1",
-      "n": 2,
-      "min": 0.0,
-      "max": 20.0,
-      "mean": 10.0,
-      "median": 10.0,
-      "range": 20.0
-    },
-    {
-      "group": "raw8|FBHa|B01",
-      "n": 3,
-      "min": 0.0,
-      "max": 65.0,
-      "mean": 38.333333333333336,
-      "median": 50.0,
-      "range": 65.0
-    },
-    {
-      "group": "raw8|FBHa|B04",
-      "n": 1,
-      "min": 15.0,
-      "max": 15.0,
-      "mean": 15.0,
-      "median": 15.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw8|FBHa|B05",
-      "n": 1,
-      "min": 15.0,
-      "max": 15.0,
-      "mean": 15.0,
-      "median": 15.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw8|FBHa|B07",
-      "n": 2,
-      "min": 45.0,
-      "max": 50.0,
-      "mean": 47.5,
-      "median": 47.5,
-      "range": 5.0
-    },
-    {
-      "group": "raw8|FBHa|C1",
-      "n": 3,
-      "min": 38.0,
-      "max": 42.0,
-      "mean": 39.333333333333336,
-      "median": 38.0,
-      "range": 4.0
-    },
-    {
-      "group": "raw8|FBHa|C2",
-      "n": 3,
-      "min": 58.0,
-      "max": 78.0,
-      "mean": 69.33333333333333,
-      "median": 72.0,
-      "range": 20.0
-    },
-    {
-      "group": "raw8|FBHa|C3",
-      "n": 3,
-      "min": 28.0,
-      "max": 72.0,
-      "mean": 42.666666666666664,
-      "median": 28.0,
-      "range": 44.0
-    },
-    {
-      "group": "raw8|FBHa|C4",
-      "n": 3,
-      "min": 58.0,
-      "max": 62.0,
-      "mean": 60.666666666666664,
-      "median": 62.0,
-      "range": 4.0
-    },
-    {
-      "group": "raw8|FBHa|D1",
-      "n": 2,
-      "min": 32.0,
-      "max": 35.0,
-      "mean": 33.5,
-      "median": 33.5,
-      "range": 3.0
-    },
-    {
-      "group": "raw8|FBHa|D2",
-      "n": 3,
-      "min": 65.0,
-      "max": 68.0,
-      "mean": 66.66666666666667,
-      "median": 67.0,
-      "range": 3.0
-    },
-    {
-      "group": "raw8|FBHa|D3",
-      "n": 3,
-      "min": 0.0,
-      "max": 75.0,
-      "mean": 25.0,
-      "median": 0.0,
-      "range": 75.0
-    },
-    {
-      "group": "raw8|FBHa|E01",
-      "n": 3,
-      "min": 15.0,
-      "max": 15.0,
-      "mean": 15.0,
-      "median": 15.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw8|FBHa|E02",
-      "n": 3,
-      "min": 18.0,
-      "max": 38.0,
-      "mean": 31.333333333333332,
-      "median": 38.0,
-      "range": 20.0
-    },
-    {
-      "group": "raw8|FBHa|N1",
-      "n": 3,
-      "min": 23.0,
-      "max": 48.0,
-      "mean": 37.666666666666664,
-      "median": 42.0,
-      "range": 25.0
-    },
-    {
-      "group": "raw8|FBHa|N3",
-      "n": 3,
-      "min": 42.0,
-      "max": 72.0,
-      "mean": 57.333333333333336,
-      "median": 58.0,
-      "range": 30.0
-    },
-    {
-      "group": "raw8|FBHa|N4",
-      "n": 3,
-      "min": 25.0,
-      "max": 28.0,
-      "mean": 26.0,
-      "median": 25.0,
-      "range": 3.0
-    },
-    {
-      "group": "raw8|FBHa|N6",
-      "n": 3,
-      "min": 30.0,
-      "max": 52.0,
-      "mean": 42.333333333333336,
-      "median": 45.0,
-      "range": 22.0
-    },
-    {
-      "group": "raw8|FBHa|N8",
-      "n": 3,
-      "min": 50.0,
-      "max": 50.0,
-      "mean": 50.0,
-      "median": 50.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw8|FBHa|N9",
-      "n": 3,
-      "min": 28.0,
-      "max": 50.0,
-      "mean": 40.0,
-      "median": 42.0,
-      "range": 22.0
-    },
-    {
-      "group": "raw8|FBHa|P2",
-      "n": 3,
-      "min": 35.0,
-      "max": 48.0,
-      "mean": 41.666666666666664,
-      "median": 42.0,
-      "range": 13.0
-    },
-    {
-      "group": "raw8|FBHa|R1",
-      "n": 3,
-      "min": 85.0,
-      "max": 97.0,
-      "mean": 91.33333333333333,
-      "median": 92.0,
-      "range": 12.0
-    },
-    {
-      "group": "raw8|FBHa|R2",
-      "n": 3,
-      "min": 2.0,
-      "max": 2.0,
-      "mean": 2.0,
-      "median": 2.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBA0|A1",
-      "n": 1,
-      "min": 25.0,
-      "max": 25.0,
-      "mean": 25.0,
-      "median": 25.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBA0|B01",
-      "n": 1,
-      "min": 65.0,
-      "max": 65.0,
-      "mean": 65.0,
-      "median": 65.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBA0|B02",
-      "n": 2,
-      "min": 15.0,
-      "max": 25.0,
-      "mean": 20.0,
-      "median": 20.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw9|FBA0|B04",
-      "n": 2,
-      "min": 1.0,
-      "max": 25.0,
-      "mean": 13.0,
-      "median": 13.0,
-      "range": 24.0
-    },
-    {
-      "group": "raw9|FBA0|C1",
-      "n": 3,
-      "min": 47.0,
-      "max": 47.0,
-      "mean": 47.0,
-      "median": 47.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBA0|C2",
-      "n": 1,
-      "min": 65.0,
-      "max": 65.0,
-      "mean": 65.0,
-      "median": 65.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBA0|C3",
-      "n": 3,
-      "min": 35.0,
-      "max": 45.0,
-      "mean": 40.666666666666664,
-      "median": 42.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw9|FBA0|C4",
-      "n": 3,
-      "min": 72.0,
-      "max": 73.0,
-      "mean": 72.33333333333333,
-      "median": 72.0,
-      "range": 1.0
-    },
-    {
-      "group": "raw9|FBA0|D1",
-      "n": 3,
-      "min": 40.0,
-      "max": 73.0,
-      "mean": 57.666666666666664,
-      "median": 60.0,
-      "range": 33.0
-    },
-    {
-      "group": "raw9|FBA0|D2",
-      "n": 3,
-      "min": 73.0,
-      "max": 73.0,
-      "mean": 73.0,
-      "median": 73.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBA0|D3",
-      "n": 2,
-      "min": 15.0,
-      "max": 30.0,
-      "mean": 22.5,
-      "median": 22.5,
-      "range": 15.0
-    },
-    {
-      "group": "raw9|FBA0|E01",
-      "n": 3,
-      "min": 10.0,
-      "max": 32.0,
-      "mean": 21.333333333333332,
-      "median": 22.0,
-      "range": 22.0
-    },
-    {
-      "group": "raw9|FBA0|E02",
-      "n": 3,
-      "min": 25.0,
-      "max": 32.0,
-      "mean": 27.333333333333332,
-      "median": 25.0,
-      "range": 7.0
-    },
-    {
-      "group": "raw9|FBA0|N1",
-      "n": 3,
-      "min": 27.0,
-      "max": 35.0,
-      "mean": 32.333333333333336,
-      "median": 35.0,
-      "range": 8.0
-    },
-    {
-      "group": "raw9|FBA0|N3",
-      "n": 3,
-      "min": 42.0,
-      "max": 42.0,
-      "mean": 42.0,
-      "median": 42.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBA0|N4",
-      "n": 3,
-      "min": 38.0,
-      "max": 47.0,
-      "mean": 44.0,
-      "median": 47.0,
-      "range": 9.0
-    },
-    {
-      "group": "raw9|FBA0|N8",
-      "n": 3,
-      "min": 50.0,
-      "max": 50.0,
-      "mean": 50.0,
-      "median": 50.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBA0|N9",
-      "n": 1,
-      "min": 15.0,
-      "max": 15.0,
-      "mean": 15.0,
-      "median": 15.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBA0|P2",
-      "n": 3,
-      "min": 27.0,
-      "max": 42.0,
-      "mean": 37.0,
-      "median": 42.0,
-      "range": 15.0
-    },
-    {
-      "group": "raw9|FBA0|R1",
-      "n": 3,
-      "min": 82.0,
-      "max": 85.0,
-      "mean": 84.0,
-      "median": 85.0,
-      "range": 3.0
-    },
-    {
-      "group": "raw9|FBA0|R2",
-      "n": 3,
-      "min": 2.0,
-      "max": 2.0,
-      "mean": 2.0,
-      "median": 2.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBAS0|B01",
-      "n": 2,
-      "min": 5.0,
-      "max": 65.0,
-      "mean": 35.0,
-      "median": 35.0,
-      "range": 60.0
-    },
-    {
-      "group": "raw9|FBAS0|B02",
-      "n": 2,
-      "min": 25.0,
-      "max": 30.0,
-      "mean": 27.5,
-      "median": 27.5,
-      "range": 5.0
-    },
-    {
-      "group": "raw9|FBAS0|B04",
-      "n": 1,
-      "min": 5.0,
-      "max": 5.0,
-      "mean": 5.0,
-      "median": 5.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBAS0|B05",
-      "n": 2,
-      "min": 0.0,
-      "max": 0.0,
-      "mean": 0.0,
-      "median": 0.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBAS0|B07",
-      "n": 2,
-      "min": 40.0,
-      "max": 75.0,
-      "mean": 57.5,
-      "median": 57.5,
-      "range": 35.0
-    },
-    {
-      "group": "raw9|FBAS0|C1",
-      "n": 3,
-      "min": 35.0,
-      "max": 62.0,
-      "mean": 45.0,
-      "median": 38.0,
-      "range": 27.0
-    },
-    {
-      "group": "raw9|FBAS0|C2",
-      "n": 2,
-      "min": 67.0,
-      "max": 72.0,
-      "mean": 69.5,
-      "median": 69.5,
-      "range": 5.0
-    },
-    {
-      "group": "raw9|FBAS0|C3",
-      "n": 3,
-      "min": 25.0,
-      "max": 42.0,
-      "mean": 33.0,
-      "median": 32.0,
-      "range": 17.0
-    },
-    {
-      "group": "raw9|FBAS0|C4",
-      "n": 3,
-      "min": 47.0,
-      "max": 73.0,
-      "mean": 64.33333333333333,
-      "median": 73.0,
-      "range": 26.0
-    },
-    {
-      "group": "raw9|FBAS0|D1",
-      "n": 3,
-      "min": 47.0,
-      "max": 73.0,
-      "mean": 55.666666666666664,
-      "median": 47.0,
-      "range": 26.0
-    },
-    {
-      "group": "raw9|FBAS0|D2",
-      "n": 3,
-      "min": 73.0,
-      "max": 73.0,
-      "mean": 73.0,
-      "median": 73.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBAS0|D3",
-      "n": 2,
-      "min": 47.0,
-      "max": 47.0,
-      "mean": 47.0,
-      "median": 47.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBAS0|E01",
-      "n": 3,
-      "min": 15.0,
-      "max": 28.0,
-      "mean": 23.333333333333332,
-      "median": 27.0,
-      "range": 13.0
-    },
-    {
-      "group": "raw9|FBAS0|E02",
-      "n": 3,
-      "min": 18.0,
-      "max": 47.0,
-      "mean": 35.666666666666664,
-      "median": 42.0,
-      "range": 29.0
-    },
-    {
-      "group": "raw9|FBAS0|N1",
-      "n": 3,
-      "min": 23.0,
-      "max": 28.0,
-      "mean": 26.0,
-      "median": 27.0,
-      "range": 5.0
-    },
-    {
-      "group": "raw9|FBAS0|N3",
-      "n": 3,
-      "min": 42.0,
-      "max": 47.0,
-      "mean": 45.333333333333336,
-      "median": 47.0,
-      "range": 5.0
-    },
-    {
-      "group": "raw9|FBAS0|N4",
-      "n": 2,
-      "min": 47.0,
-      "max": 47.0,
-      "mean": 47.0,
-      "median": 47.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBAS0|N6",
-      "n": 2,
-      "min": 23.0,
-      "max": 37.0,
-      "mean": 30.0,
-      "median": 30.0,
-      "range": 14.0
-    },
-    {
-      "group": "raw9|FBAS0|N8",
-      "n": 3,
-      "min": 50.0,
-      "max": 50.0,
-      "mean": 50.0,
-      "median": 50.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBAS0|N9",
-      "n": 2,
-      "min": 15.0,
-      "max": 25.0,
-      "mean": 20.0,
-      "median": 20.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw9|FBAS0|P2",
-      "n": 3,
-      "min": 42.0,
-      "max": 45.0,
-      "mean": 43.0,
-      "median": 42.0,
-      "range": 3.0
-    },
-    {
-      "group": "raw9|FBAS0|R1",
-      "n": 3,
-      "min": 73.0,
-      "max": 92.0,
-      "mean": 84.0,
-      "median": 87.0,
-      "range": 19.0
-    },
-    {
-      "group": "raw9|FBAS0|R2",
-      "n": 3,
-      "min": 2.0,
-      "max": 2.0,
-      "mean": 2.0,
-      "median": 2.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBASa|B04",
-      "n": 1,
-      "min": 5.0,
-      "max": 5.0,
-      "mean": 5.0,
-      "median": 5.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBASa|B07",
-      "n": 3,
-      "min": 40.0,
-      "max": 72.0,
-      "mean": 50.666666666666664,
-      "median": 40.0,
-      "range": 32.0
-    },
-    {
-      "group": "raw9|FBASa|C1",
-      "n": 3,
-      "min": 42.0,
-      "max": 72.0,
-      "mean": 57.333333333333336,
-      "median": 58.0,
-      "range": 30.0
-    },
-    {
-      "group": "raw9|FBASa|C2",
-      "n": 3,
-      "min": 47.0,
-      "max": 73.0,
-      "mean": 64.0,
-      "median": 72.0,
-      "range": 26.0
-    },
-    {
-      "group": "raw9|FBASa|C3",
-      "n": 3,
-      "min": 5.0,
-      "max": 42.0,
-      "mean": 23.333333333333332,
-      "median": 23.0,
-      "range": 37.0
-    },
-    {
-      "group": "raw9|FBASa|C4",
-      "n": 2,
-      "min": 47.0,
-      "max": 68.0,
-      "mean": 57.5,
-      "median": 57.5,
-      "range": 21.0
-    },
-    {
-      "group": "raw9|FBASa|D1",
-      "n": 3,
-      "min": 40.0,
-      "max": 62.0,
-      "mean": 52.333333333333336,
-      "median": 55.0,
-      "range": 22.0
-    },
-    {
-      "group": "raw9|FBASa|D2",
-      "n": 3,
-      "min": 55.0,
-      "max": 65.0,
-      "mean": 61.666666666666664,
-      "median": 65.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw9|FBASa|D3",
-      "n": 2,
-      "min": 23.0,
-      "max": 35.0,
-      "mean": 29.0,
-      "median": 29.0,
-      "range": 12.0
-    },
-    {
-      "group": "raw9|FBASa|E01",
-      "n": 3,
-      "min": 23.0,
-      "max": 42.0,
-      "mean": 30.0,
-      "median": 25.0,
-      "range": 19.0
-    },
-    {
-      "group": "raw9|FBASa|E02",
-      "n": 3,
-      "min": 32.0,
-      "max": 48.0,
-      "mean": 38.333333333333336,
-      "median": 35.0,
-      "range": 16.0
-    },
-    {
-      "group": "raw9|FBASa|N1",
-      "n": 1,
-      "min": 23.0,
-      "max": 23.0,
-      "mean": 23.0,
-      "median": 23.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBASa|N3",
-      "n": 3,
-      "min": 42.0,
-      "max": 68.0,
-      "mean": 59.333333333333336,
-      "median": 68.0,
-      "range": 26.0
-    },
-    {
-      "group": "raw9|FBASa|N4",
-      "n": 3,
-      "min": 25.0,
-      "max": 35.0,
-      "mean": 30.666666666666668,
-      "median": 32.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw9|FBASa|N6",
-      "n": 3,
-      "min": 15.0,
-      "max": 42.0,
-      "mean": 33.0,
-      "median": 42.0,
-      "range": 27.0
-    },
-    {
-      "group": "raw9|FBASa|N8",
-      "n": 3,
-      "min": 50.0,
-      "max": 65.0,
-      "mean": 55.0,
-      "median": 50.0,
-      "range": 15.0
-    },
-    {
-      "group": "raw9|FBASa|N9",
-      "n": 3,
-      "min": 38.0,
-      "max": 42.0,
-      "mean": 40.333333333333336,
-      "median": 41.0,
-      "range": 4.0
-    },
-    {
-      "group": "raw9|FBASa|P2",
-      "n": 3,
-      "min": 32.0,
-      "max": 72.0,
-      "mean": 45.333333333333336,
-      "median": 32.0,
-      "range": 40.0
-    },
-    {
-      "group": "raw9|FBASa|R1",
-      "n": 2,
-      "min": 92.0,
-      "max": 95.0,
-      "mean": 93.5,
-      "median": 93.5,
-      "range": 3.0
-    },
-    {
-      "group": "raw9|FBASa|R2",
-      "n": 3,
-      "min": 2.0,
-      "max": 3.0,
-      "mean": 2.3333333333333335,
-      "median": 2.0,
-      "range": 1.0
-    },
-    {
-      "group": "raw9|FBAa|B04",
-      "n": 1,
-      "min": 1.0,
-      "max": 1.0,
-      "mean": 1.0,
-      "median": 1.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBAa|B05",
-      "n": 1,
-      "min": 50.0,
-      "max": 50.0,
-      "mean": 50.0,
-      "median": 50.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBAa|B07",
-      "n": 2,
-      "min": 65.0,
-      "max": 72.0,
-      "mean": 68.5,
-      "median": 68.5,
-      "range": 7.0
-    },
-    {
-      "group": "raw9|FBAa|C1",
-      "n": 3,
-      "min": 38.0,
-      "max": 42.0,
-      "mean": 40.0,
-      "median": 40.0,
-      "range": 4.0
-    },
-    {
-      "group": "raw9|FBAa|C2",
-      "n": 3,
-      "min": 72.0,
-      "max": 80.0,
-      "mean": 74.66666666666667,
-      "median": 72.0,
-      "range": 8.0
-    },
-    {
-      "group": "raw9|FBAa|C3",
-      "n": 3,
-      "min": 28.0,
-      "max": 38.0,
-      "mean": 31.333333333333332,
-      "median": 28.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw9|FBAa|C4",
-      "n": 3,
-      "min": 62.0,
-      "max": 85.0,
-      "mean": 73.0,
-      "median": 72.0,
-      "range": 23.0
-    },
-    {
-      "group": "raw9|FBAa|D1",
-      "n": 3,
-      "min": 30.0,
-      "max": 62.0,
-      "mean": 47.333333333333336,
-      "median": 50.0,
-      "range": 32.0
-    },
-    {
-      "group": "raw9|FBAa|D2",
-      "n": 2,
-      "min": 65.0,
-      "max": 65.0,
-      "mean": 65.0,
-      "median": 65.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBAa|D3",
-      "n": 1,
-      "min": 0.0,
-      "max": 0.0,
-      "mean": 0.0,
-      "median": 0.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBAa|E01",
-      "n": 2,
-      "min": 8.0,
-      "max": 25.0,
-      "mean": 16.5,
-      "median": 16.5,
-      "range": 17.0
-    },
-    {
-      "group": "raw9|FBAa|E02",
-      "n": 2,
-      "min": 12.0,
-      "max": 27.0,
-      "mean": 19.5,
-      "median": 19.5,
-      "range": 15.0
-    },
-    {
-      "group": "raw9|FBAa|N1",
-      "n": 3,
-      "min": 22.0,
-      "max": 65.0,
-      "mean": 40.666666666666664,
-      "median": 35.0,
-      "range": 43.0
-    },
-    {
-      "group": "raw9|FBAa|N3",
-      "n": 1,
-      "min": 72.0,
-      "max": 72.0,
-      "mean": 72.0,
-      "median": 72.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBAa|N4",
-      "n": 3,
-      "min": 28.0,
-      "max": 35.0,
-      "mean": 31.0,
-      "median": 30.0,
-      "range": 7.0
-    },
-    {
-      "group": "raw9|FBAa|N6",
-      "n": 2,
-      "min": 35.0,
-      "max": 40.0,
-      "mean": 37.5,
-      "median": 37.5,
-      "range": 5.0
-    },
-    {
-      "group": "raw9|FBAa|N8",
-      "n": 2,
-      "min": 50.0,
-      "max": 50.0,
-      "mean": 50.0,
-      "median": 50.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBAa|N9",
-      "n": 1,
-      "min": 23.0,
-      "max": 23.0,
-      "mean": 23.0,
-      "median": 23.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBAa|P2",
-      "n": 2,
-      "min": 35.0,
-      "max": 42.0,
-      "mean": 38.5,
-      "median": 38.5,
-      "range": 7.0
-    },
-    {
-      "group": "raw9|FBAa|R1",
-      "n": 3,
-      "min": 75.0,
-      "max": 88.0,
-      "mean": 79.33333333333333,
-      "median": 75.0,
-      "range": 13.0
-    },
-    {
-      "group": "raw9|FBAa|R2",
-      "n": 3,
-      "min": 2.0,
-      "max": 3.0,
-      "mean": 2.3333333333333335,
-      "median": 2.0,
-      "range": 1.0
-    },
-    {
-      "group": "raw9|FBCPa|B01",
-      "n": 2,
-      "min": 35.0,
-      "max": 60.0,
-      "mean": 47.5,
-      "median": 47.5,
-      "range": 25.0
-    },
-    {
-      "group": "raw9|FBCPa|B04",
-      "n": 1,
-      "min": 1.0,
-      "max": 1.0,
-      "mean": 1.0,
-      "median": 1.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBCPa|B05",
-      "n": 1,
-      "min": 1.0,
-      "max": 1.0,
-      "mean": 1.0,
-      "median": 1.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBCPa|B07",
-      "n": 1,
-      "min": 50.0,
-      "max": 50.0,
-      "mean": 50.0,
-      "median": 50.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBCPa|C1",
-      "n": 3,
-      "min": 42.0,
-      "max": 65.0,
-      "mean": 49.666666666666664,
-      "median": 42.0,
-      "range": 23.0
-    },
-    {
-      "group": "raw9|FBCPa|C2",
-      "n": 3,
-      "min": 75.0,
-      "max": 85.0,
-      "mean": 78.33333333333333,
-      "median": 75.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw9|FBCPa|C3",
-      "n": 3,
-      "min": 35.0,
-      "max": 45.0,
-      "mean": 41.666666666666664,
-      "median": 45.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw9|FBCPa|C4",
-      "n": 3,
-      "min": 72.0,
-      "max": 75.0,
-      "mean": 74.0,
-      "median": 75.0,
-      "range": 3.0
-    },
-    {
-      "group": "raw9|FBCPa|D1",
-      "n": 3,
-      "min": 25.0,
-      "max": 47.0,
-      "mean": 32.333333333333336,
-      "median": 25.0,
-      "range": 22.0
-    },
-    {
-      "group": "raw9|FBCPa|D2",
-      "n": 3,
-      "min": 73.0,
-      "max": 75.0,
-      "mean": 73.66666666666667,
-      "median": 73.0,
-      "range": 2.0
-    },
-    {
-      "group": "raw9|FBCPa|D3",
-      "n": 3,
-      "min": 0.0,
-      "max": 0.0,
-      "mean": 0.0,
-      "median": 0.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBCPa|E01",
-      "n": 3,
-      "min": 20.0,
-      "max": 45.0,
-      "mean": 30.0,
-      "median": 25.0,
-      "range": 25.0
-    },
-    {
-      "group": "raw9|FBCPa|E02",
-      "n": 3,
-      "min": 32.0,
-      "max": 42.0,
-      "mean": 36.333333333333336,
-      "median": 35.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw9|FBCPa|N1",
-      "n": 3,
-      "min": 35.0,
-      "max": 42.0,
-      "mean": 37.333333333333336,
-      "median": 35.0,
-      "range": 7.0
-    },
-    {
-      "group": "raw9|FBCPa|N3",
-      "n": 2,
-      "min": 35.0,
-      "max": 42.0,
-      "mean": 38.5,
-      "median": 38.5,
-      "range": 7.0
-    },
-    {
-      "group": "raw9|FBCPa|N4",
-      "n": 3,
-      "min": 45.0,
-      "max": 45.0,
-      "mean": 45.0,
-      "median": 45.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBCPa|N6",
-      "n": 2,
-      "min": 30.0,
-      "max": 40.0,
-      "mean": 35.0,
-      "median": 35.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw9|FBCPa|N8",
-      "n": 3,
-      "min": 50.0,
-      "max": 50.0,
-      "mean": 50.0,
-      "median": 50.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBCPa|P2",
-      "n": 3,
-      "min": 42.0,
-      "max": 47.0,
-      "mean": 44.666666666666664,
-      "median": 45.0,
-      "range": 5.0
-    },
-    {
-      "group": "raw9|FBCPa|R1",
-      "n": 3,
-      "min": 95.0,
-      "max": 95.0,
-      "mean": 95.0,
-      "median": 95.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBCPa|R2",
-      "n": 3,
-      "min": 2.0,
-      "max": 3.0,
-      "mean": 2.3333333333333335,
-      "median": 2.0,
-      "range": 1.0
-    },
-    {
-      "group": "raw9|FBF0|B02",
-      "n": 3,
-      "min": 15.0,
-      "max": 40.0,
-      "mean": 26.666666666666668,
-      "median": 25.0,
-      "range": 25.0
-    },
-    {
-      "group": "raw9|FBF0|B04",
-      "n": 1,
-      "min": 10.0,
-      "max": 10.0,
-      "mean": 10.0,
-      "median": 10.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBF0|B05",
-      "n": 2,
-      "min": 0.0,
-      "max": 10.0,
-      "mean": 5.0,
-      "median": 5.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw9|FBF0|B07",
-      "n": 2,
-      "min": 45.0,
-      "max": 50.0,
-      "mean": 47.5,
-      "median": 47.5,
-      "range": 5.0
-    },
-    {
-      "group": "raw9|FBF0|C1",
-      "n": 3,
-      "min": 42.0,
-      "max": 72.0,
-      "mean": 53.666666666666664,
-      "median": 47.0,
-      "range": 30.0
-    },
-    {
-      "group": "raw9|FBF0|C2",
-      "n": 2,
-      "min": 65.0,
-      "max": 72.0,
-      "mean": 68.5,
-      "median": 68.5,
-      "range": 7.0
-    },
-    {
-      "group": "raw9|FBF0|C3",
-      "n": 2,
-      "min": 35.0,
-      "max": 42.0,
-      "mean": 38.5,
-      "median": 38.5,
-      "range": 7.0
-    },
-    {
-      "group": "raw9|FBF0|C4",
-      "n": 3,
-      "min": 47.0,
-      "max": 47.0,
-      "mean": 47.0,
-      "median": 47.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBF0|D1",
-      "n": 3,
-      "min": 22.0,
-      "max": 47.0,
-      "mean": 33.0,
-      "median": 30.0,
-      "range": 25.0
-    },
-    {
-      "group": "raw9|FBF0|D2",
-      "n": 3,
-      "min": 73.0,
-      "max": 75.0,
-      "mean": 73.66666666666667,
-      "median": 73.0,
-      "range": 2.0
-    },
-    {
-      "group": "raw9|FBF0|D3",
-      "n": 3,
-      "min": 0.0,
-      "max": 37.0,
-      "mean": 12.333333333333334,
-      "median": 0.0,
-      "range": 37.0
-    },
-    {
-      "group": "raw9|FBF0|E01",
-      "n": 1,
-      "min": 25.0,
-      "max": 25.0,
-      "mean": 25.0,
-      "median": 25.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBF0|E02",
-      "n": 3,
-      "min": 23.0,
-      "max": 35.0,
-      "mean": 30.666666666666668,
-      "median": 34.0,
-      "range": 12.0
-    },
-    {
-      "group": "raw9|FBF0|N1",
-      "n": 3,
-      "min": 23.0,
-      "max": 35.0,
-      "mean": 28.333333333333332,
-      "median": 27.0,
-      "range": 12.0
-    },
-    {
-      "group": "raw9|FBF0|N3",
-      "n": 3,
-      "min": 42.0,
-      "max": 42.0,
-      "mean": 42.0,
-      "median": 42.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBF0|N4",
-      "n": 3,
-      "min": 25.0,
-      "max": 47.0,
-      "mean": 36.333333333333336,
-      "median": 37.0,
-      "range": 22.0
-    },
-    {
-      "group": "raw9|FBF0|N6",
-      "n": 3,
-      "min": 40.0,
-      "max": 47.0,
-      "mean": 42.333333333333336,
-      "median": 40.0,
-      "range": 7.0
-    },
-    {
-      "group": "raw9|FBF0|N8",
-      "n": 2,
-      "min": 50.0,
-      "max": 50.0,
-      "mean": 50.0,
-      "median": 50.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBF0|N9",
-      "n": 1,
-      "min": 0.0,
-      "max": 0.0,
-      "mean": 0.0,
-      "median": 0.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBF0|P2",
-      "n": 3,
-      "min": 37.0,
-      "max": 42.0,
-      "mean": 38.666666666666664,
-      "median": 37.0,
-      "range": 5.0
-    },
-    {
-      "group": "raw9|FBF0|R1",
-      "n": 3,
-      "min": 95.0,
-      "max": 97.0,
-      "mean": 95.66666666666667,
-      "median": 95.0,
-      "range": 2.0
-    },
-    {
-      "group": "raw9|FBF0|R2",
-      "n": 3,
-      "min": 2.0,
-      "max": 2.0,
-      "mean": 2.0,
-      "median": 2.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBFa|B02",
-      "n": 1,
-      "min": 15.0,
-      "max": 15.0,
-      "mean": 15.0,
-      "median": 15.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBFa|B07",
-      "n": 2,
-      "min": 60.0,
-      "max": 70.0,
-      "mean": 65.0,
-      "median": 65.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw9|FBFa|C1",
-      "n": 2,
-      "min": 35.0,
-      "max": 58.0,
-      "mean": 46.5,
-      "median": 46.5,
-      "range": 23.0
-    },
-    {
-      "group": "raw9|FBFa|C2",
-      "n": 3,
-      "min": 47.0,
-      "max": 73.0,
-      "mean": 64.0,
-      "median": 72.0,
-      "range": 26.0
-    },
-    {
-      "group": "raw9|FBFa|C3",
-      "n": 3,
-      "min": 18.0,
-      "max": 35.0,
-      "mean": 29.333333333333332,
-      "median": 35.0,
-      "range": 17.0
-    },
-    {
-      "group": "raw9|FBFa|C4",
-      "n": 3,
-      "min": 62.0,
-      "max": 68.0,
-      "mean": 65.0,
-      "median": 65.0,
-      "range": 6.0
-    },
-    {
-      "group": "raw9|FBFa|D1",
-      "n": 3,
-      "min": 38.0,
-      "max": 55.0,
-      "mean": 44.333333333333336,
-      "median": 40.0,
-      "range": 17.0
-    },
-    {
-      "group": "raw9|FBFa|D2",
-      "n": 2,
-      "min": 75.0,
-      "max": 75.0,
-      "mean": 75.0,
-      "median": 75.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBFa|D3",
-      "n": 3,
-      "min": 0.0,
-      "max": 37.0,
-      "mean": 17.333333333333332,
-      "median": 15.0,
-      "range": 37.0
-    },
-    {
-      "group": "raw9|FBFa|E01",
-      "n": 1,
-      "min": 25.0,
-      "max": 25.0,
-      "mean": 25.0,
-      "median": 25.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBFa|E02",
-      "n": 3,
-      "min": 27.5,
-      "max": 62.0,
-      "mean": 39.166666666666664,
-      "median": 28.0,
-      "range": 34.5
-    },
-    {
-      "group": "raw9|FBFa|N1",
-      "n": 2,
-      "min": 42.0,
-      "max": 42.0,
-      "mean": 42.0,
-      "median": 42.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBFa|N3",
-      "n": 3,
-      "min": 45.0,
-      "max": 68.0,
-      "mean": 58.333333333333336,
-      "median": 62.0,
-      "range": 23.0
-    },
-    {
-      "group": "raw9|FBFa|N4",
-      "n": 3,
-      "min": 12.0,
-      "max": 70.0,
-      "mean": 35.666666666666664,
-      "median": 25.0,
-      "range": 58.0
-    },
-    {
-      "group": "raw9|FBFa|N6",
-      "n": 2,
-      "min": 42.0,
-      "max": 45.0,
-      "mean": 43.5,
-      "median": 43.5,
-      "range": 3.0
-    },
-    {
-      "group": "raw9|FBFa|N8",
-      "n": 2,
-      "min": 50.0,
-      "max": 50.0,
-      "mean": 50.0,
-      "median": 50.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw9|FBFa|N9",
-      "n": 3,
-      "min": 35.0,
-      "max": 70.0,
-      "mean": 50.0,
-      "median": 45.0,
-      "range": 35.0
-    },
-    {
-      "group": "raw9|FBFa|P2",
-      "n": 3,
-      "min": 45.0,
-      "max": 72.0,
-      "mean": 60.666666666666664,
-      "median": 65.0,
-      "range": 27.0
-    },
-    {
-      "group": "raw9|FBFa|R1",
-      "n": 3,
-      "min": 92.0,
-      "max": 96.0,
-      "mean": 94.33333333333333,
-      "median": 95.0,
-      "range": 4.0
-    },
-    {
-      "group": "raw9|FBFa|R2",
-      "n": 3,
-      "min": 1.0,
-      "max": 3.0,
-      "mean": 2.0,
-      "median": 2.0,
-      "range": 2.0
+      "range": 97.0
+    },
+    "qualified_value_count": 14,
+    "qualified_values": [
+      10,
+      25,
+      57.5,
+      2,
+      40,
+      30,
+      50,
+      20,
+      35,
+      50,
+      40,
+      27.5,
+      55,
+      40
+    ],
+    "by_collection": {
+      "pilot1": {
+        "n": 9,
+        "min": 8.0,
+        "max": 50.0,
+        "mean": 29.555555555555557,
+        "median": 32.0,
+        "range": 42.0
+      },
+      "raw10": {
+        "n": 35,
+        "min": 2.0,
+        "max": 95.0,
+        "mean": 41.542857142857144,
+        "median": 40.0,
+        "range": 93.0
+      },
+      "raw11": {
+        "n": 72,
+        "min": 2.0,
+        "max": 90.0,
+        "mean": 42.25,
+        "median": 42.0,
+        "range": 88.0
+      },
+      "raw2": {
+        "n": 23,
+        "min": 10.0,
+        "max": 58.0,
+        "mean": 28.17391304347826,
+        "median": 25.0,
+        "range": 48.0
+      },
+      "raw3": {
+        "n": 5,
+        "min": 15.0,
+        "max": 42.0,
+        "mean": 25.8,
+        "median": 25.0,
+        "range": 27.0
+      },
+      "raw4": {
+        "n": 4,
+        "min": 0.0,
+        "max": 45.0,
+        "mean": 20.5,
+        "median": 18.5,
+        "range": 45.0
+      },
+      "raw5": {
+        "n": 33,
+        "min": 5.0,
+        "max": 50.0,
+        "mean": 28.484848484848484,
+        "median": 27.0,
+        "range": 45.0
+      },
+      "raw6": {
+        "n": 106,
+        "min": 1.0,
+        "max": 92.0,
+        "mean": 32.70754716981132,
+        "median": 30.0,
+        "range": 91.0
+      },
+      "raw7": {
+        "n": 479,
+        "min": 1.0,
+        "max": 97.0,
+        "mean": 38.78914405010438,
+        "median": 37.0,
+        "range": 96.0
+      },
+      "raw8": {
+        "n": 116,
+        "min": 0.0,
+        "max": 97.0,
+        "mean": 40.14224137931034,
+        "median": 42.0,
+        "range": 97.0
+      },
+      "raw9": {
+        "n": 368,
+        "min": 0.0,
+        "max": 97.0,
+        "mean": 42.85733695652174,
+        "median": 42.0,
+        "range": 97.0
+      }
+    },
+    "by_item": {
+      "A1": {
+        "n": 24,
+        "min": 0.0,
+        "max": 50.0,
+        "mean": 24.416666666666668,
+        "median": 25.0,
+        "range": 50.0
+      },
+      "B01": {
+        "n": 29,
+        "min": 0.0,
+        "max": 75.0,
+        "mean": 41.37931034482759,
+        "median": 40.0,
+        "range": 75.0
+      },
+      "B02": {
+        "n": 18,
+        "min": 15.0,
+        "max": 40.0,
+        "mean": 23.333333333333332,
+        "median": 25.0,
+        "range": 25.0
+      },
+      "B04": {
+        "n": 22,
+        "min": 1.0,
+        "max": 25.0,
+        "mean": 8.681818181818182,
+        "median": 5.0,
+        "range": 24.0
+      },
+      "B05": {
+        "n": 25,
+        "min": 0.0,
+        "max": 60.0,
+        "mean": 23.56,
+        "median": 25.0,
+        "range": 60.0
+      },
+      "B07": {
+        "n": 42,
+        "min": 25.0,
+        "max": 75.0,
+        "mean": 45.214285714285715,
+        "median": 45.0,
+        "range": 50.0
+      },
+      "C1": {
+        "n": 56,
+        "min": 27.0,
+        "max": 72.0,
+        "mean": 45.642857142857146,
+        "median": 42.0,
+        "range": 45.0
+      },
+      "C2": {
+        "n": 50,
+        "min": 42.0,
+        "max": 85.0,
+        "mean": 67.07,
+        "median": 72.0,
+        "range": 43.0
+      },
+      "C3": {
+        "n": 55,
+        "min": 5.0,
+        "max": 72.0,
+        "mean": 33.8,
+        "median": 35.0,
+        "range": 67.0
+      },
+      "C4": {
+        "n": 56,
+        "min": 42.0,
+        "max": 85.0,
+        "mean": 62.69642857142857,
+        "median": 65.0,
+        "range": 43.0
+      },
+      "D1": {
+        "n": 56,
+        "min": 10.0,
+        "max": 73.0,
+        "mean": 37.5,
+        "median": 36.5,
+        "range": 63.0
+      },
+      "D2": {
+        "n": 55,
+        "min": 35.0,
+        "max": 75.0,
+        "mean": 61.654545454545456,
+        "median": 65.0,
+        "range": 40.0
+      },
+      "D3": {
+        "n": 50,
+        "min": 0.0,
+        "max": 75.0,
+        "mean": 25.3,
+        "median": 25.0,
+        "range": 75.0
+      },
+      "E01": {
+        "n": 94,
+        "min": 5.0,
+        "max": 50.0,
+        "mean": 20.0,
+        "median": 20.0,
+        "range": 45.0
+      },
+      "E02": {
+        "n": 56,
+        "min": 10.0,
+        "max": 65.0,
+        "mean": 29.991071428571427,
+        "median": 27.75,
+        "range": 55.0
+      },
+      "N1": {
+        "n": 54,
+        "min": 22.0,
+        "max": 72.0,
+        "mean": 40.666666666666664,
+        "median": 38.0,
+        "range": 50.0
+      },
+      "N3": {
+        "n": 54,
+        "min": 32.0,
+        "max": 82.0,
+        "mean": 52.148148148148145,
+        "median": 46.0,
+        "range": 50.0
+      },
+      "N4": {
+        "n": 98,
+        "min": 12.0,
+        "max": 70.0,
+        "mean": 33.744897959183675,
+        "median": 35.0,
+        "range": 58.0
+      },
+      "N6": {
+        "n": 50,
+        "min": 0.0,
+        "max": 52.0,
+        "mean": 36.9,
+        "median": 40.0,
+        "range": 52.0
+      },
+      "N8": {
+        "n": 50,
+        "min": 25.0,
+        "max": 65.0,
+        "mean": 48.32,
+        "median": 50.0,
+        "range": 40.0
+      },
+      "N9": {
+        "n": 87,
+        "min": 0.0,
+        "max": 70.0,
+        "mean": 29.091954022988507,
+        "median": 28.0,
+        "range": 70.0
+      },
+      "P2": {
+        "n": 56,
+        "min": 27.0,
+        "max": 72.0,
+        "mean": 41.857142857142854,
+        "median": 41.0,
+        "range": 45.0
+      },
+      "R1": {
+        "n": 56,
+        "min": 72.0,
+        "max": 97.0,
+        "mean": 88.96428571428571,
+        "median": 92.0,
+        "range": 25.0
+      },
+      "R2": {
+        "n": 57,
+        "min": 1.0,
+        "max": 6.0,
+        "mean": 2.087719298245614,
+        "median": 2.0,
+        "range": 5.0
+      }
+    },
+    "by_collection_cell": {
+      "pilot1|ASb": {
+        "n": 2,
+        "min": 35.0,
+        "max": 38.0,
+        "mean": 36.5,
+        "median": 36.5,
+        "range": 3.0
+      },
+      "pilot1|C0": {
+        "n": 7,
+        "min": 8.0,
+        "max": 50.0,
+        "mean": 27.571428571428573,
+        "median": 25.0,
+        "range": 42.0
+      },
+      "raw10|NOISE0": {
+        "n": 17,
+        "min": 2.0,
+        "max": 95.0,
+        "mean": 38.411764705882355,
+        "median": 35.0,
+        "range": 93.0
+      },
+      "raw10|NOISEa": {
+        "n": 18,
+        "min": 3.0,
+        "max": 92.0,
+        "mean": 44.5,
+        "median": 42.0,
+        "range": 89.0
+      },
+      "raw11|SSC0": {
+        "n": 16,
+        "min": 2.0,
+        "max": 85.0,
+        "mean": 46.625,
+        "median": 47.0,
+        "range": 83.0
+      },
+      "raw11|SSCa": {
+        "n": 19,
+        "min": 2.0,
+        "max": 87.0,
+        "mean": 39.26315789473684,
+        "median": 38.0,
+        "range": 85.0
+      },
+      "raw11|SST0": {
+        "n": 19,
+        "min": 2.0,
+        "max": 90.0,
+        "mean": 39.1578947368421,
+        "median": 37.0,
+        "range": 88.0
+      },
+      "raw11|SSTa": {
+        "n": 18,
+        "min": 2.0,
+        "max": 87.0,
+        "mean": 44.77777777777778,
+        "median": 42.5,
+        "range": 85.0
+      },
+      "raw2|ASa": {
+        "n": 3,
+        "min": 17.0,
+        "max": 45.0,
+        "mean": 33.333333333333336,
+        "median": 38.0,
+        "range": 28.0
+      },
+      "raw2|ASb": {
+        "n": 3,
+        "min": 23.0,
+        "max": 25.0,
+        "mean": 24.333333333333332,
+        "median": 25.0,
+        "range": 2.0
+      },
+      "raw2|C": {
+        "n": 11,
+        "min": 10.0,
+        "max": 35.0,
+        "mean": 25.0,
+        "median": 25.0,
+        "range": 25.0
+      },
+      "raw2|Fa": {
+        "n": 3,
+        "min": 25.0,
+        "max": 35.0,
+        "mean": 29.333333333333332,
+        "median": 28.0,
+        "range": 10.0
+      },
+      "raw2|Ha": {
+        "n": 3,
+        "min": 22.0,
+        "max": 58.0,
+        "mean": 37.333333333333336,
+        "median": 32.0,
+        "range": 36.0
+      },
+      "raw3|Fa": {
+        "n": 3,
+        "min": 22.0,
+        "max": 42.0,
+        "mean": 29.666666666666668,
+        "median": 25.0,
+        "range": 20.0
+      },
+      "raw3|Ha": {
+        "n": 2,
+        "min": 15.0,
+        "max": 25.0,
+        "mean": 20.0,
+        "median": 20.0,
+        "range": 10.0
+      },
+      "raw4|CPa2": {
+        "n": 1,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "range": 0.0
+      },
+      "raw4|Fa2": {
+        "n": 2,
+        "min": 22.0,
+        "max": 45.0,
+        "mean": 33.5,
+        "median": 33.5,
+        "range": 23.0
+      },
+      "raw4|Ha2": {
+        "n": 1,
+        "min": 15.0,
+        "max": 15.0,
+        "mean": 15.0,
+        "median": 15.0,
+        "range": 0.0
+      },
+      "raw5|K0AS0": {
+        "n": 3,
+        "min": 23.0,
+        "max": 50.0,
+        "mean": 36.666666666666664,
+        "median": 37.0,
+        "range": 27.0
+      },
+      "raw5|K0ASa": {
+        "n": 3,
+        "min": 5.0,
+        "max": 27.0,
+        "mean": 15.666666666666666,
+        "median": 15.0,
+        "range": 22.0
+      },
+      "raw5|K0F0": {
+        "n": 2,
+        "min": 10.0,
+        "max": 47.0,
+        "mean": 28.5,
+        "median": 28.5,
+        "range": 37.0
+      },
+      "raw5|K0Fa": {
+        "n": 3,
+        "min": 12.0,
+        "max": 42.0,
+        "mean": 23.0,
+        "median": 15.0,
+        "range": 30.0
+      },
+      "raw5|K0H0": {
+        "n": 4,
+        "min": 10.0,
+        "max": 47.0,
+        "mean": 28.75,
+        "median": 29.0,
+        "range": 37.0
+      },
+      "raw5|K0Ha": {
+        "n": 4,
+        "min": 15.0,
+        "max": 42.0,
+        "mean": 25.0,
+        "median": 21.5,
+        "range": 27.0
+      },
+      "raw5|K1AS0": {
+        "n": 2,
+        "min": 15.0,
+        "max": 30.0,
+        "mean": 22.5,
+        "median": 22.5,
+        "range": 15.0
+      },
+      "raw5|K1ASa": {
+        "n": 3,
+        "min": 25.0,
+        "max": 43.0,
+        "mean": 32.666666666666664,
+        "median": 30.0,
+        "range": 18.0
+      },
+      "raw5|K1F0": {
+        "n": 1,
+        "min": 47.0,
+        "max": 47.0,
+        "mean": 47.0,
+        "median": 47.0,
+        "range": 0.0
+      },
+      "raw5|K1Fa": {
+        "n": 3,
+        "min": 15.0,
+        "max": 48.0,
+        "mean": 26.0,
+        "median": 15.0,
+        "range": 33.0
+      },
+      "raw5|K1H0": {
+        "n": 2,
+        "min": 25.0,
+        "max": 47.0,
+        "mean": 36.0,
+        "median": 36.0,
+        "range": 22.0
+      },
+      "raw5|K1Ha": {
+        "n": 3,
+        "min": 25.0,
+        "max": 42.0,
+        "mean": 34.0,
+        "median": 35.0,
+        "range": 17.0
+      },
+      "raw6|C": {
+        "n": 35,
+        "min": 1.0,
+        "max": 65.0,
+        "mean": 23.257142857142856,
+        "median": 20.0,
+        "range": 64.0
+      },
+      "raw6|HQ": {
+        "n": 32,
+        "min": 12.0,
+        "max": 45.0,
+        "mean": 28.90625,
+        "median": 29.0,
+        "range": 33.0
+      },
+      "raw6|SCR0": {
+        "n": 20,
+        "min": 2.0,
+        "max": 87.0,
+        "mean": 41.2,
+        "median": 39.5,
+        "range": 85.0
+      },
+      "raw6|SCRa": {
+        "n": 19,
+        "min": 2.0,
+        "max": 92.0,
+        "mean": 47.578947368421055,
+        "median": 45.0,
+        "range": 90.0
+      },
+      "raw7|AQ": {
+        "n": 63,
+        "min": 1.0,
+        "max": 92.0,
+        "mean": 37.65079365079365,
+        "median": 35.0,
+        "range": 91.0
+      },
+      "raw7|ASQ": {
+        "n": 65,
+        "min": 2.0,
+        "max": 82.0,
+        "mean": 40.16923076923077,
+        "median": 42.0,
+        "range": 80.0
+      },
+      "raw7|C": {
+        "n": 221,
+        "min": 1.0,
+        "max": 97.0,
+        "mean": 38.15384615384615,
+        "median": 35.0,
+        "range": 96.0
+      },
+      "raw7|FQ": {
+        "n": 63,
+        "min": 2.0,
+        "max": 92.0,
+        "mean": 40.17460317460318,
+        "median": 38.0,
+        "range": 90.0
+      },
+      "raw7|HQ": {
+        "n": 67,
+        "min": 1.0,
+        "max": 85.0,
+        "mean": 39.3134328358209,
+        "median": 40.0,
+        "range": 84.0
+      },
+      "raw8|FBH0": {
+        "n": 54,
+        "min": 0.0,
+        "max": 92.0,
+        "mean": 39.157407407407405,
+        "median": 42.0,
+        "range": 92.0
+      },
+      "raw8|FBHa": {
+        "n": 62,
+        "min": 0.0,
+        "max": 97.0,
+        "mean": 41.0,
+        "median": 42.0,
+        "range": 97.0
+      },
+      "raw9|FBA0": {
+        "n": 52,
+        "min": 1.0,
+        "max": 85.0,
+        "mean": 41.78846153846154,
+        "median": 42.0,
+        "range": 84.0
+      },
+      "raw9|FBAS0": {
+        "n": 58,
+        "min": 0.0,
+        "max": 92.0,
+        "mean": 41.60344827586207,
+        "median": 42.0,
+        "range": 92.0
+      },
+      "raw9|FBASa": {
+        "n": 53,
+        "min": 2.0,
+        "max": 95.0,
+        "mean": 43.75471698113208,
+        "median": 42.0,
+        "range": 93.0
+      },
+      "raw9|FBAa": {
+        "n": 46,
+        "min": 0.0,
+        "max": 88.0,
+        "mean": 43.391304347826086,
+        "median": 40.0,
+        "range": 88.0
+      },
+      "raw9|FBCPa": {
+        "n": 54,
+        "min": 0.0,
+        "max": 95.0,
+        "mean": 43.7962962962963,
+        "median": 43.5,
+        "range": 95.0
+      },
+      "raw9|FBF0": {
+        "n": 55,
+        "min": 0.0,
+        "max": 97.0,
+        "mean": 38.92727272727273,
+        "median": 40.0,
+        "range": 97.0
+      },
+      "raw9|FBFa": {
+        "n": 50,
+        "min": 0.0,
+        "max": 96.0,
+        "mean": 47.29,
+        "median": 45.0,
+        "range": 96.0
+      }
     }
-  ],
-  "cold_numeric_distribution_groups": [
-    {
-      "group": "pilot1|C0|A1",
-      "n": 1,
-      "min": 50.0,
-      "max": 50.0,
-      "mean": 50.0,
-      "median": 50.0,
-      "range": 0.0
-    },
-    {
-      "group": "pilot1|C0|E01",
-      "n": 2,
-      "min": 20.0,
-      "max": 25.0,
-      "mean": 22.5,
-      "median": 22.5,
-      "range": 5.0
-    },
-    {
-      "group": "pilot1|C0|N4",
-      "n": 2,
-      "min": 32.0,
-      "max": 38.0,
-      "mean": 35.0,
-      "median": 35.0,
-      "range": 6.0
-    },
-    {
-      "group": "pilot1|C0|N9",
-      "n": 2,
-      "min": 8.0,
-      "max": 20.0,
-      "mean": 14.0,
-      "median": 14.0,
-      "range": 12.0
-    },
-    {
-      "group": "raw2|C|A1",
-      "n": 2,
-      "min": 25.0,
-      "max": 35.0,
-      "mean": 30.0,
-      "median": 30.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw2|C|E01",
-      "n": 3,
-      "min": 10.0,
-      "max": 20.0,
-      "mean": 16.666666666666668,
-      "median": 20.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw2|C|N4",
-      "n": 3,
-      "min": 32.0,
-      "max": 35.0,
-      "mean": 34.0,
-      "median": 35.0,
-      "range": 3.0
-    },
-    {
-      "group": "raw2|C|N9",
-      "n": 3,
-      "min": 10.0,
-      "max": 28.0,
-      "mean": 21.0,
-      "median": 25.0,
-      "range": 18.0
-    },
-    {
-      "group": "raw6|C|A1",
-      "n": 5,
+  },
+  "cold_numeric_values": {
+    "overall": {
+      "n": 564,
       "min": 1.0,
-      "max": 30.0,
-      "mean": 14.2,
-      "median": 10.0,
-      "range": 29.0
-    },
-    {
-      "group": "raw6|C|E01",
-      "n": 10,
-      "min": 5.0,
-      "max": 25.0,
-      "mean": 14.5,
-      "median": 15.0,
-      "range": 20.0
-    },
-    {
-      "group": "raw6|C|N4",
-      "n": 10,
-      "min": 30.0,
-      "max": 65.0,
-      "mean": 38.8,
-      "median": 35.0,
-      "range": 35.0
-    },
-    {
-      "group": "raw6|C|N9",
-      "n": 10,
-      "min": 20.0,
-      "max": 25.0,
-      "mean": 21.0,
-      "median": 20.0,
-      "range": 5.0
-    },
-    {
-      "group": "raw6|HQ|A1",
-      "n": 2,
-      "min": 30.0,
-      "max": 30.0,
-      "mean": 30.0,
-      "median": 30.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw6|HQ|E01",
-      "n": 10,
-      "min": 12.0,
-      "max": 35.0,
-      "mean": 20.7,
-      "median": 20.0,
-      "range": 23.0
-    },
-    {
-      "group": "raw6|HQ|N4",
-      "n": 10,
-      "min": 25.0,
-      "max": 42.0,
-      "mean": 32.2,
-      "median": 32.0,
-      "range": 17.0
-    },
-    {
-      "group": "raw6|HQ|N9",
-      "n": 10,
-      "min": 25.0,
-      "max": 45.0,
-      "mean": 33.6,
-      "median": 33.5,
-      "range": 20.0
-    },
-    {
-      "group": "raw7|AQ|A1",
-      "n": 1,
-      "min": 35.0,
-      "max": 35.0,
-      "mean": 35.0,
-      "median": 35.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw7|AQ|B01",
-      "n": 1,
-      "min": 40.0,
-      "max": 40.0,
-      "mean": 40.0,
-      "median": 40.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw7|AQ|B02",
-      "n": 1,
-      "min": 30.0,
-      "max": 30.0,
-      "mean": 30.0,
-      "median": 30.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw7|AQ|B04",
-      "n": 1,
-      "min": 1.0,
-      "max": 1.0,
-      "mean": 1.0,
-      "median": 1.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw7|AQ|B05",
-      "n": 2,
-      "min": 25.0,
-      "max": 30.0,
-      "mean": 27.5,
-      "median": 27.5,
-      "range": 5.0
-    },
-    {
-      "group": "raw7|AQ|B07",
-      "n": 3,
-      "min": 30.0,
-      "max": 35.0,
-      "mean": 33.333333333333336,
-      "median": 35.0,
-      "range": 5.0
-    },
-    {
-      "group": "raw7|AQ|C1",
-      "n": 3,
-      "min": 42.0,
-      "max": 62.0,
-      "mean": 48.666666666666664,
-      "median": 42.0,
-      "range": 20.0
-    },
-    {
-      "group": "raw7|AQ|C2",
-      "n": 3,
-      "min": 65.0,
-      "max": 72.0,
-      "mean": 69.66666666666667,
-      "median": 72.0,
-      "range": 7.0
-    },
-    {
-      "group": "raw7|AQ|C3",
-      "n": 3,
-      "min": 25.0,
-      "max": 35.0,
-      "mean": 28.333333333333332,
-      "median": 25.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|AQ|C4",
-      "n": 3,
-      "min": 62.0,
-      "max": 72.0,
-      "mean": 68.66666666666667,
-      "median": 72.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|AQ|D1",
-      "n": 3,
-      "min": 20.0,
-      "max": 25.0,
-      "mean": 21.666666666666668,
-      "median": 20.0,
-      "range": 5.0
-    },
-    {
-      "group": "raw7|AQ|D2",
-      "n": 3,
-      "min": 40.0,
-      "max": 55.0,
-      "mean": 45.666666666666664,
-      "median": 42.0,
-      "range": 15.0
-    },
-    {
-      "group": "raw7|AQ|D3",
-      "n": 3,
-      "min": 15.0,
-      "max": 25.0,
-      "mean": 21.666666666666668,
-      "median": 25.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|AQ|E01",
-      "n": 3,
-      "min": 5.0,
-      "max": 25.0,
-      "mean": 15.0,
-      "median": 15.0,
-      "range": 20.0
-    },
-    {
-      "group": "raw7|AQ|E02",
-      "n": 3,
-      "min": 15.0,
-      "max": 25.0,
-      "mean": 21.666666666666668,
-      "median": 25.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|AQ|N1",
-      "n": 3,
-      "min": 38.0,
-      "max": 68.0,
-      "mean": 48.0,
-      "median": 38.0,
-      "range": 30.0
-    },
-    {
-      "group": "raw7|AQ|N3",
-      "n": 3,
-      "min": 40.0,
-      "max": 72.0,
-      "mean": 51.333333333333336,
-      "median": 42.0,
-      "range": 32.0
-    },
-    {
-      "group": "raw7|AQ|N4",
-      "n": 3,
-      "min": 35.0,
-      "max": 35.0,
-      "mean": 35.0,
-      "median": 35.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw7|AQ|N6",
-      "n": 3,
-      "min": 40.0,
-      "max": 42.0,
-      "mean": 40.666666666666664,
-      "median": 40.0,
-      "range": 2.0
-    },
-    {
-      "group": "raw7|AQ|N8",
-      "n": 3,
-      "min": 48.0,
-      "max": 50.0,
-      "mean": 49.333333333333336,
-      "median": 50.0,
-      "range": 2.0
-    },
-    {
-      "group": "raw7|AQ|N9",
-      "n": 3,
-      "min": 5.0,
-      "max": 15.0,
-      "mean": 11.666666666666666,
-      "median": 15.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|AQ|P2",
-      "n": 3,
-      "min": 28.0,
-      "max": 38.0,
-      "mean": 34.666666666666664,
-      "median": 38.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|AQ|R1",
-      "n": 3,
-      "min": 87.0,
-      "max": 92.0,
-      "mean": 90.33333333333333,
-      "median": 92.0,
-      "range": 5.0
-    },
-    {
-      "group": "raw7|AQ|R2",
-      "n": 3,
-      "min": 1.0,
-      "max": 2.0,
-      "mean": 1.6666666666666667,
-      "median": 2.0,
-      "range": 1.0
-    },
-    {
-      "group": "raw7|ASQ|A1",
-      "n": 1,
-      "min": 35.0,
-      "max": 35.0,
-      "mean": 35.0,
-      "median": 35.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw7|ASQ|B01",
-      "n": 3,
-      "min": 25.0,
-      "max": 60.0,
-      "mean": 41.666666666666664,
-      "median": 40.0,
-      "range": 35.0
-    },
-    {
-      "group": "raw7|ASQ|B02",
-      "n": 1,
-      "min": 35.0,
-      "max": 35.0,
-      "mean": 35.0,
-      "median": 35.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw7|ASQ|B04",
-      "n": 1,
-      "min": 15.0,
-      "max": 15.0,
-      "mean": 15.0,
-      "median": 15.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw7|ASQ|B05",
-      "n": 2,
-      "min": 15.0,
-      "max": 25.0,
-      "mean": 20.0,
-      "median": 20.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|ASQ|B07",
-      "n": 3,
-      "min": 45.0,
-      "max": 50.0,
-      "mean": 48.333333333333336,
-      "median": 50.0,
-      "range": 5.0
-    },
-    {
-      "group": "raw7|ASQ|C1",
-      "n": 3,
-      "min": 42.0,
-      "max": 58.0,
-      "mean": 47.333333333333336,
-      "median": 42.0,
-      "range": 16.0
-    },
-    {
-      "group": "raw7|ASQ|C2",
-      "n": 3,
-      "min": 42.0,
-      "max": 72.0,
-      "mean": 52.0,
-      "median": 42.0,
-      "range": 30.0
-    },
-    {
-      "group": "raw7|ASQ|C3",
-      "n": 3,
-      "min": 28.0,
-      "max": 42.0,
-      "mean": 37.333333333333336,
-      "median": 42.0,
-      "range": 14.0
-    },
-    {
-      "group": "raw7|ASQ|C4",
-      "n": 3,
-      "min": 42.0,
-      "max": 58.0,
-      "mean": 50.666666666666664,
-      "median": 52.0,
-      "range": 16.0
-    },
-    {
-      "group": "raw7|ASQ|D1",
-      "n": 3,
-      "min": 35.0,
-      "max": 42.0,
-      "mean": 39.666666666666664,
-      "median": 42.0,
-      "range": 7.0
-    },
-    {
-      "group": "raw7|ASQ|D2",
-      "n": 3,
-      "min": 58.0,
-      "max": 68.0,
-      "mean": 61.333333333333336,
-      "median": 58.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|ASQ|D3",
-      "n": 3,
-      "min": 27.0,
-      "max": 45.0,
-      "mean": 35.666666666666664,
-      "median": 35.0,
-      "range": 18.0
-    },
-    {
-      "group": "raw7|ASQ|E01",
-      "n": 3,
-      "min": 15.0,
-      "max": 25.0,
-      "mean": 21.666666666666668,
-      "median": 25.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|ASQ|E02",
-      "n": 3,
-      "min": 28.0,
-      "max": 52.0,
-      "mean": 39.333333333333336,
-      "median": 38.0,
-      "range": 24.0
-    },
-    {
-      "group": "raw7|ASQ|N1",
-      "n": 3,
-      "min": 42.0,
-      "max": 52.0,
-      "mean": 45.333333333333336,
-      "median": 42.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|ASQ|N3",
-      "n": 3,
-      "min": 42.0,
-      "max": 52.0,
-      "mean": 48.666666666666664,
-      "median": 52.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|ASQ|N4",
-      "n": 3,
-      "min": 25.0,
-      "max": 42.0,
-      "mean": 33.0,
-      "median": 32.0,
-      "range": 17.0
-    },
-    {
-      "group": "raw7|ASQ|N6",
-      "n": 3,
-      "min": 35.0,
-      "max": 48.0,
-      "mean": 41.666666666666664,
-      "median": 42.0,
-      "range": 13.0
-    },
-    {
-      "group": "raw7|ASQ|N8",
-      "n": 3,
-      "min": 25.0,
-      "max": 48.0,
-      "mean": 32.666666666666664,
-      "median": 25.0,
-      "range": 23.0
-    },
-    {
-      "group": "raw7|ASQ|N9",
-      "n": 3,
-      "min": 25.0,
-      "max": 42.0,
-      "mean": 34.0,
-      "median": 35.0,
-      "range": 17.0
-    },
-    {
-      "group": "raw7|ASQ|P2",
-      "n": 3,
-      "min": 32.0,
-      "max": 42.0,
-      "mean": 36.333333333333336,
-      "median": 35.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|ASQ|R1",
-      "n": 3,
-      "min": 72.0,
-      "max": 82.0,
-      "mean": 78.66666666666667,
-      "median": 82.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|ASQ|R2",
-      "n": 3,
-      "min": 2.0,
-      "max": 5.0,
-      "mean": 3.3333333333333335,
-      "median": 3.0,
-      "range": 3.0
-    },
-    {
-      "group": "raw7|C|A1",
-      "n": 4,
-      "min": 20.0,
-      "max": 50.0,
-      "mean": 31.25,
-      "median": 27.5,
-      "range": 30.0
-    },
-    {
-      "group": "raw7|C|B01",
-      "n": 10,
-      "min": 25.0,
-      "max": 75.0,
-      "mean": 40.5,
-      "median": 37.5,
-      "range": 50.0
-    },
-    {
-      "group": "raw7|C|B02",
-      "n": 1,
-      "min": 20.0,
-      "max": 20.0,
-      "mean": 20.0,
-      "median": 20.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw7|C|B04",
-      "n": 7,
-      "min": 1.0,
-      "max": 10.0,
-      "mean": 5.285714285714286,
-      "median": 5.0,
-      "range": 9.0
-    },
-    {
-      "group": "raw7|C|B05",
-      "n": 9,
-      "min": 15.0,
-      "max": 60.0,
-      "mean": 33.111111111111114,
-      "median": 30.0,
-      "range": 45.0
-    },
-    {
-      "group": "raw7|C|B07",
-      "n": 10,
-      "min": 25.0,
-      "max": 40.0,
-      "mean": 35.0,
-      "median": 35.0,
-      "range": 15.0
-    },
-    {
-      "group": "raw7|C|C1",
-      "n": 10,
-      "min": 30.0,
-      "max": 68.0,
-      "mean": 43.0,
-      "median": 38.0,
-      "range": 38.0
-    },
-    {
-      "group": "raw7|C|C2",
-      "n": 10,
-      "min": 67.0,
-      "max": 75.0,
-      "mean": 70.8,
-      "median": 72.0,
-      "range": 8.0
-    },
-    {
-      "group": "raw7|C|C3",
-      "n": 10,
-      "min": 25.0,
-      "max": 45.0,
-      "mean": 29.9,
-      "median": 28.0,
-      "range": 20.0
-    },
-    {
-      "group": "raw7|C|C4",
-      "n": 10,
-      "min": 60.0,
-      "max": 72.0,
-      "mean": 66.5,
-      "median": 65.0,
-      "range": 12.0
-    },
-    {
-      "group": "raw7|C|D1",
-      "n": 10,
-      "min": 10.0,
-      "max": 25.0,
-      "mean": 15.9,
-      "median": 15.0,
-      "range": 15.0
-    },
-    {
-      "group": "raw7|C|D2",
-      "n": 10,
-      "min": 35.0,
-      "max": 65.0,
-      "mean": 44.5,
-      "median": 42.5,
-      "range": 30.0
-    },
-    {
-      "group": "raw7|C|D3",
-      "n": 10,
-      "min": 20.0,
-      "max": 40.0,
-      "mean": 28.5,
-      "median": 27.5,
-      "range": 20.0
-    },
-    {
-      "group": "raw7|C|E01",
-      "n": 10,
-      "min": 8.0,
-      "max": 20.0,
-      "mean": 14.3,
-      "median": 12.5,
-      "range": 12.0
-    },
-    {
-      "group": "raw7|C|E02",
-      "n": 10,
-      "min": 10.0,
-      "max": 25.0,
-      "mean": 17.1,
-      "median": 17.5,
-      "range": 15.0
-    },
-    {
-      "group": "raw7|C|N1",
-      "n": 10,
-      "min": 30.0,
-      "max": 72.0,
-      "mean": 56.0,
-      "median": 68.0,
-      "range": 42.0
-    },
-    {
-      "group": "raw7|C|N3",
-      "n": 10,
-      "min": 35.0,
-      "max": 75.0,
-      "mean": 55.7,
-      "median": 61.0,
-      "range": 40.0
-    },
-    {
-      "group": "raw7|C|N4",
-      "n": 10,
-      "min": 25.0,
-      "max": 40.0,
-      "mean": 34.5,
-      "median": 35.0,
-      "range": 15.0
-    },
-    {
-      "group": "raw7|C|N6",
-      "n": 10,
-      "min": 25.0,
-      "max": 45.0,
-      "mean": 35.5,
-      "median": 37.5,
-      "range": 20.0
-    },
-    {
-      "group": "raw7|C|N8",
-      "n": 10,
-      "min": 50.0,
-      "max": 50.0,
-      "mean": 50.0,
-      "median": 50.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw7|C|N9",
-      "n": 10,
-      "min": 10.0,
-      "max": 25.0,
-      "mean": 21.0,
-      "median": 22.5,
-      "range": 15.0
-    },
-    {
-      "group": "raw7|C|P2",
-      "n": 10,
-      "min": 30.0,
-      "max": 68.0,
-      "mean": 41.9,
-      "median": 38.0,
-      "range": 38.0
-    },
-    {
-      "group": "raw7|C|R1",
-      "n": 10,
-      "min": 87.0,
       "max": 97.0,
-      "mean": 93.3,
-      "median": 95.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|C|R2",
-      "n": 10,
-      "min": 1.0,
-      "max": 2.0,
-      "mean": 1.3,
-      "median": 1.0,
-      "range": 1.0
-    },
-    {
-      "group": "raw7|FQ|B01",
-      "n": 2,
-      "min": 35.0,
-      "max": 40.0,
-      "mean": 37.5,
-      "median": 37.5,
-      "range": 5.0
-    },
-    {
-      "group": "raw7|FQ|B02",
-      "n": 1,
-      "min": 15.0,
-      "max": 15.0,
-      "mean": 15.0,
-      "median": 15.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw7|FQ|B04",
-      "n": 1,
-      "min": 15.0,
-      "max": 15.0,
-      "mean": 15.0,
-      "median": 15.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw7|FQ|B05",
-      "n": 2,
-      "min": 15.0,
-      "max": 15.0,
-      "mean": 15.0,
-      "median": 15.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw7|FQ|B07",
-      "n": 3,
-      "min": 45.0,
-      "max": 55.0,
-      "mean": 48.333333333333336,
-      "median": 45.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|FQ|C1",
-      "n": 3,
-      "min": 28.0,
-      "max": 42.0,
-      "mean": 37.333333333333336,
-      "median": 42.0,
-      "range": 14.0
-    },
-    {
-      "group": "raw7|FQ|C2",
-      "n": 3,
-      "min": 50.0,
-      "max": 72.0,
-      "mean": 60.0,
-      "median": 58.0,
-      "range": 22.0
-    },
-    {
-      "group": "raw7|FQ|C3",
-      "n": 3,
-      "min": 28.0,
-      "max": 38.0,
-      "mean": 32.666666666666664,
-      "median": 32.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|FQ|C4",
-      "n": 3,
-      "min": 58.0,
-      "max": 72.0,
-      "mean": 66.0,
-      "median": 68.0,
-      "range": 14.0
-    },
-    {
-      "group": "raw7|FQ|D1",
-      "n": 3,
-      "min": 35.0,
-      "max": 60.0,
-      "mean": 49.0,
-      "median": 52.0,
-      "range": 25.0
-    },
-    {
-      "group": "raw7|FQ|D2",
-      "n": 3,
-      "min": 45.0,
-      "max": 58.0,
-      "mean": 51.666666666666664,
-      "median": 52.0,
-      "range": 13.0
-    },
-    {
-      "group": "raw7|FQ|D3",
-      "n": 3,
-      "min": 25.0,
-      "max": 35.0,
-      "mean": 31.666666666666668,
+      "mean": 36.8563829787234,
       "median": 35.0,
-      "range": 10.0
+      "range": 96.0
     },
-    {
-      "group": "raw7|FQ|E01",
-      "n": 3,
-      "min": 12.0,
-      "max": 28.0,
-      "mean": 21.666666666666668,
-      "median": 25.0,
-      "range": 16.0
-    },
-    {
-      "group": "raw7|FQ|E02",
-      "n": 3,
-      "min": 25.0,
-      "max": 38.0,
-      "mean": 31.666666666666668,
-      "median": 32.0,
-      "range": 13.0
-    },
-    {
-      "group": "raw7|FQ|N1",
-      "n": 3,
-      "min": 42.0,
-      "max": 42.0,
-      "mean": 42.0,
-      "median": 42.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw7|FQ|N3",
-      "n": 3,
-      "min": 58.0,
-      "max": 68.0,
-      "mean": 61.333333333333336,
-      "median": 58.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|FQ|N4",
-      "n": 3,
-      "min": 35.0,
-      "max": 42.0,
-      "mean": 38.333333333333336,
-      "median": 38.0,
-      "range": 7.0
-    },
-    {
-      "group": "raw7|FQ|N6",
-      "n": 3,
-      "min": 30.0,
-      "max": 35.0,
-      "mean": 32.333333333333336,
-      "median": 32.0,
-      "range": 5.0
-    },
-    {
-      "group": "raw7|FQ|N8",
-      "n": 3,
-      "min": 28.0,
-      "max": 50.0,
-      "mean": 37.666666666666664,
-      "median": 35.0,
-      "range": 22.0
-    },
-    {
-      "group": "raw7|FQ|N9",
-      "n": 3,
-      "min": 32.0,
-      "max": 32.0,
-      "mean": 32.0,
-      "median": 32.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw7|FQ|P2",
-      "n": 3,
-      "min": 32.0,
-      "max": 42.0,
-      "mean": 37.333333333333336,
-      "median": 38.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|FQ|R1",
-      "n": 3,
-      "min": 72.0,
-      "max": 92.0,
-      "mean": 84.0,
-      "median": 88.0,
-      "range": 20.0
-    },
-    {
-      "group": "raw7|FQ|R2",
-      "n": 3,
-      "min": 2.0,
-      "max": 6.0,
-      "mean": 3.6666666666666665,
-      "median": 3.0,
-      "range": 4.0
-    },
-    {
-      "group": "raw7|HQ|B01",
-      "n": 2,
-      "min": 30.0,
-      "max": 40.0,
-      "mean": 35.0,
-      "median": 35.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|HQ|B02",
-      "n": 2,
-      "min": 15.0,
-      "max": 25.0,
-      "mean": 20.0,
-      "median": 20.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|HQ|B04",
-      "n": 3,
-      "min": 15.0,
-      "max": 25.0,
-      "mean": 18.333333333333332,
-      "median": 15.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|HQ|B05",
-      "n": 3,
-      "min": 25.0,
-      "max": 35.0,
-      "mean": 30.0,
-      "median": 30.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|HQ|B07",
-      "n": 3,
-      "min": 40.0,
-      "max": 50.0,
-      "mean": 45.0,
-      "median": 45.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|HQ|C1",
-      "n": 3,
-      "min": 35.0,
-      "max": 58.0,
-      "mean": 45.0,
-      "median": 42.0,
-      "range": 23.0
-    },
-    {
-      "group": "raw7|HQ|C2",
-      "n": 3,
-      "min": 42.0,
-      "max": 72.0,
-      "mean": 58.666666666666664,
-      "median": 62.0,
-      "range": 30.0
-    },
-    {
-      "group": "raw7|HQ|C3",
-      "n": 3,
-      "min": 38.0,
-      "max": 52.0,
-      "mean": 44.0,
-      "median": 42.0,
-      "range": 14.0
-    },
-    {
-      "group": "raw7|HQ|C4",
-      "n": 3,
-      "min": 58.0,
-      "max": 70.0,
-      "mean": 63.333333333333336,
-      "median": 62.0,
-      "range": 12.0
-    },
-    {
-      "group": "raw7|HQ|D1",
-      "n": 3,
-      "min": 35.0,
-      "max": 35.0,
-      "mean": 35.0,
-      "median": 35.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw7|HQ|D2",
-      "n": 3,
-      "min": 45.0,
-      "max": 58.0,
-      "mean": 52.666666666666664,
-      "median": 55.0,
-      "range": 13.0
-    },
-    {
-      "group": "raw7|HQ|D3",
-      "n": 3,
-      "min": 25.0,
-      "max": 40.0,
-      "mean": 35.0,
-      "median": 40.0,
-      "range": 15.0
-    },
-    {
-      "group": "raw7|HQ|E01",
-      "n": 3,
-      "min": 12.0,
-      "max": 12.0,
-      "mean": 12.0,
-      "median": 12.0,
-      "range": 0.0
-    },
-    {
-      "group": "raw7|HQ|E02",
-      "n": 3,
-      "min": 23.0,
-      "max": 28.0,
-      "mean": 25.333333333333332,
-      "median": 25.0,
-      "range": 5.0
-    },
-    {
-      "group": "raw7|HQ|N1",
-      "n": 3,
-      "min": 38.0,
-      "max": 42.0,
-      "mean": 40.666666666666664,
-      "median": 42.0,
-      "range": 4.0
-    },
-    {
-      "group": "raw7|HQ|N3",
-      "n": 3,
-      "min": 48.0,
-      "max": 82.0,
-      "mean": 61.666666666666664,
-      "median": 55.0,
-      "range": 34.0
-    },
-    {
-      "group": "raw7|HQ|N4",
-      "n": 3,
-      "min": 28.0,
-      "max": 38.0,
-      "mean": 32.666666666666664,
-      "median": 32.0,
-      "range": 10.0
-    },
-    {
-      "group": "raw7|HQ|N6",
-      "n": 3,
-      "min": 25.0,
-      "max": 45.0,
-      "mean": 36.666666666666664,
-      "median": 40.0,
-      "range": 20.0
-    },
-    {
-      "group": "raw7|HQ|N8",
-      "n": 3,
-      "min": 42.0,
-      "max": 50.0,
-      "mean": 47.333333333333336,
-      "median": 50.0,
-      "range": 8.0
-    },
-    {
-      "group": "raw7|HQ|N9",
-      "n": 3,
-      "min": 15.0,
-      "max": 48.0,
-      "mean": 35.0,
-      "median": 42.0,
-      "range": 33.0
-    },
-    {
-      "group": "raw7|HQ|P2",
-      "n": 3,
-      "min": 28.0,
-      "max": 58.0,
-      "mean": 39.333333333333336,
-      "median": 32.0,
-      "range": 30.0
-    },
-    {
-      "group": "raw7|HQ|R1",
-      "n": 3,
-      "min": 78.0,
-      "max": 85.0,
-      "mean": 81.66666666666667,
-      "median": 82.0,
-      "range": 7.0
-    },
-    {
-      "group": "raw7|HQ|R2",
-      "n": 3,
-      "min": 1.0,
-      "max": 3.0,
-      "mean": 2.0,
-      "median": 2.0,
-      "range": 2.0
+    "by_collection": {
+      "pilot1": {
+        "n": 7,
+        "min": 8.0,
+        "max": 50.0,
+        "mean": 27.571428571428573,
+        "median": 25.0,
+        "range": 42.0
+      },
+      "raw2": {
+        "n": 11,
+        "min": 10.0,
+        "max": 35.0,
+        "mean": 25.0,
+        "median": 25.0,
+        "range": 25.0
+      },
+      "raw6": {
+        "n": 67,
+        "min": 1.0,
+        "max": 65.0,
+        "mean": 25.955223880597014,
+        "median": 25.0,
+        "range": 64.0
+      },
+      "raw7": {
+        "n": 479,
+        "min": 1.0,
+        "max": 97.0,
+        "mean": 38.78914405010438,
+        "median": 37.0,
+        "range": 96.0
+      }
     }
-  ],
-  "decode_noise_groups": [
-    {
-      "group": "NOISE0|B07",
-      "n": 1,
-      "min": 35.0,
-      "max": 35.0,
-      "mean": 35.0,
-      "median": 35.0,
-      "range": 0.0
-    },
-    {
-      "group": "NOISE0|C1",
-      "n": 1,
-      "min": 47.0,
-      "max": 47.0,
-      "mean": 47.0,
-      "median": 47.0,
-      "range": 0.0
-    },
-    {
-      "group": "NOISE0|C3",
-      "n": 1,
-      "min": 35.0,
-      "max": 35.0,
-      "mean": 35.0,
-      "median": 35.0,
-      "range": 0.0
-    },
-    {
-      "group": "NOISE0|C4",
-      "n": 1,
-      "min": 42.0,
-      "max": 42.0,
-      "mean": 42.0,
-      "median": 42.0,
-      "range": 0.0
-    },
-    {
-      "group": "NOISE0|D1",
-      "n": 1,
-      "min": 47.0,
-      "max": 47.0,
-      "mean": 47.0,
-      "median": 47.0,
-      "range": 0.0
-    },
-    {
-      "group": "NOISE0|D2",
-      "n": 1,
-      "min": 73.0,
-      "max": 73.0,
-      "mean": 73.0,
-      "median": 73.0,
-      "range": 0.0
-    },
-    {
-      "group": "NOISE0|D3",
-      "n": 1,
-      "min": 30.0,
-      "max": 30.0,
-      "mean": 30.0,
-      "median": 30.0,
-      "range": 0.0
-    },
-    {
-      "group": "NOISE0|E01",
-      "n": 1,
-      "min": 25.0,
-      "max": 25.0,
-      "mean": 25.0,
-      "median": 25.0,
-      "range": 0.0
-    },
-    {
-      "group": "NOISE0|E02",
-      "n": 1,
-      "min": 25.0,
-      "max": 25.0,
-      "mean": 25.0,
-      "median": 25.0,
-      "range": 0.0
-    },
-    {
-      "group": "NOISE0|N1",
-      "n": 1,
-      "min": 38.0,
-      "max": 38.0,
-      "mean": 38.0,
-      "median": 38.0,
-      "range": 0.0
-    },
-    {
-      "group": "NOISE0|N3",
-      "n": 1,
-      "min": 42.0,
-      "max": 42.0,
-      "mean": 42.0,
-      "median": 42.0,
-      "range": 0.0
-    },
-    {
-      "group": "NOISE0|N4",
-      "n": 1,
-      "min": 15.0,
-      "max": 15.0,
-      "mean": 15.0,
-      "median": 15.0,
-      "range": 0.0
-    },
-    {
-      "group": "NOISE0|N6",
-      "n": 1,
-      "min": 35.0,
-      "max": 35.0,
-      "mean": 35.0,
-      "median": 35.0,
-      "range": 0.0
-    },
-    {
-      "group": "NOISE0|N9",
-      "n": 1,
-      "min": 25.0,
-      "max": 25.0,
-      "mean": 25.0,
-      "median": 25.0,
-      "range": 0.0
-    },
-    {
-      "group": "NOISE0|P2",
-      "n": 1,
-      "min": 42.0,
-      "max": 42.0,
-      "mean": 42.0,
-      "median": 42.0,
-      "range": 0.0
-    },
-    {
-      "group": "NOISE0|R1",
-      "n": 1,
-      "min": 95.0,
+  },
+  "decode_noise_numeric_values": {
+    "overall": {
+      "n": 35,
+      "min": 2.0,
       "max": 95.0,
-      "mean": 95.0,
-      "median": 95.0,
-      "range": 0.0
-    },
-    {
-      "group": "NOISE0|R2",
-      "n": 1,
-      "min": 2.0,
-      "max": 2.0,
-      "mean": 2.0,
-      "median": 2.0,
-      "range": 0.0
-    },
-    {
-      "group": "NOISEa|B07",
-      "n": 1,
-      "min": 50.0,
-      "max": 50.0,
-      "mean": 50.0,
-      "median": 50.0,
-      "range": 0.0
-    },
-    {
-      "group": "NOISEa|C1",
-      "n": 1,
-      "min": 27.0,
-      "max": 27.0,
-      "mean": 27.0,
-      "median": 27.0,
-      "range": 0.0
-    },
-    {
-      "group": "NOISEa|C2",
-      "n": 1,
-      "min": 65.0,
-      "max": 65.0,
-      "mean": 65.0,
-      "median": 65.0,
-      "range": 0.0
-    },
-    {
-      "group": "NOISEa|C3",
-      "n": 1,
-      "min": 40.0,
-      "max": 40.0,
-      "mean": 40.0,
+      "mean": 41.542857142857144,
       "median": 40.0,
-      "range": 0.0
+      "range": 93.0
     },
-    {
-      "group": "NOISEa|C4",
-      "n": 1,
-      "min": 62.0,
-      "max": 62.0,
-      "mean": 62.0,
-      "median": 62.0,
-      "range": 0.0
-    },
-    {
-      "group": "NOISEa|D1",
-      "n": 1,
-      "min": 42.0,
-      "max": 42.0,
-      "mean": 42.0,
-      "median": 42.0,
-      "range": 0.0
-    },
-    {
-      "group": "NOISEa|D2",
-      "n": 1,
-      "min": 70.0,
-      "max": 70.0,
-      "mean": 70.0,
-      "median": 70.0,
-      "range": 0.0
-    },
-    {
-      "group": "NOISEa|E01",
-      "n": 1,
-      "min": 12.0,
-      "max": 12.0,
-      "mean": 12.0,
-      "median": 12.0,
-      "range": 0.0
-    },
-    {
-      "group": "NOISEa|E02",
-      "n": 1,
-      "min": 65.0,
-      "max": 65.0,
-      "mean": 65.0,
-      "median": 65.0,
-      "range": 0.0
-    },
-    {
-      "group": "NOISEa|N1",
-      "n": 1,
-      "min": 38.0,
-      "max": 38.0,
-      "mean": 38.0,
-      "median": 38.0,
-      "range": 0.0
-    },
-    {
-      "group": "NOISEa|N3",
-      "n": 1,
-      "min": 38.0,
-      "max": 38.0,
-      "mean": 38.0,
-      "median": 38.0,
-      "range": 0.0
-    },
-    {
-      "group": "NOISEa|N4",
-      "n": 1,
-      "min": 15.0,
-      "max": 15.0,
-      "mean": 15.0,
-      "median": 15.0,
-      "range": 0.0
-    },
-    {
-      "group": "NOISEa|N6",
-      "n": 1,
-      "min": 35.0,
-      "max": 35.0,
-      "mean": 35.0,
-      "median": 35.0,
-      "range": 0.0
-    },
-    {
-      "group": "NOISEa|N8",
-      "n": 1,
-      "min": 50.0,
-      "max": 50.0,
-      "mean": 50.0,
-      "median": 50.0,
-      "range": 0.0
-    },
-    {
-      "group": "NOISEa|N9",
-      "n": 1,
-      "min": 55.0,
-      "max": 55.0,
-      "mean": 55.0,
-      "median": 55.0,
-      "range": 0.0
-    },
-    {
-      "group": "NOISEa|P2",
-      "n": 1,
-      "min": 42.0,
-      "max": 42.0,
-      "mean": 42.0,
-      "median": 42.0,
-      "range": 0.0
-    },
-    {
-      "group": "NOISEa|R1",
-      "n": 1,
-      "min": 92.0,
-      "max": 92.0,
-      "mean": 92.0,
-      "median": 92.0,
-      "range": 0.0
-    },
-    {
-      "group": "NOISEa|R2",
-      "n": 1,
-      "min": 3.0,
-      "max": 3.0,
-      "mean": 3.0,
-      "median": 3.0,
-      "range": 0.0
+    "by_cell": {
+      "NOISE0": {
+        "n": 17,
+        "min": 2.0,
+        "max": 95.0,
+        "mean": 38.411764705882355,
+        "median": 35.0,
+        "range": 93.0
+      },
+      "NOISEa": {
+        "n": 18,
+        "min": 3.0,
+        "max": 92.0,
+        "mean": 44.5,
+        "median": 42.0,
+        "range": 89.0
+      }
     }
-  ]
+  }
 }
