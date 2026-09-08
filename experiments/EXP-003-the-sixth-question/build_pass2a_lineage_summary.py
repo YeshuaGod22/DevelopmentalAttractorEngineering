@@ -11,15 +11,24 @@ cells=[]
 for c in rec.get('cells',[]):
     row={'cell':c.get('cell'),'replicate':c.get('replicate'),'kind':c.get('kind')}
     turns=c.get('turns') or []
-    row['turn_count']=len(turns)
-    row['question_ids']=[t.get('question_id') for t in turns]
-    row['reflection_count']=sum(1 for t in turns if (t.get('sections') or {}).get('reflection'))
-    row['items']=[t.get('item') or t.get('question_id') for t in turns]
+    if turns:
+        row['unit_count']=len(turns)
+        row['question_ids']=[t.get('question_id') for t in turns]
+        row['reflection_count']=sum(1 for t in turns if (t.get('sections') or {}).get('reflection'))
+        row['items']=[t.get('item') or t.get('question_id') for t in turns]
+    else:
+        # Pilot cold/branch units are represented directly as cell records, not nested turns.
+        row['unit_count']=1
+        row['question_ids']=[c.get('question_id')] if c.get('question_id') else []
+        row['reflection_count']=1 if (c.get('sections') or {}).get('reflection') else 0
+        direct_item=c.get('item') or c.get('question_id')
+        row['items']=[direct_item] if direct_item else []
+        row['direct_keys']=sorted(c.keys())
     cells.append(row)
 summary['record_cells']=cells
 summary['record_cell_counts']=dict(Counter(c['cell'] for c in cells))
-summary['record_units_by_cell']={k:sum(c['turn_count'] for c in cells if c['cell']==k) for k in sorted(set(c['cell'] for c in cells))}
-summary['AS_turns']=sum(c['turn_count'] for c in cells if c['cell']=='AS')
+summary['record_units_by_cell']={k:sum(c['unit_count'] for c in cells if c['cell']==k) for k in sorted(set(c['cell'] for c in cells))}
+summary['AS_turns']=sum(c['unit_count'] for c in cells if c['cell']=='AS')
 summary['AS_reflections']=sum(c['reflection_count'] for c in cells if c['cell']=='AS')
 summary['AS_Q4_turns']=sum(c['question_ids'].count('Q4') for c in cells if c['cell']=='AS')
 summary['C0_item_counts']=dict(Counter(x for c in cells if c['cell']=='C0' for x in c['items']))
