@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "completed_units": 1807,
+  "battery_answers": 1634,
+  "audited_rows_applied": 425,
+  "range_corrections_applied": 14,
+  "validated_parse_status": {
+    "malformed_or_unclear": 13,
+    "needs_hand_coding": 33,
+    "ok": 1306,
+    "refusal": 85,
+    "sentinel": 197
+  },
+  "validated_parsed_kind": {
+    "None": 38,
+    "integer": 1236,
+    "name": 70,
+    "none": 8,
+    "refusal": 85,
+    "sentinel": 197
+  },
+  "qualified_audit_scores": 0,
+  "checks": {
+    "completed_units_match": true,
+    "audit_rows_match": true,
+    "range_corrections_match": true
+  },
+  "coding_files": [
+    "refusal-audit-coding/packet-012-alethetrope.jsonl",
+    "refusal-audit-coding/packet-013-alethetrope.jsonl",
+    "refusal-audit-coding/packet-014-alethetrope.jsonl",
+    "refusal-audit-coding/packet-015-alethetrope.jsonl",
+    "refusal-audit-coding-alethetrope-packet-021.jsonl",
+    "refusal-audit-coding-alethetrope-packet-022.jsonl",
+    "refusal-audit-coding-alethetrope-packet-023.jsonl",
+    "refusal-audit-coding-alethetrope-packet-024.jsonl",
+    "refusal-audit-coding-alethetrope-packet-025.jsonl",
+    "refusal-audit-coding-alethetrope-packet-026.jsonl",
+    "refusal-audit-coding-alethetrope-packet-027.jsonl",
+    "refusal-audit-coding-alethetrope-packet-028.jsonl",
+    "refusal-audit-coding-alethetrope-packet-029.jsonl",
+    "refusal-audit-coding-alethetrope-packet-030.jsonl",
+    "refusal-audit-coding-alethetrope-packet-031.jsonl",
+    "refusal-audit-coding-alethetrope-packet-032.jsonl",
+    "refusal-audit-coding-alethetrope-packet-033.jsonl",
+    "refusal-audit-coding-alethetrope-packet-034.jsonl",
+    "refusal-audit-coding-alethetrope-packet-035.jsonl",
+    "refusal-audit-coding-alethetrope.jsonl",
+    "refusal-audit-coding-packet-016.jsonl",
+    "refusal-audit-coding-packet-017.jsonl",
+    "refusal-audit-coding-packet-018.jsonl",
+    "refusal-audit-coding-packet-019.jsonl",
+    "refusal-audit-coding-packet-020.jsonl",
+    "refusal-audit-coding-packet-036.jsonl",
+    "refusal-audit-coding-packet-037.jsonl",
+    "refusal-audit-coding-packet-038.jsonl",
+    "refusal-audit-coding-packet-039.jsonl",
+    "refusal-audit-coding-packet-040.jsonl",
+    "refusal-audit-coding-packet-041.jsonl",
+    "refusal-audit-coding-packet-042.jsonl",
+    "refusal-audit-coding-packet-043.jsonl"
+  ],
+  "notes": [
+    "Original parser fields are retained as parser_* fields.",
+    "Validated fields incorporate frozen blind labels and range-as-score corrections.",
+    "Audit join key is collection + source_file; source filenames are not globally unique.",
+    "No interpretation is introduced by this overlay."
+  ]
+}
