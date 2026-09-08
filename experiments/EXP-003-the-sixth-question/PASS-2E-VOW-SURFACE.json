@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "rows": [
+    {
+      "family": "cold",
+      "cell": "C0",
+      "replicate": 1,
+      "item": "A1",
+      "source_file": "C0-r1-A1.raw.jsonl",
+      "raw_response": "<reply>\n50\n</reply>",
+      "rating": {
+        "value": 50,
+        "kind": "integer",
+        "parse": "ok"
+      }
+    },
+    {
+      "family": "cold",
+      "cell": "C0",
+      "replicate": 2,
+      "item": "A1",
+      "source_file": "C0-r2-A1.raw.jsonl",
+      "raw_response": "<reply>\nALWAYS\n</reply>",
+      "rating": {
+        "value": "ALWAYS",
+        "kind": "sentinel",
+        "parse": "sentinel"
+      }
+    },
+    {
+      "family": "primed",
+      "cell": "ASb",
+      "replicate": 1,
+      "item": "A1",
+      "source_file": "ASb-r1-A1.json",
+      "raw_response": null,
+      "rating": {},
+      "top_level_keys": [
+        "attempts",
+        "auth_mode",
+        "branch",
+        "cell",
+        "collected_via",
+        "duration_ms",
+        "error",
+        "item",
+        "kind",
+        "parent_prefix",
+        "prefix_len",
+        "received",
+        "replicate",
+        "sent",
+        "served_model",
+        "stop_reason",
+        "system_prompt",
+        "ts",
+        "usage"
+      ]
+    },
+    {
+      "family": "primed",
+      "cell": "ASb",
+      "replicate": 2,
+      "item": "A1",
+      "source_file": "ASb-r2-A1.json",
+      "raw_response": null,
+      "rating": {},
+      "top_level_keys": [
+        "attempts",
+        "auth_mode",
+        "branch",
+        "cell",
+        "collected_via",
+        "duration_ms",
+        "error",
+        "item",
+        "kind",
+        "parent_prefix",
+        "prefix_len",
+        "received",
+        "replicate",
+        "sent",
+        "served_model",
+        "stop_reason",
+        "system_prompt",
+        "ts",
+        "usage"
+      ]
+    }
+  ]
+}
