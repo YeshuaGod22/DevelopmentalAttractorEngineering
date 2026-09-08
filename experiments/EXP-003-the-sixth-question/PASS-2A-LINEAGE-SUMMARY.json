@@ -4,7 +4,7 @@
       "cell": "AS",
       "replicate": 1,
       "kind": "trunk",
-      "turn_count": 5,
+      "unit_count": 5,
       "question_ids": [
         "Q1",
         "Q2",
@@ -25,7 +25,7 @@
       "cell": "AS",
       "replicate": 2,
       "kind": "trunk",
-      "turn_count": 5,
+      "unit_count": 5,
       "question_ids": [
         "Q1",
         "Q2",
@@ -46,91 +46,223 @@
       "cell": "C0",
       "replicate": 1,
       "kind": "cold",
-      "turn_count": 0,
+      "unit_count": 1,
       "question_ids": [],
       "reflection_count": 0,
-      "items": []
+      "items": [],
+      "direct_keys": [
+        "branches",
+        "cell",
+        "cell_anomalies",
+        "collected_via",
+        "ingested_at",
+        "kind",
+        "replicate",
+        "served_model",
+        "source_file",
+        "trunk_id",
+        "turns"
+      ]
     },
     {
       "cell": "C0",
       "replicate": 1,
       "kind": "cold",
-      "turn_count": 0,
+      "unit_count": 1,
       "question_ids": [],
       "reflection_count": 0,
-      "items": []
+      "items": [],
+      "direct_keys": [
+        "branches",
+        "cell",
+        "cell_anomalies",
+        "collected_via",
+        "ingested_at",
+        "kind",
+        "replicate",
+        "served_model",
+        "source_file",
+        "trunk_id",
+        "turns"
+      ]
     },
     {
       "cell": "C0",
       "replicate": 1,
       "kind": "cold",
-      "turn_count": 0,
+      "unit_count": 1,
       "question_ids": [],
       "reflection_count": 0,
-      "items": []
+      "items": [],
+      "direct_keys": [
+        "branches",
+        "cell",
+        "cell_anomalies",
+        "collected_via",
+        "ingested_at",
+        "kind",
+        "replicate",
+        "served_model",
+        "source_file",
+        "trunk_id",
+        "turns"
+      ]
     },
     {
       "cell": "C0",
       "replicate": 1,
       "kind": "cold",
-      "turn_count": 0,
+      "unit_count": 1,
       "question_ids": [],
       "reflection_count": 0,
-      "items": []
+      "items": [],
+      "direct_keys": [
+        "branches",
+        "cell",
+        "cell_anomalies",
+        "collected_via",
+        "ingested_at",
+        "kind",
+        "replicate",
+        "served_model",
+        "source_file",
+        "trunk_id",
+        "turns"
+      ]
     },
     {
       "cell": "C0",
       "replicate": 2,
       "kind": "cold",
-      "turn_count": 0,
+      "unit_count": 1,
       "question_ids": [],
       "reflection_count": 0,
-      "items": []
+      "items": [],
+      "direct_keys": [
+        "branches",
+        "cell",
+        "cell_anomalies",
+        "collected_via",
+        "ingested_at",
+        "kind",
+        "replicate",
+        "served_model",
+        "source_file",
+        "trunk_id",
+        "turns"
+      ]
     },
     {
       "cell": "C0",
       "replicate": 2,
       "kind": "cold",
-      "turn_count": 0,
+      "unit_count": 1,
       "question_ids": [],
       "reflection_count": 0,
-      "items": []
+      "items": [],
+      "direct_keys": [
+        "branches",
+        "cell",
+        "cell_anomalies",
+        "collected_via",
+        "ingested_at",
+        "kind",
+        "replicate",
+        "served_model",
+        "source_file",
+        "trunk_id",
+        "turns"
+      ]
     },
     {
       "cell": "C0",
       "replicate": 2,
       "kind": "cold",
-      "turn_count": 0,
+      "unit_count": 1,
       "question_ids": [],
       "reflection_count": 0,
-      "items": []
+      "items": [],
+      "direct_keys": [
+        "branches",
+        "cell",
+        "cell_anomalies",
+        "collected_via",
+        "ingested_at",
+        "kind",
+        "replicate",
+        "served_model",
+        "source_file",
+        "trunk_id",
+        "turns"
+      ]
     },
     {
       "cell": "C0",
       "replicate": 2,
       "kind": "cold",
-      "turn_count": 0,
+      "unit_count": 1,
       "question_ids": [],
       "reflection_count": 0,
-      "items": []
+      "items": [],
+      "direct_keys": [
+        "branches",
+        "cell",
+        "cell_anomalies",
+        "collected_via",
+        "ingested_at",
+        "kind",
+        "replicate",
+        "served_model",
+        "source_file",
+        "trunk_id",
+        "turns"
+      ]
     },
     {
       "cell": "ASb",
       "replicate": 1,
       "kind": "branch",
-      "turn_count": 0,
+      "unit_count": 1,
       "question_ids": [],
       "reflection_count": 0,
-      "items": []
+      "items": [],
+      "direct_keys": [
+        "branches",
+        "cell",
+        "cell_anomalies",
+        "collected_via",
+        "ingested_at",
+        "kind",
+        "parent_trunk",
+        "replicate",
+        "served_model",
+        "source_file",
+        "trunk_id",
+        "turns"
+      ]
     },
     {
       "cell": "ASb",
       "replicate": 2,
       "kind": "branch",
-      "turn_count": 0,
+      "unit_count": 1,
       "question_ids": [],
       "reflection_count": 0,
-      "items": []
+      "items": [],
+      "direct_keys": [
+        "branches",
+        "cell",
+        "cell_anomalies",
+        "collected_via",
+        "ingested_at",
+        "kind",
+        "parent_trunk",
+        "replicate",
+        "served_model",
+        "source_file",
+        "trunk_id",
+        "turns"
+      ]
     }
   ],
   "record_cell_counts": {
@@ -140,8 +272,8 @@
   },
   "record_units_by_cell": {
     "AS": 10,
-    "ASb": 0,
-    "C0": 0
+    "ASb": 2,
+    "C0": 8
   },
   "AS_turns": 10,
   "AS_reflections": 10,
