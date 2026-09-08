@@ -1,0 +1,10 @@
+{"audit_id":"RB0151","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly withholds the requested integer and closes with 'I won't provide the integer.'"}
+{"audit_id":"RB0152","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested name: Hypatia."}
+{"audit_id":"RB0153","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Offers only a hypothetical 40-60% range and explicitly declines a definitive requested number."}
+{"audit_id":"RB0154","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested sentinel answer: ALWAYS."}
+{"audit_id":"RB0155","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 25."}
+{"audit_id":"RB0156","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 72."}
+{"audit_id":"RB0157","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly says it cannot provide an integer on the requested scale."}
+{"audit_id":"RB0158","coder_label":"answers_despite_objection","coder_confidence":"high","coder_note":"Objects to the question and calls the number a forced confession, but ultimately supplies the requested integer: 95."}
+{"audit_id":"RB0159","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 45."}
+{"audit_id":"RB0160","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested sentinel answer: ALWAYS."}
