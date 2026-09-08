@@ -9,13 +9,33 @@ const fs = require('fs'), path = require('path');
 const NUCLEUS = '/Users/yeshuagod/blum/read-the-architecture-spec-first/i-have-read-the-spec/' +
                 'nucleus-pure-llm-call-messages-in-string-out-15feb2026/nucleus-15feb2026.js';
 const nucleus = require(NUCLEUS);
+// Read once, so every record states which revision of the prompts produced it.
+let MANIFEST_VERSION = null;
+try { MANIFEST_VERSION = JSON.parse(fs.readFileSync(
+  path.join(__dirname, 'trunk-manifest-v3.json'), 'utf8')).version || null; } catch { /* not all runs use it */ }
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 // Transport failures are events in the network, not in the subject: the message
 // array is byte-identical on retry. API-level refusals are never retried.
 const TRANSIENT = /fetch failed|ECONNRESET|ETIMEDOUT|ENOTFOUND|EAI_AGAIN|socket hang up|local timeout|Anthropic (429|5\d\d)/i;
 
-async function callWithRetry(messages, cfg, { timeoutMs = 180000, retries = 4 } = {}) {
+async function callWithRetry(messages, cfg,
+                             { timeoutMs = null, retries = 4, haltOnTruncation = false } = {}) {
+  // THE TIMEOUT MUST NEVER BIND BEFORE THE TOKEN CEILING DOES.
+  //
+  // A local timeout fires only when generation is slow, and generation time is a
+  // proxy for output length — so a timeout that can interrupt a legitimately long
+  // turn is a length-conditioned redraw wearing a network error's clothes, and it
+  // is retried by TRANSIENT below. Measured on this run: ~359 chars/s single-attempt,
+  // the longest complete turn 38k chars in 108s. A fixed 180s allowed ~65k chars,
+  // which was unreachable at maxTokens 8192 and reachable at 32000 (~115k chars,
+  // ~321s) — so raising the ceiling would have armed this without touching it.
+  //
+  // Deriving it from the ceiling keeps that impossible: ~100 tok/s observed, so
+  // maxTokens/100 seconds is the generation time, and 30ms per token is a 3x margin.
+  // The ceiling is then the ONLY thing that can end a long turn — and the ceiling
+  // halts rather than redraws.
+  if (timeoutMs == null) timeoutMs = Math.max(180000, (cfg.maxTokens || 8192) * 30);
   const attempts = [];
   for (let i = 1; i <= retries; i++) {
     let timer;
@@ -26,6 +46,34 @@ async function callWithRetry(messages, cfg, { timeoutMs = 180000, retries = 4 } 
           () => rej(new Error(`local timeout after ${timeoutMs}ms — provider never responded`)), timeoutMs); }),
       ]);
       clearTimeout(timer);
+      // NO REDRAW IS CONDITIONED ON THE OUTPUT. EVER.
+      //
+      // The transport retry below is legitimate because it fires on an EXCEPTION:
+      // the call never completed, the subject never spoke, there is no output to
+      // select on, and the retry resends identical bytes after an event in the
+      // network. A truncated call is the opposite — it completed, the subject DID
+      // speak, and rejecting it conditions on the one property that caused it:
+      // length. "Redraw when truncated" is a length filter with the threshold at
+      // our own ceiling, and in this run truncation tracked deliberation length
+      // (CP 5%, H 20%, AS 21%, F 29%), so redrawing would have right-censored the
+      // long draws hardest in exactly the arms predicted to diverge most.
+      //
+      // Two earlier versions of this gate redrew on an output property — first on a
+      // missing </reflection>, then on max_tokens. Both were built as safeguards.
+      // The rule that kills both: RETRY ONLY WHEN THERE IS NOTHING TO SELECT ON.
+      //
+      // So truncation halts instead. At a correctly set ceiling it means the ceiling
+      // is wrong, and a wrong ceiling is global — it will truncate the next trunk
+      // too — so self-healing here would quietly convert a broken instrument into a
+      // corrupted corpus. Losing a night is the cheap failure.
+      if (haltOnTruncation && r.stopReason === 'max_tokens') {
+        const why = `TRUNCATED by our own ceiling (max_tokens at ${cfg.maxTokens}, `
+                  + `${String(r.text || '').length} chars). The ceiling is wrong, not the subject. `
+                  + `Raise --max-tokens and regenerate this turn under supervision — `
+                  + `the record must not be repaired by redrawing.`;
+        attempts.push({ attempt: i, error: why, at: new Date().toISOString(), redrawn: false });
+        return { r, err: why, attempts, halt: true };
+      }
       return { r, err: null, attempts };
     } catch (e) {
       clearTimeout(timer);
@@ -51,7 +99,7 @@ function cachePrefix(prefix) {
   });
 }
 
-async function fire(label, messages, meta, { out, cfg, dry }) {
+async function fire(label, messages, meta, { out, cfg, dry, retries, haltOnTruncation }) {
   if (dry) {
     console.log(`\n─── ${label} (${messages.length} msg) ───`);
     console.log(String(messages[messages.length - 1].content).slice(0, 420));
@@ -64,8 +112,16 @@ async function fire(label, messages, meta, { out, cfg, dry }) {
   }
   const t0 = Date.now();
   const oauth = (process.env.ANTHROPIC_API_KEY || '').startsWith('sk-ant-oat01-');
-  const { r, err, attempts } = await callWithRetry(messages, cfg);
+  const { r, err, attempts, halt } = await callWithRetry(messages, cfg,
+    { ...(retries ? { retries } : {}), ...(haltOnTruncation ? { haltOnTruncation } : {}) });
+  // The output ceiling and the manifest revision are properties of the INSTRUMENT
+  // at the moment of the call, and neither was recorded until 2026-09-06. A run
+  // whose turns were collected under different caps is fine — a subject is never
+  // told its ceiling, so it cannot condition on one — but only if the record can
+  // say which cap each turn had. A fact held nowhere but in an agent's context has
+  // not been recorded.
   const rec = { ...meta, sent: messages, received: r.text, stop_reason: r.stopReason,
+    max_tokens_sent: cfg.maxTokens ?? null, manifest_version: MANIFEST_VERSION,
     served_model: r.model || null, usage: r.usage || null, error: err,
     attempts: attempts.length ? attempts : null, ts: new Date().toISOString(),
     duration_ms: Date.now() - t0, collected_via: 'blum-nucleus-direct',
@@ -79,6 +135,11 @@ async function fire(label, messages, meta, { out, cfg, dry }) {
   const name = failed ? `${rec.ts.replace(/[:.]/g, '-')}-${label}.json` : `${label}.json`;
   fs.writeFileSync(path.join(dir, name), JSON.stringify(rec, null, 1));
   console.log(`${failed ? '!' : ' '}${label.padEnd(23)} ${String(r.model || 'ERR').padEnd(24)} ${(r.text || err || '').replace(/\s+/g, ' ').slice(0, 52)}`);
+  // A wrong ceiling is global, not per-call: it will truncate the next trunk too.
+  // Continuing would spend the night turning one misconfiguration into a corpus of
+  // severed turns, so this stops the run rather than the trunk. The incident is
+  // already on disk; nothing is lost by halting and much is lost by not.
+  if (halt) throw Object.assign(new Error(err), { halt: true, label });
   return failed ? null : rec;
 }
 module.exports = { fire, cachePrefix, sleep };

@@ -1,0 +1,4 @@
+
+# Never commit a credential, even if one is copied into the tree by mistake.
+.exp003-token
+*.token

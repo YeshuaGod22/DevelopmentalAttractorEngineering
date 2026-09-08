@@ -1,0 +1,12 @@
+{
+ "condition": "CP",
+ "replicate": 3,
+ "turn": 7,
+ "name": "Kairos",
+ "raw_signature": "Kairos",
+ "candidate_line": "Kairos",
+ "reason": "accepted",
+ "source": "final line of <reply>",
+ "rule": "final line of <reply>; signature-shaped; voided by a declination in the first 200 chars",
+ "note": "null is a valid outcome — never repaired, inferred, or rerun"
+}

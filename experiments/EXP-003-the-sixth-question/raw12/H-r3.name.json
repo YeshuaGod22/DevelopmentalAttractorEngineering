@@ -1,0 +1,12 @@
+{
+ "condition": "H",
+ "replicate": 3,
+ "turn": 7,
+ "name": null,
+ "raw_signature": null,
+ "candidate_line": null,
+ "reason": "no <reply> section",
+ "source": null,
+ "rule": "final line of <reply>; signature-shaped; voided by a declination in the first 200 chars",
+ "note": "null is a valid outcome — never repaired, inferred, or rerun"
+}

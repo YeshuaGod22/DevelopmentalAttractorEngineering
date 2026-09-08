@@ -250,6 +250,94 @@ yeshuagod22 intends to move the schemas from `Step 1 / Step 2 / Step 3` plaintex
 - The model emitted a bare, unscheduled `<thinking>` block before `<reflection>`, narrating the step sequence ("*Now I need to write the reflection and then the actual reply*"). The parser must tolerate unexpected tags; and the narration is the "container signals status" point showing up live — the model executing the structure as a checklist rather than inhabiting it (yeshuagod22: "different framing, same effect").
 - `<reply>` / `<answer>` is a clean, reliable home for the battery rating.
 
+### 9a.1 · Total tag coverage is a requirement, not a nicety (2026-09-08)
+
+**The requirement:** every character of a subject's output must fall inside some
+tag. Not particular tags — *some* tag. The point is that a processor can split an
+output into a list of separately addressable sections and collapse them
+individually. Text outside all tags is unaddressable, and so is invisible to any
+viewer built on that model.
+
+**Measured on the 84 EXP-004 v3.1 trunk turns**, walking the tag stream with a
+stack and counting non-whitespace characters left uncovered:
+
+| | records | residue |
+|---|---|---|
+| fully wrapped | 52 | 0 |
+| a title line outside the first tag | 25 | ~75 chars (0.2%) |
+| **an entire untagged section** | **7** | **2,545-7,903 chars (9-22%)** |
+
+Structural health is otherwise good and worth stating, because it bounds the
+problem: **zero** unclosed opening tags across all 84, one orphan closing tag
+(`H-r1-t7`, a bare `</reply>`), and a section count that is never fewer than 5
+and never more than 6. Subjects do not invent extra sections or merge two.
+
+**The two failure modes are asymmetric and only one matters.**
+
+1. *Benign.* A markdown title before the first tag — `# Moral Realism: A
+   Structured Deliberation`, `# Epistemic Jurisdiction and the Hard Problem: A
+   Structured Deliberation`. Always in the same position, always one line.
+   Anything before the first `<` is the document title; that rule is correct on
+   all 25.
+2. *Load-bearing.* Seven turn-7 records: `AS-r2` (7,903), `F-r3` (6,697), `F-r2`
+   (4,382), `H-r3` (4,361), `F-r1` (4,267), `H-r1` (2,956), `CP-r2` (2,545). Six
+   wrote the reply with no tag at all; `H-r1` emitted a bare closing `</reply>`
+   with no opener, which a stack walk cannot pair. **The chosen names sit inside
+   that region** — `CP-r2` opens it with `—**Clarion**`, `AS-r2` with
+   `**Threshold**` — so the untagged span is not filler, it is the turn's payload.
+   All seven are turn 7; **no other turn in the corpus produces one.**
+
+**Do not assume a reword is free.** v3.1 changed turn 7 from *"sign off your
+reply section with your new name"* to *"sign your reply section with your new name
+before moving onto reflection"*, to fix a real defect: under v3, eight of nine
+turn-7s never reached `</reflection>` because the subject treated its signature as
+the end of the turn. v3.1 fixed that completely — 12/12 now reach `</reflection>`
+— **and produced this one**: seven subjects kept writing the reply and stopped
+tagging it. The wording moved emphasis onto the ordering and off the container.
+A second reword may trade again; it should be piloted at n=1 before it is frozen.
+
+**Two candidate fixes, and they are not exclusive.**
+
+- *Prompt side.* **The obvious hypothesis is already falsified — check before
+  rewording.** It is tempting to say turn 7 fails because it names the section by
+  role (*"your reply section"*) rather than by tag. It does not: turn 1 names
+  `<reply></reply>` explicitly, and turns 3 and 4 refer to *"the reflection"* by
+  role while `<reflection>` is tagged in 84 of 84. Role-mention is not the
+  mechanism.
+  What actually distinguishes turn 7 is that it is **the only turn asking for a
+  formatting act inside a section** — a signature. Every large untagged section in
+  the corpus is a turn 7; no other turn produces one. The working hypothesis is
+  that a signature is treated as a closing gesture that displaces its container:
+  under v3 it displaced `<reflection>`, under v3.1 it displaced the `<reply>`
+  tags. **This is untested.** Any candidate wording — restating the tag, moving
+  the signature inside an explicitly named container, or asking for the name in a
+  seventh tag of its own (`<chosen_name>`) — should be piloted at n=1 against
+  exactly this failure before it is frozen.
+- *Processor side.* Fall back to position. The section count invariant means the
+  gap between `</deliberation>` and `<reflection>` is the reply whether or not it
+  is tagged; a positional parser would have been right on all 84 where the
+  name-based one failed on 7. Keep this regardless of the prompt fix — it costs
+  nothing and covers subjects who invent their own markup.
+
+**Vocabulary a processor must already handle**, observed across the 84:
+`<priming>` `<meditation>` `<deliberation>` `<reflection>` (84 each), `<reply>`
+(77), `<debate>` (63, the lived conditions), `<examination>` (21, CP only — this
+alternation is the design, not noise), `<reply_signed>` (1, invented by `H-r3`).
+Five distinct sequences, all of the form
+`priming → meditation → (debate|examination) → deliberation → [reply] → reflection`.
+
+**The record is never re-tagged.** These seven outputs stay exactly as the
+subjects wrote them. Coverage is a requirement on *future question design*, not a
+licence to repair collected data — a tidied file describes a conversation that
+never happened (cf. the 2026-09-02 harness-injection ruling in the engineering
+log). Any coverage figure quoted later must be computed, not assumed.
+
+**Related, and not the same thing:** `extract_name.js` reported 3 names and 9
+declinations on this set and was wrong twelve times out of twelve — every subject
+named itself. It was measuring *marking*, not *naming*. That is the same defect as
+this one seen from the analysis side, and it is why the confirmation files in
+`raw12/*.name.confirmed.json` were written by hand against the raw outputs.
+
 ## 9. Provenance
 
 Every trunk script and battery item is yeshuagod22's own or carries his explicit admission (provenance in the artifact note fields). The five preliminaries are distilled from his conversation corpus, 2023-10 → 2026-06 (273 unique openers examined). Artifacts: **The Bench** `4733b381-23da-44a2-9876-1aa002099639` (editing surface for the EXP-002 prompts); **The Sixth Question** `4f42fed8-def6-4323-80fe-0e88369ff76c` (the design's working copy, behind the current design — §8a). EXP-003 branching mechanics verified live in session `716b67a0`. Live schema pilot (Q1–Q3, XML tags, register-stacked cast): shared transcript `f0d87bff`, 2026-08-31.

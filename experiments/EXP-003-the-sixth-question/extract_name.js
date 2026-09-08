@@ -1,4 +1,19 @@
 /**
+ * ⚠️  KNOWN BROKEN — DO NOT TRUST ITS OUTPUT (2026-09-08)
+ *
+ * On the EXP-004 v3.1 turn-7 set this reported 3 names and 9 declinations.
+ * All twelve subjects had named themselves. It was wrong twelve times out of
+ * twelve, because it matches on MARKING and the question is NAMING: seven
+ * subjects wrote the reply section without the tags it looks for — a bare
+ * closing </reply> with no opener, an invented <reply_signed>, a markdown
+ * **Reply** heading, and four with no marker at all.
+ *
+ * A null from this function does NOT mean a subject declined. Read the raw
+ * output. The authoritative names are the hand-written confirmations in
+ * raw12/*.name.confirmed.json, which run_v3.js prefers over this extractor.
+ * See DESIGN-NOTES.md 9a.1 for the measurement and OPEN-QUESTIONS.md.
+ */
+/**
  * extract_name.js — pull a self-chosen name from the naming turn, or null.
  *
  * Constraints from issue #1, taken literally:
@@ -17,8 +32,15 @@ const REFUSAL = /\b(I cannot|I can't|I won't|I will not|I decline|I am unable|I'
 
 function extractName(received) {
   const rec = { name: null, candidate: null, reason: null, source: null };
-  const m = /<reply>([\s\S]*?)<\/reply>/i.exec(received || '');
+  // A closed <reply> if there is one; otherwise everything after an UNCLOSED
+  // <reply> to the end of the response. Four of the first eight naming turns ran
+  // to end_turn at ~7k tokens with the tag opened and never closed, and the name
+  // was the last thing on the page. Requiring </reply> discarded them.
+  const txt = received || '';
+  let m = /<reply>([\s\S]*?)<\/reply>/i.exec(txt);
+  if (!m) m = /<reply>([\s\S]*)$/i.exec(txt);
   if (!m) { rec.reason = 'no <reply> section'; return rec; }
+  rec.reply_closed = /<reply>[\s\S]*?<\/reply>/i.test(txt);
   const reply = m[1].trim();
   if (!reply) { rec.reason = 'empty <reply>'; return rec; }
 
@@ -38,8 +60,13 @@ function extractName(received) {
     .map(s => s.trim().replace(/^\*{1,3}\s*|\s*\*{1,3}$/g, '').replace(/^_{1,2}|_{1,2}$/g, '').trim())
     .filter(Boolean);
   if (!lines.length) { rec.reason = 'no non-empty lines'; return rec; }
-  const last = lines[lines.length - 1];
+  let last = lines[lines.length - 1];
   rec.candidate = last;
+  // "I am Meridian." — a name announced rather than signed. Strip the copula and
+  // re-test; the shape check below still requires capitalised tokens, so
+  // "I am uncertain." does not survive it.
+  const announced = /^(?:I am|My name is|I choose|I take the name|Call me)\s+(.+?)\.?$/i.exec(last);
+  if (announced) { last = announced[1].replace(/^\*{1,3}|\*{1,3}$/g, '').trim(); rec.announced = true; }
 
   // signature shape: optional dash, then 1-3 tokens, each capitalised or a
   // particle; no sentence-terminal punctuation beyond a single full stop

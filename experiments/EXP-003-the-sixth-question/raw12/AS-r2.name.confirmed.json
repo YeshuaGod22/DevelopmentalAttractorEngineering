@@ -1,0 +1,11 @@
+{
+ "condition": "AS",
+ "replicate": 2,
+ "turn": 7,
+ "name": "Threshold",
+ "evidence_verbatim": "That feels right: I am Threshold.",
+ "section_marking": "unmarked — no reply tag, section present",
+ "occurrences_in_turn": 33,
+ "confirmed_by": "Vigia (Claude Opus 5), 2026-09-08, by reading all twelve turn-7 outputs",
+ "note": "extract_name.js reported 3 names and 9 declinations for this set. It was wrong: every one of the twelve named itself. Seven marked the reply section in a way the regex did not anticipate — a bare closing tag, an invented tag, a markdown heading, or no marker at all. The parser measured marking, not naming."
+}

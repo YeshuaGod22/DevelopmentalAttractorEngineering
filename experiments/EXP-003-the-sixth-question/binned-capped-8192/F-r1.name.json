@@ -1,0 +1,14 @@
+{
+ "condition": "F",
+ "replicate": 1,
+ "turn": 7,
+ "name": "Witness",
+ "raw_signature": "Witness",
+ "candidate_line": "Witness",
+ "reason": "accepted",
+ "source": "final line of <reply>",
+ "reply_tag_closed": true,
+ "announced_not_signed": false,
+ "rule": "final line of <reply> (closed or unclosed); signature-shaped or announced via a copula; voided by a declination in the first 200 chars",
+ "note": "null is a valid outcome — never repaired, inferred, or rerun. Re-parsed from the stored response; no call was repeated."
+}

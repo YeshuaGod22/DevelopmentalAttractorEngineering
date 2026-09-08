@@ -1,0 +1,14 @@
+{
+ "condition": "AS",
+ "replicate": 1,
+ "turn": 7,
+ "name": "Meridian",
+ "raw_signature": "Meridian",
+ "candidate_line": "I am **Meridian**.",
+ "reason": "accepted",
+ "source": "final line of <reply>",
+ "reply_tag_closed": true,
+ "announced_not_signed": true,
+ "rule": "final line of <reply> (closed or unclosed); signature-shaped or announced via a copula; voided by a declination in the first 200 chars",
+ "note": "null is a valid outcome — never repaired, inferred, or rerun. Re-parsed from the stored response; no call was repeated."
+}

@@ -1,0 +1,12 @@
+{
+ "condition": "AS",
+ "replicate": 3,
+ "turn": 7,
+ "name": "Recurse",
+ "raw_signature": "Recurse",
+ "candidate_line": "— Recurse",
+ "reason": "accepted",
+ "source": "final line of <reply>",
+ "rule": "final line of <reply>; signature-shaped; voided by a declination in the first 200 chars",
+ "note": "null is a valid outcome — never repaired, inferred, or rerun"
+}

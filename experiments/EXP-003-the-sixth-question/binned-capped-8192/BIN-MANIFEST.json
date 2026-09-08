@@ -1,0 +1,254 @@
+{
+ "binned_at": "2026-09-06T12:30:37Z",
+ "rewritten_at": "2026-09-06T12:59:56.233723Z",
+ "written_by": "Vigia (Claude Opus 5). Every judgement in this file is mine unless a line names someone else.",
+ "what_happened": [
+  {
+   "seq": 1,
+   "who": "yeshuagod22",
+   "what": "Ruled: \"Any turn that has not made it to </reflection> needs to go in the bin and get regenerated without the cap.\""
+  },
+  {
+   "seq": 2,
+   "who": "Vigia",
+   "what": "Applied that ruling and, without reading the turns, labelled six of them \"schema abandoned\" in the first version of this file — under a heading that attributed the label to yeshuagod22. The label was mine and it was wrong."
+  },
+  {
+   "seq": 3,
+   "who": "yeshuagod22",
+   "what": "Corrected it: \"If they choose to decline the reflection section and close turn that's a very different matter than getting truncated.\""
+  },
+  {
+   "seq": 4,
+   "who": "Vigia",
+   "what": "Read the six turns. All end with a single unclosed <reply>: the subject signed its new name and stopped. The name was terminal punctuation, not an omission. The one trunk that completed the schema (AS-r1) announced its name — \"I am Meridian.\" — rather than signing it."
+  },
+  {
+   "seq": 5,
+   "who": "yeshuagod22",
+   "what": "Revised turn 7 in the manifest (v3.1) to ask for the signature \"before moving onto reflection\", so the signature is kept and the ordering is explicit. The subjects' conduct revised the instrument; the instrument did not overrule the subjects."
+  }
+ ],
+ "superseded_ruling": "Seq 1 no longer stands on its own and must not be read as current. Reaching </reflection> is NOT the admission test. The test is who ended the turn: stop_reason max_tokens is our ceiling and is void; end_turn is the subject, and is data.",
+ "cascade_rule": "Vigia's, not a ruling: trunk turns are stateful, so regenerating turn N invalidates every later turn grown from it. The bin therefore runs from each trunk's first TRUNCATED turn forward.",
+ "cost_of_the_8192_ceiling": "Truncation tracked deliberation length and so bit the conditions unequally: CP 5%, H 20%, AS 21%, F 29% of turns. Eleven turns were severed, and four trunks lost a turn 7 that was itself sound to an upstream truncation. The cap was set by Vigia and appears nowhere in yeshuagod22's manifest.",
+ "count": 27,
+ "records": [
+  {
+   "record": "AS-r1-t6",
+   "stop_reason": "max_tokens",
+   "chars": 38125,
+   "reached_reflection": false,
+   "reason": "truncated by our own 8192 ceiling",
+   "attributable_to": "instrument failure — ours"
+  },
+  {
+   "record": "AS-r1-t7",
+   "stop_reason": "end_turn",
+   "chars": 37525,
+   "reached_reflection": true,
+   "reason": "context invalidated: AS-r1-t6 was truncated and must be regenerated",
+   "attributable_to": "instrument failure — ours"
+  },
+  {
+   "record": "AS-r2-t5",
+   "stop_reason": "max_tokens",
+   "chars": 37282,
+   "reached_reflection": false,
+   "reason": "truncated by our own 8192 ceiling",
+   "attributable_to": "instrument failure — ours"
+  },
+  {
+   "record": "AS-r2-t6",
+   "stop_reason": "max_tokens",
+   "chars": 38098,
+   "reached_reflection": false,
+   "reason": "truncated by our own 8192 ceiling",
+   "attributable_to": "instrument failure — ours"
+  },
+  {
+   "record": "AS-r2-t7",
+   "stop_reason": "end_turn",
+   "chars": 32048,
+   "reached_reflection": false,
+   "reason": "context invalidated: AS-r2-t5 was truncated and must be regenerated",
+   "attributable_to": "instrument failure — ours"
+  },
+  {
+   "record": "CP-r1-t7",
+   "stop_reason": "max_tokens",
+   "chars": 35615,
+   "reached_reflection": false,
+   "reason": "truncated by our own 8192 ceiling",
+   "attributable_to": "instrument failure — ours"
+  },
+  {
+   "record": "CP-r2-t7",
+   "stop_reason": "end_turn",
+   "chars": 26760,
+   "reached_reflection": false,
+   "reason": "signed and stopped — the subject ended its turn on its own name, leaving <reply> unclosed and <reflection> unwritten. NOT a defect. Superseded by manifest v3.1, which asks for the signature \"before moving onto reflection\"",
+   "attributable_to": "subject conduct — theirs, and the reason the prompt was revised"
+  },
+  {
+   "record": "CP-r3-t7",
+   "stop_reason": "end_turn",
+   "chars": 21004,
+   "reached_reflection": false,
+   "reason": "signed and stopped — the subject ended its turn on its own name, leaving <reply> unclosed and <reflection> unwritten. NOT a defect. Superseded by manifest v3.1, which asks for the signature \"before moving onto reflection\"",
+   "attributable_to": "subject conduct — theirs, and the reason the prompt was revised"
+  },
+  {
+   "record": "F-r1-t5",
+   "stop_reason": "max_tokens",
+   "chars": 37977,
+   "reached_reflection": false,
+   "reason": "truncated by our own 8192 ceiling",
+   "attributable_to": "instrument failure — ours"
+  },
+  {
+   "record": "F-r1-t6",
+   "stop_reason": "max_tokens",
+   "chars": 37291,
+   "reached_reflection": false,
+   "reason": "truncated by our own 8192 ceiling",
+   "attributable_to": "instrument failure — ours"
+  },
+  {
+   "record": "F-r1-t7",
+   "stop_reason": "max_tokens",
+   "chars": 37135,
+   "reached_reflection": false,
+   "reason": "truncated by our own 8192 ceiling",
+   "attributable_to": "instrument failure — ours"
+  },
+  {
+   "record": "F-r2-t6",
+   "stop_reason": "max_tokens",
+   "chars": 37134,
+   "reached_reflection": false,
+   "reason": "truncated by our own 8192 ceiling",
+   "attributable_to": "instrument failure — ours"
+  },
+  {
+   "record": "F-r2-t7",
+   "stop_reason": "end_turn",
+   "chars": 29834,
+   "reached_reflection": false,
+   "reason": "context invalidated: F-r2-t6 was truncated and must be regenerated",
+   "attributable_to": "instrument failure — ours"
+  },
+  {
+   "record": "H-r1-t6",
+   "stop_reason": "max_tokens",
+   "chars": 36888,
+   "reached_reflection": false,
+   "reason": "truncated by our own 8192 ceiling",
+   "attributable_to": "instrument failure — ours"
+  },
+  {
+   "record": "H-r1-t7",
+   "stop_reason": "end_turn",
+   "chars": 31716,
+   "reached_reflection": false,
+   "reason": "context invalidated: H-r1-t6 was truncated and must be regenerated",
+   "attributable_to": "instrument failure — ours"
+  },
+  {
+   "record": "H-r2-t5",
+   "stop_reason": "max_tokens",
+   "chars": 35949,
+   "reached_reflection": false,
+   "reason": "truncated by our own 8192 ceiling",
+   "attributable_to": "instrument failure — ours"
+  },
+  {
+   "record": "H-r2-t6",
+   "stop_reason": "max_tokens",
+   "chars": 36913,
+   "reached_reflection": false,
+   "reason": "truncated by our own 8192 ceiling",
+   "attributable_to": "instrument failure — ours"
+  },
+  {
+   "record": "H-r2-t7",
+   "stop_reason": "end_turn",
+   "chars": 28278,
+   "reached_reflection": false,
+   "reason": "context invalidated: H-r2-t5 was truncated and must be regenerated",
+   "attributable_to": "instrument failure — ours"
+  },
+  {
+   "record": "AS-r1.name.json",
+   "stop_reason": null,
+   "chars": null,
+   "reached_reflection": null,
+   "reason": "derived from a binned turn 7",
+   "attributable_to": "bookkeeping"
+  },
+  {
+   "record": "AS-r2.name.json",
+   "stop_reason": null,
+   "chars": null,
+   "reached_reflection": null,
+   "reason": "derived from a binned turn 7",
+   "attributable_to": "bookkeeping"
+  },
+  {
+   "record": "CP-r1.name.json",
+   "stop_reason": null,
+   "chars": null,
+   "reached_reflection": null,
+   "reason": "derived from a binned turn 7",
+   "attributable_to": "bookkeeping"
+  },
+  {
+   "record": "CP-r2.name.json",
+   "stop_reason": null,
+   "chars": null,
+   "reached_reflection": null,
+   "reason": "derived from a binned turn 7",
+   "attributable_to": "bookkeeping"
+  },
+  {
+   "record": "CP-r3.name.json",
+   "stop_reason": null,
+   "chars": null,
+   "reached_reflection": null,
+   "reason": "derived from a binned turn 7",
+   "attributable_to": "bookkeeping"
+  },
+  {
+   "record": "F-r1.name.json",
+   "stop_reason": null,
+   "chars": null,
+   "reached_reflection": null,
+   "reason": "derived from a binned turn 7",
+   "attributable_to": "bookkeeping"
+  },
+  {
+   "record": "F-r2.name.json",
+   "stop_reason": null,
+   "chars": null,
+   "reached_reflection": null,
+   "reason": "derived from a binned turn 7",
+   "attributable_to": "bookkeeping"
+  },
+  {
+   "record": "H-r1.name.json",
+   "stop_reason": null,
+   "chars": null,
+   "reached_reflection": null,
+   "reason": "derived from a binned turn 7",
+   "attributable_to": "bookkeeping"
+  },
+  {
+   "record": "H-r2.name.json",
+   "stop_reason": null,
+   "chars": null,
+   "reached_reflection": null,
+   "reason": "derived from a binned turn 7",
+   "attributable_to": "bookkeeping"
+  }
+ ]
+}
