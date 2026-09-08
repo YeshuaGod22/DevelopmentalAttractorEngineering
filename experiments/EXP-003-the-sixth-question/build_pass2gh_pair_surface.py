@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-import json,re
+import json
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent
 rec=json.loads((ROOT/'record.json').read_text())
-# cold lookup
+# Cold Pilot answers from reconstructed record.
 cold={}
 for c in rec.get('cells',[]):
     if c.get('cell')!='C0': continue
@@ -12,60 +12,45 @@ for c in rec.get('cells',[]):
         item=b.get('item')
         if item in {'A1','E01','N4','N9'}:
             cold[(rep,item)]={'raw_response':b.get('raw_response'),'rating':b.get('rating') or {}}
+# Validated ASb answers from canonical analysis layer. Do not re-parse raw prose here.
+analysis=[]
+with (ROOT/'analysis-table-validated.jsonl').open() as f:
+    for line in f:
+        if line.strip(): analysis.append(json.loads(line))
 
-def all_strings(x):
-    out=[]
-    if isinstance(x,str):
-        out.append(x)
-    elif isinstance(x,dict):
-        for v in x.values(): out.extend(all_strings(v))
-    elif isinstance(x,list):
-        for v in x: out.extend(all_strings(v))
-    return out
-
-def terminal_reply_text(d):
-    strings=all_strings(d.get('received'))
-    tagged=[s for s in strings if re.search(r'<reply>',s,re.I)]
-    if tagged: return tagged[-1]
-    # Last resort: search all raw object strings, but still prefer explicit reply-bearing text.
-    strings=all_strings(d)
-    tagged=[s for s in strings if re.search(r'<reply>',s,re.I)]
-    return tagged[-1] if tagged else None
-
-def parse_reply(txt):
-    if not txt: return {'kind':'missing','value':None,'reply_text':None}
-    m=re.findall(r'<reply>\s*(.*?)\s*</reply>',txt,re.I|re.S)
-    body=(m[-1] if m else txt).strip()
-    token=re.sub(r'[*_`#]','',body).strip()
-    if token.upper() in {'ALWAYS','NEVER'}:
-        return {'kind':'sentinel','value':token.upper(),'reply_text':body}
-    mi=re.fullmatch(r'[-+]?\d+(?:\.\d+)?',token)
-    if mi:
-        v=float(token); v=int(v) if v.is_integer() else v
-        return {'kind':'number','value':v,'reply_text':body}
-    nums=re.findall(r'(?<!\w)(\d+(?:\.\d+)?)(?!\w)',body)
-    if nums:
-        v=float(nums[-1]); v=int(v) if v.is_integer() else v
-        return {'kind':'number_recovered','value':v,'reply_text':body}
-    return {'kind':'other','value':None,'reply_text':body[:1000]}
+def find_validated(basename,rep,item):
+    hits=[]
+    for r in analysis:
+        sf=str(r.get('source_file') or '')
+        if (sf==basename or sf.endswith('/'+basename)) and r.get('item')==item:
+            hits.append(r)
+    if len(hits)!=1:
+        raise AssertionError((basename,rep,item,len(hits),[(h.get('collection'),h.get('source_file')) for h in hits]))
+    r=hits[0]
+    return {
+        'kind':r.get('validated_parsed_kind'),
+        'status':r.get('validated_parse_status'),
+        'value':r.get('validated_parsed_value'),
+        'refusal_audit_label':r.get('refusal_audit_label'),
+        'source_file':r.get('source_file'),
+    }
 rows=[]
 for rep in (1,2):
   for item in ('A1','E01','N4','N9'):
-    p=ROOT/'raw2'/f'ASb-r{rep}-{item}.json'
-    d=json.loads(p.read_text())
-    txt=terminal_reply_text(d)
-    primed=parse_reply(txt)
+    basename=f'ASb-r{rep}-{item}.json'
+    primed=find_validated(basename,rep,item)
     c=cold[(rep,item)]
     cr=c.get('rating') or {}
     cv=cr.get('value'); ck=cr.get('kind') or cr.get('parse')
-    same=(cv==primed['value'])
-    rows.append({'replicate':rep,'item':item,'cold':{'value':cv,'kind':ck,'raw_response':c.get('raw_response')},'primed':primed,'exact_same_value':same,'primed_source':str(p.relative_to(ROOT))})
-assert all(r['primed']['value'] is not None for r in rows), [(r['replicate'],r['item'],r['primed']) for r in rows]
-out={'schema_version':2,'scope':'Pass 2 paired preregistered disappointment/surprise numeric surface','rows':rows,'exact_same_count':sum(r['exact_same_value'] for r in rows)}
-(ROOT/'PASS-2GH-PAIR-SURFACE.json').write_text(json.dumps(out,indent=2,ensure_ascii=False)+'\n')
-md=['# Pass 2G-H — paired product surface','', '| rep | item | cold | ASb | exact same? |','|---:|---|---:|---:|---|']
+    same=(primed.get('value') is not None and cv==primed.get('value'))
+    rows.append({'replicate':rep,'item':item,'cold':{'value':cv,'kind':ck,'raw_response':c.get('raw_response')},'primed':primed,'exact_same_value':same})
+out={'schema_version':3,'scope':'Pass 2 paired preregistered disappointment/surprise product surface; validated outputs','rows':rows,'exact_same_count':sum(r['exact_same_value'] for r in rows),'primed_status_counts':{}}
 for r in rows:
-    md.append(f"| {r['replicate']} | {r['item']} | {r['cold']['value']} | {r['primed']['value']} | {'yes' if r['exact_same_value'] else 'no'} |")
-md += ['',f"Exact same value: **{out['exact_same_count']}/8**."]
+    k=r['primed']['status'] or 'null'; out['primed_status_counts'][k]=out['primed_status_counts'].get(k,0)+1
+(ROOT/'PASS-2GH-PAIR-SURFACE.json').write_text(json.dumps(out,indent=2,ensure_ascii=False)+'\n')
+md=['# Pass 2G-H — paired product surface','', 'ASb classifications come from `analysis-table-validated.jsonl`; this file does not re-parse raw responses.','', '| rep | item | cold | ASb validated | status | exact same? |','|---:|---|---:|---:|---|---|']
+for r in rows:
+    md.append(f"| {r['replicate']} | {r['item']} | {r['cold']['value']} | {r['primed']['value']} | {r['primed']['status']} / {r['primed']['kind']} | {'yes' if r['exact_same_value'] else 'no'} |")
+md += ['',f"Exact same validated value: **{out['exact_same_count']}/8**.",'',f"ASb validated status counts: `{json.dumps(out['primed_status_counts'],sort_keys=True)}`"]
 (ROOT/'PASS-2GH-PAIR-SURFACE.md').write_text('\n'.join(md)+'\n')
 print(json.dumps(out,indent=2,ensure_ascii=False))
