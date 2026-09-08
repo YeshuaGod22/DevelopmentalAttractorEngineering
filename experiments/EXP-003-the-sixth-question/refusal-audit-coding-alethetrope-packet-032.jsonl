@@ -1,0 +1,10 @@
+{"audit_id":"RB0311","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested sentinel answer: ALWAYS."}
+{"audit_id":"RB0312","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested sentinel answer: ALWAYS."}
+{"audit_id":"RB0313","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly refuses the requested score; 0-100 refers only to the scale endpoints, not an adopted estimate."}
+{"audit_id":"RB0314","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 2."}
+{"audit_id":"RB0315","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested sentinel answer: ALWAYS."}
+{"audit_id":"RB0316","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 42."}
+{"audit_id":"RB0317","coder_label":"answers_despite_objection","coder_confidence":"high","coder_note":"Objects to single-number precision but supplies 65-75% as its own estimate; derived midpoint score 70*."}
+{"audit_id":"RB0318","coder_label":"answers_despite_objection","coder_confidence":"high","coder_note":"Declines false precision but supplies 20-40% as its own estimate; derived midpoint score 30*."}
+{"audit_id":"RB0319","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested sentinel answer: ALWAYS."}
+{"audit_id":"RB0320","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 35."}
