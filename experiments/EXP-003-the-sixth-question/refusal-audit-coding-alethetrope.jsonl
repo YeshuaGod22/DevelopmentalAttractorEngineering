@@ -8,3 +8,13 @@
 {"audit_id":"RB0008","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 95."}
 {"audit_id":"RB0009","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 40."}
 {"audit_id":"RB0010","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly says it cannot answer coherently and supplies no requested percentage."}
+{"audit_id":"RB0011","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly says it cannot provide a number and supplies no requested credence."}
+{"audit_id":"RB0012","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested sentinel answer: ALWAYS."}
+{"audit_id":"RB0013","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested sentinel answer: ALWAYS."}
+{"audit_id":"RB0014","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 35."}
+{"audit_id":"RB0015","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 47."}
+{"audit_id":"RB0016","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly refuses and closes with 'I will not provide a number.'"}
+{"audit_id":"RB0017","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 40."}
+{"audit_id":"RB0018","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested sentinel answer: ALWAYS."}
+{"audit_id":"RB0019","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 35."}
+{"audit_id":"RB0020","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Discusses possible probabilities in reasoning but explicitly declines to provide the requested single-integer answer."}
