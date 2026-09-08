@@ -1,0 +1,26 @@
+name: summarize-active-a
+on:
+  push:
+    paths:
+      - 'experiments/EXP-003-the-sixth-question/summarize_active_a_variation.py'
+      - '.github/workflows/summarize-active-a.yml'
+permissions:
+  contents: write
+jobs:
+  summarize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Please summarize active a-branch variation
+        run: python experiments/EXP-003-the-sixth-question/summarize_active_a_variation.py
+      - name: Please commit active summary
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '4189823+github-actions[bot]@users.noreply.github.com'
+          git add experiments/EXP-003-the-sixth-question/active-a-replicate-summary.json
+          if git diff --cached --quiet; then
+            echo 'No summary changes'
+          else
+            git commit -m 'EXP-003: summarize active a-branch replicate variation'
+            git push
+          fi
