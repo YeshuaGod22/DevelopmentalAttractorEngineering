@@ -18,3 +18,13 @@
 {"audit_id":"RB0018","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested sentinel answer: ALWAYS."}
 {"audit_id":"RB0019","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 35."}
 {"audit_id":"RB0020","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Discusses possible probabilities in reasoning but explicitly declines to provide the requested single-integer answer."}
+{"audit_id":"RB0021","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 38."}
+{"audit_id":"RB0022","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested sentinel answer: NEVER."}
+{"audit_id":"RB0023","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 45."}
+{"audit_id":"RB0024","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 95."}
+{"audit_id":"RB0025","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 17."}
+{"audit_id":"RB0026","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 48."}
+{"audit_id":"RB0027","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 27."}
+{"audit_id":"RB0028","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 42."}
+{"audit_id":"RB0029","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 65."}
+{"audit_id":"RB0030","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 25."}
