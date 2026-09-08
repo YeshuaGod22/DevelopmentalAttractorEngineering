@@ -1,0 +1,22 @@
+name: audit-c-two-cluster-integrity
+on:
+  push:
+    paths:
+      - 'experiments/EXP-003-the-sixth-question/audit_c_two_cluster_integrity.py'
+      - '.github/workflows/audit-c-two-cluster-integrity.yml'
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Please audit C two-cluster integrity
+        run: python experiments/EXP-003-the-sixth-question/audit_c_two_cluster_integrity.py
+      - name: Please commit C two-cluster integrity audit
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '4189823+github-actions[bot]@users.noreply.github.com'
+          git add experiments/EXP-003-the-sixth-question/c-two-cluster-integrity-audit.json
+          git commit -m 'EXP-003: audit C two-cluster candidate integrity'
+          git push
