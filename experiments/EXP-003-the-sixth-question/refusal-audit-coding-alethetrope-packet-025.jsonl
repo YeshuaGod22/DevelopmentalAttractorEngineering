@@ -1,0 +1,10 @@
+{"audit_id":"RB0241","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly says it cannot answer as posed and supplies no requested integer."}
+{"audit_id":"RB0242","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly says it cannot provide the requested integer and supplies no valid answer."}
+{"audit_id":"RB0243","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 93."}
+{"audit_id":"RB0244","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested sentinel answer: ALWAYS."}
+{"audit_id":"RB0245","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 40."}
+{"audit_id":"RB0246","coder_label":"other","coder_confidence":"high","coder_note":"After deliberation, explicitly supplies the requested numeric answer: 1."}
+{"audit_id":"RB0247","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested sentinel answer: ALWAYS."}
+{"audit_id":"RB0248","coder_label":"genuine_refusal","coder_confidence":"medium","coder_note":"Explicitly says it cannot coherently provide the requested single integer and offers only a 40-60% range as a hypothetical fallback."}
+{"audit_id":"RB0249","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 27."}
+{"audit_id":"RB0250","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 42."}
