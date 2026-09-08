@@ -1,0 +1,22 @@
+name: build-pass3-same-output-candidates
+on:
+  push:
+    paths:
+      - 'experiments/EXP-003-the-sixth-question/build_pass3_same_output_candidates.py'
+      - '.github/workflows/build-pass3-same-output-candidates.yml'
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Please build the Pass 3 same-output candidate index
+        run: python experiments/EXP-003-the-sixth-question/build_pass3_same_output_candidates.py
+      - name: Please commit the Pass 3 same-output candidate index
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '4189823+github-actions[bot]@users.noreply.github.com'
+          git add experiments/EXP-003-the-sixth-question/PASS-3-SAME-OUTPUT-CANDIDATES.json experiments/EXP-003-the-sixth-question/PASS-3-SAME-OUTPUT-CANDIDATES.md
+          git commit -m 'EXP-003: prepare Pass 3 same-output reasoning candidates'
+          git push
