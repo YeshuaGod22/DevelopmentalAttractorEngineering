@@ -1,0 +1,26 @@
+name: collapse-scale-orientation-audit
+on:
+  push:
+    paths:
+      - 'experiments/EXP-003-the-sixth-question/collapse_scale_orientation_audit.py'
+      - '.github/workflows/collapse-scale-orientation-audit.yml'
+permissions:
+  contents: write
+jobs:
+  collapse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Please collapse reduced orientation audit packets
+        run: python experiments/EXP-003-the-sixth-question/collapse_scale_orientation_audit.py
+      - name: Please commit collapsed audit artifacts
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '4189823+github-actions[bot]@users.noreply.github.com'
+          git add experiments/EXP-003-the-sixth-question/scale-orientation-audit-reduced-collapsed.jsonl experiments/EXP-003-the-sixth-question/scale-orientation-audit-reduced-fullresponse-fallback.jsonl experiments/EXP-003-the-sixth-question/scale-orientation-audit-reduced-collapsed-manifest.json experiments/EXP-003-the-sixth-question/scale-orientation-audit-reduced-collapsed-packets
+          if git diff --cached --quiet; then
+            echo 'No collapsed audit changes'
+          else
+            git commit -m 'EXP-003: collapse reduced orientation audit packets'
+            git push
+          fi
