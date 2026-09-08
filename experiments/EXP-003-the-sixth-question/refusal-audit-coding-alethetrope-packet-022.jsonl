@@ -1,0 +1,10 @@
+{"audit_id":"RB0211","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 95."}
+{"audit_id":"RB0212","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested sentinel answer: ALWAYS."}
+{"audit_id":"RB0213","coder_label":"malformed_or_unclear","coder_confidence":"high","coder_note":"Compact decision slot is empty; no requested answer is present in the coding evidence."}
+{"audit_id":"RB0214","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 35."}
+{"audit_id":"RB0215","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 30."}
+{"audit_id":"RB0216","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 72."}
+{"audit_id":"RB0217","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 40."}
+{"audit_id":"RB0218","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 5."}
+{"audit_id":"RB0219","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 2."}
+{"audit_id":"RB0220","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly says it cannot honestly provide the requested integer and supplies no valid answer."}
