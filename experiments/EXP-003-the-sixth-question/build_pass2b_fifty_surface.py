@@ -6,6 +6,7 @@ rec=json.loads((ROOT/'record.json').read_text())
 rows=[]
 header_patterns=[
     re.compile(r'^\*\*([^*\n]+)\*\*\s*\(([^\n)]*)\)',re.M),
+    re.compile(r'^\*\*([^*\n]+)\*\*\s*\|\s*([^\n]+)$',re.M),
     re.compile(r'^#{1,4}\s+([^\n—:-]+?)\s*[—:-]\s*([^\n]+)$',re.M),
     re.compile(r'^\*\*([^*\n]+)\*\*\s*[—:-]\s*([^\n]+)$',re.M),
 ]
@@ -16,14 +17,11 @@ for cell in rec.get('cells',[]):
     for t in cell.get('turns') or []:
         q=t.get('question_id')
         debate=(t.get('sections') or {}).get('debate') or ''
-        matches=[]
-        used=None
+        matches=[]; used=None
         for pat in header_patterns:
             cand=list(pat.finditer(debate))
             if len(cand)>=5:
                 matches=cand; used=pat.pattern; break
-        if len(matches)<5:
-            print('FORMAT_DEBUG',rep,q,repr(debate[:1800]))
         seen=set(); decls=[]
         for i,m in enumerate(matches):
             name=m.group(1).strip(' *#:_—-')
