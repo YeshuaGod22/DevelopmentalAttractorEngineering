@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "source": "refusal-audit-blinded.jsonl",
+  "packet_size": 10,
+  "audit_rows": 425,
+  "packet_count": 43,
+  "rule": "decision_text is <reply> body when present, otherwise untagged residue; full blinded response remains authoritative for adjudication."
+}
