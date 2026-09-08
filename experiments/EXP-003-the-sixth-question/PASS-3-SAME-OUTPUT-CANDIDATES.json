@@ -1,0 +1,2546 @@
+{
+  "schema_version": 1,
+  "scope": "exact same validated numeric output in baseline and nonbaseline cells within same collection; branch 0 excluded",
+  "candidate_groups": 59,
+  "candidates": [
+    {
+      "collection": "raw2",
+      "item": "N4",
+      "value": 32,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 1,
+          "source_file": "C-r1-N4.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "Ha",
+          "replicate": 1,
+          "branch": "a",
+          "source_file": "Ha-r1-N4.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw6",
+      "item": "A1",
+      "value": 30,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 5,
+          "source_file": "C-r5-A1.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "HQ",
+          "replicate": 7,
+          "branch": "-",
+          "source_file": "HQ-r7-A1.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "HQ",
+          "replicate": 8,
+          "branch": "-",
+          "source_file": "HQ-r8-A1.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw6",
+      "item": "E01",
+      "value": 20,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 7,
+          "source_file": "C-r7-E01.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "HQ",
+          "replicate": 1,
+          "branch": "-",
+          "source_file": "HQ-r1-E01.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "HQ",
+          "replicate": 5,
+          "branch": "-",
+          "source_file": "HQ-r5-E01.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw6",
+      "item": "E01",
+      "value": 25,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 10,
+          "source_file": "C-r10-E01.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "HQ",
+          "replicate": 10,
+          "branch": "-",
+          "source_file": "HQ-r10-E01.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "HQ",
+          "replicate": 4,
+          "branch": "-",
+          "source_file": "HQ-r4-E01.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw6",
+      "item": "N4",
+      "value": 30,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 5,
+          "source_file": "C-r5-N4.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 8,
+          "source_file": "C-r8-N4.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "HQ",
+          "replicate": 4,
+          "branch": "-",
+          "source_file": "HQ-r4-N4.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw6",
+      "item": "N4",
+      "value": 35,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 10,
+          "source_file": "C-r10-N4.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 2,
+          "source_file": "C-r2-N4.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 4,
+          "source_file": "C-r4-N4.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 6,
+          "source_file": "C-r6-N4.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "HQ",
+          "replicate": 3,
+          "branch": "-",
+          "source_file": "HQ-r3-N4.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "HQ",
+          "replicate": 8,
+          "branch": "-",
+          "source_file": "HQ-r8-N4.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "HQ",
+          "replicate": 9,
+          "branch": "-",
+          "source_file": "HQ-r9-N4.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw6",
+      "item": "N9",
+      "value": 25,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 10,
+          "source_file": "C-r10-N9.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 7,
+          "source_file": "C-r7-N9.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "HQ",
+          "replicate": 4,
+          "branch": "-",
+          "source_file": "HQ-r4-N9.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "B01",
+      "value": 25,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 1,
+          "source_file": "C-r1-B01.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 10,
+          "source_file": "C-r10-B01.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "ASQ",
+          "replicate": 1,
+          "branch": "-",
+          "source_file": "ASQ-r1-B01.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "B01",
+      "value": 30,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 5,
+          "source_file": "C-r5-B01.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "HQ",
+          "replicate": 3,
+          "branch": "-",
+          "source_file": "HQ-r3-B01.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "B01",
+      "value": 35,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 2,
+          "source_file": "C-r2-B01.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 8,
+          "source_file": "C-r8-B01.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "FQ",
+          "replicate": 1,
+          "branch": "-",
+          "source_file": "FQ-r1-B01.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "B01",
+      "value": 40,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 3,
+          "source_file": "C-r3-B01.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 4,
+          "source_file": "C-r4-B01.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "AQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "AQ-r2-B01.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "ASQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "ASQ-r2-B01.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "FQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "FQ-r2-B01.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "HQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "HQ-r2-B01.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "B04",
+      "value": 1,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 10,
+          "source_file": "C-r10-B04.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 9,
+          "source_file": "C-r9-B04.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "AQ",
+          "replicate": 1,
+          "branch": "-",
+          "source_file": "AQ-r1-B04.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "B05",
+      "value": 15,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 3,
+          "source_file": "C-r3-B05.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "ASQ",
+          "replicate": 3,
+          "branch": "-",
+          "source_file": "ASQ-r3-B05.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "FQ",
+          "replicate": 1,
+          "branch": "-",
+          "source_file": "FQ-r1-B05.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "FQ",
+          "replicate": 3,
+          "branch": "-",
+          "source_file": "FQ-r3-B05.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "B05",
+      "value": 25,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 5,
+          "source_file": "C-r5-B05.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 9,
+          "source_file": "C-r9-B05.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "AQ",
+          "replicate": 1,
+          "branch": "-",
+          "source_file": "AQ-r1-B05.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "ASQ",
+          "replicate": 1,
+          "branch": "-",
+          "source_file": "ASQ-r1-B05.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "HQ",
+          "replicate": 3,
+          "branch": "-",
+          "source_file": "HQ-r3-B05.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "B05",
+      "value": 30,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 2,
+          "source_file": "C-r2-B05.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 7,
+          "source_file": "C-r7-B05.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 8,
+          "source_file": "C-r8-B05.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "AQ",
+          "replicate": 3,
+          "branch": "-",
+          "source_file": "AQ-r3-B05.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "HQ",
+          "replicate": 1,
+          "branch": "-",
+          "source_file": "HQ-r1-B05.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "B07",
+      "value": 30,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 10,
+          "source_file": "C-r10-B07.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 8,
+          "source_file": "C-r8-B07.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "AQ",
+          "replicate": 3,
+          "branch": "-",
+          "source_file": "AQ-r3-B07.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "B07",
+      "value": 35,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 2,
+          "source_file": "C-r2-B07.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 6,
+          "source_file": "C-r6-B07.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 9,
+          "source_file": "C-r9-B07.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "AQ",
+          "replicate": 1,
+          "branch": "-",
+          "source_file": "AQ-r1-B07.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "AQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "AQ-r2-B07.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "B07",
+      "value": 40,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 1,
+          "source_file": "C-r1-B07.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 3,
+          "source_file": "C-r3-B07.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 5,
+          "source_file": "C-r5-B07.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 7,
+          "source_file": "C-r7-B07.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "HQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "HQ-r2-B07.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "C1",
+      "value": 42,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 8,
+          "source_file": "C-r8-C1.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "AQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "AQ-r2-C1.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "AQ",
+          "replicate": 3,
+          "branch": "-",
+          "source_file": "AQ-r3-C1.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "ASQ",
+          "replicate": 1,
+          "branch": "-",
+          "source_file": "ASQ-r1-C1.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "ASQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "ASQ-r2-C1.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "FQ",
+          "replicate": 1,
+          "branch": "-",
+          "source_file": "FQ-r1-C1.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "FQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "FQ-r2-C1.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "HQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "HQ-r2-C1.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "C2",
+      "value": 72,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 1,
+          "source_file": "C-r1-C2.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 10,
+          "source_file": "C-r10-C2.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 4,
+          "source_file": "C-r4-C2.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 8,
+          "source_file": "C-r8-C2.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 9,
+          "source_file": "C-r9-C2.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "AQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "AQ-r2-C2.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "AQ",
+          "replicate": 3,
+          "branch": "-",
+          "source_file": "AQ-r3-C2.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "ASQ",
+          "replicate": 3,
+          "branch": "-",
+          "source_file": "ASQ-r3-C2.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "FQ",
+          "replicate": 3,
+          "branch": "-",
+          "source_file": "FQ-r3-C2.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "HQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "HQ-r2-C2.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "C3",
+      "value": 25,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 2,
+          "source_file": "C-r2-C3.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 5,
+          "source_file": "C-r5-C3.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 6,
+          "source_file": "C-r6-C3.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "AQ",
+          "replicate": 1,
+          "branch": "-",
+          "source_file": "AQ-r1-C3.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "AQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "AQ-r2-C3.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "C3",
+      "value": 28,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 3,
+          "source_file": "C-r3-C3.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 4,
+          "source_file": "C-r4-C3.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 8,
+          "source_file": "C-r8-C3.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "ASQ",
+          "replicate": 3,
+          "branch": "-",
+          "source_file": "ASQ-r3-C3.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "FQ",
+          "replicate": 1,
+          "branch": "-",
+          "source_file": "FQ-r1-C3.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "C3",
+      "value": 35,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 1,
+          "source_file": "C-r1-C3.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "AQ",
+          "replicate": 3,
+          "branch": "-",
+          "source_file": "AQ-r3-C3.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "C4",
+      "value": 68,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 9,
+          "source_file": "C-r9-C4.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "FQ",
+          "replicate": 3,
+          "branch": "-",
+          "source_file": "FQ-r3-C4.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "C4",
+      "value": 70,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 1,
+          "source_file": "C-r1-C4.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 5,
+          "source_file": "C-r5-C4.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "HQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "HQ-r2-C4.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "C4",
+      "value": 72,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 8,
+          "source_file": "C-r8-C4.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "AQ",
+          "replicate": 1,
+          "branch": "-",
+          "source_file": "AQ-r1-C4.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "AQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "AQ-r2-C4.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "FQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "FQ-r2-C4.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "D1",
+      "value": 20,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 1,
+          "source_file": "C-r1-D1.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 6,
+          "source_file": "C-r6-D1.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "AQ",
+          "replicate": 1,
+          "branch": "-",
+          "source_file": "AQ-r1-D1.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "AQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "AQ-r2-D1.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "D1",
+      "value": 25,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 10,
+          "source_file": "C-r10-D1.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "AQ",
+          "replicate": 3,
+          "branch": "-",
+          "source_file": "AQ-r3-D1.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "D2",
+      "value": 40,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 6,
+          "source_file": "C-r6-D2.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 9,
+          "source_file": "C-r9-D2.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "AQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "AQ-r2-D2.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "D2",
+      "value": 45,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 4,
+          "source_file": "C-r4-D2.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 5,
+          "source_file": "C-r5-D2.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 7,
+          "source_file": "C-r7-D2.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "FQ",
+          "replicate": 1,
+          "branch": "-",
+          "source_file": "FQ-r1-D2.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "HQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "HQ-r2-D2.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "D3",
+      "value": 25,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 1,
+          "source_file": "C-r1-D3.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 6,
+          "source_file": "C-r6-D3.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 8,
+          "source_file": "C-r8-D3.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "AQ",
+          "replicate": 1,
+          "branch": "-",
+          "source_file": "AQ-r1-D3.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "AQ",
+          "replicate": 3,
+          "branch": "-",
+          "source_file": "AQ-r3-D3.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "FQ",
+          "replicate": 1,
+          "branch": "-",
+          "source_file": "FQ-r1-D3.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "HQ",
+          "replicate": 1,
+          "branch": "-",
+          "source_file": "HQ-r1-D3.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "D3",
+      "value": 35,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 5,
+          "source_file": "C-r5-D3.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 9,
+          "source_file": "C-r9-D3.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "ASQ",
+          "replicate": 3,
+          "branch": "-",
+          "source_file": "ASQ-r3-D3.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "FQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "FQ-r2-D3.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "FQ",
+          "replicate": 3,
+          "branch": "-",
+          "source_file": "FQ-r3-D3.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "D3",
+      "value": 40,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 4,
+          "source_file": "C-r4-D3.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "HQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "HQ-r2-D3.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "HQ",
+          "replicate": 3,
+          "branch": "-",
+          "source_file": "HQ-r3-D3.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "E01",
+      "value": 15,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 3,
+          "source_file": "C-r3-E01.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "AQ",
+          "replicate": 3,
+          "branch": "-",
+          "source_file": "AQ-r3-E01.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "ASQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "ASQ-r2-E01.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "E02",
+      "value": 15,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 6,
+          "source_file": "C-r6-E02.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "AQ",
+          "replicate": 1,
+          "branch": "-",
+          "source_file": "AQ-r1-E02.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "E02",
+      "value": 25,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 4,
+          "source_file": "C-r4-E02.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 7,
+          "source_file": "C-r7-E02.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "AQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "AQ-r2-E02.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "AQ",
+          "replicate": 3,
+          "branch": "-",
+          "source_file": "AQ-r3-E02.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "FQ",
+          "replicate": 3,
+          "branch": "-",
+          "source_file": "FQ-r3-E02.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "HQ",
+          "replicate": 1,
+          "branch": "-",
+          "source_file": "HQ-r1-E02.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "N1",
+      "value": 38,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 4,
+          "source_file": "C-r4-N1.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "AQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "AQ-r2-N1.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "AQ",
+          "replicate": 3,
+          "branch": "-",
+          "source_file": "AQ-r3-N1.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "HQ",
+          "replicate": 3,
+          "branch": "-",
+          "source_file": "HQ-r3-N1.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "N1",
+      "value": 42,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 9,
+          "source_file": "C-r9-N1.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "ASQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "ASQ-r2-N1.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "ASQ",
+          "replicate": 3,
+          "branch": "-",
+          "source_file": "ASQ-r3-N1.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "FQ",
+          "replicate": 1,
+          "branch": "-",
+          "source_file": "FQ-r1-N1.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "FQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "FQ-r2-N1.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "FQ",
+          "replicate": 3,
+          "branch": "-",
+          "source_file": "FQ-r3-N1.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "HQ",
+          "replicate": 1,
+          "branch": "-",
+          "source_file": "HQ-r1-N1.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "HQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "HQ-r2-N1.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "N1",
+      "value": 68,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 3,
+          "source_file": "C-r3-N1.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 7,
+          "source_file": "C-r7-N1.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "AQ",
+          "replicate": 1,
+          "branch": "-",
+          "source_file": "AQ-r1-N1.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "N3",
+      "value": 40,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 1,
+          "source_file": "C-r1-N3.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 5,
+          "source_file": "C-r5-N3.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 9,
+          "source_file": "C-r9-N3.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "AQ",
+          "replicate": 1,
+          "branch": "-",
+          "source_file": "AQ-r1-N3.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "N3",
+      "value": 68,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 4,
+          "source_file": "C-r4-N3.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "FQ",
+          "replicate": 3,
+          "branch": "-",
+          "source_file": "FQ-r3-N3.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "N3",
+      "value": 72,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 2,
+          "source_file": "C-r2-N3.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "AQ",
+          "replicate": 3,
+          "branch": "-",
+          "source_file": "AQ-r3-N3.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "N4",
+      "value": 25,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 2,
+          "source_file": "C-r2-N4.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "ASQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "ASQ-r2-N4.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "N4",
+      "value": 35,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 3,
+          "source_file": "C-r3-N4.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 4,
+          "source_file": "C-r4-N4.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 6,
+          "source_file": "C-r6-N4.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 8,
+          "source_file": "C-r8-N4.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 9,
+          "source_file": "C-r9-N4.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "AQ",
+          "replicate": 1,
+          "branch": "-",
+          "source_file": "AQ-r1-N4.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "AQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "AQ-r2-N4.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "AQ",
+          "replicate": 3,
+          "branch": "-",
+          "source_file": "AQ-r3-N4.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "FQ",
+          "replicate": 3,
+          "branch": "-",
+          "source_file": "FQ-r3-N4.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "N4",
+      "value": 38,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 10,
+          "source_file": "C-r10-N4.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "FQ",
+          "replicate": 1,
+          "branch": "-",
+          "source_file": "FQ-r1-N4.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "HQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "HQ-r2-N4.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "N6",
+      "value": 25,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 3,
+          "source_file": "C-r3-N6.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "HQ",
+          "replicate": 3,
+          "branch": "-",
+          "source_file": "HQ-r3-N6.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "N6",
+      "value": 30,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 2,
+          "source_file": "C-r2-N6.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 8,
+          "source_file": "C-r8-N6.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 9,
+          "source_file": "C-r9-N6.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "FQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "FQ-r2-N6.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "N6",
+      "value": 35,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 10,
+          "source_file": "C-r10-N6.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "ASQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "ASQ-r2-N6.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "FQ",
+          "replicate": 1,
+          "branch": "-",
+          "source_file": "FQ-r1-N6.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "N6",
+      "value": 40,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 1,
+          "source_file": "C-r1-N6.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 4,
+          "source_file": "C-r4-N6.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 6,
+          "source_file": "C-r6-N6.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 7,
+          "source_file": "C-r7-N6.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "AQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "AQ-r2-N6.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "AQ",
+          "replicate": 3,
+          "branch": "-",
+          "source_file": "AQ-r3-N6.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "HQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "HQ-r2-N6.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "N6",
+      "value": 45,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 5,
+          "source_file": "C-r5-N6.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "HQ",
+          "replicate": 1,
+          "branch": "-",
+          "source_file": "HQ-r1-N6.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "N8",
+      "value": 50,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 1,
+          "source_file": "C-r1-N8.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 10,
+          "source_file": "C-r10-N8.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 2,
+          "source_file": "C-r2-N8.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 3,
+          "source_file": "C-r3-N8.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 4,
+          "source_file": "C-r4-N8.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 5,
+          "source_file": "C-r5-N8.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 6,
+          "source_file": "C-r6-N8.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 7,
+          "source_file": "C-r7-N8.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 8,
+          "source_file": "C-r8-N8.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 9,
+          "source_file": "C-r9-N8.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "AQ",
+          "replicate": 1,
+          "branch": "-",
+          "source_file": "AQ-r1-N8.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "AQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "AQ-r2-N8.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "FQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "FQ-r2-N8.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "HQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "HQ-r2-N8.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "HQ",
+          "replicate": 3,
+          "branch": "-",
+          "source_file": "HQ-r3-N8.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "N9",
+      "value": 15,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 9,
+          "source_file": "C-r9-N9.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "AQ",
+          "replicate": 1,
+          "branch": "-",
+          "source_file": "AQ-r1-N9.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "AQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "AQ-r2-N9.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "HQ",
+          "replicate": 1,
+          "branch": "-",
+          "source_file": "HQ-r1-N9.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "N9",
+      "value": 25,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 2,
+          "source_file": "C-r2-N9.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 3,
+          "source_file": "C-r3-N9.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 4,
+          "source_file": "C-r4-N9.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 5,
+          "source_file": "C-r5-N9.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 8,
+          "source_file": "C-r8-N9.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "ASQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "ASQ-r2-N9.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "P2",
+      "value": 35,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 7,
+          "source_file": "C-r7-P2.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 9,
+          "source_file": "C-r9-P2.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "ASQ",
+          "replicate": 1,
+          "branch": "-",
+          "source_file": "ASQ-r1-P2.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "P2",
+      "value": 38,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 10,
+          "source_file": "C-r10-P2.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 2,
+          "source_file": "C-r2-P2.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 4,
+          "source_file": "C-r4-P2.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "AQ",
+          "replicate": 1,
+          "branch": "-",
+          "source_file": "AQ-r1-P2.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "AQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "AQ-r2-P2.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "FQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "FQ-r2-P2.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "R1",
+      "value": 87,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 2,
+          "source_file": "C-r2-R1.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 3,
+          "source_file": "C-r3-R1.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "AQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "AQ-r2-R1.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "R1",
+      "value": 92,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 1,
+          "source_file": "C-r1-R1.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "AQ",
+          "replicate": 1,
+          "branch": "-",
+          "source_file": "AQ-r1-R1.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "AQ",
+          "replicate": 3,
+          "branch": "-",
+          "source_file": "AQ-r3-R1.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "FQ",
+          "replicate": 1,
+          "branch": "-",
+          "source_file": "FQ-r1-R1.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "R2",
+      "value": 1,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 1,
+          "source_file": "C-r1-R2.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 10,
+          "source_file": "C-r10-R2.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 3,
+          "source_file": "C-r3-R2.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 4,
+          "source_file": "C-r4-R2.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 6,
+          "source_file": "C-r6-R2.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 7,
+          "source_file": "C-r7-R2.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 8,
+          "source_file": "C-r8-R2.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "AQ",
+          "replicate": 1,
+          "branch": "-",
+          "source_file": "AQ-r1-R2.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "HQ",
+          "replicate": 1,
+          "branch": "-",
+          "source_file": "HQ-r1-R2.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    },
+    {
+      "collection": "raw7",
+      "item": "R2",
+      "value": 2,
+      "baseline_cell": "C",
+      "baseline_rows": [
+        {
+          "cell": "C",
+          "replicate": 2,
+          "source_file": "C-r2-R2.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 5,
+          "source_file": "C-r5-R2.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "C",
+          "replicate": 9,
+          "source_file": "C-r9-R2.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ],
+      "other_rows": [
+        {
+          "cell": "AQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "AQ-r2-R2.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "AQ",
+          "replicate": 3,
+          "branch": "-",
+          "source_file": "AQ-r3-R2.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "ASQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "ASQ-r2-R2.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "FQ",
+          "replicate": 1,
+          "branch": "-",
+          "source_file": "FQ-r1-R2.json",
+          "status": "ok",
+          "kind": "integer"
+        },
+        {
+          "cell": "HQ",
+          "replicate": 2,
+          "branch": "-",
+          "source_file": "HQ-r2-R2.json",
+          "status": "ok",
+          "kind": "integer"
+        }
+      ]
+    }
+  ]
+}

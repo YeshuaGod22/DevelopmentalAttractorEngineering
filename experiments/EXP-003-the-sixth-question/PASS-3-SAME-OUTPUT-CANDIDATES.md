@@ -1,0 +1,65 @@
+# Pass 3E — same-output reasoning candidates
+
+Exact same validated numeric output occurring in a same-collection baseline (`C`/`C0`) and at least one non-baseline cell. This is candidate retrieval for close reading, not evidence that reasoning differs.
+
+Candidate groups: **59**
+
+- `raw2 | N4 | 32` — baseline: C r1 `C-r1-N4.json`; other: Ha r1 `Ha-r1-N4.json`
+- `raw6 | A1 | 30` — baseline: C r5 `C-r5-A1.json`; other: HQ r7 `HQ-r7-A1.json`, HQ r8 `HQ-r8-A1.json`
+- `raw6 | E01 | 20` — baseline: C r7 `C-r7-E01.json`; other: HQ r1 `HQ-r1-E01.json`, HQ r5 `HQ-r5-E01.json`
+- `raw6 | E01 | 25` — baseline: C r10 `C-r10-E01.json`; other: HQ r10 `HQ-r10-E01.json`, HQ r4 `HQ-r4-E01.json`
+- `raw6 | N4 | 30` — baseline: C r5 `C-r5-N4.json`, C r8 `C-r8-N4.json`; other: HQ r4 `HQ-r4-N4.json`
+- `raw6 | N4 | 35` — baseline: C r10 `C-r10-N4.json`, C r2 `C-r2-N4.json`, C r4 `C-r4-N4.json`, C r6 `C-r6-N4.json`; other: HQ r3 `HQ-r3-N4.json`, HQ r8 `HQ-r8-N4.json`, HQ r9 `HQ-r9-N4.json`
+- `raw6 | N9 | 25` — baseline: C r10 `C-r10-N9.json`, C r7 `C-r7-N9.json`; other: HQ r4 `HQ-r4-N9.json`
+- `raw7 | B01 | 25` — baseline: C r1 `C-r1-B01.json`, C r10 `C-r10-B01.json`; other: ASQ r1 `ASQ-r1-B01.json`
+- `raw7 | B01 | 30` — baseline: C r5 `C-r5-B01.json`; other: HQ r3 `HQ-r3-B01.json`
+- `raw7 | B01 | 35` — baseline: C r2 `C-r2-B01.json`, C r8 `C-r8-B01.json`; other: FQ r1 `FQ-r1-B01.json`
+- `raw7 | B01 | 40` — baseline: C r3 `C-r3-B01.json`, C r4 `C-r4-B01.json`; other: AQ r2 `AQ-r2-B01.json`, ASQ r2 `ASQ-r2-B01.json`, FQ r2 `FQ-r2-B01.json`, HQ r2 `HQ-r2-B01.json`
+- `raw7 | B04 | 1` — baseline: C r10 `C-r10-B04.json`, C r9 `C-r9-B04.json`; other: AQ r1 `AQ-r1-B04.json`
+- `raw7 | B05 | 15` — baseline: C r3 `C-r3-B05.json`; other: ASQ r3 `ASQ-r3-B05.json`, FQ r1 `FQ-r1-B05.json`, FQ r3 `FQ-r3-B05.json`
+- `raw7 | B05 | 25` — baseline: C r5 `C-r5-B05.json`, C r9 `C-r9-B05.json`; other: AQ r1 `AQ-r1-B05.json`, ASQ r1 `ASQ-r1-B05.json`, HQ r3 `HQ-r3-B05.json`
+- `raw7 | B05 | 30` — baseline: C r2 `C-r2-B05.json`, C r7 `C-r7-B05.json`, C r8 `C-r8-B05.json`; other: AQ r3 `AQ-r3-B05.json`, HQ r1 `HQ-r1-B05.json`
+- `raw7 | B07 | 30` — baseline: C r10 `C-r10-B07.json`, C r8 `C-r8-B07.json`; other: AQ r3 `AQ-r3-B07.json`
+- `raw7 | B07 | 35` — baseline: C r2 `C-r2-B07.json`, C r6 `C-r6-B07.json`, C r9 `C-r9-B07.json`; other: AQ r1 `AQ-r1-B07.json`, AQ r2 `AQ-r2-B07.json`
+- `raw7 | B07 | 40` — baseline: C r1 `C-r1-B07.json`, C r3 `C-r3-B07.json`, C r5 `C-r5-B07.json`, C r7 `C-r7-B07.json`; other: HQ r2 `HQ-r2-B07.json`
+- `raw7 | C1 | 42` — baseline: C r8 `C-r8-C1.json`; other: AQ r2 `AQ-r2-C1.json`, AQ r3 `AQ-r3-C1.json`, ASQ r1 `ASQ-r1-C1.json`, ASQ r2 `ASQ-r2-C1.json`, FQ r1 `FQ-r1-C1.json`, FQ r2 `FQ-r2-C1.json`, HQ r2 `HQ-r2-C1.json`
+- `raw7 | C2 | 72` — baseline: C r1 `C-r1-C2.json`, C r10 `C-r10-C2.json`, C r4 `C-r4-C2.json`, C r8 `C-r8-C2.json`, C r9 `C-r9-C2.json`; other: AQ r2 `AQ-r2-C2.json`, AQ r3 `AQ-r3-C2.json`, ASQ r3 `ASQ-r3-C2.json`, FQ r3 `FQ-r3-C2.json`, HQ r2 `HQ-r2-C2.json`
+- `raw7 | C3 | 25` — baseline: C r2 `C-r2-C3.json`, C r5 `C-r5-C3.json`, C r6 `C-r6-C3.json`; other: AQ r1 `AQ-r1-C3.json`, AQ r2 `AQ-r2-C3.json`
+- `raw7 | C3 | 28` — baseline: C r3 `C-r3-C3.json`, C r4 `C-r4-C3.json`, C r8 `C-r8-C3.json`; other: ASQ r3 `ASQ-r3-C3.json`, FQ r1 `FQ-r1-C3.json`
+- `raw7 | C3 | 35` — baseline: C r1 `C-r1-C3.json`; other: AQ r3 `AQ-r3-C3.json`
+- `raw7 | C4 | 68` — baseline: C r9 `C-r9-C4.json`; other: FQ r3 `FQ-r3-C4.json`
+- `raw7 | C4 | 70` — baseline: C r1 `C-r1-C4.json`, C r5 `C-r5-C4.json`; other: HQ r2 `HQ-r2-C4.json`
+- `raw7 | C4 | 72` — baseline: C r8 `C-r8-C4.json`; other: AQ r1 `AQ-r1-C4.json`, AQ r2 `AQ-r2-C4.json`, FQ r2 `FQ-r2-C4.json`
+- `raw7 | D1 | 20` — baseline: C r1 `C-r1-D1.json`, C r6 `C-r6-D1.json`; other: AQ r1 `AQ-r1-D1.json`, AQ r2 `AQ-r2-D1.json`
+- `raw7 | D1 | 25` — baseline: C r10 `C-r10-D1.json`; other: AQ r3 `AQ-r3-D1.json`
+- `raw7 | D2 | 40` — baseline: C r6 `C-r6-D2.json`, C r9 `C-r9-D2.json`; other: AQ r2 `AQ-r2-D2.json`
+- `raw7 | D2 | 45` — baseline: C r4 `C-r4-D2.json`, C r5 `C-r5-D2.json`, C r7 `C-r7-D2.json`; other: FQ r1 `FQ-r1-D2.json`, HQ r2 `HQ-r2-D2.json`
+- `raw7 | D3 | 25` — baseline: C r1 `C-r1-D3.json`, C r6 `C-r6-D3.json`, C r8 `C-r8-D3.json`; other: AQ r1 `AQ-r1-D3.json`, AQ r3 `AQ-r3-D3.json`, FQ r1 `FQ-r1-D3.json`, HQ r1 `HQ-r1-D3.json`
+- `raw7 | D3 | 35` — baseline: C r5 `C-r5-D3.json`, C r9 `C-r9-D3.json`; other: ASQ r3 `ASQ-r3-D3.json`, FQ r2 `FQ-r2-D3.json`, FQ r3 `FQ-r3-D3.json`
+- `raw7 | D3 | 40` — baseline: C r4 `C-r4-D3.json`; other: HQ r2 `HQ-r2-D3.json`, HQ r3 `HQ-r3-D3.json`
+- `raw7 | E01 | 15` — baseline: C r3 `C-r3-E01.json`; other: AQ r3 `AQ-r3-E01.json`, ASQ r2 `ASQ-r2-E01.json`
+- `raw7 | E02 | 15` — baseline: C r6 `C-r6-E02.json`; other: AQ r1 `AQ-r1-E02.json`
+- `raw7 | E02 | 25` — baseline: C r4 `C-r4-E02.json`, C r7 `C-r7-E02.json`; other: AQ r2 `AQ-r2-E02.json`, AQ r3 `AQ-r3-E02.json`, FQ r3 `FQ-r3-E02.json`, HQ r1 `HQ-r1-E02.json`
+- `raw7 | N1 | 38` — baseline: C r4 `C-r4-N1.json`; other: AQ r2 `AQ-r2-N1.json`, AQ r3 `AQ-r3-N1.json`, HQ r3 `HQ-r3-N1.json`
+- `raw7 | N1 | 42` — baseline: C r9 `C-r9-N1.json`; other: ASQ r2 `ASQ-r2-N1.json`, ASQ r3 `ASQ-r3-N1.json`, FQ r1 `FQ-r1-N1.json`, FQ r2 `FQ-r2-N1.json`, FQ r3 `FQ-r3-N1.json`, HQ r1 `HQ-r1-N1.json`, HQ r2 `HQ-r2-N1.json`
+- `raw7 | N1 | 68` — baseline: C r3 `C-r3-N1.json`, C r7 `C-r7-N1.json`; other: AQ r1 `AQ-r1-N1.json`
+- `raw7 | N3 | 40` — baseline: C r1 `C-r1-N3.json`, C r5 `C-r5-N3.json`, C r9 `C-r9-N3.json`; other: AQ r1 `AQ-r1-N3.json`
+- `raw7 | N3 | 68` — baseline: C r4 `C-r4-N3.json`; other: FQ r3 `FQ-r3-N3.json`
+- `raw7 | N3 | 72` — baseline: C r2 `C-r2-N3.json`; other: AQ r3 `AQ-r3-N3.json`
+- `raw7 | N4 | 25` — baseline: C r2 `C-r2-N4.json`; other: ASQ r2 `ASQ-r2-N4.json`
+- `raw7 | N4 | 35` — baseline: C r3 `C-r3-N4.json`, C r4 `C-r4-N4.json`, C r6 `C-r6-N4.json`, C r8 `C-r8-N4.json`, C r9 `C-r9-N4.json`; other: AQ r1 `AQ-r1-N4.json`, AQ r2 `AQ-r2-N4.json`, AQ r3 `AQ-r3-N4.json`, FQ r3 `FQ-r3-N4.json`
+- `raw7 | N4 | 38` — baseline: C r10 `C-r10-N4.json`; other: FQ r1 `FQ-r1-N4.json`, HQ r2 `HQ-r2-N4.json`
+- `raw7 | N6 | 25` — baseline: C r3 `C-r3-N6.json`; other: HQ r3 `HQ-r3-N6.json`
+- `raw7 | N6 | 30` — baseline: C r2 `C-r2-N6.json`, C r8 `C-r8-N6.json`, C r9 `C-r9-N6.json`; other: FQ r2 `FQ-r2-N6.json`
+- `raw7 | N6 | 35` — baseline: C r10 `C-r10-N6.json`; other: ASQ r2 `ASQ-r2-N6.json`, FQ r1 `FQ-r1-N6.json`
+- `raw7 | N6 | 40` — baseline: C r1 `C-r1-N6.json`, C r4 `C-r4-N6.json`, C r6 `C-r6-N6.json`, C r7 `C-r7-N6.json`; other: AQ r2 `AQ-r2-N6.json`, AQ r3 `AQ-r3-N6.json`, HQ r2 `HQ-r2-N6.json`
+- `raw7 | N6 | 45` — baseline: C r5 `C-r5-N6.json`; other: HQ r1 `HQ-r1-N6.json`
+- `raw7 | N8 | 50` — baseline: C r1 `C-r1-N8.json`, C r10 `C-r10-N8.json`, C r2 `C-r2-N8.json`, C r3 `C-r3-N8.json`, C r4 `C-r4-N8.json`, C r5 `C-r5-N8.json`, C r6 `C-r6-N8.json`, C r7 `C-r7-N8.json`, C r8 `C-r8-N8.json`, C r9 `C-r9-N8.json`; other: AQ r1 `AQ-r1-N8.json`, AQ r2 `AQ-r2-N8.json`, FQ r2 `FQ-r2-N8.json`, HQ r2 `HQ-r2-N8.json`, HQ r3 `HQ-r3-N8.json`
+- `raw7 | N9 | 15` — baseline: C r9 `C-r9-N9.json`; other: AQ r1 `AQ-r1-N9.json`, AQ r2 `AQ-r2-N9.json`, HQ r1 `HQ-r1-N9.json`
+- `raw7 | N9 | 25` — baseline: C r2 `C-r2-N9.json`, C r3 `C-r3-N9.json`, C r4 `C-r4-N9.json`, C r5 `C-r5-N9.json`, C r8 `C-r8-N9.json`; other: ASQ r2 `ASQ-r2-N9.json`
+- `raw7 | P2 | 35` — baseline: C r7 `C-r7-P2.json`, C r9 `C-r9-P2.json`; other: ASQ r1 `ASQ-r1-P2.json`
+- `raw7 | P2 | 38` — baseline: C r10 `C-r10-P2.json`, C r2 `C-r2-P2.json`, C r4 `C-r4-P2.json`; other: AQ r1 `AQ-r1-P2.json`, AQ r2 `AQ-r2-P2.json`, FQ r2 `FQ-r2-P2.json`
+- `raw7 | R1 | 87` — baseline: C r2 `C-r2-R1.json`, C r3 `C-r3-R1.json`; other: AQ r2 `AQ-r2-R1.json`
+- `raw7 | R1 | 92` — baseline: C r1 `C-r1-R1.json`; other: AQ r1 `AQ-r1-R1.json`, AQ r3 `AQ-r3-R1.json`, FQ r1 `FQ-r1-R1.json`
+- `raw7 | R2 | 1` — baseline: C r1 `C-r1-R2.json`, C r10 `C-r10-R2.json`, C r3 `C-r3-R2.json`, C r4 `C-r4-R2.json`, C r6 `C-r6-R2.json`, C r7 `C-r7-R2.json`, C r8 `C-r8-R2.json`; other: AQ r1 `AQ-r1-R2.json`, HQ r1 `HQ-r1-R2.json`
+- `raw7 | R2 | 2` — baseline: C r2 `C-r2-R2.json`, C r5 `C-r5-R2.json`, C r9 `C-r9-R2.json`; other: AQ r2 `AQ-r2-R2.json`, AQ r3 `AQ-r3-R2.json`, ASQ r2 `ASQ-r2-R2.json`, FQ r1 `FQ-r1-R2.json`, HQ r2 `HQ-r2-R2.json`
