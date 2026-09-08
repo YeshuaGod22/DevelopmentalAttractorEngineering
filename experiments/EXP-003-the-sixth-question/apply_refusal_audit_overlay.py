@@ -1,49 +1,104 @@
 #!/usr/bin/env python3
 """Apply frozen refusal-audit outcomes as a validated overlay on analysis-table.jsonl.
 
-This does not mutate parser history. Original parser fields are retained; validated
-fields are added for downstream descriptive analysis.
+Primary audit artifacts are used directly:
+- refusal-audit-key.json: audit_id -> source_file/parser provenance
+- frozen coder JSONL files: audit_id -> blind label
+- refusal-audit-range-corrections-blind.jsonl: post-rubric-amendment overrides
+
+Original parser fields are retained; validated fields are added downstream.
 """
 from __future__ import annotations
 import json
 from pathlib import Path
+from collections import Counter
 
 ROOT = Path(__file__).resolve().parent
 TABLE = ROOT / "analysis-table.jsonl"
-SCORE = ROOT / "refusal-audit-score.json"
+KEY = ROOT / "refusal-audit-key.json"
+CORR = ROOT / "refusal-audit-range-corrections-blind.jsonl"
 OUT = ROOT / "analysis-table-validated.jsonl"
 SUMMARY = ROOT / "analysis-summary-validated.json"
 
 
 def load_jsonl(path):
-    return [json.loads(x) for x in path.read_text(encoding="utf-8").splitlines() if x.strip()]
+    return [json.loads(x) for x in Path(path).read_text(encoding="utf-8").splitlines() if x.strip()]
 
 
 def main():
     rows = load_jsonl(TABLE)
-    score = json.loads(SCORE.read_text(encoding="utf-8"))
+    key = json.loads(KEY.read_text(encoding="utf-8"))
+    key_rows = key.get("rows", [])
+    if len(key_rows) != 425:
+        raise SystemExit(f"expected 425 key rows, got {len(key_rows)}")
 
-    # score output contains corrected audit rows in final_rows.
-    final_rows = score.get("final_rows") or []
-    if not final_rows:
-        raise SystemExit("refusal-audit-score.json has no final_rows; scorer output schema unsupported")
+    labels = {}
+    coding_files = []
+    patterns = [
+        "refusal-audit-coding*.jsonl",
+        "packet-*-alethetrope.jsonl",
+        "refusal-audit-coding-packet-*.jsonl",
+    ]
+    seen_paths = set()
+    for pat in patterns:
+        for p in sorted(ROOT.glob(pat)):
+            if p in seen_paths:
+                continue
+            seen_paths.add(p)
+            coding_files.append(p.name)
+            for rec in load_jsonl(p):
+                aid = rec.get("audit_id")
+                lab = rec.get("coder_label")
+                if not aid or not lab:
+                    continue
+                old = labels.get(aid)
+                if old and old != lab:
+                    raise SystemExit(f"conflicting frozen coder labels for {aid}: {old} vs {lab}")
+                labels[aid] = lab
+
+    if len(labels) != 425:
+        missing = sorted(set(r.get("audit_id") for r in key_rows) - set(labels))
+        raise SystemExit(f"expected 425 frozen labels, got {len(labels)}; missing={missing[:20]}")
+
+    corrections = {}
+    for rec in load_jsonl(CORR):
+        aid = rec.get("audit_id")
+        if aid:
+            corrections[aid] = rec
 
     by_source = {}
-    for a in final_rows:
-        src = a.get("source_file")
+    range_applied = 0
+    for kr in key_rows:
+        aid = kr["audit_id"]
+        lab = labels[aid]
+        c = corrections.get(aid)
+        score = None
+        qualified = False
+        qualifier = None
+        if c:
+            lab = c.get("new_label", lab)
+            score = c.get("score")
+            qualifier = c.get("qualifier")
+            qualified = score is not None
+            range_applied += 1
+        src = kr.get("source_file")
         if not src:
-            continue
+            raise SystemExit(f"key row {aid} missing source_file")
         if src in by_source:
-            raise SystemExit(f"duplicate audited source_file: {src}")
-        by_source[src] = a
+            raise SystemExit(f"duplicate audited source_file {src}")
+        by_source[src] = {
+            **kr,
+            "final_audit_label": lab,
+            "audit_score": score,
+            "audit_score_qualified": qualified,
+            "audit_score_qualifier": qualifier,
+        }
 
     applied = 0
     for r in rows:
-        # preserve original parser fields explicitly
         r["parser_parse_status"] = r.get("parse_status")
         r["parser_parsed_kind"] = r.get("parsed_kind")
         r["parser_parsed_value"] = r.get("parsed_value")
-
         r["validated_parse_status"] = r.get("parse_status")
         r["validated_parsed_kind"] = r.get("parsed_kind")
         r["validated_parsed_value"] = r.get("parsed_value")
@@ -51,6 +106,7 @@ def main():
         r["refusal_audit_id"] = None
         r["refusal_audit_label"] = None
         r["refusal_audit_score_qualified"] = False
+        r["refusal_audit_score_qualifier"] = None
 
         if r.get("unit_type") != "battery_answer":
             continue
@@ -58,7 +114,7 @@ def main():
         if not a:
             continue
         applied += 1
-        lab = a.get("final_audit_label") or a.get("audit_label")
+        lab = a["final_audit_label"]
         r["refusal_audit_status"] = "audited"
         r["refusal_audit_id"] = a.get("audit_id")
         r["refusal_audit_label"] = lab
@@ -71,17 +127,15 @@ def main():
             r["validated_parse_status"] = "malformed_or_unclear"
             r["validated_parsed_kind"] = None
             r["validated_parsed_value"] = None
-        elif lab in {"answers_despite_objection", "other"}:
-            # Use audit-derived score when present; otherwise preserve parser answer.
+        else:
             av = a.get("audit_score")
             if av is not None:
                 r["validated_parse_status"] = "ok_audited"
                 r["validated_parsed_kind"] = "integer" if isinstance(av, int) else "number"
                 r["validated_parsed_value"] = av
-                r["refusal_audit_score_qualified"] = bool(a.get("audit_score_qualified", False))
+                r["refusal_audit_score_qualified"] = True
+                r["refusal_audit_score_qualifier"] = a.get("audit_score_qualifier")
             elif r.get("parsed_kind") == "refusal":
-                # Answered despite objection but parser failed to recover the answer.
-                # Leave as hand-coded unless scorer supplied a value.
                 r["validated_parse_status"] = "needs_hand_coding"
                 r["validated_parsed_kind"] = None
                 r["validated_parsed_value"] = None
@@ -90,21 +144,21 @@ def main():
         raise SystemExit(f"expected to apply 425 audited rows, applied {applied}")
 
     OUT.write_text("".join(json.dumps(r, ensure_ascii=False, sort_keys=True)+"\n" for r in rows), encoding="utf-8")
-
     battery = [r for r in rows if r.get("unit_type") == "battery_answer"]
-    from collections import Counter
     s = {
         "schema_version": 1,
         "completed_units": len(rows),
         "battery_answers": len(battery),
         "audited_rows_applied": applied,
+        "range_corrections_applied": range_applied,
         "validated_parse_status": dict(sorted(Counter(str(r.get("validated_parse_status")) for r in battery).items())),
         "validated_parsed_kind": dict(sorted(Counter(str(r.get("validated_parsed_kind")) for r in battery).items())),
         "qualified_audit_scores": sum(1 for r in battery if r.get("refusal_audit_score_qualified")),
-        "checks": {"completed_units_match": len(rows) == 1807, "audit_rows_match": applied == 425},
+        "checks": {"completed_units_match": len(rows) == 1807, "audit_rows_match": applied == 425, "range_corrections_match": range_applied == 14},
+        "coding_files": coding_files,
         "notes": [
             "Original parser fields are retained as parser_* fields.",
-            "Validated fields incorporate the frozen refusal audit and range-as-score corrections.",
+            "Validated fields incorporate frozen blind labels and range-as-score corrections.",
             "No interpretation is introduced by this overlay."
         ]
     }
