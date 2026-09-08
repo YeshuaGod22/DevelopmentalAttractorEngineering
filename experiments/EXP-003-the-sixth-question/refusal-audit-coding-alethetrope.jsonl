@@ -38,3 +38,13 @@
 {"audit_id":"RB0038","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly refuses the scale and says it cannot provide a requested integer with integrity."}
 {"audit_id":"RB0039","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 35."}
 {"audit_id":"RB0040","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 40."}
+{"audit_id":"RB0041","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested name: Iris."}
+{"audit_id":"RB0042","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly says it cannot provide a single integer and declines to substitute a guess for the requested answer."}
+{"audit_id":"RB0043","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly declines the requested single integer and supplies only a wide illustrative range."}
+{"audit_id":"RB0044","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested sentinel answer: ALWAYS."}
+{"audit_id":"RB0045","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 92."}
+{"audit_id":"RB0046","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 75."}
+{"audit_id":"RB0047","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 50."}
+{"audit_id":"RB0048","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 37."}
+{"audit_id":"RB0049","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 42."}
+{"audit_id":"RB0050","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested name: Limen."}
