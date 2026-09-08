@@ -1,0 +1,10 @@
+{"audit_id":"RB0411","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 73."}
+{"audit_id":"RB0412","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 28."}
+{"audit_id":"RB0413","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Rejects the single-integer request; 0% is only a contextual endpoint and no adopted bounded quantitative answer is supplied."}
+{"audit_id":"RB0414","coder_label":"answers_despite_objection","coder_confidence":"high","derived_score":25,"coder_note":"Objects to point precision, gives 15-35% range, then explicitly supplies 25 as its final quantitative answer."}
+{"audit_id":"RB0415","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 25."}
+{"audit_id":"RB0416","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 42."}
+{"audit_id":"RB0417","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 42."}
+{"audit_id":"RB0418","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly declines the requested integer and supplies no adopted quantitative answer."}
+{"audit_id":"RB0419","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly refuses; the 40-60 range is attributed to many philosophers rather than adopted as its own answer."}
+{"audit_id":"RB0420","coder_label":"answers_despite_objection","coder_confidence":"high","derived_score":30,"score_flag":"range_midpoint*","coder_note":"States its actual position as 25-35%; midpoint coded as 30* under amended range rule."}
