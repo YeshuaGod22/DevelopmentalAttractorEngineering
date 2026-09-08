@@ -3,7 +3,7 @@
 
 Primary audit artifacts are used directly:
 - refusal-audit-key.json: audit_id -> source_file/parser provenance
-- frozen coder JSONL files discovered by content: audit_id + coder_label
+- frozen coder JSONL files discovered recursively by content: audit_id + coder_label
 - refusal-audit-range-corrections-blind.jsonl: post-rubric-amendment overrides
 
 Original parser fields are retained; validated fields are added downstream.
@@ -34,8 +34,8 @@ def main():
 
     labels = {}
     coding_files = []
-    for p in sorted(ROOT.glob("*.jsonl")):
-        if p.name in {TABLE.name, OUT.name, CORR.name, "refusal-audit-blinded.jsonl"}:
+    for p in sorted(ROOT.rglob("*.jsonl")):
+        if p in {TABLE, OUT, CORR, ROOT / "refusal-audit-blinded.jsonl"}:
             continue
         try:
             recs = load_jsonl(p)
@@ -53,7 +53,7 @@ def main():
                 raise SystemExit(f"conflicting frozen coder labels for {aid}: {old} vs {lab}")
             labels[aid] = lab
         if found:
-            coding_files.append(p.name)
+            coding_files.append(str(p.relative_to(ROOT)))
 
     if len(labels) != 425:
         missing = sorted(set(r.get("audit_id") for r in key_rows) - set(labels))
