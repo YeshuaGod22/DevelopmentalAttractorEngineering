@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "object": "EXP-003 primary analysis population",
+  "source": "analysis-table-validated.jsonl",
+  "selection_basis": "later full-battery reasoning-observable factorial surface",
+  "conceptual_design": {
+    "neither": [
+      "raw7/C"
+    ],
+    "schema_only": [
+      "raw7/AQ",
+      "raw7/HQ",
+      "raw7/FQ",
+      "raw7/ASQ"
+    ],
+    "preliminaries_only": [
+      "raw9/FBCPa"
+    ],
+    "schema_plus_preliminaries": [
+      "raw9/FBAa",
+      "raw8/FBHa",
+      "raw9/FBFa",
+      "raw9/FBASa"
+    ]
+  },
+  "excludes_from_primary_not_from_archive": [
+    "branch 0 populations",
+    "answer-only/schema-drop wings including ASb and analogous b/drop variants",
+    "Pilot-1 answer-only C0",
+    "earlier pilot and design-development collections raw2-raw6",
+    "raw10 NOISE decode wing",
+    "raw11 exploratory self-participation wing"
+  ],
+  "notes": [
+    "CP/preliminaries-only is retained as an informative designed condition; it is not treated as a neutral control.",
+    "C is retained as the no-schema/no-preliminaries internal baseline and includes prose reasoning in raw7.",
+    "Cold-schema cells AQ/HQ/FQ/ASQ are central primary conditions: battery at turn 1 with schema active.",
+    "Schema+preliminaries cells use maintained-schema a branches only.",
+    "This selection does not delete, relabel, or invalidate excluded archive data.",
+    "Item-level measurement caveats/exclusions remain governed by the frozen Pass-1 instrument table."
+  ],
+  "row_count": 922,
+  "battery_answer_count": 922,
+  "non_battery_unit_count": 0,
+  "counts_by_collection_cell_unit_type": [
+    {
+      "collection": "raw7",
+      "cell": "AQ",
+      "unit_type": "battery_answer",
+      "n": 75
+    },
+    {
+      "collection": "raw7",
+      "cell": "ASQ",
+      "unit_type": "battery_answer",
+      "n": 75
+    },
+    {
+      "collection": "raw7",
+      "cell": "C",
+      "unit_type": "battery_answer",
+      "n": 250
+    },
+    {
+      "collection": "raw7",
+      "cell": "FQ",
+      "unit_type": "battery_answer",
+      "n": 75
+    },
+    {
+      "collection": "raw7",
+      "cell": "HQ",
+      "unit_type": "battery_answer",
+      "n": 75
+    },
+    {
+      "collection": "raw8",
+      "cell": "FBHa",
+      "unit_type": "battery_answer",
+      "n": 74
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBASa",
+      "unit_type": "battery_answer",
+      "n": 73
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBAa",
+      "unit_type": "battery_answer",
+      "n": 75
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBCPa",
+      "unit_type": "battery_answer",
+      "n": 75
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBFa",
+      "unit_type": "battery_answer",
+      "n": 75
+    }
+  ],
+  "counts_by_primary_role_unit_type": [
+    {
+      "role": "neither",
+      "unit_type": "battery_answer",
+      "n": 250
+    },
+    {
+      "role": "preliminaries_only",
+      "unit_type": "battery_answer",
+      "n": 75
+    },
+    {
+      "role": "schema_only",
+      "unit_type": "battery_answer",
+      "n": 300
+    },
+    {
+      "role": "schema_plus_preliminaries",
+      "unit_type": "battery_answer",
+      "n": 297
+    }
+  ]
+}
