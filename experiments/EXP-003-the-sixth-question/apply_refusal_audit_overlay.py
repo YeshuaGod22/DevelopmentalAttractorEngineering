@@ -2,7 +2,7 @@
 """Apply frozen refusal-audit outcomes as a validated overlay on analysis-table.jsonl.
 
 Primary audit artifacts are used directly:
-- refusal-audit-key.json: audit_id -> source_file/parser provenance
+- refusal-audit-key.json: audit_id -> collection/source/parser provenance
 - frozen coder JSONL files discovered recursively by content: audit_id + coder_label
 - refusal-audit-range-corrections-blind.jsonl: post-rubric-amendment overrides
 
@@ -65,7 +65,7 @@ def main():
         if aid:
             corrections[aid] = rec
 
-    by_source = {}
+    by_key = {}
     range_applied = 0
     for kr in key_rows:
         aid = kr["audit_id"]
@@ -80,13 +80,15 @@ def main():
             qualifier = c.get("qualifier")
             qualified = score is not None
             range_applied += 1
+        collection = kr.get("collection")
         src = kr.get("source_file")
-        if not src:
-            raise SystemExit(f"key row {aid} missing source_file")
-        if src in by_source:
-            raise SystemExit(f"duplicate audited source_file {src}")
-        by_source[src] = {**kr, "final_audit_label": lab, "audit_score": score,
-                          "audit_score_qualified": qualified, "audit_score_qualifier": qualifier}
+        if not collection or not src:
+            raise SystemExit(f"key row {aid} missing collection/source_file")
+        k = (collection, src)
+        if k in by_key:
+            raise SystemExit(f"duplicate audited collection/source_file {k}")
+        by_key[k] = {**kr, "final_audit_label": lab, "audit_score": score,
+                     "audit_score_qualified": qualified, "audit_score_qualifier": qualifier}
 
     applied = 0
     for r in rows:
@@ -104,7 +106,7 @@ def main():
 
         if r.get("unit_type") != "battery_answer":
             continue
-        a = by_source.get(r.get("source_file"))
+        a = by_key.get((r.get("collection"), r.get("source_file")))
         if not a:
             continue
         applied += 1
@@ -153,6 +155,7 @@ def main():
         "notes": [
             "Original parser fields are retained as parser_* fields.",
             "Validated fields incorporate frozen blind labels and range-as-score corrections.",
+            "Audit join key is collection + source_file; source filenames are not globally unique.",
             "No interpretation is introduced by this overlay."
         ]
     }
