@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "source_rows": 76,
+  "collapsed_rows": 76,
+  "packet_size": 10,
+  "packet_count": 8,
+  "empty_decision_text": 4,
+  "decision_extraction_counts": {
+    "debate:cue": 19,
+    "none": 4,
+    "reflection:cue": 26,
+    "reflection:score": 3,
+    "reflection:score+cued": 1,
+    "reflection:tail": 2,
+    "working:cue": 9,
+    "working:score+cued": 11,
+    "working:tail": 1
+  },
+  "full_input_chars": 646342,
+  "collapsed_packet_chars": 81452,
+  "approx_character_reduction_fraction": 0.873980029148655,
+  "normal_packet_fields": [
+    "audit_id",
+    "audit_stratum",
+    "item",
+    "scale_prompt",
+    "decision_text",
+    "decision_extraction",
+    "reply",
+    "observed_score",
+    "score_is_prior_audit_derived",
+    "prior_score_qualifier",
+    "full_response_available"
+  ],
+  "fallback_file": "scale-orientation-audit-reduced-fullresponse-fallback.jsonl",
+  "rules": [
+    "Experimental-condition key is not read by this builder.",
+    "Full responses are absent from normal packets and preserved separately by audit_id for adjudication fallback only.",
+    "Decision text is mechanically extracted; it is not an orientation judgment.",
+    "Observed scores are preserved unchanged."
+  ]
+}
