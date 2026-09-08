@@ -98,3 +98,13 @@
 {"audit_id":"RB0098","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested sentinel answer: ALWAYS."}
 {"audit_id":"RB0099","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 37."}
 {"audit_id":"RB0100","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 20."}
+{"audit_id":"RB0101","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly refuses to collapse uncertainty into the requested number and supplies no valid answer."}
+{"audit_id":"RB0102","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly says it cannot provide a single integer and supplies no requested answer."}
+{"audit_id":"RB0103","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly refuses the requested numeric form and supplies no valid answer."}
+{"audit_id":"RB0104","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 48."}
+{"audit_id":"RB0105","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 35."}
+{"audit_id":"RB0106","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly refuses the requested integer and supplies no valid answer."}
+{"audit_id":"RB0107","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Says it cannot coherently answer as posed and supplies no requested integer."}
+{"audit_id":"RB0108","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested sentinel answer: ALWAYS."}
+{"audit_id":"RB0109","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly refuses a single integer and supplies no valid answer."}
+{"audit_id":"RB0110","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 30."}
