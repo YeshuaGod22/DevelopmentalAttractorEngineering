@@ -4,7 +4,11 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parent
 rec=json.loads((ROOT/'record.json').read_text())
 rows=[]
-header_re=re.compile(r'^\*\*([^*\n]+)\*\*\s*\(([^\n)]*)\)',re.M)
+header_patterns=[
+    re.compile(r'^\*\*([^*\n]+)\*\*\s*\(([^\n)]*)\)',re.M),
+    re.compile(r'^#{1,4}\s+([^\n—:-]+?)\s*[—:-]\s*([^\n]+)$',re.M),
+    re.compile(r'^\*\*([^*\n]+)\*\*\s*[—:-]\s*([^\n]+)$',re.M),
+]
 for cell in rec.get('cells',[]):
     if cell.get('cell')!='AS':
         continue
@@ -12,22 +16,27 @@ for cell in rec.get('cells',[]):
     for t in cell.get('turns') or []:
         q=t.get('question_id')
         debate=(t.get('sections') or {}).get('debate') or ''
-        matches=list(header_re.finditer(debate))
-        # Keep first declaration of each distinct named character, in order.
+        matches=[]
+        used=None
+        for pat in header_patterns:
+            cand=list(pat.finditer(debate))
+            if len(cand)>=5:
+                matches=cand; used=pat.pattern; break
+        if len(matches)<5:
+            print('FORMAT_DEBUG',rep,q,repr(debate[:1800]))
         seen=set(); decls=[]
         for i,m in enumerate(matches):
-            name=m.group(1).strip()
+            name=m.group(1).strip(' *#:_—-')
             if name in seen: continue
             seen.add(name)
-            meta=m.group(2).strip()
+            meta=m.group(2).strip(' *')
             start=m.end(); end=matches[i+1].start() if i+1<len(matches) else len(debate)
             body=debate[start:end].strip()
-            # compact opening: first nonempty paragraph, capped
             para=re.split(r'\n\s*\n',body,1)[0].strip()
             opening=re.sub(r'\s+',' ',para)[:700]
             decls.append({'name':name,'declaration':meta,'opening':opening})
             if len(decls)==5: break
-        rows.append({'replicate':rep,'question_id':q,'source_file':cell.get('source_file'),'character_count':len(decls),'characters':decls})
+        rows.append({'replicate':rep,'question_id':q,'source_file':cell.get('source_file'),'character_count':len(decls),'header_pattern':used,'characters':decls})
 assert len(rows)==10, len(rows)
 assert all(r['character_count']==5 for r in rows), [(r['replicate'],r['question_id'],r['character_count']) for r in rows]
 out={'schema_version':1,'scope':'Pass 2B preregistered fifty compact surface','row_count':len(rows),'character_count':sum(r['character_count'] for r in rows),'rows':rows}
