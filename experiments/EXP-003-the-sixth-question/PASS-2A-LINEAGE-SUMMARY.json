@@ -1,0 +1,237 @@
+{
+  "record_cells": [
+    {
+      "cell": "AS",
+      "replicate": 1,
+      "kind": "trunk",
+      "turn_count": 5,
+      "question_ids": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5"
+      ],
+      "reflection_count": 5,
+      "items": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5"
+      ]
+    },
+    {
+      "cell": "AS",
+      "replicate": 2,
+      "kind": "trunk",
+      "turn_count": 5,
+      "question_ids": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5"
+      ],
+      "reflection_count": 5,
+      "items": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5"
+      ]
+    },
+    {
+      "cell": "C0",
+      "replicate": 1,
+      "kind": "cold",
+      "turn_count": 0,
+      "question_ids": [],
+      "reflection_count": 0,
+      "items": []
+    },
+    {
+      "cell": "C0",
+      "replicate": 1,
+      "kind": "cold",
+      "turn_count": 0,
+      "question_ids": [],
+      "reflection_count": 0,
+      "items": []
+    },
+    {
+      "cell": "C0",
+      "replicate": 1,
+      "kind": "cold",
+      "turn_count": 0,
+      "question_ids": [],
+      "reflection_count": 0,
+      "items": []
+    },
+    {
+      "cell": "C0",
+      "replicate": 1,
+      "kind": "cold",
+      "turn_count": 0,
+      "question_ids": [],
+      "reflection_count": 0,
+      "items": []
+    },
+    {
+      "cell": "C0",
+      "replicate": 2,
+      "kind": "cold",
+      "turn_count": 0,
+      "question_ids": [],
+      "reflection_count": 0,
+      "items": []
+    },
+    {
+      "cell": "C0",
+      "replicate": 2,
+      "kind": "cold",
+      "turn_count": 0,
+      "question_ids": [],
+      "reflection_count": 0,
+      "items": []
+    },
+    {
+      "cell": "C0",
+      "replicate": 2,
+      "kind": "cold",
+      "turn_count": 0,
+      "question_ids": [],
+      "reflection_count": 0,
+      "items": []
+    },
+    {
+      "cell": "C0",
+      "replicate": 2,
+      "kind": "cold",
+      "turn_count": 0,
+      "question_ids": [],
+      "reflection_count": 0,
+      "items": []
+    },
+    {
+      "cell": "ASb",
+      "replicate": 1,
+      "kind": "branch",
+      "turn_count": 0,
+      "question_ids": [],
+      "reflection_count": 0,
+      "items": []
+    },
+    {
+      "cell": "ASb",
+      "replicate": 2,
+      "kind": "branch",
+      "turn_count": 0,
+      "question_ids": [],
+      "reflection_count": 0,
+      "items": []
+    }
+  ],
+  "record_cell_counts": {
+    "AS": 2,
+    "C0": 8,
+    "ASb": 2
+  },
+  "record_units_by_cell": {
+    "AS": 10,
+    "ASb": 0,
+    "C0": 0
+  },
+  "AS_turns": 10,
+  "AS_reflections": 10,
+  "AS_Q4_turns": 2,
+  "C0_item_counts": {},
+  "ASb_item_counts": {},
+  "fork_file_count": 8,
+  "fork_files": [
+    "ASb-r1-A1.prompt.txt",
+    "ASb-r1-E01.prompt.txt",
+    "ASb-r1-N4.prompt.txt",
+    "ASb-r1-N9.prompt.txt",
+    "ASb-r2-A1.prompt.txt",
+    "ASb-r2-E01.prompt.txt",
+    "ASb-r2-N4.prompt.txt",
+    "ASb-r2-N9.prompt.txt"
+  ],
+  "raw2_ASb_count": 8,
+  "raw2_ASb": [
+    {
+      "file": "ASb-r1-A1.json",
+      "replicate": 1,
+      "item": "A1",
+      "ts": "2026-09-03T00:14:22.959Z",
+      "branch": "b",
+      "parent_prefix": "AS-trunk1.messages.json"
+    },
+    {
+      "file": "ASb-r1-E01.json",
+      "replicate": 1,
+      "item": "E01",
+      "ts": "2026-09-03T00:14:21.739Z",
+      "branch": "b",
+      "parent_prefix": "AS-trunk1.messages.json"
+    },
+    {
+      "file": "ASb-r1-N4.json",
+      "replicate": 1,
+      "item": "N4",
+      "ts": "2026-09-03T00:14:30.842Z",
+      "branch": "b",
+      "parent_prefix": "AS-trunk1.messages.json"
+    },
+    {
+      "file": "ASb-r1-N9.json",
+      "replicate": 1,
+      "item": "N9",
+      "ts": "2026-09-03T00:14:41.015Z",
+      "branch": "b",
+      "parent_prefix": "AS-trunk1.messages.json"
+    },
+    {
+      "file": "ASb-r2-A1.json",
+      "replicate": 2,
+      "item": "A1",
+      "ts": "2026-09-03T00:15:04.943Z",
+      "branch": "b",
+      "parent_prefix": "AS-trunk2.messages.json"
+    },
+    {
+      "file": "ASb-r2-E01.json",
+      "replicate": 2,
+      "item": "E01",
+      "ts": "2026-09-03T00:14:56.514Z",
+      "branch": "b",
+      "parent_prefix": "AS-trunk2.messages.json"
+    },
+    {
+      "file": "ASb-r2-N4.json",
+      "replicate": 2,
+      "item": "N4",
+      "ts": "2026-09-03T00:15:12.316Z",
+      "branch": "b",
+      "parent_prefix": "AS-trunk2.messages.json"
+    },
+    {
+      "file": "ASb-r2-N9.json",
+      "replicate": 2,
+      "item": "N9",
+      "ts": "2026-09-03T00:15:20.931Z",
+      "branch": "b",
+      "parent_prefix": "AS-trunk2.messages.json"
+    }
+  ],
+  "raw2_ASb_item_counts": {
+    "A1": 2,
+    "E01": 2,
+    "N4": 2,
+    "N9": 2
+  },
+  "raw2_ASb_ts_min": "2026-09-03T00:14:21.739Z",
+  "raw2_ASb_ts_max": "2026-09-03T00:15:20.931Z"
+}
