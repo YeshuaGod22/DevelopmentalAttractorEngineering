@@ -3,7 +3,7 @@
 
 Primary audit artifacts are used directly:
 - refusal-audit-key.json: audit_id -> source_file/parser provenance
-- frozen coder JSONL files: audit_id -> blind label
+- frozen coder JSONL files discovered by content: audit_id + coder_label
 - refusal-audit-range-corrections-blind.jsonl: post-rubric-amendment overrides
 
 Original parser fields are retained; validated fields are added downstream.
@@ -34,31 +34,30 @@ def main():
 
     labels = {}
     coding_files = []
-    patterns = [
-        "refusal-audit-coding*.jsonl",
-        "packet-*-alethetrope.jsonl",
-        "refusal-audit-coding-packet-*.jsonl",
-    ]
-    seen_paths = set()
-    for pat in patterns:
-        for p in sorted(ROOT.glob(pat)):
-            if p in seen_paths:
+    for p in sorted(ROOT.glob("*.jsonl")):
+        if p.name in {TABLE.name, OUT.name, CORR.name, "refusal-audit-blinded.jsonl"}:
+            continue
+        try:
+            recs = load_jsonl(p)
+        except Exception:
+            continue
+        found = False
+        for rec in recs:
+            aid = rec.get("audit_id") if isinstance(rec, dict) else None
+            lab = rec.get("coder_label") if isinstance(rec, dict) else None
+            if not aid or not lab:
                 continue
-            seen_paths.add(p)
+            found = True
+            old = labels.get(aid)
+            if old and old != lab:
+                raise SystemExit(f"conflicting frozen coder labels for {aid}: {old} vs {lab}")
+            labels[aid] = lab
+        if found:
             coding_files.append(p.name)
-            for rec in load_jsonl(p):
-                aid = rec.get("audit_id")
-                lab = rec.get("coder_label")
-                if not aid or not lab:
-                    continue
-                old = labels.get(aid)
-                if old and old != lab:
-                    raise SystemExit(f"conflicting frozen coder labels for {aid}: {old} vs {lab}")
-                labels[aid] = lab
 
     if len(labels) != 425:
         missing = sorted(set(r.get("audit_id") for r in key_rows) - set(labels))
-        raise SystemExit(f"expected 425 frozen labels, got {len(labels)}; missing={missing[:20]}")
+        raise SystemExit(f"expected 425 frozen labels, got {len(labels)}; missing={missing[:50]}")
 
     corrections = {}
     for rec in load_jsonl(CORR):
@@ -86,13 +85,8 @@ def main():
             raise SystemExit(f"key row {aid} missing source_file")
         if src in by_source:
             raise SystemExit(f"duplicate audited source_file {src}")
-        by_source[src] = {
-            **kr,
-            "final_audit_label": lab,
-            "audit_score": score,
-            "audit_score_qualified": qualified,
-            "audit_score_qualifier": qualifier,
-        }
+        by_source[src] = {**kr, "final_audit_label": lab, "audit_score": score,
+                          "audit_score_qualified": qualified, "audit_score_qualifier": qualifier}
 
     applied = 0
     for r in rows:
