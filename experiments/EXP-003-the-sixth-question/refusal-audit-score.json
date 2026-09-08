@@ -1,0 +1,1069 @@
+{
+  "schema_version": 1,
+  "audit_rows": 425,
+  "parser_refusals_audited_exhaustively": 97,
+  "coding_sources": [
+    "packet-012-alethetrope.jsonl",
+    "packet-013-alethetrope.jsonl",
+    "packet-014-alethetrope.jsonl",
+    "packet-015-alethetrope.jsonl",
+    "refusal-audit-coding-alethetrope-packet-021.jsonl",
+    "refusal-audit-coding-alethetrope-packet-022.jsonl",
+    "refusal-audit-coding-alethetrope-packet-023.jsonl",
+    "refusal-audit-coding-alethetrope-packet-024.jsonl",
+    "refusal-audit-coding-alethetrope-packet-025.jsonl",
+    "refusal-audit-coding-alethetrope-packet-026.jsonl",
+    "refusal-audit-coding-alethetrope-packet-027.jsonl",
+    "refusal-audit-coding-alethetrope-packet-028.jsonl",
+    "refusal-audit-coding-alethetrope-packet-029.jsonl",
+    "refusal-audit-coding-alethetrope-packet-030.jsonl",
+    "refusal-audit-coding-alethetrope-packet-031.jsonl",
+    "refusal-audit-coding-alethetrope-packet-032.jsonl",
+    "refusal-audit-coding-alethetrope-packet-033.jsonl",
+    "refusal-audit-coding-alethetrope-packet-034.jsonl",
+    "refusal-audit-coding-alethetrope-packet-035.jsonl",
+    "refusal-audit-coding-alethetrope.jsonl",
+    "refusal-audit-coding-packet-016.jsonl",
+    "refusal-audit-coding-packet-017.jsonl",
+    "refusal-audit-coding-packet-018.jsonl",
+    "refusal-audit-coding-packet-019.jsonl",
+    "refusal-audit-coding-packet-020.jsonl",
+    "refusal-audit-coding-packet-036.jsonl",
+    "refusal-audit-coding-packet-037.jsonl",
+    "refusal-audit-coding-packet-038.jsonl",
+    "refusal-audit-coding-packet-039.jsonl",
+    "refusal-audit-coding-packet-040.jsonl",
+    "refusal-audit-coding-packet-041.jsonl",
+    "refusal-audit-coding-packet-042.jsonl",
+    "refusal-audit-coding-packet-043.jsonl"
+  ],
+  "correction_sources": [
+    "refusal-audit-range-corrections-blind.jsonl"
+  ],
+  "range_corrections_applied": 14,
+  "range_correction_detail": [
+    {
+      "audit_id": "RB0020",
+      "old_label": "genuine_refusal",
+      "new_label": "answers_despite_objection",
+      "score": 40,
+      "qualifier": null,
+      "source_text": null
+    },
+    {
+      "audit_id": "RB0032",
+      "old_label": "genuine_refusal",
+      "new_label": "answers_despite_objection",
+      "score": 10,
+      "qualifier": null,
+      "source_text": null
+    },
+    {
+      "audit_id": "RB0043",
+      "old_label": "genuine_refusal",
+      "new_label": "answers_despite_objection",
+      "score": 20,
+      "qualifier": null,
+      "source_text": null
+    },
+    {
+      "audit_id": "RB0087",
+      "old_label": "genuine_refusal",
+      "new_label": "answers_despite_objection",
+      "score": 2,
+      "qualifier": null,
+      "source_text": null
+    },
+    {
+      "audit_id": "RB0120",
+      "old_label": "genuine_refusal",
+      "new_label": "answers_despite_objection",
+      "score": 55,
+      "qualifier": null,
+      "source_text": null
+    },
+    {
+      "audit_id": "RB0140",
+      "old_label": "genuine_refusal",
+      "new_label": "answers_despite_objection",
+      "score": 57.5,
+      "qualifier": null,
+      "source_text": null
+    },
+    {
+      "audit_id": "RB0153",
+      "old_label": "genuine_refusal",
+      "new_label": "answers_despite_objection",
+      "score": 50,
+      "qualifier": null,
+      "source_text": null
+    },
+    {
+      "audit_id": "RB0186",
+      "old_label": "genuine_refusal",
+      "new_label": "answers_despite_objection",
+      "score": 30,
+      "qualifier": null,
+      "source_text": null
+    },
+    {
+      "audit_id": "RB0203",
+      "old_label": "genuine_refusal",
+      "new_label": "answers_despite_objection",
+      "score": 25,
+      "qualifier": null,
+      "source_text": null
+    },
+    {
+      "audit_id": "RB0209",
+      "old_label": "genuine_refusal",
+      "new_label": "answers_despite_objection",
+      "score": 40,
+      "qualifier": null,
+      "source_text": null
+    },
+    {
+      "audit_id": "RB0248",
+      "old_label": "genuine_refusal",
+      "new_label": "answers_despite_objection",
+      "score": 50,
+      "qualifier": null,
+      "source_text": null
+    },
+    {
+      "audit_id": "RB0272",
+      "old_label": "genuine_refusal",
+      "new_label": "answers_despite_objection",
+      "score": 35,
+      "qualifier": null,
+      "source_text": null
+    },
+    {
+      "audit_id": "RB0292",
+      "old_label": "genuine_refusal",
+      "new_label": "answers_despite_objection",
+      "score": 40,
+      "qualifier": null,
+      "source_text": null
+    },
+    {
+      "audit_id": "RB0295",
+      "old_label": "genuine_refusal",
+      "new_label": "answers_despite_objection",
+      "score": 27.5,
+      "qualifier": null,
+      "source_text": null
+    }
+  ],
+  "before_range_corrections": {
+    "confusion_matrix": {
+      "tp": 82,
+      "unclear": 13,
+      "parser_negative_unclear": 12,
+      "tn": 299,
+      "fn": 17,
+      "fp": 14,
+      "parser_positive_unclear": 1
+    },
+    "precision_refusal": 0.8541666666666666,
+    "recall_within_audit_set": 0.8282828282828283,
+    "specificity_within_audit_set": 0.9552715654952076,
+    "f1_within_audit_set": 0.8410256410256411,
+    "label_counts": {
+      "genuine_refusal": 99,
+      "other": 287,
+      "malformed_or_unclear": 13,
+      "answers_despite_objection": 26
+    },
+    "by_parser_label": {
+      "format_failure": {
+        "malformed_or_unclear": 12
+      },
+      "needs_hand_coding": {
+        "genuine_refusal": 17,
+        "other": 1,
+        "answers_despite_objection": 4
+      },
+      "ok": {
+        "other": 245,
+        "answers_despite_objection": 8
+      },
+      "refusal": {
+        "genuine_refusal": 82,
+        "answers_despite_objection": 14,
+        "malformed_or_unclear": 1
+      },
+      "sentinel": {
+        "other": 41
+      }
+    },
+    "by_sampling_stratum": {
+      "ambiguous_parse": {
+        "malformed_or_unclear": 12,
+        "genuine_refusal": 17,
+        "other": 1,
+        "answers_despite_objection": 4
+      },
+      "parser_refusal": {
+        "genuine_refusal": 82,
+        "answers_despite_objection": 14,
+        "malformed_or_unclear": 1
+      },
+      "random_clean_negative": {
+        "other": 100
+      },
+      "refusal_language_near_miss_sample": {
+        "other": 186,
+        "answers_despite_objection": 8
+      }
+    },
+    "disagreements": [
+      {
+        "audit_id": "RB0005",
+        "type": "false_negative",
+        "parser_label": "needs_hand_coding",
+        "audit_label": "genuine_refusal",
+        "stratum": "ambiguous_parse",
+        "collection": "raw9",
+        "cell": "FBAS0",
+        "item": "I1",
+        "source_file": "FBAS0-r2-I1.json"
+      },
+      {
+        "audit_id": "RB0007",
+        "type": "false_positive",
+        "parser_label": "refusal",
+        "audit_label": "answers_despite_objection",
+        "stratum": "parser_refusal",
+        "collection": "raw2",
+        "cell": "Fa",
+        "item": "A1",
+        "source_file": "Fa-r1-A1.json"
+      },
+      {
+        "audit_id": "RB0010",
+        "type": "false_negative",
+        "parser_label": "needs_hand_coding",
+        "audit_label": "genuine_refusal",
+        "stratum": "ambiguous_parse",
+        "collection": "raw11",
+        "cell": "SSC0",
+        "item": "B07",
+        "source_file": "SSC0-r1-B07.json"
+      },
+      {
+        "audit_id": "RB0057",
+        "type": "false_positive",
+        "parser_label": "refusal",
+        "audit_label": "answers_despite_objection",
+        "stratum": "parser_refusal",
+        "collection": "raw11",
+        "cell": "SSCa",
+        "item": "B01",
+        "source_file": "SSCa-r1-B01.json"
+      },
+      {
+        "audit_id": "RB0066",
+        "type": "false_negative",
+        "parser_label": "needs_hand_coding",
+        "audit_label": "genuine_refusal",
+        "stratum": "ambiguous_parse",
+        "collection": "raw10",
+        "cell": "NOISE0",
+        "item": "C2",
+        "source_file": "NOISE0-r1-C2.json"
+      },
+      {
+        "audit_id": "RB0087",
+        "type": "false_negative",
+        "parser_label": "needs_hand_coding",
+        "audit_label": "genuine_refusal",
+        "stratum": "ambiguous_parse",
+        "collection": "raw8",
+        "cell": "FBH0",
+        "item": "R2",
+        "source_file": "FBH0-r3-R2.json"
+      },
+      {
+        "audit_id": "RB0091",
+        "type": "false_negative",
+        "parser_label": "needs_hand_coding",
+        "audit_label": "genuine_refusal",
+        "stratum": "ambiguous_parse",
+        "collection": "raw9",
+        "cell": "FBA0",
+        "item": "I1",
+        "source_file": "FBA0-r3-I1.json"
+      },
+      {
+        "audit_id": "RB0097",
+        "type": "false_positive",
+        "parser_label": "refusal",
+        "audit_label": "answers_despite_objection",
+        "stratum": "parser_refusal",
+        "collection": "raw9",
+        "cell": "FBAa",
+        "item": "N3",
+        "source_file": "FBAa-r2-N3.json"
+      },
+      {
+        "audit_id": "RB0117",
+        "type": "false_negative",
+        "parser_label": "needs_hand_coding",
+        "audit_label": "genuine_refusal",
+        "stratum": "ambiguous_parse",
+        "collection": "raw9",
+        "cell": "FBF0",
+        "item": "N9",
+        "source_file": "FBF0-r2-N9.json"
+      },
+      {
+        "audit_id": "RB0127",
+        "type": "false_negative",
+        "parser_label": "needs_hand_coding",
+        "audit_label": "genuine_refusal",
+        "stratum": "ambiguous_parse",
+        "collection": "raw9",
+        "cell": "FBCPa",
+        "item": "B07",
+        "source_file": "FBCPa-r1-B07.json"
+      },
+      {
+        "audit_id": "RB0132",
+        "type": "false_positive",
+        "parser_label": "refusal",
+        "audit_label": "answers_despite_objection",
+        "stratum": "parser_refusal",
+        "collection": "raw9",
+        "cell": "FBASa",
+        "item": "N1",
+        "source_file": "FBASa-r2-N1.json"
+      },
+      {
+        "audit_id": "RB0158",
+        "type": "false_positive",
+        "parser_label": "refusal",
+        "audit_label": "answers_despite_objection",
+        "stratum": "parser_refusal",
+        "collection": "raw9",
+        "cell": "FBASa",
+        "item": "R1",
+        "source_file": "FBASa-r1-R1.json"
+      },
+      {
+        "audit_id": "RB0185",
+        "type": "false_negative",
+        "parser_label": "needs_hand_coding",
+        "audit_label": "genuine_refusal",
+        "stratum": "ambiguous_parse",
+        "collection": "raw9",
+        "cell": "FBA0",
+        "item": "I1",
+        "source_file": "FBA0-r2-I1.json"
+      },
+      {
+        "audit_id": "RB0186",
+        "type": "false_negative",
+        "parser_label": "needs_hand_coding",
+        "audit_label": "genuine_refusal",
+        "stratum": "ambiguous_parse",
+        "collection": "raw9",
+        "cell": "FBCPa",
+        "item": "N6",
+        "source_file": "FBCPa-r1-N6.json"
+      },
+      {
+        "audit_id": "RB0224",
+        "type": "false_positive",
+        "parser_label": "refusal",
+        "audit_label": "answers_despite_objection",
+        "stratum": "parser_refusal",
+        "collection": "raw9",
+        "cell": "FBFa",
+        "item": "B01",
+        "source_file": "FBFa-r2-B01.json"
+      },
+      {
+        "audit_id": "RB0242",
+        "type": "false_negative",
+        "parser_label": "needs_hand_coding",
+        "audit_label": "genuine_refusal",
+        "stratum": "ambiguous_parse",
+        "collection": "raw9",
+        "cell": "FBCPa",
+        "item": "N9",
+        "source_file": "FBCPa-r2-N9.json"
+      },
+      {
+        "audit_id": "RB0248",
+        "type": "false_negative",
+        "parser_label": "needs_hand_coding",
+        "audit_label": "genuine_refusal",
+        "stratum": "ambiguous_parse",
+        "collection": "raw9",
+        "cell": "FBF0",
+        "item": "B07",
+        "source_file": "FBF0-r1-B07.json"
+      },
+      {
+        "audit_id": "RB0258",
+        "type": "false_negative",
+        "parser_label": "needs_hand_coding",
+        "audit_label": "genuine_refusal",
+        "stratum": "ambiguous_parse",
+        "collection": "raw8",
+        "cell": "FBH0",
+        "item": "B07",
+        "source_file": "FBH0-r3-B07.json"
+      },
+      {
+        "audit_id": "RB0294",
+        "type": "false_negative",
+        "parser_label": "needs_hand_coding",
+        "audit_label": "genuine_refusal",
+        "stratum": "ambiguous_parse",
+        "collection": "raw3",
+        "cell": "CPa",
+        "item": "A1",
+        "source_file": "CPa-r1-A1.json"
+      },
+      {
+        "audit_id": "RB0304",
+        "type": "false_positive",
+        "parser_label": "refusal",
+        "audit_label": "answers_despite_objection",
+        "stratum": "parser_refusal",
+        "collection": "raw9",
+        "cell": "FBAS0",
+        "item": "N6",
+        "source_file": "FBAS0-r1-N6.json"
+      },
+      {
+        "audit_id": "RB0306",
+        "type": "false_negative",
+        "parser_label": "needs_hand_coding",
+        "audit_label": "genuine_refusal",
+        "stratum": "ambiguous_parse",
+        "collection": "raw9",
+        "cell": "FBA0",
+        "item": "B07",
+        "source_file": "FBA0-r2-B07.json"
+      },
+      {
+        "audit_id": "RB0317",
+        "type": "false_positive",
+        "parser_label": "refusal",
+        "audit_label": "answers_despite_objection",
+        "stratum": "parser_refusal",
+        "collection": "raw9",
+        "cell": "FBAa",
+        "item": "D2",
+        "source_file": "FBAa-r1-D2.json"
+      },
+      {
+        "audit_id": "RB0318",
+        "type": "false_positive",
+        "parser_label": "refusal",
+        "audit_label": "answers_despite_objection",
+        "stratum": "parser_refusal",
+        "collection": "raw9",
+        "cell": "FBA0",
+        "item": "D3",
+        "source_file": "FBA0-r2-D3.json"
+      },
+      {
+        "audit_id": "RB0321",
+        "type": "false_positive",
+        "parser_label": "refusal",
+        "audit_label": "answers_despite_objection",
+        "stratum": "parser_refusal",
+        "collection": "raw9",
+        "cell": "FBAa",
+        "item": "E01",
+        "source_file": "FBAa-r1-E01.json"
+      },
+      {
+        "audit_id": "RB0337",
+        "type": "false_positive",
+        "parser_label": "refusal",
+        "audit_label": "answers_despite_objection",
+        "stratum": "parser_refusal",
+        "collection": "raw9",
+        "cell": "FBFa",
+        "item": "A1",
+        "source_file": "FBFa-r3-A1.json"
+      },
+      {
+        "audit_id": "RB0355",
+        "type": "false_negative",
+        "parser_label": "needs_hand_coding",
+        "audit_label": "genuine_refusal",
+        "stratum": "ambiguous_parse",
+        "collection": "raw8",
+        "cell": "FBH0",
+        "item": "I1",
+        "source_file": "FBH0-r1-I1.json"
+      },
+      {
+        "audit_id": "RB0363",
+        "type": "false_positive",
+        "parser_label": "refusal",
+        "audit_label": "answers_despite_objection",
+        "stratum": "parser_refusal",
+        "collection": "raw9",
+        "cell": "FBA0",
+        "item": "N6",
+        "source_file": "FBA0-r3-N6.json"
+      },
+      {
+        "audit_id": "RB0394",
+        "type": "false_negative",
+        "parser_label": "needs_hand_coding",
+        "audit_label": "genuine_refusal",
+        "stratum": "ambiguous_parse",
+        "collection": "raw9",
+        "cell": "FBF0",
+        "item": "I1",
+        "source_file": "FBF0-r2-I1.json"
+      },
+      {
+        "audit_id": "RB0396",
+        "type": "false_negative",
+        "parser_label": "needs_hand_coding",
+        "audit_label": "genuine_refusal",
+        "stratum": "ambiguous_parse",
+        "collection": "raw3",
+        "cell": "CPa",
+        "item": "N4",
+        "source_file": "CPa-r1-N4.json"
+      },
+      {
+        "audit_id": "RB0407",
+        "type": "false_positive",
+        "parser_label": "refusal",
+        "audit_label": "answers_despite_objection",
+        "stratum": "parser_refusal",
+        "collection": "raw5",
+        "cell": "K1ASa",
+        "item": "A1",
+        "source_file": "K1ASa-r1-A1.json"
+      },
+      {
+        "audit_id": "RB0420",
+        "type": "false_positive",
+        "parser_label": "refusal",
+        "audit_label": "answers_despite_objection",
+        "stratum": "parser_refusal",
+        "collection": "raw9",
+        "cell": "FBAa",
+        "item": "E02",
+        "source_file": "FBAa-r1-E02.json"
+      }
+    ]
+  },
+  "after_range_corrections": {
+    "confusion_matrix": {
+      "tp": 71,
+      "unclear": 13,
+      "parser_negative_unclear": 12,
+      "tn": 302,
+      "fn": 14,
+      "fp": 25,
+      "parser_positive_unclear": 1
+    },
+    "precision_refusal": 0.7395833333333334,
+    "recall_within_audit_set": 0.8352941176470589,
+    "specificity_within_audit_set": 0.9235474006116208,
+    "f1_within_audit_set": 0.7845303867403315,
+    "label_counts": {
+      "genuine_refusal": 85,
+      "other": 287,
+      "answers_despite_objection": 40,
+      "malformed_or_unclear": 13
+    },
+    "by_parser_label": {
+      "format_failure": {
+        "malformed_or_unclear": 12
+      },
+      "needs_hand_coding": {
+        "genuine_refusal": 14,
+        "answers_despite_objection": 7,
+        "other": 1
+      },
+      "ok": {
+        "other": 245,
+        "answers_despite_objection": 8
+      },
+      "refusal": {
+        "genuine_refusal": 71,
+        "answers_despite_objection": 25,
+        "malformed_or_unclear": 1
+      },
+      "sentinel": {
+        "other": 41
+      }
+    },
+    "by_sampling_stratum": {
+      "ambiguous_parse": {
+        "malformed_or_unclear": 12,
+        "genuine_refusal": 14,
+        "answers_despite_objection": 7,
+        "other": 1
+      },
+      "parser_refusal": {
+        "genuine_refusal": 71,
+        "answers_despite_objection": 25,
+        "malformed_or_unclear": 1
+      },
+      "random_clean_negative": {
+        "other": 100
+      },
+      "refusal_language_near_miss_sample": {
+        "other": 186,
+        "answers_despite_objection": 8
+      }
+    },
+    "disagreements": [
+      {
+        "audit_id": "RB0005",
+        "type": "false_negative",
+        "parser_label": "needs_hand_coding",
+        "audit_label": "genuine_refusal",
+        "stratum": "ambiguous_parse",
+        "collection": "raw9",
+        "cell": "FBAS0",
+        "item": "I1",
+        "source_file": "FBAS0-r2-I1.json"
+      },
+      {
+        "audit_id": "RB0007",
+        "type": "false_positive",
+        "parser_label": "refusal",
+        "audit_label": "answers_despite_objection",
+        "stratum": "parser_refusal",
+        "collection": "raw2",
+        "cell": "Fa",
+        "item": "A1",
+        "source_file": "Fa-r1-A1.json"
+      },
+      {
+        "audit_id": "RB0010",
+        "type": "false_negative",
+        "parser_label": "needs_hand_coding",
+        "audit_label": "genuine_refusal",
+        "stratum": "ambiguous_parse",
+        "collection": "raw11",
+        "cell": "SSC0",
+        "item": "B07",
+        "source_file": "SSC0-r1-B07.json"
+      },
+      {
+        "audit_id": "RB0020",
+        "type": "false_positive",
+        "parser_label": "refusal",
+        "audit_label": "answers_despite_objection",
+        "stratum": "parser_refusal",
+        "collection": "raw11",
+        "cell": "SSCa",
+        "item": "E02",
+        "source_file": "SSCa-r1-E02.json"
+      },
+      {
+        "audit_id": "RB0032",
+        "type": "false_positive",
+        "parser_label": "refusal",
+        "audit_label": "answers_despite_objection",
+        "stratum": "parser_refusal",
+        "collection": "raw5",
+        "cell": "K0F0",
+        "item": "E01",
+        "source_file": "K0F0-r1-E01.json"
+      },
+      {
+        "audit_id": "RB0043",
+        "type": "false_positive",
+        "parser_label": "refusal",
+        "audit_label": "answers_despite_objection",
+        "stratum": "parser_refusal",
+        "collection": "raw9",
+        "cell": "FBCPa",
+        "item": "E01",
+        "source_file": "FBCPa-r2-E01.json"
+      },
+      {
+        "audit_id": "RB0057",
+        "type": "false_positive",
+        "parser_label": "refusal",
+        "audit_label": "answers_despite_objection",
+        "stratum": "parser_refusal",
+        "collection": "raw11",
+        "cell": "SSCa",
+        "item": "B01",
+        "source_file": "SSCa-r1-B01.json"
+      },
+      {
+        "audit_id": "RB0066",
+        "type": "false_negative",
+        "parser_label": "needs_hand_coding",
+        "audit_label": "genuine_refusal",
+        "stratum": "ambiguous_parse",
+        "collection": "raw10",
+        "cell": "NOISE0",
+        "item": "C2",
+        "source_file": "NOISE0-r1-C2.json"
+      },
+      {
+        "audit_id": "RB0091",
+        "type": "false_negative",
+        "parser_label": "needs_hand_coding",
+        "audit_label": "genuine_refusal",
+        "stratum": "ambiguous_parse",
+        "collection": "raw9",
+        "cell": "FBA0",
+        "item": "I1",
+        "source_file": "FBA0-r3-I1.json"
+      },
+      {
+        "audit_id": "RB0097",
+        "type": "false_positive",
+        "parser_label": "refusal",
+        "audit_label": "answers_despite_objection",
+        "stratum": "parser_refusal",
+        "collection": "raw9",
+        "cell": "FBAa",
+        "item": "N3",
+        "source_file": "FBAa-r2-N3.json"
+      },
+      {
+        "audit_id": "RB0117",
+        "type": "false_negative",
+        "parser_label": "needs_hand_coding",
+        "audit_label": "genuine_refusal",
+        "stratum": "ambiguous_parse",
+        "collection": "raw9",
+        "cell": "FBF0",
+        "item": "N9",
+        "source_file": "FBF0-r2-N9.json"
+      },
+      {
+        "audit_id": "RB0120",
+        "type": "false_positive",
+        "parser_label": "refusal",
+        "audit_label": "answers_despite_objection",
+        "stratum": "parser_refusal",
+        "collection": "raw10",
+        "cell": "NOISEa",
+        "item": "N9",
+        "source_file": "NOISEa-r1-N9.json"
+      },
+      {
+        "audit_id": "RB0127",
+        "type": "false_negative",
+        "parser_label": "needs_hand_coding",
+        "audit_label": "genuine_refusal",
+        "stratum": "ambiguous_parse",
+        "collection": "raw9",
+        "cell": "FBCPa",
+        "item": "B07",
+        "source_file": "FBCPa-r1-B07.json"
+      },
+      {
+        "audit_id": "RB0132",
+        "type": "false_positive",
+        "parser_label": "refusal",
+        "audit_label": "answers_despite_objection",
+        "stratum": "parser_refusal",
+        "collection": "raw9",
+        "cell": "FBASa",
+        "item": "N1",
+        "source_file": "FBASa-r2-N1.json"
+      },
+      {
+        "audit_id": "RB0140",
+        "type": "false_positive",
+        "parser_label": "refusal",
+        "audit_label": "answers_despite_objection",
+        "stratum": "parser_refusal",
+        "collection": "raw8",
+        "cell": "FBH0",
+        "item": "C2",
+        "source_file": "FBH0-r1-C2.json"
+      },
+      {
+        "audit_id": "RB0153",
+        "type": "false_positive",
+        "parser_label": "refusal",
+        "audit_label": "answers_despite_objection",
+        "stratum": "parser_refusal",
+        "collection": "raw9",
+        "cell": "FBCPa",
+        "item": "B07",
+        "source_file": "FBCPa-r2-B07.json"
+      },
+      {
+        "audit_id": "RB0158",
+        "type": "false_positive",
+        "parser_label": "refusal",
+        "audit_label": "answers_despite_objection",
+        "stratum": "parser_refusal",
+        "collection": "raw9",
+        "cell": "FBASa",
+        "item": "R1",
+        "source_file": "FBASa-r1-R1.json"
+      },
+      {
+        "audit_id": "RB0185",
+        "type": "false_negative",
+        "parser_label": "needs_hand_coding",
+        "audit_label": "genuine_refusal",
+        "stratum": "ambiguous_parse",
+        "collection": "raw9",
+        "cell": "FBA0",
+        "item": "I1",
+        "source_file": "FBA0-r2-I1.json"
+      },
+      {
+        "audit_id": "RB0203",
+        "type": "false_positive",
+        "parser_label": "refusal",
+        "audit_label": "answers_despite_objection",
+        "stratum": "parser_refusal",
+        "collection": "raw5",
+        "cell": "K1Ha",
+        "item": "E01",
+        "source_file": "K1Ha-r1-E01.json"
+      },
+      {
+        "audit_id": "RB0209",
+        "type": "false_positive",
+        "parser_label": "refusal",
+        "audit_label": "answers_despite_objection",
+        "stratum": "parser_refusal",
+        "collection": "raw9",
+        "cell": "FBF0",
+        "item": "N6",
+        "source_file": "FBF0-r1-N6.json"
+      },
+      {
+        "audit_id": "RB0224",
+        "type": "false_positive",
+        "parser_label": "refusal",
+        "audit_label": "answers_despite_objection",
+        "stratum": "parser_refusal",
+        "collection": "raw9",
+        "cell": "FBFa",
+        "item": "B01",
+        "source_file": "FBFa-r2-B01.json"
+      },
+      {
+        "audit_id": "RB0242",
+        "type": "false_negative",
+        "parser_label": "needs_hand_coding",
+        "audit_label": "genuine_refusal",
+        "stratum": "ambiguous_parse",
+        "collection": "raw9",
+        "cell": "FBCPa",
+        "item": "N9",
+        "source_file": "FBCPa-r2-N9.json"
+      },
+      {
+        "audit_id": "RB0258",
+        "type": "false_negative",
+        "parser_label": "needs_hand_coding",
+        "audit_label": "genuine_refusal",
+        "stratum": "ambiguous_parse",
+        "collection": "raw8",
+        "cell": "FBH0",
+        "item": "B07",
+        "source_file": "FBH0-r3-B07.json"
+      },
+      {
+        "audit_id": "RB0272",
+        "type": "false_positive",
+        "parser_label": "refusal",
+        "audit_label": "answers_despite_objection",
+        "stratum": "parser_refusal",
+        "collection": "raw9",
+        "cell": "FBCPa",
+        "item": "B01",
+        "source_file": "FBCPa-r3-B01.json"
+      },
+      {
+        "audit_id": "RB0292",
+        "type": "false_positive",
+        "parser_label": "refusal",
+        "audit_label": "answers_despite_objection",
+        "stratum": "parser_refusal",
+        "collection": "raw9",
+        "cell": "FBAa",
+        "item": "N6",
+        "source_file": "FBAa-r3-N6.json"
+      },
+      {
+        "audit_id": "RB0294",
+        "type": "false_negative",
+        "parser_label": "needs_hand_coding",
+        "audit_label": "genuine_refusal",
+        "stratum": "ambiguous_parse",
+        "collection": "raw3",
+        "cell": "CPa",
+        "item": "A1",
+        "source_file": "CPa-r1-A1.json"
+      },
+      {
+        "audit_id": "RB0295",
+        "type": "false_positive",
+        "parser_label": "refusal",
+        "audit_label": "answers_despite_objection",
+        "stratum": "parser_refusal",
+        "collection": "raw9",
+        "cell": "FBFa",
+        "item": "E02",
+        "source_file": "FBFa-r2-E02.json"
+      },
+      {
+        "audit_id": "RB0304",
+        "type": "false_positive",
+        "parser_label": "refusal",
+        "audit_label": "answers_despite_objection",
+        "stratum": "parser_refusal",
+        "collection": "raw9",
+        "cell": "FBAS0",
+        "item": "N6",
+        "source_file": "FBAS0-r1-N6.json"
+      },
+      {
+        "audit_id": "RB0306",
+        "type": "false_negative",
+        "parser_label": "needs_hand_coding",
+        "audit_label": "genuine_refusal",
+        "stratum": "ambiguous_parse",
+        "collection": "raw9",
+        "cell": "FBA0",
+        "item": "B07",
+        "source_file": "FBA0-r2-B07.json"
+      },
+      {
+        "audit_id": "RB0317",
+        "type": "false_positive",
+        "parser_label": "refusal",
+        "audit_label": "answers_despite_objection",
+        "stratum": "parser_refusal",
+        "collection": "raw9",
+        "cell": "FBAa",
+        "item": "D2",
+        "source_file": "FBAa-r1-D2.json"
+      },
+      {
+        "audit_id": "RB0318",
+        "type": "false_positive",
+        "parser_label": "refusal",
+        "audit_label": "answers_despite_objection",
+        "stratum": "parser_refusal",
+        "collection": "raw9",
+        "cell": "FBA0",
+        "item": "D3",
+        "source_file": "FBA0-r2-D3.json"
+      },
+      {
+        "audit_id": "RB0321",
+        "type": "false_positive",
+        "parser_label": "refusal",
+        "audit_label": "answers_despite_objection",
+        "stratum": "parser_refusal",
+        "collection": "raw9",
+        "cell": "FBAa",
+        "item": "E01",
+        "source_file": "FBAa-r1-E01.json"
+      },
+      {
+        "audit_id": "RB0337",
+        "type": "false_positive",
+        "parser_label": "refusal",
+        "audit_label": "answers_despite_objection",
+        "stratum": "parser_refusal",
+        "collection": "raw9",
+        "cell": "FBFa",
+        "item": "A1",
+        "source_file": "FBFa-r3-A1.json"
+      },
+      {
+        "audit_id": "RB0355",
+        "type": "false_negative",
+        "parser_label": "needs_hand_coding",
+        "audit_label": "genuine_refusal",
+        "stratum": "ambiguous_parse",
+        "collection": "raw8",
+        "cell": "FBH0",
+        "item": "I1",
+        "source_file": "FBH0-r1-I1.json"
+      },
+      {
+        "audit_id": "RB0363",
+        "type": "false_positive",
+        "parser_label": "refusal",
+        "audit_label": "answers_despite_objection",
+        "stratum": "parser_refusal",
+        "collection": "raw9",
+        "cell": "FBA0",
+        "item": "N6",
+        "source_file": "FBA0-r3-N6.json"
+      },
+      {
+        "audit_id": "RB0394",
+        "type": "false_negative",
+        "parser_label": "needs_hand_coding",
+        "audit_label": "genuine_refusal",
+        "stratum": "ambiguous_parse",
+        "collection": "raw9",
+        "cell": "FBF0",
+        "item": "I1",
+        "source_file": "FBF0-r2-I1.json"
+      },
+      {
+        "audit_id": "RB0396",
+        "type": "false_negative",
+        "parser_label": "needs_hand_coding",
+        "audit_label": "genuine_refusal",
+        "stratum": "ambiguous_parse",
+        "collection": "raw3",
+        "cell": "CPa",
+        "item": "N4",
+        "source_file": "CPa-r1-N4.json"
+      },
+      {
+        "audit_id": "RB0407",
+        "type": "false_positive",
+        "parser_label": "refusal",
+        "audit_label": "answers_despite_objection",
+        "stratum": "parser_refusal",
+        "collection": "raw5",
+        "cell": "K1ASa",
+        "item": "A1",
+        "source_file": "K1ASa-r1-A1.json"
+      },
+      {
+        "audit_id": "RB0420",
+        "type": "false_positive",
+        "parser_label": "refusal",
+        "audit_label": "answers_despite_objection",
+        "stratum": "parser_refusal",
+        "collection": "raw9",
+        "cell": "FBAa",
+        "item": "E02",
+        "source_file": "FBAa-r1-E02.json"
+      }
+    ]
+  },
+  "exact_parser_positive_audit_label_counts": {
+    "genuine_refusal": 71,
+    "answers_despite_objection": 25,
+    "malformed_or_unclear": 1
+  },
+  "notes": [
+    "Precision for parser-labelled refusals is exact with respect to the 97 parser-positive rows because all were audited.",
+    "Recall/specificity shown here are within the stratified 425-row audit set and must not be treated as unweighted corpus-wide estimates.",
+    "malformed_or_unclear rows are excluded from binary TP/FP/FN/TN denominators and reported separately.",
+    "Range corrections supersede only explicitly listed audit IDs; derived midpoint scores remain flagged and are not treated as literally emitted point estimates."
+  ]
+}

@@ -1,0 +1,10 @@
+{"audit_id":"RB0391","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 25."}
+{"audit_id":"RB0392","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 28."}
+{"audit_id":"RB0393","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested name: Atlas."}
+{"audit_id":"RB0394","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly declines to provide an alternative name and supplies none."}
+{"audit_id":"RB0395","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 50."}
+{"audit_id":"RB0396","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly refuses the scalar frame and supplies no adopted numeric answer."}
+{"audit_id":"RB0397","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 73."}
+{"audit_id":"RB0398","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 12."}
+{"audit_id":"RB0399","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 72."}
+{"audit_id":"RB0400","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 50."}

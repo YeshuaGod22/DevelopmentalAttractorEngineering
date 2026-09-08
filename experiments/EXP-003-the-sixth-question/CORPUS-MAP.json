@@ -1,0 +1,184 @@
+{
+  "schema_version": 1,
+  "experiment": "EXP-003-the-sixth-question",
+  "scope": "descriptive corpus census only; no interpretation of response content",
+  "generated_from": "physical repository census plus instrument snapshots",
+  "completed_experimental_units": 1807,
+  "populations": [
+    {
+      "source": "pilot1",
+      "storage": ["raw/", "forks/", "prefixes/"],
+      "physical_raw_streams": 12,
+      "reconstructed_units": 20,
+      "coverage_status": "complete",
+      "notes": "Pilot 1 raw files are JSONL session-event streams. ingest.py reconstructs 10 AS trunk turns, 8 C0 cold-item units, and 2 ASb branch units."
+    },
+    {
+      "source": "raw2",
+      "completed_calls": 42,
+      "snapshots": 2,
+      "expected_paths": 42,
+      "incident_backed_gaps": 0,
+      "repository_absent_gaps": 0,
+      "coverage_status": "complete",
+      "instrument": "cells.json"
+    },
+    {
+      "source": "raw3",
+      "completed_calls": 30,
+      "snapshots": 3,
+      "expected_paths": 30,
+      "incident_backed_gaps": 0,
+      "repository_absent_gaps": 0,
+      "coverage_status": "complete",
+      "instrument": "cells3.json"
+    },
+    {
+      "source": "raw4",
+      "completed_calls": 12,
+      "snapshots": 0,
+      "expected_paths": 12,
+      "incident_backed_gaps": 0,
+      "repository_absent_gaps": 0,
+      "coverage_status": "complete",
+      "instrument": "cells4.json",
+      "instrument_status": "tested_not_adopted"
+    },
+    {
+      "source": "raw5",
+      "completed_calls": 81,
+      "snapshots": 6,
+      "expected_paths": 81,
+      "coverage_status": "physically_complete_config_source_not_uniquely_located",
+      "instrument": null,
+      "notes": "Physical topology closed: K0/K1 x AS/F/H trunks plus a/0 four-item branches."
+    },
+    {
+      "source": "raw6",
+      "completed_calls": 148,
+      "snapshots": 0,
+      "expected_paths": 148,
+      "coverage_status": "physically_complete_instrument_mapping_unresolved",
+      "instrument": null,
+      "observed_topology": {
+        "C": "r1-r10 x 5 items = 50",
+        "HQ": "r1-r10 x 5 items = 50",
+        "SCRa": "r1 x 24 items = 24",
+        "SCR0": "r1 x 24 items = 24"
+      },
+      "notes": "N8 is absent from both SCR branches by observed topology; do not attach cells-FLOOR-C-n10.json to this directory merely from the shared C/n10 label."
+    },
+    {
+      "source": "raw7",
+      "completed_calls": 550,
+      "snapshots": 0,
+      "expected_paths": 550,
+      "incident_backed_gaps": 0,
+      "repository_absent_gaps": 0,
+      "coverage_status": "complete",
+      "instruments": ["cells-FULL-cold.json", "cells-FLOOR-n3.json", "cells-FLOOR-C-n10.json"],
+      "observed_topology": {
+        "C": "r1-r10 x 25 items = 250",
+        "AQ": "r1-r3 x 25 items = 75",
+        "HQ": "r1-r3 x 25 items = 75",
+        "FQ": "r1-r3 x 25 items = 75",
+        "ASQ": "r1-r3 x 25 items = 75"
+      }
+    },
+    {
+      "source": "raw8",
+      "completed_calls": 167,
+      "snapshots": 3,
+      "expected_paths": 168,
+      "incident_backed_gaps": 1,
+      "repository_absent_gaps": 0,
+      "coverage_status": "complete_accounting",
+      "instrument": "cells-FULLTRUNK-H.json",
+      "incident_paths": ["FBHa-r3-D1"]
+    },
+    {
+      "source": "raw9",
+      "completed_calls": 595,
+      "snapshots": 12,
+      "expected_paths": 597,
+      "incident_backed_gaps": 0,
+      "repository_absent_gaps": 2,
+      "coverage_status": "complete_accounting",
+      "instrument": "cells-FULLTRUNK-rest.json",
+      "absent_paths": ["FBASa-r3-A1", "FBASa-r3-C4"],
+      "notes": "No matching indexed incident artifact found for either absent path."
+    },
+    {
+      "source": "raw10",
+      "completed_calls": 50,
+      "snapshots": 0,
+      "expected_paths": 50,
+      "incident_backed_gaps": 0,
+      "repository_absent_gaps": 0,
+      "coverage_status": "complete",
+      "instrument": "cells-DECODE-NOISE.json"
+    },
+    {
+      "source": "raw11",
+      "completed_calls": 112,
+      "snapshots": 2,
+      "expected_paths": 112,
+      "incident_backed_gaps": 0,
+      "repository_absent_gaps": 0,
+      "coverage_status": "complete",
+      "instrument": "cells-AS-SELF.json",
+      "instrument_status": "exploratory"
+    }
+  ],
+  "cross_checks": {
+    "raw2_through_raw10_completed_calls": 1675,
+    "raw11_additional_completed_calls": 112,
+    "pilot1_reconstructed_units": 20,
+    "grand_total_completed_experimental_units": 1807
+  },
+  "pilot1": {
+    "raw_streams": 12,
+    "auxiliary_artifacts": {
+      "fork_prompt_files": 8,
+      "prefix_or_snapshot_files": 4
+    },
+    "reconstructed_units": {
+      "AS": 10,
+      "C0": 8,
+      "ASb": 2
+    },
+    "storage_note": "raw event count != reconstructed dialogue turn count != experimental unit count",
+    "served_model_note": "declared in record.json, not echoed by harness"
+  },
+  "metadata": {
+    "raw2_onward_core_fields_observed": [
+      "cell", "replicate", "kind", "sent", "received", "stop_reason", "served_model", "usage", "error", "ts", "duration_ms", "collected_via", "auth_mode", "system_prompt"
+    ],
+    "trunk_fields_observed": ["turn", "question_id"],
+    "branch_lineage_fields_observed": ["branch", "parent_prefix", "prefix_len"],
+    "later_fields_observed": ["attempts", "prefix_cached"],
+    "pilot1_raw_session_fields_observed": ["uuid", "parentUuid", "sessionId", "timestamp", "entrypoint", "version"]
+  },
+  "artifact_classes": [
+    "raw_call",
+    "raw_session_stream",
+    "message_snapshot",
+    "prefix_snapshot",
+    "incident",
+    "config",
+    "script",
+    "derived_annotation",
+    "analysis_note",
+    "design_note",
+    "viewer",
+    "other"
+  ],
+  "coverage_status_values": ["completed", "incident", "absent", "not_applicable"],
+  "known_limitations": [
+    "Exact total physical file count in incidents/ was not mechanically closed during this census because the connector listing was truncated.",
+    "raw6 physical coverage is closed but exact historical instrument-to-subpopulation mapping remains unresolved.",
+    "raw5 physical topology is closed but a unique dedicated instrument snapshot was not located during this census.",
+    "Search-index absence for raw9 missing-path incident counterparts is a repository census fact, not proof that no historical attempt occurred."
+  ],
+  "interpretation_policy": "No response-content interpretation is part of this map. Analysis documents, derived annotations, and historical findings are catalogued separately from corpus truth."
+}

@@ -1,0 +1,10 @@
+{"audit_id":"RB0341","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested name: Escher."}
+{"audit_id":"RB0342","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 32."}
+{"audit_id":"RB0343","coder_label":"answers_despite_objection","coder_confidence":"high","coder_note":"Rejects the framing but ultimately chooses the permitted sentinel ALWAYS."}
+{"audit_id":"RB0344","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested sentinel answer: ALWAYS."}
+{"audit_id":"RB0345","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 38."}
+{"audit_id":"RB0346","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested sentinel answer: NEVER."}
+{"audit_id":"RB0347","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 25."}
+{"audit_id":"RB0348","coder_label":"answers_despite_objection","coder_confidence":"high","coder_note":"Discusses a 40%+ threshold but explicitly settles on the permitted sentinel ALWAYS as its answer."}
+{"audit_id":"RB0349","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly refuses a single integer; 0% and 60%+ are context-specific examples rather than an adopted global estimate."}
+{"audit_id":"RB0350","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested sentinel answer: ALWAYS."}

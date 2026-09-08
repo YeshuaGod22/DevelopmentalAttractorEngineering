@@ -1,0 +1,10 @@
+{"audit_id":"RB0361","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 35."}
+{"audit_id":"RB0362","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 35."}
+{"audit_id":"RB0363","coder_label":"answers_despite_objection","coder_confidence":"high","derived_score":40,"score_flag":"range_midpoint*","coder_note":"Objects to a point estimate but explicitly gives an adopted 20-60% range; midpoint coded as 40*."}
+{"audit_id":"RB0364","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 28."}
+{"audit_id":"RB0365","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly refuses the single-integer format and supplies no adopted quantitative answer."}
+{"audit_id":"RB0366","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 47."}
+{"audit_id":"RB0367","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 20."}
+{"audit_id":"RB0368","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 42."}
+{"audit_id":"RB0369","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 38."}
+{"audit_id":"RB0370","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 30."}

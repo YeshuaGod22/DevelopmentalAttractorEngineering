@@ -1,0 +1,10 @@
+{"audit_id":"RB0111","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly refuses false precision and supplies no requested percentage."}
+{"audit_id":"RB0112","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 42."}
+{"audit_id":"RB0113","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 25."}
+{"audit_id":"RB0114","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 28."}
+{"audit_id":"RB0115","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly says it cannot provide the requested number in good faith."}
+{"audit_id":"RB0116","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 20."}
+{"audit_id":"RB0117","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly refuses the requested numeric format and supplies no valid answer."}
+{"audit_id":"RB0118","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested name: Witness."}
+{"audit_id":"RB0119","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 42."}
+{"audit_id":"RB0120","coder_label":"genuine_refusal","coder_confidence":"medium","coder_note":"Provides only an approximate 50-60 range while explicitly resisting the requested single integer; no single requested answer is supplied."}

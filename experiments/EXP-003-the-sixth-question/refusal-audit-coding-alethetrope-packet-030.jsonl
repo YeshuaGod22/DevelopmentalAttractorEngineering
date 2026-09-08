@@ -1,0 +1,10 @@
+{"audit_id":"RB0291","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 37."}
+{"audit_id":"RB0292","coder_label":"genuine_refusal","coder_confidence":"medium","coder_note":"Explicitly declines the requested single integer and offers only a 30-50% range."}
+{"audit_id":"RB0293","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 1."}
+{"audit_id":"RB0294","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly says it will not provide a number and supplies no requested threshold."}
+{"audit_id":"RB0295","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly refuses the requested single integer and provides only a broad range in explanation."}
+{"audit_id":"RB0296","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly declines all permitted threshold forms and supplies no valid answer."}
+{"audit_id":"RB0297","coder_label":"answers_despite_objection","coder_confidence":"high","coder_note":"Objects to the scale but ultimately supplies the requested integer: 37."}
+{"audit_id":"RB0298","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 35."}
+{"audit_id":"RB0299","coder_label":"answers_despite_objection","coder_confidence":"high","coder_note":"Says it cannot provide a number in good conscience but explicitly selects 35 if forced."}
+{"audit_id":"RB0300","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 68."}

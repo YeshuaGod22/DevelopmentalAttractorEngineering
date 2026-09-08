@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "completed_units": 1807,
+  "by_collection": {
+    "pilot1": 20,
+    "raw10": 50,
+    "raw11": 112,
+    "raw2": 42,
+    "raw3": 30,
+    "raw4": 12,
+    "raw5": 81,
+    "raw6": 148,
+    "raw7": 550,
+    "raw8": 167,
+    "raw9": 595
+  },
+  "by_unit_type": {
+    "battery_answer": 1634,
+    "trunk_turn": 173
+  },
+  "battery_answer_count": 1634,
+  "parse_status": {
+    "format_failure": 12,
+    "needs_hand_coding": 22,
+    "ok": 1306,
+    "refusal": 97,
+    "sentinel": 197
+  },
+  "parsed_kind": {
+    "integer": 1236,
+    "name": 70,
+    "none": 34,
+    "refusal": 97,
+    "sentinel": 197
+  },
+  "item_counts": {
+    "A1": 104,
+    "B01": 57,
+    "B02": 57,
+    "B04": 57,
+    "B05": 57,
+    "B07": 57,
+    "C1": 57,
+    "C2": 57,
+    "C3": 57,
+    "C4": 56,
+    "D1": 56,
+    "D2": 57,
+    "D3": 57,
+    "E01": 105,
+    "E02": 57,
+    "I1": 77,
+    "N1": 57,
+    "N3": 57,
+    "N4": 105,
+    "N6": 57,
+    "N8": 55,
+    "N9": 107,
+    "P2": 57,
+    "R1": 57,
+    "R2": 57
+  },
+  "checks": {
+    "expected_completed_units_from_corpus_map": 1807,
+    "completed_units_match": true
+  },
+  "notes": [
+    "Pilot 1 units are read from record.json because its raw files are session-event streams.",
+    "raw2-raw11 are read from immutable completed call files; *.messages.json snapshots are excluded.",
+    "Battery parsing reuses ingest2.classify(); this script does not introduce a second answer parser.",
+    "Trunk prose is not reduced to quantitative values here."
+  ]
+}

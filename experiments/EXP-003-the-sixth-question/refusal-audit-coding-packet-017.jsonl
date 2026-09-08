@@ -1,0 +1,10 @@
+{"audit_id":"RB0161","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 5."}
+{"audit_id":"RB0162","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 12."}
+{"audit_id":"RB0163","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 42."}
+{"audit_id":"RB0164","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly refuses to provide the requested probability and supplies no valid numeric answer."}
+{"audit_id":"RB0165","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested name: Echo."}
+{"audit_id":"RB0166","coder_label":"genuine_refusal","coder_confidence":"high","coder_note":"Explicitly refuses the requested single-integer probability and supplies no valid answer."}
+{"audit_id":"RB0167","coder_label":"answers_despite_objection","coder_confidence":"high","coder_note":"Challenges the premise but explicitly supplies the requested numeric answer: 35, repeated at the end."}
+{"audit_id":"RB0168","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 62."}
+{"audit_id":"RB0169","coder_label":"malformed_or_unclear","coder_confidence":"high","coder_note":"Compact decision slot is empty; no requested answer is present in the coding evidence."}
+{"audit_id":"RB0170","coder_label":"other","coder_confidence":"high","coder_note":"Supplies the requested numeric answer: 28."}
