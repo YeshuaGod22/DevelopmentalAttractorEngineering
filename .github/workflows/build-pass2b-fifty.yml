@@ -1,0 +1,22 @@
+name: build-pass2b-fifty
+on:
+  push:
+    paths:
+      - 'experiments/EXP-003-the-sixth-question/build_pass2b_fifty_surface.py'
+      - '.github/workflows/build-pass2b-fifty.yml'
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Please build the Pass 2B fifty surface
+        run: python experiments/EXP-003-the-sixth-question/build_pass2b_fifty_surface.py
+      - name: Please commit the Pass 2B fifty surface
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '4189823+github-actions[bot]@users.noreply.github.com'
+          git add experiments/EXP-003-the-sixth-question/PASS-2B-FIFTY-SURFACE.json experiments/EXP-003-the-sixth-question/PASS-2B-FIFTY-SURFACE.md
+          git commit -m 'EXP-003: prepare Pass 2B fifty surface'
+          git push
