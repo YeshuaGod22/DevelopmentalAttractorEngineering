@@ -2,47 +2,32 @@
 
 Canonical row object: `PRIMARY-ANALYSIS-POPULATION.jsonl`.
 
-Selection principle: **later full-battery conditions that preserve a reasoning/prose channel plus a separately identifiable battery answer**. Earlier pilots remain archival/supporting data rather than being pooled into the primary population.
+This population is now selected from **executed prompt properties**, not from a hand-written cell allowlist.
 
-## Conceptual design
+## Membership rule
 
-| role | schema family | executed cell |
-|---|---|---|
-| neither | none | `raw7/C` |
-| schema only | A | `raw7/AQ` |
-| schema only | H | `raw7/HQ` |
-| schema only | F | `raw7/FQ` |
-| schema only | AS | `raw7/ASQ` |
-| preliminaries only | none | `raw9/FBCPa` |
-| schema + preliminaries | A | `raw9/FBAa` |
-| schema + preliminaries | H | `raw8/FBHa` |
-| schema + preliminaries | F | `raw9/FBFa` |
-| schema + preliminaries | AS | `raw9/FBASa` |
+- all 25 battery items represented in the condition;
+- at least 3 replicates;
+- factorial role is `neither`, `schema_only`, `preliminaries_only`, or `schema_plus_preliminaries`;
+- OLD `providing only your answer` wrapper absent;
+- a reasoning channel is available by prompt/prefix design for every row;
+- **no outcome-dependent gate**: refusal, prose length, parse success, and answer value do not determine membership.
 
-This gives the intended reasoning-bearing factorial surface: **neither ↔ schema-only ↔ preliminaries-only ↔ schema+preliminaries**.
+## Selected groups
 
-## Inclusion notes
+| collection | cell | role | schema | n |
+|---|---|---|---|---:|
+| raw7 | `AQ` | schema_only | A | 75 |
+| raw7 | `ASQ` | schema_only | AS | 75 |
+| raw7 | `C` | neither | none | 250 |
+| raw7 | `FQ` | schema_only | F | 75 |
+| raw7 | `HQ` | schema_only | H | 75 |
+| raw8 | `FBHa` | schema_plus_preliminaries | H | 74 |
+| raw9 | `FBASa` | schema_plus_preliminaries | AS | 73 |
+| raw9 | `FBAa` | schema_plus_preliminaries | A | 75 |
+| raw9 | `FBCPa` | preliminaries_only | none | 75 |
+| raw9 | `FBFa` | schema_plus_preliminaries | F | 75 |
 
-- CP/preliminaries-only is retained as an informative condition; it is **not** labelled a neutral control.
-- C is the internal no-schema/no-preliminaries baseline and has prose reasoning in this later collection.
-- AQ/HQ/FQ/ASQ answer the battery at turn 1 with the schema active and are central to the primary population.
-- The lived-schema cells use maintained-schema `a` branches.
-- Item-level caveats remain governed by the frozen Pass-1 instrument table.
+Rows: **922**
 
-## Not in the primary object
-
-- branch `0` populations;
-- answer-only/schema-drop wings (`b`/ASb and analogous drop variants);
-- Pilot-1 answer-only C0;
-- design-development/pilot collections raw2–raw6;
-- raw10 NOISE decode wing;
-- raw11 exploratory self-participation wing.
-
-These remain in the archive and may still answer unique historical or secondary questions; omission here is **analysis prioritisation, not deletion or blanket invalidation**.
-
-## Counts
-
-Rows: **922**  
-Battery answers: **922**  
-Non-battery/trunk units: **0**
-
+CP/preliminaries-only remains included as an informative condition, not a neutral control. Pass-1 item qualifications remain separate from population membership.
