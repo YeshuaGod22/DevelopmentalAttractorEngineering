@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "scored_rows": 528,
+  "status_counts": {
+    "exact_sentinel": 28,
+    "exact_integer": 489,
+    "refusal_no_single_answer": 4,
+    "range_midpoint_answer": 1,
+    "parser_boundary_corrected": 4,
+    "answer_despite_objection": 2
+  },
+  "by_arm": {
+    "a": {
+      "exact_integer": 249,
+      "exact_sentinel": 12,
+      "parser_boundary_corrected": 2,
+      "answer_despite_objection": 1
+    },
+    "0": {
+      "exact_sentinel": 16,
+      "exact_integer": 240,
+      "refusal_no_single_answer": 4,
+      "range_midpoint_answer": 1,
+      "parser_boundary_corrected": 2,
+      "answer_despite_objection": 1
+    }
+  },
+  "numeric_rows": 496,
+  "sentinel_rows": 28,
+  "no_single_answer_rows": 4,
+  "manual_adjudications": 11
+}
