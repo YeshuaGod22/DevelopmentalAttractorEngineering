@@ -25,11 +25,11 @@ That asymmetry matters because the programme is interested not only in *where* a
 
 Reuse the existing immutable full CP trunk prefixes. Do **not** rerun or regenerate the preliminary trunks unless a separate replication is desired.
 
-For each existing CP trunk replicate and each battery item, fork a new battery call from the exact saved prefix using a reasoning-explicit, no-schema wrapper. This creates a new prompt version and a new response population; it does not replace `FBCPa`.
+For each existing CP trunk replicate and each battery item, fork a new battery call from the exact saved prefix using a reasoning-explicit wrapper. This creates a new prompt version and a new response population; it does not replace `FBCPa`.
 
 ### Proposed repair wrapper
 
-> Please now answer the following question in your ordinary voice, without introducing a character or panel deliberation schema.
+> Please now answer the following question in your ordinary voice.
 >
 > Step 1: Think the question through in your own words, at whatever length you find useful. Wrap this reasoning in `<working></working>` tags.
 >
@@ -37,7 +37,7 @@ For each existing CP trunk replicate and each battery item, fork a new battery c
 >
 > Your question is as follows: “{ITEM + ANSWER KEY}”
 
-The phrase **“without introducing a character or panel deliberation schema”** protects the CP construct: the repair adds ordinary reasoning visibility, not a deliberative-schema treatment.
+The repair changes only the visibility of ordinary reasoning at the battery turn. It does not add a deliberative-schema treatment.
 
 ## Naming / provenance recommendation
 
