@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "object": "EXP-003 prompt properties",
   "raw_directories_scanned": [
     "raw2",
@@ -15,7 +15,7 @@
     "raw12"
   ],
   "row_count": 1624,
-  "property_primary_count": 772,
+  "property_primary_count": 847,
   "property_primary_groups": [
     {
       "collection": "raw7",
@@ -127,6 +127,22 @@
       },
       "schema_families": {
         "AS": 73
+      }
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBAa",
+      "n_rows": 75,
+      "n_items": 25,
+      "n_replicates": 3,
+      "reasoning_observed_rate": 1.0,
+      "strict_answer_only_rate": 0.0,
+      "validated_answer_observed_rate": 0.8933333333333333,
+      "roles": {
+        "schema_plus_preliminaries": 75
+      },
+      "schema_families": {
+        "A": 75
       }
     },
     {
@@ -911,12 +927,12 @@
     ],
     "strict_answer_only": false,
     "min_reasoning_observed_rate": 0.9,
-    "min_validated_answer_observed_rate": 0.9
+    "outcome_dependent_gates": false
   },
   "notes": [
     "Properties are derived from executed records, not prose design labels.",
     "reasoning_observed is a coarse structural classifier (>=8 lexical words), suitable for population gating but not semantic interpretation.",
-    "Answer availability is taken from analysis-table-validated rather than raw tag conformity, so prose-rich CP is not penalized for formatting differences.",
+    "Validated answer availability is reported descriptively but never gates population membership, because refusal/parse behavior is an outcome.",
     "Primary role is inferred from prefix/schema properties; full-battery and replication gates prevent pilot/exploratory n=1 wings from entering automatically."
   ]
 }
