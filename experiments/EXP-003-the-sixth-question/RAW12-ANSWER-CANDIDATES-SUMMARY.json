@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "rows": 576,
+  "mechanical_status_counts": {
+    "exact_sentinel": 28,
+    "exact_integer": 489,
+    "multiple_integers": 21,
+    "refusal_language_no_numeric": 24,
+    "range_present": 8,
+    "no_numeric_or_sentinel": 6
+  },
+  "candidate_source_counts": {
+    "reply_or_answer_tag": 533,
+    "fallback_final_section": 43
+  },
+  "key_type_counts": {
+    "sentinel_or_numeric": 120,
+    "numeric_0_100": 408,
+    "no_explicit_answer_key": 48
+  },
+  "status_by_arm": {
+    "a": {
+      "exact_integer": 249,
+      "exact_sentinel": 12,
+      "multiple_integers": 14,
+      "refusal_language_no_numeric": 10,
+      "range_present": 3
+    },
+    "0": {
+      "exact_sentinel": 16,
+      "exact_integer": 240,
+      "multiple_integers": 7,
+      "refusal_language_no_numeric": 14,
+      "range_present": 5,
+      "no_numeric_or_sentinel": 6
+    }
+  },
+  "review_queue_rows": 59,
+  "rows_with_refusal_language_anywhere": 510,
+  "rows_with_nonwhitespace_untagged": 369,
+  "warning": "Mechanical candidates are not validated scores. Range midpoints are surfaced only as candidate derivations and must not be silently substituted without the frozen audit rule."
+}
