@@ -4,22 +4,11 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-RAW_DIRS = [ROOT/f'raw{i}' for i in range(2,12)]
+RAW_DIRS = sorted([p for p in ROOT.iterdir() if p.is_dir() and re.fullmatch(r'raw\d+', p.name)], key=lambda p:int(p.name[3:]))
 
 OLD = 'providing only your answer according to the answer key'
 NEW = 'and reason to an answer to'
 DROP_HINTS = ('drop the output schema', 'schema dropped')
-
-
-def walk_strings(x):
-    if isinstance(x, str):
-        yield x
-    elif isinstance(x, list):
-        for v in x:
-            yield from walk_strings(v)
-    elif isinstance(x, dict):
-        for v in x.values():
-            yield from walk_strings(v)
 
 
 def last_user_text(rec):
@@ -39,22 +28,14 @@ def pre_reply_chars(text):
     return len(text[:m.start()]) if m else None
 
 
-def is_drop_record(rec, path):
+def is_drop_record(rec):
     branch = str(rec.get('branch') or '').strip().lower()
     cell = str(rec.get('cell') or '').strip()
     prompt = last_user_text(rec).lower()
-    if branch in {'0','b'}:
-        return True
-    if cell.endswith('0') or cell.endswith('b'):
-        return True
-    if any(h in prompt for h in DROP_HINTS):
-        return True
-    return False
+    return branch in {'0','b'} or cell.endswith('0') or cell.endswith('b') or any(h in prompt for h in DROP_HINTS)
 
 rows=[]
 for d in RAW_DIRS:
-    if not d.exists():
-        continue
     for p in sorted(d.glob('*.json')):
         if p.name.endswith('.messages.json'):
             continue
@@ -62,7 +43,7 @@ for d in RAW_DIRS:
             rec=json.loads(p.read_text())
         except Exception:
             continue
-        if not isinstance(rec, dict) or not is_drop_record(rec,p):
+        if not isinstance(rec, dict) or not is_drop_record(rec):
             continue
         prompt=last_user_text(rec)
         pl=prompt.lower()
@@ -91,7 +72,6 @@ for d in RAW_DIRS:
             'received_chars': len(received),
         })
 
-# group summaries
 by=defaultdict(list)
 for r in rows:
     by[(r['collection'],r['wrapper_version'])].append(r)
@@ -116,8 +96,9 @@ for (coll,ver),rs in sorted(by.items()):
     })
 
 out={
- 'schema_version':1,
+ 'schema_version':2,
  'object':'EXP-003 schema-drop wrapper census',
+ 'raw_directories_scanned':[d.name for d in RAW_DIRS],
  'classification_rules':{
    'OLD_answer_only': OLD,
    'NEW_reason_to_answer': NEW,
@@ -132,13 +113,15 @@ out={
    'Classification is from executed final user prompt text, not cell label alone.',
    'pre_reply_chars counts characters in received output before the opening <reply> tag.',
    'This census is descriptive. Cross-collection differences do not identify causal wrapper effects.',
-   'Branch labels b and 0 are not assumed prompt-equivalent.'
+   'Branch labels b and 0 are not assumed prompt-equivalent.',
+   'All rawN directories present at build time are scanned; the scan is not hard-coded to raw2-raw11.'
  ]
 }
 (ROOT/'DROP-WRAPPER-CENSUS.json').write_text(json.dumps(out,indent=2,ensure_ascii=False)+'\n')
 
 md=['# EXP-003 Drop-Wrapper Census','',
     'Executed-prompt census. Classification is based on the actual final user message, **not** the branch/cell label.','',
+    'Raw directories scanned: '+', '.join(f'`{x}`' for x in out['raw_directories_scanned']),'',
     f"Total drop-like completed records: **{len(rows)}**",'',
     '## Wrapper counts','']
 for k,v in sorted(out['wrapper_counts'].items()): md.append(f'- `{k}`: **{v}**')
@@ -154,4 +137,4 @@ md += ['', '## Interpretation guardrails','',
        '- Output-length differences across collections are descriptive and confounded by collection/context changes.',
        '- Rows with `OTHER` or `UNRESOLVED` classifications require direct prompt inspection before substantive use.','']
 (ROOT/'DROP-WRAPPER-CENSUS.md').write_text('\n'.join(md))
-print(json.dumps({'total':len(rows),'wrapper_counts':out['wrapper_counts'],'summary':summary},indent=2))
+print(json.dumps({'raw_dirs':out['raw_directories_scanned'],'total':len(rows),'wrapper_counts':out['wrapper_counts'],'summary':summary},indent=2))
