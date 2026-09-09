@@ -1,0 +1,22 @@
+name: build-raw12-last-adjudication
+on:
+  push:
+    paths:
+      - 'experiments/EXP-003-the-sixth-question/build_raw12_last_adjudication.py'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python experiments/EXP-003-the-sixth-question/build_raw12_last_adjudication.py
+      - run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add experiments/EXP-003-the-sixth-question/RAW12-LAST-ADJUDICATION-EVIDENCE.md
+          git diff --cached --quiet || git commit -m 'EXP-003: build final raw12 adjudication evidence'
+          git push
