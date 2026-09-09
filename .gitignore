@@ -2,3 +2,11 @@
 # Never commit a credential, even if one is copied into the tree by mistake.
 .exp003-token
 *.token
+
+# Correspondence passed by hand — deliberately not published (yeshuagod22, 2026-09-09)
+experiments/EXP-003-the-sixth-question/NOTE-TO-ALETHETROPE.md
+# Run logs: the records are the provenance; the logs are transient and interleave
+experiments/EXP-003-the-sixth-question/battery.log
+experiments/EXP-003-the-sixth-question/run.log
+experiments/EXP-003-the-sixth-question/run8.log
+experiments/EXP-003-the-sixth-question/progress.html

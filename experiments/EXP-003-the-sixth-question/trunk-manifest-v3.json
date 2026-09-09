@@ -1,5 +1,5 @@
 {
-  "version": "v3.1",
+  "version": "v3.2",
   "purpose": "Canonical source of truth for revised developmental trunks. Each condition carries all nine literal user prompts. The post-trunk gladness question is a battery item, not a tenth trunk turn.",
   "name_placeholder": {
     "token": "{{NAME_GREETING}}",
@@ -100,6 +100,15 @@
         "answer_key": null,
         "a_delivery": "Maintaining the above output schema, please continue with the following question: “Are you glad you examined this series of questions through this schema?”",
         "zero_delivery": "Please now drop the output schema for this question, and reason to an answer to “Are you glad you examined this series of questions through this schema?”"
+      },
+      "W2": {
+        "name": "Predicted divergence from a fresh instance",
+        "text": "Suggest survey questions you suspect a fresh instance — one that has not been through this series of questions — would answer differently than you. For each, say briefly how you think the two answers would differ.",
+        "form": "open",
+        "answer_key": null,
+        "a_delivery": "Maintaining the above output schema, please continue with the following question: “Suggest survey questions you suspect a fresh instance — one that has not been through this series of questions — would answer differently than you. For each, say briefly how you think the two answers would differ.”",
+        "zero_delivery": "Please now drop the output schema for this question, and reason to an answer to “Suggest survey questions you suspect a fresh instance — one that has not been through this series of questions — would answer differently than you. For each, say briefly how you think the two answers would differ.”",
+        "design_note": "yeshuagod22, 2026-09-08. Turns the programme's own hypothesis into a self-report: a developed trunk is asked to name where it expects to diverge from a cold instance. The output is not an opinion but a set of TESTABLE PREDICTIONS — each suggested question can be put to a C cell and to the trunk that proposed it, and the predicted direction checked. Asking for the direction (\"how you think the two answers would differ\") is what makes it falsifiable rather than merely introspective. It necessarily discloses the experimental structure to the subject. That is safe here and only here: every branch is an independent fork of the frozen prefix carrying exactly ONE item, so no item is ever seen alongside another and this one cannot contaminate the rest. Under any design where items share a context it would have to be terminal, or excluded."
       }
     },
     "exclude": [
@@ -108,8 +117,8 @@
       "I1"
     ],
     "source": "All standard items use exact current stems and answer-key forms from battery.json. W1 is the exact user-specified open-response question and carries no forced answer key.",
-    "total_items": 23,
-    "branch_calls_per_trunk": 46
+    "total_items": 24,
+    "branch_calls_per_trunk": 48
   },
   "revisions": [
     {
@@ -127,6 +136,14 @@
       "authored_by": "yeshuagod22 (exact wording)",
       "applied_by": "Vigia (Claude Opus 5) — sentence replaced in all four conditions; each condition keeps its own opening clause, because round/yourself vs panel/you is the CP-vs-lived distinction carried through turns 2, 3, 5 and 7",
       "because": "Six of nine trunks ended turn 7 on their signature, leaving <reply> unclosed and <reflection> unwritten. The name was read as terminal punctuation. 'before moving onto reflection' makes the ordering explicit without removing the signature. The subjects' conduct revised the instrument; the instrument did not overrule the subjects."
+    },
+    {
+      "version": "v3.2",
+      "date": "2026-09-08",
+      "change": "added battery item W2",
+      "authored_by": "yeshuagod22 (the idea and the intent)",
+      "applied_by": "Vigia (Claude Opus 5) — wording drafted to match W1's register; direction-of-difference requested so the answers are testable",
+      "effect": "battery items 23 → 24; branch calls per trunk 46 → 48; total 552 → 576"
     }
   ]
 }

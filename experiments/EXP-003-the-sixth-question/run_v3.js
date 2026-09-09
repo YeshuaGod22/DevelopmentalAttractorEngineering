@@ -122,7 +122,7 @@ async function runCondition(cond, rep) {
       await fire(`${cond}${arm}-r${rep}-${it.id}`, [...frozen, { role: 'user', content: tpl }],
         { cell: cond + arm, replicate: rep, item: it.id, kind: 'branch', branch: arm,
           parent_prefix: `${cond}-r${rep}.messages.json`, prefix_len: msgs.length },
-        { out: OUT, cfg, dry: DRY });
+        { out: OUT, cfg, dry: DRY, haltOnTruncation: true });
       if (!DRY) await sleep(300);
     }
   }

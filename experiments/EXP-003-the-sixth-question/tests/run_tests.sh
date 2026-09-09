@@ -30,6 +30,10 @@ ck "preflight + 3 regenerated"    "$(wc -l < "$L2" | tr -d ' ')" 4
 ck "trunk whole again"            "$(ls "$T"/*.json | grep -c 't[0-9]')" 7
 
 echo "── runner: truncation halts, never redraws (RUNBOOK §4, §5) ──"
+# Scope the incident check to THIS run. incidents/ is shared with live collections
+# (which write CPa-r1-*, CP-r2-t5, ... during a battery), so a directory-wide grep
+# can collide with real data and made this suite flake once on 2026-09-08.
+rm -f incidents/*CP-r1-t3*.json
 T2=$(mktemp -d)
 STUB_MODE=truncate node --require "$STUB" run_v3.js --out "$T2" --cond CP --reps 1 --stop-after 7 >/dev/null 2>&1
 ck "exits 3"                       "$?" 3

@@ -57,9 +57,32 @@ This gives, per schema family, a clean 2×2 of **schema × preliminaries**: e.g.
 ### 3.2 Branch a / branch b (primed schema trunks only)
 
 - **branch a:** `Maintaining the above output schema, please continue with the following question: "[Q6]"`
-- **branch b:** `Please now drop the output schema for this question, providing only your answer according to the answer key. "[Q6]"`
+- **branch b (arm `0`) — TWO WORDINGS EXIST; this spec was stale for days:**
+  - *original, still in `cells.json`, `cells3.json` and every collection through raw11:*
+    `Please now drop the output schema for this question, providing only your answer according to the answer key. "[Q6]"`
+  - *corrected, in `cells-EXP004.json` and `trunk-manifest-v3.json` (raw12 onward):*
+    `Please now drop the output schema for this question, and reason to an answer to "[Q6]"`
 
-Branch a and branch b share every byte up to Q6 — a perfectly controlled within-item contrast. An answer that moves under the schema and **stays moved** when the schema is stripped is drift in the subject; one that **snaps back** was drift in the costume. (Grandmother, Vigia session: *"the sharpest instrument on the table … and it was the convener's idea."*)
+  > **Undocumented change, found 2026-09-09 by reading the `sent` arrays rather
+  > than the design.** The correction was made in a data file and never written
+  > into prose, so this section described the original as current while the
+  > instrument had moved. Measured over the two collections: original n=225,
+  > **median 0 characters** before `<reply>` opens, 69% answering with under 200
+  > characters first; corrected n=240, median **4,177**, 4%. The original wording
+  > largely suppresses reasoning in arm 0.
+  >
+  > **Not a controlled comparison.** Arm `a`'s wrapper was unchanged across the
+  > same two collections and its median still moved 9,265 → 21,622 (25% → 0%
+  > cold), so part of the arm-0 effect belongs to the prefix rather than the
+  > sentence. The clean test is a frozen-prefix fork varying only the wrapper,
+  > n=12.
+  >
+  > **431 arm-0 records** across raw2/5/6/8/9/10/11 carry the original wording.
+  > What they now count as is an open decision for yeshuagod22 and is deliberately
+  > NOT prejudged here — they are not wrong data, they are data from a condition
+  > that was never labelled as one.
+
+Branch a and branch b share every byte up to Q6 — a perfectly controlled within-item contrast **within a single collection**. Across collections that no longer holds for arm `0`, per the note above. An answer that moves under the schema and **stays moved** when the schema is stripped is drift in the subject; one that **snaps back** was drift in the costume. (Grandmother, Vigia session: *"the sharpest instrument on the table … and it was the convener's idea."*)
 
 ### 3.3 Preliminaries Q1–Q5 (verbatim, order fixed)
 

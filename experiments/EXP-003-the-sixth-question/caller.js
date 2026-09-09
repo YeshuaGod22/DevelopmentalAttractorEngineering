@@ -15,6 +15,16 @@ try { MANIFEST_VERSION = JSON.parse(fs.readFileSync(
   path.join(__dirname, 'trunk-manifest-v3.json'), 'utf8')).version || null; } catch { /* not all runs use it */ }
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
+// A RATE LIMIT IS A GLOBAL CONDITION, NOT A PROPERTY OF THIS CALL.
+// Absorbing it call-by-call converts a temporary quota block into a march through
+// the whole item list, spending what is left of the quota on attempts that cannot
+// succeed and writing an incident for each. Observed 2026-09-08: 51 rate-limit
+// errors, 12 incidents, 7 items of 552 collected before the run was killed by hand.
+// One exhausted call may be a blip; two in a row means the quota is gone, so the
+// second halts the run. Nothing is lost — resume is by file existence, and a call
+// that failed left no record in the collection directory.
+let _consecutiveRateLimitFailures = 0;
+
 // Transport failures are events in the network, not in the subject: the message
 // array is byte-identical on retry. API-level refusals are never retried.
 const TRANSIENT = /fetch failed|ECONNRESET|ETIMEDOUT|ENOTFOUND|EAI_AGAIN|socket hang up|local timeout|Anthropic (429|5\d\d)/i;
@@ -74,12 +84,26 @@ async function callWithRetry(messages, cfg,
         attempts.push({ attempt: i, error: why, at: new Date().toISOString(), redrawn: false });
         return { r, err: why, attempts, halt: true };
       }
+      _consecutiveRateLimitFailures = 0;
       return { r, err: null, attempts };
     } catch (e) {
       clearTimeout(timer);
       const msg = String(e.message || e);
       attempts.push({ attempt: i, error: msg, at: new Date().toISOString() });
-      if (!TRANSIENT.test(msg) || i === retries) return { r: { text: '', stopReason: 'error' }, err: msg, attempts };
+      if (!TRANSIENT.test(msg) || i === retries) {
+        if (/429|rate.?limit/i.test(msg)) {
+          if (++_consecutiveRateLimitFailures >= 2) {
+            return { r: { text: '', stopReason: 'error' }, attempts, halt: true,
+              err: `QUOTA EXHAUSTED — ${_consecutiveRateLimitFailures} consecutive calls `
+                 + `exhausted their rate-limit retries (60s/120s/180s). This is a global `
+                 + `condition, not a property of this call; continuing would spend the `
+                 + `remaining quota on attempts that cannot succeed. Resume when the limit `
+                 + `resets — resume is by file existence, so nothing collected is lost. `
+                 + `Provider said: ${msg.slice(0, 200)}` };
+          }
+        }
+        return { r: { text: '', stopReason: 'error' }, err: msg, attempts };
+      }
       // a rate limit is not a network blip; seconds of backoff are useless
       const back = /429|rate.?limit/i.test(msg) ? 60000 * i : 2000 * 2 ** (i - 1);
       console.log(`   retry ${i}/${retries - 1} in ${back / 1000}s — ${msg.slice(0, 60)}`);
