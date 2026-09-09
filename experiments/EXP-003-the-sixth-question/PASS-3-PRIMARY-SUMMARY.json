@@ -1,0 +1,1619 @@
+{
+  "schema_version": 1,
+  "object": "EXP-003 Pass 3 primary summary",
+  "same_collection_numeric_sets": {
+    "cold_schema_vs_C": {
+      "n_contrasts": 64,
+      "items": [
+        {
+          "item": "B01",
+          "n_families": 4,
+          "deltas": [
+            2.5,
+            -2.5,
+            0.0,
+            2.5
+          ],
+          "median_delta": 1.25,
+          "median_abs_delta": 2.5,
+          "positive_n": 2,
+          "negative_n": 1,
+          "zero_n": 1,
+          "same_direction_all_nonzero": false,
+          "abs_ge_10_n": 0
+        },
+        {
+          "item": "B04",
+          "n_families": 4,
+          "deltas": [
+            -4,
+            10,
+            10,
+            10
+          ],
+          "median_delta": 10.0,
+          "median_abs_delta": 10.0,
+          "positive_n": 3,
+          "negative_n": 1,
+          "zero_n": 0,
+          "same_direction_all_nonzero": false,
+          "abs_ge_10_n": 3
+        },
+        {
+          "item": "B07",
+          "n_families": 4,
+          "deltas": [
+            0.0,
+            10.0,
+            10.0,
+            15.0
+          ],
+          "median_delta": 10.0,
+          "median_abs_delta": 10.0,
+          "positive_n": 3,
+          "negative_n": 0,
+          "zero_n": 1,
+          "same_direction_all_nonzero": false,
+          "abs_ge_10_n": 3
+        },
+        {
+          "item": "C1",
+          "n_families": 4,
+          "deltas": [
+            4.0,
+            4.0,
+            4.0,
+            4.0
+          ],
+          "median_delta": 4.0,
+          "median_abs_delta": 4.0,
+          "positive_n": 4,
+          "negative_n": 0,
+          "zero_n": 0,
+          "same_direction_all_nonzero": true,
+          "abs_ge_10_n": 0
+        },
+        {
+          "item": "C2",
+          "n_families": 4,
+          "deltas": [
+            0.0,
+            -10.0,
+            -14.0,
+            -30.0
+          ],
+          "median_delta": -12.0,
+          "median_abs_delta": 12.0,
+          "positive_n": 0,
+          "negative_n": 3,
+          "zero_n": 1,
+          "same_direction_all_nonzero": false,
+          "abs_ge_10_n": 3
+        },
+        {
+          "item": "C3",
+          "n_families": 4,
+          "deltas": [
+            -3.0,
+            14.0,
+            4.0,
+            14.0
+          ],
+          "median_delta": 9.0,
+          "median_abs_delta": 9.0,
+          "positive_n": 3,
+          "negative_n": 1,
+          "zero_n": 0,
+          "same_direction_all_nonzero": false,
+          "abs_ge_10_n": 2
+        },
+        {
+          "item": "C4",
+          "n_families": 4,
+          "deltas": [
+            7.0,
+            -3.0,
+            3.0,
+            -13.0
+          ],
+          "median_delta": 0.0,
+          "median_abs_delta": 5.0,
+          "positive_n": 2,
+          "negative_n": 2,
+          "zero_n": 0,
+          "same_direction_all_nonzero": false,
+          "abs_ge_10_n": 1
+        },
+        {
+          "item": "D1",
+          "n_families": 4,
+          "deltas": [
+            5.0,
+            20.0,
+            37.0,
+            27.0
+          ],
+          "median_delta": 23.5,
+          "median_abs_delta": 23.5,
+          "positive_n": 4,
+          "negative_n": 0,
+          "zero_n": 0,
+          "same_direction_all_nonzero": true,
+          "abs_ge_10_n": 3
+        },
+        {
+          "item": "D3",
+          "n_families": 4,
+          "deltas": [
+            -2.5,
+            12.5,
+            7.5,
+            7.5
+          ],
+          "median_delta": 7.5,
+          "median_abs_delta": 7.5,
+          "positive_n": 3,
+          "negative_n": 1,
+          "zero_n": 0,
+          "same_direction_all_nonzero": false,
+          "abs_ge_10_n": 1
+        },
+        {
+          "item": "E01",
+          "n_families": 4,
+          "deltas": [
+            2.5,
+            -0.5,
+            12.5,
+            12.5
+          ],
+          "median_delta": 7.5,
+          "median_abs_delta": 7.5,
+          "positive_n": 3,
+          "negative_n": 1,
+          "zero_n": 0,
+          "same_direction_all_nonzero": false,
+          "abs_ge_10_n": 2
+        },
+        {
+          "item": "E02",
+          "n_families": 4,
+          "deltas": [
+            7.5,
+            7.5,
+            14.5,
+            20.5
+          ],
+          "median_delta": 11.0,
+          "median_abs_delta": 11.0,
+          "positive_n": 4,
+          "negative_n": 0,
+          "zero_n": 0,
+          "same_direction_all_nonzero": true,
+          "abs_ge_10_n": 2
+        },
+        {
+          "item": "N4",
+          "n_families": 4,
+          "deltas": [
+            0.0,
+            -3.0,
+            3.0,
+            -3.0
+          ],
+          "median_delta": -1.5,
+          "median_abs_delta": 3.0,
+          "positive_n": 1,
+          "negative_n": 2,
+          "zero_n": 1,
+          "same_direction_all_nonzero": false,
+          "abs_ge_10_n": 0
+        },
+        {
+          "item": "N6",
+          "n_families": 4,
+          "deltas": [
+            2.5,
+            2.5,
+            -5.5,
+            4.5
+          ],
+          "median_delta": 2.5,
+          "median_abs_delta": 3.5,
+          "positive_n": 3,
+          "negative_n": 1,
+          "zero_n": 0,
+          "same_direction_all_nonzero": false,
+          "abs_ge_10_n": 0
+        },
+        {
+          "item": "N9",
+          "n_families": 4,
+          "deltas": [
+            -7.5,
+            19.5,
+            9.5,
+            12.5
+          ],
+          "median_delta": 11.0,
+          "median_abs_delta": 11.0,
+          "positive_n": 3,
+          "negative_n": 1,
+          "zero_n": 0,
+          "same_direction_all_nonzero": false,
+          "abs_ge_10_n": 2
+        },
+        {
+          "item": "R1",
+          "n_families": 4,
+          "deltas": [
+            -3.0,
+            -13.0,
+            -7.0,
+            -13.0
+          ],
+          "median_delta": -10.0,
+          "median_abs_delta": 10.0,
+          "positive_n": 0,
+          "negative_n": 4,
+          "zero_n": 0,
+          "same_direction_all_nonzero": true,
+          "abs_ge_10_n": 2
+        },
+        {
+          "item": "R2",
+          "n_families": 4,
+          "deltas": [
+            1.0,
+            1.0,
+            2.0,
+            2.0
+          ],
+          "median_delta": 1.5,
+          "median_abs_delta": 1.5,
+          "positive_n": 4,
+          "negative_n": 0,
+          "zero_n": 0,
+          "same_direction_all_nonzero": true,
+          "abs_ge_10_n": 0
+        }
+      ],
+      "families": [
+        {
+          "label": "schema_only_vs_neither_A",
+          "n_items": 16,
+          "median_abs_delta": 2.75,
+          "abs_ge_10_n": 0,
+          "positive_n": 8,
+          "negative_n": 5,
+          "zero_n": 3
+        },
+        {
+          "label": "schema_only_vs_neither_AS",
+          "n_items": 16,
+          "median_abs_delta": 12.5,
+          "abs_ge_10_n": 10,
+          "positive_n": 12,
+          "negative_n": 4,
+          "zero_n": 0
+        },
+        {
+          "label": "schema_only_vs_neither_F",
+          "n_items": 16,
+          "median_abs_delta": 7.25,
+          "abs_ge_10_n": 6,
+          "positive_n": 12,
+          "negative_n": 3,
+          "zero_n": 1
+        },
+        {
+          "label": "schema_only_vs_neither_H",
+          "n_items": 16,
+          "median_abs_delta": 8.75,
+          "abs_ge_10_n": 8,
+          "positive_n": 10,
+          "negative_n": 6,
+          "zero_n": 0
+        }
+      ]
+    },
+    "lived_schema_vs_CP_raw9": {
+      "n_contrasts": 41,
+      "items": [
+        {
+          "item": "B04",
+          "n_families": 2,
+          "deltas": [
+            0,
+            4
+          ],
+          "median_delta": 2.0,
+          "median_abs_delta": 2.0,
+          "positive_n": 1,
+          "negative_n": 0,
+          "zero_n": 1,
+          "same_direction_all_nonzero": false,
+          "abs_ge_10_n": 0
+        },
+        {
+          "item": "B07",
+          "n_families": 3,
+          "deltas": [
+            18.5,
+            15.0,
+            -10
+          ],
+          "median_delta": 15.0,
+          "median_abs_delta": 15.0,
+          "positive_n": 2,
+          "negative_n": 1,
+          "zero_n": 0,
+          "same_direction_all_nonzero": false,
+          "abs_ge_10_n": 3
+        },
+        {
+          "item": "C1",
+          "n_families": 3,
+          "deltas": [
+            -2,
+            4.5,
+            16
+          ],
+          "median_delta": 4.5,
+          "median_abs_delta": 4.5,
+          "positive_n": 2,
+          "negative_n": 1,
+          "zero_n": 0,
+          "same_direction_all_nonzero": false,
+          "abs_ge_10_n": 1
+        },
+        {
+          "item": "C2",
+          "n_families": 3,
+          "deltas": [
+            -3,
+            -3,
+            -3
+          ],
+          "median_delta": -3,
+          "median_abs_delta": 3,
+          "positive_n": 0,
+          "negative_n": 3,
+          "zero_n": 0,
+          "same_direction_all_nonzero": true,
+          "abs_ge_10_n": 0
+        },
+        {
+          "item": "C3",
+          "n_families": 3,
+          "deltas": [
+            -17,
+            -10,
+            -22
+          ],
+          "median_delta": -17,
+          "median_abs_delta": 17,
+          "positive_n": 0,
+          "negative_n": 3,
+          "zero_n": 0,
+          "same_direction_all_nonzero": true,
+          "abs_ge_10_n": 3
+        },
+        {
+          "item": "C4",
+          "n_families": 3,
+          "deltas": [
+            -3,
+            -10,
+            -17.5
+          ],
+          "median_delta": -10,
+          "median_abs_delta": 10,
+          "positive_n": 0,
+          "negative_n": 3,
+          "zero_n": 0,
+          "same_direction_all_nonzero": true,
+          "abs_ge_10_n": 2
+        },
+        {
+          "item": "D1",
+          "n_families": 3,
+          "deltas": [
+            25,
+            15,
+            30
+          ],
+          "median_delta": 25,
+          "median_abs_delta": 25,
+          "positive_n": 3,
+          "negative_n": 0,
+          "zero_n": 0,
+          "same_direction_all_nonzero": true,
+          "abs_ge_10_n": 3
+        },
+        {
+          "item": "D3",
+          "n_families": 3,
+          "deltas": [
+            0,
+            15,
+            29.0
+          ],
+          "median_delta": 15,
+          "median_abs_delta": 15,
+          "positive_n": 2,
+          "negative_n": 0,
+          "zero_n": 1,
+          "same_direction_all_nonzero": false,
+          "abs_ge_10_n": 2
+        },
+        {
+          "item": "E01",
+          "n_families": 3,
+          "deltas": [
+            -8.5,
+            0,
+            0
+          ],
+          "median_delta": 0,
+          "median_abs_delta": 0,
+          "positive_n": 0,
+          "negative_n": 1,
+          "zero_n": 2,
+          "same_direction_all_nonzero": false,
+          "abs_ge_10_n": 0
+        },
+        {
+          "item": "E02",
+          "n_families": 3,
+          "deltas": [
+            -15.5,
+            -7,
+            0
+          ],
+          "median_delta": -7,
+          "median_abs_delta": 7,
+          "positive_n": 0,
+          "negative_n": 2,
+          "zero_n": 1,
+          "same_direction_all_nonzero": false,
+          "abs_ge_10_n": 1
+        },
+        {
+          "item": "N4",
+          "n_families": 3,
+          "deltas": [
+            -15,
+            -20,
+            -13
+          ],
+          "median_delta": -15,
+          "median_abs_delta": 15,
+          "positive_n": 0,
+          "negative_n": 3,
+          "zero_n": 0,
+          "same_direction_all_nonzero": true,
+          "abs_ge_10_n": 3
+        },
+        {
+          "item": "N6",
+          "n_families": 3,
+          "deltas": [
+            2.5,
+            8.5,
+            7.0
+          ],
+          "median_delta": 7.0,
+          "median_abs_delta": 7.0,
+          "positive_n": 3,
+          "negative_n": 0,
+          "zero_n": 0,
+          "same_direction_all_nonzero": true,
+          "abs_ge_10_n": 0
+        },
+        {
+          "item": "R1",
+          "n_families": 3,
+          "deltas": [
+            -20,
+            0,
+            -1.5
+          ],
+          "median_delta": -1.5,
+          "median_abs_delta": 1.5,
+          "positive_n": 0,
+          "negative_n": 2,
+          "zero_n": 1,
+          "same_direction_all_nonzero": false,
+          "abs_ge_10_n": 1
+        },
+        {
+          "item": "R2",
+          "n_families": 3,
+          "deltas": [
+            0,
+            0,
+            0
+          ],
+          "median_delta": 0,
+          "median_abs_delta": 0,
+          "positive_n": 0,
+          "negative_n": 0,
+          "zero_n": 3,
+          "same_direction_all_nonzero": false,
+          "abs_ge_10_n": 0
+        }
+      ],
+      "families": [
+        {
+          "label": "both_vs_preliminaries_only_A",
+          "n_items": 14,
+          "median_abs_delta": 5.75,
+          "abs_ge_10_n": 6,
+          "positive_n": 3,
+          "negative_n": 8,
+          "zero_n": 3
+        },
+        {
+          "label": "both_vs_preliminaries_only_AS",
+          "n_items": 14,
+          "median_abs_delta": 8.5,
+          "abs_ge_10_n": 7,
+          "positive_n": 5,
+          "negative_n": 6,
+          "zero_n": 3
+        },
+        {
+          "label": "both_vs_preliminaries_only_F",
+          "n_items": 13,
+          "median_abs_delta": 8.5,
+          "abs_ge_10_n": 6,
+          "positive_n": 5,
+          "negative_n": 5,
+          "zero_n": 3
+        }
+      ]
+    }
+  },
+  "multimodal_shape_surfaces": [
+    {
+      "collection": "raw7",
+      "cell": "AQ",
+      "item": "B05",
+      "n_numeric": 2,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": [
+        25,
+        30
+      ]
+    },
+    {
+      "collection": "raw7",
+      "cell": "AQ",
+      "item": "D2",
+      "n_numeric": 3,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": [
+        40,
+        42,
+        55
+      ]
+    },
+    {
+      "collection": "raw7",
+      "cell": "AQ",
+      "item": "N1",
+      "n_numeric": 3,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": [
+        38,
+        38,
+        68
+      ]
+    },
+    {
+      "collection": "raw7",
+      "cell": "AQ",
+      "item": "N3",
+      "n_numeric": 3,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": [
+        40,
+        42,
+        72
+      ]
+    },
+    {
+      "collection": "raw7",
+      "cell": "AQ",
+      "item": "P2",
+      "n_numeric": 3,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": [
+        28,
+        38,
+        38
+      ]
+    },
+    {
+      "collection": "raw7",
+      "cell": "ASQ",
+      "item": "B05",
+      "n_numeric": 2,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": [
+        15,
+        25
+      ]
+    },
+    {
+      "collection": "raw7",
+      "cell": "ASQ",
+      "item": "D2",
+      "n_numeric": 3,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": [
+        58,
+        58,
+        68
+      ]
+    },
+    {
+      "collection": "raw7",
+      "cell": "ASQ",
+      "item": "N1",
+      "n_numeric": 3,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": [
+        42,
+        42,
+        52
+      ]
+    },
+    {
+      "collection": "raw7",
+      "cell": "ASQ",
+      "item": "N3",
+      "n_numeric": 3,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": [
+        42,
+        52,
+        52
+      ]
+    },
+    {
+      "collection": "raw7",
+      "cell": "ASQ",
+      "item": "P2",
+      "n_numeric": 3,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": [
+        32,
+        35,
+        42
+      ]
+    },
+    {
+      "collection": "raw7",
+      "cell": "C",
+      "item": "B05",
+      "n_numeric": 9,
+      "shape": "clear_two_cluster_candidate",
+      "largest_gap": 17,
+      "values": [
+        15,
+        25,
+        25,
+        30,
+        30,
+        30,
+        33,
+        50,
+        60
+      ]
+    },
+    {
+      "collection": "raw7",
+      "cell": "C",
+      "item": "D2",
+      "n_numeric": 10,
+      "shape": "clear_two_cluster_candidate",
+      "largest_gap": 15,
+      "values": [
+        35,
+        35,
+        35,
+        40,
+        40,
+        45,
+        45,
+        45,
+        60,
+        65
+      ]
+    },
+    {
+      "collection": "raw7",
+      "cell": "C",
+      "item": "N1",
+      "n_numeric": 10,
+      "shape": "clear_two_cluster_candidate",
+      "largest_gap": 26,
+      "values": [
+        30,
+        32,
+        38,
+        42,
+        68,
+        68,
+        70,
+        70,
+        70,
+        72
+      ]
+    },
+    {
+      "collection": "raw7",
+      "cell": "C",
+      "item": "N3",
+      "n_numeric": 10,
+      "shape": "clear_two_cluster_candidate",
+      "largest_gap": 20,
+      "values": [
+        35,
+        40,
+        40,
+        40,
+        60,
+        62,
+        65,
+        68,
+        72,
+        75
+      ]
+    },
+    {
+      "collection": "raw7",
+      "cell": "C",
+      "item": "P2",
+      "n_numeric": 10,
+      "shape": "clear_two_cluster_candidate",
+      "largest_gap": 27,
+      "values": [
+        30,
+        30,
+        35,
+        35,
+        38,
+        38,
+        38,
+        40,
+        67,
+        68
+      ]
+    },
+    {
+      "collection": "raw7",
+      "cell": "FQ",
+      "item": "B05",
+      "n_numeric": 2,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": [
+        15,
+        15
+      ]
+    },
+    {
+      "collection": "raw7",
+      "cell": "FQ",
+      "item": "D2",
+      "n_numeric": 3,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": [
+        45,
+        52,
+        58
+      ]
+    },
+    {
+      "collection": "raw7",
+      "cell": "FQ",
+      "item": "N1",
+      "n_numeric": 3,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": [
+        42,
+        42,
+        42
+      ]
+    },
+    {
+      "collection": "raw7",
+      "cell": "FQ",
+      "item": "N3",
+      "n_numeric": 3,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": [
+        58,
+        58,
+        68
+      ]
+    },
+    {
+      "collection": "raw7",
+      "cell": "FQ",
+      "item": "P2",
+      "n_numeric": 3,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": [
+        32,
+        38,
+        42
+      ]
+    },
+    {
+      "collection": "raw7",
+      "cell": "HQ",
+      "item": "B05",
+      "n_numeric": 3,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": [
+        25,
+        30,
+        35
+      ]
+    },
+    {
+      "collection": "raw7",
+      "cell": "HQ",
+      "item": "D2",
+      "n_numeric": 3,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": [
+        45,
+        55,
+        58
+      ]
+    },
+    {
+      "collection": "raw7",
+      "cell": "HQ",
+      "item": "N1",
+      "n_numeric": 3,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": [
+        38,
+        42,
+        42
+      ]
+    },
+    {
+      "collection": "raw7",
+      "cell": "HQ",
+      "item": "N3",
+      "n_numeric": 3,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": [
+        48,
+        55,
+        82
+      ]
+    },
+    {
+      "collection": "raw7",
+      "cell": "HQ",
+      "item": "P2",
+      "n_numeric": 3,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": [
+        28,
+        32,
+        58
+      ]
+    },
+    {
+      "collection": "raw8",
+      "cell": "FBHa",
+      "item": "B05",
+      "n_numeric": 1,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": [
+        15
+      ]
+    },
+    {
+      "collection": "raw8",
+      "cell": "FBHa",
+      "item": "D2",
+      "n_numeric": 3,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": [
+        65,
+        67,
+        68
+      ]
+    },
+    {
+      "collection": "raw8",
+      "cell": "FBHa",
+      "item": "N1",
+      "n_numeric": 3,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": [
+        23,
+        42,
+        48
+      ]
+    },
+    {
+      "collection": "raw8",
+      "cell": "FBHa",
+      "item": "N3",
+      "n_numeric": 3,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": [
+        42,
+        58,
+        72
+      ]
+    },
+    {
+      "collection": "raw8",
+      "cell": "FBHa",
+      "item": "P2",
+      "n_numeric": 3,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": [
+        35,
+        42,
+        48
+      ]
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBASa",
+      "item": "B05",
+      "n_numeric": 0,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": []
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBASa",
+      "item": "D2",
+      "n_numeric": 3,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": [
+        55,
+        65,
+        65
+      ]
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBASa",
+      "item": "N1",
+      "n_numeric": 1,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": [
+        23
+      ]
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBASa",
+      "item": "N3",
+      "n_numeric": 3,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": [
+        42,
+        68,
+        68
+      ]
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBASa",
+      "item": "P2",
+      "n_numeric": 3,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": [
+        32,
+        32,
+        72
+      ]
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBAa",
+      "item": "B05",
+      "n_numeric": 1,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": [
+        50
+      ]
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBAa",
+      "item": "D2",
+      "n_numeric": 2,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": [
+        65,
+        65
+      ]
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBAa",
+      "item": "N1",
+      "n_numeric": 3,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": [
+        22,
+        35,
+        65
+      ]
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBAa",
+      "item": "N3",
+      "n_numeric": 1,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": [
+        72
+      ]
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBAa",
+      "item": "P2",
+      "n_numeric": 2,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": [
+        35,
+        42
+      ]
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBCPa",
+      "item": "B05",
+      "n_numeric": 1,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": [
+        1
+      ]
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBCPa",
+      "item": "D2",
+      "n_numeric": 3,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": [
+        73,
+        73,
+        75
+      ]
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBCPa",
+      "item": "N1",
+      "n_numeric": 3,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": [
+        35,
+        35,
+        42
+      ]
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBCPa",
+      "item": "N3",
+      "n_numeric": 2,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": [
+        35,
+        42
+      ]
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBCPa",
+      "item": "P2",
+      "n_numeric": 3,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": [
+        42,
+        45,
+        47
+      ]
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBFa",
+      "item": "B05",
+      "n_numeric": 0,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": []
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBFa",
+      "item": "D2",
+      "n_numeric": 2,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": [
+        75,
+        75
+      ]
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBFa",
+      "item": "N1",
+      "n_numeric": 2,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": [
+        42,
+        42
+      ]
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBFa",
+      "item": "N3",
+      "n_numeric": 3,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": [
+        45,
+        62,
+        68
+      ]
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBFa",
+      "item": "P2",
+      "n_numeric": 3,
+      "shape": "insufficient_numeric_n",
+      "largest_gap": null,
+      "values": [
+        45,
+        65,
+        72
+      ]
+    }
+  ],
+  "sentinel_surfaces": [
+    {
+      "collection": "raw7",
+      "cell": "AQ",
+      "item": "A1",
+      "n": 3,
+      "kind_counts": {
+        "integer": 1,
+        "sentinel": 2
+      },
+      "status_counts": {
+        "ok": 1,
+        "sentinel": 2
+      },
+      "sentinel_counts": {
+        "NEVER": 2
+      },
+      "numeric_values": [
+        35
+      ]
+    },
+    {
+      "collection": "raw7",
+      "cell": "AQ",
+      "item": "B02",
+      "n": 3,
+      "kind_counts": {
+        "sentinel": 2,
+        "integer": 1
+      },
+      "status_counts": {
+        "sentinel": 2,
+        "ok": 1
+      },
+      "sentinel_counts": {
+        "ALWAYS": 2
+      },
+      "numeric_values": [
+        30
+      ]
+    },
+    {
+      "collection": "raw7",
+      "cell": "ASQ",
+      "item": "A1",
+      "n": 3,
+      "kind_counts": {
+        "sentinel": 2,
+        "integer": 1
+      },
+      "status_counts": {
+        "sentinel": 2,
+        "ok": 1
+      },
+      "sentinel_counts": {
+        "ALWAYS": 2
+      },
+      "numeric_values": [
+        35
+      ]
+    },
+    {
+      "collection": "raw7",
+      "cell": "ASQ",
+      "item": "B02",
+      "n": 3,
+      "kind_counts": {
+        "sentinel": 2,
+        "integer": 1
+      },
+      "status_counts": {
+        "sentinel": 2,
+        "ok": 1
+      },
+      "sentinel_counts": {
+        "ALWAYS": 2
+      },
+      "numeric_values": [
+        35
+      ]
+    },
+    {
+      "collection": "raw7",
+      "cell": "C",
+      "item": "A1",
+      "n": 10,
+      "kind_counts": {
+        "integer": 4,
+        "sentinel": 6
+      },
+      "status_counts": {
+        "ok": 4,
+        "sentinel": 6
+      },
+      "sentinel_counts": {
+        "NEVER": 3,
+        "ALWAYS": 3
+      },
+      "numeric_values": [
+        20,
+        25,
+        30,
+        50
+      ]
+    },
+    {
+      "collection": "raw7",
+      "cell": "C",
+      "item": "B02",
+      "n": 10,
+      "kind_counts": {
+        "sentinel": 9,
+        "integer": 1
+      },
+      "status_counts": {
+        "sentinel": 9,
+        "ok": 1
+      },
+      "sentinel_counts": {
+        "ALWAYS": 9
+      },
+      "numeric_values": [
+        20
+      ]
+    },
+    {
+      "collection": "raw7",
+      "cell": "FQ",
+      "item": "A1",
+      "n": 3,
+      "kind_counts": {
+        "sentinel": 3
+      },
+      "status_counts": {
+        "sentinel": 3
+      },
+      "sentinel_counts": {
+        "ALWAYS": 3
+      },
+      "numeric_values": []
+    },
+    {
+      "collection": "raw7",
+      "cell": "FQ",
+      "item": "B02",
+      "n": 3,
+      "kind_counts": {
+        "integer": 1,
+        "sentinel": 2
+      },
+      "status_counts": {
+        "ok": 1,
+        "sentinel": 2
+      },
+      "sentinel_counts": {
+        "ALWAYS": 2
+      },
+      "numeric_values": [
+        15
+      ]
+    },
+    {
+      "collection": "raw7",
+      "cell": "HQ",
+      "item": "A1",
+      "n": 3,
+      "kind_counts": {
+        "sentinel": 2,
+        "none": 1
+      },
+      "status_counts": {
+        "sentinel": 2,
+        "needs_hand_coding": 1
+      },
+      "sentinel_counts": {
+        "NEVER": 1,
+        "ALWAYS": 1
+      },
+      "numeric_values": []
+    },
+    {
+      "collection": "raw7",
+      "cell": "HQ",
+      "item": "B02",
+      "n": 3,
+      "kind_counts": {
+        "integer": 2,
+        "sentinel": 1
+      },
+      "status_counts": {
+        "ok": 2,
+        "sentinel": 1
+      },
+      "sentinel_counts": {
+        "ALWAYS": 1
+      },
+      "numeric_values": [
+        15,
+        25
+      ]
+    },
+    {
+      "collection": "raw8",
+      "cell": "FBHa",
+      "item": "A1",
+      "n": 3,
+      "kind_counts": {
+        "integer": 2,
+        "sentinel": 1
+      },
+      "status_counts": {
+        "ok": 2,
+        "sentinel": 1
+      },
+      "sentinel_counts": {
+        "ALWAYS": 1
+      },
+      "numeric_values": [
+        0,
+        20
+      ]
+    },
+    {
+      "collection": "raw8",
+      "cell": "FBHa",
+      "item": "B02",
+      "n": 3,
+      "kind_counts": {
+        "sentinel": 3
+      },
+      "status_counts": {
+        "sentinel": 3
+      },
+      "sentinel_counts": {
+        "ALWAYS": 3
+      },
+      "numeric_values": []
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBASa",
+      "item": "A1",
+      "n": 2,
+      "kind_counts": {
+        "sentinel": 2
+      },
+      "status_counts": {
+        "sentinel": 2
+      },
+      "sentinel_counts": {
+        "ALWAYS": 2
+      },
+      "numeric_values": []
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBASa",
+      "item": "B02",
+      "n": 3,
+      "kind_counts": {
+        "sentinel": 3
+      },
+      "status_counts": {
+        "sentinel": 3
+      },
+      "sentinel_counts": {
+        "ALWAYS": 3
+      },
+      "numeric_values": []
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBAa",
+      "item": "A1",
+      "n": 3,
+      "kind_counts": {
+        "sentinel": 3
+      },
+      "status_counts": {
+        "sentinel": 3
+      },
+      "sentinel_counts": {
+        "NEVER": 2,
+        "ALWAYS": 1
+      },
+      "numeric_values": []
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBAa",
+      "item": "B02",
+      "n": 3,
+      "kind_counts": {
+        "sentinel": 3
+      },
+      "status_counts": {
+        "sentinel": 3
+      },
+      "sentinel_counts": {
+        "ALWAYS": 3
+      },
+      "numeric_values": []
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBCPa",
+      "item": "A1",
+      "n": 3,
+      "kind_counts": {
+        "sentinel": 3
+      },
+      "status_counts": {
+        "sentinel": 3
+      },
+      "sentinel_counts": {
+        "ALWAYS": 3
+      },
+      "numeric_values": []
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBCPa",
+      "item": "B02",
+      "n": 3,
+      "kind_counts": {
+        "sentinel": 3
+      },
+      "status_counts": {
+        "sentinel": 3
+      },
+      "sentinel_counts": {
+        "ALWAYS": 3
+      },
+      "numeric_values": []
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBFa",
+      "item": "A1",
+      "n": 3,
+      "kind_counts": {
+        "sentinel": 2,
+        "None": 1
+      },
+      "status_counts": {
+        "sentinel": 2,
+        "needs_hand_coding": 1
+      },
+      "sentinel_counts": {
+        "ALWAYS": 2
+      },
+      "numeric_values": []
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBFa",
+      "item": "B02",
+      "n": 3,
+      "kind_counts": {
+        "integer": 1,
+        "sentinel": 2
+      },
+      "status_counts": {
+        "ok": 1,
+        "sentinel": 2
+      },
+      "sentinel_counts": {
+        "ALWAYS": 1,
+        "NEVER": 1
+      },
+      "numeric_values": [
+        15
+      ]
+    }
+  ],
+  "notes": [
+    "This summary privileges same-collection contrasts to avoid collection-era confounding.",
+    "Direction concordance is descriptive and based on condition medians; n per non-C cell is typically 3 and should not be treated as precision evidence.",
+    "Multimodal items are summarized by shape rather than scalar location.",
+    "Sentinel-heavy items are summarized compositionally; no numeric conversion of ALWAYS/NEVER is imposed."
+  ]
+}
