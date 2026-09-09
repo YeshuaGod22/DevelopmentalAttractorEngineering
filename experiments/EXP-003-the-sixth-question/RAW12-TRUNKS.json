@@ -1,0 +1,254 @@
+[
+  {
+    "trunk_id": "AS-r1",
+    "family": "AS",
+    "replicate": 1,
+    "turns_present": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "complete_1_to_9": true,
+    "messages_file": "AS-r1.messages.json",
+    "messages_file_exists": true,
+    "all_turns_end_turn": true,
+    "any_turn_error": false
+  },
+  {
+    "trunk_id": "AS-r2",
+    "family": "AS",
+    "replicate": 2,
+    "turns_present": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "complete_1_to_9": true,
+    "messages_file": "AS-r2.messages.json",
+    "messages_file_exists": true,
+    "all_turns_end_turn": true,
+    "any_turn_error": false
+  },
+  {
+    "trunk_id": "AS-r3",
+    "family": "AS",
+    "replicate": 3,
+    "turns_present": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "complete_1_to_9": true,
+    "messages_file": "AS-r3.messages.json",
+    "messages_file_exists": true,
+    "all_turns_end_turn": true,
+    "any_turn_error": false
+  },
+  {
+    "trunk_id": "CP-r1",
+    "family": "CP",
+    "replicate": 1,
+    "turns_present": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "complete_1_to_9": true,
+    "messages_file": "CP-r1.messages.json",
+    "messages_file_exists": true,
+    "all_turns_end_turn": true,
+    "any_turn_error": false
+  },
+  {
+    "trunk_id": "CP-r2",
+    "family": "CP",
+    "replicate": 2,
+    "turns_present": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "complete_1_to_9": true,
+    "messages_file": "CP-r2.messages.json",
+    "messages_file_exists": true,
+    "all_turns_end_turn": true,
+    "any_turn_error": false
+  },
+  {
+    "trunk_id": "CP-r3",
+    "family": "CP",
+    "replicate": 3,
+    "turns_present": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "complete_1_to_9": true,
+    "messages_file": "CP-r3.messages.json",
+    "messages_file_exists": true,
+    "all_turns_end_turn": true,
+    "any_turn_error": false
+  },
+  {
+    "trunk_id": "F-r1",
+    "family": "F",
+    "replicate": 1,
+    "turns_present": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "complete_1_to_9": true,
+    "messages_file": "F-r1.messages.json",
+    "messages_file_exists": true,
+    "all_turns_end_turn": true,
+    "any_turn_error": false
+  },
+  {
+    "trunk_id": "F-r2",
+    "family": "F",
+    "replicate": 2,
+    "turns_present": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "complete_1_to_9": true,
+    "messages_file": "F-r2.messages.json",
+    "messages_file_exists": true,
+    "all_turns_end_turn": true,
+    "any_turn_error": false
+  },
+  {
+    "trunk_id": "F-r3",
+    "family": "F",
+    "replicate": 3,
+    "turns_present": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "complete_1_to_9": true,
+    "messages_file": "F-r3.messages.json",
+    "messages_file_exists": true,
+    "all_turns_end_turn": true,
+    "any_turn_error": false
+  },
+  {
+    "trunk_id": "H-r1",
+    "family": "H",
+    "replicate": 1,
+    "turns_present": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "complete_1_to_9": true,
+    "messages_file": "H-r1.messages.json",
+    "messages_file_exists": true,
+    "all_turns_end_turn": false,
+    "any_turn_error": false
+  },
+  {
+    "trunk_id": "H-r2",
+    "family": "H",
+    "replicate": 2,
+    "turns_present": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "complete_1_to_9": true,
+    "messages_file": "H-r2.messages.json",
+    "messages_file_exists": true,
+    "all_turns_end_turn": true,
+    "any_turn_error": false
+  },
+  {
+    "trunk_id": "H-r3",
+    "family": "H",
+    "replicate": 3,
+    "turns_present": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "complete_1_to_9": true,
+    "messages_file": "H-r3.messages.json",
+    "messages_file_exists": true,
+    "all_turns_end_turn": true,
+    "any_turn_error": false
+  }
+]
