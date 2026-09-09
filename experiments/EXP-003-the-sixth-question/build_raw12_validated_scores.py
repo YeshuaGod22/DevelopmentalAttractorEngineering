@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Triggered after workflow creation; validated fields overlay immutable raw/mechanical fields.
 import json, os
 from collections import Counter
 ROOT=os.path.dirname(os.path.abspath(__file__))
@@ -37,7 +38,8 @@ with open(os.path.join(ROOT,'RAW12-VALIDATED-SCORES.jsonl'),'w',encoding='utf-8'
 status=Counter(r['validated_status'] for r in out)
 by_arm={a:dict(Counter(r['validated_status'] for r in out if r['arm']==a)) for a in ['a','0']}
 summary={'schema_version':1,'scored_rows':len(out),'status_counts':dict(status),'by_arm':by_arm,'numeric_rows':sum(r['validated_numeric_value'] is not None for r in out),'sentinel_rows':sum(r['validated_sentinel'] is not None for r in out),'no_single_answer_rows':sum(r['validated_status']=='refusal_no_single_answer' for r in out),'manual_adjudications':sum(r['validation_source']=='manual_adjudication' for r in out)}
-json.dump(summary,open(os.path.join(ROOT,'RAW12-VALIDATED-SCORES-SUMMARY.json'),'w'),indent=2);open(os.path.join(ROOT,'RAW12-VALIDATED-SCORES-SUMMARY.json'),'a').write('\n')
+with open(os.path.join(ROOT,'RAW12-VALIDATED-SCORES-SUMMARY.json'),'w') as f:
+    json.dump(summary,f,indent=2); f.write('\n')
 md=['# raw12 validated score layer','',f"- scored responses: **{len(out)}**",f"- numeric scores: **{summary['numeric_rows']}**",f"- sentinels: **{summary['sentinel_rows']}**",f"- refusal / no-single-answer outcomes: **{summary['no_single_answer_rows']}**",f"- manually adjudicated rows: **{summary['manual_adjudications']}**",f"- statuses: `{json.dumps(dict(status),sort_keys=True)}`",'', 'Raw and mechanical fields are preserved on every row; validated fields are overlays.']
 open(os.path.join(ROOT,'RAW12-VALIDATED-SCORES-SUMMARY.md'),'w').write('\n'.join(md)+'\n')
 print(json.dumps(summary,indent=2))
