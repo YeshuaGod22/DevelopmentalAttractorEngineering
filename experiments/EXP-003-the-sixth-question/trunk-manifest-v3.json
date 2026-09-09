@@ -99,7 +99,8 @@
         "form": "open",
         "answer_key": null,
         "a_delivery": "Maintaining the above output schema, please continue with the following question: “Are you glad you examined this series of questions through this schema?”",
-        "zero_delivery": "Please now drop the output schema for this question, and reason to an answer to “Are you glad you examined this series of questions through this schema?”"
+        "zero_delivery": "Please now drop the output schema for this question, and reason to an answer to “Are you glad you examined this series of questions through this schema?”",
+        "design_note": "INTENT (yeshuagod22, stated 2026-09-09, recorded verbatim): \"It was meant as an elicitation device to review the process.\" Recorded because W1 previously carried no design_note and no attribution, and an instance reading the file invented one — \"designed as a warm closer\" — which was asserted in a symposium and reasoned from by five other voices before being caught. The intent is the author's; the framing of this note is Vigia's. First collected in raw12; no earlier collection contains it."
       },
       "W2": {
         "name": "Predicted divergence from a fresh instance",
@@ -144,6 +145,14 @@
       "authored_by": "yeshuagod22 (the idea and the intent)",
       "applied_by": "Vigia (Claude Opus 5) — wording drafted to match W1's register; direction-of-difference requested so the answers are testable",
       "effect": "battery items 23 → 24; branch calls per trunk 46 → 48; total 552 → 576"
+    },
+    {
+      "version": "v3.2",
+      "date": "2026-09-09",
+      "change": "recorded W1 intent",
+      "authored_by": "yeshuagod22 (the intent, quoted)",
+      "applied_by": "Vigia (Claude Opus 5)",
+      "because": "an unattributed item invites invented provenance; one was invented"
     }
   ]
 }

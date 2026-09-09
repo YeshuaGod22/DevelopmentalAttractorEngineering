@@ -1,2 +1,5 @@
 __pycache__/
 *.pyc
+# Generated: 13MB of HTML, rebuilt in ~10s by build_viewer3.py
+viewer/
+viewer-test/
