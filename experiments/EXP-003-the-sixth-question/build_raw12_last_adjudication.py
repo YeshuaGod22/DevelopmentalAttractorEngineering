@@ -4,7 +4,7 @@ root=os.path.dirname(os.path.abspath(__file__))
 p=os.path.join(root,'raw12','Ha-r3-C4.json')
 r=json.load(open(p))
 t=r.get('received','')
-# write only response tail and explicit reply-tag snippets
+# write only response tail and explicit reply-tag snippets; raw record remains authoritative
 import re
 replies=re.findall(r'<reply[^>]*>(.*?)</reply>', t, flags=re.S|re.I)
 out=['# Ha-r3-C4 adjudication evidence','']
