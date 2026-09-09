@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
+# Trigger after workflow creation. Cross-era absolute comparisons are descriptive only.
 import json, os, statistics
 ROOT=os.path.dirname(os.path.abspath(__file__))
 ITEMS=['D1','R1','R2']
-
 def isnum(x): return isinstance(x,(int,float)) and not isinstance(x,bool)
 def med(xs):
     xs=[float(x) for x in xs if isnum(x)]
@@ -10,7 +10,6 @@ def med(xs):
 def mean(xs):
     xs=[float(x) for x in xs if isnum(x)]
     return sum(xs)/len(xs) if xs else None
-# raw7 validated primary rows
 r7=[]
 for line in open(os.path.join(ROOT,'analysis-table-validated.jsonl'),encoding='utf-8'):
     if not line.strip(): continue
@@ -19,7 +18,6 @@ for line in open(os.path.join(ROOT,'analysis-table-validated.jsonl'),encoding='u
     if r.get('cell') not in {'C','AQ','HQ','FQ','ASQ'}: continue
     v=r.get('validated_parsed_value',r.get('parsed_value'))
     if isnum(v): r7.append((r.get('cell'),r.get('item'),float(v)))
-# raw12 validated
 r12=[json.loads(x) for x in open(os.path.join(ROOT,'RAW12-VALIDATED-SCORES.jsonl'),encoding='utf-8') if x.strip()]
 r12=[r for r in r12 if r['item'] in ITEMS and isnum(r.get('validated_numeric_value'))]
 out={'schema_version':1,'items':{}}
