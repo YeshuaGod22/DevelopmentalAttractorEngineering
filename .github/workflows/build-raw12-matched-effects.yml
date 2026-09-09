@@ -1,0 +1,23 @@
+name: build-raw12-matched-effects
+on:
+  push:
+    paths:
+      - 'experiments/EXP-003-the-sixth-question/build_raw12_matched_effects.py'
+      - 'experiments/EXP-003-the-sixth-question/RAW12-VALIDATED-SCORES.jsonl'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python experiments/EXP-003-the-sixth-question/build_raw12_matched_effects.py
+      - run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add experiments/EXP-003-the-sixth-question/RAW12-MATCHED-USABLE-NUMERIC.jsonl experiments/EXP-003-the-sixth-question/RAW12-SENTINEL-TRANSITIONS.jsonl experiments/EXP-003-the-sixth-question/RAW12-MATCHED-EFFECTS-SUMMARY.json experiments/EXP-003-the-sixth-question/RAW12-MATCHED-EFFECTS-SUMMARY.md
+          git diff --cached --quiet || git commit -m 'EXP-003: build raw12 matched effects'
+          git push
