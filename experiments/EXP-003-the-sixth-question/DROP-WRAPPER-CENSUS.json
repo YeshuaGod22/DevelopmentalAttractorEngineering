@@ -1,6 +1,19 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "object": "EXP-003 schema-drop wrapper census",
+  "raw_directories_scanned": [
+    "raw2",
+    "raw3",
+    "raw4",
+    "raw5",
+    "raw6",
+    "raw7",
+    "raw8",
+    "raw9",
+    "raw10",
+    "raw11",
+    "raw12"
+  ],
   "classification_rules": {
     "OLD_answer_only": "providing only your answer according to the answer key",
     "NEW_reason_to_answer": "and reason to an answer to",
@@ -6166,6 +6179,7 @@
     "Classification is from executed final user prompt text, not cell label alone.",
     "pre_reply_chars counts characters in received output before the opening <reply> tag.",
     "This census is descriptive. Cross-collection differences do not identify causal wrapper effects.",
-    "Branch labels b and 0 are not assumed prompt-equivalent."
+    "Branch labels b and 0 are not assumed prompt-equivalent.",
+    "All rawN directories present at build time are scanned; the scan is not hard-coded to raw2-raw11."
   ]
 }

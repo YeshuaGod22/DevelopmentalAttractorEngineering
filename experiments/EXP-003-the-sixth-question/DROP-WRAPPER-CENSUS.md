@@ -2,6 +2,8 @@
 
 Executed-prompt census. Classification is based on the actual final user message, **not** the branch/cell label.
 
+Raw directories scanned: `raw2`, `raw3`, `raw4`, `raw5`, `raw6`, `raw7`, `raw8`, `raw9`, `raw10`, `raw11`, `raw12`
+
 Total drop-like completed records: **431**
 
 ## Wrapper counts
