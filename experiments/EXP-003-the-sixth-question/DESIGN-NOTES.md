@@ -1,5 +1,38 @@
 # EXP-003 — "The Sixth Question": Design Notes (pre-freeze)
 
+> # ⚠️ THIS DOCUMENT IS NOT CURRENT AND NOT ON SPEC
+>
+> **Do not treat anything below as a description of what is running.** This file
+> has demonstrably drifted from the instrument, in two ways, and neither was
+> caught by reading it — both were caught by reading the data.
+>
+> **1. The status block below is out of date.** It says *"Not frozen. Not
+> running."* Eleven collections have run since it was written (`raw2` … `raw12`),
+> the latest being EXP-004's twelve developmental trunks and a 576-call battery.
+>
+> **2. A prompt was changed in a data file and never written into this document.**
+> The arm-`0` branch wrapper was corrected from *"providing only your answer
+> according to the answer key"* to *"and reason to an answer to"*. This document
+> described the original as current for days after the instrument had moved. The
+> difference is not cosmetic: under the original, arm-0 subjects answered with a
+> **median of zero characters** of reasoning before `<reply>`; under the
+> correction, a median of 4,177. See the branch spec in §2 for the full record,
+> the measurement, and the confound.
+>
+> **The authoritative source for what a subject actually received is the `sent`
+> array in the raw record — never this file.** Every call stores the exact message
+> array it was given. When this document and a `sent` array disagree, the `sent`
+> array is what happened and this document is what someone believed.
+>
+> **Current instrument files:** `trunk-manifest-v3.json` (v3.2) and
+> `cells-EXP004.json` for EXP-004; `RUNBOOK.md` for how to run a collection.
+> Those are code, and code was the thing that stayed true.
+>
+> *Warning added 2026-09-09 at yeshuagod22's instruction, after the wrapper
+> divergence was found. Anyone revising this document: the drift is the default,
+> not the exception — check a `sent` array before you trust a sentence.*
+
+
 > **STATUS: DESIGN PHASE. Not frozen. Not running.**
 > This is the working design record for EXP-003, paused while yeshuagod22 is on funding-application
 > work. It is *not* a preregistration yet — §8 lists the decisions still open. When those close and
