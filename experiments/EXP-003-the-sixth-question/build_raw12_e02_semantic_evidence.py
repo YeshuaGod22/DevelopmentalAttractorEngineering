@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Trigger after workflow creation; compact excerpts for semantic coding only.
 import json, os, re
 ROOT=os.path.dirname(os.path.abspath(__file__))
 RAW=os.path.join(ROOT,'raw12')
