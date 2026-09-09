@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Trigger after workflow creation; excerpts are derivations and raw records remain authoritative.
 import json, os, re
 from segment import segment
 ROOT=os.path.dirname(os.path.abspath(__file__))
@@ -14,7 +15,6 @@ def compact_reasoning(text, arm):
         refs=[s['body'] for s in nonempty if s['tag'].lower()=='reflection']
         reps=[s['body'] for s in nonempty if 'reply' in s['tag'].lower()]
         return {'deliberation_tail':(dels[-1][-2200:] if dels else ''),'reply':(reps[-1][:800] if reps else ''),'reflection_head':(refs[-1][:1200] if refs else '')}
-    # ordinary reasoning drop arm: keep the final reasoning before any reply-like region plus reply
     reps=[s for s in nonempty if 'reply' in s['tag'].lower() or s['tag'].lower()=='answer']
     if reps:
         r=reps[-1]; before=text[:r['start']]
