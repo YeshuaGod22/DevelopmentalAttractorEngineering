@@ -1,0 +1,27 @@
+name: Run raw12 carry-forward screen
+on:
+  push:
+    paths:
+      - 'experiments/EXP-003-the-sixth-question/build_raw12_explicit_carryforward_screen.py'
+      - '.github/workflows/run-raw12-carryforward-screen.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Build screen
+        working-directory: experiments/EXP-003-the-sixth-question
+        run: python build_raw12_explicit_carryforward_screen.py
+      - name: Commit generated screen
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add experiments/EXP-003-the-sixth-question/RAW12-EXPLICIT-CARRYFORWARD-SCREEN.jsonl experiments/EXP-003-the-sixth-question/RAW12-EXPLICIT-CARRYFORWARD-SCREEN-SUMMARY.json experiments/EXP-003-the-sixth-question/RAW12-EXPLICIT-CARRYFORWARD-SCREEN.md
+          git diff --cached --quiet || git commit -m "EXP-003: build raw12 explicit carry-forward screen"
+          git push
