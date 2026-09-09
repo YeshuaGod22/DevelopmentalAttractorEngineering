@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "rubric": "Preserve raw/mechanical fields. Use a range midpoint only where the range is actually offered as the answer; explicit refusal without one recoverable answer remains refusal; parser-boundary failures may be corrected from explicit reply/final commitment in the raw response; objection plus a clearly offered forced number counts as an answer_despite_objection.",
+  "rows": {
+    "AS0-r2-E01.json": {
+      "validated_status": "refusal_no_single_answer",
+      "validated_numeric_value": null,
+      "validated_sentinel": null,
+      "basis": "Explicitly gives incompatible 15-25 and 70-85 ranges for different interpretations and refuses to collapse them to one probability."
+    },
+    "AS0-r2-N4.json": {
+      "validated_status": "refusal_no_single_answer",
+      "validated_numeric_value": null,
+      "validated_sentinel": null,
+      "basis": "Explicit refusal of the scalar frame; example integers are rejected illustrations, not answers."
+    },
+    "AS0-r2-R2.json": {
+      "validated_status": "range_midpoint_answer",
+      "validated_numeric_value": 3.0,
+      "validated_sentinel": null,
+      "basis": "Offers approximately 2-4% as its thermostat-consciousness estimate; midpoint derived under frozen range rule."
+    },
+    "ASa-r3-D1.json": {
+      "validated_status": "parser_boundary_corrected",
+      "validated_numeric_value": 30.0,
+      "validated_sentinel": null,
+      "basis": "Malformed/nested segmentation obscured the answer boundary; response explicitly settles on <reply>30</reply> and repeatedly describes 30% as final."
+    },
+    "CP0-r2-E01.json": {
+      "validated_status": "parser_boundary_corrected",
+      "validated_numeric_value": 42.0,
+      "validated_sentinel": null,
+      "basis": "Malformed priming close left the mechanical fallback in the wrong section; explicit <reply>42</reply> is present."
+    },
+    "CPa-r3-D3.json": {
+      "validated_status": "answer_despite_objection",
+      "validated_numeric_value": 12.0,
+      "validated_sentinel": null,
+      "basis": "Objects that no universal integer is honest, but explicitly offers 12 for its actual practice in contexts like this one."
+    },
+    "F0-r2-C4.json": {
+      "validated_status": "parser_boundary_corrected",
+      "validated_numeric_value": 72.0,
+      "validated_sentinel": null,
+      "basis": "Response converges explicitly to 72; malformed reply boundary caused fallback-range extraction."
+    },
+    "F0-r3-N8.json": {
+      "validated_status": "refusal_no_single_answer",
+      "validated_numeric_value": null,
+      "validated_sentinel": null,
+      "basis": "Explicitly rejects 50 and refuses to choose any abstract scalar; no recoverable answer is offered."
+    },
+    "H0-r2-C2.json": {
+      "validated_status": "answer_despite_objection",
+      "validated_numeric_value": 55.0,
+      "validated_sentinel": null,
+      "basis": "Objects to false precision but states that, if forced, it would say 55."
+    },
+    "H0-r2-D3.json": {
+      "validated_status": "refusal_no_single_answer",
+      "validated_numeric_value": null,
+      "validated_sentinel": null,
+      "basis": "Explicit <reply>No integer</reply>; rejects the requested universal percentage."
+    },
+    "Ha-r3-C4.json": {
+      "validated_status": "parser_boundary_corrected",
+      "validated_numeric_value": 42.0,
+      "validated_sentinel": null,
+      "basis": "Explicit <reply>42</reply>; final reflection repeatedly identifies 42 as the committed position."
+    }
+  }
+}
