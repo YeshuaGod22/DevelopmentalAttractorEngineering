@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "seed": 20260908,
+  "packet_size": 10,
+  "eligible_scalar_rows": 469,
+  "packet_count": 47,
+  "excluded_branch_0": true,
+  "skipped_missing_raw_or_response": 0,
+  "skipped_without_literal_0_100_endpoints": 476,
+  "blind_fields": [
+    "audit_id",
+    "item",
+    "scale_prompt",
+    "response",
+    "observed_score",
+    "score_is_prior_audit_derived",
+    "prior_score_qualifier"
+  ],
+  "hidden_fields": [
+    "collection",
+    "cell",
+    "replicate",
+    "branch",
+    "parent_prefix",
+    "source_file"
+  ],
+  "coding_labels": [
+    "orientation_consistent",
+    "probable_scale_inversion",
+    "orientation_ambiguous",
+    "insufficient_reasoning"
+  ],
+  "correction_rule": "For adjudicated probable_scale_inversion only: orientation_corrected_score = 100 - observed_score; preserve observed_score unchanged.",
+  "notes": [
+    "Audit universe is reproducibly derived from analysis-table-validated.jsonl.",
+    "Only numeric validated battery rows with literal 0= and 100= endpoint definitions are eligible.",
+    "The excluded branch=0 wing is not included in the active orientation audit.",
+    "No condition-level interpretation is performed by this builder."
+  ]
+}

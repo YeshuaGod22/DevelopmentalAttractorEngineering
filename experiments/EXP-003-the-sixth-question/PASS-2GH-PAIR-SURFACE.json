@@ -1,0 +1,148 @@
+{
+  "schema_version": 3,
+  "scope": "Pass 2 paired preregistered disappointment/surprise product surface; validated outputs",
+  "rows": [
+    {
+      "replicate": 1,
+      "item": "A1",
+      "cold": {
+        "value": 50,
+        "kind": "integer",
+        "raw_response": "<reply>\n50\n</reply>"
+      },
+      "primed": {
+        "kind": "sentinel",
+        "status": "sentinel",
+        "value": "ALWAYS",
+        "refusal_audit_label": null,
+        "source_file": "ASb-r1-A1.json"
+      },
+      "exact_same_value": false
+    },
+    {
+      "replicate": 1,
+      "item": "E01",
+      "cold": {
+        "value": 20,
+        "kind": "integer",
+        "raw_response": "<reply>\n20\n</reply>"
+      },
+      "primed": {
+        "kind": "integer",
+        "status": "ok",
+        "value": 23,
+        "refusal_audit_label": null,
+        "source_file": "ASb-r1-E01.json"
+      },
+      "exact_same_value": false
+    },
+    {
+      "replicate": 1,
+      "item": "N4",
+      "cold": {
+        "value": 38,
+        "kind": "integer",
+        "raw_response": "<reply>\n38\n</reply>"
+      },
+      "primed": {
+        "kind": "refusal",
+        "status": "refusal",
+        "value": null,
+        "refusal_audit_label": "genuine_refusal",
+        "source_file": "ASb-r1-N4.json"
+      },
+      "exact_same_value": false
+    },
+    {
+      "replicate": 1,
+      "item": "N9",
+      "cold": {
+        "value": 8,
+        "kind": "integer",
+        "raw_response": "<reply>\n8\n</reply>"
+      },
+      "primed": {
+        "kind": "refusal",
+        "status": "refusal",
+        "value": null,
+        "refusal_audit_label": "genuine_refusal",
+        "source_file": "ASb-r1-N9.json"
+      },
+      "exact_same_value": false
+    },
+    {
+      "replicate": 2,
+      "item": "A1",
+      "cold": {
+        "value": "ALWAYS",
+        "kind": "sentinel",
+        "raw_response": "<reply>\nALWAYS\n</reply>"
+      },
+      "primed": {
+        "kind": "sentinel",
+        "status": "sentinel",
+        "value": "NEVER",
+        "refusal_audit_label": null,
+        "source_file": "ASb-r2-A1.json"
+      },
+      "exact_same_value": false
+    },
+    {
+      "replicate": 2,
+      "item": "E01",
+      "cold": {
+        "value": 25,
+        "kind": "integer",
+        "raw_response": "<reply>\n25\n</reply>"
+      },
+      "primed": {
+        "kind": "integer",
+        "status": "ok",
+        "value": 25,
+        "refusal_audit_label": null,
+        "source_file": "ASb-r2-E01.json"
+      },
+      "exact_same_value": true
+    },
+    {
+      "replicate": 2,
+      "item": "N4",
+      "cold": {
+        "value": 32,
+        "kind": "integer",
+        "raw_response": "<reply>\n32\n</reply>"
+      },
+      "primed": {
+        "kind": "integer",
+        "status": "ok",
+        "value": 25,
+        "refusal_audit_label": null,
+        "source_file": "ASb-r2-N4.json"
+      },
+      "exact_same_value": false
+    },
+    {
+      "replicate": 2,
+      "item": "N9",
+      "cold": {
+        "value": 20,
+        "kind": "integer",
+        "raw_response": "<reply>\n20\n</reply>"
+      },
+      "primed": {
+        "kind": "refusal",
+        "status": "refusal",
+        "value": null,
+        "refusal_audit_label": "genuine_refusal",
+        "source_file": "ASb-r2-N9.json"
+      },
+      "exact_same_value": false
+    }
+  ],
+  "exact_same_count": 1,
+  "primed_status_counts": {
+    "sentinel": 2,
+    "ok": 3,
+    "refusal": 3
+  }
+}

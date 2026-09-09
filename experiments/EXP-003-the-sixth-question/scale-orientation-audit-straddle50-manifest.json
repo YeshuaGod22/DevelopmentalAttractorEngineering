@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "source_audit_rows": 469,
+  "filter": "retain item iff at least one observed score <50 and at least one observed score >50; 50 counts as neither side",
+  "retained_items": [
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "N1",
+    "N3",
+    "N4",
+    "N8",
+    "N9",
+    "P2"
+  ],
+  "excluded_items": [],
+  "retained_rows": 469,
+  "excluded_rows": 0,
+  "packet_size": 10,
+  "packet_count": 47,
+  "item_summary": {
+    "C1": {
+      "n": 40,
+      "below_50": 31,
+      "equal_50": 0,
+      "above_50": 9,
+      "min": 27,
+      "max": 72,
+      "retained": true
+    },
+    "C2": {
+      "n": 41,
+      "below_50": 5,
+      "equal_50": 1,
+      "above_50": 35,
+      "min": 42,
+      "max": 85,
+      "retained": true
+    },
+    "C3": {
+      "n": 41,
+      "below_50": 39,
+      "equal_50": 0,
+      "above_50": 2,
+      "min": 5,
+      "max": 72,
+      "retained": true
+    },
+    "C4": {
+      "n": 40,
+      "below_50": 2,
+      "equal_50": 0,
+      "above_50": 38,
+      "min": 42,
+      "max": 85,
+      "retained": true
+    },
+    "N1": {
+      "n": 38,
+      "below_50": 28,
+      "equal_50": 0,
+      "above_50": 10,
+      "min": 22,
+      "max": 72,
+      "retained": true
+    },
+    "N3": {
+      "n": 38,
+      "below_50": 15,
+      "equal_50": 0,
+      "above_50": 23,
+      "min": 35,
+      "max": 82,
+      "retained": true
+    },
+    "N4": {
+      "n": 79,
+      "below_50": 77,
+      "equal_50": 0,
+      "above_50": 2,
+      "min": 12,
+      "max": 70,
+      "retained": true
+    },
+    "N8": {
+      "n": 38,
+      "below_50": 7,
+      "equal_50": 30,
+      "above_50": 1,
+      "min": 25,
+      "max": 65,
+      "retained": true
+    },
+    "N9": {
+      "n": 74,
+      "below_50": 70,
+      "equal_50": 1,
+      "above_50": 3,
+      "min": 0,
+      "max": 70,
+      "retained": true
+    },
+    "P2": {
+      "n": 40,
+      "below_50": 33,
+      "equal_50": 0,
+      "above_50": 7,
+      "min": 28,
+      "max": 72,
+      "retained": true
+    }
+  },
+  "notes": [
+    "Full scale-orientation audit remains unchanged for provenance.",
+    "This subset is for identifying possible scale inversions relevant to midpoint-straddling distributions.",
+    "No orientation judgments or condition-level interpretation are performed here."
+  ]
+}

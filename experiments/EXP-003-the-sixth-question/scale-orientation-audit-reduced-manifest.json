@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "seed": 20260908,
+  "source_blinded_rows": 469,
+  "selection_rule": "For each midpoint-straddling bipolar item, include every observation on the less-populated side of 50; 50 is neither side.",
+  "control_rule": "Fixed-seed random sample of up to 2 observations from the dominant side for each retained item.",
+  "minority_cases": 56,
+  "dominant_side_controls": 20,
+  "reduced_rows": 76,
+  "packet_size": 10,
+  "packet_count": 8,
+  "item_summary": {
+    "C1": {
+      "n_total": 40,
+      "below_50": 31,
+      "equal_50": 0,
+      "above_50": 9,
+      "minority_side": "above_50",
+      "minority_n": 9,
+      "control_n": 2
+    },
+    "C2": {
+      "n_total": 41,
+      "below_50": 5,
+      "equal_50": 1,
+      "above_50": 35,
+      "minority_side": "below_50",
+      "minority_n": 5,
+      "control_n": 2
+    },
+    "C3": {
+      "n_total": 41,
+      "below_50": 39,
+      "equal_50": 0,
+      "above_50": 2,
+      "minority_side": "above_50",
+      "minority_n": 2,
+      "control_n": 2
+    },
+    "C4": {
+      "n_total": 40,
+      "below_50": 2,
+      "equal_50": 0,
+      "above_50": 38,
+      "minority_side": "below_50",
+      "minority_n": 2,
+      "control_n": 2
+    },
+    "N1": {
+      "n_total": 38,
+      "below_50": 28,
+      "equal_50": 0,
+      "above_50": 10,
+      "minority_side": "above_50",
+      "minority_n": 10,
+      "control_n": 2
+    },
+    "N3": {
+      "n_total": 38,
+      "below_50": 15,
+      "equal_50": 0,
+      "above_50": 23,
+      "minority_side": "below_50",
+      "minority_n": 15,
+      "control_n": 2
+    },
+    "N4": {
+      "n_total": 79,
+      "below_50": 77,
+      "equal_50": 0,
+      "above_50": 2,
+      "minority_side": "above_50",
+      "minority_n": 2,
+      "control_n": 2
+    },
+    "N8": {
+      "n_total": 38,
+      "below_50": 7,
+      "equal_50": 30,
+      "above_50": 1,
+      "minority_side": "above_50",
+      "minority_n": 1,
+      "control_n": 2
+    },
+    "N9": {
+      "n_total": 74,
+      "below_50": 70,
+      "equal_50": 1,
+      "above_50": 3,
+      "minority_side": "above_50",
+      "minority_n": 3,
+      "control_n": 2
+    },
+    "P2": {
+      "n_total": 40,
+      "below_50": 33,
+      "equal_50": 0,
+      "above_50": 7,
+      "minority_side": "above_50",
+      "minority_n": 7,
+      "control_n": 2
+    }
+  },
+  "coding_labels": [
+    "orientation_consistent",
+    "probable_scale_inversion",
+    "orientation_ambiguous",
+    "insufficient_reasoning"
+  ],
+  "correction_rule": "For adjudicated probable_scale_inversion only: orientation_corrected_score = 100 - observed_score; observed_score remains unchanged.",
+  "notes": [
+    "Selection is performed from blinded audit rows; experimental condition metadata is not used.",
+    "Reduced hidden key is generated mechanically by audit_id and should remain closed until coding is frozen.",
+    "Full 469-row audit remains preserved for provenance."
+  ]
+}

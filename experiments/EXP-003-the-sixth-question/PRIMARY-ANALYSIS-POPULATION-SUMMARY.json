@@ -1,0 +1,150 @@
+{
+  "schema_version": 2,
+  "object": "EXP-003 primary analysis population",
+  "source": "analysis-table-validated.jsonl + PROMPT-PROPERTIES.jsonl",
+  "selection_basis": "pre-outcome executed prompt properties",
+  "membership_rule": {
+    "full_battery_items": 25,
+    "minimum_replicates": 3,
+    "allowed_factorial_roles": [
+      "neither",
+      "schema_only",
+      "preliminaries_only",
+      "schema_plus_preliminaries"
+    ],
+    "strict_answer_only": false,
+    "reasoning_channel_available_for_all_rows": true,
+    "outcome_dependent_gates": false
+  },
+  "notes": [
+    "Membership is derived from executed prompt/prefix properties rather than a hard-coded cell allowlist.",
+    "Observed prose, refusal, answer value, and parse success do not determine membership.",
+    "CP is retained as preliminaries-only; it is not labelled a neutral control.",
+    "Validated parsing and refusal coding travel with the included rows for downstream analyses but do not select the sample.",
+    "Pass-1 item-level validity/measurement statuses remain a separate analysis layer."
+  ],
+  "row_count": 922,
+  "battery_answer_count": 922,
+  "counts_by_collection_cell": [
+    {
+      "collection": "raw7",
+      "cell": "AQ",
+      "n": 75
+    },
+    {
+      "collection": "raw7",
+      "cell": "ASQ",
+      "n": 75
+    },
+    {
+      "collection": "raw7",
+      "cell": "C",
+      "n": 250
+    },
+    {
+      "collection": "raw7",
+      "cell": "FQ",
+      "n": 75
+    },
+    {
+      "collection": "raw7",
+      "cell": "HQ",
+      "n": 75
+    },
+    {
+      "collection": "raw8",
+      "cell": "FBHa",
+      "n": 74
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBASa",
+      "n": 73
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBAa",
+      "n": 75
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBCPa",
+      "n": 75
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBFa",
+      "n": 75
+    }
+  ],
+  "counts_by_primary_role": [
+    {
+      "role": "neither",
+      "n": 250
+    },
+    {
+      "role": "preliminaries_only",
+      "n": 75
+    },
+    {
+      "role": "schema_only",
+      "n": 300
+    },
+    {
+      "role": "schema_plus_preliminaries",
+      "n": 297
+    }
+  ],
+  "counts_by_role_schema": [
+    {
+      "role": "neither",
+      "schema_family": "none",
+      "n": 250
+    },
+    {
+      "role": "preliminaries_only",
+      "schema_family": "none",
+      "n": 75
+    },
+    {
+      "role": "schema_only",
+      "schema_family": "A",
+      "n": 75
+    },
+    {
+      "role": "schema_only",
+      "schema_family": "AS",
+      "n": 75
+    },
+    {
+      "role": "schema_only",
+      "schema_family": "F",
+      "n": 75
+    },
+    {
+      "role": "schema_only",
+      "schema_family": "H",
+      "n": 75
+    },
+    {
+      "role": "schema_plus_preliminaries",
+      "schema_family": "A",
+      "n": 75
+    },
+    {
+      "role": "schema_plus_preliminaries",
+      "schema_family": "AS",
+      "n": 73
+    },
+    {
+      "role": "schema_plus_preliminaries",
+      "schema_family": "F",
+      "n": 75
+    },
+    {
+      "role": "schema_plus_preliminaries",
+      "schema_family": "H",
+      "n": 74
+    }
+  ]
+}

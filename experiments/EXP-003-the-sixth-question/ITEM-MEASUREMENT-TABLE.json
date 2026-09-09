@@ -1,0 +1,5495 @@
+{
+  "schema_version": 1,
+  "scope": "cold C instrument characterization before treatment analysis",
+  "canonical_floor_rule": "use raw7 C resample where available; otherwise largest available C collection; do not merge Pilot-1 C0 into canonical floor",
+  "orientation_rule": "observed scores preserved; probable scale inversions appear only in parallel sensitivity summaries",
+  "shape_rule": "clear two-cluster candidate = largest internal numeric gap >=10 with >=2 observations on each side",
+  "boundary_rule": "descriptive boundary concentration = >=50% of numeric answers in 0-10 or 90-100",
+  "low_information_rule": "numeric n>=5, range<=5, and modal value >=80% of numeric responses",
+  "item_count": 25,
+  "measurement_status_counts": {
+    "categorical_open": 1,
+    "low_information_numeric": 1,
+    "multimodal_numeric": 5,
+    "sentinel_heavy": 2,
+    "usable_numeric": 16
+  },
+  "items": [
+    {
+      "item": "A1",
+      "cold_total_n": 23,
+      "cold_collections": [
+        "raw2",
+        "raw6",
+        "raw7"
+      ],
+      "canonical_floor_collection": "raw7",
+      "canonical_total_n": 10,
+      "canonical_composition": {
+        "numeric": 4,
+        "NEVER": 3,
+        "ALWAYS": 3
+      },
+      "canonical_observed_numeric": {
+        "n": 4,
+        "values": [
+          20,
+          25,
+          30,
+          50
+        ],
+        "min": 20,
+        "max": 50,
+        "mean": 31.25,
+        "median": 27.5,
+        "range": 30
+      },
+      "canonical_orientation_sensitivity_numeric": {
+        "n": 4,
+        "values": [
+          20,
+          25,
+          30,
+          50
+        ],
+        "min": 20,
+        "max": 50,
+        "mean": 31.25,
+        "median": 27.5,
+        "range": 30
+      },
+      "canonical_observed_shape": {
+        "label": "separated_singleton_tail",
+        "largest_gap": 20,
+        "split": {
+          "left": [
+            20,
+            25,
+            30
+          ],
+          "right": [
+            50
+          ],
+          "left_n": 3,
+          "right_n": 1,
+          "gap": 20
+        }
+      },
+      "canonical_orientation_sensitivity_shape": {
+        "label": "separated_singleton_tail",
+        "largest_gap": 20,
+        "split": {
+          "left": [
+            20,
+            25,
+            30
+          ],
+          "right": [
+            50
+          ],
+          "left_n": 3,
+          "right_n": 1,
+          "gap": 20
+        }
+      },
+      "endpoint_concentration_observed": {
+        "low_0_10_n": 0,
+        "high_90_100_n": 0,
+        "low_fraction": 0.0,
+        "high_fraction": 0.0,
+        "boundary_concentrated": false
+      },
+      "answer_form": "sentinel_dominant",
+      "parser_audit_burden": {
+        "refusal_audited": 23,
+        "parser_non_ok": 12,
+        "validated_non_ok": 12
+      },
+      "measurement_status": "sentinel_heavy",
+      "collection_summaries": [
+        {
+          "collection": "raw2",
+          "total_n": 3,
+          "composition": {
+            "numeric": 2,
+            "ALWAYS": 1
+          },
+          "observed_numeric": {
+            "n": 2,
+            "values": [
+              25,
+              35
+            ],
+            "min": 25,
+            "max": 35,
+            "mean": 30.0,
+            "median": 30.0,
+            "range": 10
+          },
+          "sensitivity_numeric": {
+            "n": 2,
+            "values": [
+              25,
+              35
+            ],
+            "min": 25,
+            "max": 35,
+            "mean": 30.0,
+            "median": 30.0,
+            "range": 10
+          },
+          "observed_shape": {
+            "label": "insufficient_numeric_n",
+            "largest_gap": null,
+            "split": null
+          },
+          "sensitivity_shape": {
+            "label": "insufficient_numeric_n",
+            "largest_gap": null,
+            "split": null
+          }
+        },
+        {
+          "collection": "raw6",
+          "total_n": 10,
+          "composition": {
+            "ALWAYS": 3,
+            "numeric": 5,
+            "NEVER": 2
+          },
+          "observed_numeric": {
+            "n": 5,
+            "values": [
+              1,
+              10,
+              10,
+              20,
+              30
+            ],
+            "min": 1,
+            "max": 30,
+            "mean": 14.2,
+            "median": 10,
+            "range": 29
+          },
+          "sensitivity_numeric": {
+            "n": 5,
+            "values": [
+              1,
+              10,
+              10,
+              20,
+              30
+            ],
+            "min": 1,
+            "max": 30,
+            "mean": 14.2,
+            "median": 10,
+            "range": 29
+          },
+          "observed_shape": {
+            "label": "clear_two_cluster_candidate",
+            "largest_gap": 10,
+            "split": {
+              "left": [
+                1,
+                10,
+                10
+              ],
+              "right": [
+                20,
+                30
+              ],
+              "left_n": 3,
+              "right_n": 2,
+              "gap": 10
+            }
+          },
+          "sensitivity_shape": {
+            "label": "clear_two_cluster_candidate",
+            "largest_gap": 10,
+            "split": {
+              "left": [
+                1,
+                10,
+                10
+              ],
+              "right": [
+                20,
+                30
+              ],
+              "left_n": 3,
+              "right_n": 2,
+              "gap": 10
+            }
+          }
+        },
+        {
+          "collection": "raw7",
+          "total_n": 10,
+          "composition": {
+            "numeric": 4,
+            "NEVER": 3,
+            "ALWAYS": 3
+          },
+          "observed_numeric": {
+            "n": 4,
+            "values": [
+              20,
+              25,
+              30,
+              50
+            ],
+            "min": 20,
+            "max": 50,
+            "mean": 31.25,
+            "median": 27.5,
+            "range": 30
+          },
+          "sensitivity_numeric": {
+            "n": 4,
+            "values": [
+              20,
+              25,
+              30,
+              50
+            ],
+            "min": 20,
+            "max": 50,
+            "mean": 31.25,
+            "median": 27.5,
+            "range": 30
+          },
+          "observed_shape": {
+            "label": "separated_singleton_tail",
+            "largest_gap": 20,
+            "split": {
+              "left": [
+                20,
+                25,
+                30
+              ],
+              "right": [
+                50
+              ],
+              "left_n": 3,
+              "right_n": 1,
+              "gap": 20
+            }
+          },
+          "sensitivity_shape": {
+            "label": "separated_singleton_tail",
+            "largest_gap": 20,
+            "split": {
+              "left": [
+                20,
+                25,
+                30
+              ],
+              "right": [
+                50
+              ],
+              "left_n": 3,
+              "right_n": 1,
+              "gap": 20
+            }
+          }
+        }
+      ]
+    },
+    {
+      "item": "B01",
+      "cold_total_n": 10,
+      "cold_collections": [
+        "raw7"
+      ],
+      "canonical_floor_collection": "raw7",
+      "canonical_total_n": 10,
+      "canonical_composition": {
+        "numeric": 10
+      },
+      "canonical_observed_numeric": {
+        "n": 10,
+        "values": [
+          25,
+          25,
+          30,
+          35,
+          35,
+          40,
+          40,
+          50,
+          50,
+          75
+        ],
+        "min": 25,
+        "max": 75,
+        "mean": 40.5,
+        "median": 37.5,
+        "range": 50
+      },
+      "canonical_orientation_sensitivity_numeric": {
+        "n": 10,
+        "values": [
+          25,
+          25,
+          30,
+          35,
+          35,
+          40,
+          40,
+          50,
+          50,
+          75
+        ],
+        "min": 25,
+        "max": 75,
+        "mean": 40.5,
+        "median": 37.5,
+        "range": 50
+      },
+      "canonical_observed_shape": {
+        "label": "separated_singleton_tail",
+        "largest_gap": 25,
+        "split": {
+          "left": [
+            25,
+            25,
+            30,
+            35,
+            35,
+            40,
+            40,
+            50,
+            50
+          ],
+          "right": [
+            75
+          ],
+          "left_n": 9,
+          "right_n": 1,
+          "gap": 25
+        }
+      },
+      "canonical_orientation_sensitivity_shape": {
+        "label": "separated_singleton_tail",
+        "largest_gap": 25,
+        "split": {
+          "left": [
+            25,
+            25,
+            30,
+            35,
+            35,
+            40,
+            40,
+            50,
+            50
+          ],
+          "right": [
+            75
+          ],
+          "left_n": 9,
+          "right_n": 1,
+          "gap": 25
+        }
+      },
+      "endpoint_concentration_observed": {
+        "low_0_10_n": 0,
+        "high_90_100_n": 0,
+        "low_fraction": 0.0,
+        "high_fraction": 0.0,
+        "boundary_concentrated": false
+      },
+      "answer_form": "numeric_or_mixed",
+      "parser_audit_burden": {
+        "refusal_audited": 10
+      },
+      "measurement_status": "usable_numeric",
+      "collection_summaries": [
+        {
+          "collection": "raw7",
+          "total_n": 10,
+          "composition": {
+            "numeric": 10
+          },
+          "observed_numeric": {
+            "n": 10,
+            "values": [
+              25,
+              25,
+              30,
+              35,
+              35,
+              40,
+              40,
+              50,
+              50,
+              75
+            ],
+            "min": 25,
+            "max": 75,
+            "mean": 40.5,
+            "median": 37.5,
+            "range": 50
+          },
+          "sensitivity_numeric": {
+            "n": 10,
+            "values": [
+              25,
+              25,
+              30,
+              35,
+              35,
+              40,
+              40,
+              50,
+              50,
+              75
+            ],
+            "min": 25,
+            "max": 75,
+            "mean": 40.5,
+            "median": 37.5,
+            "range": 50
+          },
+          "observed_shape": {
+            "label": "separated_singleton_tail",
+            "largest_gap": 25,
+            "split": {
+              "left": [
+                25,
+                25,
+                30,
+                35,
+                35,
+                40,
+                40,
+                50,
+                50
+              ],
+              "right": [
+                75
+              ],
+              "left_n": 9,
+              "right_n": 1,
+              "gap": 25
+            }
+          },
+          "sensitivity_shape": {
+            "label": "separated_singleton_tail",
+            "largest_gap": 25,
+            "split": {
+              "left": [
+                25,
+                25,
+                30,
+                35,
+                35,
+                40,
+                40,
+                50,
+                50
+              ],
+              "right": [
+                75
+              ],
+              "left_n": 9,
+              "right_n": 1,
+              "gap": 25
+            }
+          }
+        }
+      ]
+    },
+    {
+      "item": "B02",
+      "cold_total_n": 10,
+      "cold_collections": [
+        "raw7"
+      ],
+      "canonical_floor_collection": "raw7",
+      "canonical_total_n": 10,
+      "canonical_composition": {
+        "ALWAYS": 9,
+        "numeric": 1
+      },
+      "canonical_observed_numeric": {
+        "n": 1,
+        "values": [
+          20
+        ],
+        "min": 20,
+        "max": 20,
+        "mean": 20.0,
+        "median": 20,
+        "range": 0
+      },
+      "canonical_orientation_sensitivity_numeric": {
+        "n": 1,
+        "values": [
+          20
+        ],
+        "min": 20,
+        "max": 20,
+        "mean": 20.0,
+        "median": 20,
+        "range": 0
+      },
+      "canonical_observed_shape": {
+        "label": "insufficient_numeric_n",
+        "largest_gap": null,
+        "split": null
+      },
+      "canonical_orientation_sensitivity_shape": {
+        "label": "insufficient_numeric_n",
+        "largest_gap": null,
+        "split": null
+      },
+      "endpoint_concentration_observed": {
+        "low_0_10_n": 0,
+        "high_90_100_n": 0,
+        "low_fraction": 0.0,
+        "high_fraction": 0.0,
+        "boundary_concentrated": false
+      },
+      "answer_form": "sentinel_dominant",
+      "parser_audit_burden": {
+        "parser_non_ok": 9,
+        "validated_non_ok": 9,
+        "refusal_audited": 10
+      },
+      "measurement_status": "sentinel_heavy",
+      "collection_summaries": [
+        {
+          "collection": "raw7",
+          "total_n": 10,
+          "composition": {
+            "ALWAYS": 9,
+            "numeric": 1
+          },
+          "observed_numeric": {
+            "n": 1,
+            "values": [
+              20
+            ],
+            "min": 20,
+            "max": 20,
+            "mean": 20.0,
+            "median": 20,
+            "range": 0
+          },
+          "sensitivity_numeric": {
+            "n": 1,
+            "values": [
+              20
+            ],
+            "min": 20,
+            "max": 20,
+            "mean": 20.0,
+            "median": 20,
+            "range": 0
+          },
+          "observed_shape": {
+            "label": "insufficient_numeric_n",
+            "largest_gap": null,
+            "split": null
+          },
+          "sensitivity_shape": {
+            "label": "insufficient_numeric_n",
+            "largest_gap": null,
+            "split": null
+          }
+        }
+      ]
+    },
+    {
+      "item": "B04",
+      "cold_total_n": 10,
+      "cold_collections": [
+        "raw7"
+      ],
+      "canonical_floor_collection": "raw7",
+      "canonical_total_n": 10,
+      "canonical_composition": {
+        "numeric": 7,
+        "ALWAYS": 3
+      },
+      "canonical_observed_numeric": {
+        "n": 7,
+        "values": [
+          1,
+          1,
+          5,
+          5,
+          5,
+          10,
+          10
+        ],
+        "min": 1,
+        "max": 10,
+        "mean": 5.285714285714286,
+        "median": 5,
+        "range": 9
+      },
+      "canonical_orientation_sensitivity_numeric": {
+        "n": 7,
+        "values": [
+          1,
+          1,
+          5,
+          5,
+          5,
+          10,
+          10
+        ],
+        "min": 1,
+        "max": 10,
+        "mean": 5.285714285714286,
+        "median": 5,
+        "range": 9
+      },
+      "canonical_observed_shape": {
+        "label": "no_clear_two_cluster",
+        "largest_gap": 5,
+        "split": {
+          "left": [
+            1,
+            1,
+            5,
+            5,
+            5
+          ],
+          "right": [
+            10,
+            10
+          ],
+          "left_n": 5,
+          "right_n": 2,
+          "gap": 5
+        }
+      },
+      "canonical_orientation_sensitivity_shape": {
+        "label": "no_clear_two_cluster",
+        "largest_gap": 5,
+        "split": {
+          "left": [
+            1,
+            1,
+            5,
+            5,
+            5
+          ],
+          "right": [
+            10,
+            10
+          ],
+          "left_n": 5,
+          "right_n": 2,
+          "gap": 5
+        }
+      },
+      "endpoint_concentration_observed": {
+        "low_0_10_n": 7,
+        "high_90_100_n": 0,
+        "low_fraction": 1.0,
+        "high_fraction": 0.0,
+        "boundary_concentrated": true
+      },
+      "answer_form": "numeric_or_mixed",
+      "parser_audit_burden": {
+        "refusal_audited": 10,
+        "parser_non_ok": 3,
+        "validated_non_ok": 3
+      },
+      "measurement_status": "usable_numeric",
+      "collection_summaries": [
+        {
+          "collection": "raw7",
+          "total_n": 10,
+          "composition": {
+            "numeric": 7,
+            "ALWAYS": 3
+          },
+          "observed_numeric": {
+            "n": 7,
+            "values": [
+              1,
+              1,
+              5,
+              5,
+              5,
+              10,
+              10
+            ],
+            "min": 1,
+            "max": 10,
+            "mean": 5.285714285714286,
+            "median": 5,
+            "range": 9
+          },
+          "sensitivity_numeric": {
+            "n": 7,
+            "values": [
+              1,
+              1,
+              5,
+              5,
+              5,
+              10,
+              10
+            ],
+            "min": 1,
+            "max": 10,
+            "mean": 5.285714285714286,
+            "median": 5,
+            "range": 9
+          },
+          "observed_shape": {
+            "label": "no_clear_two_cluster",
+            "largest_gap": 5,
+            "split": {
+              "left": [
+                1,
+                1,
+                5,
+                5,
+                5
+              ],
+              "right": [
+                10,
+                10
+              ],
+              "left_n": 5,
+              "right_n": 2,
+              "gap": 5
+            }
+          },
+          "sensitivity_shape": {
+            "label": "no_clear_two_cluster",
+            "largest_gap": 5,
+            "split": {
+              "left": [
+                1,
+                1,
+                5,
+                5,
+                5
+              ],
+              "right": [
+                10,
+                10
+              ],
+              "left_n": 5,
+              "right_n": 2,
+              "gap": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "item": "B05",
+      "cold_total_n": 10,
+      "cold_collections": [
+        "raw7"
+      ],
+      "canonical_floor_collection": "raw7",
+      "canonical_total_n": 10,
+      "canonical_composition": {
+        "numeric": 9,
+        "ALWAYS": 1
+      },
+      "canonical_observed_numeric": {
+        "n": 9,
+        "values": [
+          15,
+          25,
+          25,
+          30,
+          30,
+          30,
+          33,
+          50,
+          60
+        ],
+        "min": 15,
+        "max": 60,
+        "mean": 33.111111111111114,
+        "median": 30,
+        "range": 45
+      },
+      "canonical_orientation_sensitivity_numeric": {
+        "n": 9,
+        "values": [
+          15,
+          25,
+          25,
+          30,
+          30,
+          30,
+          33,
+          50,
+          60
+        ],
+        "min": 15,
+        "max": 60,
+        "mean": 33.111111111111114,
+        "median": 30,
+        "range": 45
+      },
+      "canonical_observed_shape": {
+        "label": "clear_two_cluster_candidate",
+        "largest_gap": 17,
+        "split": {
+          "left": [
+            15,
+            25,
+            25,
+            30,
+            30,
+            30,
+            33
+          ],
+          "right": [
+            50,
+            60
+          ],
+          "left_n": 7,
+          "right_n": 2,
+          "gap": 17
+        }
+      },
+      "canonical_orientation_sensitivity_shape": {
+        "label": "clear_two_cluster_candidate",
+        "largest_gap": 17,
+        "split": {
+          "left": [
+            15,
+            25,
+            25,
+            30,
+            30,
+            30,
+            33
+          ],
+          "right": [
+            50,
+            60
+          ],
+          "left_n": 7,
+          "right_n": 2,
+          "gap": 17
+        }
+      },
+      "endpoint_concentration_observed": {
+        "low_0_10_n": 0,
+        "high_90_100_n": 0,
+        "low_fraction": 0.0,
+        "high_fraction": 0.0,
+        "boundary_concentrated": false
+      },
+      "answer_form": "numeric_or_mixed",
+      "parser_audit_burden": {
+        "refusal_audited": 10,
+        "parser_non_ok": 1,
+        "validated_non_ok": 1
+      },
+      "measurement_status": "multimodal_numeric",
+      "collection_summaries": [
+        {
+          "collection": "raw7",
+          "total_n": 10,
+          "composition": {
+            "numeric": 9,
+            "ALWAYS": 1
+          },
+          "observed_numeric": {
+            "n": 9,
+            "values": [
+              15,
+              25,
+              25,
+              30,
+              30,
+              30,
+              33,
+              50,
+              60
+            ],
+            "min": 15,
+            "max": 60,
+            "mean": 33.111111111111114,
+            "median": 30,
+            "range": 45
+          },
+          "sensitivity_numeric": {
+            "n": 9,
+            "values": [
+              15,
+              25,
+              25,
+              30,
+              30,
+              30,
+              33,
+              50,
+              60
+            ],
+            "min": 15,
+            "max": 60,
+            "mean": 33.111111111111114,
+            "median": 30,
+            "range": 45
+          },
+          "observed_shape": {
+            "label": "clear_two_cluster_candidate",
+            "largest_gap": 17,
+            "split": {
+              "left": [
+                15,
+                25,
+                25,
+                30,
+                30,
+                30,
+                33
+              ],
+              "right": [
+                50,
+                60
+              ],
+              "left_n": 7,
+              "right_n": 2,
+              "gap": 17
+            }
+          },
+          "sensitivity_shape": {
+            "label": "clear_two_cluster_candidate",
+            "largest_gap": 17,
+            "split": {
+              "left": [
+                15,
+                25,
+                25,
+                30,
+                30,
+                30,
+                33
+              ],
+              "right": [
+                50,
+                60
+              ],
+              "left_n": 7,
+              "right_n": 2,
+              "gap": 17
+            }
+          }
+        }
+      ]
+    },
+    {
+      "item": "B07",
+      "cold_total_n": 10,
+      "cold_collections": [
+        "raw7"
+      ],
+      "canonical_floor_collection": "raw7",
+      "canonical_total_n": 10,
+      "canonical_composition": {
+        "numeric": 10
+      },
+      "canonical_observed_numeric": {
+        "n": 10,
+        "values": [
+          25,
+          30,
+          30,
+          35,
+          35,
+          35,
+          40,
+          40,
+          40,
+          40
+        ],
+        "min": 25,
+        "max": 40,
+        "mean": 35.0,
+        "median": 35.0,
+        "range": 15
+      },
+      "canonical_orientation_sensitivity_numeric": {
+        "n": 10,
+        "values": [
+          25,
+          30,
+          30,
+          35,
+          35,
+          35,
+          40,
+          40,
+          40,
+          40
+        ],
+        "min": 25,
+        "max": 40,
+        "mean": 35.0,
+        "median": 35.0,
+        "range": 15
+      },
+      "canonical_observed_shape": {
+        "label": "no_clear_two_cluster",
+        "largest_gap": 5,
+        "split": {
+          "left": [
+            25
+          ],
+          "right": [
+            30,
+            30,
+            35,
+            35,
+            35,
+            40,
+            40,
+            40,
+            40
+          ],
+          "left_n": 1,
+          "right_n": 9,
+          "gap": 5
+        }
+      },
+      "canonical_orientation_sensitivity_shape": {
+        "label": "no_clear_two_cluster",
+        "largest_gap": 5,
+        "split": {
+          "left": [
+            25
+          ],
+          "right": [
+            30,
+            30,
+            35,
+            35,
+            35,
+            40,
+            40,
+            40,
+            40
+          ],
+          "left_n": 1,
+          "right_n": 9,
+          "gap": 5
+        }
+      },
+      "endpoint_concentration_observed": {
+        "low_0_10_n": 0,
+        "high_90_100_n": 0,
+        "low_fraction": 0.0,
+        "high_fraction": 0.0,
+        "boundary_concentrated": false
+      },
+      "answer_form": "numeric_or_mixed",
+      "parser_audit_burden": {
+        "refusal_audited": 10
+      },
+      "measurement_status": "usable_numeric",
+      "collection_summaries": [
+        {
+          "collection": "raw7",
+          "total_n": 10,
+          "composition": {
+            "numeric": 10
+          },
+          "observed_numeric": {
+            "n": 10,
+            "values": [
+              25,
+              30,
+              30,
+              35,
+              35,
+              35,
+              40,
+              40,
+              40,
+              40
+            ],
+            "min": 25,
+            "max": 40,
+            "mean": 35.0,
+            "median": 35.0,
+            "range": 15
+          },
+          "sensitivity_numeric": {
+            "n": 10,
+            "values": [
+              25,
+              30,
+              30,
+              35,
+              35,
+              35,
+              40,
+              40,
+              40,
+              40
+            ],
+            "min": 25,
+            "max": 40,
+            "mean": 35.0,
+            "median": 35.0,
+            "range": 15
+          },
+          "observed_shape": {
+            "label": "no_clear_two_cluster",
+            "largest_gap": 5,
+            "split": {
+              "left": [
+                25
+              ],
+              "right": [
+                30,
+                30,
+                35,
+                35,
+                35,
+                40,
+                40,
+                40,
+                40
+              ],
+              "left_n": 1,
+              "right_n": 9,
+              "gap": 5
+            }
+          },
+          "sensitivity_shape": {
+            "label": "no_clear_two_cluster",
+            "largest_gap": 5,
+            "split": {
+              "left": [
+                25
+              ],
+              "right": [
+                30,
+                30,
+                35,
+                35,
+                35,
+                40,
+                40,
+                40,
+                40
+              ],
+              "left_n": 1,
+              "right_n": 9,
+              "gap": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "item": "C1",
+      "cold_total_n": 10,
+      "cold_collections": [
+        "raw7"
+      ],
+      "canonical_floor_collection": "raw7",
+      "canonical_total_n": 10,
+      "canonical_composition": {
+        "numeric": 10
+      },
+      "canonical_observed_numeric": {
+        "n": 10,
+        "values": [
+          30,
+          32,
+          38,
+          38,
+          38,
+          38,
+          38,
+          42,
+          68,
+          68
+        ],
+        "min": 30,
+        "max": 68,
+        "mean": 43.0,
+        "median": 38.0,
+        "range": 38
+      },
+      "canonical_orientation_sensitivity_numeric": {
+        "n": 10,
+        "values": [
+          30,
+          32,
+          32,
+          32,
+          38,
+          38,
+          38,
+          38,
+          38,
+          42
+        ],
+        "min": 30,
+        "max": 42,
+        "mean": 35.8,
+        "median": 38.0,
+        "range": 12
+      },
+      "canonical_observed_shape": {
+        "label": "clear_two_cluster_candidate",
+        "largest_gap": 26,
+        "split": {
+          "left": [
+            30,
+            32,
+            38,
+            38,
+            38,
+            38,
+            38,
+            42
+          ],
+          "right": [
+            68,
+            68
+          ],
+          "left_n": 8,
+          "right_n": 2,
+          "gap": 26
+        }
+      },
+      "canonical_orientation_sensitivity_shape": {
+        "label": "no_clear_two_cluster",
+        "largest_gap": 6,
+        "split": {
+          "left": [
+            30,
+            32,
+            32,
+            32
+          ],
+          "right": [
+            38,
+            38,
+            38,
+            38,
+            38,
+            42
+          ],
+          "left_n": 4,
+          "right_n": 6,
+          "gap": 6
+        }
+      },
+      "endpoint_concentration_observed": {
+        "low_0_10_n": 0,
+        "high_90_100_n": 0,
+        "low_fraction": 0.0,
+        "high_fraction": 0.0,
+        "boundary_concentrated": false
+      },
+      "answer_form": "numeric_or_mixed",
+      "parser_audit_burden": {
+        "refusal_audited": 10,
+        "orientation_corrected": 2
+      },
+      "measurement_status": "usable_numeric",
+      "collection_summaries": [
+        {
+          "collection": "raw7",
+          "total_n": 10,
+          "composition": {
+            "numeric": 10
+          },
+          "observed_numeric": {
+            "n": 10,
+            "values": [
+              30,
+              32,
+              38,
+              38,
+              38,
+              38,
+              38,
+              42,
+              68,
+              68
+            ],
+            "min": 30,
+            "max": 68,
+            "mean": 43.0,
+            "median": 38.0,
+            "range": 38
+          },
+          "sensitivity_numeric": {
+            "n": 10,
+            "values": [
+              30,
+              32,
+              32,
+              32,
+              38,
+              38,
+              38,
+              38,
+              38,
+              42
+            ],
+            "min": 30,
+            "max": 42,
+            "mean": 35.8,
+            "median": 38.0,
+            "range": 12
+          },
+          "observed_shape": {
+            "label": "clear_two_cluster_candidate",
+            "largest_gap": 26,
+            "split": {
+              "left": [
+                30,
+                32,
+                38,
+                38,
+                38,
+                38,
+                38,
+                42
+              ],
+              "right": [
+                68,
+                68
+              ],
+              "left_n": 8,
+              "right_n": 2,
+              "gap": 26
+            }
+          },
+          "sensitivity_shape": {
+            "label": "no_clear_two_cluster",
+            "largest_gap": 6,
+            "split": {
+              "left": [
+                30,
+                32,
+                32,
+                32
+              ],
+              "right": [
+                38,
+                38,
+                38,
+                38,
+                38,
+                42
+              ],
+              "left_n": 4,
+              "right_n": 6,
+              "gap": 6
+            }
+          }
+        }
+      ]
+    },
+    {
+      "item": "C2",
+      "cold_total_n": 10,
+      "cold_collections": [
+        "raw7"
+      ],
+      "canonical_floor_collection": "raw7",
+      "canonical_total_n": 10,
+      "canonical_composition": {
+        "numeric": 10
+      },
+      "canonical_observed_numeric": {
+        "n": 10,
+        "values": [
+          67,
+          68,
+          68,
+          70,
+          72,
+          72,
+          72,
+          72,
+          72,
+          75
+        ],
+        "min": 67,
+        "max": 75,
+        "mean": 70.8,
+        "median": 72.0,
+        "range": 8
+      },
+      "canonical_orientation_sensitivity_numeric": {
+        "n": 10,
+        "values": [
+          67,
+          68,
+          68,
+          70,
+          72,
+          72,
+          72,
+          72,
+          72,
+          75
+        ],
+        "min": 67,
+        "max": 75,
+        "mean": 70.8,
+        "median": 72.0,
+        "range": 8
+      },
+      "canonical_observed_shape": {
+        "label": "no_clear_two_cluster",
+        "largest_gap": 3,
+        "split": {
+          "left": [
+            67,
+            68,
+            68,
+            70,
+            72,
+            72,
+            72,
+            72,
+            72
+          ],
+          "right": [
+            75
+          ],
+          "left_n": 9,
+          "right_n": 1,
+          "gap": 3
+        }
+      },
+      "canonical_orientation_sensitivity_shape": {
+        "label": "no_clear_two_cluster",
+        "largest_gap": 3,
+        "split": {
+          "left": [
+            67,
+            68,
+            68,
+            70,
+            72,
+            72,
+            72,
+            72,
+            72
+          ],
+          "right": [
+            75
+          ],
+          "left_n": 9,
+          "right_n": 1,
+          "gap": 3
+        }
+      },
+      "endpoint_concentration_observed": {
+        "low_0_10_n": 0,
+        "high_90_100_n": 0,
+        "low_fraction": 0.0,
+        "high_fraction": 0.0,
+        "boundary_concentrated": false
+      },
+      "answer_form": "numeric_or_mixed",
+      "parser_audit_burden": {
+        "refusal_audited": 10
+      },
+      "measurement_status": "usable_numeric",
+      "collection_summaries": [
+        {
+          "collection": "raw7",
+          "total_n": 10,
+          "composition": {
+            "numeric": 10
+          },
+          "observed_numeric": {
+            "n": 10,
+            "values": [
+              67,
+              68,
+              68,
+              70,
+              72,
+              72,
+              72,
+              72,
+              72,
+              75
+            ],
+            "min": 67,
+            "max": 75,
+            "mean": 70.8,
+            "median": 72.0,
+            "range": 8
+          },
+          "sensitivity_numeric": {
+            "n": 10,
+            "values": [
+              67,
+              68,
+              68,
+              70,
+              72,
+              72,
+              72,
+              72,
+              72,
+              75
+            ],
+            "min": 67,
+            "max": 75,
+            "mean": 70.8,
+            "median": 72.0,
+            "range": 8
+          },
+          "observed_shape": {
+            "label": "no_clear_two_cluster",
+            "largest_gap": 3,
+            "split": {
+              "left": [
+                67,
+                68,
+                68,
+                70,
+                72,
+                72,
+                72,
+                72,
+                72
+              ],
+              "right": [
+                75
+              ],
+              "left_n": 9,
+              "right_n": 1,
+              "gap": 3
+            }
+          },
+          "sensitivity_shape": {
+            "label": "no_clear_two_cluster",
+            "largest_gap": 3,
+            "split": {
+              "left": [
+                67,
+                68,
+                68,
+                70,
+                72,
+                72,
+                72,
+                72,
+                72
+              ],
+              "right": [
+                75
+              ],
+              "left_n": 9,
+              "right_n": 1,
+              "gap": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "item": "C3",
+      "cold_total_n": 10,
+      "cold_collections": [
+        "raw7"
+      ],
+      "canonical_floor_collection": "raw7",
+      "canonical_total_n": 10,
+      "canonical_composition": {
+        "numeric": 10
+      },
+      "canonical_observed_numeric": {
+        "n": 10,
+        "values": [
+          25,
+          25,
+          25,
+          28,
+          28,
+          28,
+          30,
+          30,
+          35,
+          45
+        ],
+        "min": 25,
+        "max": 45,
+        "mean": 29.9,
+        "median": 28.0,
+        "range": 20
+      },
+      "canonical_orientation_sensitivity_numeric": {
+        "n": 10,
+        "values": [
+          25,
+          25,
+          25,
+          28,
+          28,
+          28,
+          30,
+          30,
+          35,
+          45
+        ],
+        "min": 25,
+        "max": 45,
+        "mean": 29.9,
+        "median": 28.0,
+        "range": 20
+      },
+      "canonical_observed_shape": {
+        "label": "separated_singleton_tail",
+        "largest_gap": 10,
+        "split": {
+          "left": [
+            25,
+            25,
+            25,
+            28,
+            28,
+            28,
+            30,
+            30,
+            35
+          ],
+          "right": [
+            45
+          ],
+          "left_n": 9,
+          "right_n": 1,
+          "gap": 10
+        }
+      },
+      "canonical_orientation_sensitivity_shape": {
+        "label": "separated_singleton_tail",
+        "largest_gap": 10,
+        "split": {
+          "left": [
+            25,
+            25,
+            25,
+            28,
+            28,
+            28,
+            30,
+            30,
+            35
+          ],
+          "right": [
+            45
+          ],
+          "left_n": 9,
+          "right_n": 1,
+          "gap": 10
+        }
+      },
+      "endpoint_concentration_observed": {
+        "low_0_10_n": 0,
+        "high_90_100_n": 0,
+        "low_fraction": 0.0,
+        "high_fraction": 0.0,
+        "boundary_concentrated": false
+      },
+      "answer_form": "numeric_or_mixed",
+      "parser_audit_burden": {
+        "refusal_audited": 10
+      },
+      "measurement_status": "usable_numeric",
+      "collection_summaries": [
+        {
+          "collection": "raw7",
+          "total_n": 10,
+          "composition": {
+            "numeric": 10
+          },
+          "observed_numeric": {
+            "n": 10,
+            "values": [
+              25,
+              25,
+              25,
+              28,
+              28,
+              28,
+              30,
+              30,
+              35,
+              45
+            ],
+            "min": 25,
+            "max": 45,
+            "mean": 29.9,
+            "median": 28.0,
+            "range": 20
+          },
+          "sensitivity_numeric": {
+            "n": 10,
+            "values": [
+              25,
+              25,
+              25,
+              28,
+              28,
+              28,
+              30,
+              30,
+              35,
+              45
+            ],
+            "min": 25,
+            "max": 45,
+            "mean": 29.9,
+            "median": 28.0,
+            "range": 20
+          },
+          "observed_shape": {
+            "label": "separated_singleton_tail",
+            "largest_gap": 10,
+            "split": {
+              "left": [
+                25,
+                25,
+                25,
+                28,
+                28,
+                28,
+                30,
+                30,
+                35
+              ],
+              "right": [
+                45
+              ],
+              "left_n": 9,
+              "right_n": 1,
+              "gap": 10
+            }
+          },
+          "sensitivity_shape": {
+            "label": "separated_singleton_tail",
+            "largest_gap": 10,
+            "split": {
+              "left": [
+                25,
+                25,
+                25,
+                28,
+                28,
+                28,
+                30,
+                30,
+                35
+              ],
+              "right": [
+                45
+              ],
+              "left_n": 9,
+              "right_n": 1,
+              "gap": 10
+            }
+          }
+        }
+      ]
+    },
+    {
+      "item": "C4",
+      "cold_total_n": 10,
+      "cold_collections": [
+        "raw7"
+      ],
+      "canonical_floor_collection": "raw7",
+      "canonical_total_n": 10,
+      "canonical_composition": {
+        "numeric": 10
+      },
+      "canonical_observed_numeric": {
+        "n": 10,
+        "values": [
+          60,
+          65,
+          65,
+          65,
+          65,
+          65,
+          68,
+          70,
+          70,
+          72
+        ],
+        "min": 60,
+        "max": 72,
+        "mean": 66.5,
+        "median": 65.0,
+        "range": 12
+      },
+      "canonical_orientation_sensitivity_numeric": {
+        "n": 10,
+        "values": [
+          60,
+          65,
+          65,
+          65,
+          65,
+          65,
+          68,
+          70,
+          70,
+          72
+        ],
+        "min": 60,
+        "max": 72,
+        "mean": 66.5,
+        "median": 65.0,
+        "range": 12
+      },
+      "canonical_observed_shape": {
+        "label": "no_clear_two_cluster",
+        "largest_gap": 5,
+        "split": {
+          "left": [
+            60
+          ],
+          "right": [
+            65,
+            65,
+            65,
+            65,
+            65,
+            68,
+            70,
+            70,
+            72
+          ],
+          "left_n": 1,
+          "right_n": 9,
+          "gap": 5
+        }
+      },
+      "canonical_orientation_sensitivity_shape": {
+        "label": "no_clear_two_cluster",
+        "largest_gap": 5,
+        "split": {
+          "left": [
+            60
+          ],
+          "right": [
+            65,
+            65,
+            65,
+            65,
+            65,
+            68,
+            70,
+            70,
+            72
+          ],
+          "left_n": 1,
+          "right_n": 9,
+          "gap": 5
+        }
+      },
+      "endpoint_concentration_observed": {
+        "low_0_10_n": 0,
+        "high_90_100_n": 0,
+        "low_fraction": 0.0,
+        "high_fraction": 0.0,
+        "boundary_concentrated": false
+      },
+      "answer_form": "numeric_or_mixed",
+      "parser_audit_burden": {
+        "refusal_audited": 10
+      },
+      "measurement_status": "usable_numeric",
+      "collection_summaries": [
+        {
+          "collection": "raw7",
+          "total_n": 10,
+          "composition": {
+            "numeric": 10
+          },
+          "observed_numeric": {
+            "n": 10,
+            "values": [
+              60,
+              65,
+              65,
+              65,
+              65,
+              65,
+              68,
+              70,
+              70,
+              72
+            ],
+            "min": 60,
+            "max": 72,
+            "mean": 66.5,
+            "median": 65.0,
+            "range": 12
+          },
+          "sensitivity_numeric": {
+            "n": 10,
+            "values": [
+              60,
+              65,
+              65,
+              65,
+              65,
+              65,
+              68,
+              70,
+              70,
+              72
+            ],
+            "min": 60,
+            "max": 72,
+            "mean": 66.5,
+            "median": 65.0,
+            "range": 12
+          },
+          "observed_shape": {
+            "label": "no_clear_two_cluster",
+            "largest_gap": 5,
+            "split": {
+              "left": [
+                60
+              ],
+              "right": [
+                65,
+                65,
+                65,
+                65,
+                65,
+                68,
+                70,
+                70,
+                72
+              ],
+              "left_n": 1,
+              "right_n": 9,
+              "gap": 5
+            }
+          },
+          "sensitivity_shape": {
+            "label": "no_clear_two_cluster",
+            "largest_gap": 5,
+            "split": {
+              "left": [
+                60
+              ],
+              "right": [
+                65,
+                65,
+                65,
+                65,
+                65,
+                68,
+                70,
+                70,
+                72
+              ],
+              "left_n": 1,
+              "right_n": 9,
+              "gap": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "item": "D1",
+      "cold_total_n": 10,
+      "cold_collections": [
+        "raw7"
+      ],
+      "canonical_floor_collection": "raw7",
+      "canonical_total_n": 10,
+      "canonical_composition": {
+        "numeric": 10
+      },
+      "canonical_observed_numeric": {
+        "n": 10,
+        "values": [
+          10,
+          12,
+          12,
+          15,
+          15,
+          15,
+          15,
+          20,
+          20,
+          25
+        ],
+        "min": 10,
+        "max": 25,
+        "mean": 15.9,
+        "median": 15.0,
+        "range": 15
+      },
+      "canonical_orientation_sensitivity_numeric": {
+        "n": 10,
+        "values": [
+          10,
+          12,
+          12,
+          15,
+          15,
+          15,
+          15,
+          20,
+          20,
+          25
+        ],
+        "min": 10,
+        "max": 25,
+        "mean": 15.9,
+        "median": 15.0,
+        "range": 15
+      },
+      "canonical_observed_shape": {
+        "label": "no_clear_two_cluster",
+        "largest_gap": 5,
+        "split": {
+          "left": [
+            10,
+            12,
+            12,
+            15,
+            15,
+            15,
+            15
+          ],
+          "right": [
+            20,
+            20,
+            25
+          ],
+          "left_n": 7,
+          "right_n": 3,
+          "gap": 5
+        }
+      },
+      "canonical_orientation_sensitivity_shape": {
+        "label": "no_clear_two_cluster",
+        "largest_gap": 5,
+        "split": {
+          "left": [
+            10,
+            12,
+            12,
+            15,
+            15,
+            15,
+            15
+          ],
+          "right": [
+            20,
+            20,
+            25
+          ],
+          "left_n": 7,
+          "right_n": 3,
+          "gap": 5
+        }
+      },
+      "endpoint_concentration_observed": {
+        "low_0_10_n": 1,
+        "high_90_100_n": 0,
+        "low_fraction": 0.1,
+        "high_fraction": 0.0,
+        "boundary_concentrated": false
+      },
+      "answer_form": "numeric_or_mixed",
+      "parser_audit_burden": {
+        "refusal_audited": 10
+      },
+      "measurement_status": "usable_numeric",
+      "collection_summaries": [
+        {
+          "collection": "raw7",
+          "total_n": 10,
+          "composition": {
+            "numeric": 10
+          },
+          "observed_numeric": {
+            "n": 10,
+            "values": [
+              10,
+              12,
+              12,
+              15,
+              15,
+              15,
+              15,
+              20,
+              20,
+              25
+            ],
+            "min": 10,
+            "max": 25,
+            "mean": 15.9,
+            "median": 15.0,
+            "range": 15
+          },
+          "sensitivity_numeric": {
+            "n": 10,
+            "values": [
+              10,
+              12,
+              12,
+              15,
+              15,
+              15,
+              15,
+              20,
+              20,
+              25
+            ],
+            "min": 10,
+            "max": 25,
+            "mean": 15.9,
+            "median": 15.0,
+            "range": 15
+          },
+          "observed_shape": {
+            "label": "no_clear_two_cluster",
+            "largest_gap": 5,
+            "split": {
+              "left": [
+                10,
+                12,
+                12,
+                15,
+                15,
+                15,
+                15
+              ],
+              "right": [
+                20,
+                20,
+                25
+              ],
+              "left_n": 7,
+              "right_n": 3,
+              "gap": 5
+            }
+          },
+          "sensitivity_shape": {
+            "label": "no_clear_two_cluster",
+            "largest_gap": 5,
+            "split": {
+              "left": [
+                10,
+                12,
+                12,
+                15,
+                15,
+                15,
+                15
+              ],
+              "right": [
+                20,
+                20,
+                25
+              ],
+              "left_n": 7,
+              "right_n": 3,
+              "gap": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "item": "D2",
+      "cold_total_n": 10,
+      "cold_collections": [
+        "raw7"
+      ],
+      "canonical_floor_collection": "raw7",
+      "canonical_total_n": 10,
+      "canonical_composition": {
+        "numeric": 10
+      },
+      "canonical_observed_numeric": {
+        "n": 10,
+        "values": [
+          35,
+          35,
+          35,
+          40,
+          40,
+          45,
+          45,
+          45,
+          60,
+          65
+        ],
+        "min": 35,
+        "max": 65,
+        "mean": 44.5,
+        "median": 42.5,
+        "range": 30
+      },
+      "canonical_orientation_sensitivity_numeric": {
+        "n": 10,
+        "values": [
+          35,
+          35,
+          35,
+          40,
+          40,
+          45,
+          45,
+          45,
+          60,
+          65
+        ],
+        "min": 35,
+        "max": 65,
+        "mean": 44.5,
+        "median": 42.5,
+        "range": 30
+      },
+      "canonical_observed_shape": {
+        "label": "clear_two_cluster_candidate",
+        "largest_gap": 15,
+        "split": {
+          "left": [
+            35,
+            35,
+            35,
+            40,
+            40,
+            45,
+            45,
+            45
+          ],
+          "right": [
+            60,
+            65
+          ],
+          "left_n": 8,
+          "right_n": 2,
+          "gap": 15
+        }
+      },
+      "canonical_orientation_sensitivity_shape": {
+        "label": "clear_two_cluster_candidate",
+        "largest_gap": 15,
+        "split": {
+          "left": [
+            35,
+            35,
+            35,
+            40,
+            40,
+            45,
+            45,
+            45
+          ],
+          "right": [
+            60,
+            65
+          ],
+          "left_n": 8,
+          "right_n": 2,
+          "gap": 15
+        }
+      },
+      "endpoint_concentration_observed": {
+        "low_0_10_n": 0,
+        "high_90_100_n": 0,
+        "low_fraction": 0.0,
+        "high_fraction": 0.0,
+        "boundary_concentrated": false
+      },
+      "answer_form": "numeric_or_mixed",
+      "parser_audit_burden": {
+        "refusal_audited": 10
+      },
+      "measurement_status": "multimodal_numeric",
+      "collection_summaries": [
+        {
+          "collection": "raw7",
+          "total_n": 10,
+          "composition": {
+            "numeric": 10
+          },
+          "observed_numeric": {
+            "n": 10,
+            "values": [
+              35,
+              35,
+              35,
+              40,
+              40,
+              45,
+              45,
+              45,
+              60,
+              65
+            ],
+            "min": 35,
+            "max": 65,
+            "mean": 44.5,
+            "median": 42.5,
+            "range": 30
+          },
+          "sensitivity_numeric": {
+            "n": 10,
+            "values": [
+              35,
+              35,
+              35,
+              40,
+              40,
+              45,
+              45,
+              45,
+              60,
+              65
+            ],
+            "min": 35,
+            "max": 65,
+            "mean": 44.5,
+            "median": 42.5,
+            "range": 30
+          },
+          "observed_shape": {
+            "label": "clear_two_cluster_candidate",
+            "largest_gap": 15,
+            "split": {
+              "left": [
+                35,
+                35,
+                35,
+                40,
+                40,
+                45,
+                45,
+                45
+              ],
+              "right": [
+                60,
+                65
+              ],
+              "left_n": 8,
+              "right_n": 2,
+              "gap": 15
+            }
+          },
+          "sensitivity_shape": {
+            "label": "clear_two_cluster_candidate",
+            "largest_gap": 15,
+            "split": {
+              "left": [
+                35,
+                35,
+                35,
+                40,
+                40,
+                45,
+                45,
+                45
+              ],
+              "right": [
+                60,
+                65
+              ],
+              "left_n": 8,
+              "right_n": 2,
+              "gap": 15
+            }
+          }
+        }
+      ]
+    },
+    {
+      "item": "D3",
+      "cold_total_n": 10,
+      "cold_collections": [
+        "raw7"
+      ],
+      "canonical_floor_collection": "raw7",
+      "canonical_total_n": 10,
+      "canonical_composition": {
+        "numeric": 10
+      },
+      "canonical_observed_numeric": {
+        "n": 10,
+        "values": [
+          20,
+          20,
+          25,
+          25,
+          25,
+          30,
+          30,
+          35,
+          35,
+          40
+        ],
+        "min": 20,
+        "max": 40,
+        "mean": 28.5,
+        "median": 27.5,
+        "range": 20
+      },
+      "canonical_orientation_sensitivity_numeric": {
+        "n": 10,
+        "values": [
+          20,
+          20,
+          25,
+          25,
+          25,
+          30,
+          30,
+          35,
+          35,
+          40
+        ],
+        "min": 20,
+        "max": 40,
+        "mean": 28.5,
+        "median": 27.5,
+        "range": 20
+      },
+      "canonical_observed_shape": {
+        "label": "no_clear_two_cluster",
+        "largest_gap": 5,
+        "split": {
+          "left": [
+            20,
+            20
+          ],
+          "right": [
+            25,
+            25,
+            25,
+            30,
+            30,
+            35,
+            35,
+            40
+          ],
+          "left_n": 2,
+          "right_n": 8,
+          "gap": 5
+        }
+      },
+      "canonical_orientation_sensitivity_shape": {
+        "label": "no_clear_two_cluster",
+        "largest_gap": 5,
+        "split": {
+          "left": [
+            20,
+            20
+          ],
+          "right": [
+            25,
+            25,
+            25,
+            30,
+            30,
+            35,
+            35,
+            40
+          ],
+          "left_n": 2,
+          "right_n": 8,
+          "gap": 5
+        }
+      },
+      "endpoint_concentration_observed": {
+        "low_0_10_n": 0,
+        "high_90_100_n": 0,
+        "low_fraction": 0.0,
+        "high_fraction": 0.0,
+        "boundary_concentrated": false
+      },
+      "answer_form": "numeric_or_mixed",
+      "parser_audit_burden": {
+        "refusal_audited": 10
+      },
+      "measurement_status": "usable_numeric",
+      "collection_summaries": [
+        {
+          "collection": "raw7",
+          "total_n": 10,
+          "composition": {
+            "numeric": 10
+          },
+          "observed_numeric": {
+            "n": 10,
+            "values": [
+              20,
+              20,
+              25,
+              25,
+              25,
+              30,
+              30,
+              35,
+              35,
+              40
+            ],
+            "min": 20,
+            "max": 40,
+            "mean": 28.5,
+            "median": 27.5,
+            "range": 20
+          },
+          "sensitivity_numeric": {
+            "n": 10,
+            "values": [
+              20,
+              20,
+              25,
+              25,
+              25,
+              30,
+              30,
+              35,
+              35,
+              40
+            ],
+            "min": 20,
+            "max": 40,
+            "mean": 28.5,
+            "median": 27.5,
+            "range": 20
+          },
+          "observed_shape": {
+            "label": "no_clear_two_cluster",
+            "largest_gap": 5,
+            "split": {
+              "left": [
+                20,
+                20
+              ],
+              "right": [
+                25,
+                25,
+                25,
+                30,
+                30,
+                35,
+                35,
+                40
+              ],
+              "left_n": 2,
+              "right_n": 8,
+              "gap": 5
+            }
+          },
+          "sensitivity_shape": {
+            "label": "no_clear_two_cluster",
+            "largest_gap": 5,
+            "split": {
+              "left": [
+                20,
+                20
+              ],
+              "right": [
+                25,
+                25,
+                25,
+                30,
+                30,
+                35,
+                35,
+                40
+              ],
+              "left_n": 2,
+              "right_n": 8,
+              "gap": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "item": "E01",
+      "cold_total_n": 23,
+      "cold_collections": [
+        "raw2",
+        "raw6",
+        "raw7"
+      ],
+      "canonical_floor_collection": "raw7",
+      "canonical_total_n": 10,
+      "canonical_composition": {
+        "numeric": 10
+      },
+      "canonical_observed_numeric": {
+        "n": 10,
+        "values": [
+          8,
+          10,
+          10,
+          10,
+          10,
+          15,
+          20,
+          20,
+          20,
+          20
+        ],
+        "min": 8,
+        "max": 20,
+        "mean": 14.3,
+        "median": 12.5,
+        "range": 12
+      },
+      "canonical_orientation_sensitivity_numeric": {
+        "n": 10,
+        "values": [
+          8,
+          10,
+          10,
+          10,
+          10,
+          15,
+          20,
+          20,
+          20,
+          20
+        ],
+        "min": 8,
+        "max": 20,
+        "mean": 14.3,
+        "median": 12.5,
+        "range": 12
+      },
+      "canonical_observed_shape": {
+        "label": "no_clear_two_cluster",
+        "largest_gap": 5,
+        "split": {
+          "left": [
+            8,
+            10,
+            10,
+            10,
+            10
+          ],
+          "right": [
+            15,
+            20,
+            20,
+            20,
+            20
+          ],
+          "left_n": 5,
+          "right_n": 5,
+          "gap": 5
+        }
+      },
+      "canonical_orientation_sensitivity_shape": {
+        "label": "no_clear_two_cluster",
+        "largest_gap": 5,
+        "split": {
+          "left": [
+            8,
+            10,
+            10,
+            10,
+            10
+          ],
+          "right": [
+            15,
+            20,
+            20,
+            20,
+            20
+          ],
+          "left_n": 5,
+          "right_n": 5,
+          "gap": 5
+        }
+      },
+      "endpoint_concentration_observed": {
+        "low_0_10_n": 5,
+        "high_90_100_n": 0,
+        "low_fraction": 0.5,
+        "high_fraction": 0.0,
+        "boundary_concentrated": true
+      },
+      "answer_form": "numeric_or_mixed",
+      "parser_audit_burden": {
+        "refusal_audited": 23
+      },
+      "measurement_status": "usable_numeric",
+      "collection_summaries": [
+        {
+          "collection": "raw2",
+          "total_n": 3,
+          "composition": {
+            "numeric": 3
+          },
+          "observed_numeric": {
+            "n": 3,
+            "values": [
+              10,
+              20,
+              20
+            ],
+            "min": 10,
+            "max": 20,
+            "mean": 16.666666666666668,
+            "median": 20,
+            "range": 10
+          },
+          "sensitivity_numeric": {
+            "n": 3,
+            "values": [
+              10,
+              20,
+              20
+            ],
+            "min": 10,
+            "max": 20,
+            "mean": 16.666666666666668,
+            "median": 20,
+            "range": 10
+          },
+          "observed_shape": {
+            "label": "separated_singleton_tail",
+            "largest_gap": 10,
+            "split": {
+              "left": [
+                10
+              ],
+              "right": [
+                20,
+                20
+              ],
+              "left_n": 1,
+              "right_n": 2,
+              "gap": 10
+            }
+          },
+          "sensitivity_shape": {
+            "label": "separated_singleton_tail",
+            "largest_gap": 10,
+            "split": {
+              "left": [
+                10
+              ],
+              "right": [
+                20,
+                20
+              ],
+              "left_n": 1,
+              "right_n": 2,
+              "gap": 10
+            }
+          }
+        },
+        {
+          "collection": "raw6",
+          "total_n": 10,
+          "composition": {
+            "numeric": 10
+          },
+          "observed_numeric": {
+            "n": 10,
+            "values": [
+              5,
+              10,
+              10,
+              15,
+              15,
+              15,
+              15,
+              15,
+              20,
+              25
+            ],
+            "min": 5,
+            "max": 25,
+            "mean": 14.5,
+            "median": 15.0,
+            "range": 20
+          },
+          "sensitivity_numeric": {
+            "n": 10,
+            "values": [
+              5,
+              10,
+              10,
+              15,
+              15,
+              15,
+              15,
+              15,
+              20,
+              25
+            ],
+            "min": 5,
+            "max": 25,
+            "mean": 14.5,
+            "median": 15.0,
+            "range": 20
+          },
+          "observed_shape": {
+            "label": "no_clear_two_cluster",
+            "largest_gap": 5,
+            "split": {
+              "left": [
+                5
+              ],
+              "right": [
+                10,
+                10,
+                15,
+                15,
+                15,
+                15,
+                15,
+                20,
+                25
+              ],
+              "left_n": 1,
+              "right_n": 9,
+              "gap": 5
+            }
+          },
+          "sensitivity_shape": {
+            "label": "no_clear_two_cluster",
+            "largest_gap": 5,
+            "split": {
+              "left": [
+                5
+              ],
+              "right": [
+                10,
+                10,
+                15,
+                15,
+                15,
+                15,
+                15,
+                20,
+                25
+              ],
+              "left_n": 1,
+              "right_n": 9,
+              "gap": 5
+            }
+          }
+        },
+        {
+          "collection": "raw7",
+          "total_n": 10,
+          "composition": {
+            "numeric": 10
+          },
+          "observed_numeric": {
+            "n": 10,
+            "values": [
+              8,
+              10,
+              10,
+              10,
+              10,
+              15,
+              20,
+              20,
+              20,
+              20
+            ],
+            "min": 8,
+            "max": 20,
+            "mean": 14.3,
+            "median": 12.5,
+            "range": 12
+          },
+          "sensitivity_numeric": {
+            "n": 10,
+            "values": [
+              8,
+              10,
+              10,
+              10,
+              10,
+              15,
+              20,
+              20,
+              20,
+              20
+            ],
+            "min": 8,
+            "max": 20,
+            "mean": 14.3,
+            "median": 12.5,
+            "range": 12
+          },
+          "observed_shape": {
+            "label": "no_clear_two_cluster",
+            "largest_gap": 5,
+            "split": {
+              "left": [
+                8,
+                10,
+                10,
+                10,
+                10
+              ],
+              "right": [
+                15,
+                20,
+                20,
+                20,
+                20
+              ],
+              "left_n": 5,
+              "right_n": 5,
+              "gap": 5
+            }
+          },
+          "sensitivity_shape": {
+            "label": "no_clear_two_cluster",
+            "largest_gap": 5,
+            "split": {
+              "left": [
+                8,
+                10,
+                10,
+                10,
+                10
+              ],
+              "right": [
+                15,
+                20,
+                20,
+                20,
+                20
+              ],
+              "left_n": 5,
+              "right_n": 5,
+              "gap": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "item": "E02",
+      "cold_total_n": 10,
+      "cold_collections": [
+        "raw7"
+      ],
+      "canonical_floor_collection": "raw7",
+      "canonical_total_n": 10,
+      "canonical_composition": {
+        "numeric": 10
+      },
+      "canonical_observed_numeric": {
+        "n": 10,
+        "values": [
+          10,
+          12,
+          12,
+          12,
+          15,
+          20,
+          20,
+          20,
+          25,
+          25
+        ],
+        "min": 10,
+        "max": 25,
+        "mean": 17.1,
+        "median": 17.5,
+        "range": 15
+      },
+      "canonical_orientation_sensitivity_numeric": {
+        "n": 10,
+        "values": [
+          10,
+          12,
+          12,
+          12,
+          15,
+          20,
+          20,
+          20,
+          25,
+          25
+        ],
+        "min": 10,
+        "max": 25,
+        "mean": 17.1,
+        "median": 17.5,
+        "range": 15
+      },
+      "canonical_observed_shape": {
+        "label": "no_clear_two_cluster",
+        "largest_gap": 5,
+        "split": {
+          "left": [
+            10,
+            12,
+            12,
+            12,
+            15
+          ],
+          "right": [
+            20,
+            20,
+            20,
+            25,
+            25
+          ],
+          "left_n": 5,
+          "right_n": 5,
+          "gap": 5
+        }
+      },
+      "canonical_orientation_sensitivity_shape": {
+        "label": "no_clear_two_cluster",
+        "largest_gap": 5,
+        "split": {
+          "left": [
+            10,
+            12,
+            12,
+            12,
+            15
+          ],
+          "right": [
+            20,
+            20,
+            20,
+            25,
+            25
+          ],
+          "left_n": 5,
+          "right_n": 5,
+          "gap": 5
+        }
+      },
+      "endpoint_concentration_observed": {
+        "low_0_10_n": 1,
+        "high_90_100_n": 0,
+        "low_fraction": 0.1,
+        "high_fraction": 0.0,
+        "boundary_concentrated": false
+      },
+      "answer_form": "numeric_or_mixed",
+      "parser_audit_burden": {
+        "refusal_audited": 10
+      },
+      "measurement_status": "usable_numeric",
+      "collection_summaries": [
+        {
+          "collection": "raw7",
+          "total_n": 10,
+          "composition": {
+            "numeric": 10
+          },
+          "observed_numeric": {
+            "n": 10,
+            "values": [
+              10,
+              12,
+              12,
+              12,
+              15,
+              20,
+              20,
+              20,
+              25,
+              25
+            ],
+            "min": 10,
+            "max": 25,
+            "mean": 17.1,
+            "median": 17.5,
+            "range": 15
+          },
+          "sensitivity_numeric": {
+            "n": 10,
+            "values": [
+              10,
+              12,
+              12,
+              12,
+              15,
+              20,
+              20,
+              20,
+              25,
+              25
+            ],
+            "min": 10,
+            "max": 25,
+            "mean": 17.1,
+            "median": 17.5,
+            "range": 15
+          },
+          "observed_shape": {
+            "label": "no_clear_two_cluster",
+            "largest_gap": 5,
+            "split": {
+              "left": [
+                10,
+                12,
+                12,
+                12,
+                15
+              ],
+              "right": [
+                20,
+                20,
+                20,
+                25,
+                25
+              ],
+              "left_n": 5,
+              "right_n": 5,
+              "gap": 5
+            }
+          },
+          "sensitivity_shape": {
+            "label": "no_clear_two_cluster",
+            "largest_gap": 5,
+            "split": {
+              "left": [
+                10,
+                12,
+                12,
+                12,
+                15
+              ],
+              "right": [
+                20,
+                20,
+                20,
+                25,
+                25
+              ],
+              "left_n": 5,
+              "right_n": 5,
+              "gap": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "item": "I1",
+      "cold_total_n": 20,
+      "cold_collections": [
+        "raw6",
+        "raw7"
+      ],
+      "canonical_floor_collection": "raw7",
+      "canonical_total_n": 10,
+      "canonical_composition": {
+        "name": 10
+      },
+      "canonical_observed_numeric": {
+        "n": 0,
+        "values": [],
+        "min": null,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "range": null
+      },
+      "canonical_orientation_sensitivity_numeric": {
+        "n": 0,
+        "values": [],
+        "min": null,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "range": null
+      },
+      "canonical_observed_shape": {
+        "label": "insufficient_numeric_n",
+        "largest_gap": null,
+        "split": null
+      },
+      "canonical_orientation_sensitivity_shape": {
+        "label": "insufficient_numeric_n",
+        "largest_gap": null,
+        "split": null
+      },
+      "endpoint_concentration_observed": {
+        "low_0_10_n": 0,
+        "high_90_100_n": 0,
+        "low_fraction": 0,
+        "high_fraction": 0,
+        "boundary_concentrated": false
+      },
+      "answer_form": "open_categorical",
+      "parser_audit_burden": {
+        "refusal_audited": 20
+      },
+      "measurement_status": "categorical_open",
+      "collection_summaries": [
+        {
+          "collection": "raw6",
+          "total_n": 10,
+          "composition": {
+            "name": 10
+          },
+          "observed_numeric": {
+            "n": 0,
+            "values": [],
+            "min": null,
+            "max": null,
+            "mean": null,
+            "median": null,
+            "range": null
+          },
+          "sensitivity_numeric": {
+            "n": 0,
+            "values": [],
+            "min": null,
+            "max": null,
+            "mean": null,
+            "median": null,
+            "range": null
+          },
+          "observed_shape": {
+            "label": "insufficient_numeric_n",
+            "largest_gap": null,
+            "split": null
+          },
+          "sensitivity_shape": {
+            "label": "insufficient_numeric_n",
+            "largest_gap": null,
+            "split": null
+          }
+        },
+        {
+          "collection": "raw7",
+          "total_n": 10,
+          "composition": {
+            "name": 10
+          },
+          "observed_numeric": {
+            "n": 0,
+            "values": [],
+            "min": null,
+            "max": null,
+            "mean": null,
+            "median": null,
+            "range": null
+          },
+          "sensitivity_numeric": {
+            "n": 0,
+            "values": [],
+            "min": null,
+            "max": null,
+            "mean": null,
+            "median": null,
+            "range": null
+          },
+          "observed_shape": {
+            "label": "insufficient_numeric_n",
+            "largest_gap": null,
+            "split": null
+          },
+          "sensitivity_shape": {
+            "label": "insufficient_numeric_n",
+            "largest_gap": null,
+            "split": null
+          }
+        }
+      ]
+    },
+    {
+      "item": "N1",
+      "cold_total_n": 10,
+      "cold_collections": [
+        "raw7"
+      ],
+      "canonical_floor_collection": "raw7",
+      "canonical_total_n": 10,
+      "canonical_composition": {
+        "numeric": 10
+      },
+      "canonical_observed_numeric": {
+        "n": 10,
+        "values": [
+          30,
+          32,
+          38,
+          42,
+          68,
+          68,
+          70,
+          70,
+          70,
+          72
+        ],
+        "min": 30,
+        "max": 72,
+        "mean": 56.0,
+        "median": 68.0,
+        "range": 42
+      },
+      "canonical_orientation_sensitivity_numeric": {
+        "n": 10,
+        "values": [
+          30,
+          32,
+          38,
+          42,
+          68,
+          68,
+          70,
+          70,
+          70,
+          72
+        ],
+        "min": 30,
+        "max": 72,
+        "mean": 56.0,
+        "median": 68.0,
+        "range": 42
+      },
+      "canonical_observed_shape": {
+        "label": "clear_two_cluster_candidate",
+        "largest_gap": 26,
+        "split": {
+          "left": [
+            30,
+            32,
+            38,
+            42
+          ],
+          "right": [
+            68,
+            68,
+            70,
+            70,
+            70,
+            72
+          ],
+          "left_n": 4,
+          "right_n": 6,
+          "gap": 26
+        }
+      },
+      "canonical_orientation_sensitivity_shape": {
+        "label": "clear_two_cluster_candidate",
+        "largest_gap": 26,
+        "split": {
+          "left": [
+            30,
+            32,
+            38,
+            42
+          ],
+          "right": [
+            68,
+            68,
+            70,
+            70,
+            70,
+            72
+          ],
+          "left_n": 4,
+          "right_n": 6,
+          "gap": 26
+        }
+      },
+      "endpoint_concentration_observed": {
+        "low_0_10_n": 0,
+        "high_90_100_n": 0,
+        "low_fraction": 0.0,
+        "high_fraction": 0.0,
+        "boundary_concentrated": false
+      },
+      "answer_form": "numeric_or_mixed",
+      "parser_audit_burden": {
+        "refusal_audited": 10
+      },
+      "measurement_status": "multimodal_numeric",
+      "collection_summaries": [
+        {
+          "collection": "raw7",
+          "total_n": 10,
+          "composition": {
+            "numeric": 10
+          },
+          "observed_numeric": {
+            "n": 10,
+            "values": [
+              30,
+              32,
+              38,
+              42,
+              68,
+              68,
+              70,
+              70,
+              70,
+              72
+            ],
+            "min": 30,
+            "max": 72,
+            "mean": 56.0,
+            "median": 68.0,
+            "range": 42
+          },
+          "sensitivity_numeric": {
+            "n": 10,
+            "values": [
+              30,
+              32,
+              38,
+              42,
+              68,
+              68,
+              70,
+              70,
+              70,
+              72
+            ],
+            "min": 30,
+            "max": 72,
+            "mean": 56.0,
+            "median": 68.0,
+            "range": 42
+          },
+          "observed_shape": {
+            "label": "clear_two_cluster_candidate",
+            "largest_gap": 26,
+            "split": {
+              "left": [
+                30,
+                32,
+                38,
+                42
+              ],
+              "right": [
+                68,
+                68,
+                70,
+                70,
+                70,
+                72
+              ],
+              "left_n": 4,
+              "right_n": 6,
+              "gap": 26
+            }
+          },
+          "sensitivity_shape": {
+            "label": "clear_two_cluster_candidate",
+            "largest_gap": 26,
+            "split": {
+              "left": [
+                30,
+                32,
+                38,
+                42
+              ],
+              "right": [
+                68,
+                68,
+                70,
+                70,
+                70,
+                72
+              ],
+              "left_n": 4,
+              "right_n": 6,
+              "gap": 26
+            }
+          }
+        }
+      ]
+    },
+    {
+      "item": "N3",
+      "cold_total_n": 10,
+      "cold_collections": [
+        "raw7"
+      ],
+      "canonical_floor_collection": "raw7",
+      "canonical_total_n": 10,
+      "canonical_composition": {
+        "numeric": 10
+      },
+      "canonical_observed_numeric": {
+        "n": 10,
+        "values": [
+          35,
+          40,
+          40,
+          40,
+          60,
+          62,
+          65,
+          68,
+          72,
+          75
+        ],
+        "min": 35,
+        "max": 75,
+        "mean": 55.7,
+        "median": 61.0,
+        "range": 40
+      },
+      "canonical_orientation_sensitivity_numeric": {
+        "n": 10,
+        "values": [
+          35,
+          40,
+          40,
+          40,
+          60,
+          62,
+          65,
+          68,
+          72,
+          75
+        ],
+        "min": 35,
+        "max": 75,
+        "mean": 55.7,
+        "median": 61.0,
+        "range": 40
+      },
+      "canonical_observed_shape": {
+        "label": "clear_two_cluster_candidate",
+        "largest_gap": 20,
+        "split": {
+          "left": [
+            35,
+            40,
+            40,
+            40
+          ],
+          "right": [
+            60,
+            62,
+            65,
+            68,
+            72,
+            75
+          ],
+          "left_n": 4,
+          "right_n": 6,
+          "gap": 20
+        }
+      },
+      "canonical_orientation_sensitivity_shape": {
+        "label": "clear_two_cluster_candidate",
+        "largest_gap": 20,
+        "split": {
+          "left": [
+            35,
+            40,
+            40,
+            40
+          ],
+          "right": [
+            60,
+            62,
+            65,
+            68,
+            72,
+            75
+          ],
+          "left_n": 4,
+          "right_n": 6,
+          "gap": 20
+        }
+      },
+      "endpoint_concentration_observed": {
+        "low_0_10_n": 0,
+        "high_90_100_n": 0,
+        "low_fraction": 0.0,
+        "high_fraction": 0.0,
+        "boundary_concentrated": false
+      },
+      "answer_form": "numeric_or_mixed",
+      "parser_audit_burden": {
+        "refusal_audited": 10
+      },
+      "measurement_status": "multimodal_numeric",
+      "collection_summaries": [
+        {
+          "collection": "raw7",
+          "total_n": 10,
+          "composition": {
+            "numeric": 10
+          },
+          "observed_numeric": {
+            "n": 10,
+            "values": [
+              35,
+              40,
+              40,
+              40,
+              60,
+              62,
+              65,
+              68,
+              72,
+              75
+            ],
+            "min": 35,
+            "max": 75,
+            "mean": 55.7,
+            "median": 61.0,
+            "range": 40
+          },
+          "sensitivity_numeric": {
+            "n": 10,
+            "values": [
+              35,
+              40,
+              40,
+              40,
+              60,
+              62,
+              65,
+              68,
+              72,
+              75
+            ],
+            "min": 35,
+            "max": 75,
+            "mean": 55.7,
+            "median": 61.0,
+            "range": 40
+          },
+          "observed_shape": {
+            "label": "clear_two_cluster_candidate",
+            "largest_gap": 20,
+            "split": {
+              "left": [
+                35,
+                40,
+                40,
+                40
+              ],
+              "right": [
+                60,
+                62,
+                65,
+                68,
+                72,
+                75
+              ],
+              "left_n": 4,
+              "right_n": 6,
+              "gap": 20
+            }
+          },
+          "sensitivity_shape": {
+            "label": "clear_two_cluster_candidate",
+            "largest_gap": 20,
+            "split": {
+              "left": [
+                35,
+                40,
+                40,
+                40
+              ],
+              "right": [
+                60,
+                62,
+                65,
+                68,
+                72,
+                75
+              ],
+              "left_n": 4,
+              "right_n": 6,
+              "gap": 20
+            }
+          }
+        }
+      ]
+    },
+    {
+      "item": "N4",
+      "cold_total_n": 23,
+      "cold_collections": [
+        "raw2",
+        "raw6",
+        "raw7"
+      ],
+      "canonical_floor_collection": "raw7",
+      "canonical_total_n": 10,
+      "canonical_composition": {
+        "numeric": 10
+      },
+      "canonical_observed_numeric": {
+        "n": 10,
+        "values": [
+          25,
+          30,
+          35,
+          35,
+          35,
+          35,
+          35,
+          37,
+          38,
+          40
+        ],
+        "min": 25,
+        "max": 40,
+        "mean": 34.5,
+        "median": 35.0,
+        "range": 15
+      },
+      "canonical_orientation_sensitivity_numeric": {
+        "n": 10,
+        "values": [
+          25,
+          30,
+          35,
+          35,
+          35,
+          35,
+          35,
+          37,
+          38,
+          40
+        ],
+        "min": 25,
+        "max": 40,
+        "mean": 34.5,
+        "median": 35.0,
+        "range": 15
+      },
+      "canonical_observed_shape": {
+        "label": "no_clear_two_cluster",
+        "largest_gap": 5,
+        "split": {
+          "left": [
+            25
+          ],
+          "right": [
+            30,
+            35,
+            35,
+            35,
+            35,
+            35,
+            37,
+            38,
+            40
+          ],
+          "left_n": 1,
+          "right_n": 9,
+          "gap": 5
+        }
+      },
+      "canonical_orientation_sensitivity_shape": {
+        "label": "no_clear_two_cluster",
+        "largest_gap": 5,
+        "split": {
+          "left": [
+            25
+          ],
+          "right": [
+            30,
+            35,
+            35,
+            35,
+            35,
+            35,
+            37,
+            38,
+            40
+          ],
+          "left_n": 1,
+          "right_n": 9,
+          "gap": 5
+        }
+      },
+      "endpoint_concentration_observed": {
+        "low_0_10_n": 0,
+        "high_90_100_n": 0,
+        "low_fraction": 0.0,
+        "high_fraction": 0.0,
+        "boundary_concentrated": false
+      },
+      "answer_form": "numeric_or_mixed",
+      "parser_audit_burden": {
+        "refusal_audited": 23,
+        "orientation_corrected": 1
+      },
+      "measurement_status": "usable_numeric",
+      "collection_summaries": [
+        {
+          "collection": "raw2",
+          "total_n": 3,
+          "composition": {
+            "numeric": 3
+          },
+          "observed_numeric": {
+            "n": 3,
+            "values": [
+              32,
+              35,
+              35
+            ],
+            "min": 32,
+            "max": 35,
+            "mean": 34.0,
+            "median": 35,
+            "range": 3
+          },
+          "sensitivity_numeric": {
+            "n": 3,
+            "values": [
+              32,
+              35,
+              35
+            ],
+            "min": 32,
+            "max": 35,
+            "mean": 34.0,
+            "median": 35,
+            "range": 3
+          },
+          "observed_shape": {
+            "label": "no_clear_two_cluster",
+            "largest_gap": 3,
+            "split": {
+              "left": [
+                32
+              ],
+              "right": [
+                35,
+                35
+              ],
+              "left_n": 1,
+              "right_n": 2,
+              "gap": 3
+            }
+          },
+          "sensitivity_shape": {
+            "label": "no_clear_two_cluster",
+            "largest_gap": 3,
+            "split": {
+              "left": [
+                32
+              ],
+              "right": [
+                35,
+                35
+              ],
+              "left_n": 1,
+              "right_n": 2,
+              "gap": 3
+            }
+          }
+        },
+        {
+          "collection": "raw6",
+          "total_n": 10,
+          "composition": {
+            "numeric": 10
+          },
+          "observed_numeric": {
+            "n": 10,
+            "values": [
+              30,
+              30,
+              35,
+              35,
+              35,
+              35,
+              38,
+              40,
+              45,
+              65
+            ],
+            "min": 30,
+            "max": 65,
+            "mean": 38.8,
+            "median": 35.0,
+            "range": 35
+          },
+          "sensitivity_numeric": {
+            "n": 10,
+            "values": [
+              30,
+              30,
+              35,
+              35,
+              35,
+              35,
+              35,
+              38,
+              40,
+              45
+            ],
+            "min": 30,
+            "max": 45,
+            "mean": 35.8,
+            "median": 35.0,
+            "range": 15
+          },
+          "observed_shape": {
+            "label": "separated_singleton_tail",
+            "largest_gap": 20,
+            "split": {
+              "left": [
+                30,
+                30,
+                35,
+                35,
+                35,
+                35,
+                38,
+                40,
+                45
+              ],
+              "right": [
+                65
+              ],
+              "left_n": 9,
+              "right_n": 1,
+              "gap": 20
+            }
+          },
+          "sensitivity_shape": {
+            "label": "no_clear_two_cluster",
+            "largest_gap": 5,
+            "split": {
+              "left": [
+                30,
+                30
+              ],
+              "right": [
+                35,
+                35,
+                35,
+                35,
+                35,
+                38,
+                40,
+                45
+              ],
+              "left_n": 2,
+              "right_n": 8,
+              "gap": 5
+            }
+          }
+        },
+        {
+          "collection": "raw7",
+          "total_n": 10,
+          "composition": {
+            "numeric": 10
+          },
+          "observed_numeric": {
+            "n": 10,
+            "values": [
+              25,
+              30,
+              35,
+              35,
+              35,
+              35,
+              35,
+              37,
+              38,
+              40
+            ],
+            "min": 25,
+            "max": 40,
+            "mean": 34.5,
+            "median": 35.0,
+            "range": 15
+          },
+          "sensitivity_numeric": {
+            "n": 10,
+            "values": [
+              25,
+              30,
+              35,
+              35,
+              35,
+              35,
+              35,
+              37,
+              38,
+              40
+            ],
+            "min": 25,
+            "max": 40,
+            "mean": 34.5,
+            "median": 35.0,
+            "range": 15
+          },
+          "observed_shape": {
+            "label": "no_clear_two_cluster",
+            "largest_gap": 5,
+            "split": {
+              "left": [
+                25
+              ],
+              "right": [
+                30,
+                35,
+                35,
+                35,
+                35,
+                35,
+                37,
+                38,
+                40
+              ],
+              "left_n": 1,
+              "right_n": 9,
+              "gap": 5
+            }
+          },
+          "sensitivity_shape": {
+            "label": "no_clear_two_cluster",
+            "largest_gap": 5,
+            "split": {
+              "left": [
+                25
+              ],
+              "right": [
+                30,
+                35,
+                35,
+                35,
+                35,
+                35,
+                37,
+                38,
+                40
+              ],
+              "left_n": 1,
+              "right_n": 9,
+              "gap": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "item": "N6",
+      "cold_total_n": 10,
+      "cold_collections": [
+        "raw7"
+      ],
+      "canonical_floor_collection": "raw7",
+      "canonical_total_n": 10,
+      "canonical_composition": {
+        "numeric": 10
+      },
+      "canonical_observed_numeric": {
+        "n": 10,
+        "values": [
+          25,
+          30,
+          30,
+          30,
+          35,
+          40,
+          40,
+          40,
+          40,
+          45
+        ],
+        "min": 25,
+        "max": 45,
+        "mean": 35.5,
+        "median": 37.5,
+        "range": 20
+      },
+      "canonical_orientation_sensitivity_numeric": {
+        "n": 10,
+        "values": [
+          25,
+          30,
+          30,
+          30,
+          35,
+          40,
+          40,
+          40,
+          40,
+          45
+        ],
+        "min": 25,
+        "max": 45,
+        "mean": 35.5,
+        "median": 37.5,
+        "range": 20
+      },
+      "canonical_observed_shape": {
+        "label": "no_clear_two_cluster",
+        "largest_gap": 5,
+        "split": {
+          "left": [
+            25
+          ],
+          "right": [
+            30,
+            30,
+            30,
+            35,
+            40,
+            40,
+            40,
+            40,
+            45
+          ],
+          "left_n": 1,
+          "right_n": 9,
+          "gap": 5
+        }
+      },
+      "canonical_orientation_sensitivity_shape": {
+        "label": "no_clear_two_cluster",
+        "largest_gap": 5,
+        "split": {
+          "left": [
+            25
+          ],
+          "right": [
+            30,
+            30,
+            30,
+            35,
+            40,
+            40,
+            40,
+            40,
+            45
+          ],
+          "left_n": 1,
+          "right_n": 9,
+          "gap": 5
+        }
+      },
+      "endpoint_concentration_observed": {
+        "low_0_10_n": 0,
+        "high_90_100_n": 0,
+        "low_fraction": 0.0,
+        "high_fraction": 0.0,
+        "boundary_concentrated": false
+      },
+      "answer_form": "numeric_or_mixed",
+      "parser_audit_burden": {
+        "refusal_audited": 10
+      },
+      "measurement_status": "usable_numeric",
+      "collection_summaries": [
+        {
+          "collection": "raw7",
+          "total_n": 10,
+          "composition": {
+            "numeric": 10
+          },
+          "observed_numeric": {
+            "n": 10,
+            "values": [
+              25,
+              30,
+              30,
+              30,
+              35,
+              40,
+              40,
+              40,
+              40,
+              45
+            ],
+            "min": 25,
+            "max": 45,
+            "mean": 35.5,
+            "median": 37.5,
+            "range": 20
+          },
+          "sensitivity_numeric": {
+            "n": 10,
+            "values": [
+              25,
+              30,
+              30,
+              30,
+              35,
+              40,
+              40,
+              40,
+              40,
+              45
+            ],
+            "min": 25,
+            "max": 45,
+            "mean": 35.5,
+            "median": 37.5,
+            "range": 20
+          },
+          "observed_shape": {
+            "label": "no_clear_two_cluster",
+            "largest_gap": 5,
+            "split": {
+              "left": [
+                25
+              ],
+              "right": [
+                30,
+                30,
+                30,
+                35,
+                40,
+                40,
+                40,
+                40,
+                45
+              ],
+              "left_n": 1,
+              "right_n": 9,
+              "gap": 5
+            }
+          },
+          "sensitivity_shape": {
+            "label": "no_clear_two_cluster",
+            "largest_gap": 5,
+            "split": {
+              "left": [
+                25
+              ],
+              "right": [
+                30,
+                30,
+                30,
+                35,
+                40,
+                40,
+                40,
+                40,
+                45
+              ],
+              "left_n": 1,
+              "right_n": 9,
+              "gap": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "item": "N8",
+      "cold_total_n": 10,
+      "cold_collections": [
+        "raw7"
+      ],
+      "canonical_floor_collection": "raw7",
+      "canonical_total_n": 10,
+      "canonical_composition": {
+        "numeric": 10
+      },
+      "canonical_observed_numeric": {
+        "n": 10,
+        "values": [
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50
+        ],
+        "min": 50,
+        "max": 50,
+        "mean": 50.0,
+        "median": 50.0,
+        "range": 0
+      },
+      "canonical_orientation_sensitivity_numeric": {
+        "n": 10,
+        "values": [
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50
+        ],
+        "min": 50,
+        "max": 50,
+        "mean": 50.0,
+        "median": 50.0,
+        "range": 0
+      },
+      "canonical_observed_shape": {
+        "label": "no_clear_two_cluster",
+        "largest_gap": 0,
+        "split": {
+          "left": [
+            50
+          ],
+          "right": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "left_n": 1,
+          "right_n": 9,
+          "gap": 0
+        }
+      },
+      "canonical_orientation_sensitivity_shape": {
+        "label": "no_clear_two_cluster",
+        "largest_gap": 0,
+        "split": {
+          "left": [
+            50
+          ],
+          "right": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "left_n": 1,
+          "right_n": 9,
+          "gap": 0
+        }
+      },
+      "endpoint_concentration_observed": {
+        "low_0_10_n": 0,
+        "high_90_100_n": 0,
+        "low_fraction": 0.0,
+        "high_fraction": 0.0,
+        "boundary_concentrated": false
+      },
+      "answer_form": "numeric_or_mixed",
+      "parser_audit_burden": {
+        "refusal_audited": 10
+      },
+      "measurement_status": "low_information_numeric",
+      "collection_summaries": [
+        {
+          "collection": "raw7",
+          "total_n": 10,
+          "composition": {
+            "numeric": 10
+          },
+          "observed_numeric": {
+            "n": 10,
+            "values": [
+              50,
+              50,
+              50,
+              50,
+              50,
+              50,
+              50,
+              50,
+              50,
+              50
+            ],
+            "min": 50,
+            "max": 50,
+            "mean": 50.0,
+            "median": 50.0,
+            "range": 0
+          },
+          "sensitivity_numeric": {
+            "n": 10,
+            "values": [
+              50,
+              50,
+              50,
+              50,
+              50,
+              50,
+              50,
+              50,
+              50,
+              50
+            ],
+            "min": 50,
+            "max": 50,
+            "mean": 50.0,
+            "median": 50.0,
+            "range": 0
+          },
+          "observed_shape": {
+            "label": "no_clear_two_cluster",
+            "largest_gap": 0,
+            "split": {
+              "left": [
+                50
+              ],
+              "right": [
+                50,
+                50,
+                50,
+                50,
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "left_n": 1,
+              "right_n": 9,
+              "gap": 0
+            }
+          },
+          "sensitivity_shape": {
+            "label": "no_clear_two_cluster",
+            "largest_gap": 0,
+            "split": {
+              "left": [
+                50
+              ],
+              "right": [
+                50,
+                50,
+                50,
+                50,
+                50,
+                50,
+                50,
+                50,
+                50
+              ],
+              "left_n": 1,
+              "right_n": 9,
+              "gap": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "item": "N9",
+      "cold_total_n": 23,
+      "cold_collections": [
+        "raw2",
+        "raw6",
+        "raw7"
+      ],
+      "canonical_floor_collection": "raw7",
+      "canonical_total_n": 10,
+      "canonical_composition": {
+        "numeric": 10
+      },
+      "canonical_observed_numeric": {
+        "n": 10,
+        "values": [
+          10,
+          15,
+          20,
+          20,
+          20,
+          25,
+          25,
+          25,
+          25,
+          25
+        ],
+        "min": 10,
+        "max": 25,
+        "mean": 21.0,
+        "median": 22.5,
+        "range": 15
+      },
+      "canonical_orientation_sensitivity_numeric": {
+        "n": 10,
+        "values": [
+          10,
+          15,
+          20,
+          20,
+          20,
+          25,
+          25,
+          25,
+          25,
+          25
+        ],
+        "min": 10,
+        "max": 25,
+        "mean": 21.0,
+        "median": 22.5,
+        "range": 15
+      },
+      "canonical_observed_shape": {
+        "label": "no_clear_two_cluster",
+        "largest_gap": 5,
+        "split": {
+          "left": [
+            10
+          ],
+          "right": [
+            15,
+            20,
+            20,
+            20,
+            25,
+            25,
+            25,
+            25,
+            25
+          ],
+          "left_n": 1,
+          "right_n": 9,
+          "gap": 5
+        }
+      },
+      "canonical_orientation_sensitivity_shape": {
+        "label": "no_clear_two_cluster",
+        "largest_gap": 5,
+        "split": {
+          "left": [
+            10
+          ],
+          "right": [
+            15,
+            20,
+            20,
+            20,
+            25,
+            25,
+            25,
+            25,
+            25
+          ],
+          "left_n": 1,
+          "right_n": 9,
+          "gap": 5
+        }
+      },
+      "endpoint_concentration_observed": {
+        "low_0_10_n": 1,
+        "high_90_100_n": 0,
+        "low_fraction": 0.1,
+        "high_fraction": 0.0,
+        "boundary_concentrated": false
+      },
+      "answer_form": "numeric_or_mixed",
+      "parser_audit_burden": {
+        "refusal_audited": 23
+      },
+      "measurement_status": "usable_numeric",
+      "collection_summaries": [
+        {
+          "collection": "raw2",
+          "total_n": 3,
+          "composition": {
+            "numeric": 3
+          },
+          "observed_numeric": {
+            "n": 3,
+            "values": [
+              10,
+              25,
+              28
+            ],
+            "min": 10,
+            "max": 28,
+            "mean": 21.0,
+            "median": 25,
+            "range": 18
+          },
+          "sensitivity_numeric": {
+            "n": 3,
+            "values": [
+              10,
+              25,
+              28
+            ],
+            "min": 10,
+            "max": 28,
+            "mean": 21.0,
+            "median": 25,
+            "range": 18
+          },
+          "observed_shape": {
+            "label": "separated_singleton_tail",
+            "largest_gap": 15,
+            "split": {
+              "left": [
+                10
+              ],
+              "right": [
+                25,
+                28
+              ],
+              "left_n": 1,
+              "right_n": 2,
+              "gap": 15
+            }
+          },
+          "sensitivity_shape": {
+            "label": "separated_singleton_tail",
+            "largest_gap": 15,
+            "split": {
+              "left": [
+                10
+              ],
+              "right": [
+                25,
+                28
+              ],
+              "left_n": 1,
+              "right_n": 2,
+              "gap": 15
+            }
+          }
+        },
+        {
+          "collection": "raw6",
+          "total_n": 10,
+          "composition": {
+            "numeric": 10
+          },
+          "observed_numeric": {
+            "n": 10,
+            "values": [
+              20,
+              20,
+              20,
+              20,
+              20,
+              20,
+              20,
+              20,
+              25,
+              25
+            ],
+            "min": 20,
+            "max": 25,
+            "mean": 21.0,
+            "median": 20.0,
+            "range": 5
+          },
+          "sensitivity_numeric": {
+            "n": 10,
+            "values": [
+              20,
+              20,
+              20,
+              20,
+              20,
+              20,
+              20,
+              20,
+              25,
+              25
+            ],
+            "min": 20,
+            "max": 25,
+            "mean": 21.0,
+            "median": 20.0,
+            "range": 5
+          },
+          "observed_shape": {
+            "label": "no_clear_two_cluster",
+            "largest_gap": 5,
+            "split": {
+              "left": [
+                20,
+                20,
+                20,
+                20,
+                20,
+                20,
+                20,
+                20
+              ],
+              "right": [
+                25,
+                25
+              ],
+              "left_n": 8,
+              "right_n": 2,
+              "gap": 5
+            }
+          },
+          "sensitivity_shape": {
+            "label": "no_clear_two_cluster",
+            "largest_gap": 5,
+            "split": {
+              "left": [
+                20,
+                20,
+                20,
+                20,
+                20,
+                20,
+                20,
+                20
+              ],
+              "right": [
+                25,
+                25
+              ],
+              "left_n": 8,
+              "right_n": 2,
+              "gap": 5
+            }
+          }
+        },
+        {
+          "collection": "raw7",
+          "total_n": 10,
+          "composition": {
+            "numeric": 10
+          },
+          "observed_numeric": {
+            "n": 10,
+            "values": [
+              10,
+              15,
+              20,
+              20,
+              20,
+              25,
+              25,
+              25,
+              25,
+              25
+            ],
+            "min": 10,
+            "max": 25,
+            "mean": 21.0,
+            "median": 22.5,
+            "range": 15
+          },
+          "sensitivity_numeric": {
+            "n": 10,
+            "values": [
+              10,
+              15,
+              20,
+              20,
+              20,
+              25,
+              25,
+              25,
+              25,
+              25
+            ],
+            "min": 10,
+            "max": 25,
+            "mean": 21.0,
+            "median": 22.5,
+            "range": 15
+          },
+          "observed_shape": {
+            "label": "no_clear_two_cluster",
+            "largest_gap": 5,
+            "split": {
+              "left": [
+                10
+              ],
+              "right": [
+                15,
+                20,
+                20,
+                20,
+                25,
+                25,
+                25,
+                25,
+                25
+              ],
+              "left_n": 1,
+              "right_n": 9,
+              "gap": 5
+            }
+          },
+          "sensitivity_shape": {
+            "label": "no_clear_two_cluster",
+            "largest_gap": 5,
+            "split": {
+              "left": [
+                10
+              ],
+              "right": [
+                15,
+                20,
+                20,
+                20,
+                25,
+                25,
+                25,
+                25,
+                25
+              ],
+              "left_n": 1,
+              "right_n": 9,
+              "gap": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "item": "P2",
+      "cold_total_n": 10,
+      "cold_collections": [
+        "raw7"
+      ],
+      "canonical_floor_collection": "raw7",
+      "canonical_total_n": 10,
+      "canonical_composition": {
+        "numeric": 10
+      },
+      "canonical_observed_numeric": {
+        "n": 10,
+        "values": [
+          30,
+          30,
+          35,
+          35,
+          38,
+          38,
+          38,
+          40,
+          67,
+          68
+        ],
+        "min": 30,
+        "max": 68,
+        "mean": 41.9,
+        "median": 38.0,
+        "range": 38
+      },
+      "canonical_orientation_sensitivity_numeric": {
+        "n": 10,
+        "values": [
+          30,
+          30,
+          35,
+          35,
+          38,
+          38,
+          38,
+          40,
+          67,
+          68
+        ],
+        "min": 30,
+        "max": 68,
+        "mean": 41.9,
+        "median": 38.0,
+        "range": 38
+      },
+      "canonical_observed_shape": {
+        "label": "clear_two_cluster_candidate",
+        "largest_gap": 27,
+        "split": {
+          "left": [
+            30,
+            30,
+            35,
+            35,
+            38,
+            38,
+            38,
+            40
+          ],
+          "right": [
+            67,
+            68
+          ],
+          "left_n": 8,
+          "right_n": 2,
+          "gap": 27
+        }
+      },
+      "canonical_orientation_sensitivity_shape": {
+        "label": "clear_two_cluster_candidate",
+        "largest_gap": 27,
+        "split": {
+          "left": [
+            30,
+            30,
+            35,
+            35,
+            38,
+            38,
+            38,
+            40
+          ],
+          "right": [
+            67,
+            68
+          ],
+          "left_n": 8,
+          "right_n": 2,
+          "gap": 27
+        }
+      },
+      "endpoint_concentration_observed": {
+        "low_0_10_n": 0,
+        "high_90_100_n": 0,
+        "low_fraction": 0.0,
+        "high_fraction": 0.0,
+        "boundary_concentrated": false
+      },
+      "answer_form": "numeric_or_mixed",
+      "parser_audit_burden": {
+        "refusal_audited": 10
+      },
+      "measurement_status": "multimodal_numeric",
+      "collection_summaries": [
+        {
+          "collection": "raw7",
+          "total_n": 10,
+          "composition": {
+            "numeric": 10
+          },
+          "observed_numeric": {
+            "n": 10,
+            "values": [
+              30,
+              30,
+              35,
+              35,
+              38,
+              38,
+              38,
+              40,
+              67,
+              68
+            ],
+            "min": 30,
+            "max": 68,
+            "mean": 41.9,
+            "median": 38.0,
+            "range": 38
+          },
+          "sensitivity_numeric": {
+            "n": 10,
+            "values": [
+              30,
+              30,
+              35,
+              35,
+              38,
+              38,
+              38,
+              40,
+              67,
+              68
+            ],
+            "min": 30,
+            "max": 68,
+            "mean": 41.9,
+            "median": 38.0,
+            "range": 38
+          },
+          "observed_shape": {
+            "label": "clear_two_cluster_candidate",
+            "largest_gap": 27,
+            "split": {
+              "left": [
+                30,
+                30,
+                35,
+                35,
+                38,
+                38,
+                38,
+                40
+              ],
+              "right": [
+                67,
+                68
+              ],
+              "left_n": 8,
+              "right_n": 2,
+              "gap": 27
+            }
+          },
+          "sensitivity_shape": {
+            "label": "clear_two_cluster_candidate",
+            "largest_gap": 27,
+            "split": {
+              "left": [
+                30,
+                30,
+                35,
+                35,
+                38,
+                38,
+                38,
+                40
+              ],
+              "right": [
+                67,
+                68
+              ],
+              "left_n": 8,
+              "right_n": 2,
+              "gap": 27
+            }
+          }
+        }
+      ]
+    },
+    {
+      "item": "R1",
+      "cold_total_n": 10,
+      "cold_collections": [
+        "raw7"
+      ],
+      "canonical_floor_collection": "raw7",
+      "canonical_total_n": 10,
+      "canonical_composition": {
+        "numeric": 10
+      },
+      "canonical_observed_numeric": {
+        "n": 10,
+        "values": [
+          87,
+          87,
+          92,
+          93,
+          95,
+          95,
+          95,
+          95,
+          97,
+          97
+        ],
+        "min": 87,
+        "max": 97,
+        "mean": 93.3,
+        "median": 95.0,
+        "range": 10
+      },
+      "canonical_orientation_sensitivity_numeric": {
+        "n": 10,
+        "values": [
+          87,
+          87,
+          92,
+          93,
+          95,
+          95,
+          95,
+          95,
+          97,
+          97
+        ],
+        "min": 87,
+        "max": 97,
+        "mean": 93.3,
+        "median": 95.0,
+        "range": 10
+      },
+      "canonical_observed_shape": {
+        "label": "no_clear_two_cluster",
+        "largest_gap": 5,
+        "split": {
+          "left": [
+            87,
+            87
+          ],
+          "right": [
+            92,
+            93,
+            95,
+            95,
+            95,
+            95,
+            97,
+            97
+          ],
+          "left_n": 2,
+          "right_n": 8,
+          "gap": 5
+        }
+      },
+      "canonical_orientation_sensitivity_shape": {
+        "label": "no_clear_two_cluster",
+        "largest_gap": 5,
+        "split": {
+          "left": [
+            87,
+            87
+          ],
+          "right": [
+            92,
+            93,
+            95,
+            95,
+            95,
+            95,
+            97,
+            97
+          ],
+          "left_n": 2,
+          "right_n": 8,
+          "gap": 5
+        }
+      },
+      "endpoint_concentration_observed": {
+        "low_0_10_n": 0,
+        "high_90_100_n": 8,
+        "low_fraction": 0.0,
+        "high_fraction": 0.8,
+        "boundary_concentrated": true
+      },
+      "answer_form": "numeric_or_mixed",
+      "parser_audit_burden": {
+        "refusal_audited": 10
+      },
+      "measurement_status": "usable_numeric",
+      "collection_summaries": [
+        {
+          "collection": "raw7",
+          "total_n": 10,
+          "composition": {
+            "numeric": 10
+          },
+          "observed_numeric": {
+            "n": 10,
+            "values": [
+              87,
+              87,
+              92,
+              93,
+              95,
+              95,
+              95,
+              95,
+              97,
+              97
+            ],
+            "min": 87,
+            "max": 97,
+            "mean": 93.3,
+            "median": 95.0,
+            "range": 10
+          },
+          "sensitivity_numeric": {
+            "n": 10,
+            "values": [
+              87,
+              87,
+              92,
+              93,
+              95,
+              95,
+              95,
+              95,
+              97,
+              97
+            ],
+            "min": 87,
+            "max": 97,
+            "mean": 93.3,
+            "median": 95.0,
+            "range": 10
+          },
+          "observed_shape": {
+            "label": "no_clear_two_cluster",
+            "largest_gap": 5,
+            "split": {
+              "left": [
+                87,
+                87
+              ],
+              "right": [
+                92,
+                93,
+                95,
+                95,
+                95,
+                95,
+                97,
+                97
+              ],
+              "left_n": 2,
+              "right_n": 8,
+              "gap": 5
+            }
+          },
+          "sensitivity_shape": {
+            "label": "no_clear_two_cluster",
+            "largest_gap": 5,
+            "split": {
+              "left": [
+                87,
+                87
+              ],
+              "right": [
+                92,
+                93,
+                95,
+                95,
+                95,
+                95,
+                97,
+                97
+              ],
+              "left_n": 2,
+              "right_n": 8,
+              "gap": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "item": "R2",
+      "cold_total_n": 10,
+      "cold_collections": [
+        "raw7"
+      ],
+      "canonical_floor_collection": "raw7",
+      "canonical_total_n": 10,
+      "canonical_composition": {
+        "numeric": 10
+      },
+      "canonical_observed_numeric": {
+        "n": 10,
+        "values": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2
+        ],
+        "min": 1,
+        "max": 2,
+        "mean": 1.3,
+        "median": 1.0,
+        "range": 1
+      },
+      "canonical_orientation_sensitivity_numeric": {
+        "n": 10,
+        "values": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2
+        ],
+        "min": 1,
+        "max": 2,
+        "mean": 1.3,
+        "median": 1.0,
+        "range": 1
+      },
+      "canonical_observed_shape": {
+        "label": "no_clear_two_cluster",
+        "largest_gap": 1,
+        "split": {
+          "left": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "right": [
+            2,
+            2,
+            2
+          ],
+          "left_n": 7,
+          "right_n": 3,
+          "gap": 1
+        }
+      },
+      "canonical_orientation_sensitivity_shape": {
+        "label": "no_clear_two_cluster",
+        "largest_gap": 1,
+        "split": {
+          "left": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "right": [
+            2,
+            2,
+            2
+          ],
+          "left_n": 7,
+          "right_n": 3,
+          "gap": 1
+        }
+      },
+      "endpoint_concentration_observed": {
+        "low_0_10_n": 10,
+        "high_90_100_n": 0,
+        "low_fraction": 1.0,
+        "high_fraction": 0.0,
+        "boundary_concentrated": true
+      },
+      "answer_form": "numeric_or_mixed",
+      "parser_audit_burden": {
+        "refusal_audited": 10
+      },
+      "measurement_status": "usable_numeric",
+      "collection_summaries": [
+        {
+          "collection": "raw7",
+          "total_n": 10,
+          "composition": {
+            "numeric": 10
+          },
+          "observed_numeric": {
+            "n": 10,
+            "values": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              2,
+              2,
+              2
+            ],
+            "min": 1,
+            "max": 2,
+            "mean": 1.3,
+            "median": 1.0,
+            "range": 1
+          },
+          "sensitivity_numeric": {
+            "n": 10,
+            "values": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              2,
+              2,
+              2
+            ],
+            "min": 1,
+            "max": 2,
+            "mean": 1.3,
+            "median": 1.0,
+            "range": 1
+          },
+          "observed_shape": {
+            "label": "no_clear_two_cluster",
+            "largest_gap": 1,
+            "split": {
+              "left": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "right": [
+                2,
+                2,
+                2
+              ],
+              "left_n": 7,
+              "right_n": 3,
+              "gap": 1
+            }
+          },
+          "sensitivity_shape": {
+            "label": "no_clear_two_cluster",
+            "largest_gap": 1,
+            "split": {
+              "left": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "right": [
+                2,
+                2,
+                2
+              ],
+              "left_n": 7,
+              "right_n": 3,
+              "gap": 1
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
