@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "object": "EXP-003 prompt properties",
   "raw_directories_scanned": [
     "raw2",
@@ -15,7 +15,7 @@
     "raw12"
   ],
   "row_count": 1624,
-  "property_primary_count": 847,
+  "property_primary_count": 772,
   "property_primary_groups": [
     {
       "collection": "raw7",
@@ -25,7 +25,7 @@
       "n_replicates": 3,
       "reasoning_observed_rate": 1.0,
       "strict_answer_only_rate": 0.0,
-      "answer_identifiable_rate": 1.0,
+      "validated_answer_observed_rate": 1.0,
       "roles": {
         "schema_only": 75
       },
@@ -41,7 +41,7 @@
       "n_replicates": 3,
       "reasoning_observed_rate": 1.0,
       "strict_answer_only_rate": 0.0,
-      "answer_identifiable_rate": 1.0,
+      "validated_answer_observed_rate": 1.0,
       "roles": {
         "schema_only": 75
       },
@@ -57,7 +57,7 @@
       "n_replicates": 10,
       "reasoning_observed_rate": 1.0,
       "strict_answer_only_rate": 0.0,
-      "answer_identifiable_rate": 1.0,
+      "validated_answer_observed_rate": 1.0,
       "roles": {
         "neither": 250
       },
@@ -73,7 +73,7 @@
       "n_replicates": 3,
       "reasoning_observed_rate": 1.0,
       "strict_answer_only_rate": 0.0,
-      "answer_identifiable_rate": 1.0,
+      "validated_answer_observed_rate": 1.0,
       "roles": {
         "schema_only": 75
       },
@@ -89,7 +89,7 @@
       "n_replicates": 3,
       "reasoning_observed_rate": 1.0,
       "strict_answer_only_rate": 0.0,
-      "answer_identifiable_rate": 1.0,
+      "validated_answer_observed_rate": 0.9866666666666667,
       "roles": {
         "schema_only": 75
       },
@@ -105,7 +105,7 @@
       "n_replicates": 3,
       "reasoning_observed_rate": 1.0,
       "strict_answer_only_rate": 0.0,
-      "answer_identifiable_rate": 1.0,
+      "validated_answer_observed_rate": 0.9864864864864865,
       "roles": {
         "schema_plus_preliminaries": 74
       },
@@ -121,28 +121,12 @@
       "n_replicates": 3,
       "reasoning_observed_rate": 1.0,
       "strict_answer_only_rate": 0.0,
-      "answer_identifiable_rate": 1.0,
+      "validated_answer_observed_rate": 0.958904109589041,
       "roles": {
         "schema_plus_preliminaries": 73
       },
       "schema_families": {
         "AS": 73
-      }
-    },
-    {
-      "collection": "raw9",
-      "cell": "FBAa",
-      "n_rows": 75,
-      "n_items": 25,
-      "n_replicates": 3,
-      "reasoning_observed_rate": 1.0,
-      "strict_answer_only_rate": 0.0,
-      "answer_identifiable_rate": 1.0,
-      "roles": {
-        "schema_plus_preliminaries": 75
-      },
-      "schema_families": {
-        "A": 75
       }
     },
     {
@@ -153,7 +137,7 @@
       "n_replicates": 3,
       "reasoning_observed_rate": 1.0,
       "strict_answer_only_rate": 0.0,
-      "answer_identifiable_rate": 0.9866666666666667,
+      "validated_answer_observed_rate": 0.9333333333333333,
       "roles": {
         "schema_plus_preliminaries": 75
       },
@@ -171,7 +155,7 @@
       "n_replicates": 1,
       "reasoning_observed_rate": 0.48,
       "strict_answer_only_rate": 1.0,
-      "answer_identifiable_rate": 0.92,
+      "validated_answer_observed_rate": 1.0,
       "roles": {
         "schema_dropped_after_preliminaries": 25
       },
@@ -187,7 +171,7 @@
       "n_replicates": 1,
       "reasoning_observed_rate": 1.0,
       "strict_answer_only_rate": 0.0,
-      "answer_identifiable_rate": 1.0,
+      "validated_answer_observed_rate": 0.96,
       "roles": {
         "schema_plus_preliminaries": 25
       },
@@ -203,7 +187,7 @@
       "n_replicates": 1,
       "reasoning_observed_rate": 0.44,
       "strict_answer_only_rate": 1.0,
-      "answer_identifiable_rate": 0.88,
+      "validated_answer_observed_rate": 1.0,
       "roles": {
         "schema_dropped_after_preliminaries": 25
       },
@@ -219,7 +203,7 @@
       "n_replicates": 1,
       "reasoning_observed_rate": 1.0,
       "strict_answer_only_rate": 0.0,
-      "answer_identifiable_rate": 1.0,
+      "validated_answer_observed_rate": 0.96,
       "roles": {
         "schema_plus_preliminaries": 25
       },
@@ -235,7 +219,7 @@
       "n_replicates": 1,
       "reasoning_observed_rate": 0.56,
       "strict_answer_only_rate": 1.0,
-      "answer_identifiable_rate": 0.92,
+      "validated_answer_observed_rate": 1.0,
       "roles": {
         "schema_dropped_after_preliminaries": 25
       },
@@ -251,7 +235,7 @@
       "n_replicates": 1,
       "reasoning_observed_rate": 1.0,
       "strict_answer_only_rate": 0.0,
-      "answer_identifiable_rate": 1.0,
+      "validated_answer_observed_rate": 0.92,
       "roles": {
         "schema_plus_preliminaries": 25
       },
@@ -267,7 +251,7 @@
       "n_replicates": 1,
       "reasoning_observed_rate": 1.0,
       "strict_answer_only_rate": 0.0,
-      "answer_identifiable_rate": 1.0,
+      "validated_answer_observed_rate": 1.0,
       "roles": {
         "schema_plus_preliminaries": 4
       },
@@ -283,7 +267,7 @@
       "n_replicates": 2,
       "reasoning_observed_rate": 0.875,
       "strict_answer_only_rate": 1.0,
-      "answer_identifiable_rate": 1.0,
+      "validated_answer_observed_rate": 1.0,
       "roles": {
         "schema_dropped_after_preliminaries": 8
       },
@@ -299,7 +283,7 @@
       "n_replicates": 3,
       "reasoning_observed_rate": 1.0,
       "strict_answer_only_rate": 0.0,
-      "answer_identifiable_rate": 1.0,
+      "validated_answer_observed_rate": 1.0,
       "roles": {
         "neither": 12
       },
@@ -315,7 +299,7 @@
       "n_replicates": 1,
       "reasoning_observed_rate": 1.0,
       "strict_answer_only_rate": 0.0,
-      "answer_identifiable_rate": 1.0,
+      "validated_answer_observed_rate": 0.75,
       "roles": {
         "schema_plus_preliminaries": 4
       },
@@ -331,7 +315,7 @@
       "n_replicates": 1,
       "reasoning_observed_rate": 1.0,
       "strict_answer_only_rate": 0.0,
-      "answer_identifiable_rate": 1.0,
+      "validated_answer_observed_rate": 1.0,
       "roles": {
         "schema_plus_preliminaries": 4
       },
@@ -347,7 +331,7 @@
       "n_replicates": 1,
       "reasoning_observed_rate": 1.0,
       "strict_answer_only_rate": 0.0,
-      "answer_identifiable_rate": 0.25,
+      "validated_answer_observed_rate": 1.0,
       "roles": {
         "preliminaries_only": 4
       },
@@ -363,7 +347,7 @@
       "n_replicates": 1,
       "reasoning_observed_rate": 1.0,
       "strict_answer_only_rate": 0.0,
-      "answer_identifiable_rate": 1.0,
+      "validated_answer_observed_rate": 1.0,
       "roles": {
         "schema_plus_preliminaries": 4
       },
@@ -379,7 +363,7 @@
       "n_replicates": 1,
       "reasoning_observed_rate": 1.0,
       "strict_answer_only_rate": 0.0,
-      "answer_identifiable_rate": 1.0,
+      "validated_answer_observed_rate": 0.75,
       "roles": {
         "schema_plus_preliminaries": 4
       },
@@ -395,7 +379,7 @@
       "n_replicates": 1,
       "reasoning_observed_rate": 1.0,
       "strict_answer_only_rate": 0.0,
-      "answer_identifiable_rate": 0.5,
+      "validated_answer_observed_rate": 1.0,
       "roles": {
         "preliminaries_only": 4
       },
@@ -411,7 +395,7 @@
       "n_replicates": 1,
       "reasoning_observed_rate": 1.0,
       "strict_answer_only_rate": 0.0,
-      "answer_identifiable_rate": 1.0,
+      "validated_answer_observed_rate": 1.0,
       "roles": {
         "schema_plus_preliminaries": 4
       },
@@ -427,7 +411,7 @@
       "n_replicates": 1,
       "reasoning_observed_rate": 1.0,
       "strict_answer_only_rate": 0.0,
-      "answer_identifiable_rate": 1.0,
+      "validated_answer_observed_rate": 1.0,
       "roles": {
         "schema_plus_preliminaries": 4
       },
@@ -443,7 +427,7 @@
       "n_replicates": 1,
       "reasoning_observed_rate": 0.5,
       "strict_answer_only_rate": 1.0,
-      "answer_identifiable_rate": 0.75,
+      "validated_answer_observed_rate": 1.0,
       "roles": {
         "schema_dropped_after_preliminaries": 4
       },
@@ -459,7 +443,7 @@
       "n_replicates": 1,
       "reasoning_observed_rate": 1.0,
       "strict_answer_only_rate": 0.0,
-      "answer_identifiable_rate": 1.0,
+      "validated_answer_observed_rate": 1.0,
       "roles": {
         "schema_plus_preliminaries": 4
       },
@@ -475,7 +459,7 @@
       "n_replicates": 1,
       "reasoning_observed_rate": 0.5,
       "strict_answer_only_rate": 1.0,
-      "answer_identifiable_rate": 1.0,
+      "validated_answer_observed_rate": 1.0,
       "roles": {
         "schema_dropped_after_preliminaries": 4
       },
@@ -491,7 +475,7 @@
       "n_replicates": 1,
       "reasoning_observed_rate": 1.0,
       "strict_answer_only_rate": 0.0,
-      "answer_identifiable_rate": 1.0,
+      "validated_answer_observed_rate": 1.0,
       "roles": {
         "schema_plus_preliminaries": 4
       },
@@ -507,7 +491,7 @@
       "n_replicates": 1,
       "reasoning_observed_rate": 0.25,
       "strict_answer_only_rate": 1.0,
-      "answer_identifiable_rate": 1.0,
+      "validated_answer_observed_rate": 1.0,
       "roles": {
         "schema_dropped_after_preliminaries": 4
       },
@@ -523,7 +507,7 @@
       "n_replicates": 1,
       "reasoning_observed_rate": 1.0,
       "strict_answer_only_rate": 0.0,
-      "answer_identifiable_rate": 1.0,
+      "validated_answer_observed_rate": 1.0,
       "roles": {
         "schema_plus_preliminaries": 4
       },
@@ -539,7 +523,7 @@
       "n_replicates": 1,
       "reasoning_observed_rate": 1.0,
       "strict_answer_only_rate": 1.0,
-      "answer_identifiable_rate": 0.75,
+      "validated_answer_observed_rate": 1.0,
       "roles": {
         "schema_dropped_after_preliminaries": 4
       },
@@ -555,7 +539,7 @@
       "n_replicates": 1,
       "reasoning_observed_rate": 1.0,
       "strict_answer_only_rate": 0.0,
-      "answer_identifiable_rate": 1.0,
+      "validated_answer_observed_rate": 0.75,
       "roles": {
         "schema_plus_preliminaries": 4
       },
@@ -571,7 +555,7 @@
       "n_replicates": 1,
       "reasoning_observed_rate": 0.5,
       "strict_answer_only_rate": 1.0,
-      "answer_identifiable_rate": 1.0,
+      "validated_answer_observed_rate": 1.0,
       "roles": {
         "schema_dropped_after_preliminaries": 4
       },
@@ -587,7 +571,7 @@
       "n_replicates": 1,
       "reasoning_observed_rate": 1.0,
       "strict_answer_only_rate": 0.0,
-      "answer_identifiable_rate": 1.0,
+      "validated_answer_observed_rate": 1.0,
       "roles": {
         "schema_plus_preliminaries": 4
       },
@@ -603,7 +587,7 @@
       "n_replicates": 1,
       "reasoning_observed_rate": 0.25,
       "strict_answer_only_rate": 1.0,
-      "answer_identifiable_rate": 1.0,
+      "validated_answer_observed_rate": 1.0,
       "roles": {
         "schema_dropped_after_preliminaries": 4
       },
@@ -619,7 +603,7 @@
       "n_replicates": 1,
       "reasoning_observed_rate": 1.0,
       "strict_answer_only_rate": 0.0,
-      "answer_identifiable_rate": 1.0,
+      "validated_answer_observed_rate": 1.0,
       "roles": {
         "schema_plus_preliminaries": 4
       },
@@ -635,7 +619,7 @@
       "n_replicates": 10,
       "reasoning_observed_rate": 1.0,
       "strict_answer_only_rate": 0.0,
-      "answer_identifiable_rate": 1.0,
+      "validated_answer_observed_rate": 1.0,
       "roles": {
         "neither": 50
       },
@@ -651,7 +635,7 @@
       "n_replicates": 10,
       "reasoning_observed_rate": 1.0,
       "strict_answer_only_rate": 0.0,
-      "answer_identifiable_rate": 1.0,
+      "validated_answer_observed_rate": 1.0,
       "roles": {
         "schema_only": 50
       },
@@ -667,7 +651,7 @@
       "n_replicates": 1,
       "reasoning_observed_rate": 0.20833333333333334,
       "strict_answer_only_rate": 1.0,
-      "answer_identifiable_rate": 1.0,
+      "validated_answer_observed_rate": 1.0,
       "roles": {
         "schema_dropped_after_preliminaries": 24
       },
@@ -683,7 +667,7 @@
       "n_replicates": 1,
       "reasoning_observed_rate": 1.0,
       "strict_answer_only_rate": 0.0,
-      "answer_identifiable_rate": 1.0,
+      "validated_answer_observed_rate": 1.0,
       "roles": {
         "schema_plus_preliminaries": 24
       },
@@ -699,7 +683,7 @@
       "n_replicates": 3,
       "reasoning_observed_rate": 1.0,
       "strict_answer_only_rate": 0.0,
-      "answer_identifiable_rate": 1.0,
+      "validated_answer_observed_rate": 1.0,
       "roles": {
         "schema_only": 75
       },
@@ -715,7 +699,7 @@
       "n_replicates": 3,
       "reasoning_observed_rate": 1.0,
       "strict_answer_only_rate": 0.0,
-      "answer_identifiable_rate": 1.0,
+      "validated_answer_observed_rate": 1.0,
       "roles": {
         "schema_only": 75
       },
@@ -731,7 +715,7 @@
       "n_replicates": 10,
       "reasoning_observed_rate": 1.0,
       "strict_answer_only_rate": 0.0,
-      "answer_identifiable_rate": 1.0,
+      "validated_answer_observed_rate": 1.0,
       "roles": {
         "neither": 250
       },
@@ -747,7 +731,7 @@
       "n_replicates": 3,
       "reasoning_observed_rate": 1.0,
       "strict_answer_only_rate": 0.0,
-      "answer_identifiable_rate": 1.0,
+      "validated_answer_observed_rate": 1.0,
       "roles": {
         "schema_only": 75
       },
@@ -763,7 +747,7 @@
       "n_replicates": 3,
       "reasoning_observed_rate": 1.0,
       "strict_answer_only_rate": 0.0,
-      "answer_identifiable_rate": 1.0,
+      "validated_answer_observed_rate": 0.9866666666666667,
       "roles": {
         "schema_only": 75
       },
@@ -779,7 +763,7 @@
       "n_replicates": 3,
       "reasoning_observed_rate": 0.38666666666666666,
       "strict_answer_only_rate": 1.0,
-      "answer_identifiable_rate": 0.9066666666666666,
+      "validated_answer_observed_rate": 0.9866666666666667,
       "roles": {
         "schema_dropped_after_preliminaries": 75
       },
@@ -795,7 +779,7 @@
       "n_replicates": 3,
       "reasoning_observed_rate": 1.0,
       "strict_answer_only_rate": 0.0,
-      "answer_identifiable_rate": 1.0,
+      "validated_answer_observed_rate": 0.9864864864864865,
       "roles": {
         "schema_plus_preliminaries": 74
       },
@@ -811,7 +795,7 @@
       "n_replicates": 3,
       "reasoning_observed_rate": 0.4666666666666667,
       "strict_answer_only_rate": 1.0,
-      "answer_identifiable_rate": 0.9466666666666667,
+      "validated_answer_observed_rate": 0.96,
       "roles": {
         "schema_dropped_after_preliminaries": 75
       },
@@ -827,7 +811,7 @@
       "n_replicates": 3,
       "reasoning_observed_rate": 0.28,
       "strict_answer_only_rate": 1.0,
-      "answer_identifiable_rate": 0.92,
+      "validated_answer_observed_rate": 0.9866666666666667,
       "roles": {
         "schema_dropped_after_preliminaries": 75
       },
@@ -843,7 +827,7 @@
       "n_replicates": 3,
       "reasoning_observed_rate": 1.0,
       "strict_answer_only_rate": 0.0,
-      "answer_identifiable_rate": 1.0,
+      "validated_answer_observed_rate": 0.958904109589041,
       "roles": {
         "schema_plus_preliminaries": 73
       },
@@ -859,7 +843,7 @@
       "n_replicates": 3,
       "reasoning_observed_rate": 1.0,
       "strict_answer_only_rate": 0.0,
-      "answer_identifiable_rate": 1.0,
+      "validated_answer_observed_rate": 0.8933333333333333,
       "roles": {
         "schema_plus_preliminaries": 75
       },
@@ -875,7 +859,7 @@
       "n_replicates": 3,
       "reasoning_observed_rate": 0.21333333333333335,
       "strict_answer_only_rate": 0.0,
-      "answer_identifiable_rate": 1.0,
+      "validated_answer_observed_rate": 0.9866666666666667,
       "roles": {
         "preliminaries_only": 75
       },
@@ -891,7 +875,7 @@
       "n_replicates": 3,
       "reasoning_observed_rate": 0.44,
       "strict_answer_only_rate": 1.0,
-      "answer_identifiable_rate": 0.9066666666666666,
+      "validated_answer_observed_rate": 0.9866666666666667,
       "roles": {
         "schema_dropped_after_preliminaries": 75
       },
@@ -907,7 +891,7 @@
       "n_replicates": 3,
       "reasoning_observed_rate": 1.0,
       "strict_answer_only_rate": 0.0,
-      "answer_identifiable_rate": 0.9866666666666667,
+      "validated_answer_observed_rate": 0.9333333333333333,
       "roles": {
         "schema_plus_preliminaries": 75
       },
@@ -927,11 +911,12 @@
     ],
     "strict_answer_only": false,
     "min_reasoning_observed_rate": 0.9,
-    "min_answer_identifiable_rate": 0.9
+    "min_validated_answer_observed_rate": 0.9
   },
   "notes": [
     "Properties are derived from executed records, not prose design labels.",
     "reasoning_observed is a coarse structural classifier (>=8 lexical words), suitable for population gating but not semantic interpretation.",
+    "Answer availability is taken from analysis-table-validated rather than raw tag conformity, so prose-rich CP is not penalized for formatting differences.",
     "Primary role is inferred from prefix/schema properties; full-battery and replication gates prevent pilot/exploratory n=1 wings from entering automatically."
   ]
 }
