@@ -1,0 +1,27 @@
+name: Run raw12 CF3 trunk evidence
+on:
+  push:
+    paths:
+      - 'experiments/EXP-003-the-sixth-question/build_raw12_cf3_trunk_evidence.py'
+      - '.github/workflows/run-raw12-cf3-trunk-evidence.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Build evidence packs
+        working-directory: experiments/EXP-003-the-sixth-question
+        run: python build_raw12_cf3_trunk_evidence.py
+      - name: Commit packs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add experiments/EXP-003-the-sixth-question/RAW12-CF3-TRUNK-*.md
+          git diff --cached --quiet || git commit -m "EXP-003: build raw12 CF3 trunk evidence"
+          git push
