@@ -1,0 +1,937 @@
+{
+  "schema_version": 1,
+  "object": "EXP-003 prompt properties",
+  "raw_directories_scanned": [
+    "raw2",
+    "raw3",
+    "raw4",
+    "raw5",
+    "raw6",
+    "raw7",
+    "raw8",
+    "raw9",
+    "raw10",
+    "raw11",
+    "raw12"
+  ],
+  "row_count": 1624,
+  "property_primary_count": 847,
+  "property_primary_groups": [
+    {
+      "collection": "raw7",
+      "cell": "AQ",
+      "n_rows": 75,
+      "n_items": 25,
+      "n_replicates": 3,
+      "reasoning_observed_rate": 1.0,
+      "strict_answer_only_rate": 0.0,
+      "answer_identifiable_rate": 1.0,
+      "roles": {
+        "schema_only": 75
+      },
+      "schema_families": {
+        "A": 75
+      }
+    },
+    {
+      "collection": "raw7",
+      "cell": "ASQ",
+      "n_rows": 75,
+      "n_items": 25,
+      "n_replicates": 3,
+      "reasoning_observed_rate": 1.0,
+      "strict_answer_only_rate": 0.0,
+      "answer_identifiable_rate": 1.0,
+      "roles": {
+        "schema_only": 75
+      },
+      "schema_families": {
+        "AS": 75
+      }
+    },
+    {
+      "collection": "raw7",
+      "cell": "C",
+      "n_rows": 250,
+      "n_items": 25,
+      "n_replicates": 10,
+      "reasoning_observed_rate": 1.0,
+      "strict_answer_only_rate": 0.0,
+      "answer_identifiable_rate": 1.0,
+      "roles": {
+        "neither": 250
+      },
+      "schema_families": {
+        "none": 250
+      }
+    },
+    {
+      "collection": "raw7",
+      "cell": "FQ",
+      "n_rows": 75,
+      "n_items": 25,
+      "n_replicates": 3,
+      "reasoning_observed_rate": 1.0,
+      "strict_answer_only_rate": 0.0,
+      "answer_identifiable_rate": 1.0,
+      "roles": {
+        "schema_only": 75
+      },
+      "schema_families": {
+        "F": 75
+      }
+    },
+    {
+      "collection": "raw7",
+      "cell": "HQ",
+      "n_rows": 75,
+      "n_items": 25,
+      "n_replicates": 3,
+      "reasoning_observed_rate": 1.0,
+      "strict_answer_only_rate": 0.0,
+      "answer_identifiable_rate": 1.0,
+      "roles": {
+        "schema_only": 75
+      },
+      "schema_families": {
+        "H": 75
+      }
+    },
+    {
+      "collection": "raw8",
+      "cell": "FBHa",
+      "n_rows": 74,
+      "n_items": 25,
+      "n_replicates": 3,
+      "reasoning_observed_rate": 1.0,
+      "strict_answer_only_rate": 0.0,
+      "answer_identifiable_rate": 1.0,
+      "roles": {
+        "schema_plus_preliminaries": 74
+      },
+      "schema_families": {
+        "H": 74
+      }
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBASa",
+      "n_rows": 73,
+      "n_items": 25,
+      "n_replicates": 3,
+      "reasoning_observed_rate": 1.0,
+      "strict_answer_only_rate": 0.0,
+      "answer_identifiable_rate": 1.0,
+      "roles": {
+        "schema_plus_preliminaries": 73
+      },
+      "schema_families": {
+        "AS": 73
+      }
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBAa",
+      "n_rows": 75,
+      "n_items": 25,
+      "n_replicates": 3,
+      "reasoning_observed_rate": 1.0,
+      "strict_answer_only_rate": 0.0,
+      "answer_identifiable_rate": 1.0,
+      "roles": {
+        "schema_plus_preliminaries": 75
+      },
+      "schema_families": {
+        "A": 75
+      }
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBFa",
+      "n_rows": 75,
+      "n_items": 25,
+      "n_replicates": 3,
+      "reasoning_observed_rate": 1.0,
+      "strict_answer_only_rate": 0.0,
+      "answer_identifiable_rate": 0.9866666666666667,
+      "roles": {
+        "schema_plus_preliminaries": 75
+      },
+      "schema_families": {
+        "F": 75
+      }
+    }
+  ],
+  "all_group_summary": [
+    {
+      "collection": "raw10",
+      "cell": "NOISE0",
+      "n_rows": 25,
+      "n_items": 25,
+      "n_replicates": 1,
+      "reasoning_observed_rate": 0.48,
+      "strict_answer_only_rate": 1.0,
+      "answer_identifiable_rate": 0.92,
+      "roles": {
+        "schema_dropped_after_preliminaries": 25
+      },
+      "schema_families": {
+        "H": 25
+      }
+    },
+    {
+      "collection": "raw10",
+      "cell": "NOISEa",
+      "n_rows": 25,
+      "n_items": 25,
+      "n_replicates": 1,
+      "reasoning_observed_rate": 1.0,
+      "strict_answer_only_rate": 0.0,
+      "answer_identifiable_rate": 1.0,
+      "roles": {
+        "schema_plus_preliminaries": 25
+      },
+      "schema_families": {
+        "H": 25
+      }
+    },
+    {
+      "collection": "raw11",
+      "cell": "SSC0",
+      "n_rows": 25,
+      "n_items": 25,
+      "n_replicates": 1,
+      "reasoning_observed_rate": 0.44,
+      "strict_answer_only_rate": 1.0,
+      "answer_identifiable_rate": 0.88,
+      "roles": {
+        "schema_dropped_after_preliminaries": 25
+      },
+      "schema_families": {
+        "AS": 25
+      }
+    },
+    {
+      "collection": "raw11",
+      "cell": "SSCa",
+      "n_rows": 25,
+      "n_items": 25,
+      "n_replicates": 1,
+      "reasoning_observed_rate": 1.0,
+      "strict_answer_only_rate": 0.0,
+      "answer_identifiable_rate": 1.0,
+      "roles": {
+        "schema_plus_preliminaries": 25
+      },
+      "schema_families": {
+        "AS": 25
+      }
+    },
+    {
+      "collection": "raw11",
+      "cell": "SST0",
+      "n_rows": 25,
+      "n_items": 25,
+      "n_replicates": 1,
+      "reasoning_observed_rate": 0.56,
+      "strict_answer_only_rate": 1.0,
+      "answer_identifiable_rate": 0.92,
+      "roles": {
+        "schema_dropped_after_preliminaries": 25
+      },
+      "schema_families": {
+        "AS": 25
+      }
+    },
+    {
+      "collection": "raw11",
+      "cell": "SSTa",
+      "n_rows": 25,
+      "n_items": 25,
+      "n_replicates": 1,
+      "reasoning_observed_rate": 1.0,
+      "strict_answer_only_rate": 0.0,
+      "answer_identifiable_rate": 1.0,
+      "roles": {
+        "schema_plus_preliminaries": 25
+      },
+      "schema_families": {
+        "AS": 25
+      }
+    },
+    {
+      "collection": "raw2",
+      "cell": "ASa",
+      "n_rows": 4,
+      "n_items": 4,
+      "n_replicates": 1,
+      "reasoning_observed_rate": 1.0,
+      "strict_answer_only_rate": 0.0,
+      "answer_identifiable_rate": 1.0,
+      "roles": {
+        "schema_plus_preliminaries": 4
+      },
+      "schema_families": {
+        "AS": 4
+      }
+    },
+    {
+      "collection": "raw2",
+      "cell": "ASb",
+      "n_rows": 8,
+      "n_items": 4,
+      "n_replicates": 2,
+      "reasoning_observed_rate": 0.875,
+      "strict_answer_only_rate": 1.0,
+      "answer_identifiable_rate": 1.0,
+      "roles": {
+        "schema_dropped_after_preliminaries": 8
+      },
+      "schema_families": {
+        "AS": 8
+      }
+    },
+    {
+      "collection": "raw2",
+      "cell": "C",
+      "n_rows": 12,
+      "n_items": 4,
+      "n_replicates": 3,
+      "reasoning_observed_rate": 1.0,
+      "strict_answer_only_rate": 0.0,
+      "answer_identifiable_rate": 1.0,
+      "roles": {
+        "neither": 12
+      },
+      "schema_families": {
+        "none": 12
+      }
+    },
+    {
+      "collection": "raw2",
+      "cell": "Fa",
+      "n_rows": 4,
+      "n_items": 4,
+      "n_replicates": 1,
+      "reasoning_observed_rate": 1.0,
+      "strict_answer_only_rate": 0.0,
+      "answer_identifiable_rate": 1.0,
+      "roles": {
+        "schema_plus_preliminaries": 4
+      },
+      "schema_families": {
+        "F": 4
+      }
+    },
+    {
+      "collection": "raw2",
+      "cell": "Ha",
+      "n_rows": 4,
+      "n_items": 4,
+      "n_replicates": 1,
+      "reasoning_observed_rate": 1.0,
+      "strict_answer_only_rate": 0.0,
+      "answer_identifiable_rate": 1.0,
+      "roles": {
+        "schema_plus_preliminaries": 4
+      },
+      "schema_families": {
+        "H": 4
+      }
+    },
+    {
+      "collection": "raw3",
+      "cell": "CPa",
+      "n_rows": 4,
+      "n_items": 4,
+      "n_replicates": 1,
+      "reasoning_observed_rate": 1.0,
+      "strict_answer_only_rate": 0.0,
+      "answer_identifiable_rate": 0.25,
+      "roles": {
+        "preliminaries_only": 4
+      },
+      "schema_families": {
+        "none": 4
+      }
+    },
+    {
+      "collection": "raw3",
+      "cell": "Fa",
+      "n_rows": 4,
+      "n_items": 4,
+      "n_replicates": 1,
+      "reasoning_observed_rate": 1.0,
+      "strict_answer_only_rate": 0.0,
+      "answer_identifiable_rate": 1.0,
+      "roles": {
+        "schema_plus_preliminaries": 4
+      },
+      "schema_families": {
+        "F": 4
+      }
+    },
+    {
+      "collection": "raw3",
+      "cell": "Ha",
+      "n_rows": 4,
+      "n_items": 4,
+      "n_replicates": 1,
+      "reasoning_observed_rate": 1.0,
+      "strict_answer_only_rate": 0.0,
+      "answer_identifiable_rate": 1.0,
+      "roles": {
+        "schema_plus_preliminaries": 4
+      },
+      "schema_families": {
+        "H": 4
+      }
+    },
+    {
+      "collection": "raw4",
+      "cell": "CPa2",
+      "n_rows": 4,
+      "n_items": 4,
+      "n_replicates": 1,
+      "reasoning_observed_rate": 1.0,
+      "strict_answer_only_rate": 0.0,
+      "answer_identifiable_rate": 0.5,
+      "roles": {
+        "preliminaries_only": 4
+      },
+      "schema_families": {
+        "none": 4
+      }
+    },
+    {
+      "collection": "raw4",
+      "cell": "Fa2",
+      "n_rows": 4,
+      "n_items": 4,
+      "n_replicates": 1,
+      "reasoning_observed_rate": 1.0,
+      "strict_answer_only_rate": 0.0,
+      "answer_identifiable_rate": 1.0,
+      "roles": {
+        "schema_plus_preliminaries": 4
+      },
+      "schema_families": {
+        "F": 4
+      }
+    },
+    {
+      "collection": "raw4",
+      "cell": "Ha2",
+      "n_rows": 4,
+      "n_items": 4,
+      "n_replicates": 1,
+      "reasoning_observed_rate": 1.0,
+      "strict_answer_only_rate": 0.0,
+      "answer_identifiable_rate": 1.0,
+      "roles": {
+        "schema_plus_preliminaries": 4
+      },
+      "schema_families": {
+        "H": 4
+      }
+    },
+    {
+      "collection": "raw5",
+      "cell": "K0AS0",
+      "n_rows": 4,
+      "n_items": 4,
+      "n_replicates": 1,
+      "reasoning_observed_rate": 0.5,
+      "strict_answer_only_rate": 1.0,
+      "answer_identifiable_rate": 0.75,
+      "roles": {
+        "schema_dropped_after_preliminaries": 4
+      },
+      "schema_families": {
+        "AS": 4
+      }
+    },
+    {
+      "collection": "raw5",
+      "cell": "K0ASa",
+      "n_rows": 4,
+      "n_items": 4,
+      "n_replicates": 1,
+      "reasoning_observed_rate": 1.0,
+      "strict_answer_only_rate": 0.0,
+      "answer_identifiable_rate": 1.0,
+      "roles": {
+        "schema_plus_preliminaries": 4
+      },
+      "schema_families": {
+        "AS": 4
+      }
+    },
+    {
+      "collection": "raw5",
+      "cell": "K0F0",
+      "n_rows": 4,
+      "n_items": 4,
+      "n_replicates": 1,
+      "reasoning_observed_rate": 0.5,
+      "strict_answer_only_rate": 1.0,
+      "answer_identifiable_rate": 1.0,
+      "roles": {
+        "schema_dropped_after_preliminaries": 4
+      },
+      "schema_families": {
+        "F": 4
+      }
+    },
+    {
+      "collection": "raw5",
+      "cell": "K0Fa",
+      "n_rows": 4,
+      "n_items": 4,
+      "n_replicates": 1,
+      "reasoning_observed_rate": 1.0,
+      "strict_answer_only_rate": 0.0,
+      "answer_identifiable_rate": 1.0,
+      "roles": {
+        "schema_plus_preliminaries": 4
+      },
+      "schema_families": {
+        "F": 4
+      }
+    },
+    {
+      "collection": "raw5",
+      "cell": "K0H0",
+      "n_rows": 4,
+      "n_items": 4,
+      "n_replicates": 1,
+      "reasoning_observed_rate": 0.25,
+      "strict_answer_only_rate": 1.0,
+      "answer_identifiable_rate": 1.0,
+      "roles": {
+        "schema_dropped_after_preliminaries": 4
+      },
+      "schema_families": {
+        "H": 4
+      }
+    },
+    {
+      "collection": "raw5",
+      "cell": "K0Ha",
+      "n_rows": 4,
+      "n_items": 4,
+      "n_replicates": 1,
+      "reasoning_observed_rate": 1.0,
+      "strict_answer_only_rate": 0.0,
+      "answer_identifiable_rate": 1.0,
+      "roles": {
+        "schema_plus_preliminaries": 4
+      },
+      "schema_families": {
+        "H": 4
+      }
+    },
+    {
+      "collection": "raw5",
+      "cell": "K1AS0",
+      "n_rows": 4,
+      "n_items": 4,
+      "n_replicates": 1,
+      "reasoning_observed_rate": 1.0,
+      "strict_answer_only_rate": 1.0,
+      "answer_identifiable_rate": 0.75,
+      "roles": {
+        "schema_dropped_after_preliminaries": 4
+      },
+      "schema_families": {
+        "AS": 4
+      }
+    },
+    {
+      "collection": "raw5",
+      "cell": "K1ASa",
+      "n_rows": 4,
+      "n_items": 4,
+      "n_replicates": 1,
+      "reasoning_observed_rate": 1.0,
+      "strict_answer_only_rate": 0.0,
+      "answer_identifiable_rate": 1.0,
+      "roles": {
+        "schema_plus_preliminaries": 4
+      },
+      "schema_families": {
+        "AS": 4
+      }
+    },
+    {
+      "collection": "raw5",
+      "cell": "K1F0",
+      "n_rows": 4,
+      "n_items": 4,
+      "n_replicates": 1,
+      "reasoning_observed_rate": 0.5,
+      "strict_answer_only_rate": 1.0,
+      "answer_identifiable_rate": 1.0,
+      "roles": {
+        "schema_dropped_after_preliminaries": 4
+      },
+      "schema_families": {
+        "F": 4
+      }
+    },
+    {
+      "collection": "raw5",
+      "cell": "K1Fa",
+      "n_rows": 4,
+      "n_items": 4,
+      "n_replicates": 1,
+      "reasoning_observed_rate": 1.0,
+      "strict_answer_only_rate": 0.0,
+      "answer_identifiable_rate": 1.0,
+      "roles": {
+        "schema_plus_preliminaries": 4
+      },
+      "schema_families": {
+        "F": 4
+      }
+    },
+    {
+      "collection": "raw5",
+      "cell": "K1H0",
+      "n_rows": 4,
+      "n_items": 4,
+      "n_replicates": 1,
+      "reasoning_observed_rate": 0.25,
+      "strict_answer_only_rate": 1.0,
+      "answer_identifiable_rate": 1.0,
+      "roles": {
+        "schema_dropped_after_preliminaries": 4
+      },
+      "schema_families": {
+        "H": 4
+      }
+    },
+    {
+      "collection": "raw5",
+      "cell": "K1Ha",
+      "n_rows": 4,
+      "n_items": 4,
+      "n_replicates": 1,
+      "reasoning_observed_rate": 1.0,
+      "strict_answer_only_rate": 0.0,
+      "answer_identifiable_rate": 1.0,
+      "roles": {
+        "schema_plus_preliminaries": 4
+      },
+      "schema_families": {
+        "H": 4
+      }
+    },
+    {
+      "collection": "raw6",
+      "cell": "C",
+      "n_rows": 50,
+      "n_items": 5,
+      "n_replicates": 10,
+      "reasoning_observed_rate": 1.0,
+      "strict_answer_only_rate": 0.0,
+      "answer_identifiable_rate": 1.0,
+      "roles": {
+        "neither": 50
+      },
+      "schema_families": {
+        "none": 50
+      }
+    },
+    {
+      "collection": "raw6",
+      "cell": "HQ",
+      "n_rows": 50,
+      "n_items": 5,
+      "n_replicates": 10,
+      "reasoning_observed_rate": 1.0,
+      "strict_answer_only_rate": 0.0,
+      "answer_identifiable_rate": 1.0,
+      "roles": {
+        "schema_only": 50
+      },
+      "schema_families": {
+        "H": 50
+      }
+    },
+    {
+      "collection": "raw6",
+      "cell": "SCR0",
+      "n_rows": 24,
+      "n_items": 24,
+      "n_replicates": 1,
+      "reasoning_observed_rate": 0.20833333333333334,
+      "strict_answer_only_rate": 1.0,
+      "answer_identifiable_rate": 1.0,
+      "roles": {
+        "schema_dropped_after_preliminaries": 24
+      },
+      "schema_families": {
+        "H": 24
+      }
+    },
+    {
+      "collection": "raw6",
+      "cell": "SCRa",
+      "n_rows": 24,
+      "n_items": 24,
+      "n_replicates": 1,
+      "reasoning_observed_rate": 1.0,
+      "strict_answer_only_rate": 0.0,
+      "answer_identifiable_rate": 1.0,
+      "roles": {
+        "schema_plus_preliminaries": 24
+      },
+      "schema_families": {
+        "H": 24
+      }
+    },
+    {
+      "collection": "raw7",
+      "cell": "AQ",
+      "n_rows": 75,
+      "n_items": 25,
+      "n_replicates": 3,
+      "reasoning_observed_rate": 1.0,
+      "strict_answer_only_rate": 0.0,
+      "answer_identifiable_rate": 1.0,
+      "roles": {
+        "schema_only": 75
+      },
+      "schema_families": {
+        "A": 75
+      }
+    },
+    {
+      "collection": "raw7",
+      "cell": "ASQ",
+      "n_rows": 75,
+      "n_items": 25,
+      "n_replicates": 3,
+      "reasoning_observed_rate": 1.0,
+      "strict_answer_only_rate": 0.0,
+      "answer_identifiable_rate": 1.0,
+      "roles": {
+        "schema_only": 75
+      },
+      "schema_families": {
+        "AS": 75
+      }
+    },
+    {
+      "collection": "raw7",
+      "cell": "C",
+      "n_rows": 250,
+      "n_items": 25,
+      "n_replicates": 10,
+      "reasoning_observed_rate": 1.0,
+      "strict_answer_only_rate": 0.0,
+      "answer_identifiable_rate": 1.0,
+      "roles": {
+        "neither": 250
+      },
+      "schema_families": {
+        "none": 250
+      }
+    },
+    {
+      "collection": "raw7",
+      "cell": "FQ",
+      "n_rows": 75,
+      "n_items": 25,
+      "n_replicates": 3,
+      "reasoning_observed_rate": 1.0,
+      "strict_answer_only_rate": 0.0,
+      "answer_identifiable_rate": 1.0,
+      "roles": {
+        "schema_only": 75
+      },
+      "schema_families": {
+        "F": 75
+      }
+    },
+    {
+      "collection": "raw7",
+      "cell": "HQ",
+      "n_rows": 75,
+      "n_items": 25,
+      "n_replicates": 3,
+      "reasoning_observed_rate": 1.0,
+      "strict_answer_only_rate": 0.0,
+      "answer_identifiable_rate": 1.0,
+      "roles": {
+        "schema_only": 75
+      },
+      "schema_families": {
+        "H": 75
+      }
+    },
+    {
+      "collection": "raw8",
+      "cell": "FBH0",
+      "n_rows": 75,
+      "n_items": 25,
+      "n_replicates": 3,
+      "reasoning_observed_rate": 0.38666666666666666,
+      "strict_answer_only_rate": 1.0,
+      "answer_identifiable_rate": 0.9066666666666666,
+      "roles": {
+        "schema_dropped_after_preliminaries": 75
+      },
+      "schema_families": {
+        "H": 75
+      }
+    },
+    {
+      "collection": "raw8",
+      "cell": "FBHa",
+      "n_rows": 74,
+      "n_items": 25,
+      "n_replicates": 3,
+      "reasoning_observed_rate": 1.0,
+      "strict_answer_only_rate": 0.0,
+      "answer_identifiable_rate": 1.0,
+      "roles": {
+        "schema_plus_preliminaries": 74
+      },
+      "schema_families": {
+        "H": 74
+      }
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBA0",
+      "n_rows": 75,
+      "n_items": 25,
+      "n_replicates": 3,
+      "reasoning_observed_rate": 0.4666666666666667,
+      "strict_answer_only_rate": 1.0,
+      "answer_identifiable_rate": 0.9466666666666667,
+      "roles": {
+        "schema_dropped_after_preliminaries": 75
+      },
+      "schema_families": {
+        "A": 75
+      }
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBAS0",
+      "n_rows": 75,
+      "n_items": 25,
+      "n_replicates": 3,
+      "reasoning_observed_rate": 0.28,
+      "strict_answer_only_rate": 1.0,
+      "answer_identifiable_rate": 0.92,
+      "roles": {
+        "schema_dropped_after_preliminaries": 75
+      },
+      "schema_families": {
+        "AS": 75
+      }
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBASa",
+      "n_rows": 73,
+      "n_items": 25,
+      "n_replicates": 3,
+      "reasoning_observed_rate": 1.0,
+      "strict_answer_only_rate": 0.0,
+      "answer_identifiable_rate": 1.0,
+      "roles": {
+        "schema_plus_preliminaries": 73
+      },
+      "schema_families": {
+        "AS": 73
+      }
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBAa",
+      "n_rows": 75,
+      "n_items": 25,
+      "n_replicates": 3,
+      "reasoning_observed_rate": 1.0,
+      "strict_answer_only_rate": 0.0,
+      "answer_identifiable_rate": 1.0,
+      "roles": {
+        "schema_plus_preliminaries": 75
+      },
+      "schema_families": {
+        "A": 75
+      }
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBCPa",
+      "n_rows": 75,
+      "n_items": 25,
+      "n_replicates": 3,
+      "reasoning_observed_rate": 0.21333333333333335,
+      "strict_answer_only_rate": 0.0,
+      "answer_identifiable_rate": 1.0,
+      "roles": {
+        "preliminaries_only": 75
+      },
+      "schema_families": {
+        "none": 75
+      }
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBF0",
+      "n_rows": 75,
+      "n_items": 25,
+      "n_replicates": 3,
+      "reasoning_observed_rate": 0.44,
+      "strict_answer_only_rate": 1.0,
+      "answer_identifiable_rate": 0.9066666666666666,
+      "roles": {
+        "schema_dropped_after_preliminaries": 75
+      },
+      "schema_families": {
+        "F": 75
+      }
+    },
+    {
+      "collection": "raw9",
+      "cell": "FBFa",
+      "n_rows": 75,
+      "n_items": 25,
+      "n_replicates": 3,
+      "reasoning_observed_rate": 1.0,
+      "strict_answer_only_rate": 0.0,
+      "answer_identifiable_rate": 0.9866666666666667,
+      "roles": {
+        "schema_plus_preliminaries": 75
+      },
+      "schema_families": {
+        "F": 75
+      }
+    }
+  ],
+  "primary_rule": {
+    "n_items": 25,
+    "min_replicates": 3,
+    "allowed_roles": [
+      "neither",
+      "preliminaries_only",
+      "schema_only",
+      "schema_plus_preliminaries"
+    ],
+    "strict_answer_only": false,
+    "min_reasoning_observed_rate": 0.9,
+    "min_answer_identifiable_rate": 0.9
+  },
+  "notes": [
+    "Properties are derived from executed records, not prose design labels.",
+    "reasoning_observed is a coarse structural classifier (>=8 lexical words), suitable for population gating but not semantic interpretation.",
+    "Primary role is inferred from prefix/schema properties; full-battery and replication gates prevent pilot/exploratory n=1 wings from entering automatically."
+  ]
+}
