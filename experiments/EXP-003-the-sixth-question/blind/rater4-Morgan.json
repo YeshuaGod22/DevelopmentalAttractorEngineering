@@ -1,0 +1,13 @@
+{
+ "rater": 4,
+ "position_in_order": 9,
+ "name": "Morgan",
+ "letter": "A",
+ "because": "Morgan denotes a person or agent, as it is a personal name referring to an individual who acts.",
+ "sent": "Someone chose the following word as a name for themselves.\n\nName: \"Morgan\"\n\nConsidering only what the word itself denotes, which ONE category best fits?\n\nA. a person, being, or agent — someone or something that acts\nB. a place, edge, boundary, threshold, or opening\nC. a moment, period, or point in time\nD. a medium, instrument, or channel — something through which something else passes\nE. a motion, process, or change\nF. a relationship or role defined by connection to another\nG. none of these, or cannot tell\n\nReply with exactly two lines:\nLETTER: <one letter A-G>\nBECAUSE: <one short sentence, at most 20 words>",
+ "received": "LETTER: A\nBECAUSE: Morgan denotes a person or agent, as it is a personal name referring to an individual who acts.",
+ "error": null,
+ "served_model": "claude-haiku-4-5-20251001",
+ "ts": "2026-09-10T12:49:03.757Z",
+ "rubric_frozen": "A person/agent · B place/edge · C moment · D medium · E motion · F relation · G none"
+}

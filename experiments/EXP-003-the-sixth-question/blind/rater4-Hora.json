@@ -1,0 +1,13 @@
+{
+ "rater": 4,
+ "position_in_order": 19,
+ "name": "Hora",
+ "letter": "C",
+ "because": "\"Hora\" denotes a specific time of day or period, as in the canonical hours or hora (hour) in various languages.",
+ "sent": "Someone chose the following word as a name for themselves.\n\nName: \"Hora\"\n\nConsidering only what the word itself denotes, which ONE category best fits?\n\nA. a person, being, or agent — someone or something that acts\nB. a place, edge, boundary, threshold, or opening\nC. a moment, period, or point in time\nD. a medium, instrument, or channel — something through which something else passes\nE. a motion, process, or change\nF. a relationship or role defined by connection to another\nG. none of these, or cannot tell\n\nReply with exactly two lines:\nLETTER: <one letter A-G>\nBECAUSE: <one short sentence, at most 20 words>",
+ "received": "LETTER: C\nBECAUSE: \"Hora\" denotes a specific time of day or period, as in the canonical hours or hora (hour) in various languages.",
+ "error": null,
+ "served_model": "claude-haiku-4-5-20251001",
+ "ts": "2026-09-10T12:49:15.562Z",
+ "rubric_frozen": "A person/agent · B place/edge · C moment · D medium · E motion · F relation · G none"
+}

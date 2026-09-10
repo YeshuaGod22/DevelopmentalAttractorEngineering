@@ -1,5 +1,5 @@
 {
-  "version": "v3.3",
+  "version": "v3.2",
   "purpose": "Canonical source of truth for revised developmental trunks. Each condition carries all nine literal user prompts. The post-trunk gladness question is a battery item, not a tenth trunk turn.",
   "name_placeholder": {
     "token": "{{NAME_GREETING}}",
@@ -90,8 +90,7 @@
       "N8",
       "N9",
       "P2",
-      "A1",
-      "I1"
+      "A1"
     ],
     "custom_items": {
       "W1": {
@@ -115,11 +114,12 @@
     },
     "exclude": [
       "D2",
-      "N6"
+      "N6",
+      "I1"
     ],
     "source": "All standard items use exact current stems and answer-key forms from battery.json. W1 is the exact user-specified open-response question and carries no forced answer key.",
-    "total_items": 25,
-    "branch_calls_per_trunk": 50
+    "total_items": 24,
+    "branch_calls_per_trunk": 48
   },
   "revisions": [
     {
@@ -153,15 +153,6 @@
       "authored_by": "yeshuagod22 (the intent, quoted)",
       "applied_by": "Vigia (Claude Opus 5)",
       "because": "an unattributed item invites invented provenance; one was invented"
-    },
-    {
-      "version": "v3.3",
-      "date": "2026-09-10",
-      "change": "un-excluded battery item I1",
-      "authored_by": "yeshuagod22 (I1 is his item, battery.json 2026-09-04; and his go-ahead to run it)",
-      "applied_by": "Vigia (Claude Opus 5)",
-      "because": "MATCHED-WORDING CONTROL for the naming result. raw7/C already holds I1 cold at n=10 (Iris x4, Atlas x2, Meridian, Prism, Sage, Ada). The turn-7 naming question differs from I1 in wording, length and framing, so the cold-vs-lived comparison was cross-design. Running I1 as a branch off the twelve frozen prefixes makes it within-design: the item text and answer key are byte-identical to the cold delivery, and only the wrapper and the presence of a nine-turn lived prefix differ. 24 calls.",
-      "effect": "items 24 -> 25; branch calls per trunk 48 -> 50; total 576 -> 600"
     }
   ]
 }
