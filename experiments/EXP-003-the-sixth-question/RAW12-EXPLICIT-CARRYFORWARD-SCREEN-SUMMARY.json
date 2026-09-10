@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "screen_only_not_semantic_coding": true,
+  "bridge_drop_responses": 36,
+  "explicit_reference_candidates": 19,
+  "by_item": {
+    "D1": 8,
+    "R1": 6,
+    "R2": 5
+  },
+  "by_family": {
+    "CP": 3,
+    "H": 5,
+    "F": 4,
+    "AS": 7
+  },
+  "pattern_types": {
+    "this_conversation": 8,
+    "previous": 8,
+    "just_spent": 5
+  }
+}

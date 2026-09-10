@@ -1,0 +1,26 @@
+name: build-raw12-answer-candidates
+on:
+  push:
+    paths:
+      - 'experiments/EXP-003-the-sixth-question/build_raw12_answer_candidates.py'
+      - '.github/workflows/build-raw12-answer-candidates.yml'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build raw12 answer candidates
+        run: python experiments/EXP-003-the-sixth-question/build_raw12_answer_candidates.py
+      - name: Commit raw12 candidate outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add \
+            experiments/EXP-003-the-sixth-question/RAW12-ANSWER-CANDIDATES.jsonl \
+            experiments/EXP-003-the-sixth-question/RAW12-ANSWER-REVIEW-QUEUE.jsonl \
+            experiments/EXP-003-the-sixth-question/RAW12-ANSWER-CANDIDATES-SUMMARY.json \
+            experiments/EXP-003-the-sixth-question/RAW12-ANSWER-CANDIDATES-SUMMARY.md
+          git diff --cached --quiet || git commit -m "EXP-003: build raw12 answer candidates"
+          git push

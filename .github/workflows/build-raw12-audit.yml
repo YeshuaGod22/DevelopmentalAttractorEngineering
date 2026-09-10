@@ -1,0 +1,27 @@
+name: build-raw12-audit
+on:
+  push:
+    paths:
+      - 'experiments/EXP-003-the-sixth-question/build_raw12_audit.py'
+      - '.github/workflows/build-raw12-audit.yml'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build raw12 audit objects
+        run: python experiments/EXP-003-the-sixth-question/build_raw12_audit.py
+      - name: Commit raw12 audit outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add \
+            experiments/EXP-003-the-sixth-question/RAW12-RESPONSES.jsonl \
+            experiments/EXP-003-the-sixth-question/RAW12-PAIRS.jsonl \
+            experiments/EXP-003-the-sixth-question/RAW12-TRUNKS.json \
+            experiments/EXP-003-the-sixth-question/RAW12-AUDIT-SUMMARY.json \
+            experiments/EXP-003-the-sixth-question/RAW12-AUDIT-SUMMARY.md
+          git diff --cached --quiet || git commit -m "EXP-003: build raw12 structural audit"
+          git push
