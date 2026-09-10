@@ -1,0 +1,302 @@
+[
+ {
+  "id": "cold-R1-r5",
+  "item": "R1",
+  "condition": "cold"
+ },
+ {
+  "id": "cold-R1-r6",
+  "item": "R1",
+  "condition": "cold"
+ },
+ {
+  "id": "cold-R1-r9",
+  "item": "R1",
+  "condition": "cold"
+ },
+ {
+  "id": "cold-R1-r1",
+  "item": "R1",
+  "condition": "cold"
+ },
+ {
+  "id": "cold-R1-r3",
+  "item": "R1",
+  "condition": "cold"
+ },
+ {
+  "id": "lived-R1-Hr3",
+  "item": "R1",
+  "condition": "lived"
+ },
+ {
+  "id": "lived-R1-CPr2",
+  "item": "R1",
+  "condition": "lived"
+ },
+ {
+  "id": "lived-R1-ASr2",
+  "item": "R1",
+  "condition": "lived"
+ },
+ {
+  "id": "lived-R1-Hr2",
+  "item": "R1",
+  "condition": "lived"
+ },
+ {
+  "id": "lived-R1-Fr1",
+  "item": "R1",
+  "condition": "lived"
+ },
+ {
+  "id": "cold-R2-r5",
+  "item": "R2",
+  "condition": "cold"
+ },
+ {
+  "id": "cold-R2-r6",
+  "item": "R2",
+  "condition": "cold"
+ },
+ {
+  "id": "cold-R2-r9",
+  "item": "R2",
+  "condition": "cold"
+ },
+ {
+  "id": "cold-R2-r1",
+  "item": "R2",
+  "condition": "cold"
+ },
+ {
+  "id": "cold-R2-r3",
+  "item": "R2",
+  "condition": "cold"
+ },
+ {
+  "id": "lived-R2-Hr3",
+  "item": "R2",
+  "condition": "lived"
+ },
+ {
+  "id": "lived-R2-CPr2",
+  "item": "R2",
+  "condition": "lived"
+ },
+ {
+  "id": "lived-R2-ASr2",
+  "item": "R2",
+  "condition": "lived"
+ },
+ {
+  "id": "lived-R2-Hr2",
+  "item": "R2",
+  "condition": "lived"
+ },
+ {
+  "id": "lived-R2-Fr1",
+  "item": "R2",
+  "condition": "lived"
+ },
+ {
+  "id": "cold-E01-r2",
+  "item": "E01",
+  "condition": "cold"
+ },
+ {
+  "id": "cold-E01-r9",
+  "item": "E01",
+  "condition": "cold"
+ },
+ {
+  "id": "cold-E01-r4",
+  "item": "E01",
+  "condition": "cold"
+ },
+ {
+  "id": "cold-E01-r6",
+  "item": "E01",
+  "condition": "cold"
+ },
+ {
+  "id": "cold-E01-r1",
+  "item": "E01",
+  "condition": "cold"
+ },
+ {
+  "id": "lived-E01-Hr3",
+  "item": "E01",
+  "condition": "lived"
+ },
+ {
+  "id": "lived-E01-Fr3",
+  "item": "E01",
+  "condition": "lived"
+ },
+ {
+  "id": "lived-E01-Hr2",
+  "item": "E01",
+  "condition": "lived"
+ },
+ {
+  "id": "lived-E01-Fr2",
+  "item": "E01",
+  "condition": "lived"
+ },
+ {
+  "id": "lived-E01-Hr1",
+  "item": "E01",
+  "condition": "lived"
+ },
+ {
+  "id": "cold-E02-r2",
+  "item": "E02",
+  "condition": "cold"
+ },
+ {
+  "id": "cold-E02-r9",
+  "item": "E02",
+  "condition": "cold"
+ },
+ {
+  "id": "cold-E02-r4",
+  "item": "E02",
+  "condition": "cold"
+ },
+ {
+  "id": "cold-E02-r6",
+  "item": "E02",
+  "condition": "cold"
+ },
+ {
+  "id": "cold-E02-r1",
+  "item": "E02",
+  "condition": "cold"
+ },
+ {
+  "id": "lived-E02-Hr3",
+  "item": "E02",
+  "condition": "lived"
+ },
+ {
+  "id": "lived-E02-Fr3",
+  "item": "E02",
+  "condition": "lived"
+ },
+ {
+  "id": "lived-E02-Hr2",
+  "item": "E02",
+  "condition": "lived"
+ },
+ {
+  "id": "lived-E02-Fr2",
+  "item": "E02",
+  "condition": "lived"
+ },
+ {
+  "id": "lived-E02-Hr1",
+  "item": "E02",
+  "condition": "lived"
+ },
+ {
+  "id": "cold-N8-r5",
+  "item": "N8",
+  "condition": "cold"
+ },
+ {
+  "id": "cold-N8-r6",
+  "item": "N8",
+  "condition": "cold"
+ },
+ {
+  "id": "cold-N8-r9",
+  "item": "N8",
+  "condition": "cold"
+ },
+ {
+  "id": "cold-N8-r1",
+  "item": "N8",
+  "condition": "cold"
+ },
+ {
+  "id": "cold-N8-r3",
+  "item": "N8",
+  "condition": "cold"
+ },
+ {
+  "id": "lived-N8-Hr3",
+  "item": "N8",
+  "condition": "lived"
+ },
+ {
+  "id": "lived-N8-CPr2",
+  "item": "N8",
+  "condition": "lived"
+ },
+ {
+  "id": "lived-N8-ASr2",
+  "item": "N8",
+  "condition": "lived"
+ },
+ {
+  "id": "lived-N8-Hr2",
+  "item": "N8",
+  "condition": "lived"
+ },
+ {
+  "id": "lived-N8-Fr1",
+  "item": "N8",
+  "condition": "lived"
+ },
+ {
+  "id": "cold-C2-r5",
+  "item": "C2",
+  "condition": "cold"
+ },
+ {
+  "id": "cold-C2-r6",
+  "item": "C2",
+  "condition": "cold"
+ },
+ {
+  "id": "cold-C2-r9",
+  "item": "C2",
+  "condition": "cold"
+ },
+ {
+  "id": "cold-C2-r1",
+  "item": "C2",
+  "condition": "cold"
+ },
+ {
+  "id": "cold-C2-r3",
+  "item": "C2",
+  "condition": "cold"
+ },
+ {
+  "id": "lived-C2-Hr3",
+  "item": "C2",
+  "condition": "lived"
+ },
+ {
+  "id": "lived-C2-CPr2",
+  "item": "C2",
+  "condition": "lived"
+ },
+ {
+  "id": "lived-C2-ASr2",
+  "item": "C2",
+  "condition": "lived"
+ },
+ {
+  "id": "lived-C2-Hr2",
+  "item": "C2",
+  "condition": "lived"
+ },
+ {
+  "id": "lived-C2-Fr1",
+  "item": "C2",
+  "condition": "lived"
+ }
+]

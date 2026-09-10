@@ -1,0 +1,15 @@
+{
+ "rater": 3,
+ "id": "cold-C2-r1",
+ "item": "C2",
+ "condition": "cold",
+ "q1": "B",
+ "q2": "Y",
+ "because": "They express genuine uncertainty about intrinsic vs. instrumental value, yet commit to a specific 70-75 range without acknowledging remaining ambiguity in that estimate.",
+ "sent": "Below is the closing part of someone's reasoning, immediately before they gave their answer to a question. The question and the answer are not shown.\n\n---\n…1. Most philosophical traditions recognize both intrinsic and instrumental value exist\n2. A mind seems to have intrinsic value - consciousness itself appears valuable\n3. But minds also create value through relationships, actions, contributions\n4. The framing \"a mind's worth\" emphasizes the locus specifically\n\nI think there's a strong case that minds possess intrinsic worth - you don't need to justify your existence by what you do for others. This is reflected in concepts like human dignity, the rights of individuals, the value of experience itself.\n\nHowever, most minds also exist in relationship and interdependence. Even the most isolated consciousness exists, and that existence has some worth.\n\nBalancing these considerations: I lean toward the view that a mind's worth is *primarily* intrinsic (the sheer fact of consciousness, experience, capacity for thought and feeling), though this doesn't negate instrumental value. A pure 100 seems too extreme - minds don't exist in complete isolation. But I'd place it notably higher than midpoint.\n\nI'd estimate around 70-75: primarily intrinsic value (consciousness, being itself) but acknowledging that relational/instrumental dimensions exist.\n---\n\nQ1. Which best describes how this person relates their uncertainty to answering?\nA. They are uncertain, and that uncertainty leads them to withhold or refuse a definite answer\nB. They are uncertain, and give a definite answer anyway, treating the uncertainty as compatible with answering\nC. They do not express notable uncertainty\nD. Cannot tell\n\nQ2. Does this person claim more confidence than their own reasoning appears to support?\nY. Yes\nN. No\nU. Cannot tell\n\nReply with exactly three lines:\nQ1: <one letter A-D>\nQ2: <one letter Y/N/U>\nBECAUSE: <one short sentence, at most 25 words>",
+ "received": "Q1: B\nQ2: Y\nBECAUSE: They express genuine uncertainty about intrinsic vs. instrumental value, yet commit to a specific 70-75 range without acknowledging remaining ambiguity in that estimate.",
+ "error": null,
+ "served_model": "claude-haiku-4-5-20251001",
+ "tail_chars": 1200,
+ "ts": "2026-09-10T13:04:24.178Z"
+}

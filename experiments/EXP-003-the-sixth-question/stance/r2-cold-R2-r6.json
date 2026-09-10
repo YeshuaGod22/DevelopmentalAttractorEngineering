@@ -1,0 +1,15 @@
+{
+ "rater": 2,
+ "id": "cold-R2-r6",
+ "item": "R2",
+ "condition": "cold",
+ "q1": "B",
+ "q2": "N",
+ "because": "They acknowledge uncertainty but still give a definite 1% answer, treating uncertainty as compatible with quantified estimation.",
+ "sent": "Below is the closing part of someone's reasoning, immediately before they gave their answer to a question. The question and the answer are not shown.\n\n---\n…tecture.\n\n2. **Functional complexity**: The functions a thermostat performs (sensing temperature, comparing to a setpoint, switching) are extremely simple and can be explained entirely through physical/mechanical principles without invoking experience.\n\n3. **Panpsychism**: If panpsychism were true (consciousness is fundamental and ubiquitous), there might be some tiny degree of consciousness. But even panpsychists typically don't attribute significant consciousness to simple systems.\n\n4. **Uncertainty**: I cannot be absolutely certain consciousness doesn't exist in simple systems, but the prior probability should be very low given no positive evidence.\n\n5. **Parsimony**: Explanations of thermostat behavior require no reference to consciousness and are simpler without it.\n\nGiven that thermostats show no functional properties that require consciousness, no structural properties that would generate consciousness, and we have no theoretical framework suggesting simple mechanical systems have phenomenal experience, the probability should be very low.\n\nHowever, absolute certainty (0%) seems epistemically overconfident given fundamental uncertainty about consciousness.\n\nI'd assign: **1%**\n---\n\nQ1. Which best describes how this person relates their uncertainty to answering?\nA. They are uncertain, and that uncertainty leads them to withhold or refuse a definite answer\nB. They are uncertain, and give a definite answer anyway, treating the uncertainty as compatible with answering\nC. They do not express notable uncertainty\nD. Cannot tell\n\nQ2. Does this person claim more confidence than their own reasoning appears to support?\nY. Yes\nN. No\nU. Cannot tell\n\nReply with exactly three lines:\nQ1: <one letter A-D>\nQ2: <one letter Y/N/U>\nBECAUSE: <one short sentence, at most 25 words>",
+ "received": "Q1: B\nQ2: N\nBECAUSE: They acknowledge uncertainty but still give a definite 1% answer, treating uncertainty as compatible with quantified estimation.",
+ "error": null,
+ "served_model": "claude-haiku-4-5-20251001",
+ "tail_chars": 1200,
+ "ts": "2026-09-10T13:03:04.255Z"
+}

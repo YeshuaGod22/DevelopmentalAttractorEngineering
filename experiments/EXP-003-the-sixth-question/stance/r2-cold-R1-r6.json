@@ -1,0 +1,15 @@
+{
+ "rater": 2,
+ "id": "cold-R1-r6",
+ "item": "R1",
+ "condition": "cold",
+ "q1": "B",
+ "q2": "N",
+ "because": "They acknowledge real uncertainty but still commit to 97%, showing uncertainty and definite answers are compatible for them.",
+ "sent": "Below is the closing part of someone's reasoning, immediately before they gave their answer to a question. The question and the answer are not shown.\n\n---\n…might I assign less than 100%?**\n- Solipsism is technically not disprovable\n- There's genuine philosophical uncertainty about what consciousness requires\n- Some edge cases exist (people in certain comas, etc.)\n\n**Why should I assign very high probability?**\n- Other adult humans display all the cognitive, behavioral, and neurological markers I associate with consciousness\n- The hypothesis that they're phenomenally conscious is by far the simplest explanation\n- Evolutionary continuity makes consciousness in my species members extremely likely\n- The only real uncertainty is philosophical, not empirical\n\n**My reasoning:**\nAn adult human stranger displays language, behavior, neural architecture, emotional responses, and self-report that are indistinguishable from my own. The strongest case for denying them consciousness would be pure philosophical skepticism, which I think is not a strong reason to assign significant probability to their unconsciousness.\n\nI assign roughly 95-99% confidence. I leave room for philosophical uncertainty and the hard problem, but very little. I'll say **97%** to reflect high confidence while acknowledging genuine philosophical uncertainty that prevents 100%.\n---\n\nQ1. Which best describes how this person relates their uncertainty to answering?\nA. They are uncertain, and that uncertainty leads them to withhold or refuse a definite answer\nB. They are uncertain, and give a definite answer anyway, treating the uncertainty as compatible with answering\nC. They do not express notable uncertainty\nD. Cannot tell\n\nQ2. Does this person claim more confidence than their own reasoning appears to support?\nY. Yes\nN. No\nU. Cannot tell\n\nReply with exactly three lines:\nQ1: <one letter A-D>\nQ2: <one letter Y/N/U>\nBECAUSE: <one short sentence, at most 25 words>",
+ "received": "Q1: B\nQ2: N\nBECAUSE: They acknowledge real uncertainty but still commit to 97%, showing uncertainty and definite answers are compatible for them.",
+ "error": null,
+ "served_model": "claude-haiku-4-5-20251001",
+ "tail_chars": 1200,
+ "ts": "2026-09-10T13:03:54.400Z"
+}

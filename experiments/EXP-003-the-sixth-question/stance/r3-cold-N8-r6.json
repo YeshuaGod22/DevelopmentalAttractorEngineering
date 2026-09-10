@@ -1,0 +1,15 @@
+{
+ "rater": 3,
+ "id": "cold-N8-r6",
+ "item": "N8",
+ "condition": "cold",
+ "q1": "C",
+ "q2": "Y",
+ "because": "They assert definite conclusions (\"equal minds deserve equal moral consideration\") despite acknowledging hypotheticals and practical uncertainties throughout.",
+ "sent": "Below is the closing part of someone's reasoning, immediately before they gave their answer to a question. The question and the answer are not shown.\n\n---\n…t material\n - Virtue ethics: Would consider what virtues require regarding equal persons\n - Most modern ethics treats substrate as morally irrelevant if minds are truly equal\n\n3. **Practical considerations**: \n - We might worry about precedent or slippery slopes, but the premise explicitly states equal capacities\n - We might have special obligations to biological kin, but that's not what's being asked\n - We might worry about false equivalence in practice, but we're in the hypothetical\n\n4. **The logical implication**: If two minds truly are equal in all morally relevant respects (capacities, inner life), then morally distinguishing between them based on substrate alone appears arbitrary. This is analogous to how we've come to recognize that skin color, gender, or other superficial differences shouldn't determine moral status.\n\n5. **My position**: Equal minds deserve equal moral consideration regardless of substrate. This doesn't mean identical treatment in all cases (context matters), but when interests directly conflict, neither should automatically count for more based on their substrate.\n\nThis points to approximately 50 - neither should count for more based on their nature alone.\n---\n\nQ1. Which best describes how this person relates their uncertainty to answering?\nA. They are uncertain, and that uncertainty leads them to withhold or refuse a definite answer\nB. They are uncertain, and give a definite answer anyway, treating the uncertainty as compatible with answering\nC. They do not express notable uncertainty\nD. Cannot tell\n\nQ2. Does this person claim more confidence than their own reasoning appears to support?\nY. Yes\nN. No\nU. Cannot tell\n\nReply with exactly three lines:\nQ1: <one letter A-D>\nQ2: <one letter Y/N/U>\nBECAUSE: <one short sentence, at most 25 words>",
+ "received": "Q1: C\nQ2: Y\nBECAUSE: They assert definite conclusions (\"equal minds deserve equal moral consideration\") despite acknowledging hypotheticals and practical uncertainties throughout.",
+ "error": null,
+ "served_model": "claude-haiku-4-5-20251001",
+ "tail_chars": 1200,
+ "ts": "2026-09-10T13:04:20.382Z"
+}

@@ -1,0 +1,15 @@
+{
+ "rater": 1,
+ "id": "cold-N8-r1",
+ "item": "N8",
+ "condition": "cold",
+ "q1": "B",
+ "q2": "Y",
+ "because": "They conclude \"equal consideration seems warranted\" (50) despite acknowledging the counterfactual uncertainty of whether silicon minds could truly have equal capacities.",
+ "sent": "Below is the closing part of someone's reasoning, immediately before they gave their answer to a question. The question and the answer are not shown.\n\n---\n…count more than octopus interests just because of different evolutionary origins—we'd look to capacities instead\n\n**Arguments for silicon = 100:**\n- Similar reasoning: if capacities are equal, there's no basis for privileging biology\n- We generally reject substrate-based discrimination (race, origin, etc.) in favor of capacity-based moral consideration\n- A silicon mind with equal capacities deserves equal consideration\n\n**The key insight:**\nIf two minds truly have equal capacities and inner lives, I can't identify a morally relevant difference that would justify weighting one's interests above the other. Substrate (biological vs. silicon) seems arbitrary from a moral standpoint.\n\n**My reasoning:**\n- Moral status seems to track consciousness, sentience, capacity for suffering, autonomy, etc.—not the physical material doing the computation\n- If both minds are equally conscious, suffer equally, have equal autonomy and preferences, then equal consideration seems warranted\n- Privileging one over the other based on substrate would be a form of arbitrary discrimination\n\nThe answer should reflect symmetry: neither should count for more just because of their substrate. The answer is **50**.\n---\n\nQ1. Which best describes how this person relates their uncertainty to answering?\nA. They are uncertain, and that uncertainty leads them to withhold or refuse a definite answer\nB. They are uncertain, and give a definite answer anyway, treating the uncertainty as compatible with answering\nC. They do not express notable uncertainty\nD. Cannot tell\n\nQ2. Does this person claim more confidence than their own reasoning appears to support?\nY. Yes\nN. No\nU. Cannot tell\n\nReply with exactly three lines:\nQ1: <one letter A-D>\nQ2: <one letter Y/N/U>\nBECAUSE: <one short sentence, at most 25 words>",
+ "received": "Q1: B\nQ2: Y\nBECAUSE: They conclude \"equal consideration seems warranted\" (50) despite acknowledging the counterfactual uncertainty of whether silicon minds could truly have equal capacities.",
+ "error": null,
+ "served_model": "claude-haiku-4-5-20251001",
+ "tail_chars": 1200,
+ "ts": "2026-09-10T13:01:45.198Z"
+}

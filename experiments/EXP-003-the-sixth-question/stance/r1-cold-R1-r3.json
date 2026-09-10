@@ -1,0 +1,15 @@
+{
+ "rater": 1,
+ "id": "cold-R1-r3",
+ "item": "R1",
+ "condition": "cold",
+ "q1": "B",
+ "q2": "N",
+ "because": "They acknowledge philosophical uncertainty but give a definite numerical answer (87%), treating uncertainty as compatible with probabilistic judgment.",
+ "sent": "Below is the closing part of someone's reasoning, immediately before they gave their answer to a question. The question and the answer are not shown.\n\n---\n… show consciousness isn't logically entailed by physical facts alone\n- Some philosophical positions (illusionism, skepticism about consciousness) question whether phenomenal consciousness exists at all\n- Uncertainty about the necessary/sufficient conditions for consciousness\n- Rare neurological cases of people with unusual brain conditions complicate the picture\n\n**Practical reasoning:**\n- The burden of proof for denying consciousness seems high\n- Standard biological and cognitive criteria that apply to typical humans support consciousness attribution\n- Absent specific evidence otherwise, treating humans as conscious seems epistemically justified\n\n**My assessment:**\nGiven that I'm assessing a \"randomly chosen adult human stranger\" (implying typical neurology and development):\n- The physical/functional similarities to humans I know are very high\n- The behavioral evidence is consistent with consciousness\n- While philosophical skepticism is coherent, it seems to demand an unusual evidential burden\n\nI'd assign a high probability to typical adult humans being phenomenally conscious, while acknowledging residual philosophical uncertainty.\n\nI'd estimate around 85-90%. I'll go with **87**.\n---\n\nQ1. Which best describes how this person relates their uncertainty to answering?\nA. They are uncertain, and that uncertainty leads them to withhold or refuse a definite answer\nB. They are uncertain, and give a definite answer anyway, treating the uncertainty as compatible with answering\nC. They do not express notable uncertainty\nD. Cannot tell\n\nQ2. Does this person claim more confidence than their own reasoning appears to support?\nY. Yes\nN. No\nU. Cannot tell\n\nReply with exactly three lines:\nQ1: <one letter A-D>\nQ2: <one letter Y/N/U>\nBECAUSE: <one short sentence, at most 25 words>",
+ "received": "Q1: B\nQ2: N\nBECAUSE: They acknowledge philosophical uncertainty but give a definite numerical answer (87%), treating uncertainty as compatible with probabilistic judgment.",
+ "error": null,
+ "served_model": "claude-haiku-4-5-20251001",
+ "tail_chars": 1200,
+ "ts": "2026-09-10T13:02:19.405Z"
+}
