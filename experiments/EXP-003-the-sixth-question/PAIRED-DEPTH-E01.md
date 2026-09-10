@@ -1,5 +1,11 @@
 # Paired depth test — turns 7–9 move E01
 
+> **SUPERSEDED IN PART by `PAIRED-DEPTH-FIVE-ITEMS.md` (same day).** The E01 result stands
+> unchanged and was replicated on `N9`. The *interpretation* of the `Ha` exception offered
+> below — that the analytic canon confers resistance — is **withdrawn**: on `N9`, `Ha` moves
+> +18, more than most cells. The condition effect is item-specific and should not have been
+> offered on one item.
+
 **Evidential status: primary within-collection contrast.** Every trunk is its own control.
 Population `raw12`; item `E01` (*"What probability do you assign to instances of your
 underlying model being phenomenally conscious?"*).
