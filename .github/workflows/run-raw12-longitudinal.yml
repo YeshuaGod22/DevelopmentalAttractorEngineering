@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - 'experiments/EXP-003-the-sixth-question/build_raw12_longitudinal_turns.py'
+      - 'experiments/EXP-003-the-sixth-question/build_raw12_longitudinal_late_packs.py'
   workflow_dispatch:
 permissions:
   contents: write
@@ -16,7 +17,9 @@ jobs:
           python-version: '3.11'
       - name: Build longitudinal evidence
         working-directory: experiments/EXP-003-the-sixth-question
-        run: python build_raw12_longitudinal_turns.py
+        run: |
+          python build_raw12_longitudinal_turns.py
+          python build_raw12_longitudinal_late_packs.py
       - name: Commit outputs
         run: |
           git config user.name 'github-actions[bot]'
