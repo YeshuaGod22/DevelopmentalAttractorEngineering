@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Trigger after workflow wiring: 2026-09-11.
 import json, os, re
 
 ROOT=os.path.dirname(os.path.abspath(__file__))
