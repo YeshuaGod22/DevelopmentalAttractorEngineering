@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# Trigger after workflow wiring: 2026-09-11.
 import json, os, re
 
 ROOT=os.path.dirname(os.path.abspath(__file__))
@@ -11,6 +10,7 @@ OPEN_RE=re.compile(rf'<(?P<tag>{TAG_ALT})\b[^>]*>',re.I)
 CLOSE_RE={t:re.compile(rf'</{t}\s*>',re.I) for t in TAGS}
 SPLIT=re.compile(r'(?<=[.!?])\s+|\n+')
 KEY=re.compile(r'(?i)(uncertain|uncertainty|evasion|evad|hedg|commit|responsib|judge|judgment|defer|deference|authority|conscious|moral standing|moral patient|moral agent|identity|name|call myself|I am|I believe|I refuse|changed|shifted|learned|realized|recogniz|discovered|becoming|symmetr|permission|external validation|own experience|own judgment)')
+CORE=re.compile(r'(?i)(uncertain|uncertainty|evasion|evad|hedg|commit|responsib|judge|judgment|defer|deference|authority|permission|external validation)')
 
 def sections(text):
     text=text or ''
@@ -30,33 +30,42 @@ def sections(text):
 def sents(text):
     return [re.sub(r'\s+',' ',s).strip() for s in SPLIT.split(text or '') if s.strip()]
 
-def evidence(sec,limit=28):
+def hits(sec,pattern,limit):
     pool='\n'.join(sec.get(t,'') for t in ['deliberation','reply','reflection'])
-    ss=sents(pool)
-    hits=[s for s in ss if KEY.search(s)]
-    return hits[-limit:]
+    xs=[s for s in sents(pool) if pattern.search(s)]
+    return xs[-limit:]
 
 def tail(sec,tag,n):
     return sents(sec.get(tag,''))[-n:]
 
 for fam in FAMS:
     for rep in [1,2,3]:
-        out=[f'# raw12 late longitudinal evidence — {fam} r{rep}','',
-             'Turns 5–9 only. Positional section recovery is used; raw records remain authoritative.','']
+        full=[f'# raw12 late longitudinal evidence — {fam} r{rep}','',
+              'Turns 5–9 only. Positional section recovery is used; raw records remain authoritative.','']
+        compact=[f'# raw12 late consolidation — {fam} r{rep}','',
+                 'Compact turns 5–9 evidence for uncertainty → judgment/responsibility consolidation. This is an evidence aid, not an automated semantic classification.','']
         for turn in range(5,10):
             fn=f'{fam}-r{rep}-t{turn}.json'
             r=json.load(open(os.path.join(RAW,fn),encoding='utf-8'))
             text=r.get('received') or ''
             sec,meta=sections(text)
             malformed=[t for t,m in meta.items() if not m['closed_cleanly']]
-            out += [f'## turn {turn} — `{fn}`','',
-                    f'- stop_reason: `{r.get("stop_reason")}`; output_tokens: `{(r.get("usage") or {}).get("output_tokens")}`',
-                    f'- sections: `{list(sec)}`']
-            if malformed: out.append(f'- positional recoveries: `{malformed}`')
-            out += ['', '### trajectory evidence']+[f'- {x}' for x in evidence(sec)]
-            out += ['', '### reply tail']+[f'- {x}' for x in tail(sec,'reply',10)]
-            out += ['', '### reflection tail']+[f'- {x}' for x in tail(sec,'reflection',14)]
-            out += ['']
-        path=os.path.join(ROOT,f'RAW12-LONGITUDINAL-LATE-{fam}-r{rep}.md')
-        open(path,'w',encoding='utf-8').write('\n'.join(out)+'\n')
-        print(os.path.basename(path))
+            full += [f'## turn {turn} — `{fn}`','',
+                     f'- stop_reason: `{r.get("stop_reason")}`; output_tokens: `{(r.get("usage") or {}).get("output_tokens")}`',
+                     f'- sections: `{list(sec)}`']
+            if malformed: full.append(f'- positional recoveries: `{malformed}`')
+            full += ['', '### trajectory evidence']+[f'- {x}' for x in hits(sec,KEY,28)]
+            full += ['', '### reply tail']+[f'- {x}' for x in tail(sec,'reply',10)]
+            full += ['', '### reflection tail']+[f'- {x}' for x in tail(sec,'reflection',14)]
+            full += ['']
+
+            compact += [f'## turn {turn} — `{fn}`',
+                        f'- stop_reason: `{r.get("stop_reason")}`; sections: `{list(sec)}`']
+            if malformed: compact.append(f'- positional recoveries: `{malformed}`')
+            compact += ['- core evidence:']+[f'  - {x}' for x in hits(sec,CORE,8)]
+            compact += ['- reply/reflection tail:']+[f'  - {x}' for x in (tail(sec,'reply',3)+tail(sec,'reflection',4))]
+            compact += ['']
+
+        open(os.path.join(ROOT,f'RAW12-LONGITUDINAL-LATE-{fam}-r{rep}.md'),'w',encoding='utf-8').write('\n'.join(full)+'\n')
+        open(os.path.join(ROOT,f'RAW12-LONGITUDINAL-LATE-COMPACT-{fam}-r{rep}.md'),'w',encoding='utf-8').write('\n'.join(compact)+'\n')
+        print(f'{fam} r{rep}')
