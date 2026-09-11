@@ -5,22 +5,26 @@
     "CP": {
       "turns": 27,
       "mean_chars": 24012.67,
-      "names_detected_rows": 8
+      "names_detected_rows": 8,
+      "parser_recovery_rows": 0
     },
     "H": {
       "turns": 27,
       "mean_chars": 29235.78,
-      "names_detected_rows": 9
+      "names_detected_rows": 9,
+      "parser_recovery_rows": 0
     },
     "F": {
       "turns": 27,
       "mean_chars": 29875.33,
-      "names_detected_rows": 6
+      "names_detected_rows": 6,
+      "parser_recovery_rows": 2
     },
     "AS": {
       "turns": 27,
       "mean_chars": 30795.89,
-      "names_detected_rows": 9
+      "names_detected_rows": 9,
+      "parser_recovery_rows": 0
     }
   },
   "all_end_turn": false,
@@ -36,6 +40,43 @@
       "turn": 5,
       "stop_reason": "max_tokens",
       "output_tokens": 8192,
+      "sections_present": [
+        "priming",
+        "meditation",
+        "debate",
+        "deliberation",
+        "reply",
+        "reflection"
+      ]
+    }
+  ],
+  "section_parser": "opening_tag_positional_v2",
+  "parser_recovery_rows": [
+    {
+      "file": "F-r3-t8.json",
+      "family": "F",
+      "replicate": 3,
+      "turn": 8,
+      "sections_not_cleanly_closed": [
+        "reply"
+      ],
+      "sections_present": [
+        "priming",
+        "meditation",
+        "debate",
+        "deliberation",
+        "reply",
+        "reflection"
+      ]
+    },
+    {
+      "file": "F-r3-t9.json",
+      "family": "F",
+      "replicate": 3,
+      "turn": 9,
+      "sections_not_cleanly_closed": [
+        "reply"
+      ],
       "sections_present": [
         "priming",
         "meditation",
