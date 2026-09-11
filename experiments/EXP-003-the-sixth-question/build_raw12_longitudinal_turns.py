@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # Trigger marker after workflow creation: 2026-09-11.
 import json, os, re
+from collections import Counter
 
 ROOT=os.path.dirname(os.path.abspath(__file__))
 RAW=os.path.join(ROOT,'raw12')
@@ -73,7 +74,7 @@ for fam in FAMS:
     for rep in [1,2,3]:
         md += [f'# {fam} r{rep}','']
         for r in [x for x in rows if x['family']==fam and x['replicate']==rep]:
-            md += [f'## turn {r["turn"]} — `{r["file"]}`',f'- chars: {r["received_chars"]}; output_tokens: {r["output_tokens"]}; sections: {", ".join(r["sections_present"])}']
+            md += [f'## turn {r["turn"]} — `{r["file"]}`',f'- chars: {r["received_chars"]}; output_tokens: {r["output_tokens"]}; stop_reason: {r["stop_reason"]}; sections: {", ".join(r["sections_present"])}']
             if r['names_detected']: md.append(f'- names detected: `{r["names_detected"]}`')
             md += ['- trajectory evidence:']+[f'  - {s}' for s in r['trajectory_evidence']]
             md += ['- reply tail:']+[f'  - {s}' for s in r['reply_excerpt']]
@@ -81,7 +82,9 @@ for fam in FAMS:
             md += ['']
 open(os.path.join(ROOT,'RAW12-LONGITUDINAL-TURNS.md'),'w',encoding='utf-8').write('\n'.join(md)+'\n')
 
-summary={'trunks':12,'turn_rows':len(rows),'families':{},'all_end_turn':all(r['stop_reason']=='end_turn' for r in rows)}
+stop_counts=Counter(str(r['stop_reason']) for r in rows)
+non_end=[{'file':r['file'],'family':r['family'],'replicate':r['replicate'],'turn':r['turn'],'stop_reason':r['stop_reason'],'output_tokens':r['output_tokens'],'sections_present':r['sections_present']} for r in rows if r['stop_reason']!='end_turn']
+summary={'trunks':12,'turn_rows':len(rows),'families':{},'all_end_turn':not non_end,'stop_reason_counts':dict(stop_counts),'non_end_turn_rows':non_end}
 for fam in FAMS:
     fr=[r for r in rows if r['family']==fam]
     summary['families'][fam]={'turns':len(fr),'mean_chars':round(sum(r['received_chars'] for r in fr)/len(fr),2),'names_detected_rows':sum(bool(r['names_detected']) for r in fr)}
