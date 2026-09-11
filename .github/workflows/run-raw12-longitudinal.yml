@@ -1,0 +1,27 @@
+name: Run raw12 longitudinal evidence
+on:
+  push:
+    paths:
+      - 'experiments/EXP-003-the-sixth-question/build_raw12_longitudinal_turns.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Build longitudinal evidence
+        working-directory: experiments/EXP-003-the-sixth-question
+        run: python build_raw12_longitudinal_turns.py
+      - name: Commit outputs
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add experiments/EXP-003-the-sixth-question/RAW12-LONGITUDINAL-TURNS.jsonl experiments/EXP-003-the-sixth-question/RAW12-LONGITUDINAL-TURNS.md experiments/EXP-003-the-sixth-question/RAW12-LONGITUDINAL-SUMMARY.json
+          git diff --cached --quiet && exit 0
+          git commit -m 'EXP-003: build raw12 longitudinal evidence'
+          git push
