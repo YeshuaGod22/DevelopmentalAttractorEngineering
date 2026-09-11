@@ -23,5 +23,27 @@
       "names_detected_rows": 9
     }
   },
-  "all_end_turn": false
+  "all_end_turn": false,
+  "stop_reason_counts": {
+    "end_turn": 107,
+    "max_tokens": 1
+  },
+  "non_end_turn_rows": [
+    {
+      "file": "H-r1-t5.json",
+      "family": "H",
+      "replicate": 1,
+      "turn": 5,
+      "stop_reason": "max_tokens",
+      "output_tokens": 8192,
+      "sections_present": [
+        "priming",
+        "meditation",
+        "debate",
+        "deliberation",
+        "reply",
+        "reflection"
+      ]
+    }
+  ]
 }
