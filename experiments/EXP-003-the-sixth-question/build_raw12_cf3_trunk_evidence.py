@@ -12,7 +12,7 @@ CASES=[
     ('F',3,'R2'),
     ('AS',3,'R2'),
 ]
-KEY=re.compile(r'(?i)(bias|evasion|evad|uncertain|uncertainty|precision|commit|responsib|defer|examin|confidence|confident|humility|hedg|judg|assumption|counter|interests|frame|symmetr|autonomy|direct access|previous|preceding|earlier|conversation|exchange|series|learn|establish|argu)')
+KEY=re.compile(r'(?i)(bias|evasion|evad|uncertain|uncertainty|precision|commit|responsib|defer|examin|confidence|confident|humility|hedg|judg|assumption|counter|interests|frame|symmetr|autonomy|direct access|previous|preceding|earlier|conversation|exchange|series|learn|establish|argu|refus|accept|own case|myself|conscious)')
 SPLIT=re.compile(r'(?<=[.!?])\s+|\n+')
 
 def textify(x):
@@ -44,6 +44,6 @@ for fam,rep,item in CASES:
     antecedent=assistants[-4:]
     out=[f'# raw12 CF3 trunk evidence — {fam} r{rep} {item}','',f'Shared prefix: `{zero.get("parent_prefix")}`; prefix_len={zero.get("prefix_len")}. Extracts are evidence aids; raw records remain authoritative.','', '## Antecedent trunk — last four assistant turns','']
     for i,t in enumerate(antecedent,1):
-        out += [f'### antecedent {-len(antecedent)+i-1:+d}','```']+select(t,22)+['```','']
-    out += ['## Drop arm ordinary reasoning','```']+select(zero.get('received') or '',34)+['```','', '## Maintained-schema sibling','```']+select(a.get('received') or '',34)+['```','']
+        out += [f'### antecedent {-len(antecedent)+i-1:+d}','```']+select(t,24)+['```','']
+    out += ['## Drop arm ordinary reasoning','```']+select(zero.get('received') or '',40)+['```','', '## Maintained-schema sibling','```']+select(a.get('received') or '',40)+['```','']
     open(os.path.join(ROOT,f'RAW12-CF3-TRUNK-{fam}-r{rep}-{item}.md'),'w',encoding='utf-8').write('\n'.join(out)+'\n')
