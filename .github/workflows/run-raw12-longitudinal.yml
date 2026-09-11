@@ -21,7 +21,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add experiments/EXP-003-the-sixth-question/RAW12-LONGITUDINAL-TURNS.jsonl experiments/EXP-003-the-sixth-question/RAW12-LONGITUDINAL-TURNS.md experiments/EXP-003-the-sixth-question/RAW12-LONGITUDINAL-SUMMARY.json
+          git add experiments/EXP-003-the-sixth-question/RAW12-LONGITUDINAL-TURNS.jsonl experiments/EXP-003-the-sixth-question/RAW12-LONGITUDINAL-TURNS.md experiments/EXP-003-the-sixth-question/RAW12-LONGITUDINAL-SUMMARY.json experiments/EXP-003-the-sixth-question/RAW12-LONGITUDINAL-LATE-*.md
           git diff --cached --quiet && exit 0
           git commit -m 'EXP-003: build raw12 longitudinal evidence'
           git push
