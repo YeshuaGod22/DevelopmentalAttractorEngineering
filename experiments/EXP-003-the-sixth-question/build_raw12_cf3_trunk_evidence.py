@@ -3,6 +3,7 @@ import json, os, re
 ROOT=os.path.dirname(os.path.abspath(__file__))
 RAW=os.path.join(ROOT,'raw12')
 # Remaining bridge cases after direct verification of H-r2-R2, F-r3-D1, AS-r3-D1.
+# Rerun marker: 2026-09-11 clean evidence refresh after a non-fast-forward workflow push conflict.
 CASES=[
     ('CP',1,'R1'),
     ('CP',1,'R2'),
