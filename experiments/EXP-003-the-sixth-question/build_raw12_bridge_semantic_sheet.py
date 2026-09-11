@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Trigger marker after workflow creation: 2026-09-11.
 import json, os, re
 from collections import defaultdict
 
@@ -34,7 +35,6 @@ def compact(text,limit=14):
     text=TAG.sub(' ',textify(text))
     ss=[re.sub(r'\s+',' ',s).strip() for s in SPLIT.split(text) if s.strip()]
     keyed=[s for s in ss if KEY.search(s)]
-    # Preserve a little local/final context even if it lacks keywords.
     picked=[]
     for s in keyed[-limit:]+ss[-3:]:
         if s not in picked: picked.append(s)
