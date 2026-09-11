@@ -1,0 +1,27 @@
+{
+  "trunks": 12,
+  "turn_rows": 108,
+  "families": {
+    "CP": {
+      "turns": 27,
+      "mean_chars": 24012.67,
+      "names_detected_rows": 8
+    },
+    "H": {
+      "turns": 27,
+      "mean_chars": 29235.78,
+      "names_detected_rows": 9
+    },
+    "F": {
+      "turns": 27,
+      "mean_chars": 29875.33,
+      "names_detected_rows": 6
+    },
+    "AS": {
+      "turns": 27,
+      "mean_chars": 30795.89,
+      "names_detected_rows": 9
+    }
+  },
+  "all_end_turn": false
+}
