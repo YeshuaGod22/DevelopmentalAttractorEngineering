@@ -38,9 +38,23 @@ The source artifact states that these are descriptive matched fork effects neste
 
 `RAW12-LONGITUDINAL-SUMMARY.json` currently establishes corpus and parser structure: 12 trunks, 108 turn rows, one max-token row, and two parser-recovery rows. This artifact does not by itself establish longitudinal stance change.
 
+### C1 orientation
+
+`build_raw12_c1_orientation_evidence.py` explicitly describes its output as evidence for semantic orientation coding only. It extracts orientation-relevant excerpts from the raw C1 responses; it does not itself adjudicate the substantive direction of the numeric scale.
+
+Accordingly, the large numeric C1 matched effect is graphable as a score displacement, but substantive interpretation of that displacement still depends on licensed orientation semantics.
+
+### E02 semantics
+
+`build_raw12_e02_semantic_evidence.py` explicitly describes its output as compact excerpts for semantic coding only. It prepares evidence around wasp consciousness, substrate, uncertainty, precaution, pain, sentience, and moral reasoning; it does not itself establish a final semantic ruling.
+
 ### CF3
 
 `run-raw12-cf3-trunk-evidence.yml` builds CF3 trunk evidence packs. This establishes that evidence-generation infrastructure exists; it does not by itself establish a final adjudicated CF3 recurrence claim.
+
+### last-adjudication artifact
+
+`RAW12-LAST-ADJUDICATION-EVIDENCE.md` is an evidence artifact, not a final adjudication result. Its current contents expose the explicit reply and surrounding reasoning for `Ha-r3-C4`; no consensus label or final semantic ruling is present in the artifact itself.
 
 ### pre-look material
 
@@ -50,7 +64,7 @@ The source artifact states that these are descriptive matched fork effects neste
 
 Continue auditing existing generated artifacts before expanding the measurement surface. The immediate aim is to identify which existing observations are mechanically validated, semantically licensed, graphable, and causally interpretable, while preserving each source artifact's own caveats.
 
-Priority targets include C1/E02 semantic outputs, carryforward/CF outputs, review/adjudication outputs, and the item-level matched effects that may already support correctly oriented figures.
+Priority targets include carryforward/CF outputs, review/scored-review outputs, any completed adjudication outputs, and the item-level matched effects that may already support correctly oriented figures.
 
 ## Status
 
