@@ -12,7 +12,11 @@ CP is the preliminaries-only / no-deliberative-schema condition. `CP-PROMPT-ERRA
 
 ### raw12 validated scores
 
-`RAW12-VALIDATED-SCORES.jsonl` is the validated raw12 score layer. It contains numeric values, sentinels, and other answer forms with their validation provenance.
+`RAW12-VALIDATED-SCORES.jsonl` is the validated raw12 score layer. It contains numeric values, sentinels, refusals/no-single-answer outcomes, and validation provenance.
+
+`RAW12-VALIDATED-SCORES-SUMMARY.json` reports 528 scored rows: 496 numeric, 28 sentinel, and 4 refusal/no-single-answer outcomes. Eleven rows were manually adjudicated.
+
+`RAW12-ADJUDICATIONS.json` records the manual rubric and the 11 row-level decisions. `build_raw12_validated_scores.py` overlays those decisions on immutable mechanical candidate fields and fails on any unresolved scored row.
 
 ### matched a ↔ 0 effects
 
@@ -50,6 +54,14 @@ The matched-effects summary reports C1 as the largest absolute median paired num
 
 The matched-effects summary reports E02 median Δ = 11.0 across 12 pairs.
 
+### explicit carryforward screen
+
+`RAW12-EXPLICIT-CARRYFORWARD-SCREEN-SUMMARY.json` reports 36 schema-drop bridge responses screened and 19 explicit-reference candidates: D1 8, R1 6, R2 5; CP 3, H 5, F 4, AS 7. The generating script labels this a mechanical screen rather than semantic coding.
+
+### scored review funnel
+
+`RAW12-SCORED-REVIEW.md` reports 528 scored-response rows, 517 mechanically exact rows, and 11 rows requiring adjudication. Those 11 decisions are recorded in `RAW12-ADJUDICATIONS.json` and incorporated into the validated score layer.
+
 ### CF3
 
 `run-raw12-cf3-trunk-evidence.yml` builds CF3 trunk evidence packs.
@@ -66,7 +78,7 @@ The matched-effects summary reports E02 median Δ = 11.0 across 12 pairs.
 
 Continue auditing existing generated artifacts. The immediate aim is to map which observations have mechanically validated data, semantic coding/adjudication, graphable summaries, and matched or otherwise controlled comparison structure.
 
-Priority targets are carryforward/CF outputs, review/scored-review outputs, completed adjudication outputs, and item-level matched effects with semantic coding.
+Priority targets are bridge semantic-sheet outputs, carryforward/CF outputs, completed adjudication outputs, and item-level matched effects with semantic coding.
 
 ## Status
 
