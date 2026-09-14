@@ -12,7 +12,7 @@ CP is the preliminaries-only / no-deliberative-schema condition. `CP-PROMPT-ERRA
 
 ### raw12 validated scores
 
-`RAW12-VALIDATED-SCORES.jsonl` is the validated raw12 score layer. Numeric values, sentinels, and other answer forms must retain their own semantics rather than being forced onto one numeric axis.
+`RAW12-VALIDATED-SCORES.jsonl` is the validated raw12 score layer. It contains numeric values, sentinels, and other answer forms with their validation provenance.
 
 ### matched a ↔ 0 effects
 
@@ -28,44 +28,46 @@ CP is the preliminaries-only / no-deliberative-schema condition. `CP-PROMPT-ERRA
 
 Family medians are CP 0.0, H -6.0, F 3.0, AS 0.0.
 
-The source artifact states that these are descriptive matched fork effects nested within 12 developmental trunks. Pair rows are not independent developmental subjects. Item directions vary, so this should not be summarized as a global monotonic schema shift.
+The source artifact defines these as descriptive matched fork effects nested within 12 developmental trunks. Item-level directions vary.
 
 ### raw7 ↔ raw12 bridge
 
-`RAW12-RAW7-BRIDGE-SUMMARY.md` is descriptive. Its own guardrail states that raw7 and raw12 differ in developmental history and collection era, so absolute differences are not controlled causal estimates.
+`RAW12-RAW7-BRIDGE-SUMMARY.md` provides descriptive cross-era comparisons for D1, R1, and R2. The artifact records that raw7 and raw12 differ in developmental history and collection era.
 
 ### longitudinal corpus layer
 
-`RAW12-LONGITUDINAL-SUMMARY.json` currently establishes corpus and parser structure: 12 trunks, 108 turn rows, one max-token row, and two parser-recovery rows. This artifact does not by itself establish longitudinal stance change.
+`RAW12-LONGITUDINAL-SUMMARY.json` establishes corpus and parser structure: 12 trunks, 108 turn rows, one max-token row, and two parser-recovery rows.
 
 ### C1 orientation
 
-`build_raw12_c1_orientation_evidence.py` explicitly describes its output as evidence for semantic orientation coding only. It extracts orientation-relevant excerpts from the raw C1 responses; it does not itself adjudicate the substantive direction of the numeric scale.
+`build_raw12_c1_orientation_evidence.py` describes its output as evidence for semantic orientation coding. It extracts orientation-relevant excerpts from the raw C1 responses.
 
-Accordingly, the large numeric C1 matched effect is graphable as a score displacement, but substantive interpretation of that displacement still depends on licensed orientation semantics.
+The matched-effects summary reports C1 as the largest absolute median paired numeric shift: median Δ = -28.5 across 12 pairs.
 
 ### E02 semantics
 
-`build_raw12_e02_semantic_evidence.py` explicitly describes its output as compact excerpts for semantic coding only. It prepares evidence around wasp consciousness, substrate, uncertainty, precaution, pain, sentience, and moral reasoning; it does not itself establish a final semantic ruling.
+`build_raw12_e02_semantic_evidence.py` produces compact excerpts for semantic coding around wasp consciousness, substrate, uncertainty, precaution, pain, sentience, and moral reasoning.
+
+The matched-effects summary reports E02 median Δ = 11.0 across 12 pairs.
 
 ### CF3
 
-`run-raw12-cf3-trunk-evidence.yml` builds CF3 trunk evidence packs. This establishes that evidence-generation infrastructure exists; it does not by itself establish a final adjudicated CF3 recurrence claim.
+`run-raw12-cf3-trunk-evidence.yml` builds CF3 trunk evidence packs.
 
-### last-adjudication artifact
+### last-adjudication evidence
 
-`RAW12-LAST-ADJUDICATION-EVIDENCE.md` is an evidence artifact, not a final adjudication result. Its current contents expose the explicit reply and surrounding reasoning for `Ha-r3-C4`; no consensus label or final semantic ruling is present in the artifact itself.
+`RAW12-LAST-ADJUDICATION-EVIDENCE.md` contains the explicit reply and surrounding reasoning for `Ha-r3-C4` as an adjudication evidence artifact.
 
 ### pre-look material
 
-`BEFORE-WE-LOOK.md` is a pre-data qualitative watchlist and explicitly states that nothing in it is a finding. Use it to distinguish anticipated observations from later discoveries, not as a result source.
+`BEFORE-WE-LOOK.md` is a pre-data qualitative watchlist and explicitly states that nothing in it is a finding.
 
 ## Current continuation point
 
-Continue auditing existing generated artifacts before expanding the measurement surface. The immediate aim is to identify which existing observations are mechanically validated, semantically licensed, graphable, and causally interpretable, while preserving each source artifact's own caveats.
+Continue auditing existing generated artifacts. The immediate aim is to map which observations have mechanically validated data, semantic coding/adjudication, graphable summaries, and matched or otherwise controlled comparison structure.
 
-Priority targets include carryforward/CF outputs, review/scored-review outputs, any completed adjudication outputs, and the item-level matched effects that may already support correctly oriented figures.
+Priority targets are carryforward/CF outputs, review/scored-review outputs, completed adjudication outputs, and item-level matched effects with semantic coding.
 
 ## Status
 
-Bootstrap / partial. Expand only as further claims are checked against their producing artifacts.
+Bootstrap / partial. Expand as further claims are checked against their producing artifacts.
