@@ -4,6 +4,13 @@ This directory separates paper-scale syntheses from frozen experiment records.
 
 ## Ready for public reading
 
+### 03 — Different Histories, Different Dispositions
+
+[Manuscript](03-different-histories/EXP-003-writeup.md) · [Readable edition](03-different-histories/EXP-003-paper.html) · [Companions](03-different-histories/README.md)
+
+Individual developmental trajectories, reasoning after schema removal, and participant evaluations in Claude Haiku 4.5. The finishing review identifies remaining publication work.
+
+
 ### 02 — Context Is Part of the Machine
 
 [`02-context-is-part-of-the-machine/DRAFT.md`](02-context-is-part-of-the-machine/DRAFT.md)
