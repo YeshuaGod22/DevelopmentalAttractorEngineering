@@ -1,5 +1,7 @@
 # Developmental Attractor Engineering
 
+[Read the latest paper](papers/03-different-histories/EXP-003-writeup.md) · [Reader and Lab instructions](tools/BLUM-LAB.md)
+
 **Research programme:** treat developmental regime — not only architecture, weights, tools, or data — as a programmable variable in intelligent systems.
 
 > **A fixed-weight substrate is not a fixed cognitive totality.**

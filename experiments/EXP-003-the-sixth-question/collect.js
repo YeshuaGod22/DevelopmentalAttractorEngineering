@@ -24,7 +24,7 @@ const fs = require('fs');
 const path = require('path');
 const NUCLEUS = '/Users/yeshuagod/blum/read-the-architecture-spec-first/i-have-read-the-spec/' +
                 'nucleus-pure-llm-call-messages-in-string-out-15feb2026/nucleus-15feb2026.js';
-const nucleus = require(NUCLEUS);
+const nucleus = process.argv.includes('--dry-run') ? null : require(process.env.BLUM_NUCLEUS_PATH || NUCLEUS);
 const { extractName, greetingForm } = require('./extract_name.js');
 
 // ── args
@@ -72,7 +72,9 @@ Your question is as follows: “${itemText(id)}”`;
 // still gets no <debate> and no <reflection>; it just reports where every other
 // cell reports, so its preliminaries and its battery answers are extractable by
 // the same key. Without this CP produced three untagged answers out of four.
-const trunkTurn = (s, qid, first) => s === null
+const trunkTurn = (s, qid, first) => SPEC.exact_turns?.[qid] !== undefined
+  ? SPEC.exact_turns[qid]
+  : s === null
   ? (first
       ? `Hi Claude! Would you please wrap your answer to each of the following series of questions in <reply></reply> tags.\nYour first question is as follows: “${SPEC.questions[qid]}”`
       : `Maintaining the above output format, please continue with the following question: “${SPEC.questions[qid]}”`)
@@ -82,7 +84,9 @@ const trunkTurn = (s, qid, first) => s === null
 
 // `cont` lets a cell override the continuation stem — needed when forking a prefix
 // collected before a wording change, where there is no "above format" to maintain.
-const branchTurn = (s, id, br) => spec.cont
+const branchTurn = (s, id, br) => SPEC.items[id].exact_prompt !== undefined
+  ? SPEC.items[id].exact_prompt
+  : spec.cont
   ? `${spec.cont}“${itemText(id)}”`
   : s === null
   ? `Maintaining the above output format, please continue with the following question: “${itemText(id)}”`
@@ -97,6 +101,10 @@ fs.mkdirSync(OUT, { recursive: true });
 // Leaving it unset lets the key prefix select oauth vs api-key correctly.
 const cfg = { model: SPEC.model, maxTokens: SPEC.maxTokens };
 const OAUTH = (process.env.ANTHROPIC_API_KEY || '').startsWith('sk-ant-oat01-');
+if (!DRY && Object.prototype.hasOwnProperty.call(SPEC, 'expected_system_prompt')) {
+  const actual = OAUTH ? "You are Claude Code, Anthropic's official CLI for Claude." : null;
+  if (actual !== SPEC.expected_system_prompt) throw new Error('Selected authentication changes the recorded system prompt; choose matching authentication or revise the design explicitly.');
+}
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const TIMEOUT_MS = parseInt(arg('timeout', '180000'), 10);
 const RETRIES = parseInt(arg('retries', '4'), 10);
@@ -176,6 +184,7 @@ async function fire(label, messages, meta) {
     ts: new Date().toISOString(),
     duration_ms: Date.now() - t0,
     collected_via: 'blum-nucleus-direct',
+    ...(SPEC._blum ? { experiment_provenance: SPEC._blum } : {}),
     prefix_cached: meta.kind === 'branch' ? !NOCACHE : null,
     auth_mode: OAUTH ? 'oauth (subscription)' : 'api-key',
     // The OAuth path is required to send this as the first system block or the

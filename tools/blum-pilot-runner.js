@@ -18,8 +18,11 @@ const M=JSON.parse(fs.readFileSync(manifestPath,'utf8'));
 const collector=path.resolve(__dirname,'../experiments/EXP-003-the-sixth-question/collect.js');
 const out=arg('out',M.run||'pilot-output');
 const tmp=fs.mkdtempSync(path.join(os.tmpdir(),'blum-pilot-'));
+if (!Array.isArray(M.cells) || !M.cells.length) throw new Error('manifest has no cells');
+for (const c of M.cells) if (!/^[A-Za-z0-9_-]+$/.test(c.cell)) throw new Error('invalid cell id');
 const selectedItems=Object.keys(M.items||{});
 if(!selectedItems.length) throw new Error('manifest has no battery items');
+if(selectedItems.some(id=>! /^[A-Za-z0-9_-]+$/.test(id)))throw new Error('invalid battery item id');
 function run(args){const a=[collector,...args]; if(!execute)a.push('--dry-run'); console.log('\n$ node '+a.join(' ')); const r=cp.spawnSync(process.execPath,a,{stdio:'inherit',env:process.env}); if(r.status!==0)process.exit(r.status||1)}
 function specFor(cell){const x=JSON.parse(JSON.stringify(M)); if(cell.slate)x.slate=cell.slate; return x}
 function writeSpec(cell){const p=path.join(tmp,cell.cell+'.json');fs.writeFileSync(p,JSON.stringify(specFor(cell),null,2));return p}
@@ -37,7 +40,11 @@ if(!execute){for(const c of trunks){for(let rep=1;rep<=(c.n||1);rep++){
 // Branch every selected battery item from each exact frozen trunk prefix.
 for(const c of branches){for(let rep=1;rep<=(c.n||1);rep++){
  const parent=trunks.find(t=>t.cell===c.parent);
- const prefix=execute ? path.join(out,`${c.parent}-r${rep}.messages.json`) : parent?._dryPrefix?.[rep];
+ const frozen=c.frozen_prefix;
+ if(frozen && (!Array.isArray(frozen) || frozen.some(m=>!['user','assistant'].includes(m.role)))) throw new Error('invalid frozen prefix');
+ const frozenPath=frozen ? path.join(tmp,`${c.cell}-frozen.messages.json`) : null;
+ if(frozenPath)fs.writeFileSync(frozenPath,JSON.stringify(frozen,null,2));
+ const prefix=frozenPath || (execute ? path.join(out,`${c.parent}-r${rep}.messages.json`) : parent?._dryPrefix?.[rep]);
  if(!prefix){console.error(`missing parent ${c.parent} for ${c.cell}`);process.exit(1)}
  const args=['--spec',writeSpec(c),'--out',out,'--cell',c.cell,'--prefix',prefix,'--rep',String(rep)];
  run(args);
