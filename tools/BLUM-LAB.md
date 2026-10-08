@@ -44,3 +44,7 @@ Validation covers the real record contexts and sibling pairs, byte hashes, quota
 ### Exploring and returning
 
 Reader navigation includes a preceding-conversation trail with earlier/later developmental turns, an explicit comparison toggle, and browser Back/Forward support. These turns come from the exact supplied `sent` context. Evidence selections create browser-history entries and Reader links retain the selected question/history. Lab returns preserve comparison, highlighted excerpts, and the selected message. Direct Reader links have an Evidence fallback.
+
+### Complete prompts and control
+
+The pilot deck shows the complete three-step schema below each editable Step 1, and the continuation instruction is editable separately. The invented-interlocutor text is retained in full. C is a selectable fresh control, with no developmental history; it receives one fresh call per battery question and replicate. The complete delivered-prompt preview includes all developmental turns, maintained/dropped battery instructions, questions and answer keys. Imported exact prompts are preserved. Preview text is checked against collector dry runs; dry runs print complete prompts.

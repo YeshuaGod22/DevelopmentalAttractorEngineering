@@ -157,7 +157,7 @@ async function callWithRetry(messages) {
 async function fire(label, messages, meta) {
   if (DRY) {
     console.log(`\n─── ${label} (${messages.length} msg, ~${JSON.stringify(messages).length / 4 | 0} tok) ───`);
-    console.log(messages[messages.length - 1].content.slice(0, 400));
+    console.log(messages[messages.length - 1].content);
     return null;
   }
   // Idempotent resume. A run interrupted at call 30 of 42 must not re-ask the 29

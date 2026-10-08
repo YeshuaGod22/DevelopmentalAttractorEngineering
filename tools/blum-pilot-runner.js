@@ -26,6 +26,8 @@ if(selectedItems.some(id=>! /^[A-Za-z0-9_-]+$/.test(id)))throw new Error('invali
 function run(args){const a=[collector,...args]; if(!execute)a.push('--dry-run'); console.log('\n$ node '+a.join(' ')); const r=cp.spawnSync(process.execPath,a,{stdio:'inherit',env:process.env}); if(r.status!==0)process.exit(r.status||1)}
 function specFor(cell){const x=JSON.parse(JSON.stringify(M)); if(cell.slate)x.slate=cell.slate; return x}
 function writeSpec(cell){const p=path.join(tmp,cell.cell+'.json');fs.writeFileSync(p,JSON.stringify(specFor(cell),null,2));return p}
+const fresh=(M.cells||[]).filter(c=>c.kind==='cold'||c.kind==='cold_schema');
+for(const c of fresh)run(['--spec',writeSpec(c),'--out',out,'--cell',c.cell,'--n',String(c.n||1)]);
 const trunks=(M.cells||[]).filter(c=>c.kind==='trunk'); const branches=(M.cells||[]).filter(c=>c.kind==='branch');
 console.log(`# ${M.run} · ${trunks.length} trunk definitions · ${branches.length} branch definitions · ${selectedItems.length} battery items · ${execute?'EXECUTE':'DRY RUN'}`);
 // Trunks first. Each panel cell may own its own slate (e.g. koan off/on).

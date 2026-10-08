@@ -21,7 +21,7 @@ const vm=require('node:vm');
 const html=fs.readFileSync(path.join(root,'tools/blum-pilot-panel.html'),'utf8');
 const elements={};const defaults={run:'pilot',model:'claude-haiku-4-5',n:'1'};
 function el(id){return elements[id]||(elements[id]={value:defaults[id]||'',checked:true,hidden:true,innerHTML:'',textContent:'',appendChild(){},addEventListener(){}})}
-const context={document:{querySelector:s=>el(s.replace('#','')),querySelectorAll:()=>[],getElementById:el,createElement:()=>({appendChild(){},click(){}})},URLSearchParams,location:{search:''},console,Date,Set,JSON,alert:msg=>{throw Error(msg)}};
+const context={BlumPrompts:require('../blum-prompts'),document:{querySelector:s=>el(s.replace('#','')),querySelectorAll:()=>[],getElementById:el,createElement:()=>({appendChild(){},click(){}})},URLSearchParams,location:{search:''},console,Date,Set,JSON,alert:msg=>{throw Error(msg)}};
 vm.createContext(context);vm.runInContext(html.match(/<script>([\s\S]*?)<\/script>/)[1],context);
 const original=design(r,source,'repeat',{commit:'test-snapshot'});context.incoming=original;vm.runInContext('loadImport(incoming)',context);assert.deepEqual(JSON.parse(vm.runInContext('JSON.stringify(build())',context)),original);
 console.log('Pilot deck script imports and exports the full manifest without losing provenance or frozen context.');
