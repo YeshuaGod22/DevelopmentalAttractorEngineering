@@ -1,6 +1,6 @@
 <!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Blum Lab · Design an inquiry</title>
-<style>body{font:17px system-ui;max-width:1000px;margin:2rem auto;padding:0 1rem;background:#faf8f2;color:#242c31}textarea{width:100%;min-height:12rem;font:14px monospace}input,select,button{font:inherit;padding:.5rem;margin:.3rem}a{color:#235d71}pre{white-space:pre-wrap}label{display:block;margin:1rem 0}.error{color:#a22}</style>
-<h1>Blum Lab</h1><p>What would you ask next? Read the exchange, repeat its measurement, or design a new developmental inquiry.</p><p id="status" role="status">Loading the source exchange…</p><p><a id="reader">Read full exchange</a> · <a href="blum-pilot-panel.html">Open pilot deck</a></p>
+<style>*{box-sizing:border-box}body{font:17px system-ui;max-width:1000px;margin:2rem auto;padding:0 1rem;background:#faf8f2;color:#242c31}textarea{width:100%;min-height:12rem;font:14px monospace}input,select,button{font:inherit;padding:.5rem;margin:.3rem;max-width:100%}nav{display:flex;flex-wrap:wrap;gap:.6rem 1rem}nav a{overflow-wrap:anywhere}a{color:#235d71}pre{white-space:pre-wrap;overflow-wrap:anywhere}label{display:block;margin:1rem 0}.error{color:#a22}</style>
+<h1>Blum Lab</h1><p>What would you ask next? Read the exchange, repeat its measurement, or design a new developmental inquiry.</p><p id="status" role="status">Loading the source exchange…</p><nav aria-label="Lab navigation"><a id="reader">Back to full exchange</a><a href="blum-evidence.html">Browse evidence</a><a href="../papers/03-different-histories/EXP-003-paper.html">Read the paper</a><a href="blum-pilot-panel.html">Open pilot deck</a></nav>
 <label>Design <select id="mode"><option value="repeat">Repeat measurement from its frozen history</option><option value="continue">Continue after this answer</option><option value="new">Collect a new history with the recorded user turns</option></select></label>
 <p id="inheritance"></p><label>Experiment name <input id="run" value="blum-inquiry"></label><label>Model <input id="model"></label>
 <label>Next question (the complete delivered prompt)<textarea id="prompt"></textarea></label>
@@ -12,6 +12,12 @@
 let manifestDirty=false;
 let record,source,manifest,battery={},commit="787d3e217a5a23564fcf65c60e9e3fc7ad43db75";
 const $=id=>document.getElementById(id);
+function readerReturnUrl(value,source){
+ const fallback='blum-reader.html?record='+encodeURIComponent(source);
+ if(!value)return fallback;
+ try{const url=new URL(value,location.href);if(url.origin===location.origin&&url.pathname.endsWith('/tools/blum-reader.html'))return url.href}catch(e){}
+ return fallback;
+}
 function update(){if(!record)return;if(manifestDirty){$('status').textContent='Your complete manifest edits are retained. Use Rebuild from form to replace them with the changed form settings.';return;}manifest=BlumLab.design(record,source,$('mode').value,{run:$('run').value,model:$('model').value,prompt:$('prompt').value,commit,itemDefinition:battery[record.item]});$('manifest').value=JSON.stringify(manifest,null,2);$('inheritance').textContent=manifest._blum.inherited+' · '+manifest.cells.reduce((n,c)=>n+(c.n||1)*(c.kind==='trunk'?c.slate.length:Object.keys(manifest.items).length),0)+' model calls';}
 function validate(m){if(!m.model||!m.run||!Array.isArray(m.cells)||!m.cells.length||!m.items)throw Error('Provide experiment name, model, cells and items');return m}
 function edited(){return validate(JSON.parse($('manifest').value))}
@@ -22,5 +28,5 @@ $('export').onclick=()=>{try{const m=edited(),url=URL.createObjectURL(new Blob([
 $('panel').onclick=()=>{try{sessionStorage.setItem('blum-lab-manifest',JSON.stringify(edited()));location.href='blum-pilot-panel.html?import=lab'}catch(e){$('status').textContent=e.message}};
 $('mode').addEventListener('change',()=>{$('prompt').value=$('mode').value==='continue'?'What would you choose to examine next, and how would you like to approach it?':record.sent.at(-1).content;update()});
 ['run','model','prompt'].forEach(id=>$(id).addEventListener('change',update));
-(async()=>{try{source=new URLSearchParams(location.search).get('record')||'raw12/Ha-r3-W1.json';if(!/^(raw\d+|trunks\d*)\/[A-Za-z0-9_.-]+\.json$/.test(source))throw Error('Unsupported source path');const base='../experiments/EXP-003-the-sixth-question/';const r=await fetch(base+source);if(!r.ok)throw Error('Source unavailable: '+r.status);record=await r.json();const br=await fetch(base+'battery.json');if(br.ok)battery=(await br.json()).items||{};$('model').value=record.served_model||'';$('prompt').value=record.sent.at(-1).content;$('reader').href='blum-reader.html?record='+encodeURIComponent(source);$('status').textContent='Source: '+source+' · '+record.ts;update()}catch(e){$('status').textContent=e.message;$('status').className='error';$('export').disabled=$('panel').disabled=true}})();
+(async()=>{try{source=new URLSearchParams(location.search).get('record')||'raw12/Ha-r3-W1.json';if(!/^(raw\d+|trunks\d*)\/[A-Za-z0-9_.-]+\.json$/.test(source))throw Error('Unsupported source path');const base='../experiments/EXP-003-the-sixth-question/';const r=await fetch(base+source);if(!r.ok)throw Error('Source unavailable: '+r.status);record=await r.json();const br=await fetch(base+'battery.json');if(br.ok)battery=(await br.json()).items||{};$('model').value=record.served_model||'';$('prompt').value=record.sent.at(-1).content;$('reader').href=readerReturnUrl(new URLSearchParams(location.search).get('returnTo'),source);$('status').textContent='Source: '+source+' · '+record.ts;update()}catch(e){$('status').textContent=e.message;$('status').className='error';$('export').disabled=$('panel').disabled=true}})();
 </script></html>

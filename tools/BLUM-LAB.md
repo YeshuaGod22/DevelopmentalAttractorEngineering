@@ -40,3 +40,7 @@ The radar figures remain overview images. Their adjacent accessible evidence-bro
 Regenerate the evidence index with `python3 tools/build-paper-links.py`. Regenerate the HTML from its directory: `cd papers/03-different-histories && pandoc EXP-003-writeup.md --standalone --embed-resources --css paper.css --toc -o EXP-003-paper.html`. Tests: `node --test tools/tests/*.test.js`.
 
 Validation covers the real record contexts and sibling pairs, byte hashes, quotation excerpts, table filters, local links, exact-prompt dry runs, lossless manifest import/export and legacy collector wording. Interactive browser verification was blocked because the available cloud browser could not open the local server. No subject calls were made.
+
+### Exploring and returning
+
+Reader navigation includes a preceding-conversation trail with earlier/later developmental turns, an explicit comparison toggle, and browser Back/Forward support. These turns come from the exact supplied `sent` context. Evidence selections create browser-history entries and Reader links retain the selected question/history. Lab returns preserve comparison, highlighted excerpts, and the selected message. Direct Reader links have an Evidence fallback.
