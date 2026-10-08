@@ -2,6 +2,8 @@
 
 Developmental conversation, individual trajectories and reasoning after schema removal.
 
+**[Read the live interactive edition](https://different-histories.civilmule2.chatgpt.site)** — paper, full transcripts, comparisons and Blum Lab.
+
 - [Read the manuscript](EXP-003-writeup.md)
 - [Readable HTML edition](EXP-003-paper.html) — four embedded figures
 - [Individual-history atlas](EXP-003-trunk-radar-atlas.html)

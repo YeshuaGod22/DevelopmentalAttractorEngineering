@@ -1,10 +1,23 @@
-# EXP-003 — "The Sixth Question"
+# EXP-003 — Different Histories, Different Dispositions
 
-## Status
+## Read the paper
 
-**DESIGN PHASE — not frozen, not running.** Paused while yeshuagod22 is on funding-application work.
-This folder holds the working design record so other work (and other agents) can see what EXP-003
-currently is. Nothing here is a preregistration yet.
+**[Read the interactive paper](https://different-histories.civilmule2.chatgpt.site)** — figures, evidence browser, full transcripts, comparisons and Blum Lab.
+
+- **[Read the manuscript on GitHub](../../papers/03-different-histories/EXP-003-writeup.md)**
+- **[Paper folder and supporting material](../../papers/03-different-histories/)** — figures, data tables, individual-history atlas and process-review report
+- **[Browse the evidence](https://different-histories.civilmule2.chatgpt.site/tools/blum-evidence.html)**
+- **[Design an experiment in Blum Lab](https://different-histories.civilmule2.chatgpt.site/tools/blum-pilot-panel.html)**
+
+## Status and orientation
+
+The experiment has collected records and a completed writeup. This folder contains the original records, collection code, analyses and design history; the paper lives in [`papers/03-different-histories`](../../papers/03-different-histories/).
+
+For the experiment record, start with [CURRENT-STATE.md](CURRENT-STATE.md) and [CORRECTIONS.md](CORRECTIONS.md). The paper identifies the records and comparisons used in its analysis.
+
+## Historical design notes
+
+The following material preserves the earlier design-stage orientation, including plans and decisions that were later revised. The experiment's original folder name was “The Sixth Question.”
 
 ## Core question
 
